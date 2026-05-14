@@ -1,0 +1,6 @@
+[2026-05-14 23:01:44] Starting storage migration...
+[2026-05-14 23:01:44] Created symlink: logs/archive -> cloud
+[2026-05-14 23:01:44] Created symlink: memory/archive -> cloud
+[2026-05-14 23:01:44] Local free space: 35GB
+[2026-05-14 23:01:44] Cloud free space: 815GB
+[2026-05-14 23:01:44] Migration complete.
