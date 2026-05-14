@@ -1,0 +1,399 @@
+[
+  {
+    "id": "T-115",
+    "title": "GitHub integration — push MC to GitHub for version control",
+    "assignee": "engineer",
+    "status": "done",
+    "ts": "just now",
+    "note": "Auto-dispatched by work dispatcher cron",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": false,
+    "lastUpdated": "2026-05-14T15:27:34.473Z",
+    "startedAt": "2026-05-14T15:21:38.481Z",
+    "progress": 100
+  },
+  {
+    "id": "inc-INC-004-mp5dot1f",
+    "title": "[Dispatch] Switch to cron expression",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "just now",
+    "note": "Replace everyMs schedule with cron '0 3 * * *' in Europe/London tz",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-001-mp5b66tk",
+    "title": "[Dispatch] Add integrity check to heartbeat",
+    "assignee": "archivist",
+    "status": "done",
+    "ts": "just now",
+    "note": "Add index health check to HEARTBEAT.md so corruption is caught early",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-002-mp5b37v4",
+    "title": "[Dispatch] Set up automated daily backups",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "just now",
+    "note": "Configure cron job for daily 3am backup runs",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-002-mp5b36xd",
+    "title": "[Dispatch] Decommission old mount path",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "just now",
+    "note": "Remove references to /Volumes/WD-MyCloud/OpenClaw from scripts",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-001-mp5b2jw2",
+    "title": "[Dispatch] Verify search accuracy",
+    "assignee": "archivist",
+    "status": "done",
+    "ts": "just now",
+    "note": "Run test queries against rebuilt index to confirm all entries are findable",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-001-mp58a9ii",
+    "title": "[Incident] Add integrity check to heartbeat",
+    "assignee": "archivist",
+    "status": "done",
+    "ts": "just now",
+    "note": "Add index health check to HEARTBEAT.md so corruption is caught early",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "inc-INC-001-mp58973d",
+    "title": "[Incident] Verify search accuracy",
+    "assignee": "archivist",
+    "status": "done",
+    "ts": "just now",
+    "note": "Run test queries against rebuilt index to confirm all entries are findable",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-107",
+    "title": "Rebuild Spacestation as cinematic command deck",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "just now",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": false
+  },
+  {
+    "id": "T-101",
+    "title": "Set up Mission Control Dashboard",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "3h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "3h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-102",
+    "title": "Configure WD MyCloud backup automation",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "3h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "3h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-103",
+    "title": "Implement Karpathy LLM Wiki pattern",
+    "assignee": "archivist",
+    "status": "done",
+    "ts": "3h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "3h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-104",
+    "title": "Create app shortcut for Mission Control",
+    "assignee": "engineer",
+    "status": "done",
+    "ts": "2h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "2h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-105",
+    "title": "Fix task persistence — saveTasks not writing to disk",
+    "assignee": "engineer",
+    "status": "done",
+    "ts": "2h ago",
+    "note": "Fixed with direct fetch API to /api/save-tasks endpoint",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "2h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-106",
+    "title": "Integrate new pixel-art sprite sheets",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "1h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "1h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-109",
+    "title": "Settings page broken — investigate and fix",
+    "assignee": "engineer",
+    "status": "done",
+    "ts": "1h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "1h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-110",
+    "title": "Add task detail view (click to expand/edit)",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "1h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "1h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-111",
+    "title": "Rename Calendar to Scheduler",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "1h ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "1h ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-112",
+    "title": "Control UI bridge — pull data from localhost:18789",
+    "assignee": "engineer",
+    "status": "done",
+    "ts": "30m ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "30m ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-113",
+    "title": "Quick Actions expansion",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "30m ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "30m ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-114",
+    "title": "Cloud storage planning + cron job architecture",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "30m ago",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "30m ago",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-118",
+    "title": "Build work dispatcher — auto-pull from backlog when idle",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "just now",
+    "priority": "P3",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  },
+  {
+    "id": "T-119",
+    "title": "Dashboard redesign — 3-column layout with live activity feed",
+    "assignee": "monkey",
+    "status": "done",
+    "ts": "just now",
+    "note": "Redesign Mission Control home page: Left=live activity feed, Center=Spacestation rooms, Right=system stats/quick actions. Rename from Spacestation to Dashboard.",
+    "progress": 100,
+    "lastUpdated": "2026-05-14T15:12:14.861Z",
+    "priority": "P2",
+    "history": [
+      {
+        "ts": "just now",
+        "action": "created",
+        "actor": "system"
+      }
+    ],
+    "acknowledged": true
+  }
+]

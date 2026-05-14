@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p1",
+    "name": "Mission Control Dashboard",
+    "description": "Real-time monitoring dashboard for the OpenClaw AI station. 7 screens: Tasks, Calendar, Projects, Memory, Docs, Team, Visual Office.",
+    "status": "active",
+    "progress": 45,
+    "tasks": 4,
+    "lead": "monkey",
+    "lastActivity": "1h ago",
+    "accent": "violet"
+  },
+  {
+    "id": "p2",
+    "name": "Backup & Recovery System",
+    "description": "Automated daily backups to WD MyCloud with one-command disaster recovery.",
+    "status": "shipping",
+    "progress": 90,
+    "tasks": 2,
+    "lead": "lifesupport",
+    "lastActivity": "3h ago",
+    "accent": "cyan"
+  },
+  {
+    "id": "p3",
+    "name": "LLM Wiki Knowledge Base",
+    "description": "Karpathy-style compounding wiki for persistent memory across sessions.",
+    "status": "active",
+    "progress": 70,
+    "tasks": 3,
+    "lead": "archivist",
+    "lastActivity": "5h ago",
+    "accent": "warning"
+  }
+]

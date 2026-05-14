@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-13T19:13:06.766Z",
+  "entries": {
+    "memory:memory/2026-05-12.md:1:32": {
+      "key": "memory:memory/2026-05-12.md:1:32",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-12 ## Karpathy LLM Wiki — Bootstrapped - Created full wiki structure at `memory/wiki/` based on Karpathy's pattern - 13 wiki files: schema, index, log, overview, 4 entities, 3 concepts, 1 source - Updated MEMORY.md and AGENTS.md with wiki references ## Backup System — Operational - WD MyCloud mounted at `/Volumes/OpenClaw-WD` (guest access, Public share) - Created 4 backup scripts + RECOVERY_GUIDE.md + BACKUP_GUIDE.md - First full backup completed: 1.6MB - Cron job configured: daily backup at 3:00 AM ## Mission Control Dashboard — Full Build - Moved to `~/mission-control-dashboard/`, bun installed, 494 deps - 10 pages: Tasks, Calendar, Projects, Memory, Docs, Team, Visual, Incid",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T12:36:31.207Z",
+      "lastRecalledAt": "2026-05-13T16:56:12.918Z",
+      "queryHashes": [
+        "f9530a436507",
+        "0f91183d0255",
+        "9679d3aeae4a"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "backup",
+        "memory/wiki",
+        "memory.md",
+        "agents.md",
+        "volumes/openclaw-wd",
+        "recovery-guide.md",
+        "backup-guide.md",
+        "1.6mb"
+      ]
+    },
+    "memory:memory/2026-05-12.md:26:44": {
+      "key": "memory:memory/2026-05-12.md:26:44",
+      "path": "memory/2026-05-12.md",
+      "startLine": 26,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "- Fixed double-X on IncidentDetailsDrawer (removed duplicate close button) - Mobile responsive sidebar with hamburger menu - Sidebar: \"N commander\" replaced with \"🐒 Space Monkey\" - Room images moved to public/assets/ for reliable serving ## App & Deployment - App: `~/Applications/OpenClaw Mission Control.app` with apple-touch-icon.png - Login LaunchAgent: `~/Library/LaunchAgents/com.openclaw.mission-control.plist` - Git repo initialized with CHANGELOG.md - All files backed up to WD MyCloud ## Key Technical Details - WD MyCloud: `/Volumes/OpenClaw-WD/openclaw-agent-backup/` (827GB free of 1.8TB) - App port: localhost:8080 - Control UI: localhost:18789 - Bun path: `~/.bun/bin/bun` - Room im",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T16:55:31.578Z",
+      "lastRecalledAt": "2026-05-13T19:13:06.766Z",
+      "queryHashes": [
+        "0f91183d0255",
+        "9679d3aeae4a",
+        "3d6d4f033389"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "backup",
+        "double-x",
+        "public/assets",
+        "applications/openclaw",
+        "control.app",
+        "apple-touch-icon.png",
+        "changelog.md",
+        "1.8tb"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:15": {
+      "key": "memory:memory/2026-05-11.md:1:15",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "## Mission Control Dashboard — Day 1 - Andre wants to build a Mission Control dashboard for his OpenClaw agent - Inspired by Tina Huang's \"Lonely Octopus\" Mission Control (4 screenshots shared) - 7 screens: Tasks, Calendar, Projects, Memory, Docs, Team, Visual Office - Dark theme (#12182A), purple/green accents, pixel art avatars, left sidebar nav - Crew: Space Monkey (Director), Life Support Officer, Systems Engineer, Station Archivist - Mission statement: self-running station, quiet competence, operator → commander - Built via Loveable (TanStack Start app), exported as ZIP - ZIP extraction failed repeatedly — process kept hanging on bun.lock - Plan fully written and ready to execute when",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T16:55:31.578Z",
+      "lastRecalledAt": "2026-05-13T16:55:31.578Z",
+      "queryHashes": [
+        "0f91183d0255"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "purple/green",
+        "self-running",
+        "bun.lock",
+        "mission",
+        "control",
+        "dashboard",
+        "day",
+        "andre"
+      ]
+    },
+    "memory:memory/2026-05-13.md:15:42": {
+      "key": "memory:memory/2026-05-13.md:15:42",
+      "path": "memory/2026-05-13.md",
+      "startLine": 15,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- **Work rules** — Sub-agent timeout (5 min), main agent timeout (10 min), report blockers. ### Backlog (Not Started) - **T-115: GitHub integration** — Push MC to GitHub for version control. Dual backup: WD MyCloud + GitHub. - **T-116: Cloud storage planning** — WD MyCloud mount architecture, cron jobs, backup strategy, retention policies. - **T-117: WD MyCloud auto-mount** — Path mismatch: mounted at `/Volumes/WD-MyCloud/` but scripts expect `/Volumes/OpenClaw-WD/openclaw-agent-backup`. ### Key Technical Decisions - `createServerFn` RPC broken for client-side calls with input args — using direct `fetch` to `/api/*` endpoints. - Sprite sheet: 4 cols × 2 rows (idle top, working bottom), eac",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T19:12:50.345Z",
+      "lastRecalledAt": "2026-05-13T19:13:06.766Z",
+      "queryHashes": [
+        "55e8c92b1951",
+        "3d6d4f033389"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "backup",
+        "sub-agent",
+        "t-115",
+        "t-116",
+        "t-117",
+        "auto-mount",
+        "volumes/wd-mycloud",
+        "client-side"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:19": {
+      "key": "memory:memory/2026-05-13.md:1:19",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-05-13 Daily Log ## Session Summary ### Completed - **Task persistence fix** — Replaced broken `createServerFn` RPC with direct `fetch` API. Added `/api/save-tasks` and `/api/dispatch` endpoints in `server.ts`. Tasks now survive page refresh. - **Task detail view** — Click any task card → slide-over panel with edit title/note/assignee, delete. All changes persist. - **Calendar → Scheduler rename** — Sidebar nav + page title updated. - **Settings page fix** — Fixed broken JSX in QuickActions.tsx. SSR renders cleanly. - **Sprite sheet integration** — Sliced 1536×1024 sprite sheet into 8 sprites (4 chars × idle/working). Updated `crew.ts` with `sprites` object. - **Station redesign** —",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T19:12:50.345Z",
+      "lastRecalledAt": "2026-05-13T19:13:06.766Z",
+      "queryHashes": [
+        "55e8c92b1951",
+        "3d6d4f033389"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "api/save-tasks",
+        "api/dispatch",
+        "server.ts",
+        "slide-over",
+        "title/note/assignee",
+        "quickactions.tsx",
+        "idle/working",
+        "crew.ts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "INC-001",
+    "title": "Memory index corruption after session restart",
+    "severity": "P1",
+    "status": "MITIGATING",
+    "owner": "archivist",
+    "opened": "2026-05-12 09:14",
+    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact \u2014 only the index needs rebuilding.",
+    "tags": [
+      "memory",
+      "corruption",
+      "indexing",
+      "urgent"
+    ],
+    "timeline": [
+      {
+        "ts": "09:14",
+        "message": "Incident auto-detected: memory search returning stale results",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "09:22",
+        "message": "Confirmed SQLite index mismatch \u2014 14 entries missing from index",
+        "actor": "archivist"
+      },
+      {
+        "ts": "09:31",
+        "message": "Status escalated to MITIGATING, assigned to Archivist",
+        "actor": "monkey"
+      },
+      {
+        "ts": "09:45",
+        "message": "Raw .md files verified intact, index rebuild initiated",
+        "actor": "archivist"
+      },
+      {
+        "ts": "10:02",
+        "message": "Index rebuild 40% complete, ETA ~5 minutes",
+        "actor": "archivist"
+      }
+    ],
+    "actions": [],
+    "acknowledged": true,
+    "escalated": true,
+    "lastActivity": "2026-05-12 09:14"
+  },
+  {
+    "id": "INC-002",
+    "title": "WD MyCloud SMB mount permissions broke backups",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "opened": "2026-05-11 14:30",
+    "resolved": "2026-05-12 08:22",
+    "summary": "The WD MyCloud SMB share was mounted as read-only for the openclaw-agent account, preventing all backup scripts from running. The backup folder structure existed on the share but was completely empty.",
+    "tags": [
+      "backup",
+      "wd-mycloud",
+      "permissions",
+      "smb"
+    ],
+    "timeline": [
+      {
+        "ts": "14:30",
+        "message": "Backup script failed: permission denied writing to /Volumes/WD-MyCloud/OpenClaw/logs/",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "14:35",
+        "message": "Investigated mount permissions \u2014 volume owned by root:wheel, read-only for agent",
+        "actor": "engineer"
+      },
+      {
+        "ts": "15:00",
+        "message": "Incident opened, assigned to Life Support for resolution tracking",
+        "actor": "monkey"
+      },
+      {
+        "ts": "2026-05-12 08:10",
+        "message": "New SMB share mounted at /Volumes/OpenClaw-WD with full read/write access",
+        "actor": "monkey"
+      },
+      {
+        "ts": "2026-05-12 08:22",
+        "message": "First successful backup completed to new mount path",
+        "actor": "lifesupport"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Remount share with write access",
+        "description": "Mount the WD MyCloud SMB share with user credentials for r/w",
+        "status": "completed",
+        "completedAt": "08:10",
+        "completedBy": "monkey"
+      },
+      {
+        "label": "Run first backup",
+        "description": "Execute full backup to verify write access works end-to-end",
+        "status": "completed",
+        "completedAt": "08:22",
+        "completedBy": "lifesupport"
+      },
+      {
+        "label": "Set up automated daily backups",
+        "description": "Configure cron job for daily 3am backup runs",
+        "status": "available"
+      },
+      {
+        "label": "Decommission old mount path",
+        "description": "Remove references to /Volumes/WD-MyCloud/OpenClaw from scripts",
+        "status": "available"
+      }
+    ],
+    "acknowledged": true,
+    "escalated": false,
+    "lastActivity": "2026-05-11 14:30"
+  },
+  {
+    "id": "INC-003",
+    "title": "Mission Control dashboard can't read zip from Desktop",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "opened": "2026-05-12 11:45",
+    "summary": "macOS security permissions prevent Terminal/Node from reading mission-control.zip on the Desktop. System shows a security prompt asking for Desktop folder access, but TTY-based processes can't interact with the GUI prompt.",
+    "tags": [
+      "macos",
+      "permissions",
+      "desktop",
+      "mission-control"
+    ],
+    "timeline": [
+      {
+        "ts": "11:45",
+        "message": "First attempt to unzip mission-control.zip failed with EACCES",
+        "actor": "engineer"
+      },
+      {
+        "ts": "11:52",
+        "message": "macOS TCC prompt appeared but can't be accepted by TTY process",
+        "actor": "engineer"
+      },
+      {
+        "ts": "12:00",
+        "message": "Incident opened \u2014 needs human to either move file or grant Full Disk Access",
+        "actor": "monkey"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Move zip to ~/Downloads/",
+        "description": "Human moves mission-control.zip to Downloads folder where Node has access",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:38",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Grant Full Disk Access",
+        "description": "Add Terminal.app to System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:37",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Alternative: use open dialog",
+        "description": "Use macOS native file picker to grant one-time access to the zip",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:43",
+        "completedBy": "Space Monkey"
+      }
+    ],
+    "acknowledged": false,
+    "escalated": false,
+    "lastActivity": "2026-05-12 11:45"
+  },
+  {
+    "id": "INC-004",
+    "title": "Cron job drift \u2014 daily heartbeat running 3 hours late",
+    "severity": "P3",
+    "status": "MITIGATING",
+    "owner": "lifesupport",
+    "opened": "2026-05-12 06:00",
+    "summary": "The daily heartbeat cron job was scheduled for 03:00 but is consistently firing around 06:00. The gateway sleep/wake cycle is shifting the effective trigger time. This causes checks to run during active hours instead of quiet hours.",
+    "tags": [
+      "cron",
+      "scheduling",
+      "heartbeat",
+      "drift"
+    ],
+    "timeline": [
+      {
+        "ts": "06:00",
+        "message": "Daily heartbeat fired three hours late \u2014 gap analysis initiated",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "06:10",
+        "message": "Root cause: gateway sleep shifts cron anchorMs forward on each resume",
+        "actor": "engineer"
+      },
+      {
+        "ts": "06:30",
+        "message": "Proposed fix: switch to cron expr with tz instead of everyMs",
+        "actor": "engineer"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Switch to cron expression",
+        "description": "Replace everyMs schedule with cron '0 3 * * *' in Europe/London tz",
+        "status": "in_progress",
+        "completedAt": "2026-05-14 14:16:40",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Add stagger tolerance",
+        "description": "Set staggerMs to 60000 to prevent exact-time clustering",
+        "status": "skipped",
+        "completedAt": "2026-05-14 14:16:33",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Monitor for 48h",
+        "description": "Verify the fix holds over two sleep/wake cycles",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:57:08",
+        "completedBy": "Space Monkey"
+      }
+    ],
+    "acknowledged": true,
+    "escalated": false,
+    "lastActivity": "2026-05-12 06:00"
+  }
+]
