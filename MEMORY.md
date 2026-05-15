@@ -23,7 +23,9 @@ When answering questions, I check the wiki index first, then drill into relevant
 
 ## Key Projects
 
-- **Mission Control Dashboard** — 7-screen monitoring app (TanStack Start, dark theme). Currently blocked on ZIP extraction. Plan stored at `memory/mission-control-plan.md`.
+- **Mission Control Dashboard** — 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
+- **Agent Office** — The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`.
+- **Dev/Prod Strategy** — `main` branch = prod (port 3000), `dev` branch = dev (port 3001). Dev server launcher at `scripts/dev-server.sh`. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
 ## Operating Protocol
 
@@ -36,6 +38,13 @@ When answering questions, I check the wiki index first, then drill into relevant
 
 - **2026-05-12:** Adopted Karpathy LLM Wiki pattern for compounding memory
 - **2026-05-12:** Moved to constrained `openclaw-agent` account
+- **2026-05-15:** Adopted Framer Motion for Agent Office animations (no game engine)
+- **2026-05-15:** Event-driven state management via stationReducer for all visual changes
+- **2026-05-15:** Andre sharing hand-crafted pixel art assets (sprites + rooms) as HTML canvas drawings
+- **2026-05-15:** Established single master repo at `mission-control-dashboard`, deleted Downloads copy
+- **2026-05-15:** Dev/prod branch strategy — `main` = prod (port 3000), `dev` = dev (port 3001)
+- **2026-05-15:** API server uses `fs` reads instead of `execSync` for cron data (Cloudflare Workers compat)
+- **2026-05-15:** Investigate → Task → Error Resolution flow implemented (bidirectional linking)
 
 ---
-_Last updated: 2026-05-12 by Space Monkey_
+_Last updated: 2026-05-15 by Space Monkey_
