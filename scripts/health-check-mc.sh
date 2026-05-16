@@ -21,6 +21,8 @@ if [ "$STATUS" = "200" ]; then
         echo "$(timestamp) [OK] Mission Control recovered (HTTP $STATUS)" >> "$LOG_FILE"
         rm -f "$HOME/.openclaw/logs/.mc-health-bad"
     fi
+    # Auto-detect incidents even when MC is healthy
+    "$HOME/.openclaw/workspace/scripts/auto-detect-incidents.sh" 2>/dev/null
     exit 0
 fi
 
@@ -67,3 +69,6 @@ else
     echo "Mission Control health check restart failed at $(timestamp). HTTP status: $NEW_STATUS" > "$ALERT_FILE"
     exit 1
 fi
+
+# Auto-detect incidents on every run
+"$HOME/.openclaw/workspace/scripts/auto-detect-incidents.sh" 2>/dev/null
