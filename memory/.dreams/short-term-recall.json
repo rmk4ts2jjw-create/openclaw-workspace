@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T19:13:06.766Z",
+  "updatedAt": "2026-05-16T08:26:19.090Z",
   "entries": {
     "memory:memory/2026-05-12.md:1:32": {
       "key": "memory:memory/2026-05-12.md:1:32",
@@ -9,20 +9,23 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-12 ## Karpathy LLM Wiki — Bootstrapped - Created full wiki structure at `memory/wiki/` based on Karpathy's pattern - 13 wiki files: schema, index, log, overview, 4 entities, 3 concepts, 1 source - Updated MEMORY.md and AGENTS.md with wiki references ## Backup System — Operational - WD MyCloud mounted at `/Volumes/OpenClaw-WD` (guest access, Public share) - Created 4 backup scripts + RECOVERY_GUIDE.md + BACKUP_GUIDE.md - First full backup completed: 1.6MB - Cron job configured: daily backup at 3:00 AM ## Mission Control Dashboard — Full Build - Moved to `~/mission-control-dashboard/`, bun installed, 494 deps - 10 pages: Tasks, Calendar, Projects, Memory, Docs, Team, Visual, Incid",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-13T12:36:31.207Z",
-      "lastRecalledAt": "2026-05-13T16:56:12.918Z",
+      "lastRecalledAt": "2026-05-15T12:22:13.405Z",
       "queryHashes": [
         "f9530a436507",
         "0f91183d0255",
-        "9679d3aeae4a"
+        "9679d3aeae4a",
+        "76c7136b26bb",
+        "d925cfe2f143"
       ],
       "recallDays": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "backup",
@@ -75,18 +78,22 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "## Mission Control Dashboard — Day 1 - Andre wants to build a Mission Control dashboard for his OpenClaw agent - Inspired by Tina Huang's \"Lonely Octopus\" Mission Control (4 screenshots shared) - 7 screens: Tasks, Calendar, Projects, Memory, Docs, Team, Visual Office - Dark theme (#12182A), purple/green accents, pixel art avatars, left sidebar nav - Crew: Space Monkey (Director), Life Support Officer, Systems Engineer, Station Archivist - Mission statement: self-running station, quiet competence, operator → commander - Built via Loveable (TanStack Start app), exported as ZIP - ZIP extraction failed repeatedly — process kept hanging on bun.lock - Plan fully written and ready to execute when",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-13T16:55:31.578Z",
-      "lastRecalledAt": "2026-05-13T16:55:31.578Z",
+      "lastRecalledAt": "2026-05-14T23:22:08.963Z",
       "queryHashes": [
-        "0f91183d0255"
+        "0f91183d0255",
+        "41ad885814b9",
+        "f11d9b571d74",
+        "76c7136b26bb"
       ],
       "recallDays": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "purple/green",
@@ -161,6 +168,338 @@
         "quickactions.tsx",
         "idle/working",
         "crew.ts"
+      ]
+    },
+    "memory:memory/2026-05-13.md:22:54": {
+      "key": "memory:memory/2026-05-13.md:22:54",
+      "path": "memory/2026-05-13.md",
+      "startLine": 22,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "### Andre's Directives - Dashboard should be the home page name (not Spacestation) - Live activity feed on the left side - Task detail should be centered modal (not right slide) - Dreaming toggle should show on/off state clearly - Scheduler should have on/off switches for each cron job - Telegram chat ID: 7507878944 ### Session End State - All pages loading (Home/Dashboard, Tasks, Settings, Scheduler) - 10 cron jobs created, all with Telegram delivery - 12 new sprites installed - Git committed through v1.9.0 ## Evening Session (continued) ### Completed - **Agent status display fixed** — Always-on agents (monkey, lifesupport) no longer show as grayscale/away - **Sprite rendering fixed** —",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T23:21:47.665Z",
+      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "queryHashes": [
+        "41ad885814b9",
+        "a619b1d191e4",
+        "8508dc2407d5",
+        "f11d9b571d74",
+        "cbf86c6d4113",
+        "7ff91e27224f"
+      ],
+      "recallDays": [
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "on/off",
+        "home/dashboard",
+        "v1.9.0",
+        "always-on",
+        "grayscale/away",
+        "andre's",
+        "directives",
+        "dashboard"
+      ]
+    },
+    "memory:memory/2026-05-13.md:47:69": {
+      "key": "memory:memory/2026-05-13.md:47:69",
+      "path": "memory/2026-05-13.md",
+      "startLine": 47,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "- **openclaw CLI path fixed** — Full path /opt/homebrew/bin/openclaw ### Andre's Additional Feedback - Rename home to 'Dashboard' ✅ - Animation side revisited (collaboration walking between rooms) - Agent avatars showing as black and white — FIXED (was grayscale CSS on 'away' status) - Check all sprites are 100% updated — CONFIRMED (12 sprites at 240x320, RGB color) ### Key Technical Findings - getAgentStatus returns 'active' for always-on agents, 'standby' for on-demand - Old code checked status === 'active' which excluded 'standby' agents as 'away' - image-rendering: pixelated can cause blurriness on some browsers - createServerFn client proxy has type issues with inputValidator — use di",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T23:21:47.665Z",
+      "lastRecalledAt": "2026-05-14T23:22:08.961Z",
+      "queryHashes": [
+        "41ad885814b9",
+        "a619b1d191e4",
+        "8508dc2407d5",
+        "f11d9b571d74"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "opt/homebrew/bin/openclaw",
+        "always-on",
+        "on-demand",
+        "image-rendering",
+        "openclaw",
+        "cli",
+        "path",
+        "fixed"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:23": {
+      "key": "memory:memory/2026-05-14.md:1:23",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# 2026-05-14 — Daily Log ## Mission Control Dashboard — Session Summary ### Fixes Applied 1. **Dashboard layout** — Enlarged from `max-w-6xl` to `max-w-[1650px]` 2. **Agent sprite positioning** — Fixed from fixed pixels to percentages for responsive scaling 3. **Agent sprites** — Replaced with individual files from `owl_station_sprites` folder (320×240 each) 4. **Tasks page loader error** — Added missing `useRef` import 5. **Scheduler page** — Created `/api/crons` endpoint, fixed `execSync` PATH issue, now shows all cron jobs with toggle switches 6. **Scheduler filter** — Added All/Active/Disabled/Errors filter buttons on Cron Jobs tab 7. **Scheduler error feed** — New \"Error Feed\" tab sh",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T23:21:55.623Z",
+      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "queryHashes": [
+        "a619b1d191e4",
+        "8508dc2407d5",
+        "cbf86c6d4113",
+        "6afc284aed27",
+        "7ff91e27224f"
+      ],
+      "recallDays": [
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "max-w-6xl",
+        "max-w",
+        "owl-station-sprites",
+        "api/crons",
+        "all/active/disabled/errors",
+        "log",
+        "mission",
+        "control"
+      ]
+    },
+    "memory:memory/2026-05-14.md:38:45": {
+      "key": "memory:memory/2026-05-14.md:38:45",
+      "path": "memory/2026-05-14.md",
+      "startLine": 38,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "- `src/components/AppSidebar.tsx` — Added Model Usage nav item - `src/lib/crew.ts` — Updated sprite imports - `src/lib/server-data.ts` — Added in_progress to action status type - `src/server.ts` — Added /api/crons, /api/cron-errors, /api/usage, /api/incidents/update endpoints - `src/routes/api/save-tasks.tsx` — No changes - `data/incidents.json` — Restored corrupted INC-001 - `data/tasks.json` — Cleaned up duplicate tasks",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T08:05:08.031Z",
+      "lastRecalledAt": "2026-05-15T18:46:49.684Z",
+      "queryHashes": [
+        "562f97c7de8f",
+        "cbf86c6d4113",
+        "6afc284aed27"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "src/components/appsidebar.tsx",
+        "src/lib/crew.ts",
+        "src/lib/server-data.ts",
+        "in-progress",
+        "src/server.ts",
+        "api/crons",
+        "api/cron-errors",
+        "api/usage"
+      ]
+    },
+    "memory:memory/2026-05-14.md:18:42": {
+      "key": "memory:memory/2026-05-14.md:18:42",
+      "path": "memory/2026-05-14.md",
+      "startLine": 18,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "12. **Dispatch labeling** — Tasks from incident actions labeled `[Dispatch]` with violet badge 13. **Activity page** — Added \"Now Running\" and \"Up Next\" panels showing in-progress and backlog tasks 14. **Model Usage page** — New `/usage` page with token/cost breakdown from OpenRouter API 15. **Global refresh** — Increased from 15s to 5s ### Known Issues / Pending - Sprite images: Current ones from `owl_station_sprites` are placeholder quality — Andre finding better ones - Model Usage page: Needs `OPENROUTOR_API_KEY` env var set for live data - Cron job `ed4b4223` (Wiki Lint): Has module error `Cannot find module './dist/warning-filter.js'` — OpenClaw bug - Dashboard visual overhaul still pe",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T08:05:08.031Z",
+      "lastRecalledAt": "2026-05-15T18:46:49.684Z",
+      "queryHashes": [
+        "562f97c7de8f",
+        "6afc284aed27"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "router",
+        "in-progress",
+        "token/cost",
+        "owl-station-sprites",
+        "openroutor-api-key",
+        "dist/warning-filter.js",
+        "dispatch",
+        "labeling"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:30": {
+      "key": "memory:memory/2026-05-13.md:1:30",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# 2026-05-13 Daily Log (continued) ## Afternoon/Evening Session ### Completed - **Dashboard redesign (T-119)** — 3-column layout: Left=live activity feed, Center=Spacestation rooms, Right=quick actions - **Task detail panel** — Changed from right-slide to centered modal - **Dreaming toggle** — Proper on/off toggle with visual state indicator in QuickActions - **Scheduler page** — Shows all OpenClaw cron jobs with on/off toggle switches - **Telegram delivery fixed** — All cron jobs now deliver to chat ID 7507878944 - **Backup path fixed** — Changed from /Volumes/OpenClaw-WD to /Volumes/Public-1/openclaw-agent-backup - **openclaw CLI path fixed** — Full path /opt/homebrew/bin/openclaw in ser",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T08:09:43.225Z",
+      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "queryHashes": [
+        "cbf86c6d4113",
+        "7ff91e27224f"
+      ],
+      "recallDays": [
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "afternoon/evening",
+        "t-119",
+        "3-column",
+        "right-slide",
+        "on/off",
+        "volumes/openclaw-wd",
+        "opt/homebrew/bin/openclaw"
+      ]
+    },
+    "memory:memory/2026-05-15.md:90:119": {
+      "key": "memory:memory/2026-05-15.md:90:119",
+      "path": "memory/2026-05-15.md",
+      "startLine": 90,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "- CSS keyframes for ambient effects (terminal flicker, star twinkle) - SVG animateMotion for task flow packets (lightweight, no JS loop) - Event-driven state via `stationReducer` — all visual changes triggered by real state transitions - Demo mode cycles: working → collaboration → incident → resolve (loops every 25s) - GPU-composited transforms only (no layout thrashing) - Live data hook polls OpenClaw gateway every 10s with fallback to time-based simulation ### Agent states implemented - **Idle**: dimmed room, low monitor activity, subtle sprite pulse - **Working**: brighter room, active terminal lines, radar sweep, sprite scale animation - **Collaborating**: agent walks hallway to another",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T08:09:43.225Z",
+      "lastRecalledAt": "2026-05-15T08:09:43.225Z",
+      "queryHashes": [
+        "cbf86c6d4113"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "gateway",
+        "event-driven",
+        "gpu-composited",
+        "time-based",
+        "css",
+        "keyframes",
+        "ambient",
+        "effects"
+      ]
+    },
+    "memory:memory/2026-05-15.md:162:175": {
+      "key": "memory:memory/2026-05-15.md:162:175",
+      "path": "memory/2026-05-15.md",
+      "startLine": 162,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "- Rewrote `AgentOffice.tsx` to use live OpenClaw data via `getAgentStatus` + `getSystemStats` - Added ambient fallback mode (gentle random activity when no live data) - New `AgentTravel.tsx`: L-shaped hallway traversal, SVG collaboration links, data-stream pulses - New `DoorAnimation.tsx`: sliding doors with glow edge + air hiss effect - New `AmbientStation.tsx`: ship fly-bys, chatter ticker, mood lighting, twinkling stars - Updated `live-data.ts` to derive station mood/alert/queue pressure from real data - Enhanced `station-state.ts` TICK with auto-decay and stale incident cleanup - Build: clean, no errors. Pushed to GitHub. ### Still pending - Higher-quality room art (need HTML files from",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7119206905042976,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T13:36:04.305Z",
+      "lastRecalledAt": "2026-05-15T13:36:23.594Z",
+      "queryHashes": [
+        "a3ecb6468ad6",
+        "6bc7b0006af2"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "agentoffice.tsx",
+        "agenttravel.tsx",
+        "l-shaped",
+        "data-stream",
+        "dooranimation.tsx",
+        "ambientstation.tsx",
+        "fly-bys",
+        "live-data.ts"
+      ]
+    },
+    "memory:memory/2026-05-15.md:114:144": {
+      "key": "memory:memory/2026-05-15.md:114:144",
+      "path": "memory/2026-05-15.md",
+      "startLine": 114,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "- Andre shared hand-crafted HTML canvas pixel art sprite sheets - Extracted 12 sprites (idle/walking/working x 4 agents) at 320x240 PNG - Each agent has unique visual identity matching their accent color and role - Room images generated: room-command.png, room-security.png, room-workshop.png, room-archive.png (768x512 PNG) ### Pending / next steps - Generate higher-quality room images (current ones are basic pixel art placeholders) - Add icon packs when shared by Andre - Fine-tune animation timings based on feel - Wire live data to actual OpenClaw gateway endpoint - Add sound design (optional) - Consider generating higher-res versions of sprites for retina displays ### Andre's spec Full sp",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T13:36:04.305Z",
+      "lastRecalledAt": "2026-05-15T13:36:04.305Z",
+      "queryHashes": [
+        "a3ecb6468ad6"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "gateway",
+        "hand-crafted",
+        "idle/walking/working",
+        "room-command.png",
+        "room-security.png",
+        "room-workshop.png",
+        "room-archive.png",
+        "higher-quality"
+      ]
+    },
+    "memory:memory/2026-05-15.md:139:165": {
+      "key": "memory:memory/2026-05-15.md:139:165",
+      "path": "memory/2026-05-15.md",
+      "startLine": 139,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "- Root cause: `server.ts` used `execSync` (child_process) which is stubbed in Cloudflare Workers runtime - Fix: Replaced `execSync` calls with direct `fs` reads/writes to `~/.openclaw/cron/jobs.json` and `jobs-state.json` - Cron enable/disable now writes directly to `jobs.json` instead of using CLI - `vite dev` serves API routes correctly (unlike `wrangler dev` which uses unenv stubs) ### Investigate → Task Flow - Investigate button on Scheduler Error Feed now auto-creates an \"In Progress\" task - Task includes error details, cron job info, and is tagged with `errorId` - Completing an error-linked task automatically updates cron error status to \"completed\" - Error disappears from the feed on",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T18:46:49.684Z",
+      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "queryHashes": [
+        "6afc284aed27",
+        "7ff91e27224f"
+      ],
+      "recallDays": [
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "server.ts",
+        "child-process",
+        "reads/writes",
+        "openclaw/cron/jobs.json",
+        "jobs-state.json",
+        "enable/disable",
+        "jobs.json",
+        "auto-creates"
       ]
     }
   }

@@ -1,0 +1,20 @@
+{
+  "alerts": [
+    {
+      "timestamp": "2026-05-15T00:03:00+01:00",
+      "severity": "warning",
+      "metric": "disk",
+      "message": "Data volume at 83% (170 Gi / 228 Gi). Approaching 90% threshold.",
+      "value": 83,
+      "threshold": 90
+    },
+    {
+      "timestamp": "2026-05-15T00:03:00+01:00",
+      "severity": "info",
+      "metric": "swap",
+      "message": "Swap/compressor using ~20 GB. Worth monitoring if performance degrades.",
+      "value": null,
+      "threshold": null
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     "status": "MITIGATING",
     "owner": "archivist",
     "opened": "2026-05-12 09:14",
-    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact \u2014 only the index needs rebuilding.",
+    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact — only the index needs rebuilding.",
     "tags": [
       "memory",
       "corruption",
@@ -21,7 +21,7 @@
       },
       {
         "ts": "09:22",
-        "message": "Confirmed SQLite index mismatch \u2014 14 entries missing from index",
+        "message": "Confirmed SQLite index mismatch — 14 entries missing from index",
         "actor": "archivist"
       },
       {
@@ -68,7 +68,7 @@
       },
       {
         "ts": "14:35",
-        "message": "Investigated mount permissions \u2014 volume owned by root:wheel, read-only for agent",
+        "message": "Investigated mount permissions — volume owned by root:wheel, read-only for agent",
         "actor": "engineer"
       },
       {
@@ -105,12 +105,16 @@
       {
         "label": "Set up automated daily backups",
         "description": "Configure cron job for daily 3am backup runs",
-        "status": "available"
+        "status": "skipped",
+        "completedAt": "2026-05-15 20:02:14",
+        "completedBy": "Space Monkey"
       },
       {
         "label": "Decommission old mount path",
         "description": "Remove references to /Volumes/WD-MyCloud/OpenClaw from scripts",
-        "status": "available"
+        "status": "skipped",
+        "completedAt": "2026-05-15 20:02:16",
+        "completedBy": "Space Monkey"
       }
     ],
     "acknowledged": true,
@@ -144,7 +148,7 @@
       },
       {
         "ts": "12:00",
-        "message": "Incident opened \u2014 needs human to either move file or grant Full Disk Access",
+        "message": "Incident opened — needs human to either move file or grant Full Disk Access",
         "actor": "monkey"
       }
     ],
@@ -158,7 +162,7 @@
       },
       {
         "label": "Grant Full Disk Access",
-        "description": "Add Terminal.app to System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
+        "description": "Add Terminal.app to System Settings → Privacy & Security → Full Disk Access",
         "status": "skipped",
         "completedAt": "2026-05-14 13:56:37",
         "completedBy": "Space Monkey"
@@ -177,7 +181,7 @@
   },
   {
     "id": "INC-004",
-    "title": "Cron job drift \u2014 daily heartbeat running 3 hours late",
+    "title": "Cron job drift — daily heartbeat running 3 hours late",
     "severity": "P3",
     "status": "MITIGATING",
     "owner": "lifesupport",
@@ -192,7 +196,7 @@
     "timeline": [
       {
         "ts": "06:00",
-        "message": "Daily heartbeat fired three hours late \u2014 gap analysis initiated",
+        "message": "Daily heartbeat fired three hours late — gap analysis initiated",
         "actor": "lifesupport"
       },
       {
