@@ -7,6 +7,7 @@ This folder is home. Treat it that way.
 - **Main agent timeout**: If you spend >10 min debugging the same issue, stop and add to backlog
 - **Always report**: When adding to backlog, include what was tried and the blocker
 - **Use agents**: Offload complex debugging/implementation to subagents. Don't spin your wheels alone.
+- **Use Aider**: For large multi-file refactors (splitting modules, bulk renames, import restructuring), use Aider in non-interactive mode: `python3 -m aider --model openrouter/openrouter/owl-alpha --no-auto-commits --yes --dark-mode --message "...". See FRAMEWORK.md for details. Quick single-file fixes stay with direct edit/write tools.
 
 ## First Run
 
@@ -242,6 +243,41 @@ The wiki at `memory/wiki/` is my compounding knowledge base (Karpathy LLM Wiki p
 **Wiki lint (during heartbeats or on request):**
 - Check for contradictions, orphans, stale claims, missing cross-references
 - Results go in `memory/wiki/log.md`
+
+## Source Selection Rules (Framework Contamination Prevention)
+
+**Before generating ANY code, every agent MUST follow these rules.** See `SOURCES.md` for the full canonical source list, compatibility matrix, and project-type lookup table.
+
+### Rule 1: DETECT THE STACK FIRST
+- What framework? What runtime? What package manager?
+- What router? What SSR mode? What component system?
+- **Read `package.json`, `vite.config`, or framework config before coding**
+- If the stack is ambiguous, ask the user before proceeding
+
+### Rule 2: LOAD ONLY RELEVANT SOURCES
+- For Next.js projects: only Next.js + React + Tailwind + shadcn sources
+- For TanStack projects: only TanStack + React + Vite + Tailwind sources
+- **NEVER load framework docs for a framework the project doesn't use**
+- Check `SOURCES.md` → Project Type → Correct Sources Lookup
+
+### Rule 3: USE ARCHITECTURE SOURCES SEPARATELY
+- Architecture guides inform structure, NOT framework APIs
+- Fowler says event-driven modules → Next.js still controls routing
+- Tier 5 sources are advisory — they don't override Tier 1-4
+
+### Rule 4: FOLLOW SOURCE PRIORITY
+1. **Framework docs:** HIGHEST — these define the APIs you call
+2. **Runtime docs:** HIGH — these define the platform behavior
+3. **UI docs:** MEDIUM — these define component patterns
+4. **Architecture guides:** ADVISORY ONLY — these inform structure
+5. **Tutorials/blogs:** LOWEST — never use for API decisions
+
+### Rule 5: WHEN IN DOUBT, ASK
+- If you can't determine the stack, ask before coding
+- If a source link is broken, report it and ask for the correct one
+- If you need to combine tools not in the Compatibility Matrix, ask first
+
+---
 
 ## Make It Yours
 
