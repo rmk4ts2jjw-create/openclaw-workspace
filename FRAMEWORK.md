@@ -47,6 +47,22 @@
 
 ---
 
+## Build Tool Rules
+
+For coding work on Mission Control or any project, use the right tool for the job size:
+
+| Tool | Use For | Example |
+|------|---------|---------|
+| Direct edit/write | Single-file fixes, quick changes | "Fix this bug", "Add this component", "Delete dead code" |
+| Aider (--message --yes) | Multi-file refactors, module splits | "Split this 500-line file", "Refactor imports across 10 files" |
+| Sub-agents | Parallel tasks, research, verification | "Review all routes for dead code", "Check every component for SSR safety" |
+
+Aider is already installed and configured with OpenRouter. Use `--message` with `--yes` for non-interactive mode. Never try to drive it through interactive TUI or tmux sessions.
+
+Do NOT use OpenClaw chat for complex multi-file coding work. That's what Aider and direct edits are for. OpenClaw executes, monitors, and wires data.
+
+---
+
 ## Anti-Patterns (Framework Contamination)
 
 These are the mistakes that have happened before and must never happen again:
@@ -73,26 +89,16 @@ These are the mistakes that have happened before and must never happen again:
   - Manual-only mode during dry spells (`freeride auto` on demand)
 - **Status:** Watcher unloaded on 2026-05-22 due to persistent pool exhaustion. Re-enable manually when pool recovers.
 
-## Aider Integration
+## Aider Configuration
 
-**When to use Aider:**
-- Large multi-file refactors too complex for direct `edit`/`write` tools
-- Splitting modules, renaming across codebase, bulk import restructuring
-- Always use non-interactive mode: `aider --message "..." --yes`
-
-**When NOT to use Aider:**
-- Quick single-file fixes — use direct `edit`/`write`
-- Tasks requiring browser/visual verification
-- Anything that needs interactive debugging
-
-**Configuration:**
-- Installed: `pip install aider-chat` (v0.82.3 installed)
-- API key: `OPENROUTER_API_KEY` (already configured)
+- Installed: `pip install aider-chat` (v0.82.3) with OpenRouter API key
 - Model: `openrouter/openrouter/owl-alpha`
 - Config: `~/.aider.conf.yml`
-- Usage: `cd <project> && python3 -m aider --model openrouter/openrouter/owl-alpha --no-auto-commits --yes --dark-mode --message "refactor X across Y files"`
-- Never use interactive TUI / tmux sessions — non-interactive `--message` only
-- Set `--no-auto-commits` to maintain our own git workflow
+- **Usage:** `cd <project> && python3 -m aider --model openrouter/openrouter/owl-alpha --no-auto-commits --yes --dark-mode --message "..."`
+- `--no-auto-commits` to maintain our own git workflow
+- Never use interactive TUI / tmux — `--message` with `--yes` only
+
+See **Build Tool Rules** above for when to use Aider vs direct edits vs sub-agents.
 
 ## Related Files
 
