@@ -100,6 +100,26 @@ These are the mistakes that have happened before and must never happen again:
 
 See **Build Tool Rules** above for when to use Aider vs direct edits vs sub-agents.
 
+## Agent Communication Rules
+
+### Status Reports Only
+When the user asks "anything else?" or "more recommendations?", respond with a **status report only**:
+- What was completed
+- What's remaining (if anything)
+- Any blockers
+
+**Do NOT:**
+- Generate new work or recommendations unless explicitly asked to review a specific area
+- Suggest improvements, fixes, or new features unprompted
+- Continue iterating on the same topic after the user has moved on
+
+**Why:** Open-ended "anything else" prompts caused the 87-session token explosion. The agent kept generating more recommendations indefinitely. Never again.
+
+### Exceptions
+- If the user explicitly says "review X" or "check Y" → do the review
+- If there's a critical security/stability issue → flag it immediately
+- If the user asks a direct question → answer it concisely
+
 ## Related Files
 
 - **SOURCES.md** — Canonical documentation URLs, compatibility matrix, agent rules
