@@ -185,7 +185,7 @@ else
 fi
 
 # Send via OpenClaw CLI — no model calls, pure API
-openclaw message send \
+/opt/homebrew/bin/openclaw message send \
   --channel telegram \
   --target "$TELEGRAM_TARGET" \
   --message "$SITREP" \
