@@ -1,0 +1,11 @@
+{
+  "lastChecks": {
+    "errorWatchdog": 1747846980,
+    "taskPickup": 1747843680,
+    "email": null,
+    "calendar": null,
+    "weather": null
+  },
+  "lastHeartbeat": "2026-05-21T19:03:00+01:00",
+  "notes": "Error watchdog clean. No error spikes in 10-min window. No actionable tasks."
+}

@@ -1,13 +1,14 @@
 #!/bin/bash
 # Auto-detect incidents from system state
-# Called by health-check-mc.sh every 15 minutes
+# Called by maintenance.sh every 30 minutes
 # Pure shell — zero model calls
 
-WORKSPACE="$HOME/.OPENCLAW_WORKSPACE"
+WORKSPACE="$HOME/.openclaw/workspace"
 [ -z "$WORKSPACE" ] && WORKSPACE="$HOME/.openclaw/workspace"
 INCIDENTS_FILE="$WORKSPACE/data/incidents.json"
 LOG_FILE="$HOME/.openclaw/logs/health-check-restart.log"
-ALERT_FILE="$HOME/.openclaw/workspace/mount-alert.txt"
+ALERT_FILE="$WORKSPACE/mount-alert.txt"
+GATEWAY_LOG="/tmp/openclaw/openclaw-$(date +%Y-%m-%d).log"
 
 timestamp() { date '+%Y-%m-%d %H:%M:%S'; }
 
@@ -67,7 +68,6 @@ fi
 
 # ── 2. Check WD MyCloud mount ────────────────────────────────────────────────
 if ! mount | grep -q "/Volumes/Public" && ! mount | grep -q "/Volumes/OpenClaw-WD"; then
-    # Check if we already have an open incident for this
     if ! python3 -c "
 import json
 incidents = json.load(open('$INCIDENTS_FILE'))
@@ -76,7 +76,7 @@ for i in incidents:
         exit(1)
 exit(0)
 " 2>/dev/null; then
-        : # duplicate exists
+        :
     else
         echo "$(timestamp) [AUTO-DETECT] WD MyCloud mount missing — creating incident" >> "$LOG_FILE"
         create_incident \
@@ -112,7 +112,6 @@ fi
 # ── 4. Check for stale tasks (>2h no activity) ──────────────────────────────
 STALE_TASKS=$(python3 -c "
 import json, os
-from datetime import datetime, timezone
 path = '$WORKSPACE/data/tasks.json'
 if not os.path.exists(path): print(0)
 else:
@@ -144,6 +143,84 @@ if [ "$MC_STATUS" != "200" ]; then
         "Mission Control dashboard is not responding (HTTP $MC_STATUS). The dev server may have crashed or the port is occupied." \
         '["mission-control", "outage", "dashboard"]' \
         "health-check"
+fi
+
+# ── 6. Check session count anomaly ───────────────────────────────────────────
+SESSION_COUNT=$(python3 -c "
+import json, os
+path = '$HOME/.openclaw/agents/main/sessions/sessions.json'
+if not os.path.exists(path): print(0)
+else:
+    data = json.load(open(path))
+    sessions = data if isinstance(data, list) else data.get('sessions', [])
+    print(len(sessions))
+" 2>/dev/null || echo "0")
+
+if [ "$SESSION_COUNT" -gt 20 ]; then
+    echo "$(timestamp) [AUTO-DETECT] Session count anomaly: $SESSION_COUNT sessions — creating incident" >> "$LOG_FILE"
+    create_incident \
+        "Session count anomaly — $SESSION_COUNT active sessions detected" \
+        "P2" "lifesupport" \
+        "Session store shows $SESSION_COUNT sessions. Normal baseline is 2-5. Possible runaway cron job or session leak." \
+        '["sessions", "anomaly", "leak"]' \
+        "session-monitor"
+fi
+
+# ── 7. Check for gateway session takeover errors ─────────────────────────────
+GATEWAY_ERRORS=$(python3 -c "
+import json, os, glob
+from datetime import datetime, timezone, timedelta
+
+session_dir = os.path.expanduser('~/.openclaw/agents/main/sessions')
+now = datetime.now(timezone.utc)
+error_count = 0
+
+for f in glob.glob(os.path.join(session_dir, '*.jsonl')):
+    try:
+        mtime = os.path.getmtime(f)
+        if mtime < (now - timedelta(hours=1)).timestamp():
+            continue
+        with open(f) as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    entry = json.loads(line)
+                except:
+                    continue
+                content = json.dumps(entry)
+                if 'EmbeddedAttemptSessionTakeoverError' in content or 'session file changed' in content:
+                    error_count += 1
+                    break
+    except:
+        continue
+
+print(error_count)
+" 2>/dev/null || echo "0")
+
+if [ "$GATEWAY_ERRORS" -gt 0 ]; then
+    echo "$(timestamp) [AUTO-DETECT] Gateway session errors: $GATEWAY_ERRORS files with takeover errors" >> "$LOG_FILE"
+    create_incident \
+        "Gateway session errors — $GATEWAY_ERRORS session(s) with EmbeddedAttemptSessionTakeoverError" \
+        "P1" "engineer" \
+        "Detected $GATEWAY_ERRORS session files with takeover errors in the last hour. Gateway may be in a crash loop." \
+        '["gateway", "crash-loop", "session-takeover"]' \
+        "gateway-monitor"
+fi
+
+# ── 8. Check for rate limit errors (429) in gateway log ──────────────────────
+if [ -f "$GATEWAY_LOG" ]; then
+    RL_COUNT=$(grep -c '"status":429\|"statusCode":429\|rate.limit\|429 Too Many' "$GATEWAY_LOG" 2>/dev/null || echo "0")
+    if [ "$RL_COUNT" -gt 5 ]; then
+        echo "$(timestamp) [AUTO-DETECT] Rate limit errors: $RL_COUNT occurrences in gateway log" >> "$LOG_FILE"
+        create_incident \
+            "Rate limit exhaustion — $RL_COUNT 429 errors in gateway log" \
+            "P2" "lifesupport" \
+            "Gateway log shows $RL_COUNT rate limit (429) errors. Free model pool may be exhausted." \
+            '["rate-limit", "429", "models"]' \
+            "rate-monitor"
+    fi
 fi
 
 echo "$(timestamp) [AUTO-DETECT] Complete" >> "$LOG_FILE"

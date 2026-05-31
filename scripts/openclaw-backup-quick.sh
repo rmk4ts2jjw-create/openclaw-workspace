@@ -5,8 +5,15 @@
 set -euo pipefail
 
 SOURCE_DIR="$HOME/.openclaw"
-BACKUP_BASE="/Volumes/Public-1/openclaw-agent-backup"
+BACKUP_BASE="/Volumes/Public/openclaw-agent-backup"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# Check backup target is mounted
+if [ ! -d "/Volumes/Public" ]; then
+    echo "ERROR: Backup target /Volumes/Public is not mounted"
+    echo "MOUNT_ALERT: Backup failed — /Volumes/Public not mounted at $(date)" > "$HOME/.openclaw/workspace/data/mount-alert.txt"
+    exit 1
+fi
 
 mkdir -p "$BACKUP_BASE/backups/quick" "$BACKUP_BASE/logs"
 

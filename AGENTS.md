@@ -7,7 +7,7 @@ This folder is home. Treat it that way.
 - **Main agent timeout**: If you spend >10 min debugging the same issue, stop and add to backlog
 - **Always report**: When adding to backlog, include what was tried and the blocker
 - **Use agents**: Offload complex debugging/implementation to subagents. Don't spin your wheels alone.
-- **Use Aider**: For large multi-file refactors (splitting modules, bulk renames, import restructuring), use Aider in non-interactive mode: `python3 -m aider --model openrouter/openrouter/owl-alpha --no-auto-commits --yes --dark-mode --message "...". See FRAMEWORK.md for details. Quick single-file fixes stay with direct edit/write tools.
+- **Multi-file refactors**: Use direct edits in sequence — one file at a time, commit after each. It's slower but costs zero tokens. Quick single-file fixes stay with direct edit/write tools.
 
 ## First Run
 

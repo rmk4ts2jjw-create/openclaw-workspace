@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-MOUNT_POINT="/Volumes/Public-1"
+MOUNT_POINT="/Volumes/Public"
 ALERT_FILE="$HOME/.openclaw/workspace/mount-alert.txt"
 LOG_FILE="$HOME/.openclaw/workspace/logs/backup.log"
 SOURCE_DIR="$HOME/.openclaw/workspace"

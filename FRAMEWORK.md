@@ -54,12 +54,10 @@ For coding work on Mission Control or any project, use the right tool for the jo
 | Tool | Use For | Example |
 |------|---------|---------|
 | Direct edit/write | Single-file fixes, quick changes | "Fix this bug", "Add this component", "Delete dead code" |
-| Aider (--message --yes) | Multi-file refactors, module splits | "Split this 500-line file", "Refactor imports across 10 files" |
+| Sequential direct edits | Multi-file refactors, module splits | "Split this 500-line file", "Refactor imports across 10 files" — one file at a time, commit after each |
 | Sub-agents | Parallel tasks, research, verification | "Review all routes for dead code", "Check every component for SSR safety" |
 
-Aider is already installed and configured with OpenRouter. Use `--message` with `--yes` for non-interactive mode. Never try to drive it through interactive TUI or tmux sessions.
-
-Do NOT use OpenClaw chat for complex multi-file coding work. That's what Aider and direct edits are for. OpenClaw executes, monitors, and wires data.
+Do NOT use OpenClaw chat for complex multi-file coding work. Use direct edits — one file at a time, committed individually. OpenClaw executes, monitors, and wires data.
 
 ---
 
@@ -89,16 +87,7 @@ These are the mistakes that have happened before and must never happen again:
   - Manual-only mode during dry spells (`freeride auto` on demand)
 - **Status:** Watcher unloaded on 2026-05-22 due to persistent pool exhaustion. Re-enable manually when pool recovers.
 
-## Aider Configuration
 
-- Installed: `pip install aider-chat` (v0.82.3) with OpenRouter API key
-- Model: `openrouter/openrouter/owl-alpha`
-- Config: `~/.aider.conf.yml`
-- **Usage:** `cd <project> && python3 -m aider --model openrouter/openrouter/owl-alpha --no-auto-commits --yes --dark-mode --message "..."`
-- `--no-auto-commits` to maintain our own git workflow
-- Never use interactive TUI / tmux — `--message` with `--yes` only
-
-See **Build Tool Rules** above for when to use Aider vs direct edits vs sub-agents.
 
 ## Agent Communication Rules
 
@@ -119,6 +108,26 @@ When the user asks "anything else?" or "more recommendations?", respond with a *
 - If the user explicitly says "review X" or "check Y" → do the review
 - If there's a critical security/stability issue → flag it immediately
 - If the user asks a direct question → answer it concisely
+
+## Security Rules
+
+### 1. Gateway Binding
+- Gateway always binds to `127.0.0.1` (localhost only)
+- Already confirmed safe — no action needed
+
+### 2. API Cost Runaway Prevention
+- **Hard spending limits:** Set at the API provider level (OpenRouter spending cap)
+- **Circuit breaker:** If 5+ consecutive tool calls fail with the same error, stop and alert — do NOT retry forever
+- **Token logging:** Log token counts per session for visibility and cost tracking
+
+### 3. Skill Verification
+- Before installing any ClawHub skill: verify the author, check install count, confirm the GitHub repo is legitimate
+- **FreeRide skill verification:** Confirm it's from `openclaw-eco/free-ride` — not a typosquat or fork
+
+### 4. Update Strategy
+- Test before applying major version bumps
+- Our `2026.5.18 → 2026.5.19` update partially failed — lesson learned
+- Always have a rollback plan before upgrading
 
 ## Related Files
 

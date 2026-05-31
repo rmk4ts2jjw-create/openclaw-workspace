@@ -45,6 +45,7 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-05-15:** Dev/prod branch strategy — `main` = prod (port 3000), `dev` = dev (port 3001)
 - **2026-05-15:** API server uses `fs` reads instead of `execSync` for cron data (Cloudflare Workers compat)
 - **2026-05-15:** Investigate → Task → Error Resolution flow implemented (bidirectional linking)
+- **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish. Multi-file refactors now done via sequential direct edits (one file at a time, commit after each). Zero token cost.
 
 ---
 _Last updated: 2026-05-15 by Space Monkey_

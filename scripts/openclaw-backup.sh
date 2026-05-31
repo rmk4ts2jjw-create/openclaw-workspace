@@ -8,7 +8,7 @@ set -euo pipefail
 # === Configuration ===
 SOURCE_DIR="$HOME/.openclaw"
 WORKSPACE_DIR="$SOURCE_DIR/workspace"
-BACKUP_BASE="/Volumes/Public-1/openclaw-agent-backup"
+BACKUP_BASE="/Volumes/Public/openclaw-agent-backup"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 DAY_OF_WEEK=$(date +"%u")  # 1=Mon, 7=Sun
 DATE=$(date +"%Y-%m-%d")
@@ -22,7 +22,7 @@ if [ ! -d "$SOURCE_DIR" ]; then
     die "Source directory not found: $SOURCE_DIR"
 fi
 
-if [ ! -d "/Volumes/Backups of spacemonkey" ]; then
+if [ ! -d "$BACKUP_BASE" ]; then
     die "Backup disk not mounted. Connect the external backup disk first."
 fi
 

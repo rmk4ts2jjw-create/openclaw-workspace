@@ -2,6 +2,16 @@
 
 _If anything goes wrong — disk failure, macOS reinstall, Mac mini dies — this guide gets you back up and running._
 
+## Backup Status (May 28, 2026)
+
+| Layer | Method | Target | Status |
+|-------|--------|--------|--------|
+| **Primary** | macOS Time Machine | WD MyCloud (AFP) | ✅ Running — full disk image |
+| **Secondary (optional)** | Custom scripts | `/Volumes/Public/` | ⚠️ Scripts exist but never automated |
+| **Code** | GitHub | `spacemonkey-home/openclaw-missionscontrol` | ✅ Up to date |
+
+**Bottom line:** Time Machine covers disaster recovery. Migration Assistant on a new Mac can restore everything from the WD MyCloud backup. Mission Control code is on GitHub.
+
 ## Quick Recovery (One Command)
 
 If you have the backup disk connected:

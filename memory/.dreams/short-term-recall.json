@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T08:26:19.090Z",
+  "updatedAt": "2026-05-22T08:06:28.994Z",
   "entries": {
     "memory:memory/2026-05-12.md:1:32": {
       "key": "memory:memory/2026-05-12.md:1:32",
@@ -177,24 +177,26 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "### Andre's Directives - Dashboard should be the home page name (not Spacestation) - Live activity feed on the left side - Task detail should be centered modal (not right slide) - Dreaming toggle should show on/off state clearly - Scheduler should have on/off switches for each cron job - Telegram chat ID: 7507878944 ### Session End State - All pages loading (Home/Dashboard, Tasks, Settings, Scheduler) - 10 cron jobs created, all with Telegram delivery - 12 new sprites installed - Git committed through v1.9.0 ## Evening Session (continued) ### Completed - **Agent status display fixed** — Always-on agents (monkey, lifesupport) no longer show as grayscale/away - **Sprite rendering fixed** —",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T23:21:47.665Z",
-      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "lastRecalledAt": "2026-05-21T13:09:14.100Z",
       "queryHashes": [
         "41ad885814b9",
         "a619b1d191e4",
         "8508dc2407d5",
         "f11d9b571d74",
         "cbf86c6d4113",
-        "7ff91e27224f"
+        "7ff91e27224f",
+        "18c6c71e89e0"
       ],
       "recallDays": [
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-21"
       ],
       "conceptTags": [
         "on/off",
@@ -214,21 +216,25 @@
       "endLine": 69,
       "source": "memory",
       "snippet": "- **openclaw CLI path fixed** — Full path /opt/homebrew/bin/openclaw ### Andre's Additional Feedback - Rename home to 'Dashboard' ✅ - Animation side revisited (collaboration walking between rooms) - Agent avatars showing as black and white — FIXED (was grayscale CSS on 'away' status) - Check all sprites are 100% updated — CONFIRMED (12 sprites at 240x320, RGB color) ### Key Technical Findings - getAgentStatus returns 'active' for always-on agents, 'standby' for on-demand - Old code checked status === 'active' which excluded 'standby' agents as 'away' - image-rendering: pixelated can cause blurriness on some browsers - createServerFn client proxy has type issues with inputValidator — use di",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T23:21:47.665Z",
-      "lastRecalledAt": "2026-05-14T23:22:08.961Z",
+      "lastRecalledAt": "2026-05-21T13:09:14.100Z",
       "queryHashes": [
         "41ad885814b9",
         "a619b1d191e4",
         "8508dc2407d5",
-        "f11d9b571d74"
+        "f11d9b571d74",
+        "6a3bce0ccc94",
+        "18c6c71e89e0"
       ],
       "recallDays": [
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "opt/homebrew/bin/openclaw",
@@ -248,23 +254,27 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 — Daily Log ## Mission Control Dashboard — Session Summary ### Fixes Applied 1. **Dashboard layout** — Enlarged from `max-w-6xl` to `max-w-[1650px]` 2. **Agent sprite positioning** — Fixed from fixed pixels to percentages for responsive scaling 3. **Agent sprites** — Replaced with individual files from `owl_station_sprites` folder (320×240 each) 4. **Tasks page loader error** — Added missing `useRef` import 5. **Scheduler page** — Created `/api/crons` endpoint, fixed `execSync` PATH issue, now shows all cron jobs with toggle switches 6. **Scheduler filter** — Added All/Active/Disabled/Errors filter buttons on Cron Jobs tab 7. **Scheduler error feed** — New \"Error Feed\" tab sh",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T23:21:55.623Z",
-      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "lastRecalledAt": "2026-05-22T08:06:28.994Z",
       "queryHashes": [
         "a619b1d191e4",
         "8508dc2407d5",
         "cbf86c6d4113",
         "6afc284aed27",
-        "7ff91e27224f"
+        "7ff91e27224f",
+        "fa25c2bb05b0",
+        "a5185adaf1bf"
       ],
       "recallDays": [
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-21",
+        "2026-05-22"
       ],
       "conceptTags": [
         "max-w-6xl",
@@ -284,20 +294,22 @@
       "endLine": 45,
       "source": "memory",
       "snippet": "- `src/components/AppSidebar.tsx` — Added Model Usage nav item - `src/lib/crew.ts` — Updated sprite imports - `src/lib/server-data.ts` — Added in_progress to action status type - `src/server.ts` — Added /api/crons, /api/cron-errors, /api/usage, /api/incidents/update endpoints - `src/routes/api/save-tasks.tsx` — No changes - `data/incidents.json` — Restored corrupted INC-001 - `data/tasks.json` — Cleaned up duplicate tasks",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T08:05:08.031Z",
-      "lastRecalledAt": "2026-05-15T18:46:49.684Z",
+      "lastRecalledAt": "2026-05-22T08:06:28.994Z",
       "queryHashes": [
         "562f97c7de8f",
         "cbf86c6d4113",
-        "6afc284aed27"
+        "6afc284aed27",
+        "a5185adaf1bf"
       ],
       "recallDays": [
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-22"
       ],
       "conceptTags": [
         "src/components/appsidebar.tsx",
@@ -349,20 +361,25 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-13 Daily Log (continued) ## Afternoon/Evening Session ### Completed - **Dashboard redesign (T-119)** — 3-column layout: Left=live activity feed, Center=Spacestation rooms, Right=quick actions - **Task detail panel** — Changed from right-slide to centered modal - **Dreaming toggle** — Proper on/off toggle with visual state indicator in QuickActions - **Scheduler page** — Shows all OpenClaw cron jobs with on/off toggle switches - **Telegram delivery fixed** — All cron jobs now deliver to chat ID 7507878944 - **Backup path fixed** — Changed from /Volumes/OpenClaw-WD to /Volumes/Public-1/openclaw-agent-backup - **openclaw CLI path fixed** — Full path /opt/homebrew/bin/openclaw in ser",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T08:09:43.225Z",
-      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "lastRecalledAt": "2026-05-21T19:23:34.180Z",
       "queryHashes": [
         "cbf86c6d4113",
-        "7ff91e27224f"
+        "7ff91e27224f",
+        "6a3bce0ccc94",
+        "18c6c71e89e0",
+        "c8bff05e32bb"
       ],
       "recallDays": [
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "backup",
@@ -476,20 +493,25 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "- Root cause: `server.ts` used `execSync` (child_process) which is stubbed in Cloudflare Workers runtime - Fix: Replaced `execSync` calls with direct `fs` reads/writes to `~/.openclaw/cron/jobs.json` and `jobs-state.json` - Cron enable/disable now writes directly to `jobs.json` instead of using CLI - `vite dev` serves API routes correctly (unlike `wrangler dev` which uses unenv stubs) ### Investigate → Task Flow - Investigate button on Scheduler Error Feed now auto-creates an \"In Progress\" task - Task includes error details, cron job info, and is tagged with `errorId` - Completing an error-linked task automatically updates cron error status to \"completed\" - Error disappears from the feed on",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T18:46:49.684Z",
-      "lastRecalledAt": "2026-05-16T08:26:19.090Z",
+      "lastRecalledAt": "2026-05-21T19:23:34.180Z",
       "queryHashes": [
         "6afc284aed27",
-        "7ff91e27224f"
+        "7ff91e27224f",
+        "4017ff19c5f9",
+        "f2492a07338b",
+        "c8bff05e32bb"
       ],
       "recallDays": [
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17",
+        "2026-05-21"
       ],
       "conceptTags": [
         "server.ts",
@@ -500,6 +522,323 @@
         "enable/disable",
         "jobs.json",
         "auto-creates"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:22": {
+      "key": "memory:memory/2026-05-16.md:1:22",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# 2026-05-16 — Daily Log ## Morning Session ### Completed - **Station Uptime Indicator** — Added Ship's Chronometer to Spacestation page + Dashboard. Shows Mac uptime (from `kern.boottime`) and Gateway uptime (from process start time). Displays in `Xd Xh Xm` format. - **Disk Space Widget** — Added to Spacestation + Dashboard. Shows internal disk (from `df -h /`) and WD MyCloud (dynamic mount detection via `df -h | grep -iE 'wd|mycloud|public'`). Warning threshold at 85%. - **Restart Mission Control Button** — New Quick Action that kills port 3001 and restarts `npx vite dev --port 3001`. Confirmation required. - **Awaiting Review Badge** — Sidebar Tasks icon now shows a yellow badge with co",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T09:01:27.222Z",
+      "lastRecalledAt": "2026-05-17T09:01:27.222Z",
+      "queryHashes": [
+        "36b220a53b76"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "kern.boottime",
+        "log",
+        "morning",
+        "completed",
+        "station",
+        "uptime",
+        "indicator"
+      ]
+    },
+    "memory:memory/2026-05-16.md:15:41": {
+      "key": "memory:memory/2026-05-16.md:15:41",
+      "path": "memory/2026-05-16.md",
+      "startLine": 15,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "- **CANCELLED** — Andre decided against it. OpenClaw data is only 1.2 GB, not worth the complexity. Andre will use an external SSD instead. - Disk cleanup also cancelled — no action needed. # 2026-05-16 — Daily Log ## Morning Session ### Completed - **Station Uptime Indicator** — Added Ship's Chronometer to Spacestation page + Dashboard - **Disk Space Widget** — Added to Spacestation + Dashboard - **Restart Mission Control Button** — New Quick Action in Dashboard - **Awaiting Review Badge** — Sidebar Tasks icon shows yellow badge with count - **Daily Telegram Sitrep** — Updated 23:00 cron job - **Server Data Extensions** — Added gatewayUptime, wdDisk stats, new server functions - **Build +",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T09:01:27.222Z",
+      "lastRecalledAt": "2026-05-17T09:01:27.222Z",
+      "queryHashes": [
+        "36b220a53b76"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "1.2",
+        "cancelled",
+        "andre",
+        "decided",
+        "against",
+        "openclaw",
+        "data"
+      ]
+    },
+    "memory:memory/2026-05-15.md:1:25": {
+      "key": "memory:memory/2026-05-15.md:1:25",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-15 — Daily Log ## Agent Office Animation System — Built ### What was built Full animation system for the Mission Control Dashboard's \"Agent Office\" (Visual) page. ### New files - `src/lib/station-state.ts` — Event-driven state management (agent activities, collaborations, incidents, task flows, queue pressure, station mood) - `src/components/StationRoom.tsx` — Animated room component with terminal flicker, blinking panels, radar sweep, room lighting reactivity, incident overlays - `src/components/AgentTravel.tsx` — Hallway traversal system with L-shaped pathfinding, traveling agent sprites with walking bob animation, collaboration link lines with data-stream pulses - `src/compon",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T20:40:30.694Z",
+      "lastRecalledAt": "2026-05-21T15:38:23.356Z",
+      "queryHashes": [
+        "4017ff19c5f9",
+        "f2492a07338b"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "src/lib/station-state.ts",
+        "event-driven",
+        "src/components/stationroom.tsx",
+        "src/components/agenttravel.tsx",
+        "l-shaped",
+        "data-stream",
+        "src/compon",
+        "log"
+      ]
+    },
+    "memory:memory/2026-05-15.md:74:94": {
+      "key": "memory:memory/2026-05-15.md:74:94",
+      "path": "memory/2026-05-15.md",
+      "startLine": 74,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "- `src/components/AgentTravel.tsx` — Hallway traversal system with L-shaped pathfinding, traveling agent sprites with walking bob animation, collaboration link lines with data-stream pulses - `src/components/TaskFlowSignals.tsx` — Animated task flow packets (SVG circle elements with animateMotion) between rooms - `src/components/Starfield.tsx` — Ambient starfield with 60 twinkling stars and drifting nebula clouds - `src/components/AgentOffice.tsx` — Main orchestrator: live ticker, mood bar, queue pressure indicator, crew status cards, demo mode - `src/components/DoorAnimation.tsx` — Door open/close slide animations with glow edges - `src/components/AmbientStation.tsx` — Ship fly-bys, station",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T20:40:30.694Z",
+      "lastRecalledAt": "2026-05-21T19:23:34.180Z",
+      "queryHashes": [
+        "4017ff19c5f9",
+        "f2492a07338b",
+        "c8bff05e32bb"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "src/components/agenttravel.tsx",
+        "l-shaped",
+        "data-stream",
+        "src/components/starfield.tsx",
+        "src/components/agentoffice.tsx",
+        "src/components/dooranimation.tsx",
+        "open/close",
+        "fly-bys"
+      ]
+    },
+    "memory:memory/2026-05-15.md:47:76": {
+      "key": "memory:memory/2026-05-15.md:47:76",
+      "path": "memory/2026-05-15.md",
+      "startLine": 47,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- Wire live data to actual OpenClaw gateway endpoint - Add sound design (optional) - Consider generating higher-res versions of sprites for retina displays ### Dev Server - Running at http://localhost:3000 via launchd (com.openclaw.mission-control) - Uses wrangler dev for Cloudflare Workers build - Auto-starts on boot, keeps alive - All room images and sprites served correctly ### Assets integrated - Andre shared hand-crafted HTML canvas pixel art sprite sheets - Extracted 12 sprites (idle/walking/working x 4 agents) at 320x240 PNG - Each agent has unique visual identity matching their accent color and role ### Andre's spec Full spec saved at `memory/agent-office-spec.md` # 2026-05-15 — D",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T20:40:30.694Z",
+      "lastRecalledAt": "2026-05-17T20:40:30.694Z",
+      "queryHashes": [
+        "4017ff19c5f9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "gateway",
+        "higher-res",
+        "com.openclaw.mission-control",
+        "auto-starts",
+        "hand-crafted",
+        "idle/walking/working",
+        "memory/agent-office-spec.md",
+        "wire"
+      ]
+    },
+    "memory:memory/2026-05-17.md:1:30": {
+      "key": "memory:memory/2026-05-17.md:1:30",
+      "path": "memory/2026-05-17.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# 2026-05-17 — Daily Log ## Task Dispatcher System ### Problem - \"Dashboard Animation\" task was stuck in_progress for 20h with 5% progress - Root cause: task was toggled in_progress→backlog→in_progress rapidly (race condition), then abandoned - No system existed to automatically pick up backlog tasks ### Fix - Reset \"Dashboard Animation\" task back to backlog - Added Task Pickup section to HEARTBEAT.md — checks for backlog tasks every heartbeat, picks up one at a time - Created \"Task Dispatcher\" cron job (every 30 min) as safety net — spawns sub-agents to complete backlog tasks - Both systems in place: heartbeat (fast response) + cron (reliable fallback) ### Files Changed - `HEARTBEAT.md`",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T15:38:23.356Z",
+      "lastRecalledAt": "2026-05-21T15:38:23.356Z",
+      "queryHashes": [
+        "f2492a07338b"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "in-progress",
+        "heartbeat.md",
+        "sub-agents",
+        "log",
+        "task",
+        "dispatcher",
+        "problem",
+        "dashboard"
+      ]
+    },
+    "memory:memory/2026-05-15.md:162:177": {
+      "key": "memory:memory/2026-05-15.md:162:177",
+      "path": "memory/2026-05-15.md",
+      "startLine": 162,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "- Rewrote `AgentOffice.tsx` to use live OpenClaw data via `getAgentStatus` + `getSystemStats` - Added ambient fallback mode (gentle random activity when no live data) - New `AgentTravel.tsx`: L-shaped hallway traversal, SVG collaboration links, data-stream pulses - New `DoorAnimation.tsx`: sliding doors with glow edge + air hiss effect - New `AmbientStation.tsx`: ship fly-bys, chatter ticker, mood lighting, twinkling stars - Updated `live-data.ts` to derive station mood/alert/queue pressure from real data - Enhanced `station-state.ts` TICK with auto-decay and stale incident cleanup - Build: clean, no errors. Pushed to GitHub. ### Still pending - Higher-quality room art (need HTML files from",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T19:23:34.180Z",
+      "lastRecalledAt": "2026-05-22T08:06:28.994Z",
+      "queryHashes": [
+        "c8bff05e32bb",
+        "a5185adaf1bf"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "agentoffice.tsx",
+        "agenttravel.tsx",
+        "l-shaped",
+        "data-stream",
+        "dooranimation.tsx",
+        "ambientstation.tsx",
+        "fly-bys",
+        "live-data.ts"
+      ]
+    },
+    "memory:memory/2026-05-15.md:21:54": {
+      "key": "memory:memory/2026-05-15.md:21:54",
+      "path": "memory/2026-05-15.md",
+      "startLine": 21,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- Framer Motion for all JS animations (no game engine) - CSS keyframes for ambient effects (terminal flicker, star twinkle) - SVG animateMotion for task flow packets (lightweight, no JS loop) - Event-driven state via `stationReducer` — all visual changes triggered by real state transitions - Demo mode cycles: working → collaboration → incident → resolve (loops every 25s) - GPU-composited transforms only (no layout thrashing) ### Agent states implemented - **Idle**: dimmed room, low monitor activity, subtle sprite pulse - **Working**: brighter room, active terminal lines, radar sweep, sprite scale animation - **Collaborating**: agent walks hallway to another room, collaboration link line app",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T19:23:34.180Z",
+      "lastRecalledAt": "2026-05-21T19:23:34.180Z",
+      "queryHashes": [
+        "c8bff05e32bb"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "event-driven",
+        "gpu-composited",
+        "framer",
+        "motion",
+        "all",
+        "animations",
+        "game",
+        "engine"
+      ]
+    },
+    "memory:memory/2026-05-16.md:38:53": {
+      "key": "memory:memory/2026-05-16.md:38:53",
+      "path": "memory/2026-05-16.md",
+      "startLine": 38,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "- **Code bug fixed**: `awaitingReviewCount` scoping error in Dashboard.tsx (variable defined in QuickActionsPanel but referenced in parent Dashboard component) - **Server**: Spacestation page loader had `.validator()` call that doesn't exist in this TanStack Start version — changed to `.inputValidator()`. This was causing 500 errors on ALL pages. ### Living Office Redesign (/visual) - Implemented full agent sprite animation system: idle (breathing + glance + shift), thinking (tilt + bubble), working (lean + glow + typing dots), sleeping (dim + zzz), walking (leg bob), collaborating (bounce + dashed line) - Room ambient animations: Command (monitor cycling + star map rotation + blink), Secur",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T08:06:28.994Z",
+      "lastRecalledAt": "2026-05-22T08:06:28.994Z",
+      "queryHashes": [
+        "a5185adaf1bf"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "dashboard.tsx",
+        "code",
+        "bug",
+        "fixed",
+        "awaitingreviewcount",
+        "scoping",
+        "error",
+        "variable"
+      ]
+    },
+    "memory:memory/2026-05-16.md:50:71": {
+      "key": "memory:memory/2026-05-16.md:50:71",
+      "path": "memory/2026-05-16.md",
+      "startLine": 50,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "- **Backfilled 8 new incidents** (INC-005 through INC-012) from May 14-16 events: - INC-005: Mission Control down — LaunchAgent pointing to deleted Wrangler binary (P1) - INC-006: Rate limit exhaustion — all models 429'd starting May 15 (P1) - INC-007: Cron job failures — Git Auto-Commit timeout + Activity Summary (P2) - INC-008: WD MyCloud mount failing — /Volumes/Public-1 not found (P2) - INC-009: Tasks stuck In Progress (P3) - INC-010: Build error — AnimatePresence SSR failure (P2) - INC-011: Port conflict — dev server jumping between 3000/3001 (P3) - INC-012: Disk space warning — Data volume at 85% (P3) - **Auto-detection**: Shell script `auto-detect-incidents.sh` runs ev",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T08:06:28.994Z",
+      "lastRecalledAt": "2026-05-22T08:06:28.994Z",
+      "queryHashes": [
+        "a5185adaf1bf"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "inc-005",
+        "inc-012",
+        "14-16",
+        "inc-006",
+        "inc-007",
+        "auto-commit",
+        "inc-008",
+        "volumes/public-1"
       ]
     }
   }
