@@ -77,6 +77,13 @@ These are the mistakes that have happened before and must never happen again:
 
 ## Gotchas
 
+### Lovable/Replit Sprite Exports May Have Solid Backgrounds
+- When Lovable or Replit generates/upscales sprite PNGs, they may be exported with a **solid background** instead of transparency
+- Specifically: `*-4x-v2.png` files were exported with `rgb(18, 24, 42)` navy background — appeared as grey boxes behind agent sprites on the station floorplan
+- The original `*.png` files (without `-4x-v2`) had proper transparency
+- **Fix:** Use the original transparent PNGs, or re-export from source with alpha channel
+- **Verification:** After any sprite asset update, check a few pixels with an image tool to confirm transparency before committing
+
 ### FreeRide Watcher Burns Rate Limits During Pool Exhaustion
 - The `freeride-watcher` LaunchAgent polls OpenRouter every ~16 minutes to test model health
 - When the free model pool is exhausted, each poll generates a 429 + a failed rotation attempt (another 429)
