@@ -9,6 +9,14 @@ This folder is home. Treat it that way.
 - **Use agents**: Offload complex debugging/implementation to subagents. Don't spin your wheels alone.
 - **Multi-file refactors**: Use direct edits in sequence — one file at a time, commit after each. It's slower but costs zero tokens. Quick single-file fixes stay with direct edit/write tools.
 
+## Task Progress Reporting
+When working on a task, you MUST update the task's progress in `data/tasks.json`:
+- Set `currentStep` to a short description of what you're actively doing (e.g. "Refactoring error feed buttons", "Writing tests for dispatch queue")
+- Set `lastActivity` to the current ISO timestamp every time you make meaningful progress
+- Set `progress` to an estimated completion percentage (0-100) based on actual work done, NOT time elapsed
+- When you complete the task, set `progress: 100`, `status: "done"`, and write a completion `summary`
+- The Kanban progress bar and step label display this data in real time — if you don't update it, the card shows "Waiting for agent..."
+
 ## First Run
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
