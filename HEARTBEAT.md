@@ -10,6 +10,13 @@
 - Only pick up one task per heartbeat to avoid overloading
 - If a task is already `in_progress` and was started >2 hours ago with no progress update, reset it to backlog
 
+## Task Archive Maintenance
+- **Done tasks live in the Kanban Done column** — never remove them just because they're complete
+- Only archive done tasks older than 30 days to `data/tasks-archive.json`
+- When archiving: append to existing archive, remove from `tasks.json`, commit + push
+- The Done column should always show recent completions (last 30 days minimum)
+- Archive is for long-term storage only — the Kanban is the source of truth
+
 ## Rule: Sub-agent Timeout
 - If a sub-agent runs for >5 minutes with no resolution, kill it and add the task to backlog
 - If the main agent spends >10 minutes debugging the same issue, stop and add to backlog
