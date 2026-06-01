@@ -1,5 +1,57 @@
 [
   {
+    "id": "INC-039",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-01T07:23:16.000Z",
+    "lastActivity": "2026-06-01T07:23:16.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-01T07:23:16.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": []
+  },
+  {
+    "id": "INC-038",
+    "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
+    "severity": "P3",
+    "status": "TRIAGE",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-01T07:23:15.000Z",
+    "lastActivity": "2026-06-01T07:23:15.000Z",
+    "summary": "3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-01T07:23:15.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": []
+  },
+  {
     "id": "INC-037",
     "title": "Daily Station Check duplicate cron causing nightly token burn",
     "severity": "P2",
@@ -10,7 +62,7 @@
     "opened": "2026-05-21T23:00:00.000Z",
     "resolved": "2026-06-01T07:31:00.000Z",
     "lastActivity": "2026-06-01T07:31:00.000Z",
-    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21–31. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
+    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21\u201331. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
     "tags": [
       "cron",
       "token-burn",
@@ -21,7 +73,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T23:00:00.000Z",
-        "message": "First recorded failure of dae7406b — agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
+        "message": "First recorded failure of dae7406b \u2014 agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
         "actor": "system"
       },
       {
