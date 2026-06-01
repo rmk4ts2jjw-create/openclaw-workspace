@@ -1,5 +1,91 @@
 [
   {
+    "id": "INC-037",
+    "title": "Daily Station Check duplicate cron causing nightly token burn",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": true,
+    "escalated": false,
+    "opened": "2026-05-21T23:00:00.000Z",
+    "resolved": "2026-06-01T07:31:00.000Z",
+    "lastActivity": "2026-06-01T07:31:00.000Z",
+    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21–31. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
+    "tags": [
+      "cron",
+      "token-burn",
+      "duplicate",
+      "agentTurn",
+      "timeout"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T23:00:00.000Z",
+        "message": "First recorded failure of dae7406b — agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-31T21:51:00.000Z",
+        "message": "Andre reports Daily Station Check has been 'fixed' three times and still burning tokens. Investigation launched.",
+        "actor": "Andre"
+      },
+      {
+        "ts": "2026-06-01T07:31:00.000Z",
+        "message": "Root cause confirmed: dae7406b was enabled the entire time alongside the LaunchAgent. Cron job permanently deleted. Added FRAMEWORK.md gotcha: always DELETE old cron when replacing with LaunchAgent.",
+        "actor": "Space Monkey"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Delete old cron job dae7406b",
+        "description": "Permanently delete the agentTurn cron, not just disable it",
+        "status": "completed",
+        "completedAt": "2026-06-01T07:31:00.000Z",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Add FRAMEWORK.md gotcha",
+        "description": "Document the rule: DELETE old cron when replacing with LaunchAgent",
+        "status": "completed",
+        "completedAt": "2026-06-01T07:31:00.000Z",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Verify LaunchAgent is sole mechanism",
+        "description": "Confirm com.openclaw.daily-station-check is the only daily check mechanism and it's shell-only",
+        "status": "completed",
+        "completedAt": "2026-06-01T07:31:00.000Z",
+        "completedBy": "Space Monkey"
+      }
+    ]
+  },
+  {
+    "id": "INC-036",
+    "title": "Rate limit exhaustion \u2014 11 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-31T21:51:22.000Z",
+    "lastActivity": "2026-05-31T21:51:22.000Z",
+    "summary": "Gateway log shows 11 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-31T21:51:22.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": []
+  },
+  {
     "id": "INC-035",
     "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
     "severity": "P2",

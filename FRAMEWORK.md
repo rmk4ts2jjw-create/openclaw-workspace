@@ -84,6 +84,13 @@ These are the mistakes that have happened before and must never happen again:
 - **Fix:** Use the original transparent PNGs, or re-export from source with alpha channel
 - **Verification:** After any sprite asset update, check a few pixels with an image tool to confirm transparency before committing
 
+### Cron Job Replacement: DELETE Old Cron, Don't Just Disable
+- When replacing an OpenClaw cron job with a LaunchAgent (or any other mechanism), **DELETE the old cron job immediately**
+- Do NOT just disable it — disabled jobs can be re-enabled accidentally or survive config resets that re-enable all jobs
+- **Always verify deletion with `openclaw cron list`** — confirm the job ID is gone, not just `enabled: false`
+- **Real incident:** Daily Station Check cron `dae7406b` was an `agentTurn` job that burned tokens for 10+ days (May 21–31) because it was supposed to be disabled when the LaunchAgent replacement was created, but it remained enabled. It spawned an isolated AI session every night at 11pm, hit the 120s timeout in `model-call-started`, and burned tokens on each attempt. The shell-only LaunchAgent was working correctly the whole time — the old cron was a duplicate nobody deleted.
+- **Rule:** New replacement goes live → old cron gets deleted the same session. No exceptions.
+
 ### FreeRide Watcher Burns Rate Limits During Pool Exhaustion
 - The `freeride-watcher` LaunchAgent polls OpenRouter every ~16 minutes to test model health
 - When the free model pool is exhausted, each poll generates a 429 + a failed rotation attempt (another 429)
