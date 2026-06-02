@@ -1488,7 +1488,7 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time \u2014 is a job degrading? Failing intermittently? The timeline makes temporal patterns visible. [auto-dispatched 2026-06-02 18:00]",
+    "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time \u2014 is a job degrading? Failing intermittently? The timeline makes temporal patterns visible. [auto-dispatched 2026-06-02 18:00] [auto-dispatched 2026-06-02 20:30]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -1501,9 +1501,19 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no activity for >2h (last history entry 3.5h ago)"
+      },
+      {
+        "ts": "2026-06-02T19:43:22.436008+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Re-reset: dispatcher re-dispatched this task after previous stall reset, but no agent picked it up again. Setting dispatchCount=3 to block further auto-dispatches."
       }
     ],
-    "stalledAt": "2026-06-02T18:14:28.463257+00:00"
+    "stalledAt": "2026-06-02T19:43:22.436008+00:00",
+    "dispatchCount": 3,
+    "currentStep": null,
+    "progress": 0,
+    "lastUpdated": "2026-06-02T19:43:22.436008+00:00"
   },
   {
     "id": "task-9392a52f",
