@@ -129,6 +129,23 @@ backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stall
 if not backlog:
     exit(0)
 
+# Filter out tasks that have been dispatched 3+ times without real progress
+# Count [auto-dispatched in note vs progress history entries
+def should_skip_dispatch(t):
+    note = t.get('note', '')
+    history = t.get('history', [])
+    dispatch_count = note.count('[auto-dispatched')
+    if dispatch_count < 3:
+        return False
+    # Check if there are any non-dispatch, non-reassign history entries after the last dispatch
+    # If not, the task has been re-dispitched with no real work
+    return True
+
+backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and not should_skip_dispatch(t)]
+if not backlog:
+    print("SKIP_ALL:All backlog tasks have been dispatched multiple times with no progress")
+    exit(0)
+
 backlog.sort(key=lambda t: t['id'])
 picked = backlog[0]
 

@@ -15,7 +15,7 @@
   - Else use the `ts` field if it's a valid ISO timestamp (skip if it's "just now" or non-parseable)
   - Else use the most recent `history[].ts` entry
   - If NO valid timestamp can be found at all, treat as stalled (it's broken data)
-- If staleness > 2 hours: reset to `backlog`, add history entry explaining why
+- If staleness > 2 hours: reset to `backlog`, set `stalledAt` to the current ISO timestamp, add history entry explaining why. The `stalledAt` field prevents the work-dispatcher from immediately re-dispatching the same task.
 - If staleness > 30 minutes but < 2 hours: log a warning but don't reset yet
 - The `startedAt` field is NOT reliable — do not use it for stall detection
 - After resetting, commit the change so the Kanban reflects reality immediately
