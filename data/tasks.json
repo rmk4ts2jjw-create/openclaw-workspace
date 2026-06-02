@@ -1,12 +1,154 @@
 [
   {
+    "id": "task-mp7d3s9w-1lmf",
+    "title": "Task Completion — summary and visibility improvement.",
+    "assignee": "archivist",
+    "status": "in_progress",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Task Completion — summary and visibility improvement.\n\nThe auto-move from In Progress to Done works well. But when a task \nmoves to Done, I can't tell WHAT was actually done. The card just \nsays \"Done\" with no context.\n\nFix:\n\n1. When a task completes and auto-moves to Done, the card must \n   include a brief summary of what was accomplished. This summary \n   should be:\n   - Written by the agent that completed the task\n   - 1-3 sentences describing the actual outcome\n   - Stored on the task card itself, visible in the Kanban view\n   - Also visible when I click \"More Details\" on the card\n\n2. The \"More Details\" view on any Done card should show:\n   - Original task description\n   - Completion summary (what was actually done)\n   - Which agent completed it\n   - Timestamp of completion\n   - Any relevant links or artifacts produced (files changed, \n     commits made, etc.)\n\n3. In the Kanban view, a Done card should show at minimum:\n   - Task title\n   - One-line completion summary (truncated if needed)\n   - \"Done by [Agent] • [time]\"\n\n4. If the task was created manually by me (not auto-generated from \n   an error or cron job), the agent who picks it up should write \n   the completion summary before moving it to Done. If no summary \n   is written, the task should NOT auto-move — it should stay In \n   Progress with a flag: \"Awaiting completion summary.\"\n\nThis applies to ALL tasks going forward. Retroactively fixing old \nDone tasks is optional — only if quick.\n\nReport your approach before implementing.",
+    "history": [
+      {
+        "ts": "2026-05-15T20:20:43.364Z",
+        "action": "created",
+        "actor": "archivist",
+        "details": "Task created"
+      },
+      {
+        "ts": "2026-05-15T20:20:45.084Z",
+        "action": "started",
+        "actor": "archivist",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-05-15T20:36:50.973Z",
+        "action": "started",
+        "actor": "archivist",
+        "details": "Status changed from done to in_progress"
+      },
+      {
+        "ts": "2026-06-01T08:00:00.000Z",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — stalled (started 2026-05-15T20:36 with no progress)"
+      },
+      {
+        "ts": "2026-06-02T14:44:48.696Z",
+        "action": "started",
+        "actor": "archivist",
+        "details": "Status changed from backlog to in_progress"
+      }
+    ],
+    "lastUpdated": "2026-06-02T14:44:48.696Z",
+    "progress": 5,
+    "stalledAt": "2026-06-02T11:48:33.545348+00:00",
+    "lastActivity": "2026-06-02T14:44:48.696Z",
+    "currentStep": "Agent starting…",
+    "startedAt": "2026-06-02T14:44:48.696Z"
+  },
+  {
+    "id": "task-mp7cbyxz-0ztq",
+    "title": "Error Feed — behaviour review and fix.",
+    "assignee": "lifesupport",
+    "status": "in_progress",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Error Feed — behaviour review and fix.\n\nThe error feed currently has Investigate / Resolved / Skip buttons but \nthe workflow is confusing. Here's how it should actually work:\n\n═══════════════════════════════\nCORRECT ERROR FEED WORKFLOW\n═══════════════════════════════\n\n1. A cron job fails → error appears in the Error Feed tab with a \n   \"NEW\" badge\n\n2. I click \"Investigate\" → \n   - The error status changes to \"IN PROGRESS\" \n   - A corresponding task is automatically created in the Tasks \n     section under \"In Progress\" so the crew knows to work on it\n   - The error stays visible in the feed with an in-progress indicator\n   - The button changes to show \"Resolved\" and \"Skip\"\n\n3. The crew fixes the underlying issue. The cron job runs successfully \n   on its next scheduled run →\n   - The error automatically clears from the Error Feed\n   - The linked task in the Tasks section moves to \"Done\"\n   - No manual \"Resolved\" click needed — the system verified the fix\n\n4. If I click \"Resolved\" manually →\n   - For when I've verified the fix myself\n   - Error disappears from the feed\n   - Linked task moves to Done\n\n5. If I click \"Skip\" →\n   - For known non-critical issues I'm choosing to ignore\n   - Error disappears from the feed\n   - No task is created\n\n6. If the same job fails again later →\n   - A NEW error appears (not the old one reopened)\n   - Fresh timestamp, fresh status\n   - Does NOT resurrect the old skipped/resolved error\n\n═══════════════════════════════\nKEY RULES\n═══════════════════════════════\n\n- Errors should NOT show \"Completed\" with an \"In Progress\" flag \n  at the same time (current bug)\n- When a cron job succeeds after being in error state, the error \n  should auto-clear — the system verified the fix\n- The \"Investigate\" button creates a task in the Tasks board so \n  work is tracked\n- The error feed reflects REALITY: if the job is still failing, \n  the error stays. If it succeeds, the error goes away.\n- The cron job entry in the Scheduler list should show an error \n  badge ONLY while there's an active unresolved error\n\n═══════════════════════════════\nWHAT TO FIX NOW\n═══════════════════════════════\n\n1. Fix the double-status bug (no more \"Completed\" + \"In Progress\" \n   showing simultaneously)\n2. Wire Investigate button to auto-create a task in the Tasks board\n3. Wire cron job success to auto-clear the corresponding error\n4. Wire cron job error badge to auto-clear when error is resolved\n5. Confirm Skip behaviour works as described above\n6. Test the full flow end-to-end\n\nReport what the current behaviour actually is, then fix it to \nmatch this spec.  [auto-dispatched 2026-06-01 11:53] [auto-dispatched 2026-06-02 11:59] [auto-dispatched 2026-06-02 12:29] [HEARTBEAT 2026-06-02 12:47: Task has been auto-dispatched 6+ times with zero progress. Setting stalledAt to prevent further re-dispatch. Needs human triage.] [auto-dispatched 2026-06-02 12:59] [auto-dispatched 2026-06-02 14:29]",
+    "history": [
+      {
+        "ts": "2026-05-15T19:59:05.639Z",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Task created"
+      },
+      {
+        "ts": "2026-05-15T19:59:07.177Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-01T08:00:00.000Z",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — stalled (started 2026-05-15T20:36 with no progress)"
+      },
+      {
+        "ts": "2026-06-01T09:00:00.000Z",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — stale (started May 15, no progress)"
+      },
+      {
+        "ts": "2026-06-01T09:43:21.368763+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — stalled (397h with no progress update)"
+      },
+      {
+        "ts": "2026-06-01T11:00:00.000Z",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — task was stuck in in_progress with no startedAt, likely from incomplete prior dispatch"
+      },
+      {
+        "ts": "2026-06-01T11:30:00.000Z",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset to backlog — task has been stalled since May 15 with no progress. Note: keeps flipping back to in_progress when MC frontend saves stale state."
+      },
+      {
+        "ts": "2026-06-02T10:38:39.308375+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — task keeps flip-flopping. Needs human triage."
+      },
+      {
+        "ts": "2026-06-02T11:15:25.630285+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog - 10th flip-flop. Dispatcher keeps re-picking. Needs human triage."
+      },
+      {
+        "ts": "2026-06-02T11:47:40.689677+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog. Task has been auto-dispatched 6+ times with zero progress. stalledAt set to prevent re-dispatch loop. Needs human triage."
+      },
+      {
+        "ts": "2026-06-02T13:29:36.701419+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog — flip-flopped again. Frontend save-tasks overwrote stalledAt. Protected fields now added to merge logic."
+      },
+      {
+        "ts": "2026-06-02T14:25:57.494365+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset to backlog. Stalled. Protected from re-dispatch."
+      },
+      {
+        "ts": "2026-06-02T14:44:31.229Z",
+        "action": "started",
+        "actor": "lifesupport",
+        "details": "Status changed from backlog to in_progress"
+      }
+    ],
+    "lastUpdated": "2026-06-02T14:44:31.229Z",
+    "lastActivity": "2026-06-02T14:44:31.229Z",
+    "stalledAt": "2026-06-02T14:36:30.322389+00:00",
+    "currentStep": "Agent starting…",
+    "startedAt": "2026-06-02T14:44:31.229Z",
+    "progress": 5
+  },
+  {
     "id": "task-mpwfiydb-6khn",
     "title": "Opencode Coding Buddy",
     "assignee": "monkey",
     "status": "done",
     "priority": "P3",
     "ts": "just now",
-    "note": "OpenCode was tested and has native OpenRouter support. It lists all\nOpenRouter models including free tier options. The login command had\na bug but we can likely configure the API key directly.\n\nInvestigate OpenCode as our coding tool:\n\n1. OpenCode is already installed. Check: which opencode\n2. It supports non-interactive mode: opencode run --model [model] \"[prompt]\"\n3. It has native OpenRouter model support \u2014 no custom endpoint config needed\n4. Check if we can set the API key directly via env var or config file\n5. If it works, this becomes our coding tool for complex multi-file work.\n6. Free coding models available:\n   - openrouter/qwen/qwen3-coder:free (best for coding)\n   - openrouter/moonshotai/kimi-k2.6:free (fallback)\n   - openrouter/openrouter/free (emergency)\n\nDo NOT add to FRAMEWORK.md yet. Just test and report if it works.",
+    "note": "OpenCode was tested and has native OpenRouter support. It lists all\nOpenRouter models including free tier options. The login command had\na bug but we can likely configure the API key directly.\n\nInvestigate OpenCode as our coding tool:\n\n1. OpenCode is already installed. Check: which opencode\n2. It supports non-interactive mode: opencode run --model [model] \"[prompt]\"\n3. It has native OpenRouter model support — no custom endpoint config needed\n4. Check if we can set the API key directly via env var or config file\n5. If it works, this becomes our coding tool for complex multi-file work.\n6. Free coding models available:\n   - openrouter/qwen/qwen3-coder:free (best for coding)\n   - openrouter/moonshotai/kimi-k2.6:free (fallback)\n   - openrouter/openrouter/free (emergency)\n\nDo NOT add to FRAMEWORK.md yet. Just test and report if it works.",
     "history": [
       {
         "ts": "2026-06-02T12:34:22.170179+00:00",
@@ -18,7 +160,7 @@
         "ts": "2026-06-02T13:19:16.441487+00:00",
         "action": "progress",
         "actor": "monkey",
-        "details": "Investigation: OpenCode v1.15.13 installed at ~/.opencode/bin/opencode. OPENROUTER_API_KEY picked up automatically. kimi-k2.6:free works for simple prompts. qwen3-coder:free and kimi-k2.6:free both hit 429 rate limits on free tier after a few calls. Title generation uses claude-haiku-4.5 (paid) and fails with 402 \u2014 no credits remaining. Config format not yet figured out. Need: 1) add OpenRouter credits for title gen, 2) wait for rate limit cooldown, 3) figure out opencode.json schema for setting small model."
+        "details": "Investigation: OpenCode v1.15.13 installed at ~/.opencode/bin/opencode. OPENROUTER_API_KEY picked up automatically. kimi-k2.6:free works for simple prompts. qwen3-coder:free and kimi-k2.6:free both hit 429 rate limits on free tier after a few calls. Title generation uses claude-haiku-4.5 (paid) and fails with 402 — no credits remaining. Config format not yet figured out. Need: 1) add OpenRouter credits for title gen, 2) wait for rate limit cooldown, 3) figure out opencode.json schema for setting small model."
       },
       {
         "ts": "2026-06-02T14:25:57.494365+00:00",
@@ -34,7 +176,7 @@
       }
     ],
     "lastActivity": "2026-06-02T14:35:40.024471+00:00",
-    "currentStep": "Testing complete \u2014 config working, models rate-limited",
+    "currentStep": "Testing complete — config working, models rate-limited",
     "progress": 100,
     "completedAt": "2026-06-02T14:35:40.024471+00:00",
     "summary": "OpenCode v1.15.13 works with OpenRouter. Config at ~/.config/opencode/opencode.json sets model=qwen/qwen3-coder:free, title/small=kimi-k2.6:free (eliminates 402 error). openrouter/free works for simple prompts. All free coding models hit aggressive rate limits making sustained file-editing unreliable. Recommendation: add $5-10 OpenRouter credits for production use."
@@ -57,7 +199,7 @@
   },
   {
     "id": "T-109",
-    "title": "Settings page broken \u2014 investigate and fix",
+    "title": "Settings page broken — investigate and fix",
     "assignee": "engineer",
     "status": "done",
     "ts": "1h ago",
@@ -122,7 +264,7 @@
         "ts": "2026-05-16T01:30:00Z",
         "action": "completed",
         "actor": "space-monkey",
-        "details": "Resolved \u2014 old cron jobs replaced with single lightweight daily check"
+        "details": "Resolved — old cron jobs replaced with single lightweight daily check"
       }
     ],
     "errorId": "err-3249748f-ac97-487d-812e-9a0509572c8f",
@@ -148,7 +290,7 @@
         "ts": "2026-05-16T01:30:00Z",
         "action": "completed",
         "actor": "space-monkey",
-        "details": "Resolved \u2014 old cron jobs replaced with single lightweight daily check"
+        "details": "Resolved — old cron jobs replaced with single lightweight daily check"
       }
     ],
     "errorId": "err-39afe8f3-e4fc-430e-9048-f0150710ee2e",
@@ -174,7 +316,7 @@
         "ts": "2026-05-16T01:30:00Z",
         "action": "completed",
         "actor": "space-monkey",
-        "details": "Resolved \u2014 old cron jobs replaced with single lightweight daily check"
+        "details": "Resolved — old cron jobs replaced with single lightweight daily check"
       }
     ],
     "errorId": "err-ec658506-32a6-4003-92d0-a63b083771a7",
@@ -200,7 +342,7 @@
         "ts": "2026-05-16T01:30:00Z",
         "action": "completed",
         "actor": "space-monkey",
-        "details": "Resolved \u2014 old cron jobs replaced with single lightweight daily check"
+        "details": "Resolved — old cron jobs replaced with single lightweight daily check"
       }
     ],
     "errorId": "err-cd8044dc-c68b-4113-82f6-d19203937f1a",
@@ -226,7 +368,7 @@
         "ts": "2026-05-16T01:30:00Z",
         "action": "completed",
         "actor": "space-monkey",
-        "details": "Resolved \u2014 old cron jobs replaced with single lightweight daily check"
+        "details": "Resolved — old cron jobs replaced with single lightweight daily check"
       }
     ],
     "errorId": "err-31eeb9bf-5402-42d1-b07b-d7f7af5e17c1",
@@ -242,7 +384,7 @@
     "ts": "just now",
     "completedAt": "2026-05-19T08:05:17.644Z",
     "progress": 100,
-    "note": "The living office animations aren't rendering despite being deployed. \nI need this area to be alive \u2014 imagine a fish tank. The station is the \ntank, the agents are the fish, tasks are the food. Fish don't sit still \nin stagnant water. They swim, drift, feed, interact. The tank is always \nalive even when nothing's happening.\n\nIf the current approach works, fix it. If it doesn't, rebuild it.\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPHASE 1: DIAGNOSTIC\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nAnswer with evidence, not assumptions:\n\n1. How are sprites rendered? Canvas? DOM <img> tags? SVG? React components?\n   Paste the relevant 20 lines from StationRoom.tsx.\n\n2. How are animations applied? CSS keyframes? Framer Motion? \n   requestAnimationFrame? Canvas draw loop?\n\n3. Open browser DevTools (F12) \u2192 Elements \u2192 find a sprite element.\n   - Does it have animation/transition/transform CSS properties?\n   - Console tab: any JavaScript errors?\n   - Network tab: are the CSS files loading? Search for \"sprite-working\" \n     or \"ambient-pulse\" in loaded stylesheets.\n\n4. What data is reaching StationRoom? Console.log agent name, status, \n   currentAction. Are values changing or stuck?\n\n5. Are the CSS classes (sprite-working, sprite-sleeping, ambient-pulse, \n   ambient-flicker) actually on the DOM elements? Do the CSS rules exist?\n\nReport findings before making changes.\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPHASE 2: IF CSS ANIMATIONS WORK \u2014 FIX THE BUG\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nIf the diagnostic shows animations are present but not firing:\n- Fix whatever's blocking them (missing class application, data not \n  updating, SSR vs client mismatch)\n- Force a visible test: Space Monkey with green \"TEST\" bubble, \n  Systems Engineer walking across the floorplan\n- Verify in browser DevTools that animation properties are active\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPHASE 3: IF CSS ANIMATIONS DON'T WORK \u2014 CANVAS FISH TANK\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nIf CSS animations are fundamentally unreliable, rebuild using a single \nHTML5 Canvas with a requestAnimationFrame loop \u2014 like an actual fish \ntank simulation.\n\nARCHITECTURE:\n- One full-size Canvas element fills the Spacestation area\n- Room backgrounds drawn once as a static layer\n- Agent sprites drawn on top as an animated layer\n- Single requestAnimationFrame loop at 60fps:\n  1. Clear sprite layer\n  2. Calculate each agent's position based on state\n  3. Draw sprites at current positions\n  4. Repeat\n\nAGENT BEHAVIOUR (like fish in a tank):\n- IDLE: gentle drift within home room (slow random movement in a \n  small radius, like a fish hovering). Changes direction every 5-8 \n  seconds. Never completely still.\n- WORKING: moves to task location within room. Small rapid movements \n  like a fish feeding. Status bubble appears.\n- WALKING: linear interpolation from current position to target room. \n  Walking sprite frames cycle. ~2 seconds to cross between rooms.\n- SLEEPING: sinks slightly lower in the room. Minimal drift. Small \n  \"zzz\" particles float upward and fade.\n- COLLABORATING: two agents move close together, face each other. \n  Small dashes or particles flow between them.\n\nALWAYS-ON MOVEMENT:\n- Even when all agents are idle, they DRIFT. Not static. Not frozen.\n- Like a real fish tank \u2014 no one stares at it and wonders \"is it on?\"\n- Subtle but constant. The eye catches the movement.\n- Room ambience (radar, sparks, lanterns, monitors) continues as \n  background animation on the static layer.\n\nPERFORMANCE:\n- GPU-composited canvas (transform: translateZ(0))\n- requestAnimationFrame pauses when tab hidden (Page Visibility API)\n- Agent positions updated each frame, sprites drawn via \n  ctx.drawImage() with sprite sheet selection based on state\n- Target: 60fps, zero layout reflow\n\nDEBUG VISIBILITY:\n- Add a small frame counter in the corner of the canvas\n- Add agent position log (x, y, state) that updates visibly\n- This proves the animation loop is running\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nDELIVERABLE\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nAfter Phase 1 diagnostic:\n- Report what rendering method is used\n- Report what animation method is used\n- Report whether animations are present in the DOM but not visible, \n  or completely absent\n\nThen proceed to Phase 2 or Phase 3 based on findings.\n\nIf Phase 3 (canvas rebuild):\n- The fish tank should be visibly alive within one session\n- I should see agents drifting even when idle\n- I should see the frame counter ticking to prove the loop runs\n- Commit and push when working",
+    "note": "The living office animations aren't rendering despite being deployed. \nI need this area to be alive — imagine a fish tank. The station is the \ntank, the agents are the fish, tasks are the food. Fish don't sit still \nin stagnant water. They swim, drift, feed, interact. The tank is always \nalive even when nothing's happening.\n\nIf the current approach works, fix it. If it doesn't, rebuild it.\n\n═══════════════════════════════\nPHASE 1: DIAGNOSTIC\n═══════════════════════════════\n\nAnswer with evidence, not assumptions:\n\n1. How are sprites rendered? Canvas? DOM <img> tags? SVG? React components?\n   Paste the relevant 20 lines from StationRoom.tsx.\n\n2. How are animations applied? CSS keyframes? Framer Motion? \n   requestAnimationFrame? Canvas draw loop?\n\n3. Open browser DevTools (F12) → Elements → find a sprite element.\n   - Does it have animation/transition/transform CSS properties?\n   - Console tab: any JavaScript errors?\n   - Network tab: are the CSS files loading? Search for \"sprite-working\" \n     or \"ambient-pulse\" in loaded stylesheets.\n\n4. What data is reaching StationRoom? Console.log agent name, status, \n   currentAction. Are values changing or stuck?\n\n5. Are the CSS classes (sprite-working, sprite-sleeping, ambient-pulse, \n   ambient-flicker) actually on the DOM elements? Do the CSS rules exist?\n\nReport findings before making changes.\n\n═══════════════════════════════\nPHASE 2: IF CSS ANIMATIONS WORK — FIX THE BUG\n═══════════════════════════════\n\nIf the diagnostic shows animations are present but not firing:\n- Fix whatever's blocking them (missing class application, data not \n  updating, SSR vs client mismatch)\n- Force a visible test: Space Monkey with green \"TEST\" bubble, \n  Systems Engineer walking across the floorplan\n- Verify in browser DevTools that animation properties are active\n\n═══════════════════════════════\nPHASE 3: IF CSS ANIMATIONS DON'T WORK — CANVAS FISH TANK\n═══════════════════════════════\n\nIf CSS animations are fundamentally unreliable, rebuild using a single \nHTML5 Canvas with a requestAnimationFrame loop — like an actual fish \ntank simulation.\n\nARCHITECTURE:\n- One full-size Canvas element fills the Spacestation area\n- Room backgrounds drawn once as a static layer\n- Agent sprites drawn on top as an animated layer\n- Single requestAnimationFrame loop at 60fps:\n  1. Clear sprite layer\n  2. Calculate each agent's position based on state\n  3. Draw sprites at current positions\n  4. Repeat\n\nAGENT BEHAVIOUR (like fish in a tank):\n- IDLE: gentle drift within home room (slow random movement in a \n  small radius, like a fish hovering). Changes direction every 5-8 \n  seconds. Never completely still.\n- WORKING: moves to task location within room. Small rapid movements \n  like a fish feeding. Status bubble appears.\n- WALKING: linear interpolation from current position to target room. \n  Walking sprite frames cycle. ~2 seconds to cross between rooms.\n- SLEEPING: sinks slightly lower in the room. Minimal drift. Small \n  \"zzz\" particles float upward and fade.\n- COLLABORATING: two agents move close together, face each other. \n  Small dashes or particles flow between them.\n\nALWAYS-ON MOVEMENT:\n- Even when all agents are idle, they DRIFT. Not static. Not frozen.\n- Like a real fish tank — no one stares at it and wonders \"is it on?\"\n- Subtle but constant. The eye catches the movement.\n- Room ambience (radar, sparks, lanterns, monitors) continues as \n  background animation on the static layer.\n\nPERFORMANCE:\n- GPU-composited canvas (transform: translateZ(0))\n- requestAnimationFrame pauses when tab hidden (Page Visibility API)\n- Agent positions updated each frame, sprites drawn via \n  ctx.drawImage() with sprite sheet selection based on state\n- Target: 60fps, zero layout reflow\n\nDEBUG VISIBILITY:\n- Add a small frame counter in the corner of the canvas\n- Add agent position log (x, y, state) that updates visibly\n- This proves the animation loop is running\n\n═══════════════════════════════\nDELIVERABLE\n═══════════════════════════════\n\nAfter Phase 1 diagnostic:\n- Report what rendering method is used\n- Report what animation method is used\n- Report whether animations are present in the DOM but not visible, \n  or completely absent\n\nThen proceed to Phase 2 or Phase 3 based on findings.\n\nIf Phase 3 (canvas rebuild):\n- The fish tank should be visibly alive within one session\n- I should see agents drifting even when idle\n- I should see the frame counter ticking to prove the loop runs\n- Commit and push when working",
     "history": [
       {
         "ts": "2026-05-16T18:47:19.074Z",
@@ -284,7 +426,7 @@
         "ts": "2026-05-17T21:57:00.000Z",
         "action": "reassigned",
         "actor": "monkey",
-        "details": "Reset from in_progress to backlog \u2014 task was stuck for 20h with no progress. Will be picked up by dispatcher."
+        "details": "Reset from in_progress to backlog — task was stuck for 20h with no progress. Will be picked up by dispatcher."
       },
       {
         "ts": "2026-05-19T02:28:00.000Z",
@@ -301,7 +443,7 @@
     ],
     "lastUpdated": "2026-05-19T08:05:17.644Z",
     "startedAt": "2026-05-19T02:28:00.000Z",
-    "summary": "Completed by monkey. Last action: started \u2014 Status changed from backlog to in_progress by Task Dispatcher"
+    "summary": "Completed by monkey. Last action: started — Status changed from backlog to in_progress by Task Dispatcher"
   },
   {
     "id": "err-err-7e2c02bf-ae83-44be-8012-adfcdd42f42f",
@@ -351,7 +493,7 @@
         "ts": "2026-05-21T16:35:00.000Z",
         "action": "reassigned",
         "actor": "monkey",
-        "details": "Reset from in_progress to backlog \u2014 Task Dispatcher cron self-error (session takeover, 5 consecutive). This is an OpenClaw infrastructure issue, not investigable by agents. Needs OpenClaw update or cron config change. Resetting to reduce noise."
+        "details": "Reset from in_progress to backlog — Task Dispatcher cron self-error (session takeover, 5 consecutive). This is an OpenClaw infrastructure issue, not investigable by agents. Needs OpenClaw update or cron config change. Resetting to reduce noise."
       },
       {
         "ts": "2026-05-21T17:25:00.000Z",
@@ -365,7 +507,7 @@
     "completedAt": "2026-05-21T17:25:00.000Z",
     "lastUpdated": "2026-05-21T17:25:00.000Z",
     "progress": 100,
-    "summary": "Resolved \u2014 Task Dispatcher cron is healthy (status: ok). Session takeover errors were transient. No further action needed."
+    "summary": "Resolved — Task Dispatcher cron is healthy (status: ok). Session takeover errors were transient. No further action needed."
   },
   {
     "id": "err-err-dae7406b-ec78-4752-ba93-91bc62541f7d",
@@ -398,7 +540,7 @@
         "ts": "2026-05-21T16:35:00.000Z",
         "action": "reassigned",
         "actor": "monkey",
-        "details": "Reset from in_progress to backlog \u2014 task stale for ~3h with no progress update. Will be re-picked up by dispatcher or main session."
+        "details": "Reset from in_progress to backlog — task stale for ~3h with no progress update. Will be re-picked up by dispatcher or main session."
       },
       {
         "ts": "2026-05-21T17:25:00.000Z",
@@ -413,7 +555,7 @@
     "startedAt": "2026-05-21T13:40:00.000Z",
     "completedAt": "2026-05-21T17:25:00.000Z",
     "progress": 100,
-    "summary": "Resolved \u2014 Daily Station Check cron is healthy (status: ok). Timeout was transient. No further action needed."
+    "summary": "Resolved — Daily Station Check cron is healthy (status: ok). Timeout was transient. No further action needed."
   },
   {
     "id": "task-mprfp410-oz8b",
@@ -422,7 +564,7 @@
     "status": "done",
     "priority": "P3",
     "ts": "just now",
-    "note": "Settings page fixes confirmed. The version, status, crons, and port \nlabels are all correct now. \n\nOne final check: the Run Backup button calls openclaw-backup-quick.sh. \nWe know this script targets /Volumes/Public/ which may not be mounted \n(we hit the SMB permission wall). Confirm: does the button show a \nfriendly error if the backup target isn't available, or does it fail \nsilently?\n\nIf it fails silently, add a check to the backup script that alerts \nif the target isn't mounted \u2014 write to mount-alert.txt so Telegram \npicks it up.\n\nAfter that, the Settings page audit is complete. Station is stable.",
+    "note": "Settings page fixes confirmed. The version, status, crons, and port \nlabels are all correct now. \n\nOne final check: the Run Backup button calls openclaw-backup-quick.sh. \nWe know this script targets /Volumes/Public/ which may not be mounted \n(we hit the SMB permission wall). Confirm: does the button show a \nfriendly error if the backup target isn't available, or does it fail \nsilently?\n\nIf it fails silently, add a check to the backup script that alerts \nif the target isn't mounted — write to mount-alert.txt so Telegram \npicks it up.\n\nAfter that, the Settings page audit is complete. Station is stable.",
     "history": [
       {
         "ts": "2026-05-29T21:28:41.124Z",
@@ -466,7 +608,7 @@
   },
   {
     "id": "T-105",
-    "title": "Fix task persistence \u2014 saveTasks not writing to disk",
+    "title": "Fix task persistence — saveTasks not writing to disk",
     "assignee": "engineer",
     "status": "done",
     "ts": "2h ago",
@@ -483,7 +625,7 @@
   },
   {
     "id": "T-112",
-    "title": "Control UI bridge \u2014 pull data from localhost:18789",
+    "title": "Control UI bridge — pull data from localhost:18789",
     "assignee": "engineer",
     "status": "done",
     "ts": "30m ago",
@@ -578,132 +720,8 @@
     "acknowledged": true
   },
   {
-    "id": "task-mp7cbyxz-0ztq",
-    "title": "Error Feed \u2014 behaviour review and fix.",
-    "assignee": "lifesupport",
-    "status": "backlog",
-    "priority": "P3",
-    "ts": "just now",
-    "note": "Error Feed \u2014 behaviour review and fix.\n\nThe error feed currently has Investigate / Resolved / Skip buttons but \nthe workflow is confusing. Here's how it should actually work:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nCORRECT ERROR FEED WORKFLOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. A cron job fails \u2192 error appears in the Error Feed tab with a \n   \"NEW\" badge\n\n2. I click \"Investigate\" \u2192 \n   - The error status changes to \"IN PROGRESS\" \n   - A corresponding task is automatically created in the Tasks \n     section under \"In Progress\" so the crew knows to work on it\n   - The error stays visible in the feed with an in-progress indicator\n   - The button changes to show \"Resolved\" and \"Skip\"\n\n3. The crew fixes the underlying issue. The cron job runs successfully \n   on its next scheduled run \u2192\n   - The error automatically clears from the Error Feed\n   - The linked task in the Tasks section moves to \"Done\"\n   - No manual \"Resolved\" click needed \u2014 the system verified the fix\n\n4. If I click \"Resolved\" manually \u2192\n   - For when I've verified the fix myself\n   - Error disappears from the feed\n   - Linked task moves to Done\n\n5. If I click \"Skip\" \u2192\n   - For known non-critical issues I'm choosing to ignore\n   - Error disappears from the feed\n   - No task is created\n\n6. If the same job fails again later \u2192\n   - A NEW error appears (not the old one reopened)\n   - Fresh timestamp, fresh status\n   - Does NOT resurrect the old skipped/resolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nKEY RULES\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- Errors should NOT show \"Completed\" with an \"In Progress\" flag \n  at the same time (current bug)\n- When a cron job succeeds after being in error state, the error \n  should auto-clear \u2014 the system verified the fix\n- The \"Investigate\" button creates a task in the Tasks board so \n  work is tracked\n- The error feed reflects REALITY: if the job is still failing, \n  the error stays. If it succeeds, the error goes away.\n- The cron job entry in the Scheduler list should show an error \n  badge ONLY while there's an active unresolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nWHAT TO FIX NOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Fix the double-status bug (no more \"Completed\" + \"In Progress\" \n   showing simultaneously)\n2. Wire Investigate button to auto-create a task in the Tasks board\n3. Wire cron job success to auto-clear the corresponding error\n4. Wire cron job error badge to auto-clear when error is resolved\n5. Confirm Skip behaviour works as described above\n6. Test the full flow end-to-end\n\nReport what the current behaviour actually is, then fix it to \nmatch this spec.  [auto-dispatched 2026-06-01 11:53] [auto-dispatched 2026-06-02 11:59] [auto-dispatched 2026-06-02 12:29] [HEARTBEAT 2026-06-02 12:47: Task has been auto-dispatched 6+ times with zero progress. Setting stalledAt to prevent further re-dispatch. Needs human triage.] [auto-dispatched 2026-06-02 12:59] [auto-dispatched 2026-06-02 14:29]",
-    "history": [
-      {
-        "ts": "2026-05-15T19:59:05.639Z",
-        "action": "created",
-        "actor": "monkey",
-        "details": "Task created"
-      },
-      {
-        "ts": "2026-05-15T19:59:07.177Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-01T08:00:00.000Z",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 stalled (started 2026-05-15T20:36 with no progress)"
-      },
-      {
-        "ts": "2026-06-01T09:00:00.000Z",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 stale (started May 15, no progress)"
-      },
-      {
-        "ts": "2026-06-01T09:43:21.368763+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 stalled (397h with no progress update)"
-      },
-      {
-        "ts": "2026-06-01T11:00:00.000Z",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 task was stuck in in_progress with no startedAt, likely from incomplete prior dispatch"
-      },
-      {
-        "ts": "2026-06-01T11:30:00.000Z",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset to backlog \u2014 task has been stalled since May 15 with no progress. Note: keeps flipping back to in_progress when MC frontend saves stale state."
-      },
-      {
-        "ts": "2026-06-02T10:38:39.308375+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 task keeps flip-flopping. Needs human triage."
-      },
-      {
-        "ts": "2026-06-02T11:15:25.630285+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog - 10th flip-flop. Dispatcher keeps re-picking. Needs human triage."
-      },
-      {
-        "ts": "2026-06-02T11:47:40.689677+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog. Task has been auto-dispatched 6+ times with zero progress. stalledAt set to prevent re-dispatch loop. Needs human triage."
-      },
-      {
-        "ts": "2026-06-02T13:29:36.701419+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 flip-flopped again. Frontend save-tasks overwrote stalledAt. Protected fields now added to merge logic."
-      },
-      {
-        "ts": "2026-06-02T14:25:57.494365+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset to backlog. Stalled. Protected from re-dispatch."
-      }
-    ],
-    "lastUpdated": "2026-06-01T11:30:00.000Z",
-    "lastActivity": "2026-06-02T14:36:30.322389+00:00",
-    "stalledAt": "2026-06-02T14:36:30.322389+00:00"
-  },
-  {
-    "id": "task-mp7d3s9w-1lmf",
-    "title": "Task Completion \u2014 summary and visibility improvement.",
-    "assignee": "archivist",
-    "status": "backlog",
-    "priority": "P3",
-    "ts": "just now",
-    "note": "Task Completion \u2014 summary and visibility improvement.\n\nThe auto-move from In Progress to Done works well. But when a task \nmoves to Done, I can't tell WHAT was actually done. The card just \nsays \"Done\" with no context.\n\nFix:\n\n1. When a task completes and auto-moves to Done, the card must \n   include a brief summary of what was accomplished. This summary \n   should be:\n   - Written by the agent that completed the task\n   - 1-3 sentences describing the actual outcome\n   - Stored on the task card itself, visible in the Kanban view\n   - Also visible when I click \"More Details\" on the card\n\n2. The \"More Details\" view on any Done card should show:\n   - Original task description\n   - Completion summary (what was actually done)\n   - Which agent completed it\n   - Timestamp of completion\n   - Any relevant links or artifacts produced (files changed, \n     commits made, etc.)\n\n3. In the Kanban view, a Done card should show at minimum:\n   - Task title\n   - One-line completion summary (truncated if needed)\n   - \"Done by [Agent] \u2022 [time]\"\n\n4. If the task was created manually by me (not auto-generated from \n   an error or cron job), the agent who picks it up should write \n   the completion summary before moving it to Done. If no summary \n   is written, the task should NOT auto-move \u2014 it should stay In \n   Progress with a flag: \"Awaiting completion summary.\"\n\nThis applies to ALL tasks going forward. Retroactively fixing old \nDone tasks is optional \u2014 only if quick.\n\nReport your approach before implementing.",
-    "history": [
-      {
-        "ts": "2026-05-15T20:20:43.364Z",
-        "action": "created",
-        "actor": "archivist",
-        "details": "Task created"
-      },
-      {
-        "ts": "2026-05-15T20:20:45.084Z",
-        "action": "started",
-        "actor": "archivist",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-05-15T20:36:50.973Z",
-        "action": "started",
-        "actor": "archivist",
-        "details": "Status changed from done to in_progress"
-      },
-      {
-        "ts": "2026-06-01T08:00:00.000Z",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 stalled (started 2026-05-15T20:36 with no progress)"
-      }
-    ],
-    "lastUpdated": "2026-06-01T08:00:00.000Z",
-    "progress": 40,
-    "stalledAt": "2026-06-02T11:48:33.545348+00:00"
-  },
-  {
     "id": "T-115",
-    "title": "GitHub integration \u2014 push MC to GitHub for version control",
+    "title": "GitHub integration — push MC to GitHub for version control",
     "assignee": "engineer",
     "status": "done",
     "ts": "just now",
@@ -856,7 +874,7 @@
   },
   {
     "id": "T-118",
-    "title": "Build work dispatcher \u2014 auto-pull from backlog when idle",
+    "title": "Build work dispatcher — auto-pull from backlog when idle",
     "assignee": "monkey",
     "status": "done",
     "ts": "just now",
@@ -872,7 +890,7 @@
   },
   {
     "id": "T-119",
-    "title": "Dashboard redesign \u2014 3-column layout with live activity feed",
+    "title": "Dashboard redesign — 3-column layout with live activity feed",
     "assignee": "monkey",
     "status": "done",
     "ts": "just now",
@@ -888,5 +906,634 @@
       }
     ],
     "acknowledged": true
+  },
+  {
+    "id": "task-419bce59",
+    "title": "Auto-Incident Creation from System Errors",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "P1/P2 errors in the Error Feed should automatically create an Incident AND a linked Task on the Kanban board. When a cron job fails with a P1/P2 classification, the system creates both records and links them. The incident captures the error context; the task tracks resolution work.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-fd625713",
+    "title": "Incident → Task Linking",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "When an incident is created, a corresponding task must appear in the Kanban board automatically. Bidirectional linking: incident shows linked tasks, task shows parent incident. Status changes propagate (task done → incident check for auto-resolution).",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-9e4f3ebc",
+    "title": "Response Action Lifecycle",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Implement full lifecycle for incident response actions: NEW → INVESTIGATING → MITIGATING → RESOLVED. Each action tracks assignee, timestamps, and state transitions. Actions are visible in the Incident Details panel and update the incident's overall status.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-ac75ac7b",
+    "title": "Operational Work Panel",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Add a filtered view that shows only incident and operational tasks, visually distinct from feature work. Different color coding, separate section in the Kanban, and a toggle to show/hide operational vs. feature work.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-488e7676",
+    "title": "Awaiting Review Incident Flow",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Incidents require review before closure — same pattern as task completion but with an explicit 'awaiting review' gate. Once all response actions are resolved, the incident moves to AWAITING_REVIEW. A reviewer must approve closure before it moves to DONE.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-efcd3558",
+    "title": "Runbook Data Model",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Design and implement a structured data model for runbooks: incident type, severity, response steps (ordered list), estimated time, required roles, success criteria, and escalation path. Runbooks are stored as structured data, not free text.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-d7b9c364",
+    "title": "Runbook UI",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Display runbook steps when viewing an incident. Show the relevant runbook based on incident type, progress through steps, and allow agents to mark steps as complete. Clean, scannable layout — not a wall of text.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-f9f8c7ce",
+    "title": "Incident Type Mapping",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Classify incidents into types (e.g., cron failure, rate limit, service down, dependency break). Auto-suggest incident type based on error patterns and history. Each type maps to a default runbook and severity.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-718a0d19",
+    "title": "Suggested Action Generation",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "AI suggests response actions based on incident type and resolution history. When an incident is created, the system proposes actions from the matching runbook and similar past incidents. Suggestions appear as pre-filled action cards.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-f2727327",
+    "title": "Task Creation From Runbooks",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Convert runbook steps into actionable tasks on the Kanban board. Each step becomes a trackable task with assignee, priority, and due date. Progress on runbook steps is visible both in the incident view and the Kanban.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-94ca8faa",
+    "title": "Asset Schema",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Track systems, services, and agents as first-class assets. Schema: name, type (service/agent/cron/infra), status, owner, health check endpoint, dependencies, last check timestamp. Assets are the things incidents happen TO.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-e8a74157",
+    "title": "Asset View",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Dedicated view showing all assets and their health status at a glance. Group by type, sort by health, show status indicators. Click an asset to see its incident history, dependencies, and current state.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-45e26f79",
+    "title": "Asset Health Monitoring",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Automated health checks for each asset. Cron-based or event-driven checks that update asset status (healthy/degraded/down/unknown). Health history is tracked and visible in the asset detail view.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-6d84ce60",
+    "title": "Incident-to-Asset Linking",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Link incidents to affected assets. When creating an incident, select which assets are impacted. Asset view shows active and historical incidents. Incident view shows affected assets with their current health.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-7c52b6a6",
+    "title": "Dependency Mapping",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Show relationships between assets: which services depend on which, which agents depend on which services. Visual dependency graph. When an asset goes down, highlight all dependent assets. Critical for understanding blast radius.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-bcd36145",
+    "title": "Unified Event Model",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "All station events (incidents, cron runs, task changes, agent actions) feed into a single event model. Each event has: timestamp, type, source, severity, description, and links to related entities. This is the foundation for the timeline.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-f9e3796c",
+    "title": "Incident Events in Timeline",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Incident lifecycle events (created, status change, action taken, resolved) appear in the unified timeline. Filterable by incident, severity, or time range. Shows the full story of an incident in chronological order.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-0eb45241",
+    "title": "Scheduler Events in Timeline",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time — is a job degrading? Failing intermittently? The timeline makes temporal patterns visible.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-9392a52f",
+    "title": "Task Events in Timeline",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Task state changes (created, assigned, started, blocked, completed) appear in the timeline. Shows work flow patterns, bottlenecks, and agent activity over time.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-94a99d8e",
+    "title": "Commander Timeline View",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "A dedicated, filterable timeline view showing all station activity. Filter by event type, severity, time range, agent, or asset. This is the 'mission log' — the complete operational history of the station.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-fde53af6",
+    "title": "Automation Health States",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Monitor the health of each automated process (cron jobs, agents, services). Track: last run status, consecutive failures, average duration, error rate. Health states: healthy, degraded, failing, unknown.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-a6f37a6f",
+    "title": "Retry Policies with Backoff",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Configurable retry policies for automated processes. Define max retries, backoff strategy (linear/exponential), and retry conditions. Failed cron jobs automatically retry according to policy before escalating.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-7411b167",
+    "title": "Circuit Breakers",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-disable failing automation after threshold breaches. If a cron job fails N times consecutively, it's automatically disabled and an incident is created. Prevents runaway failures and noise. Manual reset required.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-2b004d0c",
+    "title": "Provider Cooldown Management",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Track and manage rate limits across providers (OpenRouter, etc.). When a provider hits rate limits, automatically queue requests, switch to fallback providers, or pause non-critical work. Prevents cascading failures.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-de47f5f5",
+    "title": "Auto Remediation",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Predefined actions for common failure patterns. E.g., if Vite cache corruption is detected → auto-clear cache and restart dev server. If a cron job times out → auto-retry with increased timeout. Configurable remediation rules.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-4ec228dd",
+    "title": "Lessons Learned Capture",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "When an incident is resolved, prompt for a brief 'lessons learned' note. What happened? What fixed it? What could prevent it? Stored with the incident and searchable. This is the raw material for operational knowledge.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-3ccd4020",
+    "title": "Knowledge Capture Automation",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Auto-suggest knowledge entries from resolved incidents. AI analyzes the incident + resolution + lessons learned and proposes a structured knowledge base entry. Human reviews and approves before publishing.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-be03dff8",
+    "title": "Runbook Evolution",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness — which runbooks lead to fastest resolution?",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-2e83664a",
+    "title": "Framework Sync",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Keep FRAMEWORK.md in sync with operational learning. When patterns emerge from incidents or knowledge entries, auto-suggest updates to AGENTS.md, TOOLS.md, or FRAMEWORK.md. The station's documentation evolves with its experience.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-313e1f42",
+    "title": "Searchable Knowledge Base",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "A searchable repository of all operational knowledge: lessons learned, runbook updates, incident post-mortems, best practices. Full-text search, tagging, and linking to related incidents and assets.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-48c3895c",
+    "title": "Task Category Badges",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Add category badges to all tasks: Operations, Infrastructure, Platform, Mission Control, Knowledge, Automation, Security, Technical Debt. Simple colored badge on the Kanban card. Filterable by category. No epics or story points — just a clear label.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-97381461",
+    "title": "Priority/Severity System",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Implement P1 Critical, P2 High, P3 Normal, P4 Background across all work items. Visual hierarchy: P1 gets red/urgent styling, P2 gets orange, P3 gets standard, P4 gets muted. Critical items surface naturally at the top of lists and boards.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-6e561a42",
+    "title": "Temporal Intelligence",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Stalled task detection (no activity for 2h), aging incident warnings (open for >24h), overdue operations (past expected completion), abandoned work flags. Visual indicators: 'No activity for 2h', 'Awaiting response', 'Escalation threshold approaching'.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-8ab0b8e9",
+    "title": "Agent Accountability",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Track who owns work, who touched it last, active handoffs, and collaboration relationships. Assigned crew badge on tasks, 'last active by' timestamp, work history/timeline per agent. Clear ownership prevents work from falling through cracks.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-fce301b7",
+    "title": "Incident Response Atmosphere",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "When incidents occur, the station reacts subtly: warning lights in affected rooms, increased monitor activity, alert banners, tense ambient colour shift (slight red/warm tint). Controlled operational awareness — not arcade chaos. Calm but urgent.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-1d916084",
+    "title": "Queue & Flow Visualisation",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system — not just sitting in columns.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
+  },
+  {
+    "id": "task-9f6de5b0",
+    "title": "Operational Readiness Dashboard",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "At a glance: what is healthy, what is active, what is blocked, what needs attention, which agents are overloaded. The station communicates system state visually before reading text. Status indicators, health bars, and activity heat maps.",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning — created from strategic roadmap"
+      }
+    ]
   }
 ]
