@@ -125,7 +125,7 @@ log_file = "/Users/spacemonkey/.openclaw/workspace/memory/dispatcher-log.md"
 with open(tasks_file) as f:
     tasks = json.load(f)
 
-backlog = [t for t in tasks if t.get('status') == 'backlog']
+backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt')]
 if not backlog:
     exit(0)
 
