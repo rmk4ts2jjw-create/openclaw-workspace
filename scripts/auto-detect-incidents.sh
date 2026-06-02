@@ -12,22 +12,27 @@ GATEWAY_LOG="/tmp/openclaw/openclaw-$(date +%Y-%m-%d).log"
 
 timestamp() { date '+%Y-%m-%d %H:%M:%S'; }
 
-# Helper: create incident via Python (since we need JSON manipulation)
+# Helper: create incident + linked task via Python
+# Creates the incident record AND a linked task in tasks.json
+# Task starts in "triage" status (not backlog) for incident response workflow
 create_incident() {
     local title="$1" severity="$2" owner="$3" summary="$4" tags="$5" source="$6"
     python3 << PYEOF
 import json, os
 from datetime import datetime
 
-path = "$INCIDENTS_FILE"
-incidents = json.load(open(path)) if os.path.exists(path) else []
+incidents_path = "$INCIDENTS_FILE"
+tasks_path = os.path.join(os.path.dirname(incidents_path), "tasks.json")
 
-# Deduplicate
+incidents = json.load(open(incidents_path)) if os.path.exists(incidents_path) else []
+
+# Deduplicate — skip if an active incident with same title and source exists
 for i in incidents:
     if i["status"] != "RESOLVED" and i["title"] == "$title" and "$source" in i.get("tags", []):
         print("duplicate")
         exit(0)
 
+# Generate next INC ID
 nums = []
 for i in incidents:
     m = i["id"].split("-")
@@ -36,6 +41,32 @@ for i in incidents:
 next_id = f"INC-{str(max(nums) + 1 if nums else 1).zfill(3)}"
 
 now = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.000Z")
+
+# Auto-generate response actions based on severity
+import random as _rnd
+def _act_id(): return f"act-{_rnd.randrange(100000, 999999)}"
+_severity_actions = {
+    "P1": [
+        {"id": _act_id(), "label": "Investigate root cause", "description": "Immediately investigate the root cause of this critical incident", "status": "suggested", "assignee": "$owner"},
+        {"id": _act_id(), "label": "Assess blast radius", "description": "Determine which systems and services are affected", "status": "suggested", "assignee": "lifesupport"},
+        {"id": _act_id(), "label": "Implement emergency mitigation", "description": "Apply the fastest available fix to reduce impact", "status": "suggested", "assignee": "$owner"},
+        {"id": _act_id(), "label": "Notify command", "description": "Escalate to human operator for awareness", "status": "suggested", "assignee": "monkey"},
+    ],
+    "P2": [
+        {"id": _act_id(), "label": "Investigate issue", "description": "Investigate the cause of this high-severity incident", "status": "suggested", "assignee": "$owner"},
+        {"id": _act_id(), "label": "Apply fix", "description": "Implement a fix for the identified issue", "status": "suggested", "assignee": "$owner"},
+        {"id": _act_id(), "label": "Verify resolution", "description": "Confirm the fix resolves the incident", "status": "suggested", "assignee": "lifesupport"},
+    ],
+    "P3": [
+        {"id": _act_id(), "label": "Review and triage", "description": "Review the incident and determine appropriate response", "status": "suggested", "assignee": "monkey"},
+        {"id": _act_id(), "label": "Apply standard fix", "description": "Apply a standard fix procedure", "status": "suggested", "assignee": "$owner"},
+    ],
+    "P4": [
+        {"id": _act_id(), "label": "Monitor and log", "description": "Monitor the situation and log for pattern analysis", "status": "suggested", "assignee": "lifesupport"},
+    ],
+}
+_actions = _severity_actions.get("$severity", _severity_actions["P3"])
+
 inc = {
     "id": next_id, "title": "$title", "severity": "$severity",
     "status": "TRIAGE", "owner": "$owner", "acknowledged": False,
@@ -43,12 +74,37 @@ inc = {
     "summary": "$summary",
     "tags": ${tags} + ["$source"],
     "timeline": [{"ts": now, "message": "Auto-detected by $source", "actor": "system"}],
-    "actions": []
+    "actions": _actions,
+    "actionsGenerated": True
 }
 incidents.insert(0, inc)
-with open(path, "w") as f:
+with open(incidents_path, "w") as f:
     json.dump(incidents, f, indent=2)
-print(next_id)
+
+# Create linked task in tasks.json
+try:
+    tasks = json.load(open(tasks_path)) if os.path.exists(tasks_path) else []
+    task_id = f"task-{next_id.lower()}-{os.urandom(2).hex()}"
+    task = {
+        "id": task_id,
+        "title": f"Investigate: {next_id}",
+        "assignee": "$owner",
+        "status": "triage",
+        "priority": "$severity",
+        "ts": "just now",
+        "note": f"Auto-created from incident {next_id}: $summary",
+        "linkedIncidentId": next_id,
+        "tags": ["incident-response"] + ${tags},
+        "history": [{"ts": now, "action": "created", "actor": "system", "details": f"Auto-created from incident {next_id}"}],
+        "lastActivity": now
+    }
+    tasks.insert(0, task)
+    with open(tasks_path, "w") as f:
+        json.dump(tasks, f, indent=2)
+    print(f"{next_id}|{task_id}")
+except Exception as e:
+    print(next_id)
+    print(f"task_create_error: {e}", file=__import__("sys").stderr)
 PYEOF
 }
 
