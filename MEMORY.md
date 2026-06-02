@@ -46,6 +46,8 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-05-15:** API server uses `fs` reads instead of `execSync` for cron data (Cloudflare Workers compat)
 - **2026-05-15:** Investigate → Task → Error Resolution flow implemented (bidirectional linking)
 - **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish. Multi-file refactors now done via sequential direct edits (one file at a time, commit after each). Zero token cost.
+- **2026-06-02:** Removed Sprite Generator page (/sprites) — old PNG sprite generator from Lovable era, obsolete since we use canvas sprites. Deleted route file + component + sidebar entry.
+- **2026-06-02:** Fixed Vite cache corruption (504 Outdated Optimize Dep errors). Killed dev server, `rm -rf node_modules/.vite .vite`, restarted with `--force`. All routes verified 200.
 
 ---
-_Last updated: 2026-05-15 by Space Monkey_
+_Last updated: 2026-06-02 by Space Monkey_
