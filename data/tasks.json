@@ -3,7 +3,7 @@
     "id": "task-mpwfiydb-6khn",
     "title": "Opencode Coding Buddy",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "OpenCode was tested and has native OpenRouter support. It lists all\nOpenRouter models including free tier options. The login command had\na bug but we can likely configure the API key directly.\n\nInvestigate OpenCode as our coding tool:\n\n1. OpenCode is already installed. Check: which opencode\n2. It supports non-interactive mode: opencode run --model [model] \"[prompt]\"\n3. It has native OpenRouter model support \u2014 no custom endpoint config needed\n4. Check if we can set the API key directly via env var or config file\n5. If it works, this becomes our coding tool for complex multi-file work.\n6. Free coding models available:\n   - openrouter/qwen/qwen3-coder:free (best for coding)\n   - openrouter/moonshotai/kimi-k2.6:free (fallback)\n   - openrouter/openrouter/free (emergency)\n\nDo NOT add to FRAMEWORK.md yet. Just test and report if it works.",
@@ -25,11 +25,19 @@
         "action": "progress",
         "actor": "monkey",
         "details": "Config opencode.json created with model=qwen/qwen3-coder:free, title/small=moonshotai/kimi-k2.6:free. Config validates successfully (opencode debug config). openrouter/free works for simple prompts. qwen3-coder:free and kimi-k2.6:free both hit rate limits (sessions run >2min then SIGTERM). File editing test with qwen3-coder timed out. Root cause: free tier rate limits are too aggressive for sustained multi-turn coding sessions. Viable for simple Q&A, not for file editing workflows. Recommendation: add $5-10 OpenRouter credits for reliable coding use, or use openrouter/free as primary."
+      },
+      {
+        "ts": "2026-06-02T14:35:40.024471+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Investigation complete. Config works, rate limits block production use on free tier."
       }
     ],
-    "lastActivity": "2026-06-02T14:25:57.494365+00:00",
+    "lastActivity": "2026-06-02T14:35:40.024471+00:00",
     "currentStep": "Testing complete \u2014 config working, models rate-limited",
-    "progress": 85
+    "progress": 100,
+    "completedAt": "2026-06-02T14:35:40.024471+00:00",
+    "summary": "OpenCode v1.15.13 works with OpenRouter. Config at ~/.config/opencode/opencode.json sets model=qwen/qwen3-coder:free, title/small=kimi-k2.6:free (eliminates 402 error). openrouter/free works for simple prompts. All free coding models hit aggressive rate limits making sustained file-editing unreliable. Recommendation: add $5-10 OpenRouter credits for production use."
   },
   {
     "id": "T-106",
@@ -652,8 +660,8 @@
       }
     ],
     "lastUpdated": "2026-06-01T11:30:00.000Z",
-    "lastActivity": "2026-06-02T14:25:57.494365+00:00",
-    "stalledAt": "2026-06-02T14:25:57.494365+00:00"
+    "lastActivity": "2026-06-02T14:36:30.322389+00:00",
+    "stalledAt": "2026-06-02T14:36:30.322389+00:00"
   },
   {
     "id": "task-mp7d3s9w-1lmf",
