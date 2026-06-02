@@ -184,8 +184,8 @@ else
   SITREP="📡 DAILY SITREP — ${TODAY} | ${TASKS_ACTIVE} active · ${TASKS_AWAITING} awaiting review · ${DISK_PCT}% disk · ${OVERALL}"
 fi
 
-# Send via OpenClaw CLI — no model calls, pure API
-/opt/homebrew/bin/openclaw message send \
+# Send via OpenClaw CLI — no model calls, openclaw is in PATH via LaunchAgent plist
+openclaw message send \
   --channel telegram \
   --target "$TELEGRAM_TARGET" \
   --message "$SITREP" \

@@ -48,6 +48,11 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish. Multi-file refactors now done via sequential direct edits (one file at a time, commit after each). Zero token cost.
 - **2026-06-02:** Removed Sprite Generator page (/sprites) — old PNG sprite generator from Lovable era, obsolete since we use canvas sprites. Deleted route file + component + sidebar entry.
 - **2026-06-02:** Fixed Vite cache corruption (504 Outdated Optimize Dep errors). Killed dev server, `rm -rf node_modules/.vite .vite`, restarted with `--force`. All routes verified 200.
+- **2026-06-02:** OPS-002 — Incident→Task linking: `Task.linkedIncidentId` is source of truth, `Incident.linkedTaskIds` derived at runtime. Auto-created tasks start in `triage` (not backlog). Task status changes auto-append to incident timeline. Incident resolution separate from task completion.
+- **2026-06-02:** Added `triage` to Task.status union, new Triage Kanban column, Linked Incident section in TaskDetailPanel, `/api/incidents-timeline` endpoint.
+- **2026-06-02:** Updated auto-detect-incidents.sh to create linked tasks + severity-based response actions per incident.
+
+- **2026-06-02:** OPS-002 — Incident→Task Linking: `Task.linkedIncidentId` is source of truth (not `Incident.linkedTaskIds`). Auto-detect creates linked triage tasks. Task status changes auto-append to incident timeline via `/api/incidents/timeline`. Added `triage` to Task status union, new Triage Kanban column, Linked Incident section in task detail, derived linked tasks in IncidentDetailsDrawer.
 
 ---
 _Last updated: 2026-06-02 by Space Monkey_

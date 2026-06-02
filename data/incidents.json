@@ -1,14 +1,192 @@
 [
   {
+    "id": "INC-042",
+    "title": "Tasks stuck In Progress — 4 tasks with no recent activity",
+    "severity": "P3",
+    "status": "TRIAGE",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T18:30:29.000Z",
+    "lastActivity": "2026-06-02T18:39:53.147Z",
+    "summary": "4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T18:30:29.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:39:53.142Z",
+        "message": "Task \"Investigate: INC-042\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:39:53.147Z",
+        "message": "Task \"Investigate: INC-042\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-945897",
+        "label": "Review and triage",
+        "description": "Review the incident and determine appropriate response",
+        "status": "in_progress",
+        "assignee": "monkey",
+        "taskId": "task-INC-042-act-945897"
+      },
+      {
+        "id": "act-751526",
+        "label": "Apply standard fix",
+        "description": "Apply a standard fix procedure",
+        "status": "in_progress",
+        "assignee": "monkey",
+        "taskId": "task-INC-042-act-751526"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
+    "id": "INC-041",
+    "title": "Rate limit exhaustion — 26 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T17:30:21.000Z",
+    "lastActivity": "2026-06-02T18:21:02.858Z",
+    "summary": "Gateway log shows 26 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T17:30:21.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:02.856Z",
+        "message": "Task \"Investigate: INC-041\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:02.858Z",
+        "message": "Task \"Investigate: INC-041\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-738693",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "in_progress",
+        "assignee": "lifesupport",
+        "taskId": "task-INC-041-act-738693"
+      },
+      {
+        "id": "act-524442",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-925857",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
+    "id": "INC-040",
+    "title": "Rate limit exhaustion — 20 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T16:30:11.000Z",
+    "lastActivity": "2026-06-02T18:21:03.945Z",
+    "summary": "Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T16:30:11.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T16:46:02.515Z",
+        "message": "Task moved to triage",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:03.941Z",
+        "message": "Task \"Investigate: INC-040\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:03.945Z",
+        "message": "Task \"Investigate: INC-040\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-541648",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-952736",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-980290",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
     "id": "INC-039",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-01T07:23:16.000Z",
-    "lastActivity": "2026-06-01T07:23:16.000Z",
+    "lastActivity": "2026-06-02T17:18:57.470Z",
     "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
     "tags": [
       "gateway",
@@ -27,7 +205,7 @@
   },
   {
     "id": "INC-038",
-    "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
+    "title": "Tasks stuck In Progress — 3 tasks with no recent activity",
     "severity": "P3",
     "status": "TRIAGE",
     "owner": "monkey",
@@ -62,7 +240,7 @@
     "opened": "2026-05-21T23:00:00.000Z",
     "resolved": "2026-06-01T07:31:00.000Z",
     "lastActivity": "2026-06-01T07:31:00.000Z",
-    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21\u201331. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
+    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21–31. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
     "tags": [
       "cron",
       "token-burn",
@@ -73,7 +251,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T23:00:00.000Z",
-        "message": "First recorded failure of dae7406b \u2014 agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
+        "message": "First recorded failure of dae7406b — agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
         "actor": "system"
       },
       {
@@ -91,8 +269,8 @@
       {
         "label": "Delete old cron job dae7406b",
         "description": "Permanently delete the agentTurn cron, not just disable it",
-        "status": "completed",
-        "completedAt": "2026-06-01T07:31:00.000Z",
+        "status": "skipped",
+        "completedAt": "2026-06-02 10:08:02",
         "completedBy": "Space Monkey"
       },
       {
@@ -113,7 +291,7 @@
   },
   {
     "id": "INC-036",
-    "title": "Rate limit exhaustion \u2014 11 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 11 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -139,7 +317,7 @@
   },
   {
     "id": "INC-035",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -165,7 +343,7 @@
   },
   {
     "id": "INC-034",
-    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "title": "Mission Control dashboard down — HTTP 000",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -191,7 +369,7 @@
   },
   {
     "id": "INC-033",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -217,7 +395,7 @@
   },
   {
     "id": "INC-032",
-    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -243,7 +421,7 @@
   },
   {
     "id": "INC-031",
-    "title": "Rate limit exhaustion \u2014 54 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 54 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -269,7 +447,7 @@
   },
   {
     "id": "INC-030",
-    "title": "Rate limit exhaustion \u2014 51 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 51 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -295,7 +473,7 @@
   },
   {
     "id": "INC-029",
-    "title": "Rate limit exhaustion \u2014 46 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 46 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -321,7 +499,7 @@
   },
   {
     "id": "INC-028",
-    "title": "Rate limit exhaustion \u2014 40 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 40 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -347,7 +525,7 @@
   },
   {
     "id": "INC-027",
-    "title": "Rate limit exhaustion \u2014 39 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 39 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -373,7 +551,7 @@
   },
   {
     "id": "INC-026",
-    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 34 429 errors in gateway log",
     "severity": "P3",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -404,7 +582,7 @@
   },
   {
     "id": "INC-025",
-    "title": "Rate limit exhaustion \u2014 33 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 33 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -430,7 +608,7 @@
   },
   {
     "id": "INC-024",
-    "title": "Rate limit exhaustion \u2014 29 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 29 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -456,7 +634,7 @@
   },
   {
     "id": "INC-023",
-    "title": "Rate limit exhaustion \u2014 28 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 28 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -482,7 +660,7 @@
   },
   {
     "id": "INC-022",
-    "title": "Rate limit exhaustion \u2014 25 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 25 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -508,7 +686,7 @@
   },
   {
     "id": "INC-021",
-    "title": "Rate limit exhaustion \u2014 16 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 16 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -534,7 +712,7 @@
   },
   {
     "id": "INC-020",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -560,7 +738,7 @@
   },
   {
     "id": "INC-019",
-    "title": "Cron job failures \u2014 8 active errors detected",
+    "title": "Cron job failures — 8 active errors detected",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -585,7 +763,7 @@
   },
   {
     "id": "INC-018",
-    "title": "Operational consolidation \u2014 cron jobs replaced with LaunchAgent maintenance script",
+    "title": "Operational consolidation — cron jobs replaced with LaunchAgent maintenance script",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -605,7 +783,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T20:00:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -618,7 +796,7 @@
   },
   {
     "id": "INC-017",
-    "title": "WD MyCloud mount path changed \u2014 /Volumes/Public-1 regenerated after purge",
+    "title": "WD MyCloud mount path changed — /Volumes/Public-1 regenerated after purge",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -638,7 +816,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T16:00:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -651,7 +829,7 @@
   },
   {
     "id": "INC-016",
-    "title": "Rate limit exhaustion (2nd wave) \u2014 free model pool depleted by session explosion",
+    "title": "Rate limit exhaustion (2nd wave) — free model pool depleted by session explosion",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -672,7 +850,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:35:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -685,7 +863,7 @@
   },
   {
     "id": "INC-015",
-    "title": "Session explosion \u2014 22 to 87 sessions from runaway cron jobs",
+    "title": "Session explosion — 22 to 87 sessions from runaway cron jobs",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -706,7 +884,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:30:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -719,7 +897,7 @@
   },
   {
     "id": "INC-014",
-    "title": "Gateway crash loop \u2014 EmbeddedAttemptSessionTakeoverError across all sessions",
+    "title": "Gateway crash loop — EmbeddedAttemptSessionTakeoverError across all sessions",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -739,7 +917,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:15:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -752,7 +930,7 @@
   },
   {
     "id": "INC-013",
-    "title": "Gateway update failure \u2014 missing modules after partial update to v2026.5.19",
+    "title": "Gateway update failure — missing modules after partial update to v2026.5.19",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -773,7 +951,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T14:58:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -786,7 +964,7 @@
   },
   {
     "id": "INC-012",
-    "title": "Mission Control down \u2014 LaunchAgent pointing to deleted Wrangler binary",
+    "title": "Mission Control down — LaunchAgent pointing to deleted Wrangler binary",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -813,7 +991,7 @@
   },
   {
     "id": "INC-011",
-    "title": "Rate limit exhaustion \u2014 all models returned 429 starting May 15 19:42",
+    "title": "Rate limit exhaustion — all models returned 429 starting May 15 19:42",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -840,7 +1018,7 @@
   },
   {
     "id": "INC-010",
-    "title": "Cron job failures \u2014 Git Auto-Commit timeout and Activity Summary failing",
+    "title": "Cron job failures — Git Auto-Commit timeout and Activity Summary failing",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -867,7 +1045,7 @@
   },
   {
     "id": "INC-009",
-    "title": "WD MyCloud mount failing \u2014 /Volumes/Public-1 not found (persistent since May 16 06:18)",
+    "title": "WD MyCloud mount failing — /Volumes/Public-1 not found (persistent since May 16 06:18)",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -894,7 +1072,7 @@
   },
   {
     "id": "INC-008",
-    "title": "Tasks stuck In Progress \u2014 3 tasks with no assignee or recent activity",
+    "title": "Tasks stuck In Progress — 3 tasks with no assignee or recent activity",
     "severity": "P3",
     "status": "TRIAGE",
     "owner": "monkey",
@@ -921,7 +1099,7 @@
   },
   {
     "id": "INC-007",
-    "title": "Build error \u2014 AnimatePresence SSR failure in Dashboard component",
+    "title": "Build error — AnimatePresence SSR failure in Dashboard component",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -929,7 +1107,7 @@
     "escalated": false,
     "opened": "2026-05-16T14:36:26.000Z",
     "lastActivity": "2026-05-16T14:36:26.000Z",
-    "summary": "ReferenceError: AnimatePresence is not defined at StationChatter in Dashboard.tsx. The awaitingReviewCount variable was defined inside QuickActionsPanel but referenced in the parent Dashboard component \u2014 a scoping bug causing SSR crash on the /visual page.",
+    "summary": "ReferenceError: AnimatePresence is not defined at StationChatter in Dashboard.tsx. The awaitingReviewCount variable was defined inside QuickActionsPanel but referenced in the parent Dashboard component — a scoping bug causing SSR crash on the /visual page.",
     "tags": [
       "ssr",
       "animation",
@@ -948,7 +1126,7 @@
   },
   {
     "id": "INC-006",
-    "title": "Port conflict \u2014 Mission Control dev server jumping between 3000 and 3001",
+    "title": "Port conflict — Mission Control dev server jumping between 3000 and 3001",
     "severity": "P3",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -975,7 +1153,7 @@
   },
   {
     "id": "INC-005",
-    "title": "Disk space warning \u2014 Data volume at 85% (175 Gi / 228 Gi)",
+    "title": "Disk space warning — Data volume at 85% (175 Gi / 228 Gi)",
     "severity": "P3",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -1007,7 +1185,7 @@
     "status": "MITIGATING",
     "owner": "archivist",
     "opened": "2026-05-12 09:14",
-    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact \u2014 only the index needs rebuilding.",
+    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact — only the index needs rebuilding.",
     "tags": [
       "memory",
       "corruption",
@@ -1022,7 +1200,7 @@
       },
       {
         "ts": "09:22",
-        "message": "Confirmed SQLite index mismatch \u2014 14 entries missing from index",
+        "message": "Confirmed SQLite index mismatch — 14 entries missing from index",
         "actor": "archivist"
       },
       {
@@ -1069,7 +1247,7 @@
       },
       {
         "ts": "14:35",
-        "message": "Investigated mount permissions \u2014 volume owned by root:wheel, read-only for agent",
+        "message": "Investigated mount permissions — volume owned by root:wheel, read-only for agent",
         "actor": "engineer"
       },
       {
@@ -1149,7 +1327,7 @@
       },
       {
         "ts": "12:00",
-        "message": "Incident opened \u2014 needs human to either move file or grant Full Disk Access",
+        "message": "Incident opened — needs human to either move file or grant Full Disk Access",
         "actor": "monkey"
       }
     ],
@@ -1163,7 +1341,7 @@
       },
       {
         "label": "Grant Full Disk Access",
-        "description": "Add Terminal.app to System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
+        "description": "Add Terminal.app to System Settings → Privacy & Security → Full Disk Access",
         "status": "skipped",
         "completedAt": "2026-05-14 13:56:37",
         "completedBy": "Space Monkey"
@@ -1182,7 +1360,7 @@
   },
   {
     "id": "INC-001",
-    "title": "Cron job drift \u2014 daily heartbeat running 3 hours late",
+    "title": "Cron job drift — daily heartbeat running 3 hours late",
     "severity": "P3",
     "status": "MITIGATING",
     "owner": "lifesupport",
@@ -1197,7 +1375,7 @@
     "timeline": [
       {
         "ts": "06:00",
-        "message": "Daily heartbeat fired three hours late \u2014 gap analysis initiated",
+        "message": "Daily heartbeat fired three hours late — gap analysis initiated",
         "actor": "lifesupport"
       },
       {

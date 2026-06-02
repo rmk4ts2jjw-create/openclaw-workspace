@@ -57,6 +57,7 @@ for t in in_progress:
             stale_count += 1
             t['status'] = 'backlog'
             t['lastActivity'] = now.isoformat()
+            t['wasStalled'] = True
             if 'history' not in t:
                 t['history'] = []
             t['history'].append({
@@ -69,6 +70,7 @@ for t in in_progress:
         # No valid timestamp at all — treat as stale/broken
         stale_count += 1
         t['status'] = 'backlog'
+        t['wasStalled'] = True
         if 'history' not in t:
             t['history'] = []
         t['history'].append({
@@ -141,7 +143,7 @@ def should_skip_dispatch(t):
     # If not, the task has been re-dispitched with no real work
     return True
 
-backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and not should_skip_dispatch(t)]
+backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3 and not t.get('wasStalled') and not should_skip_dispatch(t)]
 if not backlog:
     print("SKIP_ALL:All backlog tasks have been dispatched multiple times with no progress")
     exit(0)

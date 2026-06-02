@@ -1488,7 +1488,7 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time \u2014 is a job degrading? Failing intermittently? The timeline makes temporal patterns visible. [auto-dispatched 2026-06-02 18:00]",
+    "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time \u2014 is a job degrading? Failing intermittently? The timeline makes temporal patterns visible. [auto-dispatched 2026-06-02 18:00] [auto-dispatched 2026-06-02 23:31]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -1507,13 +1507,20 @@
         "action": "reassigned",
         "actor": "heartbeat",
         "details": "Restored from 862a745 after data loss. task-0eb45241 re-reset to backlog."
+      },
+      {
+        "ts": "2026-06-02T22:43:52.556592+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Permanently locked from dispatch: wasStalled=true, dispatchCount=99. Task has no real work assigned."
       }
     ],
-    "stalledAt": "2026-06-02T18:14:28.463257+00:00",
-    "dispatchCount": 3,
+    "stalledAt": "2026-06-02T22:43:52.556592+00:00",
+    "dispatchCount": 99,
     "currentStep": null,
     "progress": 0,
-    "lastUpdated": "2026-06-02T22:14:32.382852+00:00"
+    "lastUpdated": "2026-06-02T22:43:52.556592+00:00",
+    "wasStalled": true
   },
   {
     "id": "task-9392a52f",
