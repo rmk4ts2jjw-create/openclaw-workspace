@@ -1,5 +1,84 @@
 [
   {
+    "id": "task-INC-041-act-738693",
+    "title": "[Dispatch] Investigate issue",
+    "assignee": "lifesupport",
+    "status": "in_progress",
+    "ts": "just now",
+    "note": "Source: INC-041 \u2014 Rate limit exhaustion \u2014 26 429 errors in gateway log\nInvestigate the cause of this high-severity incident",
+    "incidentSource": "INC-041"
+  },
+  {
+    "id": "task-inc-040-f114",
+    "title": "Investigate: INC-040",
+    "assignee": "lifesupport",
+    "status": "in_progress",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-040: Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-040",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-02T16:30:11.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-040"
+      },
+      {
+        "ts": "2026-06-02T18:21:03.936Z",
+        "action": "started",
+        "actor": "lifesupport",
+        "details": "Status changed from triage to in_progress"
+      }
+    ],
+    "lastActivity": "2026-06-02T18:21:03.936Z",
+    "lastUpdated": "2026-06-02T18:21:03.936Z",
+    "currentStep": "Agent starting\u2026",
+    "startedAt": "2026-06-02T18:21:03.936Z",
+    "progress": 5
+  },
+  {
+    "id": "task-inc-041-ae7e",
+    "title": "Investigate: INC-041",
+    "assignee": "lifesupport",
+    "status": "in_progress",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-041: Gateway log shows 26 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-041",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-02T17:30:21.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-041"
+      },
+      {
+        "ts": "2026-06-02T18:21:02.843Z",
+        "action": "started",
+        "actor": "lifesupport",
+        "details": "Status changed from triage to in_progress"
+      }
+    ],
+    "lastActivity": "2026-06-02T18:21:02.843Z",
+    "lastUpdated": "2026-06-02T18:21:02.843Z",
+    "currentStep": "Agent starting\u2026",
+    "startedAt": "2026-06-02T18:21:02.843Z",
+    "progress": 5
+  },
+  {
     "id": "task-kanban-fix-001",
     "title": "Kanban layout: 4-col grid, remove Awaiting Review, add Reviewed badge",
     "assignee": "monkey",
@@ -25,31 +104,6 @@
       "kanban",
       "ux"
     ]
-  },
-  {
-    "id": "task-inc-040-f114",
-    "title": "Investigate: INC-040",
-    "assignee": "lifesupport",
-    "status": "triage",
-    "priority": "P2",
-    "ts": "just now",
-    "note": "Auto-created from incident INC-040: Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
-    "linkedIncidentId": "INC-040",
-    "tags": [
-      "incident-response",
-      "rate-limit",
-      "429",
-      "models"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-02T16:30:11.000Z",
-        "action": "created",
-        "actor": "system",
-        "details": "Auto-created from incident INC-040"
-      }
-    ],
-    "lastActivity": "2026-06-02T16:30:11.000Z"
   },
   {
     "id": "task-mp7d3s9w-1lmf",
@@ -1261,7 +1315,7 @@
     "id": "task-0eb45241",
     "title": "Scheduler Events in Timeline",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P3",
     "ts": "just now",
     "note": "Cron job runs (success, failure, timeout) appear in the timeline. Shows patterns over time \u2014 is a job degrading? Failing intermittently? The timeline makes temporal patterns visible. [auto-dispatched 2026-06-02 18:00]",
@@ -1271,8 +1325,23 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-02T18:14:28.463257+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no activity for >2h (last history entry 3.5h ago)"
+      },
+      {
+        "ts": "2026-06-02T18:23:02.881658+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset to backlog: dispatched by work-dispatcher at 18:00 but no activity. Race condition between dispatcher and heartbeat stall detection."
       }
-    ]
+    ],
+    "stalledAt": "2026-06-02T18:23:02.881658+00:00",
+    "dispatchCount": 1,
+    "lastUpdated": "2026-06-02T18:23:02.881658+00:00"
   },
   {
     "id": "task-9392a52f",
