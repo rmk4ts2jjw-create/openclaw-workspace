@@ -8,7 +8,17 @@
 - Move task to `in_progress` when starting, `done` when complete
 - Write completion summary before marking done (see task details)
 - Only pick up one task per heartbeat to avoid overloading
-- If a task is already `in_progress` and was started >2 hours ago with no progress update, reset it to backlog
+
+## Stall Detection (CRITICAL — check EVERY heartbeat)
+- For EVERY task with `status: "in_progress"`, calculate staleness:
+  - Use `lastActivity` if set and is a valid ISO timestamp
+  - Else use the `ts` field if it's a valid ISO timestamp (skip if it's "just now" or non-parseable)
+  - Else use the most recent `history[].ts` entry
+  - If NO valid timestamp can be found at all, treat as stalled (it's broken data)
+- If staleness > 2 hours: reset to `backlog`, add history entry explaining why
+- If staleness > 30 minutes but < 2 hours: log a warning but don't reset yet
+- The `startedAt` field is NOT reliable — do not use it for stall detection
+- After resetting, commit the change so the Kanban reflects reality immediately
 
 ## Task Archive Maintenance
 - **Done tasks live in the Kanban Done column** — never remove them just because they're complete
