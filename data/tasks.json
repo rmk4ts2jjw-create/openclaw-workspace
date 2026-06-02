@@ -13,9 +13,23 @@
         "action": "created",
         "actor": "monkey",
         "details": "Task created"
+      },
+      {
+        "ts": "2026-06-02T13:19:16.441487+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Investigation: OpenCode v1.15.13 installed at ~/.opencode/bin/opencode. OPENROUTER_API_KEY picked up automatically. kimi-k2.6:free works for simple prompts. qwen3-coder:free and kimi-k2.6:free both hit 429 rate limits on free tier after a few calls. Title generation uses claude-haiku-4.5 (paid) and fails with 402 \u2014 no credits remaining. Config format not yet figured out. Need: 1) add OpenRouter credits for title gen, 2) wait for rate limit cooldown, 3) figure out opencode.json schema for setting small model."
+      },
+      {
+        "ts": "2026-06-02T14:25:57.494365+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Config opencode.json created with model=qwen/qwen3-coder:free, title/small=moonshotai/kimi-k2.6:free. Config validates successfully (opencode debug config). openrouter/free works for simple prompts. qwen3-coder:free and kimi-k2.6:free both hit rate limits (sessions run >2min then SIGTERM). File editing test with qwen3-coder timed out. Root cause: free tier rate limits are too aggressive for sustained multi-turn coding sessions. Viable for simple Q&A, not for file editing workflows. Recommendation: add $5-10 OpenRouter credits for reliable coding use, or use openrouter/free as primary."
       }
     ],
-    "lastActivity": "2026-06-02T12:34:22.170179+00:00"
+    "lastActivity": "2026-06-02T14:25:57.494365+00:00",
+    "currentStep": "Testing complete \u2014 config working, models rate-limited",
+    "progress": 85
   },
   {
     "id": "T-106",
@@ -559,10 +573,10 @@
     "id": "task-mp7cbyxz-0ztq",
     "title": "Error Feed \u2014 behaviour review and fix.",
     "assignee": "lifesupport",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Error Feed \u2014 behaviour review and fix.\n\nThe error feed currently has Investigate / Resolved / Skip buttons but \nthe workflow is confusing. Here's how it should actually work:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nCORRECT ERROR FEED WORKFLOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. A cron job fails \u2192 error appears in the Error Feed tab with a \n   \"NEW\" badge\n\n2. I click \"Investigate\" \u2192 \n   - The error status changes to \"IN PROGRESS\" \n   - A corresponding task is automatically created in the Tasks \n     section under \"In Progress\" so the crew knows to work on it\n   - The error stays visible in the feed with an in-progress indicator\n   - The button changes to show \"Resolved\" and \"Skip\"\n\n3. The crew fixes the underlying issue. The cron job runs successfully \n   on its next scheduled run \u2192\n   - The error automatically clears from the Error Feed\n   - The linked task in the Tasks section moves to \"Done\"\n   - No manual \"Resolved\" click needed \u2014 the system verified the fix\n\n4. If I click \"Resolved\" manually \u2192\n   - For when I've verified the fix myself\n   - Error disappears from the feed\n   - Linked task moves to Done\n\n5. If I click \"Skip\" \u2192\n   - For known non-critical issues I'm choosing to ignore\n   - Error disappears from the feed\n   - No task is created\n\n6. If the same job fails again later \u2192\n   - A NEW error appears (not the old one reopened)\n   - Fresh timestamp, fresh status\n   - Does NOT resurrect the old skipped/resolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nKEY RULES\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- Errors should NOT show \"Completed\" with an \"In Progress\" flag \n  at the same time (current bug)\n- When a cron job succeeds after being in error state, the error \n  should auto-clear \u2014 the system verified the fix\n- The \"Investigate\" button creates a task in the Tasks board so \n  work is tracked\n- The error feed reflects REALITY: if the job is still failing, \n  the error stays. If it succeeds, the error goes away.\n- The cron job entry in the Scheduler list should show an error \n  badge ONLY while there's an active unresolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nWHAT TO FIX NOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Fix the double-status bug (no more \"Completed\" + \"In Progress\" \n   showing simultaneously)\n2. Wire Investigate button to auto-create a task in the Tasks board\n3. Wire cron job success to auto-clear the corresponding error\n4. Wire cron job error badge to auto-clear when error is resolved\n5. Confirm Skip behaviour works as described above\n6. Test the full flow end-to-end\n\nReport what the current behaviour actually is, then fix it to \nmatch this spec.  [auto-dispatched 2026-06-01 11:53] [auto-dispatched 2026-06-02 11:59] [auto-dispatched 2026-06-02 12:29] [HEARTBEAT 2026-06-02 12:47: Task has been auto-dispatched 6+ times with zero progress. Setting stalledAt to prevent further re-dispatch. Needs human triage.] [auto-dispatched 2026-06-02 12:59]",
+    "note": "Error Feed \u2014 behaviour review and fix.\n\nThe error feed currently has Investigate / Resolved / Skip buttons but \nthe workflow is confusing. Here's how it should actually work:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nCORRECT ERROR FEED WORKFLOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. A cron job fails \u2192 error appears in the Error Feed tab with a \n   \"NEW\" badge\n\n2. I click \"Investigate\" \u2192 \n   - The error status changes to \"IN PROGRESS\" \n   - A corresponding task is automatically created in the Tasks \n     section under \"In Progress\" so the crew knows to work on it\n   - The error stays visible in the feed with an in-progress indicator\n   - The button changes to show \"Resolved\" and \"Skip\"\n\n3. The crew fixes the underlying issue. The cron job runs successfully \n   on its next scheduled run \u2192\n   - The error automatically clears from the Error Feed\n   - The linked task in the Tasks section moves to \"Done\"\n   - No manual \"Resolved\" click needed \u2014 the system verified the fix\n\n4. If I click \"Resolved\" manually \u2192\n   - For when I've verified the fix myself\n   - Error disappears from the feed\n   - Linked task moves to Done\n\n5. If I click \"Skip\" \u2192\n   - For known non-critical issues I'm choosing to ignore\n   - Error disappears from the feed\n   - No task is created\n\n6. If the same job fails again later \u2192\n   - A NEW error appears (not the old one reopened)\n   - Fresh timestamp, fresh status\n   - Does NOT resurrect the old skipped/resolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nKEY RULES\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- Errors should NOT show \"Completed\" with an \"In Progress\" flag \n  at the same time (current bug)\n- When a cron job succeeds after being in error state, the error \n  should auto-clear \u2014 the system verified the fix\n- The \"Investigate\" button creates a task in the Tasks board so \n  work is tracked\n- The error feed reflects REALITY: if the job is still failing, \n  the error stays. If it succeeds, the error goes away.\n- The cron job entry in the Scheduler list should show an error \n  badge ONLY while there's an active unresolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nWHAT TO FIX NOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Fix the double-status bug (no more \"Completed\" + \"In Progress\" \n   showing simultaneously)\n2. Wire Investigate button to auto-create a task in the Tasks board\n3. Wire cron job success to auto-clear the corresponding error\n4. Wire cron job error badge to auto-clear when error is resolved\n5. Confirm Skip behaviour works as described above\n6. Test the full flow end-to-end\n\nReport what the current behaviour actually is, then fix it to \nmatch this spec.  [auto-dispatched 2026-06-01 11:53] [auto-dispatched 2026-06-02 11:59] [auto-dispatched 2026-06-02 12:29] [HEARTBEAT 2026-06-02 12:47: Task has been auto-dispatched 6+ times with zero progress. Setting stalledAt to prevent further re-dispatch. Needs human triage.] [auto-dispatched 2026-06-02 12:59] [auto-dispatched 2026-06-02 14:29]",
     "history": [
       {
         "ts": "2026-05-15T19:59:05.639Z",
@@ -623,11 +637,23 @@
         "action": "reassigned",
         "actor": "heartbeat",
         "details": "Reset from in_progress to backlog. Task has been auto-dispatched 6+ times with zero progress. stalledAt set to prevent re-dispatch loop. Needs human triage."
+      },
+      {
+        "ts": "2026-06-02T13:29:36.701419+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 flip-flopped again. Frontend save-tasks overwrote stalledAt. Protected fields now added to merge logic."
+      },
+      {
+        "ts": "2026-06-02T14:25:57.494365+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset to backlog. Stalled. Protected from re-dispatch."
       }
     ],
     "lastUpdated": "2026-06-01T11:30:00.000Z",
-    "lastActivity": "2026-06-02T11:47:40.689677+00:00",
-    "stalledAt": "2026-06-02T11:47:01.484008+00:00"
+    "lastActivity": "2026-06-02T14:25:57.494365+00:00",
+    "stalledAt": "2026-06-02T14:25:57.494365+00:00"
   },
   {
     "id": "task-mp7d3s9w-1lmf",
