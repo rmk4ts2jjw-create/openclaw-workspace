@@ -1,5 +1,32 @@
 [
   {
+    "id": "task-progress-fix-001",
+    "title": "Fix progress bar: real progress, stall warnings, remove fake states",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-02T19:15:17.374405+00:00Z",
+    "lastUpdated": "2026-06-02T19:15:17.374405+00:00Z",
+    "progress": 100,
+    "completedAt": "2026-06-02T19:15:17.374405+00:00Z",
+    "summary": "Fixed progress bar to show only real agent progress. Removed fake \"Agent starting\u2026\" state and pulse animation. Added amber stall warnings for >30min inactivity. Reset 4 abandoned in_progress tasks (no agent was working on them).",
+    "currentStep": "Completed",
+    "lastActivity": "2026-06-02T19:15:17.374405+00:00Z",
+    "history": [
+      {
+        "ts": "2026-06-02T19:15:17.374405+00:00Z",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Progress bar fix complete"
+      }
+    ],
+    "tags": [
+      "ui",
+      "progress",
+      "fix"
+    ]
+  },
+  {
     "id": "task-INC-042-act-751526",
     "title": "[Dispatch] Apply standard fix",
     "assignee": "monkey",
