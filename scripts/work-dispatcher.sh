@@ -53,7 +53,7 @@ for t in in_progress:
 
     if ts:
         age_h = (now - ts).total_seconds() / 3600
-        if age_h > 2:
+        if age_h > 1:
             stale_count += 1
             t['status'] = 'backlog'
             t['lastActivity'] = now.isoformat()

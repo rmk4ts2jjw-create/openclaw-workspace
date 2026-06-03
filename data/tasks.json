@@ -1,5 +1,41 @@
 [
   {
+    "id": "task-INC-042-act-751526",
+    "title": "[Dispatch] Apply standard fix",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "just now",
+    "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nApply a standard fix procedure",
+    "incidentSource": "INC-042",
+    "stalledAt": "2026-06-03T09:13:58.386184+00:00",
+    "lastUpdated": "2026-06-03T07:55:30.213Z",
+    "history": [
+      {
+        "ts": "2026-06-02T18:43:10.523938+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: dispatched task with no activity timestamp and no history \u2014 likely dispatched but never picked up by agent"
+      },
+      {
+        "ts": "2026-06-03T07:55:30.213Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-03T09:13:58.386184+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset: [Dispatch] task with no agent progress for 78min. Step still \"Agent starting\u2026\" at 5%."
+      }
+    ],
+    "lastActivity": "2026-06-03T07:55:30.213Z",
+    "currentStep": null,
+    "startedAt": "2026-06-03T07:55:30.213Z",
+    "progress": 0,
+    "dispatchCount": 1
+  },
+  {
     "id": "task-progress-fix-001",
     "title": "Fix progress bar: real progress, stall warnings, remove fake states",
     "assignee": "monkey",
@@ -24,25 +60,6 @@
       "ui",
       "progress",
       "fix"
-    ]
-  },
-  {
-    "id": "task-INC-042-act-751526",
-    "title": "[Dispatch] Apply standard fix",
-    "assignee": "monkey",
-    "status": "backlog",
-    "ts": "just now",
-    "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nApply a standard fix procedure",
-    "incidentSource": "INC-042",
-    "stalledAt": "2026-06-02T18:43:10.523938+00:00",
-    "lastUpdated": "2026-06-02T18:43:10.523938+00:00",
-    "history": [
-      {
-        "ts": "2026-06-02T18:43:10.523938+00:00",
-        "action": "stalled",
-        "actor": "heartbeat",
-        "details": "Auto-reset: dispatched task with no activity timestamp and no history \u2014 likely dispatched but never picked up by agent"
-      }
     ]
   },
   {
@@ -1199,15 +1216,25 @@
     "status": "backlog",
     "priority": "P1",
     "ts": "just now",
-    "note": "P1/P2 errors in the Error Feed should automatically create an Incident AND a linked Task on the Kanban board. When a cron job fails with a P1/P2 classification, the system creates both records and links them. The incident captures the error context; the task tracks resolution work.",
+    "note": "P1/P2 errors in the Error Feed should automatically create an Incident AND a linked Task on the Kanban board. When a cron job fails with a P1/P2 classification, the system creates both records and links them. The incident captures the error context; the task tracks resolution work. [auto-dispatched 2026-06-03 07:02]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T06:13:03.324521+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T06:13:03.324521+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-fd625713",
@@ -1267,15 +1294,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Incidents require review before closure \u2014 same pattern as task completion but with an explicit 'awaiting review' gate. Once all response actions are resolved, the incident moves to AWAITING_REVIEW. A reviewer must approve closure before it moves to DONE.",
+    "note": "Incidents require review before closure \u2014 same pattern as task completion but with an explicit 'awaiting review' gate. Once all response actions are resolved, the incident moves to AWAITING_REVIEW. A reviewer must approve closure before it moves to DONE. [auto-dispatched 2026-06-03 08:02]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T07:13:17.843045+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: dispatched but no agent to work on planning task"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T07:13:17.843045+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-efcd3558",
@@ -1403,15 +1440,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Automated health checks for each asset. Cron-based or event-driven checks that update asset status (healthy/degraded/down/unknown). Health history is tracked and visible in the asset detail view.",
+    "note": "Automated health checks for each asset. Cron-based or event-driven checks that update asset status (healthy/degraded/down/unknown). Health history is tracked and visible in the asset detail view. [auto-dispatched 2026-06-03 07:32]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T06:43:09.056323+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T06:43:09.056323+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-6d84ce60",
@@ -1634,15 +1681,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Track and manage rate limits across providers (OpenRouter, etc.). When a provider hits rate limits, automatically queue requests, switch to fallback providers, or pause non-critical work. Prevents cascading failures.",
+    "note": "Track and manage rate limits across providers (OpenRouter, etc.). When a provider hits rate limits, automatically queue requests, switch to fallback providers, or pause non-critical work. Prevents cascading failures. [auto-dispatched 2026-06-03 05:02]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T04:30:52.709649+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T04:30:52.709649+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-de47f5f5",
@@ -1685,15 +1742,25 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Auto-suggest knowledge entries from resolved incidents. AI analyzes the incident + resolution + lessons learned and proposes a structured knowledge base entry. Human reviews and approves before publishing.",
+    "note": "Auto-suggest knowledge entries from resolved incidents. AI analyzes the incident + resolution + lessons learned and proposes a structured knowledge base entry. Human reviews and approves before publishing. [auto-dispatched 2026-06-03 06:32]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T05:42:50.992052+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T05:42:50.992052+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-be03dff8",
@@ -1719,15 +1786,25 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Keep FRAMEWORK.md in sync with operational learning. When patterns emerge from incidents or knowledge entries, auto-suggest updates to AGENTS.md, TOOLS.md, or FRAMEWORK.md. The station's documentation evolves with its experience.",
+    "note": "Keep FRAMEWORK.md in sync with operational learning. When patterns emerge from incidents or knowledge entries, auto-suggest updates to AGENTS.md, TOOLS.md, or FRAMEWORK.md. The station's documentation evolves with its experience. [auto-dispatched 2026-06-03 05:32]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T04:43:12.774493+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T04:43:12.774493+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-313e1f42",
@@ -1736,15 +1813,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "A searchable repository of all operational knowledge: lessons learned, runbook updates, incident post-mortems, best practices. Full-text search, tagging, and linking to related incidents and assets.",
+    "note": "A searchable repository of all operational knowledge: lessons learned, runbook updates, incident post-mortems, best practices. Full-text search, tagging, and linking to related incidents and assets. [auto-dispatched 2026-06-03 06:02]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T05:12:53.022671+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T05:12:53.022671+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-48c3895c",
@@ -1753,15 +1840,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Add category badges to all tasks: Operations, Infrastructure, Platform, Mission Control, Knowledge, Automation, Security, Technical Debt. Simple colored badge on the Kanban card. Filterable by category. No epics or story points \u2014 just a clear label.",
+    "note": "Add category badges to all tasks: Operations, Infrastructure, Platform, Mission Control, Knowledge, Automation, Security, Technical Debt. Simple colored badge on the Kanban card. Filterable by category. No epics or story points \u2014 just a clear label. [auto-dispatched 2026-06-03 08:32]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T07:43:11.465767+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T07:43:11.465767+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-97381461",
@@ -1838,7 +1935,7 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system \u2014 not just sitting in columns. [auto-dispatched 2026-06-03 01:01] [auto-dispatched 2026-06-03 01:31] [auto-dispatched 2026-06-03 02:01] [auto-dispatched 2026-06-03 02:31] [auto-dispatched 2026-06-03 03:01] [auto-dispatched 2026-06-03 03:31] [auto-dispatched 2026-06-03 04:01]",
+    "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system \u2014 not just sitting in columns. [auto-dispatched 2026-06-03 01:01] [auto-dispatched 2026-06-03 01:31] [auto-dispatched 2026-06-03 02:01] [auto-dispatched 2026-06-03 02:31] [auto-dispatched 2026-06-03 03:01] [auto-dispatched 2026-06-03 03:31] [auto-dispatched 2026-06-03 04:01] [auto-dispatched 2026-06-03 04:31]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -1887,13 +1984,19 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T03:42:46.385213+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
     ],
-    "stalledAt": "2026-06-03T03:12:49.198084+00:00",
+    "stalledAt": "2026-06-03T03:42:46.385213+00:00",
     "currentStep": null,
     "progress": 0,
     "lastUpdated": "2026-06-03T01:12:45.423130+00:00",
-    "dispatchCount": 7
+    "dispatchCount": 8
   },
   {
     "id": "task-9f6de5b0",
