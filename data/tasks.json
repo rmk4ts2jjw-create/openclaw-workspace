@@ -7,8 +7,8 @@
     "ts": "just now",
     "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nApply a standard fix procedure",
     "incidentSource": "INC-042",
-    "stalledAt": "2026-06-03T09:13:58.386184+00:00",
-    "lastUpdated": "2026-06-03T07:55:30.213Z",
+    "stalledAt": "2026-06-03T17:00:24.662020+00:00",
+    "lastUpdated": "2026-06-03T15:21:04.093Z",
     "history": [
       {
         "ts": "2026-06-02T18:43:10.523938+00:00",
@@ -27,13 +27,25 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Reset: [Dispatch] task with no agent progress for 78min. Step still \"Agent starting\u2026\" at 5%."
+      },
+      {
+        "ts": "2026-06-03T15:21:04.093Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-03T17:00:24.662020+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Reset from in_progress to backlog \u2014 98min with no progress. currentStep still \"Agent starting\u2026\" at 5%. Dispatcher flipped status but no agent was spawned to do the work."
       }
     ],
-    "lastActivity": "2026-06-03T07:55:30.213Z",
-    "currentStep": null,
-    "startedAt": "2026-06-03T07:55:30.213Z",
-    "progress": 0,
-    "dispatchCount": 1
+    "lastActivity": "2026-06-03T17:00:24.662020+00:00",
+    "currentStep": "Agent starting\u2026",
+    "startedAt": "2026-06-03T15:21:04.093Z",
+    "progress": 5,
+    "dispatchCount": 2
   },
   {
     "id": "task-progress-fix-001",
@@ -1257,10 +1269,10 @@
     "id": "task-9e4f3ebc",
     "title": "Response Action Lifecycle",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P1",
     "ts": "just now",
-    "note": "Implement full lifecycle for incident response actions: NEW \u2192 INVESTIGATING \u2192 MITIGATING \u2192 RESOLVED. Each action tracks assignee, timestamps, and state transitions. Actions are visible in the Incident Details panel and update the incident's overall status.",
+    "note": "Implement full lifecycle for incident response actions: NEW \u2192 INVESTIGATING \u2192 MITIGATING \u2192 RESOLVED. Each action tracks assignee, timestamps, and state transitions. Actions are visible in the Incident Details panel and update the incident's overall status. [auto-dispatched 2026-06-03 18:04]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -1372,15 +1384,25 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "AI suggests response actions based on incident type and resolution history. When an incident is created, the system proposes actions from the matching runbook and similar past incidents. Suggestions appear as pre-filled action cards.",
+    "note": "AI suggests response actions based on incident type and resolution history. When an incident is created, the system proposes actions from the matching runbook and similar past incidents. Suggestions appear as pre-filled action cards. [auto-dispatched 2026-06-03 12:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T11:13:14.442600+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T11:13:14.442600+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-f2727327",
@@ -1406,15 +1428,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Track systems, services, and agents as first-class assets. Schema: name, type (service/agent/cron/infra), status, owner, health check endpoint, dependencies, last check timestamp. Assets are the things incidents happen TO.",
+    "note": "Track systems, services, and agents as first-class assets. Schema: name, type (service/agent/cron/infra), status, owner, health check endpoint, dependencies, last check timestamp. Assets are the things incidents happen TO. [auto-dispatched 2026-06-03 15:33]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T14:43:04.400124+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T14:43:04.400124+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-e8a74157",
@@ -1467,15 +1499,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Link incidents to affected assets. When creating an incident, select which assets are impacted. Asset view shows active and historical incidents. Incident view shows affected assets with their current health.",
+    "note": "Link incidents to affected assets. When creating an incident, select which assets are impacted. Asset view shows active and historical incidents. Incident view shows affected assets with their current health. [auto-dispatched 2026-06-03 11:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T10:12:56.014005+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T10:12:56.014005+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-7c52b6a6",
@@ -1484,15 +1526,25 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Show relationships between assets: which services depend on which, which agents depend on which services. Visual dependency graph. When an asset goes down, highlight all dependent assets. Critical for understanding blast radius.",
+    "note": "Show relationships between assets: which services depend on which, which agents depend on which services. Visual dependency graph. When an asset goes down, highlight all dependent assets. Critical for understanding blast radius. [auto-dispatched 2026-06-03 13:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T12:13:42.282633+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T12:13:42.282633+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-bcd36145",
@@ -1596,15 +1648,25 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Task state changes (created, assigned, started, blocked, completed) appear in the timeline. Shows work flow patterns, bottlenecks, and agent activity over time.",
+    "note": "Task state changes (created, assigned, started, blocked, completed) appear in the timeline. Shows work flow patterns, bottlenecks, and agent activity over time. [auto-dispatched 2026-06-03 14:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T13:42:59.678285+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T13:42:59.678285+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-94a99d8e",
@@ -1613,15 +1675,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "A dedicated, filterable timeline view showing all station activity. Filter by event type, severity, time range, agent, or asset. This is the 'mission log' \u2014 the complete operational history of the station.",
+    "note": "A dedicated, filterable timeline view showing all station activity. Filter by event type, severity, time range, agent, or asset. This is the 'mission log' \u2014 the complete operational history of the station. [auto-dispatched 2026-06-03 15:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T14:13:07.601208+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T14:13:07.601208+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-fde53af6",
@@ -1664,15 +1736,25 @@
     "status": "backlog",
     "priority": "P1",
     "ts": "just now",
-    "note": "Auto-disable failing automation after threshold breaches. If a cron job fails N times consecutively, it's automatically disabled and an incident is created. Prevents runaway failures and noise. Manual reset required.",
+    "note": "Auto-disable failing automation after threshold breaches. If a cron job fails N times consecutively, it's automatically disabled and an incident is created. Prevents runaway failures and noise. Manual reset required. [auto-dispatched 2026-06-03 12:33]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T11:44:06.639151+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T11:44:06.639151+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-2b004d0c",
@@ -1725,15 +1807,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "When an incident is resolved, prompt for a brief 'lessons learned' note. What happened? What fixed it? What could prevent it? Stored with the incident and searchable. This is the raw material for operational knowledge.",
+    "note": "When an incident is resolved, prompt for a brief 'lessons learned' note. What happened? What fixed it? What could prevent it? Stored with the incident and searchable. This is the raw material for operational knowledge. [auto-dispatched 2026-06-03 10:32]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T09:42:58.730640+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T09:42:58.730640+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-3ccd4020",
@@ -1867,15 +1959,25 @@
     "status": "backlog",
     "priority": "P1",
     "ts": "just now",
-    "note": "Implement P1 Critical, P2 High, P3 Normal, P4 Background across all work items. Visual hierarchy: P1 gets red/urgent styling, P2 gets orange, P3 gets standard, P4 gets muted. Critical items surface naturally at the top of lists and boards.",
+    "note": "Implement P1 Critical, P2 High, P3 Normal, P4 Background across all work items. Visual hierarchy: P1 gets red/urgent styling, P2 gets orange, P3 gets standard, P4 gets muted. Critical items surface naturally at the top of lists and boards. [auto-dispatched 2026-06-03 16:03]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T15:13:23.481723+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T15:13:23.481723+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-6e561a42",
@@ -1884,15 +1986,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Stalled task detection (no activity for 2h), aging incident warnings (open for >24h), overdue operations (past expected completion), abandoned work flags. Visual indicators: 'No activity for 2h', 'Awaiting response', 'Escalation threshold approaching'.",
+    "note": "Stalled task detection (no activity for 2h), aging incident warnings (open for >24h), overdue operations (past expected completion), abandoned work flags. Visual indicators: 'No activity for 2h', 'Awaiting response', 'Escalation threshold approaching'. [auto-dispatched 2026-06-03 11:33]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T10:43:14.339328+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T10:43:14.339328+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-8ab0b8e9",
@@ -1901,15 +2013,25 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Track who owns work, who touched it last, active handoffs, and collaboration relationships. Assigned crew badge on tasks, 'last active by' timestamp, work history/timeline per agent. Clear ownership prevents work from falling through cracks.",
+    "note": "Track who owns work, who touched it last, active handoffs, and collaboration relationships. Assigned crew badge on tasks, 'last active by' timestamp, work history/timeline per agent. Clear ownership prevents work from falling through cracks. [auto-dispatched 2026-06-03 13:33]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T12:42:51.485533+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T12:42:51.485533+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "dispatchCount": 1
   },
   {
     "id": "task-fce301b7",
