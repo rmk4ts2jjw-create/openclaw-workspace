@@ -35,6 +35,7 @@
 - Only pick up ONE task per heartbeat to avoid overloading
 - The main agent (Space Monkey) should handle P1 tasks directly; offload P2/P3 to crew agents
 - Crew task routing: infra → lifesupport, code → engineer, knowledge → archivist, unknown → monkey
+- **🚫 NO GHOST DISPATCHES:** If you pick up a task, you MUST either work on it directly in this session or spawn a sub-agent. NEVER mark a task `in_progress` and then walk away without doing the work. This is the #1 cause of stale tasks. If you can't work on it immediately, leave it in `backlog`.
 
 ## Stall Detection (CRITICAL — check EVERY heartbeat)
 - For EVERY task with `status: "in_progress"`, calculate staleness:
