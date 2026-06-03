@@ -25,7 +25,7 @@ When answering questions, I check the wiki index first, then drill into relevant
 
 - **Mission Control Dashboard** — 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
 - **Agent Office** — The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`.
-- **Dev/Prod Strategy** — `main` branch = prod (port 3000), `dev` branch = dev (port 3001). Dev server launcher at `scripts/dev-server.sh`. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
+- **Serving** — `main` is the single branch, served on port 3000 by Vite dev server. No dev branch. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
 ## Operating Protocol
 
@@ -42,7 +42,7 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-05-15:** Event-driven state management via stationReducer for all visual changes
 - **2026-05-15:** Andre sharing hand-crafted pixel art assets (sprites + rooms) as HTML canvas drawings
 - **2026-05-15:** Established single master repo at `mission-control-dashboard`, deleted Downloads copy
-- **2026-05-15:** Dev/prod branch strategy — `main` = prod (port 3000), `dev` = dev (port 3001)
+- **2026-06-03:** Removed dev branch (was stale Lovable-era prototype). `main` is now the single source of truth — one branch, one server on port 3000.
 - **2026-05-15:** API server uses `fs` reads instead of `execSync` for cron data (Cloudflare Workers compat)
 - **2026-05-15:** Investigate → Task → Error Resolution flow implemented (bidirectional linking)
 - **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish. Multi-file refactors now done via sequential direct edits (one file at a time, commit after each). Zero token cost.
@@ -53,6 +53,11 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-06-02:** Updated auto-detect-incidents.sh to create linked tasks + severity-based response actions per incident.
 
 - **2026-06-02:** OPS-002 — Incident→Task Linking: `Task.linkedIncidentId` is source of truth (not `Incident.linkedTaskIds`). Auto-detect creates linked triage tasks. Task status changes auto-append to incident timeline via `/api/incidents/timeline`. Added `triage` to Task status union, new Triage Kanban column, Linked Incident section in task detail, derived linked tasks in IncidentDetailsDrawer.
+- **2026-06-03:** Task system overhaul — removed work-dispatcher.sh (was flipping JSON without spawning agents). Heartbeat is now the only dispatcher. 28 stale/protected tasks cleaned up (6 incident artifacts → obsolete, 22 strategic → deferred). End-to-end test passed: sub-agent dispatched, completed, moved to Done with summary. 16 planning tasks remain in backlog for human triage.
+
+## Night Shift
+
+Autonomous task processing during 01:00-07:00 when Andre is asleep. Design doc at `NIGHT_SHIFT.md`. Not yet implemented — pending Andre's review.
 
 ---
-_Last updated: 2026-06-02 by Space Monkey_
+_Last updated: 2026-06-03 by Space Monkey_
