@@ -11,11 +11,27 @@
 - **The sub-agent MUST update `currentStep` and `lastActivity` (ISO timestamp) every 5-10 min with specific actions** — NOT "Agent starting…". Example: "Reading AppSidebar.tsx", "Editing nav order", "Verifying app loads". Without `lastActivity` updates, stall detection cannot function.
 - Write completion summary before marking done
 - **Sub-agent task brief MUST include these instructions:**
-  - Update `currentStep` to a specific action before starting work
-  - Update `lastActivity` to `datetime.now(timezone.utc).isoformat()` at each step
-  - Update `progress` to reflect actual completion (10% start, 50% midway, 100% done)
+  - Update `currentStep` to a specific action BEFORE starting work (e.g. "Reading tasks.tsx")
+  - Update `lastActivity` to `datetime.now(timezone.utc).isoformat()` at EACH step
+  - Update `progress` to reflect actual completion (10% start, 25% early, 50% midway, 75% late, 100% done)
   - Write a completion `summary` before setting status to `done`
   - Commit and push code changes when complete
+  - **Use a Python script to update tasks.json — do NOT edit manually. Example:**
+    ```python
+    import json
+    from datetime import datetime, timezone
+    with open('/Users/spacemonkey/.openclaw/workspace/data/tasks.json') as f:
+        tasks = json.load(f)
+    for t in tasks:
+        if t['id'] == 'TASK_ID_HERE':
+            t['currentStep'] = 'Specific action'
+            t['progress'] = 50
+            t['lastActivity'] = datetime.now(timezone.utc).isoformat()
+            break
+    with open('/Users/spacemonkey/.openclaw/workspace/data/tasks.json', 'w') as f:
+        json.dump(tasks, f, indent=2)
+    ```
+  - Run this update at EVERY meaningful step — not just at start and completion
 - Only pick up ONE task per heartbeat to avoid overloading
 - The main agent (Space Monkey) should handle P1 tasks directly; offload P2/P3 to crew agents
 - Crew task routing: infra → lifesupport, code → engineer, knowledge → archivist, unknown → monkey
