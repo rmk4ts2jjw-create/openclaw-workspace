@@ -1406,7 +1406,7 @@
     "id": "task-ac75ac7b",
     "title": "Operational Work Panel",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Add a filtered view that shows only incident and operational tasks, visually distinct from feature work. Different color coding, separate section in the Kanban, and a toggle to show/hide operational vs. feature work.",
@@ -1416,8 +1416,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T18:26:48.249369+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Phase 2 Night Shift test \u2014 single task dispatch during daytime"
+      },
+      {
+        "ts": "2026-06-03T18:36:22.312535+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Operational work panel filter implemented"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T18:36:22.312535+00:00",
+    "startedAt": "2026-06-03T18:26:48.249369+00:00",
+    "completedAt": "2026-06-03T18:36:22.312535+00:00",
+    "summary": "Added operational work panel filter to Kanban: filter toggle (All/Operational/Feature), amber color coding for ops task cards, Operational Work panel above Kanban, Ops badge with Shield icon. App verified loading on port 3000."
   },
   {
     "id": "task-488e7676",
