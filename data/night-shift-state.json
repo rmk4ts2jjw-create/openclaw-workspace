@@ -1,0 +1,13 @@
+{
+  "active": false,
+  "date": "2026-06-03",
+  "startedAt": null,
+  "tasksCompleted": [],
+  "tasksAttempted": 0,
+  "tasksFailed": [],
+  "tokensUsed": 0,
+  "currentTask": null,
+  "stoppedReason": null,
+  "maxTasks": 2,
+  "note": "First night trial \u2014 max 2 tasks"
+}

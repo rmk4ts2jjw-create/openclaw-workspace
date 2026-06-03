@@ -55,6 +55,61 @@
 - The Done column should always show recent completions (last 30 days minimum)
 - Archive is for long-term storage only — the Kanban is the source of truth
 
+## Night Shift (01:00-07:00 BST)
+
+Autonomous task processing when Andre is asleep. Design doc: `NIGHT_SHIFT.md`.
+
+### Activation (triggered by cron at 01:00)
+ALL conditions must be true:
+- Time is 01:00-07:00 BST
+- Dispatchable backlog tasks exist (see eligibility below)
+- No 429 rate limit errors in last 30 minutes
+- No Andre activity in last 2 hours
+
+If any condition fails → log reason, skip Night Shift this cycle.
+
+### Task Eligibility
+- `status: "backlog"`, no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
+- Priority P2 or P3 only (P1 excluded)
+- No exclusion tags: `needs-human-input`, `planning`, `design`, `roadmap`
+- Sort: P2 before P3, then oldest first
+- **Max 2 tasks tonight** (first night trial — increase after 2 successful nights)
+- No new tasks after 06:30. Hard stop at 07:00.
+- Token limit: 100K total per night
+
+### Dispatch
+- Pick ONE eligible task, spawn sub-agent with full task brief
+- Sub-agent MUST update `currentStep` and `lastActivity` every 5-10 min
+- On completion: mark done with summary, pick next eligible task
+- On failure: move back to backlog with failure note, no retry
+- Stop immediately if 429s detected or Andre sends a message
+
+### Forbidden
+- Never modify openclaw.json, cron jobs, LaunchAgents, or gateway config
+- Never delete tasks — only move to Done with summary
+- Never dispatch P1 tasks
+- Max 5 min per sub-agent (kill if exceeded)
+
+### State
+- Track progress in `data/night-shift-state.json`
+- Archive to `data/night-shift-archive/` after each night
+
+### Morning Report (07:00)
+Send Telegram sitrep:
+```
+🌙 Night Shift Report — [date]
+✅ Completed: X tasks | ⏭️ Skipped: Y | ❌ Failed: Z | 🪙 Tokens: ~N
+
+Completed:
+• [Task] — [one-line summary]
+
+── Station Status ──
+💾 Disk: workspace X GB / MC repo Y GB
+🚨 Incidents overnight: [count or "None"]
+⏱️ Gateway uptime: Xh Ym
+📊 Backlog: N tasks (M night-shift eligible)
+```
+
 ## Rule: Sub-agent Timeout
 - If a sub-agent runs for >5 minutes with no resolution, kill it and add the task to backlog
 - If the main agent spends >10 minutes debugging the same issue, stop and add to backlog

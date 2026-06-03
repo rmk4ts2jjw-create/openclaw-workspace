@@ -2,8 +2,9 @@
 
 _Autonomous task processing during 01:00-07:00 when Andre is asleep._
 
-**Status:** Design only — not yet implemented
+**Status:** Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks)
 **Created:** 2026-06-03
+**Activated:** 2026-06-03
 
 ---
 
