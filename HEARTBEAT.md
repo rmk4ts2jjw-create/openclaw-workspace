@@ -4,10 +4,15 @@
 
 ## Task Pickup
 - Read `data/tasks.json`, find tasks with `status: "backlog"`
-- For each backlog task, spawn a sub-agent (or work directly if simple) to complete it
+- ONLY pick tasks that are truly dispatchable: no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
+- Sort by priority (P1 > P2 > P3), then by age (oldest first)
+- Spawn a sub-agent with a clear task brief including: task ID, title, note/description, and expected output
 - Move task to `in_progress` when starting, `done` when complete
-- Write completion summary before marking done (see task details)
-- Only pick up one task per heartbeat to avoid overloading
+- The sub-agent MUST update `currentStep` every 5-10 min with specific actions (NOT "Agent starting…")
+- Write completion summary before marking done
+- Only pick up ONE task per heartbeat to avoid overloading
+- The main agent (Space Monkey) should handle P1 tasks directly; offload P2/P3 to crew agents
+- Crew task routing: infra → lifesupport, code → engineer, knowledge → archivist, unknown → monkey
 
 ## Stall Detection (CRITICAL — check EVERY heartbeat)
 - For EVERY task with `status: "in_progress"`, calculate staleness:
@@ -17,7 +22,7 @@
   - If NO valid timestamp can be found at all, treat as stalled (it's broken data)
 - If staleness > 2 hours: reset to `backlog`, set `stalledAt` to the current ISO timestamp, add history entry explaining why. The `stalledAt` field prevents the work-dispatcher from immediately re-dispatching the same task.
 - ALSO increment `dispatchCount` by 1 (set to at least 1 if not present). If `dispatchCount >= 3`, the dispatcher will skip the task entirely via its `dispatchCount < 3` filter. This is a secondary guard against the race condition where `stalledAt` gets cleared by the save-tasks merge logic.
-- If staleness > 30 minutes but < 2 hours: log a warning but don't reset yet
+- If staleness > 30 minutes but < 2 hours: log a warning. If currentStep is still "Agent starting…" or null, reset immediately — the task was never actually picked up by an agent
 - The `startedAt` field is NOT reliable — do not use it for stall detection
 - After resetting, commit the change so the Kanban reflects reality immediately
 
