@@ -1,5 +1,30 @@
 [
   {
+    "id": "task-review-system",
+    "title": "External AI Review Loop \u2014 Phase 1",
+    "assignee": "monkey",
+    "status": "in_progress",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Create the review system framework: directory structure, templates, review-agent design, Phase 2 comparison, and first review package. Phase 1 is framework only \u2014 no automation, no external API calls.",
+    "tags": [
+      "review-system",
+      "phase-1",
+      "architecture"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:48:41.334010+00:00",
+        "action": "created",
+        "actor": "Andre",
+        "details": "Mission: External AI Review Loop Phase 1"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:48:41.334010+00:00",
+    "currentStep": "Creating directory structure",
+    "progress": 5
+  },
+  {
     "id": "task-inc-044-abd6",
     "title": "Investigate: INC-044",
     "assignee": "engineer",
@@ -177,7 +202,9 @@
       "runbook-evolution",
       "phase-2-dependent"
     ],
-    "dispatchCount": 0
+    "dispatchCount": 3,
+    "wasStalled": true,
+    "stalledAt": "2026-06-03T23:43:52.840344+00:00"
   },
   {
     "id": "task-fce301b7",
