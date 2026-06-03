@@ -79,10 +79,15 @@ If any condition fails → log reason, skip Night Shift this cycle.
 
 ### Dispatch
 - Pick ONE eligible task, spawn sub-agent with full task brief
-- Sub-agent MUST update `currentStep` and `lastActivity` every 5-10 min
+- Sub-agent MUST update `currentStep` and `lastActivity` every 5-10 min — this is CRITICAL. Without intermediate updates, stall detection cannot function and the morning report cannot assess agent behavior.
+- **Night Shift stall rule:** If a task has been in_progress for >30 min with no `lastActivity` update (or currentStep still shows "Agent starting…"), reset it to backlog immediately. Do NOT let Night Shift tasks sit frozen. The 07:00 morning report should never show a task that's been stuck for hours.
 - On completion: mark done with summary, pick next eligible task
 - On failure: move back to backlog with failure note, no retry
 - Stop immediately if 429s detected or Andre sends a message
+- **Night Shift sub-agent brief MUST include:**
+  - The exact Python script to update tasks.json at every step (copy from Task Pickup section)
+  - Explicit instruction: "Run the update script after EVERY file read, edit, test, or decision — not just at start and completion"
+  - Warning: "The morning report will flag tasks with no intermediate progress updates"
 
 ### Forbidden
 - Never modify openclaw.json, cron jobs, LaunchAgents, or gateway config
@@ -102,6 +107,11 @@ Send Telegram sitrep:
 
 Completed:
 • [Task] — [one-line summary]
+  ↳ Progress updates: [N] intermediate steps logged — [good/needs improvement]
+
+── Agent Behavior ──
+📈 Tasks with intermediate progress updates: X/Y
+⚠️ Tasks that went straight start→complete with no steps: [list or "None"]
 
 ── Station Status ──
 💾 Disk: workspace X GB / MC repo Y GB
@@ -109,6 +119,8 @@ Completed:
 ⏱️ Gateway uptime: Xh Ym
 📊 Backlog: N tasks (M night-shift eligible)
 ```
+
+**Progress update assessment:** For each completed task, check its history. If there are no `progress` or `step_update` entries between `started` and `completed`, flag it. The goal is at least 2-3 intermediate updates per task.
 
 ## Rule: Sub-agent Timeout
 - If a sub-agent runs for >5 minutes with no resolution, kill it and add the task to backlog

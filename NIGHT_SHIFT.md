@@ -106,9 +106,10 @@ Not all backlog tasks qualify. Eligibility is determined **automatically** by th
 
 ### Sub-agent Constraints
 - Each sub-agent gets a 15-minute timeout
-- Sub-agent must update `currentStep` and `lastActivity` every 5 min
+- Sub-agent must update `currentStep` and `lastActivity` every 5 min — **this is non-negotiable for Night Shift**. The morning report will flag tasks that went straight from start→completion with no intermediate steps.
 - Sub-agent must write a completion summary before marking done
 - If a sub-agent fails, the task goes back to backlog with failure note — no retry
+- **Night Shift stall rule:** If a task has been in_progress for >30 min with no `lastActivity` update (or currentStep still "Agent starting…"), reset to backlog immediately. Never let a frozen task sit until morning.
 
 ---
 
@@ -152,10 +153,11 @@ Sent via Telegram at 07:00 BST:
 
 Completed:
 • [Task title] — [one-line summary]
-• [Task title] — [one-line summary]
+  ↳ Progress updates: [N] intermediate steps logged — [good/needs improvement]
 
-Failed:
-• [Task title] — [reason]
+── Agent Behavior ──
+📈 Tasks with intermediate progress updates: X/Y
+⚠️ Tasks that went straight start→complete with no steps: [list or "None"]
 
 ── Station Status ──
 💾 Disk: workspace X GB / MC repo Y GB
@@ -178,6 +180,8 @@ Reason: [no eligible tasks / rate limits hit / etc.]
 ⏱️ Gateway uptime: Xh Ym
 📊 Backlog: N tasks (0 night-shift eligible)
 ```
+
+**Progress update assessment:** For each completed task, check its history. If there are no `progress` or `step_update` entries between `started` and `completed`, flag it. The goal is at least 2-3 intermediate updates per task.
 
 ---
 
