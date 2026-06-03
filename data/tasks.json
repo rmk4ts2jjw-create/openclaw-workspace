@@ -1269,7 +1269,7 @@
     "id": "task-9e4f3ebc",
     "title": "Response Action Lifecycle",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P1",
     "ts": "just now",
     "note": "Implement full lifecycle for incident response actions: NEW \u2192 INVESTIGATING \u2192 MITIGATING \u2192 RESOLVED. Each action tracks assignee, timestamps, and state transitions. Actions are visible in the Incident Details panel and update the incident's overall status. [auto-dispatched 2026-06-03 18:04]",
@@ -1279,8 +1279,17 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T17:13:40.718623+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 task flipped by work-dispatcher.sh but no agent spawned to do it. No activity timestamp, no progress."
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T17:13:40.718623+00:00",
+    "dispatchCount": 1,
+    "lastActivity": "2026-06-03T17:13:40.718623+00:00"
   },
   {
     "id": "task-ac75ac7b",
