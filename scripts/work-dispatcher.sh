@@ -127,7 +127,7 @@ log_file = "/Users/spacemonkey/.openclaw/workspace/memory/dispatcher-log.md"
 with open(tasks_file) as f:
     tasks = json.load(f)
 
-backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt')]
+backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3]
 if not backlog:
     exit(0)
 
@@ -150,6 +150,14 @@ if not backlog:
 
 backlog.sort(key=lambda t: t['id'])
 picked = backlog[0]
+
+# Re-read file to check for race conditions (heartbeat may have set stalledAt)
+with open(tasks_file) as f:
+    fresh_tasks = json.load(f)
+for ft in fresh_tasks:
+    if ft['id'] == picked['id'] and (ft.get('stalledAt') or ft.get('dispatchCount', 0) >= 3):
+        print(f"SKIP_RACE: {picked['id']} was stalled/dispatched by another process")
+        exit(0)
 
 for t in tasks:
     if t['id'] == picked['id']:

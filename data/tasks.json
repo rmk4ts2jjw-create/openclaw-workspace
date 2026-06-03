@@ -1838,15 +1838,62 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system \u2014 not just sitting in columns.",
+    "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system \u2014 not just sitting in columns. [auto-dispatched 2026-06-03 01:01] [auto-dispatched 2026-06-03 01:31] [auto-dispatched 2026-06-03 02:01] [auto-dispatched 2026-06-03 02:31] [auto-dispatched 2026-06-03 03:01] [auto-dispatched 2026-06-03 03:31] [auto-dispatched 2026-06-03 04:01]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T00:13:05.390740+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp in_progress with no activity"
+      },
+      {
+        "ts": "2026-06-03T00:42:46.216362+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no ts no activity"
+      },
+      {
+        "ts": "2026-06-03T01:12:45.423130+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset: no timestamp stalled"
+      },
+      {
+        "ts": "2026-06-03T01:42:43.884103+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset: no ts no activity"
+      },
+      {
+        "ts": "2026-06-03T02:30:31.472283+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T02:42:45.050096+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T03:12:49.198084+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Auto-reset: no timestamp no activity"
       }
-    ]
+    ],
+    "stalledAt": "2026-06-03T03:12:49.198084+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "lastUpdated": "2026-06-03T01:12:45.423130+00:00",
+    "dispatchCount": 7
   },
   {
     "id": "task-9f6de5b0",
