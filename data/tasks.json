@@ -1,5 +1,41 @@
 [
   {
+    "id": "task-fd625713",
+    "title": "Incident \u2192 Task Linking",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "When an incident is created, a corresponding task must appear in the Kanban board automatically. Bidirectional linking: incident shows linked tasks, task shows parent incident. Status changes propagate (task done \u2192 incident check for auto-resolution).",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T17:52:11.407Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-03T18:14:03.377116+00:00",
+        "action": "stalled",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 task flipped by work-dispatcher.sh before it was disabled. No agent spawned. currentStep still \"Agent starting\u2026\" at 5%."
+      }
+    ],
+    "lastUpdated": "2026-06-03T17:52:11.407Z",
+    "lastActivity": "2026-06-03T18:14:03.377116+00:00",
+    "currentStep": "Agent starting\u2026",
+    "startedAt": "2026-06-03T17:52:11.407Z",
+    "progress": 5,
+    "stalledAt": "2026-06-03T18:14:03.377116+00:00",
+    "dispatchCount": 1
+  },
+  {
     "id": "task-INC-042-act-751526",
     "title": "[Dispatch] Apply standard fix",
     "assignee": "monkey",
@@ -7,7 +43,7 @@
     "ts": "just now",
     "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nApply a standard fix procedure",
     "incidentSource": "INC-042",
-    "lastUpdated": "2026-06-03T15:21:04.093Z",
+    "lastUpdated": "2026-06-03T17:51:46.165Z",
     "history": [
       {
         "ts": "2026-06-02T18:43:10.523938+00:00",
@@ -52,7 +88,8 @@
     "progress": 100,
     "dispatchCount": 2,
     "completedAt": "2026-06-03T17:20:22.125044+00:00",
-    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded.",
+    "reviewed": true
   },
   {
     "id": "task-progress-fix-001",
@@ -1329,23 +1366,6 @@
     "completedAt": "2026-06-03T17:20:22.125044+00:00",
     "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
-  },
-  {
-    "id": "task-fd625713",
-    "title": "Incident \u2192 Task Linking",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P1",
-    "ts": "just now",
-    "note": "When an incident is created, a corresponding task must appear in the Kanban board automatically. Bidirectional linking: incident shows linked tasks, task shows parent incident. Status changes propagate (task done \u2192 incident check for auto-resolution).",
-    "history": [
-      {
-        "ts": "2026-06-02T14:43:59.301126+00:00",
-        "action": "created",
-        "actor": "monkey",
-        "details": "Backlog planning \u2014 created from strategic roadmap"
-      }
-    ]
   },
   {
     "id": "task-9e4f3ebc",
