@@ -2044,7 +2044,7 @@
     "id": "task-fde53af6",
     "title": "Automation Health States",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Integrate into the EXISTING Scheduler page. Each cron job row gets: colored status dot (green=healthy, amber=1-2 failures, red=3+ failures), consecutive failure count, average duration. Top of Scheduler: overall health summary bar \u2014 '3 healthy, 1 degraded, 0 failing'. States: healthy, degraded, failing, unknown. Do NOT build a new page.",
@@ -2078,19 +2078,39 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved back to backlog \u2014 needs focused session to implement Scheduler health integration"
+      },
+      {
+        "ts": "2026-06-03T21:43:21.388089+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up by Operations Engine \u2014 integrating health states into Scheduler page"
+      },
+      {
+        "ts": "2026-06-03T21:44:27.602870+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Adding health summary bar and status dots to Scheduler page"
+      },
+      {
+        "ts": "2026-06-03T21:47:33.347195+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Health states integrated into Scheduler: summary bar, status dots, filters"
       }
     ],
-    "currentStep": null,
-    "lastActivity": "2026-06-03T21:34:39.000331+00:00",
-    "progress": 0,
+    "currentStep": "Completed",
+    "lastActivity": "2026-06-03T21:47:33.347195+00:00",
+    "progress": 100,
     "dispatchCount": 0,
-    "startedAt": "2026-06-03T21:34:19.011349+00:00"
+    "startedAt": "2026-06-03T21:43:21.388089+00:00",
+    "completedAt": "2026-06-03T21:47:33.347195+00:00",
+    "summary": "Integrated health states into existing Scheduler page: health summary bar (3 healthy, 1 degraded, 0 failing), colored status dots on each cron job card (green/amber/red), consecutive failure count, filter buttons for degraded/failing states. States: healthy (0 failures), degraded (1-2), failing (3+), unknown (disabled). Build verified clean."
   },
   {
     "id": "task-a6f37a6f",
     "title": "Retry Policies with Backoff",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Keep it simple. One global policy: 3 retries with 5-minute gaps between attempts. After 3 failures, auto-create a P2 incident. No exponential backoff (Phase 5). No per-job customization (single-user system).",
@@ -2112,12 +2132,27 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved back to Backlog with clarified scope: simple global policy, 3 retries + 5min gap, auto-P2 incident after 3 failures"
+      },
+      {
+        "ts": "2026-06-03T21:47:58.381324+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up by Operations Engine \u2014 implementing retry policy"
+      },
+      {
+        "ts": "2026-06-03T21:50:19.493619+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Retry policy implemented: 3 retries + 5min gap, auto-P2 incident, retry state tracking"
       }
     ],
-    "currentStep": null,
-    "lastActivity": "2026-06-03T19:31:26.939521+00:00",
-    "progress": 0,
-    "dispatchCount": 0
+    "currentStep": "Completed",
+    "lastActivity": "2026-06-03T21:50:19.493619+00:00",
+    "progress": 100,
+    "dispatchCount": 0,
+    "startedAt": "2026-06-03T21:47:58.381324+00:00",
+    "completedAt": "2026-06-03T21:50:19.493619+00:00",
+    "summary": "Simple global retry policy: 3 retries with 5-minute gaps, then auto-create P2 incident. API endpoint /api/retry-policy tracks retry state per job, creates incident + linked task when limit reached. Retry state persisted in data/retry-state.json. CronJobCard shows retry count (Retry 2/3) and P2 incident status. Build verified clean."
   },
   {
     "id": "task-7411b167",
@@ -2656,7 +2691,7 @@
     "id": "task-9f6de5b0",
     "title": "Operational Readiness Dashboard",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
     "note": "Enhance the EXISTING Dashboard \u2014 NOT a new page.\n\na) STATION STATUS BAR \u2014 At top of Dashboard: \ud83d\udfe2 'All systems nominal' / \ud83d\udfe1 '2 incidents, 1 stalled task' / \ud83d\udd34 '1 P1 incident requires attention'\n\nb) AGENT LOAD INDICATORS \u2014 On Spacestation or Team page, show task count per agent (e.g., Space Monkey: 3 tasks (1 in_progress, 2 assigned))\n\nc) BACKLOG COUNT BADGE \u2014 Verify existing sidebar Tasks badge is working and visible. [auto-dispatched 2026-06-03 22:34]",
@@ -2684,10 +2719,16 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved back to Backlog with clarified scope: enhance existing Dashboard, not a new page"
+      },
+      {
+        "ts": "2026-06-03T21:43:06.854914+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 140min stale with no progress. Picked up in previous session but not completed."
       }
     ],
     "dispatchCount": 0,
-    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "lastActivity": "2026-06-03T21:43:06.854914+00:00",
     "currentStep": null,
     "progress": 0
   },
