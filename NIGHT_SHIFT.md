@@ -61,19 +61,19 @@ If any condition fails → skip Night Shift this cycle, log reason.
 
 ## 3. Task Eligibility
 
-Not all backlog tasks qualify. A task is Night Shift eligible only if:
+Not all backlog tasks qualify. Eligibility is determined **automatically** by the system at dispatch time — no manual tagging required.
 
-**Must have:**
+**Automatically eligible:**
 - `status: "backlog"`
-- `nightShiftEligible: true` (new field, defaults to `true` on task creation)
 - `stalledAt` not set
 - `dispatchCount < 3`
 - `wasStalled: false`
+- Priority is P2 or P3 (P1 excluded)
+- No exclusion tags: `"needs-human-input"`, `"planning"`, `"design"`, `"roadmap"`
 
-**Must NOT have:**
-- `priority: "P1"` — P1 tasks need Andre's awareness, even at night
-- Tags: `"needs-human-input"`, `"planning"`, `"design"`, `"roadmap"`
-- `assignee` set to a specific crew member (Night Shift uses generic sub-agents)
+**Manual override:**
+- `nightShiftEligible: false` — Andre can opt out a specific task
+- This is the exception, not the rule. Most tasks never need this field.
 
 **Sort order for pickup:**
 1. Priority: P2 before P3
@@ -87,7 +87,7 @@ Not all backlog tasks qualify. A task is Night Shift eligible only if:
 - **Max 5 tasks per night** — prevents burning through backlog
 - **No new tasks after 06:30** — wrap-up window
 - **Stop at 07:00 sharp** — even if a task is mid-work (move back to backlog)
-- **Max 50K tokens per night** — hard stop if exceeded
+- **Max 100K tokens per night** — hard stop if exceeded (~20K avg per task at 5-task limit)
 
 ### Rate Limit Protection
 - Before each task dispatch, check for recent 429 errors
@@ -156,17 +156,26 @@ Completed:
 Failed:
 • [Task title] — [reason]
 
-Backlog remaining: N tasks
+── Station Status ──
+💾 Disk: workspace X GB / MC repo Y GB
+🚨 Incidents overnight: [count + brief description, or "None"]
+⏱️ Gateway uptime: Xh Ym
+📊 Backlog remaining: N tasks (M night-shift eligible)
 ```
 
-If zero tasks were completed, the report is still sent (so Andre knows the system is working):
+If zero tasks were completed:
 
 ```
-🌙 Night Shift Report — [date]
+🟥 Night Shift Report — [date]
 
 No tasks completed.
 Reason: [no eligible tasks / rate limits hit / etc.]
-Backlog: N tasks (0 night-shift eligible)
+
+── Station Status ──
+💾 Disk: workspace X GB / MC repo Y GB
+🚨 Incidents overnight: [count + brief description, or "None"]
+⏱️ Gateway uptime: Xh Ym
+📊 Backlog: N tasks (0 night-shift eligible)
 ```
 
 ---
@@ -236,19 +245,23 @@ Backlog: N tasks (0 night-shift eligible)
 
 ---
 
-## 10. Open Questions
+## 10. Resolved Design Decisions
 
-1. **Should Night Shift use crew agents or generic sub-agents?**
-   - Proposal: Generic sub-agents. Crew agents (lifesupport, engineer, archivist) are named personas without separate sessions. The sub-agent brief can include role context.
+1. **`nightShiftEligible` field:** Not a manual tagging requirement. Eligibility is auto-determined from existing fields (priority, tags, dispatch status). The field exists only as a manual override (`false`) for edge cases.
 
-2. **What if a task takes longer than the 06:30 cutoff?**
-   - Proposal: The in-progress task gets moved back to backlog with a note "Night Shift partial — resumed by Andre." No penalty to dispatchCount.
+2. **Token limit:** 100K total per night (~20K avg per task at 5-task limit).
 
-3. **Should Night Shift run every night or only on weekdays?**
-   - Proposal: Every night. Andre can disable by setting a `nightShiftEnabled: false` flag in tasks.json.
+3. **Morning report includes station status:** Disk usage, overnight incidents, gateway uptime — not just task summaries.
 
-4. **What about the existing "Dreaming" concept?**
-   - Dreaming was a periodic self-reflection cron (now removed). Night Shift replaces it with productive work. No conflict.
+4. **Dry run test:** Can be executed immediately in any session — no code changes needed. Simulates full Night Shift logic and logs what it WOULD do.
+
+5. **Sub-agents vs crew agents:** Generic sub-agents. Crew personas are context, not separate sessions.
+
+6. **06:30 cutoff task handling:** In-progress task moved back to backlog with "Night Shift partial" note. No dispatchCount penalty.
+
+7. **Frequency:** Every night. Andre can disable via `nightShiftEnabled: false` in tasks.json.
+
+8. **Dreaming concept:** Superseded by Night Shift. No conflict — different purpose (productive work vs reflection).
 
 ---
 
