@@ -1,5 +1,86 @@
 [
   {
+    "id": "task-inc-036-b8c2",
+    "title": "Investigate: INC-036",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-036: Gateway log shows 11 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-036",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:21:33.418511+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Linked task created for INC-036 during manual backfill"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:21:33.418511+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-inc-038-7679",
+    "title": "Investigate: INC-038",
+    "assignee": "monkey",
+    "status": "triage",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-038: 3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "linkedIncidentId": "INC-038",
+    "tags": [
+      "incident-response",
+      "tasks",
+      "stale",
+      "in-progress"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:21:33.418511+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Linked task created for INC-038 during manual backfill"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:21:33.418511+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-inc-039-42f8",
+    "title": "Investigate: INC-039",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-039: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-039",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:21:33.418511+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Linked task created for INC-039 during manual backfill"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:21:33.418511+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
     "id": "task-be03dff8",
     "title": "Runbook Evolution",
     "assignee": "monkey",

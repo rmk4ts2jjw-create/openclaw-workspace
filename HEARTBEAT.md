@@ -123,6 +123,20 @@ Completed:
 
 **Progress update assessment:** For each completed task, check its history. If there are no `progress` or `step_update` entries between `started` and `completed`, flag it. The goal is at least 2-3 intermediate updates per task.
 
+## IncidentAuto-Resolve (check EVERY heartbeat)
+- Read `data/incidents.json`, count open (non-RESOLVED) incidents
+- If open incidents > 10: run auto-resolve
+  - POST to `/api/incidents/auto-resolve` with `{ closeOldDays: 5 }`
+  - This endpoint resolves incidents whose linked tasks are done and closes old orphans
+  - If the endpoint doesn't exist yet, run the equivalent Python script directly:
+    ```python
+    # See /api/incidents/auto-resolve.tsx for logic
+    # Resolve: linked task done → incident RESOLVED
+    # Close: no linked task AND age >= 5 days → RESOLVED
+    ```
+- This prevents the incident graveyard from building up again
+- The daily 6 AM cron does this automatically; heartbeat is a safety net
+
 ## Rule: Sub-agent Timeout
 - If a sub-agent runs for >5 minutes with no resolution, kill it and add the task to backlog
 - If the main agent spends >10 minutes debugging the same issue, stop and add to backlog

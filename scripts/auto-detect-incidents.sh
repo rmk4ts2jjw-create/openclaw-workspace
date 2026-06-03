@@ -26,11 +26,24 @@ tasks_path = os.path.join(os.path.dirname(incidents_path), "tasks.json")
 
 incidents = json.load(open(incidents_path)) if os.path.exists(incidents_path) else []
 
-# Deduplicate — skip if an active incident with same title and source exists
+# Deduplicate — skip only if an active incident with same title+source already has a linked task
+existing_inc = None
 for i in incidents:
     if i["status"] != "RESOLVED" and i["title"] == "$title" and "$source" in i.get("tags", []):
+        existing_inc = i
+        break
+if existing_inc:
+    # Check if a linked task already exists for this incident
+    tasks_check = json.load(open(tasks_path)) if os.path.exists(tasks_path) else []
+    has_linked = any(t.get("linkedIncidentId") == existing_inc["id"] for t in tasks_check)
+    if has_linked:
         print("duplicate")
         exit(0)
+    # Incident exists but has no linked task — skip incident creation, fall through to task creation
+    next_id = existing_inc["id"]
+    inc_already_exists = True
+else:
+    inc_already_exists = False
 
 # Generate next INC ID
 nums = []
@@ -67,19 +80,20 @@ _severity_actions = {
 }
 _actions = _severity_actions.get("$severity", _severity_actions["P3"])
 
-inc = {
-    "id": next_id, "title": "$title", "severity": "$severity",
-    "status": "TRIAGE", "owner": "$owner", "acknowledged": False,
-    "escalated": False, "opened": now, "lastActivity": now,
-    "summary": "$summary",
-    "tags": ${tags} + ["$source"],
-    "timeline": [{"ts": now, "message": "Auto-detected by $source", "actor": "system"}],
-    "actions": _actions,
-    "actionsGenerated": True
-}
-incidents.insert(0, inc)
-with open(incidents_path, "w") as f:
-    json.dump(incidents, f, indent=2)
+if not inc_already_exists:
+    inc = {
+        "id": next_id, "title": "$title", "severity": "$severity",
+        "status": "TRIAGE", "owner": "$owner", "acknowledged": False,
+        "escalated": False, "opened": now, "lastActivity": now,
+        "summary": "$summary",
+        "tags": ${tags} + ["$source"],
+        "timeline": [{"ts": now, "message": "Auto-detected by $source", "actor": "system"}],
+        "actions": _actions,
+        "actionsGenerated": True
+    }
+    incidents.insert(0, inc)
+    with open(incidents_path, "w") as f:
+        json.dump(incidents, f, indent=2)
 
 # Create linked task in tasks.json
 try:
