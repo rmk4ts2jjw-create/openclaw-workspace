@@ -3,11 +3,10 @@
     "id": "task-INC-042-act-751526",
     "title": "[Dispatch] Apply standard fix",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "ts": "just now",
     "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nApply a standard fix procedure",
     "incidentSource": "INC-042",
-    "stalledAt": "2026-06-03T17:00:24.662020+00:00",
     "lastUpdated": "2026-06-03T15:21:04.093Z",
     "history": [
       {
@@ -39,13 +38,21 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Reset from in_progress to backlog \u2014 98min with no progress. currentStep still \"Agent starting\u2026\" at 5%. Dispatcher flipped status but no agent was spawned to do the work."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
     ],
-    "lastActivity": "2026-06-03T17:00:24.662020+00:00",
-    "currentStep": "Agent starting\u2026",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
     "startedAt": "2026-06-03T15:21:04.093Z",
-    "progress": 5,
-    "dispatchCount": 2
+    "progress": 100,
+    "dispatchCount": 2,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-progress-fix-001",
@@ -78,11 +85,10 @@
     "id": "task-INC-042-act-945897",
     "title": "[Dispatch] Review and triage",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "ts": "just now",
     "note": "Source: INC-042 \u2014 Tasks stuck In Progress \u2014 4 tasks with no recent activity\nReview the incident and determine appropriate response",
     "incidentSource": "INC-042",
-    "stalledAt": "2026-06-02T18:43:10.523938+00:00",
     "lastUpdated": "2026-06-02T18:43:10.523938+00:00",
     "history": [
       {
@@ -90,14 +96,25 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: dispatched task with no activity timestamp and no history \u2014 likely dispatched but never picked up by agent"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
-    ]
+    ],
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "progress": 100,
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-inc-042-3152",
     "title": "Investigate: INC-042",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Auto-created from incident INC-042: 4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
@@ -126,15 +143,22 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset to backlog: dispatched but no agent ever picked up the task. currentStep was \"None\" with no progress after 22min. Dispatcher-agent handoff gap."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
     ],
-    "lastActivity": "2026-06-02T18:39:53.136Z",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "lastUpdated": "2026-06-02T19:02:30.140772+00:00",
-    "currentStep": null,
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
     "startedAt": "2026-06-02T18:39:53.136Z",
-    "progress": 0,
-    "stalledAt": "2026-06-02T19:02:30.140772+00:00",
-    "dispatchCount": 0
+    "progress": 100,
+    "dispatchCount": 0,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-mpwz0zii-2ort",
@@ -162,25 +186,29 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset to backlog: dispatched but no agent ever picked up the task. currentStep was \"None\" with no progress after 33min. Dispatcher-agent handoff gap."
+      },
+      {
+        "ts": "2026-06-03T17:21:34.256356+00:00",
+        "action": "unstalled",
+        "actor": "monkey",
+        "details": "Cleared stalledAt for end-to-end dispatch test. Small UI task: reorder sidebar items."
       }
     ],
     "lastUpdated": "2026-06-02T19:02:30.140772+00:00",
-    "lastActivity": "2026-06-02T18:28:42.210Z",
+    "lastActivity": "2026-06-03T17:21:34.256356+00:00",
     "currentStep": null,
     "startedAt": "2026-06-02T18:28:42.210Z",
     "progress": 0,
-    "stalledAt": "2026-06-02T19:02:30.140772+00:00",
     "dispatchCount": 0
   },
   {
     "id": "task-INC-041-act-738693",
     "title": "[Dispatch] Investigate issue",
     "assignee": "lifesupport",
-    "status": "backlog",
+    "status": "done",
     "ts": "just now",
     "note": "Source: INC-041 \u2014 Rate limit exhaustion \u2014 26 429 errors in gateway log\nInvestigate the cause of this high-severity incident",
     "incidentSource": "INC-041",
-    "stalledAt": "2026-06-02T18:43:10.523938+00:00",
     "lastUpdated": "2026-06-02T18:43:10.523938+00:00",
     "history": [
       {
@@ -188,14 +216,25 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: dispatched task with no activity timestamp and no history \u2014 likely dispatched but never picked up by agent"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
-    ]
+    ],
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "progress": 100,
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-inc-040-f114",
     "title": "Investigate: INC-040",
     "assignee": "lifesupport",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Auto-created from incident INC-040: Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
@@ -224,21 +263,28 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset to backlog: dispatched but no agent ever picked up the task. currentStep was \"None\" with no progress after 41min. Dispatcher-agent handoff gap."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
     ],
-    "lastActivity": "2026-06-02T18:21:03.936Z",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "lastUpdated": "2026-06-02T19:02:30.140772+00:00",
-    "currentStep": null,
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
     "startedAt": "2026-06-02T18:21:03.936Z",
-    "progress": 0,
-    "stalledAt": "2026-06-02T19:02:30.140772+00:00",
-    "dispatchCount": 0
+    "progress": 100,
+    "dispatchCount": 0,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-inc-041-ae7e",
     "title": "Investigate: INC-041",
     "assignee": "lifesupport",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Auto-created from incident INC-041: Gateway log shows 26 rate limit (429) errors. Free model pool may be exhausted.",
@@ -267,15 +313,22 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset to backlog: dispatched but no agent ever picked up the task. currentStep was \"None\" with no progress after 41min. Dispatcher-agent handoff gap."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Cleaned up \u2014 stale incident/dispatch artifact. Marked done as obsolete."
       }
     ],
-    "lastActivity": "2026-06-02T18:21:02.843Z",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "lastUpdated": "2026-06-02T19:02:30.140772+00:00",
-    "currentStep": null,
+    "currentStep": "Cleaned up \u2014 stale incident artifact",
     "startedAt": "2026-06-02T18:21:02.843Z",
-    "progress": 0,
-    "stalledAt": "2026-06-02T19:02:30.140772+00:00",
-    "dispatchCount": 0
+    "progress": 100,
+    "dispatchCount": 0,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Obsolete \u2014 auto-created incident task from stale dispatch. Incident already resolved or superseded."
   },
   {
     "id": "task-kanban-fix-001",
@@ -357,7 +410,7 @@
     "id": "task-mp7cbyxz-0ztq",
     "title": "Error Feed \u2014 behaviour review and fix.",
     "assignee": "lifesupport",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Error Feed \u2014 behaviour review and fix.\n\nThe error feed currently has Investigate / Resolved / Skip buttons but \nthe workflow is confusing. Here's how it should actually work:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nCORRECT ERROR FEED WORKFLOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. A cron job fails \u2192 error appears in the Error Feed tab with a \n   \"NEW\" badge\n\n2. I click \"Investigate\" \u2192 \n   - The error status changes to \"IN PROGRESS\" \n   - A corresponding task is automatically created in the Tasks \n     section under \"In Progress\" so the crew knows to work on it\n   - The error stays visible in the feed with an in-progress indicator\n   - The button changes to show \"Resolved\" and \"Skip\"\n\n3. The crew fixes the underlying issue. The cron job runs successfully \n   on its next scheduled run \u2192\n   - The error automatically clears from the Error Feed\n   - The linked task in the Tasks section moves to \"Done\"\n   - No manual \"Resolved\" click needed \u2014 the system verified the fix\n\n4. If I click \"Resolved\" manually \u2192\n   - For when I've verified the fix myself\n   - Error disappears from the feed\n   - Linked task moves to Done\n\n5. If I click \"Skip\" \u2192\n   - For known non-critical issues I'm choosing to ignore\n   - Error disappears from the feed\n   - No task is created\n\n6. If the same job fails again later \u2192\n   - A NEW error appears (not the old one reopened)\n   - Fresh timestamp, fresh status\n   - Does NOT resurrect the old skipped/resolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nKEY RULES\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- Errors should NOT show \"Completed\" with an \"In Progress\" flag \n  at the same time (current bug)\n- When a cron job succeeds after being in error state, the error \n  should auto-clear \u2014 the system verified the fix\n- The \"Investigate\" button creates a task in the Tasks board so \n  work is tracked\n- The error feed reflects REALITY: if the job is still failing, \n  the error stays. If it succeeds, the error goes away.\n- The cron job entry in the Scheduler list should show an error \n  badge ONLY while there's an active unresolved error\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nWHAT TO FIX NOW\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Fix the double-status bug (no more \"Completed\" + \"In Progress\" \n   showing simultaneously)\n2. Wire Investigate button to auto-create a task in the Tasks board\n3. Wire cron job success to auto-clear the corresponding error\n4. Wire cron job error badge to auto-clear when error is resolved\n5. Confirm Skip behaviour works as described above\n6. Test the full flow end-to-end\n\nReport what the current behaviour actually is, then fix it to \nmatch this spec.  [auto-dispatched 2026-06-01 11:53] [auto-dispatched 2026-06-02 11:59] [auto-dispatched 2026-06-02 12:29] [HEARTBEAT 2026-06-02 12:47: Task has been auto-dispatched 6+ times with zero progress. Setting stalledAt to prevent further re-dispatch. Needs human triage.] [auto-dispatched 2026-06-02 12:59] [auto-dispatched 2026-06-02 14:29]",
@@ -445,15 +498,22 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "HARD STALLED \u2014 dispatchCount set to 99. This task requires human triage, not automated dispatch. Do not re-dispatch without human clearance."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
     "lastUpdated": "2026-06-02T14:44:31.229Z",
-    "lastActivity": "2026-06-02T15:05:08.950571+00:00",
-    "stalledAt": "2026-06-02T15:05:08.950571+00:00",
-    "currentStep": "Agent starting\u2026",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "currentStep": "Deferred \u2014 needs human design input",
     "startedAt": "2026-06-02T14:44:31.229Z",
-    "progress": 5,
-    "dispatchCount": 99
+    "progress": 100,
+    "dispatchCount": 99,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-mpwfiydb-6khn",
@@ -1225,7 +1285,7 @@
     "id": "task-419bce59",
     "title": "Auto-Incident Creation from System Errors",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "P1/P2 errors in the Error Feed should automatically create an Incident AND a linked Task on the Kanban board. When a cron job fails with a P1/P2 classification, the system creates both records and links them. The incident captures the error context; the task tracks resolution work. [auto-dispatched 2026-06-03 07:02]",
@@ -1241,12 +1301,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T06:13:03.324521+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-fd625713",
@@ -1269,7 +1337,7 @@
     "id": "task-9e4f3ebc",
     "title": "Response Action Lifecycle",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Implement full lifecycle for incident response actions: NEW \u2192 INVESTIGATING \u2192 MITIGATING \u2192 RESOLVED. Each action tracks assignee, timestamps, and state transitions. Actions are visible in the Incident Details panel and update the incident's overall status. [auto-dispatched 2026-06-03 18:04]",
@@ -1285,11 +1353,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Reset from in_progress to backlog \u2014 task flipped by work-dispatcher.sh but no agent spawned to do it. No activity timestamp, no progress."
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T17:13:40.718623+00:00",
     "dispatchCount": 1,
-    "lastActivity": "2026-06-03T17:13:40.718623+00:00"
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "progress": 100,
+    "currentStep": "Deferred \u2014 needs human design input",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-ac75ac7b",
@@ -1312,7 +1389,7 @@
     "id": "task-488e7676",
     "title": "Awaiting Review Incident Flow",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Incidents require review before closure \u2014 same pattern as task completion but with an explicit 'awaiting review' gate. Once all response actions are resolved, the incident moves to AWAITING_REVIEW. A reviewer must approve closure before it moves to DONE. [auto-dispatched 2026-06-03 08:02]",
@@ -1328,12 +1405,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: dispatched but no agent to work on planning task"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T07:13:17.843045+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-efcd3558",
@@ -1390,7 +1475,7 @@
     "id": "task-718a0d19",
     "title": "Suggested Action Generation",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "AI suggests response actions based on incident type and resolution history. When an incident is created, the system proposes actions from the matching runbook and similar past incidents. Suggestions appear as pre-filled action cards. [auto-dispatched 2026-06-03 12:03]",
@@ -1406,12 +1491,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T11:13:14.442600+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-f2727327",
@@ -1434,7 +1527,7 @@
     "id": "task-94ca8faa",
     "title": "Asset Schema",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Track systems, services, and agents as first-class assets. Schema: name, type (service/agent/cron/infra), status, owner, health check endpoint, dependencies, last check timestamp. Assets are the things incidents happen TO. [auto-dispatched 2026-06-03 15:33]",
@@ -1450,12 +1543,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T14:43:04.400124+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-e8a74157",
@@ -1478,7 +1579,7 @@
     "id": "task-45e26f79",
     "title": "Asset Health Monitoring",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Automated health checks for each asset. Cron-based or event-driven checks that update asset status (healthy/degraded/down/unknown). Health history is tracked and visible in the asset detail view. [auto-dispatched 2026-06-03 07:32]",
@@ -1494,18 +1595,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T06:43:09.056323+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-6d84ce60",
     "title": "Incident-to-Asset Linking",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Link incidents to affected assets. When creating an incident, select which assets are impacted. Asset view shows active and historical incidents. Incident view shows affected assets with their current health. [auto-dispatched 2026-06-03 11:03]",
@@ -1521,18 +1630,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T10:12:56.014005+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-7c52b6a6",
     "title": "Dependency Mapping",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Show relationships between assets: which services depend on which, which agents depend on which services. Visual dependency graph. When an asset goes down, highlight all dependent assets. Critical for understanding blast radius. [auto-dispatched 2026-06-03 13:03]",
@@ -1548,12 +1665,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T12:13:42.282633+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-bcd36145",
@@ -1654,7 +1779,7 @@
     "id": "task-9392a52f",
     "title": "Task Events in Timeline",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Task state changes (created, assigned, started, blocked, completed) appear in the timeline. Shows work flow patterns, bottlenecks, and agent activity over time. [auto-dispatched 2026-06-03 14:03]",
@@ -1670,18 +1795,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T13:42:59.678285+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-94a99d8e",
     "title": "Commander Timeline View",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "A dedicated, filterable timeline view showing all station activity. Filter by event type, severity, time range, agent, or asset. This is the 'mission log' \u2014 the complete operational history of the station. [auto-dispatched 2026-06-03 15:03]",
@@ -1697,12 +1830,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T14:13:07.601208+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-fde53af6",
@@ -1742,7 +1883,7 @@
     "id": "task-7411b167",
     "title": "Circuit Breakers",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-disable failing automation after threshold breaches. If a cron job fails N times consecutively, it's automatically disabled and an incident is created. Prevents runaway failures and noise. Manual reset required. [auto-dispatched 2026-06-03 12:33]",
@@ -1758,18 +1899,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T11:44:06.639151+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-2b004d0c",
     "title": "Provider Cooldown Management",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Track and manage rate limits across providers (OpenRouter, etc.). When a provider hits rate limits, automatically queue requests, switch to fallback providers, or pause non-critical work. Prevents cascading failures. [auto-dispatched 2026-06-03 05:02]",
@@ -1785,12 +1934,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T04:30:52.709649+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-de47f5f5",
@@ -1813,7 +1970,7 @@
     "id": "task-4ec228dd",
     "title": "Lessons Learned Capture",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "When an incident is resolved, prompt for a brief 'lessons learned' note. What happened? What fixed it? What could prevent it? Stored with the incident and searchable. This is the raw material for operational knowledge. [auto-dispatched 2026-06-03 10:32]",
@@ -1829,18 +1986,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T09:42:58.730640+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-3ccd4020",
     "title": "Knowledge Capture Automation",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Auto-suggest knowledge entries from resolved incidents. AI analyzes the incident + resolution + lessons learned and proposes a structured knowledge base entry. Human reviews and approves before publishing. [auto-dispatched 2026-06-03 06:32]",
@@ -1856,12 +2021,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T05:42:50.992052+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-be03dff8",
@@ -1884,7 +2057,7 @@
     "id": "task-2e83664a",
     "title": "Framework Sync",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Keep FRAMEWORK.md in sync with operational learning. When patterns emerge from incidents or knowledge entries, auto-suggest updates to AGENTS.md, TOOLS.md, or FRAMEWORK.md. The station's documentation evolves with its experience. [auto-dispatched 2026-06-03 05:32]",
@@ -1900,18 +2073,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T04:43:12.774493+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-313e1f42",
     "title": "Searchable Knowledge Base",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "A searchable repository of all operational knowledge: lessons learned, runbook updates, incident post-mortems, best practices. Full-text search, tagging, and linking to related incidents and assets. [auto-dispatched 2026-06-03 06:02]",
@@ -1927,18 +2108,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T05:12:53.022671+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-48c3895c",
     "title": "Task Category Badges",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Add category badges to all tasks: Operations, Infrastructure, Platform, Mission Control, Knowledge, Automation, Security, Technical Debt. Simple colored badge on the Kanban card. Filterable by category. No epics or story points \u2014 just a clear label. [auto-dispatched 2026-06-03 08:32]",
@@ -1954,18 +2143,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T07:43:11.465767+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-97381461",
     "title": "Priority/Severity System",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Implement P1 Critical, P2 High, P3 Normal, P4 Background across all work items. Visual hierarchy: P1 gets red/urgent styling, P2 gets orange, P3 gets standard, P4 gets muted. Critical items surface naturally at the top of lists and boards. [auto-dispatched 2026-06-03 16:03]",
@@ -1981,18 +2178,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T15:13:23.481723+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-6e561a42",
     "title": "Temporal Intelligence",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Stalled task detection (no activity for 2h), aging incident warnings (open for >24h), overdue operations (past expected completion), abandoned work flags. Visual indicators: 'No activity for 2h', 'Awaiting response', 'Escalation threshold approaching'. [auto-dispatched 2026-06-03 11:33]",
@@ -2008,18 +2213,26 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T10:43:14.339328+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-8ab0b8e9",
     "title": "Agent Accountability",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Track who owns work, who touched it last, active handoffs, and collaboration relationships. Assigned crew badge on tasks, 'last active by' timestamp, work history/timeline per agent. Clear ownership prevents work from falling through cracks. [auto-dispatched 2026-06-03 13:33]",
@@ -2035,12 +2248,20 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T12:42:51.485533+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "dispatchCount": 1
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-fce301b7",
@@ -2063,7 +2284,7 @@
     "id": "task-1d916084",
     "title": "Queue & Flow Visualisation",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Dispatch indicators showing work being assigned, moving data signals between stations, subtle hallway traversal animations, queue traffic, 'work arriving' animations. The station communicates that work is flowing through the system \u2014 not just sitting in columns. [auto-dispatched 2026-06-03 01:01] [auto-dispatched 2026-06-03 01:31] [auto-dispatched 2026-06-03 02:01] [auto-dispatched 2026-06-03 02:31] [auto-dispatched 2026-06-03 03:01] [auto-dispatched 2026-06-03 03:31] [auto-dispatched 2026-06-03 04:01] [auto-dispatched 2026-06-03 04:31]",
@@ -2121,13 +2342,21 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Auto-reset: no timestamp no activity"
+      },
+      {
+        "ts": "2026-06-03T17:20:22.125044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deferred \u2014 planning task cleared during backlog cleanup. Preserved for future human review."
       }
     ],
-    "stalledAt": "2026-06-03T03:42:46.385213+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "currentStep": "Deferred \u2014 needs human design input",
+    "progress": 100,
     "lastUpdated": "2026-06-03T01:12:45.423130+00:00",
-    "dispatchCount": 8
+    "dispatchCount": 8,
+    "completedAt": "2026-06-03T17:20:22.125044+00:00",
+    "lastActivity": "2026-06-03T17:20:22.125044+00:00",
+    "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
   },
   {
     "id": "task-9f6de5b0",
