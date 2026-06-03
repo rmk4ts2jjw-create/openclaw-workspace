@@ -2054,7 +2054,7 @@
     "id": "task-a6f37a6f",
     "title": "Retry Policies with Backoff",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "triage",
     "priority": "P2",
     "ts": "just now",
     "note": "Configurable retry policies for automated processes. Define max retries, backoff strategy (linear/exponential), and retry conditions. Failed cron jobs automatically retry according to policy before escalating. [auto-dispatched 2026-06-03 20:04]",
@@ -2064,8 +2064,16 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:31:26.939521+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 unclear scope, needs human input on retry policy requirements"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 unclear scope. Needs Andre to define retry policy requirements and backoff strategy",
+    "lastActivity": "2026-06-03T19:31:26.939521+00:00"
   },
   {
     "id": "task-7411b167",
