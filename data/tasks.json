@@ -1845,7 +1845,7 @@
     "id": "task-bcd36145",
     "title": "Unified Event Model",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "All station events (incidents, cron runs, task changes, agent actions) feed into a single event model. Each event has: timestamp, type, source, severity, description, and links to related entities. This is the foundation for the timeline.",
@@ -1861,17 +1861,25 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Unified Event Model \u2014 needs Andre input on what events to track and how they relate to existing incident/task/cron data models"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Merged with task-f9e3796c into new combined Timeline task per Andre review"
       }
     ],
-    "currentStep": "Triaged \u2014 Unified Event Model \u2014 needs Andre input on what events to track and how they relate to existing incident/task/cron data models",
-    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "progress": 0
+    "currentStep": "Merged into new Timeline task",
+    "lastActivity": "2026-06-03T21:26:12.356009+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-03T21:26:12.356009+00:00",
+    "summary": "Merged into new combined task: Timeline \u2014 Unified Event Model (task-timeline-unified)"
   },
   {
     "id": "task-f9e3796c",
     "title": "Incident Events in Timeline",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Incident lifecycle events (created, status change, action taken, resolved) appear in the unified timeline. Filterable by incident, severity, or time range. Shows the full story of an incident in chronological order.",
@@ -1887,11 +1895,19 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Incident Events in Timeline \u2014 depends on Unified Event Model design. Need to clarify scope: new timeline page or extending existing?"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Merged with task-f9e3796c into new combined Timeline task per Andre review"
       }
     ],
-    "currentStep": "Triaged \u2014 Incident Events in Timeline \u2014 depends on Unified Event Model design. Need to clarify scope: new timeline page or extending existing?",
-    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "progress": 0
+    "currentStep": "Merged into new Timeline task",
+    "lastActivity": "2026-06-03T21:26:12.356009+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-03T21:26:12.356009+00:00",
+    "summary": "Merged into new combined task: Timeline \u2014 Unified Event Model (task-timeline-unified)"
   },
   {
     "id": "task-0eb45241",
@@ -2028,10 +2044,10 @@
     "id": "task-fde53af6",
     "title": "Automation Health States",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Monitor the health of each automated process (cron jobs, agents, services). Track: last run status, consecutive failures, average duration, error rate. Health states: healthy, degraded, failing, unknown.",
+    "note": "Integrate into the EXISTING Scheduler page. Each cron job row gets: colored status dot (green=healthy, amber=1-2 failures, red=3+ failures), consecutive failure count, average duration. Top of Scheduler: overall health summary bar \u2014 '3 healthy, 1 degraded, 0 failing'. States: healthy, degraded, failing, unknown. Do NOT build a new page.",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2044,20 +2060,40 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Automation Health States \u2014 partially exists in scheduler. Need Andre input on health state definitions and display location"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with clarified scope: integrate into existing Scheduler page, not a new page"
+      },
+      {
+        "ts": "2026-06-03T21:34:19.011349+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for Operations Engine \u2014 integrating health states into Scheduler"
+      },
+      {
+        "ts": "2026-06-03T21:34:39.000331+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to backlog \u2014 needs focused session to implement Scheduler health integration"
       }
     ],
-    "currentStep": "Triaged \u2014 Automation Health States \u2014 partially exists in scheduler. Need Andre input on health state definitions and display location",
-    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "progress": 0
+    "currentStep": null,
+    "lastActivity": "2026-06-03T21:34:39.000331+00:00",
+    "progress": 0,
+    "dispatchCount": 0,
+    "startedAt": "2026-06-03T21:34:19.011349+00:00"
   },
   {
     "id": "task-a6f37a6f",
     "title": "Retry Policies with Backoff",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Configurable retry policies for automated processes. Define max retries, backoff strategy (linear/exponential), and retry conditions. Failed cron jobs automatically retry according to policy before escalating. [auto-dispatched 2026-06-03 20:04]",
+    "note": "Keep it simple. One global policy: 3 retries with 5-minute gaps between attempts. After 3 failures, auto-create a P2 incident. No exponential backoff (Phase 5). No per-job customization (single-user system).",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2070,10 +2106,18 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 unclear scope, needs human input on retry policy requirements"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with clarified scope: simple global policy, 3 retries + 5min gap, auto-P2 incident after 3 failures"
       }
     ],
-    "currentStep": "Triaged \u2014 unclear scope. Needs Andre to define retry policy requirements and backoff strategy",
-    "lastActivity": "2026-06-03T19:31:26.939521+00:00"
+    "currentStep": null,
+    "lastActivity": "2026-06-03T19:31:26.939521+00:00",
+    "progress": 0,
+    "dispatchCount": 0
   },
   {
     "id": "task-7411b167",
@@ -2254,10 +2298,10 @@
     "id": "task-be03dff8",
     "title": "Runbook Evolution",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness \u2014 which runbooks lead to fastest resolution?",
+    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time.",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2270,11 +2314,22 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with dependency: depends on Phase 2 Runbooks completion"
       }
     ],
-    "currentStep": "Triaged \u2014 Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps",
+    "currentStep": null,
     "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "progress": 0
+    "progress": 0,
+    "tags": [
+      "runbook-evolution",
+      "phase-2-dependent"
+    ],
+    "dispatchCount": 0
   },
   {
     "id": "task-2e83664a",
@@ -2490,10 +2545,10 @@
     "id": "task-fce301b7",
     "title": "Incident Response Atmosphere",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "When incidents occur, the station reacts subtly: warning lights in affected rooms, increased monitor activity, alert banners, tense ambient colour shift (slight red/warm tint). Controlled operational awareness \u2014 not arcade chaos. Calm but urgent.",
+    "note": "Three effects only \u2014 calm operational awareness, not arcade chaos:\n\na) AMBIENT STATION TINT SHIFT \u2014 Wire existing AmbientStation states to incident severity: P1\u2192critical (red), P2\u2192alert (amber), P3/P4\u2192busy (warm), none\u2192calm.\n\nb) ALERT BANNER ON DASHBOARD \u2014 Slim banner at top of Dashboard when incidents open: '\u26a0\ufe0f 2 open incidents \u2014 1 P1, 1 P2' \u2014 clickable to Incidents page. Disappears when all resolved.\n\nc) ROOM PULSE FOR ASSIGNED AGENT \u2014 When an incident has an assigned agent, that agent's room pulses subtly (gentle glow, not flashing). Pulse stops when incident resolved.",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2506,11 +2561,18 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Incident Response Atmosphere \u2014 ambient agent office effects. Need Andre to define which visual effects, how they map to incident severity, scope of change"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with clarified scope: 3 subtle effects (tint shift, alert banner, room pulse)"
       }
     ],
-    "currentStep": "Triaged \u2014 Incident Response Atmosphere \u2014 ambient agent office effects. Need Andre to define which visual effects, how they map to incident severity, scope of change",
+    "currentStep": null,
     "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "progress": 0
+    "progress": 0,
+    "dispatchCount": 0
   },
   {
     "id": "task-1d916084",
@@ -2594,10 +2656,10 @@
     "id": "task-9f6de5b0",
     "title": "Operational Readiness Dashboard",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "in_progress",
     "priority": "P2",
     "ts": "just now",
-    "note": "At a glance: what is healthy, what is active, what is blocked, what needs attention, which agents are overloaded. The station communicates system state visually before reading text. Status indicators, health bars, and activity heat maps. [auto-dispatched 2026-06-03 18:34]",
+    "note": "Enhance the EXISTING Dashboard \u2014 NOT a new page.\n\na) STATION STATUS BAR \u2014 At top of Dashboard: \ud83d\udfe2 'All systems nominal' / \ud83d\udfe1 '2 incidents, 1 stalled task' / \ud83d\udd34 '1 P1 incident requires attention'\n\nb) AGENT LOAD INDICATORS \u2014 On Spacestation or Team page, show task count per agent (e.g., Space Monkey: 3 tasks (1 in_progress, 2 assigned))\n\nc) BACKLOG COUNT BADGE \u2014 Verify existing sidebar Tasks badge is working and visible. [auto-dispatched 2026-06-03 22:34]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2616,12 +2678,65 @@
         "action": "reassigned",
         "actor": "monkey",
         "details": "Moved to Triage \u2014 needs human input: Operational Readiness Dashboard \u2014 need Andre to define specific metrics, layout, and what \"at a glance\" means for the station"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with clarified scope: enhance existing Dashboard, not a new page"
       }
     ],
-    "stalledAt": "2026-06-03T17:43:52.178676+00:00",
-    "dispatchCount": 1,
+    "dispatchCount": 0,
     "lastActivity": "2026-06-03T19:23:12.737604+00:00",
-    "currentStep": "Triaged \u2014 Operational Readiness Dashboard \u2014 need Andre to define specific metrics, layout, and what \"at a glance\" means for the station",
+    "currentStep": null,
     "progress": 0
+  },
+  {
+    "id": "task-timeline-unified",
+    "title": "Timeline \u2014 Unified Event Model",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-03T21:26:12.356009+00:00",
+    "note": "Build a Timeline tab on the Dashboard showing all station events: task state changes, incident state changes, cron job runs, agent actions, system health events. Also add a Timeline section inside the Incident detail drawer showing that incident's full chronological history. Filterable by event type. Each event has: timestamp, type, source, severity, description, links to related entities.",
+    "tags": [
+      "timeline",
+      "events",
+      "dashboard",
+      "incidents"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created by merging Unified Event Model (task-bcd36145) + Incident Events in Timeline (task-f9e3796c) per Andre review"
+      },
+      {
+        "ts": "2026-06-03T21:26:29.621912+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for Operations Engine \u2014 building Timeline tab"
+      },
+      {
+        "ts": "2026-06-03T21:26:57.710933+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Creating TimelineEvent type and timeline-data server module"
+      },
+      {
+        "ts": "2026-06-03T21:33:48.984688+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Timeline tab + Incident timeline section implemented. Filterable unified event model."
+      }
+    ],
+    "lastActivity": "2026-06-03T21:33:48.984688+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "dispatchCount": 0,
+    "startedAt": "2026-06-03T21:26:29.621912+00:00",
+    "completedAt": "2026-06-03T21:33:48.984688+00:00",
+    "summary": "Created /timeline route page with unified event view (task changes, incident changes, cron runs). Timeline section in IncidentDetailsDrawer showing incident chronological history. Filterable by source (task/incident/cron). Timeline data module reads from tasks.json history, incidents.json timeline, and crons.json. Added Timeline nav item to STATION section. Build verified clean."
   }
 ]
