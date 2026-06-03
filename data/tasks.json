@@ -3,7 +3,7 @@
     "id": "task-fd625713",
     "title": "Incident \u2192 Task Linking",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "When an incident is created, a corresponding task must appear in the Kanban board automatically. Bidirectional linking: incident shows linked tasks, task shows parent incident. Status changes propagate (task done \u2192 incident check for auto-resolution).",
@@ -25,15 +25,28 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Reset from in_progress to backlog \u2014 task flipped by work-dispatcher.sh before it was disabled. No agent spawned. currentStep still \"Agent starting\u2026\" at 5%."
+      },
+      {
+        "ts": "2026-06-03T19:07:17.383669+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 assessing feasibility"
+      },
+      {
+        "ts": "2026-06-03T19:08:35.946546+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Task already implemented \u2014 verified incident\u2192task auto-creation, bidirectional linking, and timeline propagation all work."
       }
     ],
     "lastUpdated": "2026-06-03T17:52:11.407Z",
-    "lastActivity": "2026-06-03T18:14:03.377116+00:00",
-    "currentStep": "Agent starting\u2026",
-    "startedAt": "2026-06-03T17:52:11.407Z",
-    "progress": 5,
-    "stalledAt": "2026-06-03T18:14:03.377116+00:00",
-    "dispatchCount": 1
+    "lastActivity": "2026-06-03T19:08:35.946546+00:00",
+    "currentStep": "Completed",
+    "startedAt": "2026-06-03T19:07:17.383669+00:00",
+    "progress": 100,
+    "dispatchCount": 1,
+    "completedAt": "2026-06-03T19:08:35.946546+00:00",
+    "summary": "Already fully implemented. Incidents auto-create linked tasks with linkedIncidentId. Bidirectional linking works in IncidentDetailsDrawer and TaskDetailPanel. Status changes propagate to incident timeline."
   },
   {
     "id": "task-INC-042-act-751526",
@@ -1476,7 +1489,7 @@
     "id": "task-efcd3558",
     "title": "Runbook Data Model",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Design and implement a structured data model for runbooks: incident type, severity, response steps (ordered list), estimated time, required roles, success criteria, and escalation path. Runbooks are stored as structured data, not free text.",
@@ -1486,14 +1499,38 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:09:03.036703+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing"
+      },
+      {
+        "ts": "2026-06-03T19:09:50.238554+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Designing schema: incident type, severity, response steps, estimated time, required roles, success criteria, escalation path"
+      },
+      {
+        "ts": "2026-06-03T19:11:44.668450+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Runbook data model implemented with 5 default runbooks and lookup helpers"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:11:44.668450+00:00",
+    "startedAt": "2026-06-03T19:09:03.036703+00:00",
+    "completedAt": "2026-06-03T19:11:44.668450+00:00",
+    "summary": "Created runbooks.ts with structured data model: Runbook interface (incidentType, severity, steps[], estimated time, required roles, escalation path). 5 default runbooks: cron-failure, rate-limit, vite-cache, service-down, disk-space. Helper functions: getRunbookForIncident(), getRunbooksBySeverity()."
   },
   {
     "id": "task-d7b9c364",
     "title": "Runbook UI",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Display runbook steps when viewing an incident. Show the relevant runbook based on incident type, progress through steps, and allow agents to mark steps as complete. Clean, scannable layout \u2014 not a wall of text.",
@@ -1503,14 +1540,32 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:12:28.273479+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 building Runbook UI"
+      },
+      {
+        "ts": "2026-06-03T19:15:14.870578+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Runbook UI panel added to IncidentDetailsDrawer with step display, escalation info"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:15:14.870578+00:00",
+    "startedAt": "2026-06-03T19:12:28.273479+00:00",
+    "completedAt": "2026-06-03T19:15:14.870578+00:00",
+    "summary": "Added Runbook panel to IncidentDetailsDrawer. Shows matched runbook (by incident type/title) with step-by-step response guide, estimated time, owner, success criteria, and escalation triggers. Uses getRunbookForIncident() helper. Build verified clean."
   },
   {
     "id": "task-f9f8c7ce",
     "title": "Incident Type Mapping",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Classify incidents into types (e.g., cron failure, rate limit, service down, dependency break). Auto-suggest incident type based on error patterns and history. Each type maps to a default runbook and severity.",
@@ -1520,8 +1575,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:15:48.345753+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 implementing incident type auto-detection"
+      },
+      {
+        "ts": "2026-06-03T19:18:58.547363+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Incident type auto-detection implemented with keyword matching and confidence scoring"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:18:58.547363+00:00",
+    "startedAt": "2026-06-03T19:15:48.345753+00:00",
+    "completedAt": "2026-06-03T19:18:58.547363+00:00",
+    "summary": "Added classifyIncident() and suggestRunbook() to runbooks.ts. Keyword-based classifier maps error patterns to incident types (cron-failure, rate-limit, service-down, etc.) with confidence scoring. Integrated into incidents-create API: auto-detects type on creation, stores type + confidence + suggestedRunbookId on incident."
   },
   {
     "id": "task-718a0d19",
@@ -1562,7 +1635,7 @@
     "id": "task-f2727327",
     "title": "Task Creation From Runbooks",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Convert runbook steps into actionable tasks on the Kanban board. Each step becomes a trackable task with assignee, priority, and due date. Progress on runbook steps is visible both in the incident view and the Kanban.",
@@ -1572,8 +1645,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:19:21.839014+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 converting runbook steps to Kanban tasks"
+      },
+      {
+        "ts": "2026-06-03T19:22:15.264016+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Runbook step \u2192 Kanban task conversion implemented in incidents-create API"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:22:15.264016+00:00",
+    "startedAt": "2026-06-03T19:19:21.839014+00:00",
+    "completedAt": "2026-06-03T19:22:15.264016+00:00",
+    "summary": "Extended incidents-create API: when a runbook matches, creates one Kanban task per runbook step (with assignee, priority, linkedIncidentId, runbookStep order). Falls back to single investigate task if no runbook matches. Each step task goes to backlog for Kanban tracking."
   },
   {
     "id": "task-94ca8faa",
@@ -1614,7 +1705,7 @@
     "id": "task-e8a74157",
     "title": "Asset View",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Dedicated view showing all assets and their health status at a glance. Group by type, sort by health, show status indicators. Click an asset to see its incident history, dependencies, and current state.",
@@ -1624,8 +1715,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:30.495400+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 building Asset View"
+      },
+      {
+        "ts": "2026-06-03T19:28:04.177302+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Asset View page implemented with filtering, health indicators, dependency tracking"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:28:04.177302+00:00",
+    "startedAt": "2026-06-03T19:23:30.495400+00:00",
+    "completedAt": "2026-06-03T19:28:04.177302+00:00",
+    "summary": "Created /assets route page with asset grid view. Asset data model (assets.ts) tracks services, agents, crons with health status, dependencies, metadata. Filterable by type and health. Added Assets nav item to STATION section in sidebar. Build verified clean."
   },
   {
     "id": "task-45e26f79",
@@ -1736,7 +1845,7 @@
     "id": "task-bcd36145",
     "title": "Unified Event Model",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P2",
     "ts": "just now",
     "note": "All station events (incidents, cron runs, task changes, agent actions) feed into a single event model. Each event has: timestamp, type, source, severity, description, and links to related entities. This is the foundation for the timeline.",
@@ -1746,14 +1855,23 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Unified Event Model \u2014 needs Andre input on what events to track and how they relate to existing incident/task/cron data models"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 Unified Event Model \u2014 needs Andre input on what events to track and how they relate to existing incident/task/cron data models",
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "progress": 0
   },
   {
     "id": "task-f9e3796c",
     "title": "Incident Events in Timeline",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P2",
     "ts": "just now",
     "note": "Incident lifecycle events (created, status change, action taken, resolved) appear in the unified timeline. Filterable by incident, severity, or time range. Shows the full story of an incident in chronological order.",
@@ -1763,8 +1881,17 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Incident Events in Timeline \u2014 depends on Unified Event Model design. Need to clarify scope: new timeline page or extending existing?"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 Incident Events in Timeline \u2014 depends on Unified Event Model design. Need to clarify scope: new timeline page or extending existing?",
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "progress": 0
   },
   {
     "id": "task-0eb45241",
@@ -1901,7 +2028,7 @@
     "id": "task-fde53af6",
     "title": "Automation Health States",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P2",
     "ts": "just now",
     "note": "Monitor the health of each automated process (cron jobs, agents, services). Track: last run status, consecutive failures, average duration, error rate. Health states: healthy, degraded, failing, unknown.",
@@ -1911,17 +2038,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Automation Health States \u2014 partially exists in scheduler. Need Andre input on health state definitions and display location"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 Automation Health States \u2014 partially exists in scheduler. Need Andre input on health state definitions and display location",
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "progress": 0
   },
   {
     "id": "task-a6f37a6f",
     "title": "Retry Policies with Backoff",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P2",
     "ts": "just now",
-    "note": "Configurable retry policies for automated processes. Define max retries, backoff strategy (linear/exponential), and retry conditions. Failed cron jobs automatically retry according to policy before escalating.",
+    "note": "Configurable retry policies for automated processes. Define max retries, backoff strategy (linear/exponential), and retry conditions. Failed cron jobs automatically retry according to policy before escalating. [auto-dispatched 2026-06-03 20:04]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -2005,7 +2141,7 @@
     "id": "task-de47f5f5",
     "title": "Auto Remediation",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Predefined actions for common failure patterns. E.g., if Vite cache corruption is detected \u2192 auto-clear cache and restart dev server. If a cron job times out \u2192 auto-retry with increased timeout. Configurable remediation rules.",
@@ -2015,8 +2151,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:28:29.838934+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up for backlog processing \u2014 implementing auto-remediation"
+      },
+      {
+        "ts": "2026-06-03T19:30:12.060251+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Auto-remediation rules engine implemented with 4 rules and API endpoint"
       }
-    ]
+    ],
+    "currentStep": "Completed",
+    "progress": 100,
+    "lastActivity": "2026-06-03T19:30:12.060251+00:00",
+    "startedAt": "2026-06-03T19:28:29.838934+00:00",
+    "completedAt": "2026-06-03T19:30:12.060251+00:00",
+    "summary": "Created auto-remediation module with 4 rules: vite-cache-corruption (auto), cron-timeout-retry (approval), rate-limit-backoff (approval), disk-space-cleanup (auto). API endpoint /api/remediate for trigger/check. Rules engine matches error patterns to remediation actions."
   },
   {
     "id": "task-4ec228dd",
@@ -2092,7 +2246,7 @@
     "id": "task-be03dff8",
     "title": "Runbook Evolution",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P3",
     "ts": "just now",
     "note": "Update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness \u2014 which runbooks lead to fastest resolution?",
@@ -2102,8 +2256,17 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps",
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "progress": 0
   },
   {
     "id": "task-2e83664a",
@@ -2319,7 +2482,7 @@
     "id": "task-fce301b7",
     "title": "Incident Response Atmosphere",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P3",
     "ts": "just now",
     "note": "When incidents occur, the station reacts subtly: warning lights in affected rooms, increased monitor activity, alert banners, tense ambient colour shift (slight red/warm tint). Controlled operational awareness \u2014 not arcade chaos. Calm but urgent.",
@@ -2329,8 +2492,17 @@
         "action": "created",
         "actor": "monkey",
         "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Incident Response Atmosphere \u2014 ambient agent office effects. Need Andre to define which visual effects, how they map to incident severity, scope of change"
       }
-    ]
+    ],
+    "currentStep": "Triaged \u2014 Incident Response Atmosphere \u2014 ambient agent office effects. Need Andre to define which visual effects, how they map to incident severity, scope of change",
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "progress": 0
   },
   {
     "id": "task-1d916084",
@@ -2414,7 +2586,7 @@
     "id": "task-9f6de5b0",
     "title": "Operational Readiness Dashboard",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "triage",
     "priority": "P2",
     "ts": "just now",
     "note": "At a glance: what is healthy, what is active, what is blocked, what needs attention, which agents are overloaded. The station communicates system state visually before reading text. Status indicators, health bars, and activity heat maps. [auto-dispatched 2026-06-03 18:34]",
@@ -2430,10 +2602,18 @@
         "action": "stalled",
         "actor": "heartbeat",
         "details": "Reset from in_progress to backlog \u2014 ghost dispatch, no agent spawned, no activity timestamp"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Operational Readiness Dashboard \u2014 need Andre to define specific metrics, layout, and what \"at a glance\" means for the station"
       }
     ],
     "stalledAt": "2026-06-03T17:43:52.178676+00:00",
     "dispatchCount": 1,
-    "lastActivity": "2026-06-03T17:43:52.178676+00:00"
+    "lastActivity": "2026-06-03T19:23:12.737604+00:00",
+    "currentStep": "Triaged \u2014 Operational Readiness Dashboard \u2014 need Andre to define specific metrics, layout, and what \"at a glance\" means for the station",
+    "progress": 0
   }
 ]
