@@ -12,7 +12,7 @@
 - **Stack:** TanStack Start + React + Vite + Tailwind CSS + shadcn/ui
 - **Runtime:** Bun
 - **Repo:** `~/.openclaw/workspace/mission-control-dashboard/`
-- **Branch strategy:** `main` = prod (port 3000), `dev` = dev (port 3001)
+- **Branch strategy:** `main` is the single branch, served on port 3000. No dev branch.
 - **Correct sources:** See `SOURCES.md` → "TanStack Start Project"
 
 ---
@@ -102,6 +102,28 @@ These are the mistakes that have happened before and must never happen again:
 - **Status:** Watcher unloaded on 2026-05-22 due to persistent pool exhaustion. Re-enable manually when pool recovers.
 
 
+
+## Operations Engine
+
+**Definition:** Task Dispatcher + Agent Execution + Stall Detection + Triage Flow.
+
+The Operations Engine is the system that works through the task backlog autonomously during awake hours. It is NOT the same as Dreaming (which is memory consolidation at 3am).
+
+**How it works:**
+1. **Task Dispatcher** (heartbeat) picks the highest-priority dispatchable task from Backlog
+2. **Agent Execution** — spawns a sub-agent that works the task, updating `currentStep` and `lastActivity` at every step
+3. **Stall Detection** — if a task sits In Progress with no activity for >30 min, it's reset to Backlog
+4. **Triage Flow** — if an agent hits a wall (blocked, unclear, needs human input), the task moves to Triage with clear notes explaining what's needed. Tasks never sit frozen in In Progress.
+
+**Key rules:**
+- ONE task In Progress at a time per agent
+- Blocked/unclear tasks → Triage (not frozen In Progress)
+- Triage tasks include: what was attempted, what's blocking, what specific action Andre needs to take
+- Completed tasks auto-move to Done with summaries
+- P1 tasks stay in Backlog for Andre's awareness (not auto-dispatched)
+- Night Shift (01:00-07:00) is the Operations Engine running autonomously while Andre sleeps, with stricter limits (max 2-5 tasks, no P1, stops on rate limits)
+
+**Triage is NOT a graveyard.** It's where tasks go when they need human input. Andre reviews Triage regularly and moves approved tasks back to Backlog.
 
 ## Agent Communication Rules
 
