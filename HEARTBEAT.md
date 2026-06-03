@@ -5,6 +5,7 @@
 ## Task Pickup
 - Read `data/tasks.json`, find tasks with `status: "backlog"`
 - ONLY pick tasks that are truly dispatchable: no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
+- **Exclude tasks with blocking tags:** `needs-human-input`, `planning`, `design`, `roadmap`, `phase-2-dependent`, `phase-3-dependent`, etc. If a tag clearly indicates the task is blocked on something that doesn't exist yet, skip it.
 - Sort by priority (P1 > P2 > P3), then by age (oldest first)
 - Spawn a sub-agent with a clear task brief including: task ID, title, note/description, and expected output
 - Move task to `in_progress` when starting, `done` when complete

@@ -1,5 +1,55 @@
 [
   {
+    "id": "task-inc-044-abd6",
+    "title": "Investigate: INC-044",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-044: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-044",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:35:19.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-044"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:35:19.000Z"
+  },
+  {
+    "id": "task-inc-043-b3ec",
+    "title": "Investigate: INC-043",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-043: Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.",
+    "linkedIncidentId": "INC-043",
+    "tags": [
+      "incident-response",
+      "wd-mycloud",
+      "mount",
+      "backup"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-03T23:35:17.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-043"
+      }
+    ],
+    "lastActivity": "2026-06-03T23:35:17.000Z"
+  },
+  {
     "id": "task-inc-036-b8c2",
     "title": "Investigate: INC-036",
     "assignee": "lifesupport",
@@ -87,7 +137,7 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05]",
+    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
     "history": [
       {
         "ts": "2026-06-02T14:43:59.301126+00:00",
@@ -112,10 +162,16 @@
         "action": "reassigned",
         "actor": "heartbeat",
         "details": "Reset from in_progress to backlog \u2014 230min stale with no progress. Task is blocked on Phase 2 Runbooks which do not exist yet."
+      },
+      {
+        "ts": "2026-06-03T23:43:01.006512+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 30min stale, ghost dispatch. Task is blocked on Phase 2 Runbooks."
       }
     ],
     "currentStep": null,
-    "lastActivity": "2026-06-03T23:13:09.095524+00:00",
+    "lastActivity": "2026-06-03T23:43:01.006512+00:00",
     "progress": 0,
     "tags": [
       "runbook-evolution",
