@@ -81,7 +81,7 @@
     "id": "task-framework-md-001",
     "title": "Update FRAMEWORK.md with gotchas",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P3",
     "ts": "just now",
     "note": "Add these gotchas to FRAMEWORK.md:\n- 'setAwaitingReviewCount crash: SSR fails if a state setter is passed as a prop but never defined. The page renders blank.'\n- 'node:path static imports: replaced with lazy await import() inside server function handlers. Never statically import Node.js built-ins in files that could be imported by client components.'\n- 'P1 Dashboard blank page: first check the SSR error in the HTML source (view-source) before chasing client bundle issues.' [auto-dispatched 2026-06-04 13:07]",
@@ -96,11 +96,19 @@
         "action": "created",
         "actor": "monkey",
         "details": "Extracted from Bugs task sub-items"
+      },
+      {
+        "ts": "2026-06-04T12:10:55.634839+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog \u2014 ghost dispatch, in_progress for 6.5h with no activity. Caught by new stall detection rules."
       }
     ],
-    "lastActivity": "2026-06-04T06:34:58.193592+00:00",
+    "lastActivity": "2026-06-04T12:10:55.634839+00:00",
     "currentStep": null,
-    "progress": 0
+    "progress": 0,
+    "stalledAt": "2026-06-04T12:10:55.634839+00:00",
+    "dispatchCount": 1
   },
   {
     "id": "task-pagination-001",
@@ -3312,7 +3320,7 @@
     "id": "task-stall-detect-001",
     "title": "Fix stall detection \u2014 316-min task was not caught",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P1",
     "ts": "2026-06-04T11:56:14.368287+00:00",
     "note": "The browser automation task (task-browser-auto-001) was in_progress for 316+ minutes without being caught by stall detection. Root cause: stall detection only fires on heartbeat, and the task had no lastActivity timestamp updates. The task was created with ts='just now' and never updated.\n\nFix:\n1. Review stall detection logic in HEARTBEAT.md \u2014 is the threshold correct?\n2. Check if tasks with ts='just now' (non-parseable) are being handled correctly\n3. Add a safety net: if a task has been in_progress for >60 min with no lastActivity, flag it regardless of heartbeat timing\n4. Consider adding a max time limit per dispatch (e.g., 30 min auto-reset if no progress)\n5. Test the fix by creating a test task and verifying stall detection catches it",
@@ -3328,11 +3336,19 @@
         "action": "created",
         "actor": "monkey",
         "details": "Created from Kanban sense check \u2014 stall detection gap identified"
+      },
+      {
+        "ts": "2026-06-04T12:09:32.904287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Stall detection fix complete \u2014 3-min investigation, logic updated in HEARTBEAT.md"
       }
     ],
-    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
-    "currentStep": null,
-    "progress": 0
+    "lastActivity": "2026-06-04T12:09:32.904287+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-04T12:09:32.904287+00:00",
+    "summary": "Fixed stall detection gap that let browser-auto task sit in_progress for 316+ minutes.\n\nRoot cause: task created with ts=\"just now\" (non-parseable) and no lastActivity. Sub-agent never updated lastActivity (ghost dispatch). Stall detection skipped ts=\"just now\" and had no fallback until 2-hour threshold.\n\nChanges to HEARTBEAT.md:\n1. HARD RULE: any in_progress task with no lastActivity for >30 min = immediate reset\n2. history[].ts (including created event) now used as fallback timestamp\n3. Task creation now always sets lastActivity to current ISO timestamp\n4. Task Pickup requires lastActivity set BEFORE dispatch\n5. Browser auto-task ts fixed to parseable ISO from history\n\nNo task can now sit in_progress for >30 min without being caught by stall detection."
   },
   {
     "id": "task-session-cleanup-001",
