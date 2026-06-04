@@ -1,5 +1,188 @@
 [
   {
+    "id": "task-framework-md-001",
+    "title": "Update FRAMEWORK.md with gotchas",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "2026-06-04T06:34:58.193590+00:00",
+    "note": "Add these gotchas to FRAMEWORK.md:\n- 'setAwaitingReviewCount crash: SSR fails if a state setter is passed as a prop but never defined. The page renders blank.'\n- 'node:path static imports: replaced with lazy await import() inside server function handlers. Never statically import Node.js built-ins in files that could be imported by client components.'\n- 'P1 Dashboard blank page: first check the SSR error in the HTML source (view-source) before chasing client bundle issues.'",
+    "tags": [
+      "documentation",
+      "framework",
+      "institutional-memory"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:34:58.193591+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Extracted from Bugs task sub-items"
+      }
+    ],
+    "lastActivity": "2026-06-04T06:34:58.193592+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-pagination-001",
+    "title": "Paginate Done column and other long lists",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "2026-06-04T06:34:58.193588+00:00",
+    "note": "The Done column shows 80+ tasks. Paginate to prevent performance issues:\n- Show 10 most recent by default\n- 'Show 10 more...' button at the bottom\n- Count display: 'Done (80+) \u2014 showing 10'\n\nAlso apply pagination to:\n- Incidents list (if > 20 items)\n- Activity feed (older entries)\n- Memory page (older daily logs)",
+    "tags": [
+      "performance",
+      "pagination",
+      "ux"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:34:58.193588+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Extracted from Bugs task sub-items"
+      }
+    ],
+    "lastActivity": "2026-06-04T06:34:58.193589+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-inc-filters-001",
+    "title": "Make Incidents page filters clickable",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "2026-06-04T06:34:58.193585+00:00",
+    "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change",
+    "tags": [
+      "ux",
+      "incidents",
+      "filters"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:34:58.193586+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Extracted from Bugs task sub-items"
+      }
+    ],
+    "lastActivity": "2026-06-04T06:34:58.193586+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-remove-assets-001",
+    "title": "Remove Assets tab from sidebar",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "2026-06-04T06:34:58.193460+00:00",
+    "note": "There's a random 'Assets' tab in the sidebar. Remove it:\n- Remove from sidebar navigation\n- Delete the route file if it exists\n\nThis was part of the Bugs task breakdown but needs its own tracking.",
+    "tags": [
+      "cleanup",
+      "sidebar"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:34:58.193581+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Extracted from Bugs task sub-items"
+      }
+    ],
+    "lastActivity": "2026-06-04T06:34:58.193583+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-browser-auto-001",
+    "title": "Browser automation testing",
+    "assignee": "engineer",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "2026-06-04T06:33:18.195980+00:00",
+    "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md",
+    "tags": [
+      "testing",
+      "browser-automation",
+      "documentation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:33:18.196059+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from Andre's request \u2014 browser automation testing was discussed but never tracked"
+      }
+    ],
+    "lastActivity": "2026-06-04T06:33:18.196061+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-mpz2spq1-xzj6",
+    "title": "Incident view pane broken",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "The Incident detail view is broken \u2014 clicking any incident shows \n\"page didn't load.\" This is likely a regression from the join() \u2192 \ntemplate literal changes. \n\nCheck:\n1. Open the browser Console (Cmd+Option+I) and click an incident \u2014 \n   what error appears?\n2. Check the server logs for the incidents detail route\n3. Verify the incidents API endpoints still work:\n   curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/api/incidents/list\n4. Check if any incident-related server functions have broken paths \n   from the join() \u2192 template literal migration\n5. Compare the incident detail component against a working page (like \n   Tasks detail) to see what's different\n\nFix whatever's broken. The incident page was working before the P1 \noutage fix \u2014 something in the join() replacement broke it.",
+    "history": [
+      {
+        "ts": "2026-06-04T05:49:43.609Z",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Task created"
+      }
+    ]
+  },
+  {
+    "id": "task-mpz2nnqi-jeka",
+    "title": "Bugs",
+    "assignee": "monkey",
+    "status": "in_progress",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "The P1 outage is resolved \u2014 Agent Office is rendering again. Now \ncomplete the remaining tasks:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n1. CONFIRM THE FIX IS STABLE\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- All routes return 200: /, /visual, /tasks, /scheduler, /incidents\n- Console is clean \u2014 no node:fs, no node:path, no hydration errors\n- Agent Office renders with canvas sprites, room ambience, crew visits\n- Commit all fixes with a clear message\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n2. REMOVE ASSETS TAB\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThere's a random \"Assets\" tab in the sidebar. Remove it:\n- Remove from sidebar navigation\n- Delete the route file if it exists\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n3. PAGINATE DONE COLUMN\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThe Done column shows 80+ tasks. Paginate to prevent performance issues:\n- Show 10 most recent by default\n- \"Show 10 more...\" button at the bottom\n- Count display: \"Done (80+) \u2014 showing 10\"\n\nAlso apply pagination to:\n- Incidents list (if > 20 items)\n- Activity feed (older entries)\n- Memory page (older daily logs)\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n4. MAKE INCIDENTS PAGE FILTERS CLICKABLE\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThe Incidents page shows \"46 tracked \u00b7 6 open \u00b7 3 critical\" but \nthese aren't clickable \u2014 they don't filter the list. The Tasks page \nhas working filters (All, Operational, Features) that filter the \nKanban when clicked.\n\nMake the Incidents page filters work the same way:\n- Click \"6 open\" \u2192 shows only open incidents\n- Click \"3 critical\" \u2192 shows only critical/P1 incidents\n- Click \"46 tracked\" \u2192 shows all\n- Active filter should be highlighted (same style as Tasks page filters)\n- The count badges should update as filters change\n\nThis makes the Incidents page consistent with the Tasks page UX.\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n5. ADD TO FRAMEWORK.MD\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nAdd these gotchas:\n- \"setAwaitingReviewCount crash: SSR fails if a state setter is passed \n  as a prop but never defined. The page renders blank.\"\n- \"node:path static imports: replaced with lazy await import() inside \n  server function handlers. Never statically import Node.js built-ins \n  in files that could be imported by client components.\"\n- \"P1 Dashboard blank page: first check the SSR error in the HTML source \n  (view-source) before chasing client bundle issues.\"\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPRIORITY\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Confirm stability + commit\n2. Remove Assets tab (quick cleanup)\n3. Make Incidents filters clickable (UX consistency)\n4. Paginate Done column (performance)\n5. Update FRAMEWORK.md (institutional memory) [auto-dispatched 2026-06-04 07:06]",
+    "history": [
+      {
+        "ts": "2026-06-04T05:45:47.754Z",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Task created"
+      }
+    ]
+  },
+  {
+    "id": "task-inc-046-774f",
+    "title": "Investigate: INC-046",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-046: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-046",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T05:36:26.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-046"
+      }
+    ],
+    "lastActivity": "2026-06-04T05:36:26.000Z"
+  },
+  {
     "id": "task-inc-045-e91b",
     "title": "Investigate: INC-045",
     "assignee": "engineer",
