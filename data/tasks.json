@@ -149,8 +149,8 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P2",
-    "ts": "2026-06-04T06:34:58.193585+00:00",
-    "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change",
+    "ts": "just now",
+    "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change [auto-dispatched 2026-06-04 13:37]",
     "tags": [
       "ux",
       "incidents",
@@ -162,11 +162,19 @@
         "action": "created",
         "actor": "monkey",
         "details": "Extracted from Bugs task sub-items"
+      },
+      {
+        "ts": "2026-06-04T12:45:30.506746+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog by heartbeat stall detection \u2014 in_progress for 369 min with no activity updates. Ghost dispatch caught by new >30min no-lastActivity rule."
       }
     ],
-    "lastActivity": "2026-06-04T06:34:58.193586+00:00",
+    "lastActivity": "2026-06-04T12:45:30.506746+00:00",
     "currentStep": null,
-    "progress": 0
+    "progress": 0,
+    "stalledAt": "2026-06-04T12:45:30.506746+00:00",
+    "dispatchCount": 1
   },
   {
     "id": "task-remove-assets-001",
