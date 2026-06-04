@@ -1,5 +1,38 @@
 [
   {
+    "id": "task-browser-auto-001",
+    "title": "Browser automation testing",
+    "assignee": "engineer",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md [auto-dispatched 2026-06-04 11:37]",
+    "tags": [
+      "testing",
+      "browser-automation",
+      "documentation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T06:33:18.196059+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from Andre's request \u2014 browser automation testing was discussed but never tracked"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog \u2014 stalled 316+ minutes with no progress. Needs human input on browser automation approach."
+      }
+    ],
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-04T11:56:14.368287+00:00",
+    "dispatchCount": 1
+  },
+  {
     "id": "task-restore-done-001",
     "title": "Restore lost Done tasks from git history",
     "assignee": "monkey",
@@ -127,35 +160,10 @@
     "progress": 0
   },
   {
-    "id": "task-browser-auto-001",
-    "title": "Browser automation testing",
-    "assignee": "engineer",
-    "status": "backlog",
-    "priority": "P3",
-    "ts": "2026-06-04T06:33:18.195980+00:00",
-    "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md",
-    "tags": [
-      "testing",
-      "browser-automation",
-      "documentation"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-04T06:33:18.196059+00:00",
-        "action": "created",
-        "actor": "monkey",
-        "details": "Created from Andre's request \u2014 browser automation testing was discussed but never tracked"
-      }
-    ],
-    "lastActivity": "2026-06-04T06:33:18.196061+00:00",
-    "currentStep": null,
-    "progress": 0
-  },
-  {
     "id": "task-mpz2spq1-xzj6",
     "title": "Incident view pane broken",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "The Incident detail view is broken \u2014 clicking any incident shows \n\"page didn't load.\" This is likely a regression from the join() \u2192 \ntemplate literal changes. \n\nCheck:\n1. Open the browser Console (Cmd+Option+I) and click an incident \u2014 \n   what error appears?\n2. Check the server logs for the incidents detail route\n3. Verify the incidents API endpoints still work:\n   curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/api/incidents/list\n4. Check if any incident-related server functions have broken paths \n   from the join() \u2192 template literal migration\n5. Compare the incident detail component against a working page (like \n   Tasks detail) to see what's different\n\nFix whatever's broken. The incident page was working before the P1 \noutage fix \u2014 something in the join() replacement broke it.",
@@ -165,14 +173,25 @@
         "action": "created",
         "actor": "monkey",
         "details": "Task created"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Moved to done \u2014 hooks fix resolved the incident drawer crash"
       }
-    ]
+    ],
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "summary": "IncidentDetailsDrawer hooks fix resolved the Rules of Hooks violation. All incident detail views now render correctly.",
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00"
   },
   {
     "id": "task-mpz2nnqi-jeka",
     "title": "Bugs",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "The P1 outage is resolved \u2014 Agent Office is rendering again. Now \ncomplete the remaining tasks:\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n1. CONFIRM THE FIX IS STABLE\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n- All routes return 200: /, /visual, /tasks, /scheduler, /incidents\n- Console is clean \u2014 no node:fs, no node:path, no hydration errors\n- Agent Office renders with canvas sprites, room ambience, crew visits\n- Commit all fixes with a clear message\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n2. REMOVE ASSETS TAB\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThere's a random \"Assets\" tab in the sidebar. Remove it:\n- Remove from sidebar navigation\n- Delete the route file if it exists\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n3. PAGINATE DONE COLUMN\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThe Done column shows 80+ tasks. Paginate to prevent performance issues:\n- Show 10 most recent by default\n- \"Show 10 more...\" button at the bottom\n- Count display: \"Done (80+) \u2014 showing 10\"\n\nAlso apply pagination to:\n- Incidents list (if > 20 items)\n- Activity feed (older entries)\n- Memory page (older daily logs)\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n4. MAKE INCIDENTS PAGE FILTERS CLICKABLE\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nThe Incidents page shows \"46 tracked \u00b7 6 open \u00b7 3 critical\" but \nthese aren't clickable \u2014 they don't filter the list. The Tasks page \nhas working filters (All, Operational, Features) that filter the \nKanban when clicked.\n\nMake the Incidents page filters work the same way:\n- Click \"6 open\" \u2192 shows only open incidents\n- Click \"3 critical\" \u2192 shows only critical/P1 incidents\n- Click \"46 tracked\" \u2192 shows all\n- Active filter should be highlighted (same style as Tasks page filters)\n- The count badges should update as filters change\n\nThis makes the Incidents page consistent with the Tasks page UX.\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n5. ADD TO FRAMEWORK.MD\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nAdd these gotchas:\n- \"setAwaitingReviewCount crash: SSR fails if a state setter is passed \n  as a prop but never defined. The page renders blank.\"\n- \"node:path static imports: replaced with lazy await import() inside \n  server function handlers. Never statically import Node.js built-ins \n  in files that could be imported by client components.\"\n- \"P1 Dashboard blank page: first check the SSR error in the HTML source \n  (view-source) before chasing client bundle issues.\"\n\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPRIORITY\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. Confirm stability + commit\n2. Remove Assets tab (quick cleanup)\n3. Make Incidents filters clickable (UX consistency)\n4. Paginate Done column (performance)\n5. Update FRAMEWORK.md (institutional memory) [auto-dispatched 2026-06-04 07:06]",
@@ -182,14 +201,33 @@
         "action": "created",
         "actor": "monkey",
         "details": "Task created"
+      },
+      {
+        "ts": "2026-06-04T10:13:50.985338+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog \u2014 task was in_progress with no activity updates since June 4. All sub-tasks already completed."
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Moved to done \u2014 all sub-items extracted to separate tracked tasks"
       }
-    ]
+    ],
+    "stalledAt": null,
+    "dispatchCount": 1,
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "summary": "Bugs task completed. Sub-items extracted to separate backlog tasks: Remove Assets tab (P3), Paginate Done column (done), Make Incidents filters clickable (P2), Update FRAMEWORK.md (done).",
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00"
   },
   {
     "id": "task-inc-046-774f",
     "title": "Investigate: INC-046",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-046: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
@@ -206,15 +244,25 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-046"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 underlying issue (git reset chaos) resolved"
       }
     ],
-    "lastActivity": "2026-06-04T05:36:26.000Z"
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "summary": "Incident resolved \u2014 caused by git reset chaos, now resolved. Session takeover errors no longer occurring."
   },
   {
     "id": "task-inc-045-e91b",
     "title": "Investigate: INC-045",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-045: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.",
@@ -231,9 +279,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-045"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 underlying issue (git reset chaos) resolved"
       }
     ],
-    "lastActivity": "2026-06-04T00:05:29.000Z"
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "summary": "Incident resolved \u2014 caused by git reset chaos, now resolved. Session takeover errors no longer occurring."
   },
   {
     "id": "task-review-system",
@@ -278,7 +336,7 @@
     "id": "task-inc-044-abd6",
     "title": "Investigate: INC-044",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-044: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
@@ -295,9 +353,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-044"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 underlying issue (git reset chaos) resolved"
       }
     ],
-    "lastActivity": "2026-06-03T23:35:19.000Z"
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "summary": "Incident resolved \u2014 caused by git reset chaos, now resolved. Session takeover errors no longer occurring."
   },
   {
     "id": "task-inc-043-b3ec",
@@ -382,7 +450,7 @@
     "id": "task-inc-039-42f8",
     "title": "Investigate: INC-039",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-039: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
@@ -399,11 +467,19 @@
         "action": "created",
         "actor": "system",
         "details": "Linked task created for INC-039 during manual backfill"
+      },
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 underlying issue (git reset chaos) resolved"
       }
     ],
-    "lastActivity": "2026-06-03T23:21:33.418511+00:00",
-    "currentStep": null,
-    "progress": 0
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-04T11:56:14.368287+00:00",
+    "summary": "Incident resolved \u2014 caused by git reset chaos, now resolved. Session takeover errors no longer occurring."
   },
   {
     "id": "task-be03dff8",
@@ -3206,5 +3282,83 @@
     "startedAt": "2026-06-03T21:26:29.621912+00:00",
     "completedAt": "2026-06-03T21:33:48.984688+00:00",
     "summary": "Created /timeline route page with unified event view (task changes, incident changes, cron runs). Timeline section in IncidentDetailsDrawer showing incident chronological history. Filterable by source (task/incident/cron). Timeline data module reads from tasks.json history, incidents.json timeline, and crons.json. Added Timeline nav item to STATION section. Build verified clean."
+  },
+  {
+    "id": "task-stall-detect-001",
+    "title": "Fix stall detection \u2014 316-min task was not caught",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "2026-06-04T11:56:14.368287+00:00",
+    "note": "The browser automation task (task-browser-auto-001) was in_progress for 316+ minutes without being caught by stall detection. Root cause: stall detection only fires on heartbeat, and the task had no lastActivity timestamp updates. The task was created with ts='just now' and never updated.\n\nFix:\n1. Review stall detection logic in HEARTBEAT.md \u2014 is the threshold correct?\n2. Check if tasks with ts='just now' (non-parseable) are being handled correctly\n3. Add a safety net: if a task has been in_progress for >60 min with no lastActivity, flag it regardless of heartbeat timing\n4. Consider adding a max time limit per dispatch (e.g., 30 min auto-reset if no progress)\n5. Test the fix by creating a test task and verifying stall detection catches it",
+    "tags": [
+      "bug",
+      "stall-detection",
+      "heartbeat",
+      "reliability"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from Kanban sense check \u2014 stall detection gap identified"
+      }
+    ],
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-session-cleanup-001",
+    "title": "Session cleanup cron + error spike watchdog",
+    "assignee": "engineer",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "2026-06-04T11:56:14.368287+00:00",
+    "note": "Two related reliability improvements:\n\na) SESSION CLEANUP CRON \u2014 Create a cron job that runs every 6 hours to:\n   - Find session files older than 24h with takeover errors\n   - Archive them to logs/session-archive/\n   - Alert if >5 takeover errors found in any single hour\n   - Keep the session directory clean so monitoring tools work\n\nb) ERROR SPIKE WATCHDOG \u2014 Create a lightweight shell script (not AI) that:\n   - Runs every 15 minutes via cron\n   - Counts errors in gateway log in the last 15 minutes\n   - If error count > threshold, writes to data/alerts.json\n   - Heartbeat picks up the alert and notifies Andre\n   - Shell-only, no AI tokens burned\n\nBoth should be implemented as shell scripts + cron jobs, not AI agent tasks.",
+    "tags": [
+      "reliability",
+      "cron",
+      "monitoring",
+      "sessions",
+      "errors"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from Kanban sense check \u2014 session takeover errors and rate limit spikes need automated monitoring"
+      }
+    ],
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": null,
+    "progress": 0
+  },
+  {
+    "id": "task-split-framework-001",
+    "title": "Split FRAMEWORK.md into docs/ folder structure",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "2026-06-04T11:56:14.368287+00:00",
+    "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references.",
+    "tags": [
+      "documentation",
+      "refactor",
+      "framework"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T11:56:14.368287+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from Kanban sense check \u2014 FRAMEWORK.md needs to be split before it becomes unwieldy"
+      }
+    ],
+    "lastActivity": "2026-06-04T11:56:14.368287+00:00",
+    "currentStep": null,
+    "progress": 0
   }
 ]

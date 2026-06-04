@@ -65,7 +65,7 @@
     "id": "INC-044",
     "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -83,6 +83,11 @@
         "ts": "2026-06-03T23:35:19.000Z",
         "message": "Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-04 11:58:10",
+        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "actor": "Space Monkey"
       }
     ],
     "actions": [
@@ -115,7 +120,8 @@
         "assignee": "monkey"
       }
     ],
-    "actionsGenerated": true
+    "actionsGenerated": true,
+    "resolved": "2026-06-04 11:58:10"
   },
   {
     "id": "INC-043",
@@ -366,7 +372,7 @@
     "id": "INC-039",
     "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -384,9 +390,15 @@
         "ts": "2026-06-01T07:23:16.000Z",
         "message": "Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-04 11:58:10",
+        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "actor": "Space Monkey"
       }
     ],
-    "actions": []
+    "actions": [],
+    "resolved": "2026-06-04 11:58:10"
   },
   {
     "id": "INC-038",
