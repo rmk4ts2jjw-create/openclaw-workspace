@@ -165,6 +165,18 @@ When the user asks "anything else?" or "more recommendations?", respond with a *
 - Our `2026.5.18 → 2026.5.19` update partially failed — lesson learned
 - Always have a rollback plan before upgrading
 
+## Component Rules
+
+### IncidentDetailsDrawer.tsx — Hooks Must ALL Be Before Any Early Return
+
+**Two separate Rules of Hooks bugs have been caused by conditional hooks in this file.**
+
+- ALL `useState` and `useEffect` calls must be at the top level of the component function, before ANY early returns, conditions, or loops.
+- Never call hooks inside IIFEs (`(() => { ... })()`), nested functions, conditionals, or loops.
+- The "Incident Timeline" section previously had `useState` + `useEffect` inside an IIFE in the JSX render — this caused React to crash with "Rendered more hooks than during the previous render."
+- The "Runbook" section uses an IIFE for synchronous lookup — this is OK as long as it contains NO hooks.
+- **If you need state/effects for a conditional section, lift them to the top level and use conditional rendering in the JSX instead.**
+
 ## Development Workflow
 
 ### Two-Instance Strategy
