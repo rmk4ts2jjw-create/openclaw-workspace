@@ -1,5 +1,25 @@
 [
   {
+    "id": "task-restore-done-001",
+    "title": "Restore lost Done tasks from git history",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "completedAt": "2026-06-04T09:21:00.906606+00:00",
+    "progress": 100,
+    "summary": "Recovered 78 lost Done tasks from commit 540298b. Merged into current tasks.json (96 total: 81 done, 7 backlog, 7 triage, 1 in_progress).",
+    "currentStep": null,
+    "history": [
+      {
+        "ts": "2026-06-04T09:21:00.906717+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Restored 78 Done tasks from git history"
+      }
+    ]
+  },
+  {
     "id": "task-framework-md-001",
     "title": "Update FRAMEWORK.md with gotchas",
     "assignee": "monkey",
@@ -28,7 +48,7 @@
     "id": "task-pagination-001",
     "title": "Paginate Done column and other long lists",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "2026-06-04T06:34:58.193588+00:00",
     "note": "The Done column shows 80+ tasks. Paginate to prevent performance issues:\n- Show 10 most recent by default\n- 'Show 10 more...' button at the bottom\n- Count display: 'Done (80+) \u2014 showing 10'\n\nAlso apply pagination to:\n- Incidents list (if > 20 items)\n- Activity feed (older entries)\n- Memory page (older daily logs)",
@@ -43,11 +63,19 @@
         "action": "created",
         "actor": "monkey",
         "details": "Extracted from Bugs task sub-items"
+      },
+      {
+        "ts": "2026-06-04T09:20:26.492678+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Done column pagination: 10 per page, sorted newest-first, Load more / Show less buttons"
       }
     ],
     "lastActivity": "2026-06-04T06:34:58.193589+00:00",
     "currentStep": null,
-    "progress": 0
+    "progress": 100,
+    "completedAt": "2026-06-04T09:20:26.492557+00:00",
+    "summary": "Paginated Done column: shows 10 most recent tasks sorted by completion time, with \"Load more\" button and \"Show less\" collapse."
   },
   {
     "id": "task-inc-filters-001",
