@@ -13,6 +13,7 @@ This folder is home. Treat it that way.
 When working on a task, you MUST update the task's progress in `data/tasks.json`:
 - Set `currentStep` to a short description of what you're actively doing (e.g. "Refactoring error feed buttons", "Writing tests for dispatch queue")
 - Set `lastActivity` to the current ISO timestamp every time you make meaningful progress
+- **Completion summary required:** Moving a task to Done requires a completion summary stating what was actually done — root cause, fix applied, files changed, and outcome. No summary = cannot move to Done. This is non-negotiable. Every Done card must answer: "What was accomplished?" without requiring anyone to read chat history.
 - Set `progress` to an estimated completion percentage (0-100) based on actual work done, NOT time elapsed
 - When you complete the task, set `progress: 100`, `status: "done"`, and write a completion `summary`
 - The Kanban progress bar and step label display this data in real time — if you don't update it, the card shows "Waiting for agent..."

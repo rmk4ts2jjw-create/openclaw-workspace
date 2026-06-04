@@ -1,5 +1,30 @@
 [
   {
+    "id": "task-inc-047-7308",
+    "title": "Investigate: INC-047",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-047: Gateway log shows 17 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-047",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T13:37:50.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-047"
+      }
+    ],
+    "lastActivity": "2026-06-04T13:37:50.000Z"
+  },
+  {
     "id": "task-inc-046-496a",
     "title": "Investigate: INC-046",
     "assignee": "engineer",
@@ -180,10 +205,10 @@
     "id": "task-remove-assets-001",
     "title": "Remove Assets tab from sidebar",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P3",
-    "ts": "2026-06-04T06:34:58.193460+00:00",
-    "note": "There's a random 'Assets' tab in the sidebar. Remove it:\n- Remove from sidebar navigation\n- Delete the route file if it exists\n\nThis was part of the Bugs task breakdown but needs its own tracking.",
+    "ts": "just now",
+    "note": "There's a random 'Assets' tab in the sidebar. Remove it:\n- Remove from sidebar navigation\n- Delete the route file if it exists\n\nThis was part of the Bugs task breakdown but needs its own tracking. [auto-dispatched 2026-06-04 14:07]",
     "tags": [
       "cleanup",
       "sidebar"
@@ -1327,7 +1352,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Integrated new hand-crafted pixel-art sprite sheets into Agent Office canvas rendering system.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-109",
@@ -1343,7 +1370,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Investigated and fixed broken Settings page \u2014 resolved version, status, crons, and port label display issues.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-110",
@@ -1359,7 +1388,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Added task detail view with click-to-expand/edit functionality in the Kanban board.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-111",
@@ -1375,7 +1406,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Renamed Calendar page to Scheduler for consistency with OpenClaw terminology.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "err-err-3249748f-ac97-487d-812e-9a0509572c8f",
@@ -1401,7 +1434,9 @@
     ],
     "errorId": "err-3249748f-ac97-487d-812e-9a0509572c8f",
     "jobId": "3249748f-ac97-487d-812e-9a0509572c8f",
-    "completedAt": "2026-05-16T01:30:00Z"
+    "completedAt": "2026-05-16T01:30:00Z",
+    "summary": "Resolved \u2014 Dreaming Status Check cron timeout fixed by replacing with lightweight daily check.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "err-err-39afe8f3-e4fc-430e-9048-f0150710ee2e",
@@ -1427,7 +1462,9 @@
     ],
     "errorId": "err-39afe8f3-e4fc-430e-9048-f0150710ee2e",
     "jobId": "39afe8f3-e4fc-430e-9048-f0150710ee2e",
-    "completedAt": "2026-05-16T01:30:00Z"
+    "completedAt": "2026-05-16T01:30:00Z",
+    "summary": "Resolved \u2014 Git Auto-Commit MC cron timeout fixed by replacing with lightweight daily check.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "err-err-ec658506-32a6-4003-92d0-a63b083771a7",
@@ -1453,7 +1490,9 @@
     ],
     "errorId": "err-ec658506-32a6-4003-92d0-a63b083771a7",
     "jobId": "ec658506-32a6-4003-92d0-a63b083771a7",
-    "completedAt": "2026-05-16T01:30:00Z"
+    "completedAt": "2026-05-16T01:30:00Z",
+    "summary": "Resolved \u2014 Model Health Check cron timeout fixed by replacing with lightweight daily check.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "err-err-cd8044dc-c68b-4113-82f6-d19203937f1a",
@@ -1479,7 +1518,9 @@
     ],
     "errorId": "err-cd8044dc-c68b-4113-82f6-d19203937f1a",
     "jobId": "cd8044dc-c68b-4113-82f6-d19203937f1a",
-    "completedAt": "2026-05-16T01:30:00Z"
+    "completedAt": "2026-05-16T01:30:00Z",
+    "summary": "Resolved \u2014 OpenClaw Daily Backup Telegram delivery error fixed (missing chatId config).",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "err-err-31eeb9bf-5402-42d1-b07b-d7f7af5e17c1",
@@ -1505,7 +1546,9 @@
     ],
     "errorId": "err-31eeb9bf-5402-42d1-b07b-d7f7af5e17c1",
     "jobId": "31eeb9bf-5402-42d1-b07b-d7f7af5e17c1",
-    "completedAt": "2026-05-16T01:30:00Z"
+    "completedAt": "2026-05-16T01:30:00Z",
+    "summary": "Resolved \u2014 Activity Summary cron rate limit errors (429) by replacing with lightweight daily check.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "task-mp8p7in6-33ju",
@@ -1685,7 +1728,9 @@
     "lastUpdated": "2026-05-29T22:44:02.954998+00:00",
     "startedAt": "2026-05-29T21:28:42.219Z",
     "progress": 100,
-    "completedAt": "2026-05-29T22:44:02.954998+00:00"
+    "completedAt": "2026-05-29T22:44:02.954998+00:00",
+    "summary": "Settings page audit complete \u2014 applied all 5 fixes: version from CLI status, gateway status from live data, crons display, port label, and layout alignment.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-104",
@@ -1701,7 +1746,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Created macOS app shortcut for Mission Control Dashboard for quick access from Dock.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-105",
@@ -1718,7 +1765,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Fixed task persistence \u2014 resolved saveTasks not writing to disk by switching to direct fetch API calls to /api/save-tasks endpoint.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-112",
@@ -1734,7 +1783,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Built control UI bridge to pull live data from OpenClaw gateway on localhost:18789.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-113",
@@ -1750,7 +1801,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Expanded Quick Actions panel with additional shortcuts for common operations.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-114",
@@ -1766,7 +1819,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Completed cloud storage planning and cron job architecture design for backup integration.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-101",
@@ -1782,7 +1837,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Set up Mission Control Dashboard project scaffold with Vite, React, and dark theme foundation.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-102",
@@ -1798,7 +1855,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Configured WD MyCloud backup automation \u2014 verified mount paths and backup scripts (mount remains intermittent).",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-103",
@@ -1814,7 +1873,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Implemented Karpathy-style LLM Wiki pattern at memory/wiki/ with index, overview, entities, concepts, and sources pages.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-115",
@@ -1834,7 +1895,9 @@
     "acknowledged": false,
     "lastUpdated": "2026-05-14T15:27:34.473Z",
     "startedAt": "2026-05-14T15:21:38.481Z",
-    "progress": 100
+    "progress": 100,
+    "summary": "Set up GitHub integration \u2014 pushed Mission Control Dashboard to remote repo for version control.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-004-mp5dot1f",
@@ -1853,7 +1916,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Switched heartbeat schedule from everyMs to cron expression '0 3 * * *' Europe/London timezone.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-001-mp5b66tk",
@@ -1872,7 +1937,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Added index integrity health check to HEARTBEAT.md for early corruption detection.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-002-mp5b37v4",
@@ -1891,7 +1958,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Set up automated daily backup cron job for 3am runs.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-002-mp5b36xd",
@@ -1910,7 +1979,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Decommissioned old /Volumes/WD-MyCloud/OpenClaw mount path references from backup scripts.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-001-mp5b2jw2",
@@ -1929,7 +2000,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Verified search accuracy against rebuilt index \u2014 all entries confirmed findable.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-001-mp58a9ii",
@@ -1948,7 +2021,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Added index integrity health check to HEARTBEAT.md (duplicate of INC-001-mp5b66tk, consolidated).",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "inc-INC-001-mp58973d",
@@ -1967,7 +2042,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Ran test queries against rebuilt index to confirm search accuracy.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-118",
@@ -1983,7 +2060,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Built work dispatcher to auto-pull backlog tasks when agents are idle (later superseded by heartbeat-based dispatch).",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "T-119",
@@ -2002,7 +2081,9 @@
         "actor": "system"
       }
     ],
-    "acknowledged": true
+    "acknowledged": true,
+    "summary": "Redesigned Dashboard to 3-column layout: left=live activity feed, center=Spacestation rooms, right=system stats and quick actions.",
+    "lastActivity": "2026-06-04T13:45:38.731288+00:00"
   },
   {
     "id": "task-419bce59",
