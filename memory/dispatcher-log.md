@@ -106,3 +106,28 @@
 - **task-0eb45241**: Scheduler Events in Timeline
 - Assignee: monkey
 - Status: backlog → in_progress
+
+## 2026-06-04 11:37:16 — DISPATCHED
+- **task-browser-auto-001**: Browser automation testing
+- Assignee: engineer
+- Status: backlog → in_progress
+
+## 2026-06-04 13:07:32 — DISPATCHED
+- **task-framework-md-001**: Update FRAMEWORK.md with gotchas
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-04 13:37:37 — DISPATCHED
+- **task-inc-filters-001**: Make Incidents page filters clickable
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-04 14:07:43 — DISPATCHED
+- **task-remove-assets-001**: Remove Assets tab from sidebar
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-04 15:37:59 — DISPATCHED
+- **task-session-cleanup-001**: Session cleanup cron + error spike watchdog
+- Assignee: engineer
+- Status: backlog → in_progress
