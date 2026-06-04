@@ -1,5 +1,172 @@
 [
   {
+    "id": "INC-045",
+    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T00:05:29.000Z",
+    "lastActivity": "2026-06-04T00:54:08.334838+00:00",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.",
+    "tags": [
+      "mission-control",
+      "outage",
+      "dashboard",
+      "health-check"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T00:05:29.000Z",
+        "message": "Auto-detected by health-check",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-04T00:54:08.334838+00:00",
+        "message": "MC confirmed healthy (HTTP 200). Incident was transient \u2014 likely during build/restart. Auto-resolved.",
+        "actor": "heartbeat"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-281124",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-211464",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-406467",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-273951",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-04T00:54:08.334838+00:00"
+  },
+  {
+    "id": "INC-044",
+    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-03T23:35:19.000Z",
+    "lastActivity": "2026-06-03T23:35:19.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-03T23:35:19.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-170948",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-652566",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-468321",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-674445",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
+    "id": "INC-043",
+    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-03T23:35:17.000Z",
+    "lastActivity": "2026-06-03T23:35:17.000Z",
+    "summary": "Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.",
+    "tags": [
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "mount-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-03T23:35:17.000Z",
+        "message": "Auto-detected by mount-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-906327",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-964658",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-890613",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
     "id": "INC-042",
     "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
     "severity": "P3",

@@ -1,9 +1,34 @@
 [
   {
+    "id": "task-inc-045-e91b",
+    "title": "Investigate: INC-045",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-045: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.",
+    "linkedIncidentId": "INC-045",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T00:05:29.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-045"
+      }
+    ],
+    "lastActivity": "2026-06-04T00:05:29.000Z"
+  },
+  {
     "id": "task-review-system",
     "title": "External AI Review Loop \u2014 Phase 1",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Create the review system framework: directory structure, templates, review-agent design, Phase 2 comparison, and first review package. Phase 1 is framework only \u2014 no automation, no external API calls.",
@@ -18,11 +43,25 @@
         "action": "created",
         "actor": "Andre",
         "details": "Mission: External AI Review Loop Phase 1"
+      },
+      {
+        "ts": "2026-06-04T00:22:28.182596+00:00",
+        "action": "progress",
+        "actor": "monkey",
+        "details": "Fixed node:fs client bundle leak \u2014 lazy-import fs in all server-data modules. 19 files changed. Build clean."
+      },
+      {
+        "ts": "2026-06-04T00:53:30.518369+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Review system Phase 1 + node:fs leak fix completed"
       }
     ],
-    "lastActivity": "2026-06-03T23:48:41.334010+00:00",
-    "currentStep": "Creating directory structure",
-    "progress": 5
+    "lastActivity": "2026-06-04T00:53:30.518369+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-04T00:53:30.518369+00:00",
+    "summary": "Phase 1 review system complete: directory structure, 3 templates (review-package, recommendation, decision-log), review-agent design with state machine, Phase 2 comparison matrix (OpenRouter recommended), first review package REV-2026-06-04-001. Then fixed critical node:fs client bundle leak across 19 files \u2014 lazy-imported node:fs in all server-data modules, removed barrel imports in client components. Build clean, MC 200."
   },
   {
     "id": "task-inc-044-abd6",
