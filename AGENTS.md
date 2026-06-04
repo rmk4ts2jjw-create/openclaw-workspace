@@ -17,6 +17,7 @@ When working on a task, you MUST update the task's progress in `data/tasks.json`
 - Set `progress` to an estimated completion percentage (0-100) based on actual work done, NOT time elapsed
 - When you complete the task, set `progress: 100`, `status: "done"`, and write a completion `summary`
 - The Kanban progress bar and step label display this data in real time — if you don't update it, the card shows "Waiting for agent..."
+- **Stall detector safety net:** A shell-only cron job (`scripts/stall-detector.sh`) runs every 15 minutes. Any in_progress task with no activity for >30 min is auto-reset to backlog. Don't rely on this — update `lastActivity` actively. The detector is a last resort, not a replacement for good hygiene.
 
 ## First Run
 

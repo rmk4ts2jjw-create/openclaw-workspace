@@ -7,3 +7,4 @@
 4:34:10 PM [vite] (ssr) connected.
 [tasks loader] Loaded 104 tasks
 [tasks loader] Loaded 104 tasks
+4:38:53 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval

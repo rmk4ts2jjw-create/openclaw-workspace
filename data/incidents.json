@@ -1,5 +1,47 @@
 [
   {
+    "id": "INC-050",
+    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "severity": "P3",
+    "status": "TRIAGE",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T15:38:06.000Z",
+    "lastActivity": "2026-06-04T15:38:06.000Z",
+    "summary": "4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T15:38:06.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-399022",
+        "label": "Review and triage",
+        "description": "Review the incident and determine appropriate response",
+        "status": "suggested",
+        "assignee": "monkey"
+      },
+      {
+        "id": "act-381444",
+        "label": "Apply standard fix",
+        "description": "Apply a standard fix procedure",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
     "id": "INC-049",
     "title": "Rate limit exhaustion \u2014 47 429 errors in gateway log",
     "severity": "P2",

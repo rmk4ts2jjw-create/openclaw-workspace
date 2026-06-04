@@ -154,3 +154,48 @@ df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local.
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+TanStack Start server functions are not protected by the CSRF middleware.
+
+Server functions are same-origin RPC endpoints and should be protected from cross-site requests.
+
+Add the CSRF middleware in src/start.ts:
+
+  const csrfMiddleware = createCsrfMiddleware({
+    filter: (ctx) => ctx.handlerType === 'serverFn',
+  })
+
+  export const startInstance = createStart(() => ({
+    requestMiddleware: [csrfMiddleware],
+  }))
+
+If you intentionally handle CSRF another way, disable this warning:
+
+  tanstackStart({
+    serverFns: {
+      disableCsrfMiddlewareWarning: true,
+    },
+  })
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DF6E9F6A-979E-45DE-9083-A8C1F4E3D4EC/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found

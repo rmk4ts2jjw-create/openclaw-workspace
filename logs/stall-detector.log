@@ -1,0 +1,3 @@
+[2026-06-04 15:51:48 UTC] Stall detector: OK — no stale tasks
+[2026-06-04 15:57:57 UTC] Stall detector: reset 1 task(s)
+  RESET task-stall-test-001: STALENESS TEST — should be auto-reset — stale 45 min
