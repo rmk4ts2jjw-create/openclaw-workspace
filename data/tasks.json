@@ -1,11 +1,36 @@
 [
   {
+    "id": "task-inc-046-496a",
+    "title": "Investigate: INC-046",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-046: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-046",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-04T12:07:34.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-046"
+      }
+    ],
+    "lastActivity": "2026-06-04T12:07:34.000Z"
+  },
+  {
     "id": "task-browser-auto-001",
     "title": "Browser automation testing",
     "assignee": "engineer",
     "status": "backlog",
     "priority": "P3",
-    "ts": "just now",
+    "ts": "2026-06-04T06:33:18.196059+00:00",
     "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md [auto-dispatched 2026-06-04 11:37]",
     "tags": [
       "testing",
@@ -56,10 +81,10 @@
     "id": "task-framework-md-001",
     "title": "Update FRAMEWORK.md with gotchas",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P3",
-    "ts": "2026-06-04T06:34:58.193590+00:00",
-    "note": "Add these gotchas to FRAMEWORK.md:\n- 'setAwaitingReviewCount crash: SSR fails if a state setter is passed as a prop but never defined. The page renders blank.'\n- 'node:path static imports: replaced with lazy await import() inside server function handlers. Never statically import Node.js built-ins in files that could be imported by client components.'\n- 'P1 Dashboard blank page: first check the SSR error in the HTML source (view-source) before chasing client bundle issues.'",
+    "ts": "just now",
+    "note": "Add these gotchas to FRAMEWORK.md:\n- 'setAwaitingReviewCount crash: SSR fails if a state setter is passed as a prop but never defined. The page renders blank.'\n- 'node:path static imports: replaced with lazy await import() inside server function handlers. Never statically import Node.js built-ins in files that could be imported by client components.'\n- 'P1 Dashboard blank page: first check the SSR error in the HTML source (view-source) before chasing client bundle issues.' [auto-dispatched 2026-06-04 13:07]",
     "tags": [
       "documentation",
       "framework",

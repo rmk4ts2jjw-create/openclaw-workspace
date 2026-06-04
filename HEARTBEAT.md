@@ -9,11 +9,13 @@
 - Sort by priority (P1 > P2 > P3), then by age (oldest first)
 - Spawn a sub-agent with a clear task brief including: task ID, title, note/description, and expected output
 - Move task to `in_progress` when starting, `done` when complete
+- **CRITICAL: When moving a task to `in_progress`, you MUST set `lastActivity` to the current ISO timestamp IMMEDIATELY.** This is the #1 defense against ghost dispatches. If you dispatch a task and the sub-agent never starts, stall detection needs this timestamp to catch it within 30 minutes.
 - **The sub-agent MUST update `currentStep` and `lastActivity` (ISO timestamp) every 5-10 min with specific actions** — NOT "Agent starting…". Example: "Reading AppSidebar.tsx", "Editing nav order", "Verifying app loads". Without `lastActivity` updates, stall detection cannot function.
 - Write completion summary before marking done
 - **Sub-agent task brief MUST include these instructions:**
   - Update `currentStep` to a specific action BEFORE starting work (e.g. "Reading tasks.tsx")
   - Update `lastActivity` to `datetime.now(timezone.utc).isoformat()` at EACH step
+  - **Set `lastActivity` IMMEDIATELY when the task is created/moved to in_progress — not just when the sub-agent starts working**
   - Update `progress` to reflect actual completion (10% start, 25% early, 50% midway, 75% late, 100% done)
   - Write a completion `summary` before setting status to `done`
   - Commit and push code changes when complete
@@ -32,6 +34,22 @@
     with open('/Users/spacemonkey/.openclaw/workspace/data/tasks.json', 'w') as f:
         json.dump(tasks, f, indent=2)
     ```
+  - **ALWAYS set `lastActivity` when creating a task AND when moving it to in_progress.** Example for task creation:
+    ```python
+    import json
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc).isoformat()
+    new_task = {
+        'id': 'task-xxx',
+        'title': '...',
+        'status': 'backlog',
+        'ts': now,
+        'lastActivity': now,  # <-- ALWAYS set this
+        'currentStep': None,
+        'progress': 0,
+        'history': [{'ts': now, 'action': 'created', 'actor': 'monkey', 'details': '...'}]
+    }
+    ```
   - Run this update at EVERY meaningful step — not just at start and completion
 - Only pick up ONE task per heartbeat to avoid overloading
 - The main agent (Space Monkey) should handle P1 tasks directly; offload P2/P3 to crew agents
@@ -42,13 +60,26 @@
 - For EVERY task with `status: "in_progress"`, calculate staleness:
   - Use `lastActivity` if set and is a valid ISO timestamp
   - Else use the `ts` field if it's a valid ISO timestamp (skip if it's "just now" or non-parseable)
-  - Else use the most recent `history[].ts` entry
+  - Else use the most recent `history[].ts` entry (including the `created` event)
   - If NO valid timestamp can be found at all, treat as stalled (it's broken data)
+- **HARD RULE: If `lastActivity` is null/empty AND the task has been in_progress for >30 minutes, RESET IMMEDIATELY.** No task should sit in_progress without a `lastActivity` update for more than 30 minutes. This catches ghost dispatches where the sub-agent never started.
 - If staleness > 2 hours: reset to `backlog`, set `stalledAt` to the current ISO timestamp, add history entry explaining why. The `stalledAt` field prevents the heartbeat from immediately re-dispatching the same task.
 - ALSO increment `dispatchCount` by 1 (set to at least 1 if not present). If `dispatchCount >= 3`, the dispatcher will skip the task entirely via its `dispatchCount < 3` filter. This is a secondary guard against the race condition where `stalledAt` gets cleared by the save-tasks merge logic.
 - If staleness > 30 minutes but < 2 hours: log a warning. If currentStep is still "Agent starting…" or null, reset immediately — the task was never actually picked up by an agent
 - The `startedAt` field is NOT reliable — do not use it for stall detection
 - After resetting, commit the change so the Kanban reflects reality immediately
+
+### Stall Detection Bug Fix (2026-06-04)
+- **Root cause**: The browser automation task (task-browser-auto-001) sat in_progress for 316+ minutes because:
+  1. It was created with `ts="just now"` (non-parseable) and no `lastActivity`
+  2. The sub-agent never updated `lastActivity` (ghost dispatch)
+  3. Stall detection skipped `ts="just now"` and had no other fallback
+  4. The "no valid timestamp" catch-all only triggered after 2 hours
+- **Fix applied**:
+  1. `history[].ts` (including `created` event) is now used as fallback before "no valid timestamp"
+  2. New HARD RULE: any in_progress task with no `lastActivity` for >30 min is immediately reset
+  3. Task creation now always sets `lastActivity` to prevent the gap
+- **Prevention**: The Task Pickup section now requires `lastActivity` to be set BEFORE dispatch, not just after
 
 ## Task Archive Maintenance
 - **Done tasks live in the Kanban Done column** — never remove them just because they're complete
