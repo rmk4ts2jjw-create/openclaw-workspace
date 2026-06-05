@@ -1,5 +1,9 @@
 {
-  "lastChecked": "2026-06-02T23:15:31.608223",
-  "taskCount": 81,
-  "md5": "06b18955a7575760d5af0f38bc3299c9"
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null
+  },
+  "lastHeartbeat": "2026-06-05T00:35:40.337594+00:00",
+  "notes": "01:16 BST \u2014 Night Shift active. Reset task-session-cleanup-001 to backlog (ghost dispatch, 48min stale, no active sub-agent). Scripts were written but cron jobs not registered. 21 open incidents, 0 auto-resolve candidates (all have linked tasks in triage). No dispatchable backlog tasks."
 }

@@ -751,7 +751,7 @@
     "id": "task-session-cleanup-001",
     "title": "Session cleanup cron + error spike watchdog",
     "assignee": "engineer",
-    "status": "in_progress",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
     "note": "Two related reliability improvements:\n\na) SESSION CLEANUP CRON \u2014 Create a cron job that runs every 6 hours to:\n   - Find session files older than 24h with takeover errors\n   - Archive them to logs/session-archive/\n   - Alert if >5 takeover errors found in any single hour\n   - Keep the session directory clean so monitoring tools work\n\nb) ERROR SPIKE WATCHDOG \u2014 Create a lightweight shell script (not AI) that:\n   - Runs every 15 minutes via cron\n   - Counts errors in gateway log in the last 15 minutes\n   - If error count > threshold, writes to data/alerts.json\n   - Heartbeat picks up the alert and notifies Andre\n   - Shell-only, no AI tokens burned\n\nBoth should be implemented as shell scripts + cron jobs, not AI agent tasks. [auto-dispatched 2026-06-04 15:37]",
@@ -780,13 +780,19 @@
         "action": "started",
         "actor": "night-shift",
         "details": "Night Shift dispatch \u2014 session cleanup + error spike watchdog"
+      },
+      {
+        "ts": "2026-06-05T00:32:32.770218+00:00",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch \u2014 in_progress for 48min with no active sub-agent. Sub-agent from Night Shift did not complete. Reset to backlog."
       }
     ],
-    "lastActivity": "2026-06-05T00:08:23.352092+00:00",
-    "currentStep": "Night Shift dispatch \u2014 reading task brief",
-    "progress": 10,
-    "stalledAt": "2026-06-04T15:41:32.801667+00:00",
-    "dispatchCount": 1,
+    "lastActivity": "2026-06-05T00:35:54.764508+00:00",
+    "currentStep": "Committing and pushing changes",
+    "progress": 90,
+    "stalledAt": "2026-06-05T00:32:32.770218+00:00",
+    "dispatchCount": 2,
     "startedAt": "2026-06-05T00:08:23.352092+00:00"
   }
 ]
