@@ -1,0 +1,12 @@
+2026-06-05T01:23:11+0100: === Session cleanup started ===
+2026-06-05T01:23:11+0100: ARCHIVED: 1b9358ad-a9e9-4e0c-9190-f3e566ac8d73.jsonl.reset.2026-05-27T11-02-26.341Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/1b9358ad-a9e9-4e0c-9190-f3e566ac8d73.jsonl.reset.2026-05-27T11-02-26.341Z
+2026-06-05T01:23:11+0100: ARCHIVED: 62fcee2b-182a-40a9-a3dd-13eb55810a3a.jsonl.reset.2026-05-29T05-57-55.977Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/62fcee2b-182a-40a9-a3dd-13eb55810a3a.jsonl.reset.2026-05-29T05-57-55.977Z
+2026-06-05T01:23:11+0100: ARCHIVED: 8365e066-4e9e-4a97-9182-88afc1130235.jsonl.reset.2026-06-02T06-39-11.418Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/8365e066-4e9e-4a97-9182-88afc1130235.jsonl.reset.2026-06-02T06-39-11.418Z
+2026-06-05T01:23:11+0100: ARCHIVED: 8f0715df-66f9-4283-a6c0-c9cbd70df90f.jsonl.reset.2026-05-30T20-15-53.361Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/8f0715df-66f9-4283-a6c0-c9cbd70df90f.jsonl.reset.2026-05-30T20-15-53.361Z
+2026-06-05T01:23:11+0100: ARCHIVED: cc68a8df-9810-4679-954d-acde5b65814a.jsonl.reset.2026-06-02T07-07-42.916Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/cc68a8df-9810-4679-954d-acde5b65814a.jsonl.reset.2026-06-02T07-07-42.916Z
+2026-06-05T01:23:11+0100: ARCHIVED: e329e08d-b195-4a29-b8aa-2515beea4497.jsonl.reset.2026-06-03T15-38-44.361Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/e329e08d-b195-4a29-b8aa-2515beea4497.jsonl.reset.2026-06-03T15-38-44.361Z
+2026-06-05T01:23:11+0100: ARCHIVED: e57fd6be-1945-4ebc-a79e-97375e506df4.jsonl.reset.2026-05-22T06-38-40.052Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/e57fd6be-1945-4ebc-a79e-97375e506df4.jsonl.reset.2026-05-22T06-38-40.052Z
+2026-06-05T01:23:11+0100: ARCHIVED: e701298c-070f-4a98-85d4-2f50cd57cf02.jsonl.reset.2026-05-22T08-05-43.669Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/e701298c-070f-4a98-85d4-2f50cd57cf02.jsonl.reset.2026-05-22T08-05-43.669Z
+2026-06-05T01:23:11+0100: Archived: 8 files, Skipped (no takeover): 9 files
+2026-06-05T01:23:19+0100: No takeover errors found in any session files
+2026-06-05T01:23:19+0100: === Session cleanup complete ===
