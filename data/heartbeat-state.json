@@ -1,0 +1,9 @@
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null
+  },
+  "lastHeartbeat": "2026-06-05T01:04:42.679192+00:00",
+  "notes": "2026-06-05 01:04 BST \u2014 Night Shift check. 0 dispatchable backlog tasks (all have stalledAt/wasStalled/exclusion tags). 22 open incidents (all <5d old, auto-resolve not triggered). No recent 429s in gateway log. Session cleanup task already done. Recurring rate-limit and session-takeover incidents continue \u2014 these are symptoms, not root causes. Needs human review."
+}

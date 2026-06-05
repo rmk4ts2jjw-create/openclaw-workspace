@@ -1,5 +1,61 @@
 [
   {
+    "id": "INC-064",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T00:38:44.000Z",
+    "lastActivity": "2026-06-05T00:38:44.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T00:38:44.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-139538",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-225270",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-737096",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-961167",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
     "id": "INC-063",
     "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
     "severity": "P2",

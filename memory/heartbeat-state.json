@@ -4,6 +4,6 @@
     "calendar": null,
     "weather": null
   },
-  "lastHeartbeat": "2026-06-05T00:35:40.337594+00:00",
-  "notes": "01:16 BST \u2014 Night Shift active. Reset task-session-cleanup-001 to backlog (ghost dispatch, 48min stale, no active sub-agent). Scripts were written but cron jobs not registered. 21 open incidents, 0 auto-resolve candidates (all have linked tasks in triage). No dispatchable backlog tasks."
+  "lastHeartbeat": "2026-06-05T00:47:10.154648+00:00",
+  "notes": "01:16 BST \u2014 Night Shift active. 0 dispatchable backlog tasks (all have stalledAt/wasStalled). 22 open incidents. No recent 429s. Session cleanup task already done."
 }

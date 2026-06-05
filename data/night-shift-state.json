@@ -9,5 +9,5 @@
   "currentTask": "task-session-cleanup-001",
   "stoppedReason": null,
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-05 \u2014 first task dispatched"
+  "note": "Night Shift 2026-06-05 \u2014 no dispatchable tasks this cycle. All backlog tasks have stalledAt set."
 }
