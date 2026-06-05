@@ -1,9 +1,59 @@
 [
   {
+    "id": "task-inc-073-0d99",
+    "title": "Investigate: INC-073",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-073: Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-073",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-05T10:39:29.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-073"
+      }
+    ],
+    "lastActivity": "2026-06-05T10:39:29.000Z"
+  },
+  {
+    "id": "task-inc-073-865d",
+    "title": "Investigate: INC-073",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-073: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-073",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-05T10:09:27.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-073"
+      }
+    ],
+    "lastActivity": "2026-06-05T10:09:27.000Z"
+  },
+  {
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P2",
     "ts": "just now",
     "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references.",
@@ -30,13 +80,19 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Ghost dispatch \u2014 in_progress with no activity updates. Reset to backlog."
+      },
+      {
+        "ts": "2026-06-05T11:01:09.101424+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Picked up by heartbeat \u2014 splitting FRAMEWORK.md into docs/ folder"
       }
     ],
-    "lastActivity": "2026-06-04T15:41:32.801667+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-05T11:05:18.877653+00:00",
+    "currentStep": "Committing and pushing",
+    "progress": 90,
     "lastUpdated": "2026-06-04T14:38:14.066Z",
-    "startedAt": "2026-06-04T14:38:14.066Z",
+    "startedAt": "2026-06-05T11:01:09.101424+00:00",
     "stalledAt": "2026-06-04T15:41:32.801667+00:00",
     "dispatchCount": 1
   },
