@@ -1,5 +1,40 @@
 [
   {
+    "id": "task-inc-076-a473",
+    "title": "Investigate: INC-076",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-076: Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-076",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-05T12:09:38.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-076"
+      },
+      {
+        "ts": "2026-06-05T12:17:46.229058+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Deduplicated \u2014 merged into consolidated task-triage-session-takeover"
+      }
+    ],
+    "lastActivity": "2026-06-05T12:17:46.229058+00:00",
+    "progress": 100,
+    "currentStep": "Deduplicated",
+    "completedAt": "2026-06-05T12:17:46.229058+00:00",
+    "summary": "Deduplicated into task-triage-session-takeover (consolidated from 10+ session-takeover incidents including INC-076)"
+  },
+  {
     "id": "task-inc-075-eb35",
     "title": "Investigate: INC-075",
     "assignee": "engineer",
