@@ -110,8 +110,19 @@ For coding work on Mission Control or any project, use the right tool for the jo
 | Direct edit/write | Single-file fixes, quick changes | "Fix this bug", "Add this component", "Delete dead code" |
 | Sequential direct edits | Multi-file refactors, module splits | "Split this 500-line file", "Refactor imports across 10 files" — one file at a time, commit after each |
 | Sub-agents | Parallel tasks, research, verification | "Review all routes for dead code", "Check every component for SSR safety" |
+| **coding-agent** (Codex) | Large refactors, feature builds, PR reviews, issue-to-PR loops | "Build this feature", "Review this PR", "Fix this issue end-to-end" — delegate to Codex/Claude Code/OpenCode as background workers |
 
 Do NOT use OpenClaw chat for complex multi-file coding work. Use direct edits — one file at a time, committed individually. OpenClaw executes, monitors, and wires data.
+
+### Coding Agent Delegation
+- **Codex** (`codex`) is installed and available — use for background coding work
+- **Claude Code** and **OpenCode** are not currently installed
+- Launch with `background:true`, `pty:true` for Codex
+- Always capture a notification route before spawning
+- Worker must send completion/failure via `openclaw message send`
+- Monitor with `process`; do not kill slow workers without cause
+- **Never** run coding agents in `~/.openclaw` or active OpenClaw state dirs
+- See `coding-agent` skill for full launch forms and rules
 
 ---
 

@@ -7,7 +7,7 @@ set -e
 WORKSPACE="/Users/spacemonkey/.openclaw/workspace"
 LOG="$WORKSPACE/logs/git-push.log"
 DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
-export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519_rmk -o StrictHostKeyChecking=accept-new"
+export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519_rmk -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
 
 log() {
   echo "[$DATE] $1" >> "$LOG"
