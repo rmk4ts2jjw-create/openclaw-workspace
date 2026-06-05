@@ -157,15 +157,35 @@ with open('$TASKS_FILE') as f:
 print(len([t for t in tasks if t['status'] == 'backlog']))
 " 2>/dev/null || echo "0")
 
-    if [ "$BACKLOG_COUNT" -eq 0 ]; then
+    # Circuit breaker check — stop dispatch if tripped
+    CB_RESULT=$(bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh check "task-dispatch" 2>/dev/null)
+    if echo "$CB_RESULT" | grep -q "^TRIPPED:"; then
+      echo "[$TIMESTAMP] [CIRCUIT-BREAKER] Task dispatch halted — circuit open ($CB_RESULT)" >> "$LOG_FILE"
+    elif [ "$BACKLOG_COUNT" -eq 0 ]; then
       echo "[$TIMESTAMP] [5/9] Task dispatcher: no backlog items" >> "$LOG_FILE"
     else
       python3 << 'PYEOF' >> "$LOG_FILE" 2>&1
-import json
-from datetime import datetime
+import json, os, tempfile, shutil
+from datetime import datetime, timezone
 
 tasks_file = "/Users/spacemonkey/.openclaw/workspace/data/tasks.json"
 log_file = "/Users/spacemonkey/.openclaw/workspace/memory/dispatcher-log.md"
+
+def safe_write(path, data):
+    try:
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp): os.remove(tmp)
+            raise
+    except Exception as e:
+        print(f"safe_write error: {e}")
 
 with open(tasks_file) as f:
     tasks = json.load(f)
@@ -186,8 +206,7 @@ for t in tasks:
         t['note'] += f" [auto-dispatched {datetime.now().strftime('%Y-%m-%d %H:%M')}]"
         break
 
-with open(tasks_file, 'w') as f:
-    json.dump(tasks, f, indent=2)
+safe_write(tasks_file, tasks)
 
 with open(log_file, 'a') as f:
     f.write(f"\n## {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} — DISPATCHED\n")

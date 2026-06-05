@@ -17,70 +17,120 @@ timestamp() { date '+%Y-%m-%d %H:%M:%S'; }
 # Task starts in "triage" status (not backlog) for incident response workflow
 create_incident() {
     local title="$1" severity="$2" owner="$3" summary="$4" tags="$5" source="$6"
+
+    # Circuit breaker check — skip if this error type is tripped
+    local CB_RESULT
+    CB_RESULT=$(bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh check "incident-create-$source" 2>/dev/null)
+    if echo "$CB_RESULT" | grep -q "^TRIPPED:"; then
+        echo "[$(timestamp)] [CIRCUIT-BREAKER] Skipping incident creation for '$source' — circuit open ($CB_RESULT)" >> "$LOG_FILE"
+        return 0
+    fi
+
     python3 << PYEOF
-import json, os
-from datetime import datetime
+import json, os, tempfile, fcntl, shutil
+from datetime import datetime, timezone, timedelta
 
 incidents_path = "$INCIDENTS_FILE"
 tasks_path = os.path.join(os.path.dirname(incidents_path), "tasks.json")
 
+# ── Atomic write helper ──
+def safe_write(path, data):
+    """Atomic JSON write: temp file + rename. Keeps .bak.1 backup."""
+    try:
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
+        dir_name = os.path.dirname(path) or '.'
+        fd, tmp = tempfile.mkstemp(dir=dir_name, suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp):
+                os.remove(tmp)
+            raise
+    except Exception as e:
+        print(f"safe_write error: {e}", file=__import__("sys").stderr)
+
+# ── Incident dedup: same title+source within 24h → update existing ──
+def find_existing_incident(incidents, title, source_tags):
+    """Find a non-RESOLVED incident with matching title created within 24h."""
+    now = datetime.now(timezone.utc)
+    for inc in incidents:
+        if inc.get("status") == "RESOLVED":
+            continue
+        if inc.get("title") != title:
+            continue
+        # Check if created within 24 hours
+        opened = inc.get("opened", "")
+        try:
+            opened_dt = datetime.fromisoformat(opened.replace("Z", "+00:00"))
+            if (now - opened_dt) < timedelta(hours=24):
+                return inc
+        except:
+            continue
+    return None
+
 incidents = json.load(open(incidents_path)) if os.path.exists(incidents_path) else []
 
-# Deduplicate — skip only if an active incident with same title+source already has a linked task
-existing_inc = None
-for i in incidents:
-    if i["status"] != "RESOLVED" and i["title"] == "$title" and "$source" in i.get("tags", []):
-        existing_inc = i
-        break
-if existing_inc:
-    # Check if a linked task already exists for this incident
-    tasks_check = json.load(open(tasks_path)) if os.path.exists(tasks_path) else []
-    has_linked = any(t.get("linkedIncidentId") == existing_inc["id"] for t in tasks_check)
-    if has_linked:
-        print("duplicate")
-        exit(0)
-    # Incident exists but has no linked task — skip incident creation, fall through to task creation
+# Deduplicate: find existing active incident with same title within 24h
+existing_inc = find_existing_incident(incidents, "$title", "$source")
+inc_already_exists = existing_inc is not None
+
+now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+
+if inc_already_exists:
+    # Update existing incident: append to timeline, bump lastActivity, increment count
     next_id = existing_inc["id"]
-    inc_already_exists = True
+    existing_inc["lastActivity"] = now
+    # Track recurrence count in summary
+    recurrence = existing_inc.get("_recurrence", 1) + 1
+    existing_inc["_recurrence"] = recurrence
+    existing_inc["summary"] = "$summary" + f" (recurrence #{recurrence})"
+    existing_inc["timeline"].append({"ts": now, "message": f"Recurrence #{recurrence}: Auto-detected by $source", "actor": "system"})
+    safe_write(incidents_path, incidents)
+    # Still create a linked task for the recurrence (so it shows in triage)
+    # But only if no open linked task already exists
+    tasks_check = json.load(open(tasks_path)) if os.path.exists(tasks_path) else []
+    has_open_linked = any(t.get("linkedIncidentId") == next_id and t.get("status") in ("triage", "backlog", "in_progress") for t in tasks_check)
+    if has_open_linked:
+        print(f"duplicate|{next_id}")
+        exit(0)
 else:
-    inc_already_exists = False
+    # Generate next INC ID
+    nums = []
+    for i in incidents:
+        m = i["id"].split("-")
+        if len(m) == 2 and m[1].isdigit():
+            nums.append(int(m[1]))
+    next_id = f"INC-{str(max(nums) + 1 if nums else 1).zfill(3)}"
 
-# Generate next INC ID
-nums = []
-for i in incidents:
-    m = i["id"].split("-")
-    if len(m) == 2 and m[1].isdigit():
-        nums.append(int(m[1]))
-next_id = f"INC-{str(max(nums) + 1 if nums else 1).zfill(3)}"
+    # Auto-generate response actions based on severity
+    import random as _rnd
+    def _act_id(): return f"act-{_rnd.randrange(100000, 999999)}"
+    _severity_actions = {
+        "P1": [
+            {"id": _act_id(), "label": "Investigate root cause", "description": "Immediately investigate the root cause of this critical incident", "status": "suggested", "assignee": "$owner"},
+            {"id": _act_id(), "label": "Assess blast radius", "description": "Determine which systems and services are affected", "status": "suggested", "assignee": "lifesupport"},
+            {"id": _act_id(), "label": "Implement emergency mitigation", "description": "Apply the fastest available fix to reduce impact", "status": "suggested", "assignee": "$owner"},
+            {"id": _act_id(), "label": "Notify command", "description": "Escalate to human operator for awareness", "status": "suggested", "assignee": "monkey"},
+        ],
+        "P2": [
+            {"id": _act_id(), "label": "Investigate issue", "description": "Investigate the cause of this high-severity incident", "status": "suggested", "assignee": "$owner"},
+            {"id": _act_id(), "label": "Apply fix", "description": "Implement a fix for the identified issue", "status": "suggested", "assignee": "$owner"},
+            {"id": _act_id(), "label": "Verify resolution", "description": "Confirm the fix resolves the incident", "status": "suggested", "assignee": "lifesupport"},
+        ],
+        "P3": [
+            {"id": _act_id(), "label": "Review and triage", "description": "Review the incident and determine appropriate response", "status": "suggested", "assignee": "monkey"},
+            {"id": _act_id(), "label": "Apply standard fix", "description": "Apply a standard fix procedure", "status": "suggested", "assignee": "$owner"},
+        ],
+        "P4": [
+            {"id": _act_id(), "label": "Monitor and log", "description": "Monitor the situation and log for pattern analysis", "status": "suggested", "assignee": "lifesupport"},
+        ],
+    }
+    _actions = _severity_actions.get("$severity", _severity_actions["P3"])
 
-now = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S.000Z")
-
-# Auto-generate response actions based on severity
-import random as _rnd
-def _act_id(): return f"act-{_rnd.randrange(100000, 999999)}"
-_severity_actions = {
-    "P1": [
-        {"id": _act_id(), "label": "Investigate root cause", "description": "Immediately investigate the root cause of this critical incident", "status": "suggested", "assignee": "$owner"},
-        {"id": _act_id(), "label": "Assess blast radius", "description": "Determine which systems and services are affected", "status": "suggested", "assignee": "lifesupport"},
-        {"id": _act_id(), "label": "Implement emergency mitigation", "description": "Apply the fastest available fix to reduce impact", "status": "suggested", "assignee": "$owner"},
-        {"id": _act_id(), "label": "Notify command", "description": "Escalate to human operator for awareness", "status": "suggested", "assignee": "monkey"},
-    ],
-    "P2": [
-        {"id": _act_id(), "label": "Investigate issue", "description": "Investigate the cause of this high-severity incident", "status": "suggested", "assignee": "$owner"},
-        {"id": _act_id(), "label": "Apply fix", "description": "Implement a fix for the identified issue", "status": "suggested", "assignee": "$owner"},
-        {"id": _act_id(), "label": "Verify resolution", "description": "Confirm the fix resolves the incident", "status": "suggested", "assignee": "lifesupport"},
-    ],
-    "P3": [
-        {"id": _act_id(), "label": "Review and triage", "description": "Review the incident and determine appropriate response", "status": "suggested", "assignee": "monkey"},
-        {"id": _act_id(), "label": "Apply standard fix", "description": "Apply a standard fix procedure", "status": "suggested", "assignee": "$owner"},
-    ],
-    "P4": [
-        {"id": _act_id(), "label": "Monitor and log", "description": "Monitor the situation and log for pattern analysis", "status": "suggested", "assignee": "lifesupport"},
-    ],
-}
-_actions = _severity_actions.get("$severity", _severity_actions["P3"])
-
-if not inc_already_exists:
     inc = {
         "id": next_id, "title": "$title", "severity": "$severity",
         "status": "TRIAGE", "owner": "$owner", "acknowledged": False,
@@ -89,11 +139,11 @@ if not inc_already_exists:
         "tags": ${tags} + ["$source"],
         "timeline": [{"ts": now, "message": "Auto-detected by $source", "actor": "system"}],
         "actions": _actions,
-        "actionsGenerated": True
+        "actionsGenerated": True,
+        "_recurrence": 1
     }
     incidents.insert(0, inc)
-    with open(incidents_path, "w") as f:
-        json.dump(incidents, f, indent=2)
+    safe_write(incidents_path, incidents)
 
 # Create linked task in tasks.json
 try:
@@ -113,8 +163,7 @@ try:
         "lastActivity": now
     }
     tasks.insert(0, task)
-    with open(tasks_path, "w") as f:
-        json.dump(tasks, f, indent=2)
+    safe_write(tasks_path, tasks)
     print(f"{next_id}|{task_id}")
 except Exception as e:
     print(next_id)

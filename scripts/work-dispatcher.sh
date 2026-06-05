@@ -11,10 +11,26 @@ TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 # ── Step 1: Check in_progress tasks and reset stale ones ─────────────────────
 IN_PROGRESS_RESULT=$(python3 << 'PYEOF'
-import json, sys
+import json, sys, os, tempfile, shutil
 from datetime import datetime, timezone
 
 tasks_file = "/Users/spacemonkey/.openclaw/workspace/data/tasks.json"
+
+def safe_write(path, data):
+    try:
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp): os.remove(tmp)
+            raise
+    except Exception as e:
+        print(f"safe_write error: {e}", file=sys.stderr)
 
 try:
     with open(tasks_file) as f:
@@ -80,8 +96,7 @@ for t in in_progress:
             'details': 'Reset from in_progress to backlog — no valid activity timestamp found'
         })
 
-with open(tasks_file, 'w') as f:
-    json.dump(tasks, f, indent=2)
+safe_write(tasks_file, tasks)
 
 # Output remaining in_progress count after stale resets
 remaining = len([t for t in tasks if t.get('status') == 'in_progress'])
@@ -118,11 +133,27 @@ fi
 
 # ── Step 3: Dispatch the oldest backlog item ─────────────────────────────────
 python3 << 'PYEOF'
-import json
-from datetime import datetime
+import json, os, tempfile, shutil
+from datetime import datetime, timezone
 
 tasks_file = "/Users/spacemonkey/.openclaw/workspace/data/tasks.json"
 log_file = "/Users/spacemonkey/.openclaw/workspace/memory/dispatcher-log.md"
+
+def safe_write(path, data):
+    try:
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp): os.remove(tmp)
+            raise
+    except Exception as e:
+        print(f"safe_write error: {e}")
 
 with open(tasks_file) as f:
     tasks = json.load(f)
@@ -170,8 +201,7 @@ for t in tasks:
         dispatched = t
         break
 
-with open(tasks_file, 'w') as f:
-    json.dump(tasks, f, indent=2)
+safe_write(tasks_file, tasks)
 
 with open(log_file, 'a') as f:
     f.write(f"\n## {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} — DISPATCHED\n")

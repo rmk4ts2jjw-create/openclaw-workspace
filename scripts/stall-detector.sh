@@ -19,8 +19,24 @@ mkdir -p "$(dirname "$LOG")"
 DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
 
 python3 - "$TASKS_FILE" "$THRESHOLD_MIN" "$DATE" "$LOG" << 'PYEOF'
-import json, sys
+import json, sys, os, tempfile, shutil
 from datetime import datetime, timezone
+
+def safe_write(path, data):
+    try:
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp): os.remove(tmp)
+            raise
+    except Exception as e:
+        print(f"safe_write error: {e}", file=sys.stderr)
 
 tasks_file = sys.argv[1]
 threshold_min = int(sys.argv[2])
@@ -82,8 +98,7 @@ for t in tasks:
         reset_count += 1
 
 if reset_count > 0:
-    with open(tasks_file, 'w') as f:
-        json.dump(tasks, f, indent=2)
+    safe_write(tasks_file, tasks)
     log_lines.insert(0, f"[{date_str}] Stall detector: reset {reset_count} task(s)")
 else:
     log_lines.append(f"[{date_str}] Stall detector: OK — no stale tasks")

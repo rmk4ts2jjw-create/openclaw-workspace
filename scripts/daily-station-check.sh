@@ -94,7 +94,20 @@ if [ -f "$DATA_DIR/tasks.json" ]; then
 
   if [ -n "$CUTOFF" ] && [ "$TASKS_COMPLETED" -gt 0 ] && command -v python3 >/dev/null 2>&1; then
     ARCHIVED=$(python3 -c "
-import json, sys
+import json, sys, os, tempfile, shutil
+def safe_write(path, data):
+    try:
+        if os.path.exists(path): shutil.copy2(path, path + '.bak')
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
+        try:
+            with os.fdopen(fd, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
+            os.rename(tmp, path)
+        except:
+            if os.path.exists(tmp): os.remove(tmp)
+            raise
+    except: pass
 try:
     tasks = json.load(open('$TASKS_FILE'))
     if not isinstance(tasks, list): tasks = [tasks]
@@ -107,8 +120,8 @@ try:
             if not isinstance(old, list): old = [old]
         except: old = []
         old.extend(to_archive)
-        json.dump(old, open('$ARCHIVE_FILE','w'), indent=2)
-        json.dump(remaining, open('$TASKS_FILE','w'), indent=2)
+        safe_write('$ARCHIVE_FILE', old)
+        safe_write('$TASKS_FILE', remaining)
     print(len(to_archive))
 except Exception as e:
     print(0, file=sys.stderr)

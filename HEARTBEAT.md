@@ -88,6 +88,15 @@
 - The Done column should always show recent completions (last 30 days minimum)
 - Archive is for long-term storage only — the Kanban is the source of truth
 
+## Circuit Breaker (check EVERY heartbeat)
+- Before ANY automated processing (dispatch, incident creation, task pickup), run:
+  `bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh check <error_type>`
+- If TRIPPED → log reason, skip that operation
+- Error types: `task-dispatch`, `incident-create`, `night-shift`, `auto-resolve`
+- 5 identical errors in 10 minutes = 30-minute halt
+- Manual reset: `bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh reset`
+- Status: `bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh status`
+
 ## Night Shift (01:00-07:00 BST)
 
 Autonomous task processing when Andre is asleep. Design doc: `NIGHT_SHIFT.md`.
@@ -98,6 +107,7 @@ ALL conditions must be true:
 - Dispatchable backlog tasks exist (see eligibility below)
 - No 429 rate limit errors in last 30 minutes
 - No Andre activity in last 2 hours
+- Circuit breaker `night-shift` is NOT tripped (check with `circuit-breaker.sh check night-shift`)
 
 If any condition fails → log reason, skip Night Shift this cycle.
 
