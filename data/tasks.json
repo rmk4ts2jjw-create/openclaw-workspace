@@ -588,7 +588,7 @@
     "id": "task-framework-md-001",
     "title": "Update FRAMEWORK.md with gotchas",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P3",
     "ts": "just now",
     "note": "Add these gotchas to FRAMEWORK.md:\n- 'setAwaitingReviewCount crash: SSR fails if a state setter is passed as a prop but never defined. The page renders blank.'\n- 'node:path static imports: replaced with lazy await import() inside server function handlers. Never statically import Node.js built-ins in files that could be imported by client components.'\n- 'P1 Dashboard blank page: first check the SSR error in the HTML source (view-source) before chasing client bundle issues.' [auto-dispatched 2026-06-04 13:07]",
@@ -609,13 +609,20 @@
         "action": "stalled_reset",
         "actor": "monkey",
         "details": "Reset to backlog \u2014 ghost dispatch, in_progress for 6.5h with no activity. Caught by new stall detection rules."
+      },
+      {
+        "ts": "2026-06-05T02:47:46.730306+00:00",
+        "action": "started",
+        "actor": "night-shift",
+        "details": "Night Shift dispatch \u2014 updating FRAMEWORK.md with gotchas"
       }
     ],
-    "lastActivity": "2026-06-04T12:10:55.634839+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-05T02:48:39.000369+00:00",
+    "currentStep": "Committing and pushing",
+    "progress": 75,
     "stalledAt": "2026-06-04T12:10:55.634839+00:00",
-    "dispatchCount": 1
+    "dispatchCount": 1,
+    "startedAt": "2026-06-05T02:47:46.730304+00:00"
   },
   {
     "id": "task-inc-043-b3ec",

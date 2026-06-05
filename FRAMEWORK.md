@@ -145,6 +145,24 @@ These are the mistakes that have happened before and must never happen again:
 - **Real incident:** Daily Station Check cron `dae7406b` was an `agentTurn` job that burned tokens for 10+ days (May 21–31) because it was supposed to be disabled when the LaunchAgent replacement was created, but it remained enabled. It spawned an isolated AI session every night at 11pm, hit the 120s timeout in `model-call-started`, and burned tokens on each attempt. The shell-only LaunchAgent was working correctly the whole time — the old cron was a duplicate nobody deleted.
 - **Rule:** New replacement goes live → old cron gets deleted the same session. No exceptions.
 
+### `setAwaitingReviewCount` Crash — Undefined State Setter Prop Causes Blank SSR Page
+- If a state setter (e.g. `setAwaitingReviewCount`) is passed as a prop but **never defined** in the parent component, the SSR render fails silently and the page renders **completely blank**
+- No client-side error — the HTML source shows an SSR error
+- **Debugging tip:** When a page is blank, always check the SSR error in the HTML source (view-source) before chasing client bundle issues
+- **Fix:** Ensure all state setters passed as props are actually defined with `useState` in the parent component
+
+### P1 Dashboard Blank Page: Check SSR Error First
+- When the P1 Dashboard renders a blank page, **first check the SSR error in the HTML source** (view-source) before chasing client bundle issues
+- The root cause is often an undefined state setter prop (see above) or a Node.js built-in import that breaks SSR
+- Client-side debugging tools (React DevTools, console) will show nothing because the page never mounts — the failure happens server-side
+- **Always:** view-source → search for error text → identify the offending import or undefined prop
+
+### `node:path` Static Imports Break SSR in Client Components
+- Statically importing Node.js built-ins (e.g. `import path from 'node:path'`) in files that **could be imported by client components** will crash the SSR render
+- **Fix:** Replace static imports with dynamic `await import()` inside server function handlers only
+- Never statically import `node:path`, `node:fs`, or any other Node.js built-in in shared utility files that client components might import
+- If a file is used by both server and client code, use dynamic imports for Node.js built-ins at the point of use
+
 ### FreeRide Watcher Burns Rate Limits During Pool Exhaustion
 - The `freeride-watcher` LaunchAgent polls OpenRouter every ~16 minutes to test model health
 - When the free model pool is exhausted, each poll generates a 429 + a failed rotation attempt (another 429)
