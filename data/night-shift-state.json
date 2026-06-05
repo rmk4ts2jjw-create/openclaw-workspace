@@ -1,13 +1,13 @@
 {
-  "active": false,
-  "date": "2026-06-03",
-  "startedAt": null,
+  "active": true,
+  "date": "2026-06-05",
+  "startedAt": "2026-06-05T00:08:50.889523+00:00",
   "tasksCompleted": [],
-  "tasksAttempted": 0,
+  "tasksAttempted": 1,
   "tasksFailed": [],
   "tokensUsed": 0,
-  "currentTask": null,
+  "currentTask": "task-session-cleanup-001",
   "stoppedReason": null,
   "maxTasks": 2,
-  "note": "First night trial \u2014 max 2 tasks"
+  "note": "Night Shift 2026-06-05 \u2014 first task dispatched"
 }
