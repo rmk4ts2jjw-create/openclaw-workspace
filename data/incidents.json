@@ -3,12 +3,12 @@
     "id": "INC-084",
     "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
     "severity": "P2",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "lifesupport",
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T00:11:05.000Z",
-    "lastActivity": "2026-06-06T00:41:17.000Z",
+    "lastActivity": "2026-06-06T02:49:25.906926+00:00",
     "summary": "Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted. (recurrence #2)",
     "tags": [
       "rate-limit",
@@ -26,6 +26,12 @@
         "ts": "2026-06-06T00:41:17.000Z",
         "message": "Recurrence #2: Auto-detected by rate-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-06T02:49:25.906926+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Consolidated into INC-069"
       }
     ],
     "actions": [
@@ -52,18 +58,20 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2
+    "_recurrence": 2,
+    "resolvedAt": "2026-06-06T02:49:25.906926+00:00",
+    "resolution": "Consolidated into INC-069 (same rate-limit exhaustion pattern)"
   },
   {
     "id": "INC-083",
     "title": "Mission Control dashboard down \u2014 HTTP 000",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T00:11:05.000Z",
-    "lastActivity": "2026-06-06T00:41:17.000Z",
+    "lastActivity": "2026-06-06T02:49:25.906926+00:00",
     "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #2)",
     "tags": [
       "mission-control",
@@ -81,6 +89,12 @@
         "ts": "2026-06-06T00:41:17.000Z",
         "message": "Recurrence #2: Auto-detected by health-check",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-06T02:49:25.906926+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Dashboard responding on port 3000"
       }
     ],
     "actions": [
@@ -114,7 +128,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2
+    "_recurrence": 2,
+    "resolvedAt": "2026-06-06T02:49:25.906926+00:00",
+    "resolution": "Mission Control dashboard is up (HTTP 200). Health check was stale."
   },
   {
     "id": "INC-082",
