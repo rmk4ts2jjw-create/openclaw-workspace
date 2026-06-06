@@ -84,9 +84,11 @@
 ## Task Archive Maintenance
 - **Done tasks live in the Kanban Done column** — never remove them just because they're complete
 - Only archive done tasks older than 30 days to `data/tasks-archive.json`
+- **Archive date logic**: Use `completedAt` field first, fall back to the `ts` of the last `completed` history entry. If neither exists, keep in tasks.json (don't archive undated tasks).
 - When archiving: append to existing archive, remove from `tasks.json`, commit + push
 - The Done column should always show recent completions (last 30 days minimum)
 - Archive is for long-term storage only — the Kanban is the source of truth
+- **git-push.sh** archives `tasks-archive.json` to GitHub for off-Mac backup
 
 ## Circuit Breaker (check EVERY heartbeat)
 - Before ANY automated processing (dispatch, incident creation, task pickup), run:
