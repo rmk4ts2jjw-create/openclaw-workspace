@@ -43,6 +43,18 @@ push_repo() {
 
 log "=== Daily push started ==="
 
+# Push workspace repo (includes tasks.json, tasks-archive.json, incidents, etc.)
+cd "$WORKSPACE"
+git add -A
+git add -f data/tasks-archive.json data/tasks.json data/incidents.json 2>/dev/null || true
+if ! git diff --cached --quiet; then
+  git commit -m "chore: daily auto-push [$DATE]" --quiet
+  git push origin main --quiet 2>&1 || true
+  log "workspace: pushed successfully"
+else
+  log "workspace: nothing to commit"
+fi
+
 push_repo "$WORKSPACE/mission-control-dashboard" "mc-prod"
 push_repo "$WORKSPACE/mission-control-dashboard-dev" "mc-dev"
 

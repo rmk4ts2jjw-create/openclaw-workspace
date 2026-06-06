@@ -112,7 +112,16 @@ try:
     tasks = json.load(open('$TASKS_FILE'))
     if not isinstance(tasks, list): tasks = [tasks]
     cutoff = '$CUTOFF'
-    to_archive = [t for t in tasks if t.get('status') == 'done' and t.get('updatedAt','') < cutoff]
+    def get_completed_time(t):
+        """Get completion timestamp from completedAt or history."""
+        ca = t.get('completedAt')
+        if ca:
+            return ca
+        for h in reversed(t.get('history', [])):
+            if h.get('action') == 'completed':
+                return h.get('ts', '')
+        return ''
+    to_archive = [t for t in tasks if t.get('status') == 'done' and get_completed_time(t) and get_completed_time(t) < cutoff]
     remaining = [t for t in tasks if t not in to_archive]
     if to_archive:
         try:
