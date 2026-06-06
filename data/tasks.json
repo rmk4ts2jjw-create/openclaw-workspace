@@ -1,5 +1,75 @@
 [
   {
+    "id": "task-inc-093-eb81",
+    "title": "Investigate: INC-093",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-093: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-093",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T19:12:49.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-093"
+      },
+      {
+        "ts": "2026-06-06T19:16:17.356195+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:16:17.356195+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:16:17.356195+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task."
+  },
+  {
+    "id": "task-inc-096-dc1d",
+    "title": "Investigate: INC-096",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-096: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-096",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T19:12:49.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-096"
+      },
+      {
+        "ts": "2026-06-06T19:16:17.356195+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:16:17.356195+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:16:17.356195+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task."
+  },
+  {
     "id": "task-inc-097-3002",
     "title": "Investigate: INC-097",
     "assignee": "engineer",
