@@ -54,27 +54,36 @@ When answering questions, I check the wiki index first, then drill into relevant
 
 - **2026-06-02:** OPS-002 — Incident→Task Linking: `Task.linkedIncidentId` is source of truth (not `Incident.linkedTaskIds`). Auto-detect creates linked triage tasks. Task status changes auto-append to incident timeline via `/api/incidents/timeline`. Added `triage` to Task status union, new Triage Kanban column, Linked Incident section in task detail, derived linked tasks in IncidentDetailsDrawer.
 - **2026-06-03:** Task system overhaul — removed work-dispatcher.sh (was flipping JSON without spawning agents). Heartbeat is now the only dispatcher. 28 stale/protected tasks cleaned up (6 incident artifacts → obsolete, 22 strategic → deferred). End-to-end test passed: sub-agent dispatched, completed, moved to Done with summary. 16 planning tasks remain in backlog for human triage.
+- **2026-06-06:** tasks.json wiped by heartbeat cleanup (commit a5aaff3) — Python script wrote dict format instead of array, reducing 104 tasks to 1. Restored from git history (commit 3e5ef20, 99 tasks). Root cause: heartbeat bypasses /api/save-tasks merge protection by writing directly via Python. Fix: heartbeat must use atomic write + validate format before writing.
+- **2026-06-06:** Cron audit — removed duplicate session cleanup (38ac51a4), disabled standalone stall detector and error spike watchdog (merged into maintenance.sh), fixed night-shift-automation Telegram error (delivery: none). 13 → 12 jobs (10 enabled, 2 disabled).
+- **2026-06-06:** Circuit breaker confirmed as inline guard (not a cron job) — checked by heartbeat and maintenance.sh before any automated processing.
+- **2026-06-06:** Daily Incident Auto-Resolve confirmed intentionally added — safety net to prevent incident graveyard buildup.
 
 ## Cron Jobs
 
-Active OpenClaw cron jobs:
-- **Daily Station Check** — 23:00 BST, shell-only, sends Telegram sitrep
-- **Auto-Update FreeRide** — 06:00 BST, isolated agentTurn, delivers to Telegram
-- **Friday GIF** — Friday 17:00 BST, shell-only
-- **Weekly Healthcheck** — Monday 08:00 BST, shell-only
-- **Git Push** — 04:00 UTC daily, shell-only
-- **Session Cleanup** — 02:00 UTC daily, shell-only
-- **Session Auto-Expiry** — 04:00 UTC daily, shell-only
-- **Night Shift Activation** — 01:00 BST daily, systemEvent
-- **Daily Incident Auto-Resolve** — 06:00 BST daily
-- **Stall Detector** — every 15 min, shell-only
-- **Error Spike Watchdog** — every 15 min, isolated
+Active OpenClaw cron jobs (12 total, 10 enabled):
+- **Sessions Cleanup** — 02:00 UTC, systemEvent (shell via `openclaw sessions cleanup`)
+- **Session Auto-Expiry** — 04:00 UTC, systemEvent (shell script)
+- **Daily GitHub push** — 04:00 UTC, systemEvent (shell script)
+- **Night Shift Activation** — 01:00 BST, systemEvent → main session
+- **night-shift-automation** — 01:00 BST, isolated agentTurn (delivery: none)
+- **Auto-update FreeRide** — 06:00 BST, isolated agentTurn (only token-burning cron)
+- **Daily Incident Auto-Resolve** — 06:00 BST, systemEvent → POST /api/incidents/auto-resolve
+- **Daily Station Check** — 23:00 BST, systemEvent (shell script, Telegram delivery)
+- **Weekly Healthcheck** — Monday 08:00 BST, systemEvent (shell script)
+- **Friday GIF** — Friday 17:00 BST, systemEvent (shell-only, gifgrep)
+
+Disabled (merged into maintenance.sh):
+- ~~Stall Detector~~ — was every 15 min, now step 5/10 in maintenance.sh (every 30 min)
+- ~~Error Spike Watchdog~~ — was every 15 min agentTurn, now step 4/10 in maintenance.sh (shell-only)
+- ~~Session Cleanup (archive takeover)~~ — was every 6h agentTurn, duplicate of 02:00 systemEvent job
 
 LaunchAgents (separate from cron):
-- `com.openclaw.daily-station-check` — 23:00 BST (redundant with cron)
-- `com.openclaw.maintenance` — every 30 min
+- `com.openclaw.maintenance` — every 30 min (stall detection, error watchdog, dispatch, incidents)
 - `com.openclaw.mc.dashboard` — MC dev server (port 3000)
 - `com.openclaw.mount-check` — every 30 min
+
+**Circuit Breaker**: Not a cron job — it's a guard function checked inline by heartbeat and maintenance.sh before any automated processing. State in `data/circuit-breaker-state.json`.
 
 ## Night Shift
 
