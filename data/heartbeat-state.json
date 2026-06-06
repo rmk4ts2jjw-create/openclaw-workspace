@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "incidents": "2026-06-05T04:49:01.092104+00:00"
+    "incidents": "2026-06-06T21:30:00.000000+00:00"
   },
-  "lastHeartbeat": "2026-06-05T04:49:01.092104+00:00",
-  "notes": "2026-06-05 05:46 BST \u2014 Heartbeat check. No in_progress tasks. 4 backlog tasks (0 dispatchable \u2014 all have stalledAt or dispatchCount >= 3). 4 open incidents (below threshold). Night Shift completed 2 tasks tonight. Station nominal."
+  "lastHeartbeat": "2026-06-06T21:30:00.000000+00:00",
+  "notes": "2026-06-06 21:30 BST — Post-restore heartbeat. tasks.json restored (115 tasks), heartbeats since then archived 103 done tasks to tasks-archive.json (394 total). 12 active tasks remain (4 backlog, 8 triage). 0 in_progress. 101 incidents (96 RESOLVED, 5 TRIAGE). All circuit breakers closed. MC dashboard 200 OK. Cron audit complete: 12 jobs (10 enabled, 2 disabled)."
 }
