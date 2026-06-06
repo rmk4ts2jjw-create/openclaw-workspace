@@ -1,5 +1,55 @@
 [
   {
+    "id": "task-inc-099-6295",
+    "title": "Investigate: INC-099",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-099: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-099",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T19:42:51.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-099"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:42:51.000Z"
+  },
+  {
+    "id": "task-inc-098-85f0",
+    "title": "Investigate: INC-098",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-098: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-098",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T19:42:51.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-098"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:42:51.000Z"
+  },
+  {
     "id": "task-inc-093-eb81",
     "title": "Investigate: INC-093",
     "assignee": "lifesupport",
