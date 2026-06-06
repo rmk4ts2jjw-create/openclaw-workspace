@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-06T09:00:00+00:00"
+    "gateway": "2026-06-06T13:47:40.310229+00:00"
   },
-  "lastHeartbeat": "2026-06-06T09:00:00+00:00",
-  "notes": "2026-06-06 09:00 BST — Heartbeat. 0 tasks in backlog, 0 in_progress. 7 open incidents (session takeover x4, rate limit x2, mount x1 — all known/recurring). Under auto-resolve threshold. Circuit breaker clear. Nothing to do."
+  "lastHeartbeat": "2026-06-06T13:47:40.310229+00:00",
+  "notes": "2026-06-06 13:47 BST \u2014 Heartbeat. Closed 4 duplicate triage tasks (INC-087/088/089/091). Resolved 6 duplicate incidents. 0 in_progress tasks. 2 open incidents (under auto-resolve threshold). Circuit breakers clean. Station nominal. Gateway uptime 17d 2h."
 }

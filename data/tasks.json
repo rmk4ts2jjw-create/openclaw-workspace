@@ -1,5 +1,145 @@
 [
   {
+    "id": "task-inc-089-8343",
+    "title": "Investigate: INC-089",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-089: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-089",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T13:42:28.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-089"
+      },
+      {
+        "ts": "2026-06-06T13:47:01.900311+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of task-triage-session-takeover"
+      }
+    ],
+    "lastActivity": "2026-06-06T13:47:01.900311+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T13:47:01.900311+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into task-triage-session-takeover. INC-089 duplicates consolidated session-takeover task."
+  },
+  {
+    "id": "task-inc-091-9bff",
+    "title": "Investigate: INC-091",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-091: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-091",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T13:12:26.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-091"
+      },
+      {
+        "ts": "2026-06-06T13:47:01.900311+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of task-triage-session-takeover"
+      }
+    ],
+    "lastActivity": "2026-06-06T13:47:01.900311+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T13:47:01.900311+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into task-triage-session-takeover. INC-091 duplicates consolidated session-takeover task."
+  },
+  {
+    "id": "task-inc-087-9de2",
+    "title": "Investigate: INC-087",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-087: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-087",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T12:42:24.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-087"
+      },
+      {
+        "ts": "2026-06-06T13:47:01.900311+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of task-triage-rate-limit"
+      }
+    ],
+    "lastActivity": "2026-06-06T13:47:01.900311+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T13:47:01.900311+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into task-triage-rate-limit. INC-087 duplicates consolidated rate-limit task."
+  },
+  {
+    "id": "task-inc-088-4c16",
+    "title": "Investigate: INC-088",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-088: Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-088",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T12:42:24.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-088"
+      },
+      {
+        "ts": "2026-06-06T13:47:01.900311+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of task-triage-session-takeover"
+      }
+    ],
+    "lastActivity": "2026-06-06T13:47:01.900311+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T13:47:01.900311+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into task-triage-session-takeover. INC-088 duplicates consolidated session-takeover task."
+  },
+  {
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
