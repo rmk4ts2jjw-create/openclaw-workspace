@@ -55,9 +55,30 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-06-02:** OPS-002 — Incident→Task Linking: `Task.linkedIncidentId` is source of truth (not `Incident.linkedTaskIds`). Auto-detect creates linked triage tasks. Task status changes auto-append to incident timeline via `/api/incidents/timeline`. Added `triage` to Task status union, new Triage Kanban column, Linked Incident section in task detail, derived linked tasks in IncidentDetailsDrawer.
 - **2026-06-03:** Task system overhaul — removed work-dispatcher.sh (was flipping JSON without spawning agents). Heartbeat is now the only dispatcher. 28 stale/protected tasks cleaned up (6 incident artifacts → obsolete, 22 strategic → deferred). End-to-end test passed: sub-agent dispatched, completed, moved to Done with summary. 16 planning tasks remain in backlog for human triage.
 
+## Cron Jobs
+
+Active OpenClaw cron jobs:
+- **Daily Station Check** — 23:00 BST, shell-only, sends Telegram sitrep
+- **Auto-Update FreeRide** — 06:00 BST, isolated agentTurn, delivers to Telegram
+- **Friday GIF** — Friday 17:00 BST, shell-only
+- **Weekly Healthcheck** — Monday 08:00 BST, shell-only
+- **Git Push** — 04:00 UTC daily, shell-only
+- **Session Cleanup** — 02:00 UTC daily, shell-only
+- **Session Auto-Expiry** — 04:00 UTC daily, shell-only
+- **Night Shift Activation** — 01:00 BST daily, systemEvent
+- **Daily Incident Auto-Resolve** — 06:00 BST daily
+- **Stall Detector** — every 15 min, shell-only
+- **Error Spike Watchdog** — every 15 min, isolated
+
+LaunchAgents (separate from cron):
+- `com.openclaw.daily-station-check` — 23:00 BST (redundant with cron)
+- `com.openclaw.maintenance` — every 30 min
+- `com.openclaw.mc.dashboard` — MC dev server (port 3000)
+- `com.openclaw.mount-check` — every 30 min
+
 ## Night Shift
 
-Autonomous task processing during 01:00-07:00 when Andre is asleep. Design doc at `NIGHT_SHIFT.md`. Not yet implemented — pending Andre's review.
+Autonomous task processing during 01:00-07:00 when Andre is asleep. Design doc at `NIGHT_SHIFT.md`. Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks).
 
 ---
 _Last updated: 2026-06-03 by Space Monkey_
