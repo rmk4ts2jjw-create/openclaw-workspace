@@ -1,0 +1,4 @@
+[2026-06-05 10:57:01 UTC] CIRCUIT TRIPPED for 'test-error' — 5 errors in 600s. Halt for 1800s. (trip #1)
+[2026-06-05 10:57:01 UTC] CIRCUIT OPEN for 'test-error' — 1800s remaining
+[2026-06-05 10:57:01 UTC] Circuit breaker RESET
+[2026-06-05 10:57:26 UTC] Circuit breaker RESET

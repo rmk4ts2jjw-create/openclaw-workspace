@@ -1,0 +1,28 @@
+[2026-06-05 10:34:21 BST] === Weekly Healthcheck ===
+[2026-06-05 10:34:21 BST] macOS: 26.4.1
+[2026-06-05 10:34:21 BST] FileVault: FileVault is On.
+[2026-06-05 10:34:21 BST] Firewall: Firewall is disabled. (State = 0)
+[2026-06-05 10:34:21 BST] Disk: 59% used (16Gi/228Gi)
+[2026-06-05 10:34:21 BST] Memory: 0%
+[2026-06-05 10:34:21 BST] Uptime: 15 days
+[2026-06-05 10:34:21 BST] Gateway: running
+[2026-06-05 10:34:21 BST] Public ports: *:11434,*:11470,*:12470,*:18789,*:3000,*:49152,*:5000,*:7000,NAME,
+[2026-06-05 10:34:21 BST] SSH password auth: not configured
+[2026-06-05 10:34:21 BST] Last backup: 
+[2026-06-05 10:34:21 BST] OpenClaw: OpenClaw 2026.6.1 (2e08f0f)
+[2026-06-05 10:34:21 BST] ⚠️ RISKS: [FIREWALL_OFF]
+[2026-06-05 10:34:21 BST] === Healthcheck complete ===
+[2026-06-05 10:35:55 BST] === Weekly Healthcheck ===
+[2026-06-05 10:35:55 BST] macOS: 26.4.1
+[2026-06-05 10:35:55 BST] FileVault: FileVault is On.
+[2026-06-05 10:35:55 BST] Firewall: Firewall is disabled. (State = 0)
+[2026-06-05 10:35:55 BST] Disk: 59% used (16Gi/228Gi)
+[2026-06-05 10:35:55 BST] Memory: 42%
+[2026-06-05 10:35:55 BST] Uptime: 15 days
+[2026-06-05 10:35:55 BST] Gateway: running
+[2026-06-05 10:35:55 BST] Public ports: *:11434,*:11470,*:12470,*:18789,*:3000,*:49152,*:5000,*:7000,NAME,
+[2026-06-05 10:35:55 BST] SSH password auth: not configured
+[2026-06-05 10:35:55 BST] Last backup: No recent backup
+[2026-06-05 10:35:55 BST] OpenClaw: OpenClaw 2026.6.1 (2e08f0f)
+[2026-06-05 10:35:55 BST] ⚠️ RISKS: [FIREWALL_OFF]
+[2026-06-05 10:35:55 BST] === Healthcheck complete ===

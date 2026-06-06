@@ -10,3 +10,21 @@
 2026-06-05T01:23:11+0100: Archived: 8 files, Skipped (no takeover): 9 files
 2026-06-05T01:23:19+0100: No takeover errors found in any session files
 2026-06-05T01:23:19+0100: === Session cleanup complete ===
+2026-06-05T07:35:23+0100: === Session cleanup started ===
+2026-06-05T07:35:23+0100: ARCHIVED: c2aa4efe-0e52-4263-984a-3444a4994ff4.jsonl.reset.2026-06-04T05-11-31.857Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/c2aa4efe-0e52-4263-984a-3444a4994ff4.jsonl.reset.2026-06-04T05-11-31.857Z
+2026-06-05T07:35:23+0100: Archived: 1 files, Skipped (no takeover): 9 files
+2026-06-05T07:35:32+0100: No takeover errors found in any session files
+2026-06-05T07:35:32+0100: === Session cleanup complete ===
+2026-06-05T13:35:25+0100: === Session cleanup started ===
+2026-06-05T13:35:25+0100: Archived: 0 files, Skipped (no takeover): 9 files
+2026-06-05T13:35:36+0100: No takeover errors found in any session files
+2026-06-05T13:35:36+0100: === Session cleanup complete ===
+2026-06-05T19:35:23+0100: === Session cleanup started ===
+2026-06-05T19:35:23+0100: Archived: 0 files, Skipped (no takeover): 9 files
+2026-06-05T19:35:38+0100: No takeover errors found in any session files
+2026-06-05T19:35:38+0100: === Session cleanup complete ===
+2026-06-06T01:35:20+0100: === Session cleanup started ===
+2026-06-06T01:35:21+0100: ARCHIVED: 30fb68ae-bcb8-4fc4-8be2-c2b4d9f4b311.jsonl.reset.2026-06-05T07-59-32.676Z (age: 0h, takeover errors found) -> /Users/spacemonkey/.openclaw/workspace/logs/session-archive/30fb68ae-bcb8-4fc4-8be2-c2b4d9f4b311.jsonl.reset.2026-06-05T07-59-32.676Z
+2026-06-06T01:35:21+0100: Archived: 1 files, Skipped (no takeover): 9 files
+2026-06-06T01:35:30+0100: No takeover errors found in any session files
+2026-06-06T01:35:30+0100: === Session cleanup complete ===

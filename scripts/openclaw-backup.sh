@@ -8,7 +8,7 @@ set -euo pipefail
 # === Configuration ===
 SOURCE_DIR="$HOME/.openclaw"
 WORKSPACE_DIR="$SOURCE_DIR/workspace"
-BACKUP_BASE="/Volumes/Public/openclaw-agent-backup"
+BACKUP_BASE="/Volumes/OpenClaw/OpenClaw"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 DAY_OF_WEEK=$(date +"%u")  # 1=Mon, 7=Sun
 DATE=$(date +"%Y-%m-%d")

@@ -112,3 +112,13 @@
 23:00:01 Overall: ✅ ALL SYSTEMS NOMINAL
 23:00:05 Telegram sent: 📡 DAILY SITREP — 2026-06-04 | 0 active · 0 awaiting review · 57% disk · ✅ ALL SYSTEMS NOMINAL
 23:00:05 === Daily Station Check DONE ===
+23:00:05 === Daily Station Check START ===
+23:00:05 Load: { 2.63 2.86 2.92 }
+23:00:05 Disk: 16Gi used, 15Gi free, 51% of 228Gi
+23:00:05 Uptime: up 16 days, 10:53, 2 users, load averages: 2.63 2.86 2.92
+23:00:05 Git: no changes
+23:00:05 Tasks: 0 active, 0 awaiting review, 97 archived
+23:00:05 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:05 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:09 Telegram sent: 📡 DAILY SITREP — 2026-06-05 | 0 active · 0 awaiting review · 51% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:09 === Daily Station Check DONE ===

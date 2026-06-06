@@ -2,12 +2,16 @@
   "active": true,
   "date": "2026-06-05",
   "startedAt": "2026-06-05T00:08:50.889523+00:00",
-  "tasksCompleted": [],
-  "tasksAttempted": 1,
+  "tasksCompleted": [
+    "task-framework-md-001",
+    "task-session-cleanup-001"
+  ],
+  "tasksAttempted": 2,
   "tasksFailed": [],
   "tokensUsed": 0,
-  "currentTask": "task-session-cleanup-001",
-  "stoppedReason": null,
+  "currentTask": null,
+  "stoppedReason": "No more dispatchable tasks. All backlog tasks have stalledAt or dispatchCount >= 3.",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-05 \u2014 no dispatchable tasks this cycle. All backlog tasks have stalledAt set."
+  "note": "Night Shift 2026-06-05 \u2014 no dispatchable tasks this cycle. All backlog tasks have stalledAt set.",
+  "endedAt": "2026-06-05T04:47:58.989039+00:00"
 }

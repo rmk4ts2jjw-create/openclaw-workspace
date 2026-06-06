@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-BACKUP_BASE="/Volumes/Public/openclaw-agent-backup"
+BACKUP_BASE="/Volumes/OpenClaw/OpenClaw"
 RESTORE_DIR="$HOME/.openclaw"
 
 # === Find backup file ===

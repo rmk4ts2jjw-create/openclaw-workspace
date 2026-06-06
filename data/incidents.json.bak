@@ -1,0 +1,4243 @@
+[
+  {
+    "id": "INC-084",
+    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-06T00:11:05.000Z",
+    "lastActivity": "2026-06-06T00:11:05.000Z",
+    "summary": "Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-06T00:11:05.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-241071",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-170905",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-500057",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
+    "id": "INC-083",
+    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-06T00:11:05.000Z",
+    "lastActivity": "2026-06-06T00:41:17.000Z",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #2)",
+    "tags": [
+      "mission-control",
+      "outage",
+      "dashboard",
+      "health-check"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-06T00:11:05.000Z",
+        "message": "Auto-detected by health-check",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-06T00:41:17.000Z",
+        "message": "Recurrence #2: Auto-detected by health-check",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-185935",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-155555",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-505634",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-909321",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 2
+  },
+  {
+    "id": "INC-082",
+    "title": "Gateway session errors \u2014 7 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T23:40:54.000Z",
+    "lastActivity": "2026-06-05T23:42:56.462Z",
+    "summary": "Detected 7 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T23:40:54.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:42:56.453Z",
+        "message": "Task \"Investigate: INC-082\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:42:56.462Z",
+        "message": "Task \"Investigate: INC-082\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-188663",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-592316",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-443453",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-857121",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
+    "id": "INC-081",
+    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T14:39:56.000Z",
+    "lastActivity": "2026-06-05T23:43:00.289Z",
+    "summary": "Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #7)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T14:39:56.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T15:10:01.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T15:40:06.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T18:10:21.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T19:10:27.000Z",
+        "message": "Recurrence #5: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T22:10:46.000Z",
+        "message": "Recurrence #6: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T22:40:48.000Z",
+        "message": "Recurrence #7: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:00.287Z",
+        "message": "Task \"Investigate: INC-081\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:00.289Z",
+        "message": "Task \"Investigate: INC-081\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-206906",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-232505",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-492939",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-714795",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 7
+  },
+  {
+    "id": "INC-080",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T14:09:51.000Z",
+    "lastActivity": "2026-06-05T23:43:08.585Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #6)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T14:09:51.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T17:10:15.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T17:40:18.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T18:40:24.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T20:10:33.000Z",
+        "message": "Recurrence #5: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T21:10:40.000Z",
+        "message": "Recurrence #6: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:08.582Z",
+        "message": "Task \"Investigate: INC-080\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:08.585Z",
+        "message": "Task \"Investigate: INC-080\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-974998",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-783152",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-673077",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-471338",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 6
+  },
+  {
+    "id": "INC-079",
+    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T13:39:46.000Z",
+    "lastActivity": "2026-06-06T00:41:17.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #2)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T13:39:46.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:09.828Z",
+        "message": "Task \"Investigate: INC-079\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:43:09.876Z",
+        "message": "Task \"Investigate: INC-079\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-06T00:41:17.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-843148",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-883369",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-405134",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-111561",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 2
+  },
+  {
+    "id": "INC-078",
+    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T13:09:43.000Z",
+    "lastActivity": "2026-06-05T20:40:37.000Z",
+    "summary": "Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #4)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T13:09:43.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T16:10:09.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T16:40:12.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T20:40:37.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-751115",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-197602",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-765004",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-651432",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 4
+  },
+  {
+    "id": "INC-077",
+    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T12:39:41.000Z",
+    "lastActivity": "2026-06-06T00:11:05.000Z",
+    "summary": "Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #3)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T12:39:41.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T19:40:30.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-06T00:11:05.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-255962",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-624639",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-992925",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-534962",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 3
+  },
+  {
+    "id": "INC-076",
+    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T12:09:38.000Z",
+    "lastActivity": "2026-06-05T23:42:59.046Z",
+    "summary": "Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #3)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T12:09:38.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T21:40:43.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:10:51.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:42:59.040Z",
+        "message": "Task \"Investigate: INC-076\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T23:42:59.046Z",
+        "message": "Task \"Investigate: INC-076\" moved to in progress",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-634035",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-473493",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-300591",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-555024",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 3
+  },
+  {
+    "id": "INC-075",
+    "title": "Gateway session errors \u2014 9 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T11:39:35.000Z",
+    "lastActivity": "2026-06-05T11:39:35.000Z",
+    "summary": "Detected 9 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T11:39:35.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:47:42.475835+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-187740",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-778057",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-329683",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-564665",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1,
+    "resolvedAt": "2026-06-05T11:47:42.475835+00:00"
+  },
+  {
+    "id": "INC-074",
+    "title": "Gateway session errors \u2014 8 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T11:09:32.000Z",
+    "lastActivity": "2026-06-05T11:09:32.000Z",
+    "summary": "Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T11:09:32.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:47:42.475835+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-361043",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-974343",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-804708",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-378937",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1,
+    "resolvedAt": "2026-06-05T11:47:42.475835+00:00"
+  },
+  {
+    "id": "INC-073",
+    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T10:39:29.000Z",
+    "lastActivity": "2026-06-05T10:39:29.000Z",
+    "summary": "Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T10:39:29.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:47:42.475835+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-935696",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-350162",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-263084",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-157051",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T11:47:42.475835+00:00"
+  },
+  {
+    "id": "INC-072",
+    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T07:09:13.000Z",
+    "lastActivity": "2026-06-05T10:57:27.000Z",
+    "summary": "Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #3)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T07:09:13.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T10:57:27.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T10:57:27.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:47:42.475835+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-118037",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-394825",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-810211",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-457988",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 3,
+    "resolvedAt": "2026-06-05T11:47:42.475835+00:00"
+  },
+  {
+    "id": "INC-071",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T06:09:08.000Z",
+    "lastActivity": "2026-06-05T06:09:08.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T06:09:08.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-540734",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-469638",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-344109",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-103284",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T10:17:38.154239+00:00",
+    "resolution": "Duplicate of consolidated session-takeover investigation (task-triage-session-takeover). Gateway stable."
+  },
+  {
+    "id": "INC-070",
+    "title": "Gateway session errors \u2014 7 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T04:39:01.000Z",
+    "lastActivity": "2026-06-05T04:39:01.000Z",
+    "summary": "Detected 7 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T04:39:01.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-921788",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-424877",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-979994",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-658084",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T10:17:38.154239+00:00",
+    "resolution": "Duplicate of consolidated session-takeover investigation (task-triage-session-takeover). Gateway stable."
+  },
+  {
+    "id": "INC-069",
+    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T04:08:59.000Z",
+    "lastActivity": "2026-06-05T22:40:48.000Z",
+    "summary": "Gateway log shows 34 rate limit (429) errors. Free model pool may be exhausted. (recurrence #27)",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T04:08:59.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T10:57:27.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T10:57:27.000Z",
+        "message": "Recurrence #3: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:09:32.000Z",
+        "message": "Recurrence #4: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T11:39:35.000Z",
+        "message": "Recurrence #5: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T12:09:38.000Z",
+        "message": "Recurrence #6: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T12:39:41.000Z",
+        "message": "Recurrence #7: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T13:09:44.000Z",
+        "message": "Recurrence #8: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T13:39:46.000Z",
+        "message": "Recurrence #9: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T14:09:51.000Z",
+        "message": "Recurrence #10: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T14:39:56.000Z",
+        "message": "Recurrence #11: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T15:10:01.000Z",
+        "message": "Recurrence #12: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T15:40:06.000Z",
+        "message": "Recurrence #13: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T16:10:09.000Z",
+        "message": "Recurrence #14: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T16:40:12.000Z",
+        "message": "Recurrence #15: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T17:10:15.000Z",
+        "message": "Recurrence #16: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T17:40:18.000Z",
+        "message": "Recurrence #17: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T18:10:21.000Z",
+        "message": "Recurrence #18: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T18:40:24.000Z",
+        "message": "Recurrence #19: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T19:10:27.000Z",
+        "message": "Recurrence #20: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T19:40:30.000Z",
+        "message": "Recurrence #21: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T20:10:34.000Z",
+        "message": "Recurrence #22: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T20:40:37.000Z",
+        "message": "Recurrence #23: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T21:10:40.000Z",
+        "message": "Recurrence #24: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T21:40:43.000Z",
+        "message": "Recurrence #25: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T22:10:46.000Z",
+        "message": "Recurrence #26: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-05T22:40:48.000Z",
+        "message": "Recurrence #27: Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-918767",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-672426",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-301196",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 27
+  },
+  {
+    "id": "INC-068",
+    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T04:08:59.000Z",
+    "lastActivity": "2026-06-05T04:08:59.000Z",
+    "summary": "Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T04:08:59.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-249446",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-241323",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-469220",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-350928",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T10:17:38.154239+00:00",
+    "resolution": "Duplicate of consolidated session-takeover investigation (task-triage-session-takeover). Gateway stable."
+  },
+  {
+    "id": "INC-067",
+    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T04:08:59.000Z",
+    "lastActivity": "2026-06-05T04:08:59.000Z",
+    "summary": "Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.",
+    "tags": [
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "mount-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T04:08:59.000Z",
+        "message": "Auto-detected by mount-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-598108",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-990203",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-501265",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true
+  },
+  {
+    "id": "INC-066",
+    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T03:38:57.000Z",
+    "lastActivity": "2026-06-05T03:38:57.000Z",
+    "summary": "Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T03:38:57.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-503778",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-976956",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-363074",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-612967",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-065",
+    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T03:08:55.000Z",
+    "lastActivity": "2026-06-05T03:08:55.000Z",
+    "summary": "Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T03:08:55.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-960869",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-924768",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-314245",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-769114",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-064",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T00:38:44.000Z",
+    "lastActivity": "2026-06-05T00:38:44.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T00:38:44.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-139538",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-225270",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-737096",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-961167",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-063",
+    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T00:08:42.000Z",
+    "lastActivity": "2026-06-05T00:08:42.000Z",
+    "summary": "Gateway log shows 34 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T00:08:42.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-392496",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-940869",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-689377",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-062",
+    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-05T00:08:42.000Z",
+    "lastActivity": "2026-06-05T00:08:42.000Z",
+    "summary": "Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-05T00:08:42.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-412469",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-996280",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-501225",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-438233",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-061",
+    "title": "Rate limit exhaustion \u2014 28 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T23:38:40.000Z",
+    "lastActivity": "2026-06-04T23:38:40.000Z",
+    "summary": "Gateway log shows 28 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T23:38:40.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-887111",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-110657",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-299659",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-060",
+    "title": "Rate limit exhaustion \u2014 306 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T22:38:36.000Z",
+    "lastActivity": "2026-06-04T22:38:36.000Z",
+    "summary": "Gateway log shows 306 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T22:38:36.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-280772",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-855825",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-625097",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-059",
+    "title": "Rate limit exhaustion \u2014 278 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T22:08:34.000Z",
+    "lastActivity": "2026-06-04T22:08:34.000Z",
+    "summary": "Gateway log shows 278 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T22:08:34.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-463202",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-354544",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-519635",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-058",
+    "title": "Rate limit exhaustion \u2014 230 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T21:38:31.000Z",
+    "lastActivity": "2026-06-04T21:38:31.000Z",
+    "summary": "Gateway log shows 230 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T21:38:31.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-790066",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-403705",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-773417",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-057",
+    "title": "Rate limit exhaustion \u2014 197 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T21:08:29.000Z",
+    "lastActivity": "2026-06-04T21:08:29.000Z",
+    "summary": "Gateway log shows 197 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T21:08:29.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-716427",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-565191",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-285283",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-056",
+    "title": "Rate limit exhaustion \u2014 164 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T20:38:27.000Z",
+    "lastActivity": "2026-06-04T20:38:27.000Z",
+    "summary": "Gateway log shows 164 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T20:38:27.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-731442",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-900261",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-629983",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-055",
+    "title": "Rate limit exhaustion \u2014 142 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T20:08:25.000Z",
+    "lastActivity": "2026-06-04T20:08:25.000Z",
+    "summary": "Gateway log shows 142 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T20:08:25.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-169909",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-979669",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-867294",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-054",
+    "title": "Rate limit exhaustion \u2014 120 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T19:38:23.000Z",
+    "lastActivity": "2026-06-04T19:38:23.000Z",
+    "summary": "Gateway log shows 120 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T19:38:23.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-712632",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-185060",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-839378",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-053",
+    "title": "Rate limit exhaustion \u2014 98 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T19:08:21.000Z",
+    "lastActivity": "2026-06-04T19:08:21.000Z",
+    "summary": "Gateway log shows 98 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T19:08:21.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-955893",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-921518",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-993781",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-052",
+    "title": "Rate limit exhaustion \u2014 76 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T18:38:19.000Z",
+    "lastActivity": "2026-06-04T18:38:19.000Z",
+    "summary": "Gateway log shows 76 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T18:38:19.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-423751",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-551205",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-363917",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-051",
+    "title": "Rate limit exhaustion \u2014 64 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T18:08:17.000Z",
+    "lastActivity": "2026-06-04T18:08:17.000Z",
+    "summary": "Gateway log shows 64 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T18:08:17.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-288592",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-328716",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-687551",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-050",
+    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T15:38:06.000Z",
+    "lastActivity": "2026-06-04T15:38:06.000Z",
+    "summary": "4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T15:38:06.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-399022",
+        "label": "Review and triage",
+        "description": "Review the incident and determine appropriate response",
+        "status": "suggested",
+        "assignee": "monkey"
+      },
+      {
+        "id": "act-381444",
+        "label": "Apply standard fix",
+        "description": "Apply a standard fix procedure",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-049",
+    "title": "Rate limit exhaustion \u2014 47 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T14:38:01.000Z",
+    "lastActivity": "2026-06-04T14:38:01.000Z",
+    "summary": "Gateway log shows 47 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T14:38:01.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-384175",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-596167",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-506595",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-048",
+    "title": "Rate limit exhaustion \u2014 41 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T14:07:56.000Z",
+    "lastActivity": "2026-06-04T14:07:56.000Z",
+    "summary": "Gateway log shows 41 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T14:07:56.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-527347",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-236745",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-141541",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-047",
+    "title": "Rate limit exhaustion \u2014 17 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T13:37:50.000Z",
+    "lastActivity": "2026-06-04T13:37:50.000Z",
+    "summary": "Gateway log shows 17 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T13:37:50.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-786471",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-289997",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-394258",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-046",
+    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T12:07:34.000Z",
+    "lastActivity": "2026-06-04T12:07:34.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T12:07:34.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-370933",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-895636",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-818922",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-668589",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-045",
+    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-04T00:05:29.000Z",
+    "lastActivity": "2026-06-04T00:54:08.334838+00:00",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.",
+    "tags": [
+      "mission-control",
+      "outage",
+      "dashboard",
+      "health-check"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-04T00:05:29.000Z",
+        "message": "Auto-detected by health-check",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-04T00:54:08.334838+00:00",
+        "message": "MC confirmed healthy (HTTP 200). Incident was transient \u2014 likely during build/restart. Auto-resolved.",
+        "actor": "heartbeat"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-281124",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-211464",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-406467",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-273951",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-04T00:54:08.334838+00:00"
+  },
+  {
+    "id": "INC-044",
+    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-03T23:35:19.000Z",
+    "lastActivity": "2026-06-03T23:35:19.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-03T23:35:19.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-04 11:58:10",
+        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "actor": "Space Monkey"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-170948",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-652566",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-468321",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-674445",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolved": "2026-06-04 11:58:10"
+  },
+  {
+    "id": "INC-043",
+    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-03T23:35:17.000Z",
+    "lastActivity": "2026-06-03T23:35:17.000Z",
+    "summary": "Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.",
+    "tags": [
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "mount-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-03T23:35:17.000Z",
+        "message": "Auto-detected by mount-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-906327",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-964658",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-890613",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-042",
+    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T18:30:29.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T18:30:29.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:39:53.142Z",
+        "message": "Task \"Investigate: INC-042\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:39:53.147Z",
+        "message": "Task \"Investigate: INC-042\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-resolved: linked task \"Investigate: INC-042\" completed",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-945897",
+        "label": "Review and triage",
+        "description": "Review the incident and determine appropriate response",
+        "status": "in_progress",
+        "assignee": "monkey",
+        "taskId": "task-INC-042-act-945897"
+      },
+      {
+        "id": "act-751526",
+        "label": "Apply standard fix",
+        "description": "Apply a standard fix procedure",
+        "status": "in_progress",
+        "assignee": "monkey",
+        "taskId": "task-INC-042-act-751526"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-041",
+    "title": "Rate limit exhaustion \u2014 26 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T17:30:21.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 26 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T17:30:21.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:02.856Z",
+        "message": "Task \"Investigate: INC-041\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:02.858Z",
+        "message": "Task \"Investigate: INC-041\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-resolved: linked task \"Investigate: INC-041\" completed",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-738693",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "in_progress",
+        "assignee": "lifesupport",
+        "taskId": "task-INC-041-act-738693"
+      },
+      {
+        "id": "act-524442",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-925857",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-040",
+    "title": "Rate limit exhaustion \u2014 20 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-02T16:30:11.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-02T16:30:11.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T16:46:02.515Z",
+        "message": "Task moved to triage",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:03.941Z",
+        "message": "Task \"Investigate: INC-040\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-02T18:21:03.945Z",
+        "message": "Task \"Investigate: INC-040\" moved to in progress",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-resolved: linked task \"Investigate: INC-040\" completed",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-541648",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-952736",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-980290",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-039",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-01T07:23:16.000Z",
+    "lastActivity": "2026-06-02T17:18:57.470Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-01T07:23:16.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-04 11:58:10",
+        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "actor": "Space Monkey"
+      }
+    ],
+    "actions": [],
+    "resolved": "2026-06-04 11:58:10"
+  },
+  {
+    "id": "INC-038",
+    "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-01T07:23:15.000Z",
+    "lastActivity": "2026-06-01T07:23:15.000Z",
+    "summary": "3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-01T07:23:15.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-037",
+    "title": "Daily Station Check duplicate cron causing nightly token burn",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": true,
+    "escalated": false,
+    "opened": "2026-05-21T23:00:00.000Z",
+    "resolved": "2026-06-01T07:31:00.000Z",
+    "lastActivity": "2026-06-01T07:31:00.000Z",
+    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21\u201331. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
+    "tags": [
+      "cron",
+      "token-burn",
+      "duplicate",
+      "agentTurn",
+      "timeout"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T23:00:00.000Z",
+        "message": "First recorded failure of dae7406b \u2014 agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-31T21:51:00.000Z",
+        "message": "Andre reports Daily Station Check has been 'fixed' three times and still burning tokens. Investigation launched.",
+        "actor": "Andre"
+      },
+      {
+        "ts": "2026-06-01T07:31:00.000Z",
+        "message": "Root cause confirmed: dae7406b was enabled the entire time alongside the LaunchAgent. Cron job permanently deleted. Added FRAMEWORK.md gotcha: always DELETE old cron when replacing with LaunchAgent.",
+        "actor": "Space Monkey"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Delete old cron job dae7406b",
+        "description": "Permanently delete the agentTurn cron, not just disable it",
+        "status": "skipped",
+        "completedAt": "2026-06-02 10:08:02",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Add FRAMEWORK.md gotcha",
+        "description": "Document the rule: DELETE old cron when replacing with LaunchAgent",
+        "status": "completed",
+        "completedAt": "2026-06-01T07:31:00.000Z",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Verify LaunchAgent is sole mechanism",
+        "description": "Confirm com.openclaw.daily-station-check is the only daily check mechanism and it's shell-only",
+        "status": "completed",
+        "completedAt": "2026-06-01T07:31:00.000Z",
+        "completedBy": "Space Monkey"
+      }
+    ]
+  },
+  {
+    "id": "INC-036",
+    "title": "Rate limit exhaustion \u2014 11 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-31T21:51:22.000Z",
+    "lastActivity": "2026-05-31T21:51:22.000Z",
+    "summary": "Gateway log shows 11 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-31T21:51:22.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-05T04:03:03.089241+00:00",
+    "resolution": "Auto-resolved: orphaned TRIAGE incident with no linked task (heartbeat cleanup)"
+  },
+  {
+    "id": "INC-035",
+    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-29T19:42:22.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-29T19:42:22.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 5 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-034",
+    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-24T00:06:55.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.",
+    "tags": [
+      "mission-control",
+      "outage",
+      "dashboard",
+      "health-check"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-24T00:06:55.000Z",
+        "message": "Auto-detected by health-check",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 10 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-033",
+    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T16:34:53.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T16:34:53.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-032",
+    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T12:04:37.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T12:04:37.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-031",
+    "title": "Rate limit exhaustion \u2014 54 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T10:34:31.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 54 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T10:34:31.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-030",
+    "title": "Rate limit exhaustion \u2014 51 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T10:04:23.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 51 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T10:04:23.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-029",
+    "title": "Rate limit exhaustion \u2014 46 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T09:34:20.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 46 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T09:34:20.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-028",
+    "title": "Rate limit exhaustion \u2014 40 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T09:04:18.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 40 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T09:04:18.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-027",
+    "title": "Rate limit exhaustion \u2014 39 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T08:34:16.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 39 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T08:34:16.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-026",
+    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T07:04:09.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 34 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T07:04:09.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-22T09:23:53.000Z",
+        "message": "Freeride watcher unloaded (launchctl unload) to stop 429 spam. Watcher was generating ~2-4 rate limit hits every 16 minutes when all free keys were exhausted. Will re-enable manually when pool recovers.",
+        "actor": "Space Monkey"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-025",
+    "title": "Rate limit exhaustion \u2014 33 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T04:03:55.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 33 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T04:03:55.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-024",
+    "title": "Rate limit exhaustion \u2014 29 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T03:03:50.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 29 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T03:03:50.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-023",
+    "title": "Rate limit exhaustion \u2014 28 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T01:33:43.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 28 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T01:33:43.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-022",
+    "title": "Rate limit exhaustion \u2014 25 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T01:03:41.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 25 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T01:03:41.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-021",
+    "title": "Rate limit exhaustion \u2014 16 429 errors in gateway log",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T00:45:20.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Gateway log shows 16 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T00:45:20.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-020",
+    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T00:45:20.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T00:45:20.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-019",
+    "title": "Cron job failures \u2014 8 active errors detected",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-22T00:45:19.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "cron-errors.json shows 8 active error entries. Multiple cron jobs are failing.",
+    "tags": [
+      "cron",
+      "failures",
+      "cron-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-22T00:45:19.000Z",
+        "message": "Auto-detected by cron-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 12 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-018",
+    "title": "Operational consolidation \u2014 cron jobs replaced with LaunchAgent maintenance script",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T20:00:00.000Z",
+    "lastActivity": "2026-05-21T19:14:21.000Z",
+    "summary": "Replaced three high-frequency cron jobs (435 sessions/day) with single LaunchAgent running maintenance.sh every 30 minutes. All operational checks (MC health, error watchdog, task dispatcher, incident detection, session cleanup, backups) now run as shell-only with zero AI session overhead. Estimated savings: ~1.3M tokens/day.",
+    "tags": [
+      "optimization",
+      "launchagent",
+      "maintenance",
+      "cost-saving",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T20:00:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      }
+    ],
+    "actions": []
+  },
+  {
+    "id": "INC-017",
+    "title": "WD MyCloud mount path changed \u2014 /Volumes/Public-1 regenerated after purge",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T16:00:00.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "After gateway session purge, WD MyCloud mount appeared as /Volumes/Public-1 instead of /Volumes/Public. Scripts referencing the original path failed. mount-check and backup scripts need to handle both paths or prefer mount label over path.",
+    "tags": [
+      "wd-mycloud",
+      "mount",
+      "path-change",
+      "backup",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T16:00:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 13 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-016",
+    "title": "Rate limit exhaustion (2nd wave) \u2014 free model pool depleted by session explosion",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T15:35:00.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Session explosion from runaway cron jobs created dozens of simultaneous session contexts, each consuming free-model rate limit quota. All free models returned 429. Resolved when cron jobs were terminated and sessions purged.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "tokens",
+      "free-models",
+      "sessions",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T15:35:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 13 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-015",
+    "title": "Session explosion \u2014 22 to 87 sessions from runaway cron jobs",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T15:30:00.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Three cron jobs (Error Spike Watchdog every 5min, MC Health Check every 15min, Task Dispatcher every 30min) each created isolated sessions on every run. Combined rate of ~435 sessions/day with no session cleanup. Burned through token limits within hours. Fixed by deleting all three cron jobs and replacing with single LaunchAgent maintenance script (shell-only, zero sessions).",
+    "tags": [
+      "sessions",
+      "cron",
+      "explosion",
+      "tokens",
+      "outage",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T15:30:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 13 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-014",
+    "title": "Gateway crash loop \u2014 EmbeddedAttemptSessionTakeoverError across all sessions",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T15:15:00.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "All active sessions hit EmbeddedAttemptSessionTakeoverError simultaneously around 15:15 UTC May 21. Gateway was in a crash loop where session files were being modified during embedded prompt lock release. Required gateway restart and session purge.",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "outage",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T15:15:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 13 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-013",
+    "title": "Gateway update failure \u2014 missing modules after partial update to v2026.5.19",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-21T14:58:00.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Partial gateway update to v2026.5.19 left missing module dependencies. Gateway failed to start after update. Required manual intervention to restore.",
+    "tags": [
+      "gateway",
+      "update",
+      "modules",
+      "v2026.5.19",
+      "outage",
+      "backfill-2026-05-21",
+      "backfill"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-21T14:58:00.000Z",
+        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-05-21T19:14:21.000Z",
+        "message": "Logged during incident backfill audit (May 21)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 13 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-012",
+    "title": "Mission Control down \u2014 LaunchAgent pointing to deleted Wrangler binary",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "The LaunchAgent com.openclaw.mission-control was pointing to a Wrangler binary in ~/Downloads/agent-control-station-main which no longer exists. Exit code 78 (EX_CONFIG) accumulated 9,473 restart attempts. The current Vite process was an unmanaged orphan.",
+    "tags": [
+      "wrangler",
+      "mission-control",
+      "launchagent",
+      "outage",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-011",
+    "title": "Rate limit exhaustion \u2014 all models returned 429 starting May 15 19:42",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Starting 2026-05-15 19:42, owl-alpha began failing with all_keys_exhausted errors. The watcher log shows continuous rotation failures every ~16 minutes through 2026-05-16 00:49 (17+ failures). All API keys were exhausted, leaving the agent unable to process requests for several hours.",
+    "tags": [
+      "all-keys-exhausted",
+      "rate-limit",
+      "models",
+      "429",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-010",
+    "title": "Cron job failures \u2014 Git Auto-Commit timeout and Activity Summary failing",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Multiple cron jobs have been failing: Git Auto-Commit timeout, Activity Summary fail. The cron-errors.json shows 6 active error entries. Daily station check at 23:00 has been impacted.",
+    "tags": [
+      "failures",
+      "git",
+      "cron",
+      "activity-summary",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-009",
+    "title": "WD MyCloud mount failing \u2014 /Volumes/Public-1 not found (persistent since May 16 06:18)",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "The mount-check.log shows continuous /Volumes/Public-1 not found errors every 30 minutes since at least 2026-05-16 06:18 (20+ errors). Backup scripts depending on this mount path are failing silently.",
+    "tags": [
+      "wd-mycloud",
+      "backup",
+      "mount",
+      "storage",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-008",
+    "title": "Tasks stuck In Progress \u2014 3 tasks with no assignee or recent activity",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Three tasks (Error Feed behaviour review, Task Completion summary, Agent Office Overall) have been in In Progress state with no assigned owner. No activity updates visible. Tasks may be orphaned from agent assignments.",
+    "tags": [
+      "tasks",
+      "orphaned",
+      "in-progress",
+      "stale",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-007",
+    "title": "Build error \u2014 AnimatePresence SSR failure in Dashboard component",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "ReferenceError: AnimatePresence is not defined at StationChatter in Dashboard.tsx. The awaitingReviewCount variable was defined inside QuickActionsPanel but referenced in the parent Dashboard component \u2014 a scoping bug causing SSR crash on the /visual page.",
+    "tags": [
+      "ssr",
+      "animation",
+      "build",
+      "dashboard",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-006",
+    "title": "Port conflict \u2014 Mission Control dev server jumping between 3000 and 3001",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "When the LaunchAgent restarts the dev server, it sometimes finds port 3000 still occupied by the previous process and falls back to 3001. This causes confusion about which port is serving the live app and can result in stale builds being served.",
+    "tags": [
+      "dev-server",
+      "launchagent",
+      "conflict",
+      "port",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-005",
+    "title": "Disk space warning \u2014 Data volume at 85% (175 Gi / 228 Gi)",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-05-16T14:36:26.000Z",
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "summary": "Health log from 2026-05-15 12:03 shows /System/Volumes/Data at 85% usage (175 Gi / 228 Gi). Swap/compressor usage notable at ~21.9 GB. Approaching threshold where system performance may degrade.",
+    "tags": [
+      "swap",
+      "disk",
+      "warning",
+      "storage",
+      "backfill-2026-05-16"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-05-16T14:36:26.000Z",
+        "message": "Backfilled from logs by backfill-2026-05-16",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 18 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-004",
+    "title": "Memory index corruption after session restart",
+    "severity": "P1",
+    "status": "RESOLVED",
+    "owner": "archivist",
+    "opened": "2026-05-12 09:14",
+    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact \u2014 only the index needs rebuilding.",
+    "tags": [
+      "memory",
+      "corruption",
+      "indexing",
+      "urgent"
+    ],
+    "timeline": [
+      {
+        "ts": "09:14",
+        "message": "Incident auto-detected: memory search returning stale results",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "09:22",
+        "message": "Confirmed SQLite index mismatch \u2014 14 entries missing from index",
+        "actor": "archivist"
+      },
+      {
+        "ts": "09:31",
+        "message": "Status escalated to MITIGATING, assigned to Archivist",
+        "actor": "monkey"
+      },
+      {
+        "ts": "09:45",
+        "message": "Raw .md files verified intact, index rebuild initiated",
+        "actor": "archivist"
+      },
+      {
+        "ts": "10:02",
+        "message": "Index rebuild 40% complete, ETA ~5 minutes",
+        "actor": "archivist"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 999 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [],
+    "acknowledged": true,
+    "escalated": true,
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-003",
+    "title": "WD MyCloud SMB mount permissions broke backups",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "opened": "2026-05-11 14:30",
+    "resolved": "2026-05-12 08:22",
+    "summary": "The WD MyCloud SMB share was mounted as read-only for the openclaw-agent account, preventing all backup scripts from running. The backup folder structure existed on the share but was completely empty.",
+    "tags": [
+      "backup",
+      "wd-mycloud",
+      "permissions",
+      "smb"
+    ],
+    "timeline": [
+      {
+        "ts": "14:30",
+        "message": "Backup script failed: permission denied writing to /Volumes/WD-MyCloud/OpenClaw/logs/",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "14:35",
+        "message": "Investigated mount permissions \u2014 volume owned by root:wheel, read-only for agent",
+        "actor": "engineer"
+      },
+      {
+        "ts": "15:00",
+        "message": "Incident opened, assigned to Life Support for resolution tracking",
+        "actor": "monkey"
+      },
+      {
+        "ts": "2026-05-12 08:10",
+        "message": "New SMB share mounted at /Volumes/OpenClaw-WD with full read/write access",
+        "actor": "monkey"
+      },
+      {
+        "ts": "2026-05-12 08:22",
+        "message": "First successful backup completed to new mount path",
+        "actor": "lifesupport"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Remount share with write access",
+        "description": "Mount the WD MyCloud SMB share with user credentials for r/w",
+        "status": "completed",
+        "completedAt": "08:10",
+        "completedBy": "monkey"
+      },
+      {
+        "label": "Run first backup",
+        "description": "Execute full backup to verify write access works end-to-end",
+        "status": "completed",
+        "completedAt": "08:22",
+        "completedBy": "lifesupport"
+      },
+      {
+        "label": "Set up automated daily backups",
+        "description": "Configure cron job for daily 3am backup runs",
+        "status": "skipped",
+        "completedAt": "2026-05-15 20:02:14",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Decommission old mount path",
+        "description": "Remove references to /Volumes/WD-MyCloud/OpenClaw from scripts",
+        "status": "skipped",
+        "completedAt": "2026-05-15 20:02:16",
+        "completedBy": "Space Monkey"
+      }
+    ],
+    "acknowledged": true,
+    "escalated": false,
+    "lastActivity": "2026-05-11 14:30"
+  },
+  {
+    "id": "INC-002",
+    "title": "Mission Control dashboard can't read zip from Desktop",
+    "severity": "P2",
+    "status": "RESOLVED",
+    "owner": "engineer",
+    "opened": "2026-05-12 11:45",
+    "summary": "macOS security permissions prevent Terminal/Node from reading mission-control.zip on the Desktop. System shows a security prompt asking for Desktop folder access, but TTY-based processes can't interact with the GUI prompt.",
+    "tags": [
+      "macos",
+      "permissions",
+      "desktop",
+      "mission-control"
+    ],
+    "timeline": [
+      {
+        "ts": "11:45",
+        "message": "First attempt to unzip mission-control.zip failed with EACCES",
+        "actor": "engineer"
+      },
+      {
+        "ts": "11:52",
+        "message": "macOS TCC prompt appeared but can't be accepted by TTY process",
+        "actor": "engineer"
+      },
+      {
+        "ts": "12:00",
+        "message": "Incident opened \u2014 needs human to either move file or grant Full Disk Access",
+        "actor": "monkey"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 999 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Move zip to ~/Downloads/",
+        "description": "Human moves mission-control.zip to Downloads folder where Node has access",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:38",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Grant Full Disk Access",
+        "description": "Add Terminal.app to System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:37",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Alternative: use open dialog",
+        "description": "Use macOS native file picker to grant one-time access to the zip",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:56:43",
+        "completedBy": "Space Monkey"
+      }
+    ],
+    "acknowledged": false,
+    "escalated": false,
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  },
+  {
+    "id": "INC-001",
+    "title": "Cron job drift \u2014 daily heartbeat running 3 hours late",
+    "severity": "P3",
+    "status": "RESOLVED",
+    "owner": "lifesupport",
+    "opened": "2026-05-12 06:00",
+    "summary": "The daily heartbeat cron job was scheduled for 03:00 but is consistently firing around 06:00. The gateway sleep/wake cycle is shifting the effective trigger time. This causes checks to run during active hours instead of quiet hours.",
+    "tags": [
+      "cron",
+      "scheduling",
+      "heartbeat",
+      "drift"
+    ],
+    "timeline": [
+      {
+        "ts": "06:00",
+        "message": "Daily heartbeat fired three hours late \u2014 gap analysis initiated",
+        "actor": "lifesupport"
+      },
+      {
+        "ts": "06:10",
+        "message": "Root cause: gateway sleep shifts cron anchorMs forward on each resume",
+        "actor": "engineer"
+      },
+      {
+        "ts": "06:30",
+        "message": "Proposed fix: switch to cron expr with tz instead of everyMs",
+        "actor": "engineer"
+      },
+      {
+        "ts": "2026-06-03T23:18:04.753797+00:00",
+        "message": "Incident auto-closed: no linked task, 999 days old",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Switch to cron expression",
+        "description": "Replace everyMs schedule with cron '0 3 * * *' in Europe/London tz",
+        "status": "in_progress",
+        "completedAt": "2026-05-14 14:16:40",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Add stagger tolerance",
+        "description": "Set staggerMs to 60000 to prevent exact-time clustering",
+        "status": "skipped",
+        "completedAt": "2026-05-14 14:16:33",
+        "completedBy": "Space Monkey"
+      },
+      {
+        "label": "Monitor for 48h",
+        "description": "Verify the fix holds over two sleep/wake cycles",
+        "status": "skipped",
+        "completedAt": "2026-05-14 13:57:08",
+        "completedBy": "Space Monkey"
+      }
+    ],
+    "acknowledged": true,
+    "escalated": false,
+    "lastActivity": "2026-06-03T23:18:04.753797+00:00",
+    "resolvedAt": "2026-06-03T23:18:04.753797+00:00"
+  }
+]

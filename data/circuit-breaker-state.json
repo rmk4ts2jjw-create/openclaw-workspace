@@ -1,0 +1,19 @@
+{
+  "errors": {
+    "incident-create-gateway-monitor": [
+      1780706477
+    ],
+    "incident-create-rate-monitor": [
+      1780706477
+    ],
+    "task-dispatch": [
+      1780706477,
+      1780706733
+    ],
+    "incident-create-health-check": [
+      1780706477
+    ]
+  },
+  "tripped": {},
+  "trip_count": {}
+}

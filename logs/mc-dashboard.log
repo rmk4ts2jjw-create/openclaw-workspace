@@ -8,3 +8,82 @@
 [tasks loader] Loaded 104 tasks
 [tasks loader] Loaded 104 tasks
 4:38:53 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[tasks loader] Loaded 36 tasks
+[tasks loader] Loaded 36 tasks
+[tasks loader] Loaded 36 tasks
+[tasks loader] Loaded 36 tasks
+10:23:22 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/team.tsx, /src/routes/incidents.tsx, /src/routes/settings.tsx, /src/routes/index.tsx, /src/routes/activity.tsx, /src/routes/docs.tsx, /src/routes/memory.tsx, /src/routes/visual.tsx, /src/routes/tasks.tsx, /src/routes/tasks.tsx?tsr-split=component, /src/components/IncidentDetailsDrawer.tsx, /src/components/QuickActions.tsx
+10:23:22 AM [vite] (ssr) page reload src/lib/server-data/system.ts
+10:23:22 AM [vite] (ssr) program reload
+[tasks loader] Loaded 36 tasks
+10:24:48 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/team.tsx, /src/routes/incidents.tsx, /src/routes/settings.tsx, /src/routes/index.tsx, /src/routes/activity.tsx, /src/routes/docs.tsx, /src/routes/memory.tsx, /src/routes/visual.tsx, /src/routes/tasks.tsx, /src/routes/tasks.tsx?tsr-split=component, /src/components/IncidentDetailsDrawer.tsx, /src/components/QuickActions.tsx
+10:24:48 AM [vite] (ssr) page reload src/lib/server-data/system.ts
+10:24:48 AM [vite] (ssr) program reload
+10:25:45 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/team.tsx, /src/routes/incidents.tsx, /src/routes/settings.tsx, /src/routes/index.tsx, /src/routes/activity.tsx, /src/routes/docs.tsx, /src/routes/memory.tsx, /src/routes/visual.tsx, /src/routes/tasks.tsx, /src/routes/tasks.tsx?tsr-split=component, /src/components/IncidentDetailsDrawer.tsx, /src/components/QuickActions.tsx
+10:25:45 AM [vite] (ssr) page reload src/lib/server-data/activity.ts
+[tasks loader] Loaded 36 tasks
+[tasks loader] Loaded 101 tasks
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-082 : Task "Investigate: INC-082" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-082 : Task "Investigate: INC-082" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-076 : Task "Investigate: INC-076" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-076 : Task "Investigate: INC-076" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-081 : Task "Investigate: INC-081" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-081 : Task "Investigate: INC-081" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-080 : Task "Investigate: INC-080" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-080 : Task "Investigate: INC-080" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-079 : Task "Investigate: INC-079" moved to in progress
+[api/save-tasks] Merged 14 client + 0 disk-only = 14 total
+[api/incidents/timeline] Appended to INC-079 : Task "Investigate: INC-079" moved to in progress
+
+  VITE v8.0.13  ready in 918 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 460 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+1:41:08 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 709 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 540 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+1:46:33 AM [vite] (ssr) connected.
+1:48:03 AM [vite] (ssr) page reload src/lib/server-data/helpers.ts
+1:48:03 AM [vite] (ssr) program reload
+1:48:16 AM [vite] (ssr) page reload src/lib/server-data/tasks.ts
+1:48:51 AM [vite] (ssr) page reload src/lib/server-data/activity.ts
+1:48:58 AM [vite] (ssr) page reload src/lib/server-data/agent-status.ts
+1:49:07 AM [vite] (ssr) page reload src/lib/server-data/search.ts
+1:49:16 AM [vite] (ssr) page reload src/lib/server-data/timeline-data.ts
+1:49:28 AM [vite] (ssr) page reload src/lib/server-data/openclaw-status.ts
+1:50:00 AM [vite] (ssr) page reload src/server.ts
+1:50:00 AM [vite] (ssr) program reload
+1:50:14 AM [vite] (ssr) page reload src/server.ts
+1:50:14 AM [vite] (ssr) program reload
