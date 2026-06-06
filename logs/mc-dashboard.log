@@ -87,3 +87,33 @@
 1:50:00 AM [vite] (ssr) program reload
 1:50:14 AM [vite] (ssr) page reload src/server.ts
 1:50:14 AM [vite] (ssr) program reload
+10:22:58 AM [vite] (client) hmr update /src/styles.css?direct
+10:22:58 AM [vite] (ssr) page reload src/server.ts
+10:22:58 AM [vite] (ssr) program reload
+10:24:05 AM [vite] (client) hmr update /src/styles.css?direct
+10:24:05 AM [vite] (ssr) page reload src/server.ts
+10:24:05 AM [vite] (ssr) program reload
+10:26:18 AM [vite] (client) hmr update /src/styles.css?direct
+10:26:18 AM [vite] (ssr) page reload src/server.ts
+10:26:18 AM [vite] (ssr) program reload
+10:26:52 AM [vite] (client) hmr update /src/styles.css?direct
+10:26:52 AM [vite] (ssr) page reload src/server.ts
+10:26:52 AM [vite] (ssr) program reload
+10:27:20 AM [vite] (client) hmr update /src/styles.css?direct
+10:27:20 AM [vite] (ssr) page reload src/server.ts
+10:27:20 AM [vite] (ssr) program reload
+10:31:27 AM [vite] (client) hmr update /src/styles.css?direct
+10:31:27 AM [vite] (ssr) page reload src/server.ts
+10:31:27 AM [vite] (ssr) program reload
+10:33:05 AM [vite] (client) hmr update /src/styles.css?direct
+10:33:05 AM [vite] (ssr) page reload src/server.ts
+10:33:05 AM [vite] (ssr) program reload
+10:35:55 AM [vite] (client) hmr update /src/styles.css?direct
+10:35:55 AM [vite] (ssr) page reload src/server.ts
+10:35:55 AM [vite] (ssr) program reload
+10:40:36 AM [vite] (client) hmr update /src/styles.css?direct
+10:40:36 AM [vite] (ssr) page reload src/server.ts
+10:40:36 AM [vite] (ssr) program reload
+10:42:26 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/docs.tsx, /src/routes/memory.tsx, /src/routes/settings.tsx, /src/routes/index.tsx, /src/routes/activity.tsx, /src/routes/team.tsx, /src/routes/incidents.tsx, /src/routes/visual.tsx, /src/routes/tasks.tsx
+10:42:26 AM [vite] (ssr) page reload src/lib/server-data/crons.ts
+10:42:26 AM [vite] (ssr) program reload

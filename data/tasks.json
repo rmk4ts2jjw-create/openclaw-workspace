@@ -1,18 +1,1 @@
-{
-  "0555a474-92d5-4c16-a891-d05172c04115": {
-    "currentStep": null,
-    "lastActivity": "2026-06-06T00:00:00.000Z",
-    "progress": 0,
-    "status": "backlog",
-    "stalledAt": "2026-06-06T00:46:00.114445+00:00",
-    "dispatchCount": 1,
-    "history": [
-      {
-        "ts": "2026-06-06T00:46:00.114445+00:00",
-        "action": "stalled_reset",
-        "actor": "monkey",
-        "details": "Ghost dispatch \u2014 task sat at 5% with lastActivity at midnight. Night shift ended 07:00. Reset to backlog."
-      }
-    ]
-  }
-}
+{}

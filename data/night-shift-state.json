@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "date": "2026-06-05",
   "startedAt": "2026-06-05T00:08:50.889523+00:00",
   "tasksCompleted": [
@@ -10,8 +10,9 @@
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "No more dispatchable tasks. All backlog tasks have stalledAt or dispatchCount >= 3.",
+  "stoppedReason": "No dispatchable tasks \u2014 all backlog tasks have stalledAt or dispatchCount >= 3.",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-05 \u2014 no dispatchable tasks this cycle. All backlog tasks have stalledAt set.",
-  "endedAt": "2026-06-05T04:47:58.989039+00:00"
+  "note": "Night Shift 2026-06-06 \u2014 05:15 check: 1 backlog task has stalledAt, not dispatchable. No tasks picked up.",
+  "endedAt": "2026-06-05T04:47:58.989039+00:00",
+  "lastHeartbeatCheck": "2026-06-06T04:17:10.475670+00:00"
 }

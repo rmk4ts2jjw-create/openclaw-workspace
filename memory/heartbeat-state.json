@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-06T00:53:52.546389+00:00"
+    "gateway": "2026-06-06T09:00:00+00:00"
   },
-  "lastHeartbeat": "2026-06-06T00:53:52.546389+00:00",
-  "notes": "2026-06-06 01:53 BST \u2014 Heartbeat. Fixed MC dashboard tasks.filter crash (object\u2192array normalization in server-data layer). Reset ghost night shift task to backlog. Resolved 7 duplicate session-takeover incidents (INC-076-082). Resolved INC-067 (WD mount back). 3 open TRIAGE remain (INC-084 rate-limit, INC-083 MC 500 error, INC-069 chronic rate-limit). Disk 53%. Station nominal."
+  "lastHeartbeat": "2026-06-06T09:00:00+00:00",
+  "notes": "2026-06-06 09:00 BST — Heartbeat. 0 tasks in backlog, 0 in_progress. 7 open incidents (session takeover x4, rate limit x2, mount x1 — all known/recurring). Under auto-resolve threshold. Circuit breaker clear. Nothing to do."
 }
