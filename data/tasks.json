@@ -1,5 +1,285 @@
 [
   {
+    "id": "task-inc-097-3002",
+    "title": "Investigate: INC-097",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-097: Detected 6 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-097",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T18:42:47.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-097"
+      },
+      {
+        "ts": "2026-06-06T19:01:14.847288+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:01:14.847288+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:01:14.847288+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-097-3002 duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-096-bffe",
+    "title": "Investigate: INC-096",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-096: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-096",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T18:12:45.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-096"
+      },
+      {
+        "ts": "2026-06-06T19:01:14.847288+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:01:14.847288+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:01:14.847288+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-096-bffe duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-093-c14e",
+    "title": "Investigate: INC-093",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-093: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-093",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T17:42:43.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-093"
+      },
+      {
+        "ts": "2026-06-06T19:01:14.847288+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:01:14.847288+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:01:14.847288+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-093-c14e duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-092-d0f3",
+    "title": "Investigate: INC-092",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-092: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-092",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T17:42:43.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-092"
+      },
+      {
+        "ts": "2026-06-06T19:01:14.847288+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T19:01:14.847288+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T19:01:14.847288+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated triage task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-092-d0f3 duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-095-bcec",
+    "title": "Investigate: INC-095",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-095: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-095",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T15:42:35.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-095"
+      },
+      {
+        "ts": "2026-06-06T17:16:00.883011+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T17:16:00.883011+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T17:16:00.883011+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-095-bcec duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-094-1d1c",
+    "title": "Investigate: INC-094",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-094: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-094",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T15:12:33.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-094"
+      },
+      {
+        "ts": "2026-06-06T17:16:00.883011+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T17:16:00.883011+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T17:16:00.883011+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-094-1d1c duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-093-bc0a",
+    "title": "Investigate: INC-093",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-093: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-093",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T14:12:30.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-093"
+      },
+      {
+        "ts": "2026-06-06T17:16:00.883011+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T17:16:00.883011+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T17:16:00.883011+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-093-bc0a duplicates an already-tracked issue."
+  },
+  {
+    "id": "task-inc-092-4f21",
+    "title": "Investigate: INC-092",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-092: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
+    "linkedIncidentId": "INC-092",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-06T14:12:30.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-092"
+      },
+      {
+        "ts": "2026-06-06T17:16:00.883011+00:00",
+        "action": "completed",
+        "actor": "heartbeat",
+        "details": "Marked done \u2014 duplicate of consolidated triage task"
+      }
+    ],
+    "lastActivity": "2026-06-06T17:16:00.883011+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-06T17:16:00.883011+00:00",
+    "currentStep": "Closed \u2014 duplicate of consolidated task",
+    "summary": "Duplicate auto-creation. Consolidated into existing triage task. task-inc-092-4f21 duplicates an already-tracked issue."
+  },
+  {
     "id": "task-inc-089-8343",
     "title": "Investigate: INC-089",
     "assignee": "engineer",
