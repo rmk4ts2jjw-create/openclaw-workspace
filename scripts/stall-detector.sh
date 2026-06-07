@@ -49,7 +49,10 @@ with open(tasks_file) as f:
     tasks = json.load(f)
 
 reset_count = 0
+cleared_count = 0
+
 for t in tasks:
+    # PHASE 1: Reset stale in_progress tasks to backlog
     if t.get('status') != 'in_progress':
         continue
 
@@ -97,9 +100,42 @@ for t in tasks:
         log_lines.append(f"  RESET {t['id']}: {t['title'][:60]} — stale {stale_min:.0f} min")
         reset_count += 1
 
-if reset_count > 0:
+    continue
+
+# PHASE 2: Clear stalledAt on backlog tasks that have been stalled long enough
+# This prevents permanent deadlock where stalled tasks can never be re-dispatched
+# Cooldown: 30 minutes in backlog after stall reset
+for t in tasks:
+    if t.get('status') != 'backlog' or not t.get('stalledAt'):
+        continue
+    try:
+        stalled_time = datetime.fromisoformat(t['stalledAt'].replace('Z', '+00:00'))
+        in_backlog_min = (now - stalled_time).total_seconds() / 60
+    except:
+        continue
+    # Clear stalledAt after 30 minutes in backlog (gives time for the in_progress slot to clear)
+    if in_backlog_min > 30:
+        t['stalledAt'] = None
+        entry = {
+            'ts': now.isoformat(),
+            'action': 'stalled_cleared',
+            'actor': 'stall-detector',
+            'details': f'stalledAt cleared after {in_backlog_min:.0f} min in backlog — task eligible for re-dispatch'
+        }
+        if 'history' not in t:
+            t['history'] = []
+        t['history'].append(entry)
+        log_lines.append(f"  CLEARED {t['id']}: stalledAt removed after {in_backlog_min:.0f} min in backlog")
+        cleared_count += 1
+
+if reset_count > 0 or cleared_count > 0:
     safe_write(tasks_file, tasks)
-    log_lines.insert(0, f"[{date_str}] Stall detector: reset {reset_count} task(s)")
+    parts = []
+    if reset_count > 0:
+        parts.append(f"reset {reset_count}")
+    if cleared_count > 0:
+        parts.append(f"cleared {cleared_count}")
+    log_lines.insert(0, f"[{date_str}] Stall detector: {', '.join(parts)} task(s)")
 else:
     log_lines.append(f"[{date_str}] Stall detector: OK — no stale tasks")
 

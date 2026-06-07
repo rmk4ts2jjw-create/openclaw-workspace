@@ -117,3 +117,15 @@
 10:42:26 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/docs.tsx, /src/routes/memory.tsx, /src/routes/settings.tsx, /src/routes/index.tsx, /src/routes/activity.tsx, /src/routes/team.tsx, /src/routes/incidents.tsx, /src/routes/visual.tsx, /src/routes/tasks.tsx
 10:42:26 AM [vite] (ssr) page reload src/lib/server-data/crons.ts
 10:42:26 AM [vite] (ssr) program reload
+[api/tasks/add] Added task: [Investigate] night-shift-automation: Delivering to Telegram requires target <chatId>
+[tasks loader] Loaded 12 tasks
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[api/save-tasks] Merged 12 client + 0 disk-only = 12 total
+[tasks loader] Loaded 270 tasks
+[tasks loader] Loaded 270 tasks

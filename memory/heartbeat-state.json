@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-06T19:17:06.877949+00:00"
+    "gateway": "2026-06-07T05:00:00+00:00"
   },
-  "lastHeartbeat": "2026-06-06T19:17:06.877949+00:00",
-  "notes": "2026-06-06 19:17 BST \u2014 Heartbeat. 0 in_progress, 0 dispatchable backlog (4 backlog tasks: all stalled/excluded). 1 open incident (INC-085 WD mount). Closed 2 duplicate triage tasks (task-inc-093-eb81, task-inc-096-dc1d). Resolved 7 duplicate incidents (INC-092 through INC-097, INC-069). Circuit breakers clean. No action needed."
+  "lastHeartbeat": "2026-06-07T05:00:00+00:00",
+  "notes": "2026-06-07 05:00 BST — Heartbeat. 0 in_progress, 4 backlog tasks (all non-dispatchable: stalled or blocked). 9 triage tasks (incident-linked). 6 open incidents (INC-102, INC-101, INC-100, INC-099, INC-098, INC-085). Circuit breakers clean. No action needed. Quiet hours."
 }

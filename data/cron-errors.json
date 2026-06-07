@@ -4,48 +4,53 @@
     "status": "resolved",
     "updatedAt": "2026-05-16T00:08:30.185Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-37236a6c-baa8-464a-962a-025ddfe37517",
     "status": "resolved",
     "updatedAt": "2026-05-14T12:16:21.481Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-3249748f-ac97-487d-812e-9a0509572c8f",
     "status": "resolved",
     "updatedAt": "2026-05-16T00:08:34.382Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-ec658506-32a6-4003-92d0-a63b083771a7",
     "status": "resolved",
     "updatedAt": "2026-05-16T00:08:32.295Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-39afe8f3-e4fc-430e-9048-f0150710ee2e",
     "status": "resolved",
     "updatedAt": "2026-05-16T00:08:33.028Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-31eeb9bf-5402-42d1-b07b-d7f7af5e17c1",
     "status": "resolved",
     "updatedAt": "2026-05-16T00:08:26.859Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
   },
   {
     "id": "err-7e2c02bf-ae83-44be-8012-adfcdd42f42f",
     "status": "resolved",
     "updatedAt": "2026-05-21T14:12:34.342Z",
     "resolvedAt": "2026-05-22T00:46:28.000Z",
-    "note": "Resolved during cleanup \u2014 stale entries from deleted cron jobs (May 22 audit)"
+    "note": "Resolved during cleanup — stale entries from deleted cron jobs (May 22 audit)"
+  },
+  {
+    "id": "cron-err-0555a474-92d5-4c16-a891-d05172c04115",
+    "status": "in_progress",
+    "updatedAt": "2026-06-06T12:05:23.790Z"
   }
 ]

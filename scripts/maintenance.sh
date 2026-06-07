@@ -138,6 +138,10 @@ bash "$WORKSPACE/scripts/stall-detector.sh" >> "$LOG_FILE" 2>&1 || true
 echo "[$TIMESTAMP] [5/9] Stall detection: done" >> "$LOG_FILE"
 
 # ── 6. Task dispatcher ──────────────────────────────────────────────────────
+# NOTE: The shell dispatcher only moves tasks to in_progress as a "claim".
+# The heartbeat (or night shift) is responsible for actually spawning sub-agents.
+# To avoid ghost dispatches, we only move ONE task at a time and ensure
+# the heartbeat will pick it up on the next cycle.
 echo "[$TIMESTAMP] [6/10] Task dispatcher..." >> "$LOG_FILE"
 TASKS_FILE="$WORKSPACE/data/tasks.json"
 DISPATCHER_LOG="$WORKSPACE/memory/dispatcher-log.md"
@@ -145,31 +149,23 @@ DISPATCHER_LOG="$WORKSPACE/memory/dispatcher-log.md"
 if [ ! -f "$TASKS_FILE" ]; then
   echo "[$TIMESTAMP] [6/10] Task dispatcher: no tasks.json found" >> "$LOG_FILE"
 else
-  IN_PROGRESS=$(python3 -c "
+  # Count truly dispatchable backlog tasks (not blocked by stalledAt or max dispatchCount)
+  DISPATCHABLE_COUNT=$(python3 -c "
 import json
 with open('$TASKS_FILE') as f:
     tasks = json.load(f)
-print(len([t for t in tasks if t['status'] == 'in_progress']))
+print(len([t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3]))
 " 2>/dev/null || echo "0")
 
-  if [ "$IN_PROGRESS" -gt 0 ]; then
-    echo "[$TIMESTAMP] [6/10] Task dispatcher: $IN_PROGRESS task(s) in progress, skipping" >> "$LOG_FILE"
+  if [ "$DISPATCHABLE_COUNT" -eq 0 ]; then
+    echo "[$TIMESTAMP] [6/10] Task dispatcher: no dispatchable backlog tasks" >> "$LOG_FILE"
   else
-    BACKLOG_COUNT=$(python3 -c "
-import json
-with open('$TASKS_FILE') as f:
-    tasks = json.load(f)
-print(len([t for t in tasks if t['status'] == 'backlog']))
-" 2>/dev/null || echo "0")
-
     # Circuit breaker check — stop dispatch if tripped
     CB_RESULT=$(bash /Users/spacemonkey/.openclaw/workspace/scripts/circuit-breaker.sh check "task-dispatch" 2>/dev/null)
     if echo "$CB_RESULT" | grep -q "^TRIPPED:"; then
       echo "[$TIMESTAMP] [CIRCUIT-BREAKER] Task dispatch halted — circuit open ($CB_RESULT)" >> "$LOG_FILE"
-    elif [ "$BACKLOG_COUNT" -eq 0 ]; then
-      echo "[$TIMESTAMP] [6/10] Task dispatcher: no backlog items" >> "$LOG_FILE"
     else
-      python3 << 'PYEOF' >> "$LOG_FILE" 2>&1
+      DISPATCH_OUTPUT=$(python3 << 'PYEOF' 2>&1)
 import json, os, tempfile, shutil
 from datetime import datetime, timezone
 
@@ -195,20 +191,38 @@ def safe_write(path, data):
 with open(tasks_file) as f:
     tasks = json.load(f)
 
-backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3]
+# Filter: backlog, not stalled, dispatchCount < 3, not wasStalled
+backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3 and not t.get('wasStalled')]
+# If no fresh tasks, try previously-stalled tasks (wasStalled=True but stalledAt cleared)
 if not backlog:
+    backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3]
+if not backlog:
+    print("NO_DISPATCHABLE")
     exit(0)
 
-backlog.sort(key=lambda t: t.get('id', ''))
+# Sort: P1 first, then P2, then P3; then oldest first
+priority_order = {'P1': 0, 'P2': 1, 'P3': 2}
+backlog.sort(key=lambda t: (priority_order.get(t.get('priority', 'P3'), 2), t.get('ts', '')))
 picked = backlog[0]
 
 for t in tasks:
     if t['id'] == picked['id']:
         t['status'] = 'in_progress'
         t['ts'] = 'just now'
+        t['lastActivity'] = datetime.now(timezone.utc).isoformat()
+        t['startedAt'] = datetime.now(timezone.utc).isoformat()
         if 'note' not in t:
             t['note'] = ''
         t['note'] += f" [auto-dispatched {datetime.now().strftime('%Y-%m-%d %H:%M')}]"
+        entry = {
+            'ts': datetime.now(timezone.utc).isoformat(),
+            'action': 'started',
+            'actor': 'dispatcher',
+            'details': f'Status changed from backlog to in_progress by maintenance dispatcher'
+        }
+        if 'history' not in t:
+            t['history'] = []
+        t['history'].append(entry)
         break
 
 safe_write(tasks_file, tasks)
@@ -221,7 +235,15 @@ with open(log_file, 'a') as f:
 
 print(f"Dispatched {picked['id']}: {picked['title']}")
 PYEOF
-      echo "[$TIMESTAMP] [6/10] Task dispatcher: dispatched task" >> "$LOG_FILE"
+)
+      echo "$DISPATCH_OUTPUT" >> "$LOG_FILE"
+      if echo "$DISPATCH_OUTPUT" | grep -q "^Dispatched "; then
+        echo "[$TIMESTAMP] [6/10] Task dispatcher: dispatched task" >> "$LOG_FILE"
+      elif echo "$DISPATCH_OUTPUT" | grep -q "NO_DISPATCHABLE"; then
+        echo "[$TIMESTAMP] [6/10] Task dispatcher: no dispatchable tasks" >> "$LOG_FILE"
+      else
+        echo "[$TIMESTAMP] [6/10] Task dispatcher: no action" >> "$LOG_FILE"
+      fi
     fi
   fi
 fi

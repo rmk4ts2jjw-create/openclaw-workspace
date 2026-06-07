@@ -1,18 +1,15 @@
 {
   "active": false,
-  "date": "2026-06-05",
-  "startedAt": "2026-06-05T00:08:50.889523+00:00",
-  "tasksCompleted": [
-    "task-framework-md-001",
-    "task-session-cleanup-001"
-  ],
-  "tasksAttempted": 2,
+  "date": "2026-06-07",
+  "startedAt": null,
+  "tasksCompleted": [],
+  "tasksAttempted": 0,
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "No dispatchable tasks \u2014 all backlog tasks have stalledAt or dispatchCount >= 3.",
+  "stoppedReason": "No dispatchable tasks — all 4 backlog tasks have stalledAt set or dispatchCount >= 3.",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-06 \u2014 05:15 check: 1 backlog task has stalledAt, not dispatchable. No tasks picked up.",
-  "endedAt": "2026-06-05T04:47:58.989039+00:00",
-  "lastHeartbeatCheck": "2026-06-06T04:17:10.475670+00:00"
+  "note": "Night Shift 2026-06-07 — 01:00 check: 4 backlog tasks, 0 eligible. All have stalledAt or dispatchCount >= 3. No 429 errors detected.",
+  "endedAt": null,
+  "lastHeartbeatCheck": "2026-06-07T00:00:00.000000+00:00"
 }
