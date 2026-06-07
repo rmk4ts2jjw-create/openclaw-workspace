@@ -1,4 +1,6 @@
 {
   "auto_heal_level": "all",
-  "total_heals": 28
+  "total_heals": 28,
+  "success_count": 28,
+  "fail_count": 0
 }
