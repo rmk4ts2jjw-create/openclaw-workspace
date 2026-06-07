@@ -3,7 +3,7 @@
     "id": "INC-102",
     "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
     "severity": "P3",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "monkey",
     "acknowledged": false,
     "escalated": false,
@@ -21,6 +21,12 @@
         "ts": "2026-06-06T22:43:02.000Z",
         "message": "Auto-detected by task-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T07:06:18.463698+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 pipeline fix applied, tasks no longer deadlocked"
       }
     ],
     "actions": [
@@ -40,7 +46,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 1
+    "_recurrence": 1,
+    "resolvedAt": "2026-06-07T07:06:18.463698+00:00",
+    "resolution": "All 4 tasks handled: task-split-framework-001 done, remaining 3 in backlog (blocked by dispatchCount>=3 or phase-2-dependent tag). Root cause (stalledAt deadlock) fixed in stall-detector.sh."
   },
   {
     "id": "INC-101",

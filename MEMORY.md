@@ -89,5 +89,7 @@ LaunchAgents (separate from cron):
 
 Autonomous task processing during 01:00-07:00 when Andre is asleep. Design doc at `NIGHT_SHIFT.md`. Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks).
 
+- **2026-06-07:** Pipeline deadlock investigation — `stalledAt` set by stall detector was never cleared, permanently blocking all 4 backlog tasks from dispatch. Root cause: stall detector Phase 1 (reset in_progress→backlog + set stalledAt) but no Phase 2 to clear it after cooldown. Fix: stall-detector.sh now clears stalledAt after 30min in backlog. Also fixed maintenance.sh dispatcher (false positive logging, no lastActivity on dispatch, no priority sorting). E2E test passed: task created→dispatched→worked→done.
+
 ---
-_Last updated: 2026-06-03 by Space Monkey_
+_Last updated: 2026-06-07 by Space Monkey_
