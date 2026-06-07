@@ -121,3 +121,57 @@ These are the mistakes that have happened before and must never happen again:
 - **Fix:** Import directly from the module file (e.g. `@/lib/server-data/predictions`), never through the barrel
 - **Same pattern as:** helpers.ts leak from commit 7e5b788 — this is the same bug recurring with new server-data modules
 - **Rule:** Before adding any new file to the barrel export, check that it has zero Node.js built-in imports
+
+---
+
+## Building Frenzy — 2026-06-07
+
+### What Was Built
+
+**Phase 1: Dashboard Panels**
+- Risk Meter: top 3 predicted failures with confidence bars, countdown timers, color-coded urgency
+- Auto-Heal Status: total/success/failed counts, heal level indicator, recent actions log
+- Performance Insights: agent efficiency bars, success rates, avg duration, proposed tuning suggestions
+- Recent Events Panel: real-time station activity feed with color-coded event types
+- Dashboard Auto-Refresh: `router.invalidate()` every 30s keeps all panels current
+- Enhanced Footer: live health dot, cron count, CPU/RAM stats
+
+**Phase 2: Agent Office Enhancements**
+- Task Arrival Packets: animated packets flying from dispatch hub to agent rooms (auto-generating)
+- Collaboration Beam: animated energy beam between collaborating agents with traveling pulse
+- Sprite Progress Bars: progress indicator above worker sprites with task name and percentage
+- Station Reactions: full-station visual reactions (confetti, flash, toast for various events)
+- Celebration Overlay: triggers automatically when tasks move to Done
+- Sprite Pose Override: celebrating pose support via `spritePose` prop
+
+**Phase 3: DeepSeek Review Loop (10 Iterations)**
+1. RecentEventsPanel — real-time activity feed
+2. DashboardRefresher — auto-refresh every 30s
+3. Filter Buttons Fixed — converted from onClick+useState to `<Link>` with URL search params (fixes hydration issue)
+4. Enhanced Footer — live health dot + system stats
+5. Quick Stats Bars — Tasks (Backlog/In Progress/Awaiting Review/Done) + Incidents (All/Open/Critical)
+6-8. Celebration on Task Completion — confetti + golden flash
+9-10. Priority Breakdown Bar — P1/P2/P3 active counts
+
+### Key Technical Decisions
+
+**Filter Buttons: URL Search Params Over React State**
+- Root cause of long-standing filter issue: `onClick` + `useState` depends on React hydration
+- Fix: converted filter buttons to `<Link>` elements with URL search params (`?view=operational`)
+- Filter state derived from URL via `useSearch()` — works even without JS hydration
+- Applied to both Tasks (All/Operational/Feature) and Incidents (All/Open/Critical) filters
+
+**Server-Only Module Pattern**
+- `predictions.ts` and `performance.ts` use static `import { readFileSync } from "node:fs"` at top level
+- These are NOT barrel-exported from `index.ts` to avoid leaking into client bundle
+- Imported directly in route files that need them
+- If corrupted (e.g. encoding issue during write), ALL pages return 500 — check first when debugging
+
+**Client-Side Components in SSR**
+- Components using `useState`/`useEffect` (TaskArrivalPackets, StationReactionOverlay, SpriteProgressBar) don't render in SSR HTML
+- This is expected — they appear in the client bundle and hydrate on mount
+- Verification: check imports exist and build succeeds, don't rely on SSR HTML for client-only components
+
+### Phase 6 Backlog
+- Station Memory: compounding knowledge system (entity tracking, concept linking, searchable memory, memory decay)
+- Added as `task-phase6-station-memory` in backlog
