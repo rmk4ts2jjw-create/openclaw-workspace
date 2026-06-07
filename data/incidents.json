@@ -1,5 +1,60 @@
 [
   {
+    "id": "INC-103",
+    "title": "Rate limit exhaustion \u2014 10 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-07T11:26:43.000Z",
+    "lastActivity": "2026-06-07T11:31:35.000Z",
+    "summary": "Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted. (recurrence #2)",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:31:35.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-482923",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-766799",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-989282",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 2
+  },
+  {
     "id": "INC-102",
     "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
     "severity": "P3",
@@ -59,8 +114,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T21:12:57.000Z",
-    "lastActivity": "2026-06-07T06:13:26.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #15)",
+    "lastActivity": "2026-06-07T11:31:35.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #17)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -142,6 +197,16 @@
         "ts": "2026-06-07T06:13:26.000Z",
         "message": "Recurrence #15: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "message": "Recurrence #16: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:31:35.000Z",
+        "message": "Recurrence #17: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -175,7 +240,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 15
+    "_recurrence": 17
   },
   {
     "id": "INC-100",

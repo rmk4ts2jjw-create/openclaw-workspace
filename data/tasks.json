@@ -1,5 +1,77 @@
 [
   {
+    "id": "task-inc-103-bda3",
+    "title": "Investigate: INC-103",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-103: Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-103",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-103"
+      }
+    ],
+    "lastActivity": "2026-06-07T11:26:43.000Z"
+  },
+  {
+    "id": "task-auto-rca-001",
+    "title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-07T11:13:36.661030+00:00",
+    "note": "DeepSeek recommendation: Implement automatic incident \u2192 root cause analysis \u2192 suggested fix task creation with confidence scoring.\n\nThe system should:\n1. Classify errors using a rule engine (regex + error code mapping) for 5-10 common failure modes:\n   - SMB mount fail, cron timeout, JSON write conflict, browser automation stall, rate limit hit\n2. For each classified incident, generate a 'Fix: [description]' task with:\n   - Confidence score (85% exact match, 40% fuzzy)\n   - Suggested file path (e.g., scripts/mount_wd_mycloud.sh)\n   - Proposed command or code snippet\n   - Auto-assign to relevant agent (Life Support for mounts, Systems Engineer for code)\n3. Set 2-hour SLA on high-confidence (>80%) fixes, escalate to P1 if unresolved\n\nThis transforms Mission Control from monitoring dashboard to closed-loop remediation.",
+    "tags": [
+      "operations",
+      "incidents",
+      "automation",
+      "rca"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T11:13:36.661030+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from DeepSeek recommendation via full-circle workflow test"
+      },
+      {
+        "ts": "2026-06-07T11:14:20.988275+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress \u2014 implementing auto-RCA"
+      },
+      {
+        "ts": "2026-06-07T11:25:44.011105+00:00",
+        "action": "step_update",
+        "actor": "monkey",
+        "details": "RCA engine created and tested. Integrating with incident auto-detection."
+      },
+      {
+        "ts": "2026-06-07T11:32:35.935181+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Auto-RCA engine implemented and integrated with incident auto-detection"
+      }
+    ],
+    "lastActivity": "2026-06-07T11:25:44.011105+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "startedAt": "2026-06-07T11:14:20.988275+00:00",
+    "completedAt": "2026-06-07T11:32:35.935181+00:00",
+    "summary": "Auto-RCA engine implemented and integrated.\n\nCreated scripts/rca-engine.py \u2014 maps 10 error signatures to root causes, suggested fixes, and confidence scores.\nIntegrated into auto-detect-incidents.sh create_incident() function.\nRCA-enriched tasks include: root cause, confidence %, suggested file, proposed fix, auto-assigned agent, SLA (2h for >80%, 4h otherwise).\nTask title changes from \"Investigate:\" to \"Fix:\" when confidence >= 70%.\nVerified: WD MyCloud match \u2192 85% confidence, rate limit match \u2192 90% confidence, unknown \u2192 null (graceful fallback)."
+  },
+  {
     "id": "task-e2e-test-001",
     "title": "E2E Test: Verify dispatch pipeline",
     "assignee": "monkey",

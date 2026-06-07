@@ -149,19 +149,51 @@ else:
 try:
     tasks = json.load(open(tasks_path)) if os.path.exists(tasks_path) else []
     task_id = f"task-{next_id.lower()}-{os.urandom(2).hex()}"
+
+    # ── RCA: Run root cause analysis ──
+    rca_note = f"Auto-created from incident {next_id}: $summary"
+    rca_agent = "$owner"
+    rca_confidence = ""
+    try:
+        workspace = os.path.dirname(os.path.dirname(incidents_path))
+        rca_script = os.path.join(workspace, "scripts", "rca-engine.py")
+        rca_result = __import__("subprocess").run(
+            ["python3", rca_script,
+             "analyze", "$title", "$summary", json.dumps(${tags})],
+            capture_output=True, text=True, timeout=10
+        )
+        if rca_result.returncode == 0 and rca_result.stdout.strip():
+            rca = json.loads(rca_result.stdout.strip())
+            if rca:
+                sla = "2h SLA" if rca.get("confidence", 0) >= 80 else "4h SLA"
+                rca_note = (
+                    f"Auto-created from incident {next_id}: $summary\n\n"
+                    f"── RCA ──\n"
+                    f"Root cause: {rca.get('root_cause', 'N/A')}\n"
+                    f"Confidence: {rca.get('confidence', 'N/A')}% ({sla})\n"
+                    f"File: {rca.get('suggested_file', 'N/A')}\n"
+                    f"Fix: {rca.get('proposed_fix', 'N/A')}"
+                )
+                rca_agent = rca.get("suggested_agent", "$owner")
+                rca_confidence = str(rca.get("confidence", ""))
+    except Exception:
+        pass  # RCA is best-effort; don't block incident creation
+
     task = {
         "id": task_id,
-        "title": f"Investigate: {next_id}",
-        "assignee": "$owner",
+        "title": f"Fix: {next_id}" if rca_confidence and int(rca_confidence) >= 70 else f"Investigate: {next_id}",
+        "assignee": rca_agent,
         "status": "triage",
         "priority": "$severity",
         "ts": "just now",
-        "note": f"Auto-created from incident {next_id}: $summary",
+        "note": rca_note,
         "linkedIncidentId": next_id,
-        "tags": ["incident-response"] + ${tags},
-        "history": [{"ts": now, "action": "created", "actor": "system", "details": f"Auto-created from incident {next_id}"}],
+        "tags": ["incident-response"] + ${tags} + (["rca-auto"] if rca_confidence else []),
+        "history": [{"ts": now, "action": "created", "actor": "system", "details": f"Auto-created from incident {next_id}" + (f" (RCA: {rca_confidence}% confidence)" if rca_confidence else "")}],
         "lastActivity": now
     }
+    if rca_confidence:
+        task["rcaConfidence"] = int(rca_confidence)
     tasks.insert(0, task)
     safe_write(tasks_path, tasks)
     print(f"{next_id}|{task_id}")

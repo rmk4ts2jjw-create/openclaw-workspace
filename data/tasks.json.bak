@@ -1,5 +1,44 @@
 [
   {
+    "id": "task-auto-rca-001",
+    "title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "assignee": "monkey",
+    "status": "in_progress",
+    "priority": "P2",
+    "ts": "2026-06-07T11:13:36.661030+00:00",
+    "note": "DeepSeek recommendation: Implement automatic incident \u2192 root cause analysis \u2192 suggested fix task creation with confidence scoring.\n\nThe system should:\n1. Classify errors using a rule engine (regex + error code mapping) for 5-10 common failure modes:\n   - SMB mount fail, cron timeout, JSON write conflict, browser automation stall, rate limit hit\n2. For each classified incident, generate a 'Fix: [description]' task with:\n   - Confidence score (85% exact match, 40% fuzzy)\n   - Suggested file path (e.g., scripts/mount_wd_mycloud.sh)\n   - Proposed command or code snippet\n   - Auto-assign to relevant agent (Life Support for mounts, Systems Engineer for code)\n3. Set 2-hour SLA on high-confidence (>80%) fixes, escalate to P1 if unresolved\n\nThis transforms Mission Control from monitoring dashboard to closed-loop remediation.",
+    "tags": [
+      "operations",
+      "incidents",
+      "automation",
+      "rca"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T11:13:36.661030+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from DeepSeek recommendation via full-circle workflow test"
+      },
+      {
+        "ts": "2026-06-07T11:14:20.988275+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress \u2014 implementing auto-RCA"
+      },
+      {
+        "ts": "2026-06-07T11:25:44.011105+00:00",
+        "action": "step_update",
+        "actor": "monkey",
+        "details": "RCA engine created and tested. Integrating with incident auto-detection."
+      }
+    ],
+    "lastActivity": "2026-06-07T11:25:44.011105+00:00",
+    "currentStep": "Implementing RCA engine \u2014 creating rca-engine.py and integrating with auto-detect-incidents.sh",
+    "progress": 50,
+    "startedAt": "2026-06-07T11:14:20.988275+00:00"
+  },
+  {
     "id": "task-e2e-test-001",
     "title": "E2E Test: Verify dispatch pipeline",
     "assignee": "monkey",
@@ -207,7 +246,7 @@
     "id": "task-browser-auto-001",
     "title": "Browser automation testing",
     "assignee": "engineer",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md [auto-dispatched 2026-06-04 11:37]",
@@ -264,22 +303,29 @@
         "action": "reset",
         "actor": "monkey",
         "details": "dispatchCount reset from 3 to 0 \u2014 pipeline fixed, ready for re-dispatch"
+      },
+      {
+        "ts": "2026-06-07T07:22:20.671557+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress (pipeline proof #3)"
       }
     ],
-    "lastActivity": "2026-06-06T23:13:04.038965+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-07T07:40:07.915273+00:00",
+    "currentStep": "Complete",
+    "progress": 100,
     "stalledAt": null,
     "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:21.499Z",
-    "startedAt": "2026-06-06T22:41:21.499Z",
-    "wasStalled": false
+    "startedAt": "2026-06-07T07:22:20.671557+00:00",
+    "wasStalled": false,
+    "summary": "Tested OpenClaw browser automation CLI across 5 categories: navigation/content extraction, form filling, login flows, SPA vs static pages, and additional features (tabs, cookies, console, PDF, screenshots, keyboard, dropdowns, JS evaluation). All core capabilities work reliably. Documented 10 limitations with workarounds. Findings written to wiki/browser-automation-findings.md."
   },
   {
     "id": "task-inc-filters-001",
     "title": "Make Incidents page filters clickable",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change [auto-dispatched 2026-06-04 13:37]",
@@ -344,14 +390,15 @@
         "details": "Status changed from backlog to in_progress (pipeline proof #2)"
       }
     ],
-    "lastActivity": "2026-06-07T07:21:38.845204+00:00",
-    "currentStep": "Sub-agent spawned \u2014 working on Incidents page filters",
-    "progress": 10,
+    "lastActivity": "2026-06-07T07:28:12.950852+00:00",
+    "currentStep": "Done",
+    "progress": 100,
     "stalledAt": null,
     "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:19.491Z",
     "startedAt": "2026-06-07T07:20:39.068485+00:00",
-    "wasStalled": false
+    "wasStalled": false,
+    "summary": "Added clickable filter buttons (All/Open/Critical) to the Incidents page header, matching the Tasks page filter pattern. FilterMode state controls which incidents are shown. Active filter gets highlighted styling (violet for All/Open, destructive/Critical for Critical). Count badges reflect actual totals. Empty state messages adapt to active filter. Build verified and pushed to main (commit d2cbc87)."
   },
   {
     "id": "task-inc-101-0694",

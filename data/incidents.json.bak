@@ -1,9 +1,59 @@
 [
   {
+    "id": "INC-103",
+    "title": "Rate limit exhaustion \u2014 10 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-07T11:26:43.000Z",
+    "lastActivity": "2026-06-07T11:26:43.000Z",
+    "summary": "Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-482923",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-766799",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-989282",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
     "id": "INC-102",
     "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
     "severity": "P3",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "monkey",
     "acknowledged": false,
     "escalated": false,
@@ -21,6 +71,12 @@
         "ts": "2026-06-06T22:43:02.000Z",
         "message": "Auto-detected by task-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T07:06:18.463698+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Resolved \u2014 pipeline fix applied, tasks no longer deadlocked"
       }
     ],
     "actions": [
@@ -40,7 +96,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 1
+    "_recurrence": 1,
+    "resolvedAt": "2026-06-07T07:06:18.463698+00:00",
+    "resolution": "All 4 tasks handled: task-split-framework-001 done, remaining 3 in backlog (blocked by dispatchCount>=3 or phase-2-dependent tag). Root cause (stalledAt deadlock) fixed in stall-detector.sh."
   },
   {
     "id": "INC-101",
@@ -51,8 +109,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T21:12:57.000Z",
-    "lastActivity": "2026-06-07T05:43:25.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #14)",
+    "lastActivity": "2026-06-07T11:31:35.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #17)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -129,6 +187,21 @@
         "ts": "2026-06-07T05:43:25.000Z",
         "message": "Recurrence #14: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T06:13:26.000Z",
+        "message": "Recurrence #15: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "message": "Recurrence #16: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:31:35.000Z",
+        "message": "Recurrence #17: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -162,13 +235,13 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 14
+    "_recurrence": 17
   },
   {
     "id": "INC-100",
     "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -196,6 +269,18 @@
         "ts": "2026-06-07T00:43:09.000Z",
         "message": "Recurrence #3: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T06:46:10.684429+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+      },
+      {
+        "ts": "2026-06-07T06:46:10.684429+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
       }
     ],
     "actions": [
@@ -229,7 +314,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 3
+    "_recurrence": 3,
+    "resolvedAt": "2026-06-07T06:46:10.684429+00:00",
+    "resolution": "Consolidated \u2014 duplicate of INC-101. Same gateway monitor pattern."
   },
   {
     "id": "INC-099",
@@ -315,7 +402,7 @@
     "id": "INC-098",
     "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -348,6 +435,18 @@
         "ts": "2026-06-07T04:43:22.000Z",
         "message": "Recurrence #4: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T06:46:10.684429+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+      },
+      {
+        "ts": "2026-06-07T06:46:10.684429+00:00",
+        "action": "resolved",
+        "actor": "monkey",
+        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
       }
     ],
     "actions": [
@@ -381,7 +480,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 4
+    "_recurrence": 4,
+    "resolvedAt": "2026-06-07T06:46:10.684429+00:00",
+    "resolution": "Consolidated \u2014 duplicate of INC-101. Same gateway monitor pattern."
   },
   {
     "id": "INC-097",
