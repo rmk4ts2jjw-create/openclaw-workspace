@@ -1,9 +1,69 @@
 [
   {
+    "id": "task-fix-validate-001",
+    "title": "Fix Validation Loop \u2014 auto-verify fixes close incidents",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-07T11:39:36.598314+00:00",
+    "note": "DeepSeek recommendation (iteration 1/5): After an auto-generated 'Fix:' task is marked Done, the system should automatically re-run the triggering condition to verify resolution, then close or reopen the incident.\n\nImplementation:\n1. Add validation_command field to RCA signature patterns in rca-engine.py\n2. Intercept task status change via safe_write() on tasks.json\n3. If task has linkedIncidentId and rcaConfidence >= 70%, run validation command\n4. Validation passes \u2192 auto-resolve linked incident\n5. Validation fails \u2192 reopen incident, increment retry_count, create retry task or escalate\n6. Dashboard: add 'Verify' badge, last-check timestamp, manual 'Re-verify' button\n\nExpected impact: Reduces recurring incidents by ~80%, prevents silent fix failures.",
+    "tags": [
+      "operations",
+      "incidents",
+      "automation",
+      "validation",
+      "rca"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T11:39:36.598314+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Created from DeepSeek iteration 1/5 \u2014 fix validation loop"
+      },
+      {
+        "ts": "2026-06-07T11:53:37.113882+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Fix validation loop implemented \u2014 iteration 1/5 complete"
+      }
+    ],
+    "lastActivity": "2026-06-07T11:39:36.598314+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-07T11:53:37.113882+00:00",
+    "summary": "Fix Validation Loop implemented.\n\nCreated scripts/fix-validator.py \u2014 auto-validates fixes when tasks with rcaConfidence >= 70% move to Done:\n- Runs validation_command from RCA engine against live system\n- Pass \u2192 auto-resolves linked incident with verification note\n- Fail \u2192 reopens incident, increments retry_count, escalates to P1 after 2 retries\n- Integrated into maintenance.sh as step 6.5\n\nAdded validation_command to all 10 RCA signatures in rca-engine.py:\n- mount check, cron health, JSON integrity, browser status, rate limit check\n- session takeover scan, disk space, MC dashboard, stalled tasks, existsSync leak\nEach command outputs OK/FAIL indicators for automated parsing."
+  },
+  {
+    "id": "task-inc-103-bda3",
+    "title": "Investigate: INC-103",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-103: Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.",
+    "linkedIncidentId": "INC-103",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T11:26:43.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-103"
+      }
+    ],
+    "lastActivity": "2026-06-07T11:26:43.000Z"
+  },
+  {
     "id": "task-auto-rca-001",
     "title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P2",
     "ts": "2026-06-07T11:13:36.661030+00:00",
     "note": "DeepSeek recommendation: Implement automatic incident \u2192 root cause analysis \u2192 suggested fix task creation with confidence scoring.\n\nThe system should:\n1. Classify errors using a rule engine (regex + error code mapping) for 5-10 common failure modes:\n   - SMB mount fail, cron timeout, JSON write conflict, browser automation stall, rate limit hit\n2. For each classified incident, generate a 'Fix: [description]' task with:\n   - Confidence score (85% exact match, 40% fuzzy)\n   - Suggested file path (e.g., scripts/mount_wd_mycloud.sh)\n   - Proposed command or code snippet\n   - Auto-assign to relevant agent (Life Support for mounts, Systems Engineer for code)\n3. Set 2-hour SLA on high-confidence (>80%) fixes, escalate to P1 if unresolved\n\nThis transforms Mission Control from monitoring dashboard to closed-loop remediation.",
@@ -31,12 +91,20 @@
         "action": "step_update",
         "actor": "monkey",
         "details": "RCA engine created and tested. Integrating with incident auto-detection."
+      },
+      {
+        "ts": "2026-06-07T11:32:35.935181+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Auto-RCA engine implemented and integrated with incident auto-detection"
       }
     ],
     "lastActivity": "2026-06-07T11:25:44.011105+00:00",
-    "currentStep": "Implementing RCA engine \u2014 creating rca-engine.py and integrating with auto-detect-incidents.sh",
-    "progress": 50,
-    "startedAt": "2026-06-07T11:14:20.988275+00:00"
+    "currentStep": "Completed",
+    "progress": 100,
+    "startedAt": "2026-06-07T11:14:20.988275+00:00",
+    "completedAt": "2026-06-07T11:32:35.935181+00:00",
+    "summary": "Auto-RCA engine implemented and integrated.\n\nCreated scripts/rca-engine.py \u2014 maps 10 error signatures to root causes, suggested fixes, and confidence scores.\nIntegrated into auto-detect-incidents.sh create_incident() function.\nRCA-enriched tasks include: root cause, confidence %, suggested file, proposed fix, auto-assigned agent, SLA (2h for >80%, 4h otherwise).\nTask title changes from \"Investigate:\" to \"Fix:\" when confidence >= 70%.\nVerified: WD MyCloud match \u2192 85% confidence, rate limit match \u2192 90% confidence, unknown \u2192 null (graceful fallback)."
   },
   {
     "id": "task-e2e-test-001",

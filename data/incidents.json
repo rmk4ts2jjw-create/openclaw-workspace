@@ -1,5 +1,55 @@
 [
   {
+    "id": "INC-104",
+    "title": "Rate limit exhaustion \u2014 20 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-07T12:27:53.000Z",
+    "lastActivity": "2026-06-07T12:27:53.000Z",
+    "summary": "Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-07T12:27:53.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-274440",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-732910",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-929626",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
     "id": "INC-103",
     "title": "Rate limit exhaustion \u2014 10 429 errors in gateway log",
     "severity": "P2",
@@ -114,8 +164,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T21:12:57.000Z",
-    "lastActivity": "2026-06-07T11:31:35.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #17)",
+    "lastActivity": "2026-06-07T12:27:53.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #18)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -207,6 +257,11 @@
         "ts": "2026-06-07T11:31:35.000Z",
         "message": "Recurrence #17: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T12:27:53.000Z",
+        "message": "Recurrence #18: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -240,7 +295,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 17
+    "_recurrence": 18
   },
   {
     "id": "INC-100",

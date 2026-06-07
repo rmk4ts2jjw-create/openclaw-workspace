@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-07T11:26:43.000Z",
-    "lastActivity": "2026-06-07T11:26:43.000Z",
-    "summary": "Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.",
+    "lastActivity": "2026-06-07T11:31:35.000Z",
+    "summary": "Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted. (recurrence #2)",
     "tags": [
       "rate-limit",
       "429",
@@ -20,6 +20,11 @@
       {
         "ts": "2026-06-07T11:26:43.000Z",
         "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T11:31:35.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor",
         "actor": "system"
       }
     ],
@@ -47,7 +52,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 1
+    "_recurrence": 2
   },
   {
     "id": "INC-102",
@@ -109,8 +114,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T21:12:57.000Z",
-    "lastActivity": "2026-06-07T11:31:35.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #17)",
+    "lastActivity": "2026-06-07T12:27:53.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #18)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -202,6 +207,11 @@
         "ts": "2026-06-07T11:31:35.000Z",
         "message": "Recurrence #17: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T12:27:53.000Z",
+        "message": "Recurrence #18: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -235,7 +245,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 17
+    "_recurrence": 18
   },
   {
     "id": "INC-100",
