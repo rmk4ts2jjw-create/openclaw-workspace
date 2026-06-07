@@ -137,3 +137,10 @@
 [tasks loader] Loaded 271 tasks
 [tasks loader] Loaded 271 tasks
 [tasks loader] Loaded 271 tasks
+3:50:12 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+3:50:12 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+3:50:12 PM [vite] (ssr) program reload
+3:50:46 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+3:50:46 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+3:52:00 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+3:52:00 PM [vite] (ssr) page reload src/components/Dashboard.tsx

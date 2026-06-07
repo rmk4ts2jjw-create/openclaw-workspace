@@ -1,5 +1,40 @@
 [
   {
+    "id": "task-deepseek-iter3-001",
+    "title": "Dashboard: Auto-Heal Status panel + Risk Meter widget",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-07T14:17:07.865562+00:00",
+    "note": "DeepSeek iteration 3/5: Dashboard additions for auto-heal visibility. Auto-Heal Status panel showing last 5 automated actions, Risk Meter widget showing top 3 predicted failures with countdown timers, toggle for auto-heal confidence levels, rollback button for auto-healed actions.",
+    "tags": [
+      "deepseek-review",
+      "dashboard",
+      "auto-heal",
+      "ui",
+      "risk-meter"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T14:17:07.865562+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "DeepSeek iteration 3/5 \u2014 dashboard auto-heal panels"
+      },
+      {
+        "ts": "2026-06-07T14:56:20.382571+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Dashboard panels implemented \u2014 iteration 3/5 complete"
+      }
+    ],
+    "lastActivity": "2026-06-07T14:56:20.382571+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-07T14:56:20.382571+00:00",
+    "summary": "Dashboard: Auto-Heal Status panel + Risk Meter widget implemented (DeepSeek iteration 3/5).\n\nAdded Risk Meter widget to Dashboard page (src/components/Dashboard.tsx):\n- Shows top 3 predicted failures from prediction-state.json\n- Displays pattern, confidence %, detail, countdown timer\n- Color-coded by urgency (red >80%, orange >70%, violet <70%)\n\nAdded Auto-Heal Status panel to Dashboard page (src/components/Dashboard.tsx):\n- Shows risk level (none/low/medium/all) with color indicator\n- Shows total/success/failed counts\n- Shows last 5 auto-heal actions with status indicators\n- Timestamp formatting for recent actions\n\nUpdated server-data layer with predictions.ts loader:\n- Reads prediction-state.json and auto-heal state/audit\n- Exposes getPredictionState(), getAutoHealState(), getAutoHealAudit(), getRiskMeterItems()\n- Used by Dashboard component via loader data\n\nSystem now has complete visibility:\nReactive (incidents) \u2192 Diagnostic (RCA) \u2192 Corrective (fix validation) \u2192 Predictive (anomaly detection) \u2192 Auto-Heal (automated recovery) \u2192 Visibility (dashboard panels)"
+  },
+  {
     "id": "task-deepseek-iter2-001",
     "title": "Auto-Heal System \u2014 automated incident recovery",
     "assignee": "monkey",
