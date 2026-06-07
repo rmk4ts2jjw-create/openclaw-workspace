@@ -1,0 +1,65 @@
+{
+  "missions": [
+    {
+      "id": "mission-performance-5ffc",
+      "template_id": "performance",
+      "name": "Fleet Performance",
+      "description": "Improve agent efficiency",
+      "objective": "Improve fleet efficiency by 20% within 5 days",
+      "strategy": "Run A/B tests on slowest 2 agents, apply winning configs via performance-tuner",
+      "effort": "medium",
+      "priority": "P2",
+      "tags": [
+        "performance",
+        "tuning",
+        "agents"
+      ],
+      "trigger_detail": "Fleet efficiency: 74%",
+      "status": "pending",
+      "created_at": "2026-06-07T18:08:07.415582+00:00",
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "mission-coverage-b82c",
+      "template_id": "coverage",
+      "name": "Detection Coverage",
+      "description": "Create RCA signatures for undetected patterns",
+      "objective": "Create 3 new RCA signatures for undetected patterns",
+      "strategy": "Analyze unlinked incidents, cluster by similarity, generate RCA patterns",
+      "effort": "low",
+      "priority": "P2",
+      "tags": [
+        "coverage",
+        "rca",
+        "incidents"
+      ],
+      "trigger_detail": "3 unlinked incidents",
+      "status": "pending",
+      "created_at": "2026-06-07T18:08:07.415582+00:00",
+      "completed_at": null,
+      "result": null
+    },
+    {
+      "id": "mission-learning-9bc4",
+      "template_id": "learning",
+      "name": "Knowledge Integration",
+      "description": "Apply learned patterns to production",
+      "objective": "Apply top 3 learned patterns to production RCA signatures",
+      "strategy": "Promote shadow-mode signatures, update confidence thresholds",
+      "effort": "low",
+      "priority": "P3",
+      "tags": [
+        "learning",
+        "rca",
+        "knowledge"
+      ],
+      "trigger_detail": "261 completed tasks with learnings",
+      "status": "pending",
+      "created_at": "2026-06-07T18:08:07.415582+00:00",
+      "completed_at": null,
+      "result": null
+    }
+  ],
+  "generated_at": "2026-06-07T18:08:07.415582+00:00"
+}

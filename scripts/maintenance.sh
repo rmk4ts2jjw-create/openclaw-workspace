@@ -275,6 +275,15 @@ else
   echo "[$TIMESTAMP] [6.7/10] Performance tuning: script not found, skipping" >> "$LOG_FILE"
 fi
 
+# ── 6.8 Mission planning ──────────────────────────────────────────────────
+echo "[$TIMESTAMP] [6.8/10] Mission planning..." >> "$LOG_FILE"
+if [ -f "$WORKSPACE/scripts/mission-planner.py" ]; then
+  python3 "$WORKSPACE/scripts/mission-planner.py" generate >> "$LOG_FILE" 2>&1 || true
+  echo "[$TIMESTAMP] [6.8/10] Mission planning: done" >> "$LOG_FILE"
+else
+  echo "[$TIMESTAMP] [6.8/10] Mission planning: script not found, skipping" >> "$LOG_FILE"
+fi
+
 # ── 7. Incident auto-detection ──────────────────────────────────────────────
 echo "[$TIMESTAMP] [7/10] Incident auto-detection..." >> "$LOG_FILE"
 if [ -f "$WORKSPACE/scripts/auto-detect-incidents.sh" ]; then
