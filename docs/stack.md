@@ -25,3 +25,15 @@ Key technologies used across the project:
 | Runtime | Bun | JS runtime & package manager |
 
 For the full dependency list, see `mission-control-dashboard/package.json`.
+
+---
+
+## SSH Configuration
+
+| Host | SSH Key | Account / Purpose |
+|---|---|---|
+| `github.com` | `~/.ssh/id_ed25519_spacemonkey` | spacemonkey-home account (workspace repo) |
+| `github.com-rmk` | `~/.ssh/id_ed25519_rmk` | rmk4ts2jjw-create account (mc-* repos) |
+
+- Always use `git@github.com-rmk:` prefix for mc-* repos (mc-prod, mc-dev, mc-lovable, mc-replit)
+- See `docs/workflow.md` for the full four-repository structure and rules
