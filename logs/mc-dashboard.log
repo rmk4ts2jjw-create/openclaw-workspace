@@ -129,3 +129,9 @@
 [api/save-tasks] Merged 12 client + 0 disk-only = 12 total
 [tasks loader] Loaded 270 tasks
 [tasks loader] Loaded 270 tasks
+8:25:17 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/incidents.tsx, /src/routes/incidents.tsx?tsr-split=component
+8:25:17 AM [vite] (ssr) page reload src/routes/incidents.tsx
+8:25:17 AM [vite] (ssr) program reload
+[tasks loader] Loaded 271 tasks
+[tasks loader] Loaded 271 tasks
+[tasks loader] Loaded 271 tasks
