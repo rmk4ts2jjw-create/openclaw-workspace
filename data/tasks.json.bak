@@ -3,10 +3,10 @@
     "id": "task-e2e-test-001",
     "title": "E2E Test: Verify dispatch pipeline",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
-    "ts": "2026-06-07T06:47:32.630383+00:00",
-    "note": "End-to-end test task. This task verifies that:\n1. Dispatcher picks it up from backlog\n2. It gets moved to in_progress\n3. Stall detection doesn't immediately reset it\n4. It can be completed with a summary\n\nIf you're reading this, the pipeline works!",
+    "ts": "just now",
+    "note": "End-to-end test task. This task verifies that:\n1. Dispatcher picks it up from backlog\n2. It gets moved to in_progress\n3. Stall detection doesn't immediately reset it\n4. It can be completed with a summary\n\nIf you're reading this, the pipeline works! [auto-dispatched 2026-06-07 07:48]",
     "tags": [
       "test",
       "e2e",
@@ -18,11 +18,26 @@
         "action": "created",
         "actor": "monkey",
         "details": "Created for end-to-end pipeline test"
+      },
+      {
+        "ts": "2026-06-07T06:48:14.163123+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher (E2E test)"
+      },
+      {
+        "ts": "2026-06-07T06:49:10.405619+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "E2E test complete \u2014 pipeline verified"
       }
     ],
-    "lastActivity": "2026-06-07T06:47:32.630383+00:00",
-    "currentStep": null,
-    "progress": 0
+    "lastActivity": "2026-06-07T06:48:14.162993+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "startedAt": "2026-06-07T06:48:14.163108+00:00",
+    "completedAt": "2026-06-07T06:49:10.405619+00:00",
+    "summary": "E2E test passed: task was dispatched, not stalled by detector, and completed successfully. Pipeline works."
   },
   {
     "id": "task-inc-102-5106",
@@ -53,7 +68,7 @@
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references.",
@@ -98,16 +113,24 @@
         "action": "stalled_cleared",
         "actor": "monkey",
         "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
+      },
+      {
+        "ts": "2026-06-07T06:53:35.164929+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
       }
     ],
-    "lastActivity": "2026-06-06T23:13:04.038965+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-07T07:00:43.522067+00:00",
+    "currentStep": "Complete \u2014 committed locally, push requires spacemonkey-home SSH key",
+    "progress": 100,
     "lastUpdated": "2026-06-06T22:41:23.658Z",
-    "startedAt": "2026-06-06T22:41:23.658Z",
+    "startedAt": "2026-06-07T06:53:35.164929+00:00",
     "stalledAt": null,
-    "dispatchCount": 2,
-    "wasStalled": true
+    "dispatchCount": 3,
+    "wasStalled": true,
+    "completedAt": "2026-06-07T07:00:43.522203+00:00",
+    "summary": "FRAMEWORK.md split into docs/ folder structure.\n\nFRAMEWORK.md reduced from ~90 to 24 lines \u2014 now a lean index with documentation links and related files.\n\nFiles changed:\n- FRAMEWORK.md \u2014 trimmed to index only (purpose, doc index, related files)\n- docs/workflow.md \u2014 added four-repository structure (repos, workflow, local dirs, SSH config, rules) on top of existing prod/dev details\n- docs/stack.md \u2014 added SSH configuration section with cross-references to workflow.md  \n- docs/sources.md \u2014 expanded from thin 28-line stub to comprehensive 145-line SOURCES.md mirror (all tiers, compatibility matrix, project lookup, agent rules)\n\nNo broken references found. Changes committed locally (5256675). Push to origin failed \u2014 spacemonkey-home SSH key (id_ed25519_spacemonkey) not present on this machine; only id_ed25519_rmk exists. Commit is preserved locally."
   },
   {
     "id": "task-be03dff8",
@@ -235,22 +258,28 @@
         "action": "stalled_cleared",
         "actor": "monkey",
         "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
+      },
+      {
+        "ts": "2026-06-07T07:19:18.136140+00:00",
+        "action": "reset",
+        "actor": "monkey",
+        "details": "dispatchCount reset from 3 to 0 \u2014 pipeline fixed, ready for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-06T23:13:04.038965+00:00",
     "currentStep": null,
     "progress": 0,
     "stalledAt": null,
-    "dispatchCount": 3,
+    "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:21.499Z",
     "startedAt": "2026-06-06T22:41:21.499Z",
-    "wasStalled": true
+    "wasStalled": false
   },
   {
     "id": "task-inc-filters-001",
     "title": "Make Incidents page filters clickable",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P2",
     "ts": "just now",
     "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change [auto-dispatched 2026-06-04 13:37]",
@@ -301,16 +330,28 @@
         "action": "stalled_cleared",
         "actor": "monkey",
         "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
+      },
+      {
+        "ts": "2026-06-07T07:19:18.136140+00:00",
+        "action": "reset",
+        "actor": "monkey",
+        "details": "dispatchCount reset from 3 to 0 \u2014 pipeline fixed, ready for re-dispatch"
+      },
+      {
+        "ts": "2026-06-07T07:20:39.068485+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress (pipeline proof #2)"
       }
     ],
-    "lastActivity": "2026-06-06T23:13:04.038965+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-07T07:21:38.845204+00:00",
+    "currentStep": "Sub-agent spawned \u2014 working on Incidents page filters",
+    "progress": 10,
     "stalledAt": null,
-    "dispatchCount": 3,
+    "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:19.491Z",
-    "startedAt": "2026-06-06T22:41:19.491Z",
-    "wasStalled": true
+    "startedAt": "2026-06-07T07:20:39.068485+00:00",
+    "wasStalled": false
   },
   {
     "id": "task-inc-101-0694",
