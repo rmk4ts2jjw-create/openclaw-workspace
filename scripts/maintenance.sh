@@ -165,56 +165,77 @@ print(len([t for t in tasks if t.get('status') == 'backlog' and not t.get('stall
     if echo "$CB_RESULT" | grep -q "^TRIPPED:"; then
       echo "[$TIMESTAMP] [CIRCUIT-BREAKER] Task dispatch halted — circuit open ($CB_RESULT)" >> "$LOG_FILE"
     else
-      DISPATCH_SCRIPT=$(mktemp /tmp/dispatch-XXXXXX.py)
-      cat > "$DISPATCH_SCRIPT" << 'PYEOF'
+      DISPATCH_OUTPUT=$(python3 << 'PYEOF' 2>&1)
 import json, os, tempfile, shutil
 from datetime import datetime, timezone
+
 tasks_file = "/Users/spacemonkey/.openclaw/workspace/data/tasks.json"
 log_file = "/Users/spacemonkey/.openclaw/workspace/memory/dispatcher-log.md"
+
 def safe_write(path, data):
     try:
-        if os.path.exists(path): shutil.copy2(path, path + ".bak")
+        if os.path.exists(path):
+            shutil.copy2(path, path + ".bak")
         fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path) or '.', suffix='.tmp')
         try:
             with os.fdopen(fd, 'w') as f:
-                json.dump(data, f, indent=2); f.flush(); os.fsync(f.fileno())
+                json.dump(data, f, indent=2)
+                f.flush(); os.fsync(f.fileno())
             os.rename(tmp, path)
         except:
             if os.path.exists(tmp): os.remove(tmp)
             raise
     except Exception as e:
         print(f"safe_write error: {e}")
+
 with open(tasks_file) as f:
     tasks = json.load(f)
+
+# Filter: backlog, not stalled, dispatchCount < 3, not wasStalled
 backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3 and not t.get('wasStalled')]
+# If no fresh tasks, try previously-stalled tasks (wasStalled=True but stalledAt cleared)
 if not backlog:
     backlog = [t for t in tasks if t.get('status') == 'backlog' and not t.get('stalledAt') and t.get('dispatchCount', 0) < 3]
 if not backlog:
-    print("NO_DISPATCHABLE"); exit(0)
+    print("NO_DISPATCHABLE")
+    exit(0)
+
+# Sort: P1 first, then P2, then P3; then oldest first
 priority_order = {'P1': 0, 'P2': 1, 'P3': 2}
 backlog.sort(key=lambda t: (priority_order.get(t.get('priority', 'P3'), 2), t.get('ts', '')))
 picked = backlog[0]
+
 for t in tasks:
     if t['id'] == picked['id']:
-        t['status'] = 'in_progress'; t['ts'] = 'just now'
+        t['status'] = 'in_progress'
+        t['ts'] = 'just now'
         t['lastActivity'] = datetime.now(timezone.utc).isoformat()
         t['startedAt'] = datetime.now(timezone.utc).isoformat()
-        if 'note' not in t: t['note'] = ''
+        if 'note' not in t:
+            t['note'] = ''
         t['note'] += f" [auto-dispatched {datetime.now().strftime('%Y-%m-%d %H:%M')}]"
-        entry = {'ts': datetime.now(timezone.utc).isoformat(), 'action': 'started', 'actor': 'dispatcher', 'details': 'Status changed from backlog to in_progress by maintenance dispatcher'}
-        if 'history' not in t: t['history'] = []
+        entry = {
+            'ts': datetime.now(timezone.utc).isoformat(),
+            'action': 'started',
+            'actor': 'dispatcher',
+            'details': f'Status changed from backlog to in_progress by maintenance dispatcher'
+        }
+        if 'history' not in t:
+            t['history'] = []
         t['history'].append(entry)
         break
+
 safe_write(tasks_file, tasks)
+
 with open(log_file, 'a') as f:
     f.write(f"\n## {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} — DISPATCHED\n")
     f.write(f"- **{picked['id']}**: {picked['title']}\n")
     f.write(f"- Assignee: {picked.get('assignee', 'unassigned')}\n")
-    f.write(f"- Status: backlog \u2192 in_progress\n")
+    f.write(f"- Status: backlog → in_progress\n")
+
 print(f"Dispatched {picked['id']}: {picked['title']}")
 PYEOF
-      DISPATCH_OUTPUT=$(python3 "$DISPATCH_SCRIPT" 2>&1)
-      rm -f "$DISPATCH_SCRIPT"
+)
       echo "$DISPATCH_OUTPUT" >> "$LOG_FILE"
       if echo "$DISPATCH_OUTPUT" | grep -q "^Dispatched "; then
         echo "[$TIMESTAMP] [6/10] Task dispatcher: dispatched task" >> "$LOG_FILE"

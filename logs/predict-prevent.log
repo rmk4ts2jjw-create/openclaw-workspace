@@ -1,0 +1,3 @@
+[2026-06-07 12:08:02 UTC]   ANOMALY [smb_retries]: 22 SMB/mount errors in recent logs (confidence: 70%)
+[2026-06-07 12:08:02 UTC]   CREATED: task-prevent-smb_retries-ef0f — Prevent: 22 SMB/mount errors in recent logs
+[2026-06-07 12:08:02 UTC] Done: 1 anomaly(s), 1 task(s) created

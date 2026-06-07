@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "mount_missing": [
+      {
+        "ts": "2026-06-07T12:08:01.664966+00:00",
+        "mounted": false
+      }
+    ],
+    "memory_trend": [
+      {
+        "ts": "2026-06-07T12:08:02.560903+00:00",
+        "value": 266801.0
+      }
+    ],
+    "smb_retries": [
+      {
+        "ts": "2026-06-07T12:08:02.586292+00:00",
+        "count": 22
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "ts": "2026-06-07T12:08:01.648146+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "22 SMB/mount errors in recent logs",
+      "status": "pending"
+    }
+  ],
+  "accuracy": {}
+}

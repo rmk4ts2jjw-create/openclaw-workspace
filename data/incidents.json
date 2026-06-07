@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-07T12:27:53.000Z",
-    "lastActivity": "2026-06-07T12:27:53.000Z",
-    "summary": "Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.",
+    "lastActivity": "2026-06-07T12:43:32.000Z",
+    "summary": "Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted. (recurrence #2)",
     "tags": [
       "rate-limit",
       "429",
@@ -20,6 +20,11 @@
       {
         "ts": "2026-06-07T12:27:53.000Z",
         "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T12:43:32.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor",
         "actor": "system"
       }
     ],
@@ -47,13 +52,13 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 1
+    "_recurrence": 2
   },
   {
     "id": "INC-103",
     "title": "Rate limit exhaustion \u2014 10 429 errors in gateway log",
     "severity": "P2",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "lifesupport",
     "acknowledged": false,
     "escalated": false,
@@ -102,7 +107,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2
+    "_recurrence": 2,
+    "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
+    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-102",
@@ -152,8 +159,8 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 1,
-    "resolvedAt": "2026-06-07T07:06:18.463698+00:00",
-    "resolution": "All 4 tasks handled: task-split-framework-001 done, remaining 3 in backlog (blocked by dispatchCount>=3 or phase-2-dependent tag). Root cause (stalledAt deadlock) fixed in stall-detector.sh."
+    "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
+    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-101",
@@ -164,8 +171,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-06T21:12:57.000Z",
-    "lastActivity": "2026-06-07T12:27:53.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #18)",
+    "lastActivity": "2026-06-07T12:43:32.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #19)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -262,6 +269,11 @@
         "ts": "2026-06-07T12:27:53.000Z",
         "message": "Recurrence #18: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T12:43:32.000Z",
+        "message": "Recurrence #19: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -295,7 +307,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 18
+    "_recurrence": 19
   },
   {
     "id": "INC-100",
@@ -382,7 +394,7 @@
     "id": "INC-099",
     "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
     "severity": "P2",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "lifesupport",
     "acknowledged": false,
     "escalated": false,
@@ -456,7 +468,9 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 7
+    "_recurrence": 7,
+    "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
+    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-098",

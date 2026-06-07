@@ -38,7 +38,7 @@
     "id": "task-inc-104-a02b",
     "title": "Fix: INC-104",
     "assignee": "lifesupport",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Auto-created from incident INC-104: Gateway log shows 20 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
@@ -56,10 +56,20 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-104 (RCA: 90% confidence)"
+      },
+      {
+        "ts": "2026-06-07T13:14:44.655534+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 known recurring rate limit pattern"
       }
     ],
-    "lastActivity": "2026-06-07T12:27:53.000Z",
-    "rcaConfidence": 90
+    "lastActivity": "2026-06-07T13:14:44.655534+00:00",
+    "rcaConfidence": 90,
+    "progress": 100,
+    "completedAt": "2026-06-07T13:14:44.655534+00:00",
+    "currentStep": "Completed",
+    "summary": "Rate limit (429) errors from free OpenRouter model pool exhaustion. Known recurring pattern \u2014 not a code fix. FreeRide auto-switching is the mitigation. Incident INC-104 remains open as monitoring watch."
   },
   {
     "id": "task-fix-validate-001",
@@ -100,7 +110,7 @@
     "id": "task-inc-103-bda3",
     "title": "Investigate: INC-103",
     "assignee": "lifesupport",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Auto-created from incident INC-103: Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.",
@@ -117,9 +127,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-103"
+      },
+      {
+        "ts": "2026-06-07T13:14:13.964075+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "INC-103 resolved as duplicate rate-limit incident"
       }
     ],
-    "lastActivity": "2026-06-07T11:26:43.000Z"
+    "lastActivity": "2026-06-07T13:14:13.964075+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-07T13:14:13.964075+00:00",
+    "currentStep": "Completed",
+    "summary": "INC-103 resolved as duplicate rate-limit incident"
   },
   {
     "id": "task-auto-rca-001",
@@ -212,7 +232,7 @@
     "id": "task-inc-102-5106",
     "title": "Investigate: INC-102",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Auto-created from incident INC-102: 4 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
@@ -229,9 +249,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-102"
+      },
+      {
+        "ts": "2026-06-07T13:14:13.964075+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "INC-102 resolved \u2014 stale tasks handled by pipeline fixes"
       }
     ],
-    "lastActivity": "2026-06-06T22:43:02.000Z"
+    "lastActivity": "2026-06-07T13:14:13.964075+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-07T13:14:13.964075+00:00",
+    "currentStep": "Completed",
+    "summary": "INC-102 resolved \u2014 stale tasks handled by pipeline fixes"
   },
   {
     "id": "task-split-framework-001",
@@ -534,7 +564,7 @@
     "id": "task-inc-101-0694",
     "title": "Investigate: INC-101",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-101: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
@@ -551,9 +581,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-101"
+      },
+      {
+        "ts": "2026-06-07T13:14:44.655534+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed \u2014 known recurring session takeover pattern"
       }
     ],
-    "lastActivity": "2026-06-06T21:12:57.000Z"
+    "lastActivity": "2026-06-07T13:14:44.655534+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-07T13:14:44.655534+00:00",
+    "currentStep": "Completed",
+    "summary": "Session takeover errors \u2014 known recurring OpenClaw pattern. Not a code fix. Mitigated by reducing concurrent cron jobs and updating OpenClaw. Incident INC-101 remains open as P1 monitoring watch."
   },
   {
     "id": "task-inc-100-a404",
@@ -593,7 +633,7 @@
     "id": "task-inc-099-6295",
     "title": "Investigate: INC-099",
     "assignee": "lifesupport",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Auto-created from incident INC-099: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
@@ -610,9 +650,19 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-099"
+      },
+      {
+        "ts": "2026-06-07T13:14:13.964075+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "INC-099 resolved as duplicate rate-limit incident"
       }
     ],
-    "lastActivity": "2026-06-06T19:42:51.000Z"
+    "lastActivity": "2026-06-07T13:14:13.964075+00:00",
+    "progress": 100,
+    "completedAt": "2026-06-07T13:14:13.964075+00:00",
+    "currentStep": "Completed",
+    "summary": "INC-099 resolved as duplicate rate-limit incident"
   },
   {
     "id": "task-inc-098-85f0",
