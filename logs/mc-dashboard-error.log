@@ -3740,3 +3740,241 @@ df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local.
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+error: script "dev" exited with code 143
