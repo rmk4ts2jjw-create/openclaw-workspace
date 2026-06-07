@@ -207,7 +207,7 @@
     "id": "task-browser-auto-001",
     "title": "Browser automation testing",
     "assignee": "engineer",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md [auto-dispatched 2026-06-04 11:37]",
@@ -272,20 +272,21 @@
         "details": "Status changed from backlog to in_progress (pipeline proof #3)"
       }
     ],
-    "lastActivity": "2026-06-07T07:22:20.671557+00:00",
-    "currentStep": "Agent starting \u2014 reading task brief",
-    "progress": 5,
+    "lastActivity": "2026-06-07T07:40:07.915273+00:00",
+    "currentStep": "Complete",
+    "progress": 100,
     "stalledAt": null,
     "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:21.499Z",
     "startedAt": "2026-06-07T07:22:20.671557+00:00",
-    "wasStalled": false
+    "wasStalled": false,
+    "summary": "Tested OpenClaw browser automation CLI across 5 categories: navigation/content extraction, form filling, login flows, SPA vs static pages, and additional features (tabs, cookies, console, PDF, screenshots, keyboard, dropdowns, JS evaluation). All core capabilities work reliably. Documented 10 limitations with workarounds. Findings written to wiki/browser-automation-findings.md."
   },
   {
     "id": "task-inc-filters-001",
     "title": "Make Incidents page filters clickable",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change [auto-dispatched 2026-06-04 13:37]",
@@ -350,14 +351,15 @@
         "details": "Status changed from backlog to in_progress (pipeline proof #2)"
       }
     ],
-    "lastActivity": "2026-06-07T07:22:37.778245+00:00",
-    "currentStep": "Implementing clickable filter buttons on Incidents page",
-    "progress": 40,
+    "lastActivity": "2026-06-07T07:28:12.950852+00:00",
+    "currentStep": "Done",
+    "progress": 100,
     "stalledAt": null,
     "dispatchCount": 0,
     "lastUpdated": "2026-06-06T22:41:19.491Z",
     "startedAt": "2026-06-07T07:20:39.068485+00:00",
-    "wasStalled": false
+    "wasStalled": false,
+    "summary": "Added clickable filter buttons (All/Open/Critical) to the Incidents page header, matching the Tasks page filter pattern. FilterMode state controls which incidents are shown. Active filter gets highlighted styling (violet for All/Open, destructive/Critical for Critical). Count badges reflect actual totals. Empty state messages adapt to active filter. Build verified and pushed to main (commit d2cbc87)."
   },
   {
     "id": "task-inc-101-0694",
