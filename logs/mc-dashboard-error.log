@@ -3732,3 +3732,11 @@ df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local.
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found

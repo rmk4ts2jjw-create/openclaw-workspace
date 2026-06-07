@@ -248,7 +248,16 @@ PYEOF
   fi
 fi
 
-# ── 6. Incident auto-detection ──────────────────────────────────────────────
+# ── 6.5 Fix validation ────────────────────────────────────────────────────
+echo "[$TIMESTAMP] [6.5/10] Fix validation..." >> "$LOG_FILE"
+if [ -f "$WORKSPACE/scripts/fix-validator.py" ]; then
+  python3 "$WORKSPACE/scripts/fix-validator.py" >> "$LOG_FILE" 2>&1 || true
+  echo "[$TIMESTAMP] [6.5/10] Fix validation: done" >> "$LOG_FILE"
+else
+  echo "[$TIMESTAMP] [6.5/10] Fix validation: script not found, skipping" >> "$LOG_FILE"
+fi
+
+# ── 7. Incident auto-detection ──────────────────────────────────────────────
 echo "[$TIMESTAMP] [7/10] Incident auto-detection..." >> "$LOG_FILE"
 if [ -f "$WORKSPACE/scripts/auto-detect-incidents.sh" ]; then
   bash "$WORKSPACE/scripts/auto-detect-incidents.sh" >> "$LOG_FILE" 2>&1 || true
