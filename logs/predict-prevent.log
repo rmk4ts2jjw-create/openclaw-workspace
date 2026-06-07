@@ -1,3 +1,8 @@
 [2026-06-07 12:08:02 UTC]   ANOMALY [smb_retries]: 22 SMB/mount errors in recent logs (confidence: 70%)
 [2026-06-07 12:08:02 UTC]   CREATED: task-prevent-smb_retries-ef0f — Prevent: 22 SMB/mount errors in recent logs
 [2026-06-07 12:08:02 UTC] Done: 1 anomaly(s), 1 task(s) created
+[2026-06-07 13:20:44 UTC]   ANOMALY [mount]: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-07T13:20:44) (confidence: 75%)
+[2026-06-07 13:20:45 UTC]   ANOMALY [smb_retries]: 26 SMB/mount errors in recent logs (confidence: 70%)
+[2026-06-07 13:20:45 UTC]   CREATED: task-prevent-mount-3f13 — Prevent: WD MyCloud mount missing for 2 consecutive checks (
+[2026-06-07 13:20:45 UTC]   CREATED: task-prevent-smb_retries-53e5 — Prevent: 26 SMB/mount errors in recent logs
+[2026-06-07 13:20:45 UTC] Done: 2 anomaly(s), 2 task(s) created

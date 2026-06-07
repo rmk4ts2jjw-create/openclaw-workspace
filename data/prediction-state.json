@@ -4,18 +4,30 @@
       {
         "ts": "2026-06-07T12:08:01.664966+00:00",
         "mounted": false
+      },
+      {
+        "ts": "2026-06-07T13:20:44.916196+00:00",
+        "mounted": false
       }
     ],
     "memory_trend": [
       {
         "ts": "2026-06-07T12:08:02.560903+00:00",
         "value": 266801.0
+      },
+      {
+        "ts": "2026-06-07T13:20:45.638083+00:00",
+        "value": 257411.0
       }
     ],
     "smb_retries": [
       {
         "ts": "2026-06-07T12:08:02.586292+00:00",
         "count": 22
+      },
+      {
+        "ts": "2026-06-07T13:20:45.663360+00:00",
+        "count": 26
       }
     ]
   },
@@ -25,6 +37,20 @@
       "pattern": "smb_retries",
       "confidence": 70,
       "detail": "22 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-07T13:20:44.900126+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-07T13:20:44)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-07T13:20:44.900126+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "26 SMB/mount errors in recent logs",
       "status": "pending"
     }
   ],
