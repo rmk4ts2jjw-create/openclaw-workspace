@@ -1,5 +1,39 @@
 [
   {
+    "id": "task-deepseek-iter2-001",
+    "title": "Auto-Heal System \u2014 automated incident recovery",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-07T13:34:18.500798+00:00",
+    "note": "DeepSeek iteration 2/5: Auto-execute recovery actions for known incident patterns. When Fix tasks move to Done, run recovery commands (remount, restart, clear). Gradual rollout: logging \u2192 mount \u2192 cron+memory \u2192 all 10 signatures.",
+    "tags": [
+      "deepseek-review",
+      "auto-heal",
+      "recovery",
+      "automation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T13:34:18.500798+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "DeepSeek iteration 2/5 \u2014 auto-heal system"
+      },
+      {
+        "ts": "2026-06-07T13:47:23.259044+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Auto-heal system implemented \u2014 iteration 2/5 complete"
+      }
+    ],
+    "lastActivity": "2026-06-07T13:47:23.259044+00:00",
+    "currentStep": "Completed",
+    "progress": 100,
+    "completedAt": "2026-06-07T13:47:23.259044+00:00",
+    "summary": "Auto-Heal System implemented (DeepSeek iteration 2/5).\n\nCreated scripts/auto-healer.py with 10 recovery patterns:\n- mount: WD MyCloud SMB remount (low risk)\n- cron_latency: Identify slow cron jobs (medium risk)\n- memory_trend: Purge inactive memory (medium risk)\n- task_stall: Run stall detector (low risk)\n- smb_retries: SMB remount (low risk)\n- rate_limit: 60s cooldown wait (low risk)\n- session_takeover: Session file cleanup (high risk)\n- disk: Clean old logs (medium risk)\n- dashboard_down: Restart Vite dev server (medium risk)\n- existsSync: Manual code fix required (high risk)\n\nFeatures:\n- Risk-based execution: low/medium/high levels\n- Execution lock (flock) \u2014 one auto-heal at a time\n- 30s timeout per recovery command\n- Automatic rollback on verification failure\n- Audit log: data/auto-heal-audit.json (last 200 entries)\n- State tracking: data/auto-heal-state.json\n- Dry-run mode for testing\n\nIntegrated into fix-validator.py: after successful validation,\nauto-healer runs recovery commands for the linked incident.\n\nGradual rollout: --enable low \u2192 medium \u2192 all"
+  },
+  {
     "id": "task-deepseek-iter1-001",
     "title": "Predictive Incident Prevention \u2014 anomaly detection",
     "assignee": "monkey",
@@ -103,7 +137,10 @@
     "progress": 100,
     "completedAt": "2026-06-07T13:14:44.655534+00:00",
     "currentStep": "Completed",
-    "summary": "Rate limit (429) errors from free OpenRouter model pool exhaustion. Known recurring pattern \u2014 not a code fix. FreeRide auto-switching is the mitigation. Incident INC-104 remains open as monitoring watch."
+    "summary": "Rate limit (429) errors from free OpenRouter model pool exhaustion. Known recurring pattern \u2014 not a code fix. FreeRide auto-switching is the mitigation. Incident INC-104 remains open as monitoring watch.",
+    "_validated": true,
+    "_validation_result": "retry",
+    "_validation_ts": "2026-06-07T13:46:06.829200+00:00"
   },
   {
     "id": "task-fix-validate-001",

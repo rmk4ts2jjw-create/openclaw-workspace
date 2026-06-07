@@ -26,6 +26,12 @@
         "ts": "2026-06-07T12:43:32.000Z",
         "message": "Recurrence #2: Auto-detected by rate-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-07T13:46:06.882574+00:00",
+        "action": "reopened",
+        "actor": "fix-validator",
+        "details": "Fix validation failed (attempt 1/2). Output: RATE_LIMITED"
       }
     ],
     "actions": [
@@ -52,7 +58,8 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2
+    "_recurrence": 2,
+    "_validation_retries": 1
   },
   {
     "id": "INC-103",

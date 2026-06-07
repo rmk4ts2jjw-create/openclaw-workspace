@@ -23,6 +23,7 @@ WORKSPACE = "/Users/spacemonkey/.openclaw/workspace"
 TASKS_FILE = os.path.join(WORKSPACE, "data/tasks.json")
 INCIDENTS_FILE = os.path.join(WORKSPACE, "data/incidents.json")
 RCA_SCRIPT = os.path.join(WORKSPACE, "scripts/rca-engine.py")
+AUTO_HEAL_SCRIPT = os.path.join(WORKSPACE, "scripts/auto-healer.py")
 LOG_FILE = os.path.join(WORKSPACE, "logs/fix-validator.log")
 
 MAX_RETRIES = 2
@@ -132,6 +133,25 @@ def validate_fix(task: dict, incidents: dict) -> dict:
             "details": f"Fix task {task['id']} validated successfully. Output: {output}"
         }
         incident.setdefault("timeline", []).append(entry)
+
+        # Attempt auto-heal for the linked incident
+        try:
+            heal_result = subprocess.run(
+                ["python3", AUTO_HEAL_SCRIPT, "--task-id", task["id"]],
+                capture_output=True, text=True, timeout=60
+            )
+            if heal_result.returncode == 0 and heal_result.stdout.strip():
+                log(f"  Auto-heal: {heal_result.stdout.strip()[:200]}")
+                entry = {
+                    "ts": datetime.now(timezone.utc).isoformat(),
+                    "action": "auto-heal",
+                    "actor": "auto-healer",
+                    "details": heal_result.stdout.strip()[:300]
+                }
+                incident.setdefault("timeline", []).append(entry)
+        except Exception as e:
+            log(f"  Auto-heal error (non-fatal): {e}")
+
         return {
             "action": "resolved",
             "incident_id": linked_id,

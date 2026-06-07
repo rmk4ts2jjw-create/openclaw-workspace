@@ -1,0 +1,255 @@
+[
+  {
+    "ts": "2026-06-07T13:39:27.687506+00:00",
+    "task_id": "task-predict-prevent-001",
+    "task_title": "Predictive Incident Prevention \u2014 anomaly detection",
+    "dry_run": true,
+    "results": [
+      {
+        "pattern": "task_stall",
+        "label": "Stalled task reset",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:39:27.687364+00:00",
+        "status": "dry_run",
+        "would_execute": "python3 /Users/spacemonkey/.openclaw/workspace/scripts/stall-detector.sh 2>&1 || true"
+      }
+    ]
+  },
+  {
+    "ts": "2026-06-07T13:39:50.766290+00:00",
+    "task_id": "task-auto-rca-001",
+    "task_title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "dry_run": true,
+    "results": [
+      {
+        "pattern": "mount",
+        "label": "WD MyCloud SMB mount recovery",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:39:50.765832+00:00",
+        "status": "dry_run",
+        "would_execute": "bash /Users/spacemonkey/.openclaw/workspace/scripts/mount-wd-mycloud.sh 2>&1 || true"
+      },
+      {
+        "pattern": "cron_latency",
+        "status": "skipped",
+        "reason": "risk=medium not enabled"
+      },
+      {
+        "pattern": "task_stall",
+        "label": "Stalled task reset",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:39:50.766198+00:00",
+        "status": "dry_run",
+        "would_execute": "python3 /Users/spacemonkey/.openclaw/workspace/scripts/stall-detector.sh 2>&1 || true"
+      },
+      {
+        "pattern": "rate_limit",
+        "label": "Rate limit cooldown",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:39:50.766201+00:00",
+        "status": "dry_run",
+        "would_execute": "echo 'Rate limit: waiting 60s for cooldown' && sleep 60 && echo 'Cooldown complete'"
+      },
+      {
+        "pattern": "session_takeover",
+        "status": "skipped",
+        "reason": "risk=high not enabled"
+      },
+      {
+        "pattern": "dashboard_down",
+        "status": "skipped",
+        "reason": "risk=medium not enabled"
+      }
+    ]
+  },
+  {
+    "ts": "2026-06-07T13:40:17.933382+00:00",
+    "task_id": "task-auto-rca-001",
+    "task_title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "dry_run": true,
+    "results": [
+      {
+        "pattern": "mount",
+        "label": "WD MyCloud SMB mount recovery",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933092+00:00",
+        "status": "dry_run",
+        "would_execute": "bash /Users/spacemonkey/.openclaw/workspace/scripts/mount-wd-mycloud.sh 2>&1 || true"
+      },
+      {
+        "pattern": "cron_latency",
+        "label": "Cron job optimization",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933375+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw cron list --json 2>/dev/null | python3 -c \"import json,sys; data=json.load(sys.stdin); [print(f'  {c[\\\"name\\\"]}: {c.get(\\\"lastRun\\\",{}).get(\\\"durationMs\\\",0)/1000:.0f}s') for c in data if c.get('lastRun',{}).get('durationMs',0)>30000]\" 2>/dev/null || true"
+      },
+      {
+        "pattern": "task_stall",
+        "label": "Stalled task reset",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933377+00:00",
+        "status": "dry_run",
+        "would_execute": "python3 /Users/spacemonkey/.openclaw/workspace/scripts/stall-detector.sh 2>&1 || true"
+      },
+      {
+        "pattern": "rate_limit",
+        "label": "Rate limit cooldown",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933378+00:00",
+        "status": "dry_run",
+        "would_execute": "echo 'Rate limit: waiting 60s for cooldown' && sleep 60 && echo 'Cooldown complete'"
+      },
+      {
+        "pattern": "session_takeover",
+        "label": "Session file cleanup",
+        "risk_level": "high",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933379+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw sessions cleanup 2>&1 || true"
+      },
+      {
+        "pattern": "dashboard_down",
+        "label": "Mission Control restart",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:40:17.933381+00:00",
+        "status": "dry_run",
+        "would_execute": "lsof -ti:3000 2>/dev/null | xargs kill -9 2>/dev/null; cd /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard && bun run dev --host --port 3000 &>/dev/null & echo 'MC restart initiated'"
+      }
+    ]
+  },
+  {
+    "ts": "2026-06-07T13:42:00.609150+00:00",
+    "task_id": "task-auto-rca-001",
+    "task_title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "dry_run": true,
+    "results": [
+      {
+        "pattern": "mount",
+        "label": "WD MyCloud SMB mount recovery",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609038+00:00",
+        "status": "dry_run",
+        "would_execute": "bash /Users/spacemonkey/.openclaw/workspace/scripts/mount-wd-mycloud.sh 2>&1 || true"
+      },
+      {
+        "pattern": "cron_latency",
+        "label": "Cron job optimization",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609141+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw cron list --json 2>/dev/null | python3 -c \"import json,sys; data=json.load(sys.stdin); [print(f'  {c[\\\"name\\\"]}: {c.get(\\\"lastRun\\\",{}).get(\\\"durationMs\\\",0)/1000:.0f}s') for c in data if c.get('lastRun',{}).get('durationMs',0)>30000]\" 2>/dev/null || true"
+      },
+      {
+        "pattern": "task_stall",
+        "label": "Stalled task reset",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609143+00:00",
+        "status": "dry_run",
+        "would_execute": "python3 /Users/spacemonkey/.openclaw/workspace/scripts/stall-detector.sh 2>&1 || true"
+      },
+      {
+        "pattern": "rate_limit",
+        "label": "Rate limit cooldown",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609144+00:00",
+        "status": "dry_run",
+        "would_execute": "echo 'Rate limit: waiting 60s for cooldown' && sleep 60 && echo 'Cooldown complete'"
+      },
+      {
+        "pattern": "session_takeover",
+        "label": "Session file cleanup",
+        "risk_level": "high",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609146+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw sessions cleanup 2>&1 || true"
+      },
+      {
+        "pattern": "dashboard_down",
+        "label": "Mission Control restart",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:00.609148+00:00",
+        "status": "dry_run",
+        "would_execute": "lsof -ti:3000 2>/dev/null | xargs kill -9 2>/dev/null; cd /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard && bun run dev --host --port 3000 &>/dev/null & echo 'MC restart initiated'"
+      }
+    ]
+  },
+  {
+    "ts": "2026-06-07T13:42:49.602120+00:00",
+    "task_id": "task-auto-rca-001",
+    "task_title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
+    "dry_run": true,
+    "results": [
+      {
+        "pattern": "mount",
+        "label": "WD MyCloud SMB mount recovery",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.601975+00:00",
+        "status": "dry_run",
+        "would_execute": "bash /Users/spacemonkey/.openclaw/workspace/scripts/mount-wd-mycloud.sh 2>&1 || true"
+      },
+      {
+        "pattern": "cron_latency",
+        "label": "Cron job optimization",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.602112+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw cron list --json 2>/dev/null | python3 -c \"import json,sys; data=json.load(sys.stdin); [print(f'  {c[\\\"name\\\"]}: {c.get(\\\"lastRun\\\",{}).get(\\\"durationMs\\\",0)/1000:.0f}s') for c in data if c.get('lastRun',{}).get('durationMs',0)>30000]\" 2>/dev/null || true"
+      },
+      {
+        "pattern": "task_stall",
+        "label": "Stalled task reset",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.602115+00:00",
+        "status": "dry_run",
+        "would_execute": "python3 /Users/spacemonkey/.openclaw/workspace/scripts/stall-detector.sh 2>&1 || true"
+      },
+      {
+        "pattern": "rate_limit",
+        "label": "Rate limit cooldown",
+        "risk_level": "low",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.602116+00:00",
+        "status": "dry_run",
+        "would_execute": "echo 'Rate limit: waiting 60s for cooldown' && sleep 60 && echo 'Cooldown complete'"
+      },
+      {
+        "pattern": "session_takeover",
+        "label": "Session file cleanup",
+        "risk_level": "high",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.602117+00:00",
+        "status": "dry_run",
+        "would_execute": "openclaw sessions cleanup 2>&1 || true"
+      },
+      {
+        "pattern": "dashboard_down",
+        "label": "Mission Control restart",
+        "risk_level": "medium",
+        "dry_run": true,
+        "ts": "2026-06-07T13:42:49.602118+00:00",
+        "status": "dry_run",
+        "would_execute": "lsof -ti:3000 2>/dev/null | xargs kill -9 2>/dev/null; cd /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard && bun run dev --host --port 3000 &>/dev/null & echo 'MC restart initiated'"
+      }
+    ]
+  }
+]
