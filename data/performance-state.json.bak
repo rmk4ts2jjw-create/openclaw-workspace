@@ -1,0 +1,46 @@
+{
+  "agents": {
+    "monkey": {
+      "total_tasks": 20,
+      "done": 19,
+      "failed": 0,
+      "in_progress": 1,
+      "avg_task_hours": 0.8,
+      "failure_rate": 0.0,
+      "success_rate": 0.95,
+      "analyzed_at": "2026-06-07T17:57:34.781707+00:00"
+    },
+    "lifesupport": {
+      "total_tasks": 1,
+      "done": 1,
+      "failed": 0,
+      "in_progress": 0,
+      "avg_task_hours": 44.8,
+      "failure_rate": 0.0,
+      "success_rate": 1.0,
+      "analyzed_at": "2026-06-07T17:57:34.781707+00:00"
+    },
+    "engineer": {
+      "total_tasks": 1,
+      "done": 1,
+      "failed": 0,
+      "in_progress": 0,
+      "avg_task_hours": 44.8,
+      "failure_rate": 0.0,
+      "success_rate": 1.0,
+      "analyzed_at": "2026-06-07T17:57:34.781707+00:00"
+    },
+    "archivist": {
+      "total_tasks": 0,
+      "done": 0,
+      "failed": 0,
+      "in_progress": 0,
+      "avg_task_hours": 0,
+      "failure_rate": 0,
+      "success_rate": 0,
+      "analyzed_at": "2026-06-07T17:57:34.781707+00:00"
+    }
+  },
+  "tune_tasks": [],
+  "applied_tunes": []
+}

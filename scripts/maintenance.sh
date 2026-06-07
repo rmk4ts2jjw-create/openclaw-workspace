@@ -257,6 +257,24 @@ else
   echo "[$TIMESTAMP] [6.5/10] Fix validation: script not found, skipping" >> "$LOG_FILE"
 fi
 
+# ── 6.6 Predictive prevention ─────────────────────────────────────────────
+echo "[$TIMESTAMP] [6.6/10] Predictive prevention..." >> "$LOG_FILE"
+if [ -f "$WORKSPACE/scripts/predict-prevent.py" ]; then
+  python3 "$WORKSPACE/scripts/predict-prevent.py" >> "$LOG_FILE" 2>&1 || true
+  echo "[$TIMESTAMP] [6.6/10] Predictive prevention: done" >> "$LOG_FILE"
+else
+  echo "[$TIMESTAMP] [6.6/10] Predictive prevention: script not found, skipping" >> "$LOG_FILE"
+fi
+
+# ── 6.7 Performance tuning ─────────────────────────────────────────────────
+echo "[$TIMESTAMP] [6.7/10] Performance tuning..." >> "$LOG_FILE"
+if [ -f "$WORKSPACE/scripts/performance-tuner.py" ]; then
+  python3 "$WORKSPACE/scripts/performance-tuner.py" suggest >> "$LOG_FILE" 2>&1 || true
+  echo "[$TIMESTAMP] [6.7/10] Performance tuning: done" >> "$LOG_FILE"
+else
+  echo "[$TIMESTAMP] [6.7/10] Performance tuning: script not found, skipping" >> "$LOG_FILE"
+fi
+
 # ── 7. Incident auto-detection ──────────────────────────────────────────────
 echo "[$TIMESTAMP] [7/10] Incident auto-detection..." >> "$LOG_FILE"
 if [ -f "$WORKSPACE/scripts/auto-detect-incidents.sh" ]; then

@@ -144,3 +144,20 @@
 3:50:46 PM [vite] (ssr) page reload src/components/Dashboard.tsx
 3:52:00 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
 3:52:00 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:35:40 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+4:35:40 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:35:40 PM [vite] (ssr) program reload
+4:36:30 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component
+4:36:30 PM [vite] (ssr) page reload src/routes/index.tsx
+[tasks loader] Loaded 279 tasks
+[tasks loader] Loaded 279 tasks
+[tasks loader] Loaded 279 tasks
+6:59:53 PM [vite] (client) hmr update /src/styles.css?direct, /src/styles.css, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component
+6:59:53 PM [vite] (ssr) page reload src/routes/index.tsx
+6:59:53 PM [vite] (ssr) program reload
+7:00:10 PM [vite] (client) hmr update /src/styles.css?direct, /src/styles.css, /src/components/Dashboard.tsx
+7:00:10 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+7:00:21 PM [vite] (client) hmr update /src/styles.css?direct, /src/styles.css, /src/components/Dashboard.tsx
+7:00:21 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+7:00:50 PM [vite] (client) hmr update /src/styles.css?direct, /src/styles.css, /src/components/Dashboard.tsx
+7:00:50 PM [vite] (ssr) page reload src/components/Dashboard.tsx
