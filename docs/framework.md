@@ -112,3 +112,12 @@ These are the mistakes that have happened before and must never happen again:
   - Auto-disable after 3 consecutive failures
   - Manual-only mode during dry spells (`freeride auto` on demand)
 - **Status:** Watcher unloaded on 2026-05-22 due to persistent pool exhaustion. Re-enable manually when pool recovers.
+
+### `node:fs` Barrel Export Leak — Server-Only Modules Crash Client Bundle
+- Any file that imports `node:fs`, `node:path`, or other Node.js built-ins **must NOT** be re-exported through `src/lib/server-data/index.ts`
+- When re-exported through the barrel, Vite's bundler resolves the entire module chain for any component that imports from `@/lib/server-data`, pulling server-only code into the client bundle
+- **Symptom:** `Importing binding name 'X' is not found` — the bundler can't resolve Node.js built-ins in the browser
+- **Affected files:** `predictions.ts`, `performance.ts`, `helpers.ts` (historical)
+- **Fix:** Import directly from the module file (e.g. `@/lib/server-data/predictions`), never through the barrel
+- **Same pattern as:** helpers.ts leak from commit 7e5b788 — this is the same bug recurring with new server-data modules
+- **Rule:** Before adding any new file to the barrel export, check that it has zero Node.js built-in imports
