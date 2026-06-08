@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-06-07T22:00:00Z",
+  "lastUpdated": "2026-06-08T09:00:00Z",
   "records": [
     {
       "id": "sm-001",
@@ -13,8 +13,16 @@
       "author": "monkey",
       "status": "current",
       "supersedes": null,
-      "tags": ["scheduling", "macos", "launchagent", "cron", "infrastructure"],
-      "relatedIds": [],
+      "tags": [
+        "scheduling",
+        "macos",
+        "launchagent",
+        "cron",
+        "infrastructure"
+      ],
+      "relatedIds": [
+        "sm-005"
+      ],
       "source": "manual"
     },
     {
@@ -25,10 +33,23 @@
       "problem": "Clicking filter buttons (Operational, Feature, Open, Critical) did nothing. No error, no visual feedback.",
       "rootCause": "Filter state used useState initialized from default. If React hydration failed silently (stale bundle, HMR issue), onClick handlers never attached and state updates were no-ops.",
       "fix": "Converted filter buttons from <button onClick={setFilterMode}> to <Link search={{ view: mode }}>. Filter state derived from URL via useSearch(). Works without JavaScript hydration.",
-      "filesChanged": ["src/routes/tasks.tsx", "src/routes/incidents.tsx"],
+      "filesChanged": [
+        "src/routes/tasks.tsx",
+        "src/routes/incidents.tsx"
+      ],
       "neverDoThis": "Never rely on React useState + onClick for critical navigation/filter UI. Use URL params as source of truth.",
-      "tags": ["react", "hydration", "filters", "url-params", "tanstack-router", "ssr"],
-      "relatedIds": [],
+      "tags": [
+        "react",
+        "hydration",
+        "filters",
+        "url-params",
+        "tanstack-router",
+        "ssr"
+      ],
+      "relatedIds": [
+        "sm-003",
+        "sm-006"
+      ],
       "source": "incident",
       "date": "2026-06-07",
       "author": "monkey"
@@ -41,10 +62,21 @@
       "problem": "Every page on Mission Control returned HTTP 500. No specific error visible to the user.",
       "rootCause": "predictions.ts and performance.ts use static `import { readFileSync } from 'node:fs'` at top level. When re-exported through the barrel (index.ts), Vite's bundler resolved the entire module chain for client components, pulling server-only code into the client bundle.",
       "Fix": "Never barrel-export files with Node.js built-in imports. Import directly from the module file (e.g. @/lib/server-data/predictions).",
-      "filesChanged": ["src/lib/server-data/index.ts"],
+      "filesChanged": [
+        "src/lib/server-data/index.ts"
+      ],
       "neverDoThis": "Before adding any file to barrel export, check for Node.js built-in imports. If present, import directly instead.",
-      "tags": ["node:fs", "barrel-export", "ssr", "vite", "client-bundle", "server-data"],
-      "relatedIds": [],
+      "tags": [
+        "node:fs",
+        "barrel-export",
+        "ssr",
+        "vite",
+        "client-bundle",
+        "server-data"
+      ],
+      "relatedIds": [
+        "sm-004"
+      ],
       "source": "incident",
       "date": "2026-06-07",
       "author": "monkey"
@@ -55,12 +87,22 @@
       "title": "Corrupted file write causes 500 on all pages",
       "summary": "A corrupted performance.ts (encoding issue during write) broke every page on the site.",
       "problem": "All pages returned HTTP 500 after a file edit. The Vite dev server showed PARSE_ERROR with garbled characters.",
-      "rootCause": "File write introduced encoding corruption (√ character at import statement). The file was syntactically invalid JavaScript.",
+      "rootCause": "File write introduced encoding corruption (\u221a character at import statement). The file was syntactically invalid JavaScript.",
       "fix": "Rewrote the file with correct encoding. Verified with head command before restarting.",
-      "filesChanged": ["src/lib/server-data/performance.ts"],
+      "filesChanged": [
+        "src/lib/server-data/performance.ts"
+      ],
       "neverDoThis": "Always verify file integrity after writes (head -5, grep for expected patterns). A single corrupted server-data file takes down the entire site.",
-      "tags": ["file-corruption", "encoding", "server-data", "vite", "debugging"],
-      "relatedIds": ["sm-003"],
+      "tags": [
+        "file-corruption",
+        "encoding",
+        "server-data",
+        "vite",
+        "debugging"
+      ],
+      "relatedIds": [
+        "sm-003"
+      ],
       "source": "incident",
       "date": "2026-06-07",
       "author": "monkey"
@@ -72,13 +114,21 @@
       "summary": "The freeride-watcher LaunchAgent was disabled because it was burning rate limit quota without providing value.",
       "decision": "FreeRide watcher disabled. Models checked manually on demand.",
       "reason": "When the free model pool is exhausted, each poll generates 429 errors. Exponential backoff was added but the watcher was still counterproductive during dry spells.",
-      "alternativeConsidered": "Keep running with exponential backoff — rejected because it still burns quota.",
+      "alternativeConsidered": "Keep running with exponential backoff \u2014 rejected because it still burns quota.",
       "decisionOwner": "monkey",
       "date": "2026-05-22",
       "reviewDate": "2026-07-01",
       "status": "active",
-      "tags": ["freeride", "rate-limit", "openrouter", "cost", "automation"],
-      "relatedIds": [],
+      "tags": [
+        "freeride",
+        "rate-limit",
+        "openrouter",
+        "cost",
+        "automation"
+      ],
+      "relatedIds": [
+        "sm-001"
+      ],
       "source": "manual"
     },
     {
@@ -89,8 +139,16 @@
       "rule": "Never use Date.now(), new Date(), or any time-dependent function directly in SSR component render paths. Use UTC timestamps from data, or render time-dependent content only on the client.",
       "reason": "SSR renders on the server at one time, client hydrates at a different time. Mismatched timestamps cause React hydration errors.",
       "examples": "Use toLocaleTimeString in useEffect or client-only components. Use UTC dates from data files for SSR.",
-      "tags": ["ssr", "hydration", "dates", "react", "tanstack"],
-      "relatedIds": [],
+      "tags": [
+        "ssr",
+        "hydration",
+        "dates",
+        "react",
+        "tanstack"
+      ],
+      "relatedIds": [
+        "sm-002"
+      ],
       "source": "lesson-learned",
       "date": "2026-06-04",
       "author": "monkey"
@@ -102,8 +160,15 @@
       "summary": "Every code change should be committed individually with a clear message.",
       "rule": "After any meaningful change (routes, components, styles, assets) run git status, commit with a clear message, and push to GitHub. This is enforced before starting new work.",
       "reason": "Atomic commits make it easy to identify what changed, roll back specific changes, and maintain a clear history.",
-      "tags": ["git", "workflow", "commits", "best-practice"],
-      "relatedIds": [],
+      "tags": [
+        "git",
+        "workflow",
+        "commits",
+        "best-practice"
+      ],
+      "relatedIds": [
+        "sm-004"
+      ],
       "source": "manual",
       "date": "2026-05-15",
       "author": "monkey"
@@ -120,8 +185,16 @@
       "priority": "P2",
       "reviewDate": "2026-06-14",
       "status": "open",
-      "tags": ["backup", "wd-mycloud", "smb", "mount", "storage"],
-      "relatedIds": [],
+      "tags": [
+        "backup",
+        "wd-mycloud",
+        "smb",
+        "mount",
+        "storage"
+      ],
+      "relatedIds": [
+        "sm-001"
+      ],
       "source": "manual"
     }
   ]
