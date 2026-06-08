@@ -1,5 +1,8 @@
 [
   {
+    "test": true
+  },
+  {
     "id": "task-deepseek-iter5-001",
     "title": "Autonomous Mission Planning \u2014 self-directing improvement goals",
     "assignee": "monkey",
@@ -11050,5 +11053,43 @@
     "completedAt": "2026-06-03T17:20:22.125044+00:00",
     "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
+  },
+  {
+    "id": "task-phase6-station-memory",
+    "title": "Station Memory \u2014 compounding knowledge system",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P2",
+    "ts": "2026-06-07T21:14:23.946467+00:00",
+    "note": "Phase 6 feature (post-frenzy). Build a compounding knowledge system for the station:\n- Auto-extract insights from resolved incidents, completed tasks, and agent conversations\n- Entity tracking: people, projects, services, incidents\n- Concept linking: relate events to known patterns\n- Searchable memory with full-text search\n- Memory decay: stale entries fade unless reinforced\n- Integration with Agent Office: agents can \"remember\" past events\n- Wiki-style pages that compound over time\n\nThis is the Knowledge System from the strategic roadmap. Foundation must be stable first.",
+    "tags": [
+      "phase-6",
+      "knowledge",
+      "memory",
+      "wiki",
+      "compounding",
+      "roadmap"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-07T21:14:23.946467+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 6 backlog \u2014 Station Memory knowledge system"
+      },
+      {
+        "ts": "2026-06-08T01:13:24.543572+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Station Memory complete \u2014 /station-memory deployed with 8 seed records"
+      }
+    ],
+    "currentStep": null,
+    "progress": 100,
+    "lastActivity": "2026-06-08T01:13:24.543572+00:00",
+    "dispatchCount": 0,
+    "wasStalled": false,
+    "completedAt": "2026-06-08T01:13:24.543572+00:00",
+    "summary": "Station Memory subsystem fully implemented and deployed. New /station-memory route with 8 record types (architecture-decision, lesson-learned, incident-knowledge, completed-task-summary, operational-decision, framework-rule, runbook, known-issue). Features: category tabs with counts, full-text search, expandable detail cards with type-specific rendering, related records linking, tag navigation, URL search params. Seed data: 8 records from integration sessions. Extended /api/search to include station-memory records. Added nav entry to KNOWLEDGE sidebar. Built on existing patterns (JSON storage, server-data modules, route loaders). All pages verified 200."
   }
 ]
