@@ -129,7 +129,8 @@
       "relatedIds": [
         "sm-001"
       ],
-      "source": "manual"
+      "source": "manual",
+      "author": "monkey"
     },
     {
       "id": "sm-006",
@@ -195,7 +196,8 @@
       "relatedIds": [
         "sm-001"
       ],
-      "source": "manual"
+      "source": "manual",
+      "author": "monkey"
     }
   ]
 }
