@@ -1,6 +1,19 @@
 # MEMORY.md — Long-Term Memory
 
-_Curated memory. Distilled from daily logs and the wiki. Only the essentials._
+_Curated memory. Distilled from daily logs, wiki, and Station Memory. Only the essentials._
+
+## Station Memory (SQLite Knowledge Store)
+
+**Any agent session** can query institutional knowledge without conversation history:
+```bash
+cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "query"
+```
+
+- **DB:** `data/station-memory.db` (SQLite + FTS5)
+- **8 knowledge types:** architecture-decision, lesson-learned, incident-knowledge, completed-task-summary, operational-decision, framework-rule, runbook, known-issue
+- **Auto-ingestion:** tasks → knowledge on completion, incidents → knowledge on resolution
+- **Always query before starting work:** "Have we solved this before? Is there a framework rule?"
+- **Tool docs:** `TOOLS.md` → Station Memory section
 
 ## The Wiki
 

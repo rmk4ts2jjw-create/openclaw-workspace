@@ -37,6 +37,40 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Station Memory
+
+Shared SQLite-backed knowledge store. Any agent session can query it — no conversation history needed.
+
+**Tool:** `node scripts/station-memory-tool.cjs` (in `mission-control-dashboard/`)
+
+```bash
+# Search (FTS5 full-text + LIKE fallback)
+node scripts/station-memory-tool.cjs search "LaunchAgent" --limit 5
+
+# Get specific record
+node scripts/station-memory-tool.cjs get sm-001
+
+# Get related records (bidirectional)
+node scripts/station-memory-tool.cjs related sm-002
+
+# List by type
+node scripts/station-memory-tool.cjs list --type lesson-learned
+
+# Stats
+node scripts/station-memory-tool.cjs stats
+```
+
+**Before starting any significant work, query Station Memory:**
+- "Have we solved this before?"
+- "Has this failed before?"
+- "Is there an architecture decision?"
+- "Is there a framework rule?"
+
+**DB location:** `data/station-memory.db`
+**Auto-ingestion:** Tasks → knowledge on completion, Incidents → knowledge on resolution
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
 
 ## Related
