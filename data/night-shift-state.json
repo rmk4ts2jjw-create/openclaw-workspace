@@ -1,15 +1,18 @@
 {
   "active": false,
-  "date": "2026-06-07",
-  "startedAt": null,
-  "tasksCompleted": [],
-  "tasksAttempted": 0,
+  "date": "2026-06-09",
+  "startedAt": "2026-06-09T01:00:00+01:00",
+  "endedAt": "2026-06-09T01:05:00+01:00",
+  "tasksCompleted": [
+    "task-INC-104-act-732910",
+    "task-INC-104-act-929626"
+  ],
+  "tasksAttempted": 2,
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "No dispatchable tasks — all 4 backlog tasks have stalledAt set or dispatchCount >= 3.",
+  "stoppedReason": "All eligible tasks completed. 2/2 done.",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-07 — 01:00 check: 4 backlog tasks, 0 eligible. All have stalledAt or dispatchCount >= 3. No 429 errors detected.",
-  "endedAt": null,
-  "lastHeartbeatCheck": "2026-06-07T00:00:00.000000+00:00"
+  "note": "Night Shift 2026-06-09 — completed. Both INC-104 dispatch tasks processed.",
+  "lastHeartbeatCheck": "2026-06-09T01:05:00+01:00"
 }

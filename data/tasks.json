@@ -1,6 +1,184 @@
 [
   {
-    "test": true
+    "id": "task-INC-104-act-929626",
+    "title": "[Dispatch] Verify resolution",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "just now",
+    "note": "Source: INC-104 \u2014 Rate limit exhaustion \u2014 20 429 errors in gateway log\nConfirm the fix resolves the incident",
+    "incidentSource": "INC-104",
+    "currentStep": "Completed",
+    "progress": 100,
+    "stalledAt": null,
+    "lastActivity": "2026-06-09T01:02:57.809682+01:00",
+    "dispatchCount": 1,
+    "history": [
+      {
+        "ts": "2026-06-08T19:15:26.192660+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 99999 min with no activity (threshold: 30 min). Was: None"
+      },
+      {
+        "ts": "2026-06-08T19:45:28.019926+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 30 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-09T01:02:25.506593+01:00",
+        "action": "started",
+        "actor": "night-shift",
+        "details": "Night Shift dispatch \u2014 verifying INC-104 rate limit resolution"
+      },
+      {
+        "ts": "2026-06-09T01:02:57.809682+01:00",
+        "action": "step_update",
+        "actor": "night-shift",
+        "details": "Verified: last 429s were 2026-06-08 19:10 UTC. Fallback succeeded. No 429s today."
+      },
+      {
+        "ts": "2026-06-09T01:02:57.809682+01:00",
+        "action": "completed",
+        "actor": "night-shift",
+        "details": "Rate limit verification passed \u2014 system healthy, FreeRide fallback working."
+      }
+    ],
+    "startedAt": "2026-06-09T01:02:25.506593+01:00",
+    "completedAt": "2026-06-09T01:02:57.809682+01:00",
+    "summary": "Night Shift verification complete. INC-104 rate limit situation is healthy: last 429 errors were 2026-06-08 19:10-19:16 UTC (yesterday evening). Model fallback to openrouter/free succeeded both times. No 429 errors today (June 9). Gateway running healthy (pid 57386, active, connectivity ok). FreeRide auto-switching mitigation is working."
+  },
+  {
+    "id": "task-INC-104-act-732910",
+    "title": "[Dispatch] Apply fix",
+    "assignee": "lifesupport",
+    "status": "done",
+    "ts": "just now",
+    "note": "Source: INC-104 \u2014 Rate limit exhaustion \u2014 20 429 errors in gateway log\nImplement a fix for the identified issue",
+    "incidentSource": "INC-104",
+    "currentStep": "Completed",
+    "progress": 100,
+    "stalledAt": null,
+    "lastActivity": "2026-06-09T01:02:07.335801+01:00",
+    "dispatchCount": 1,
+    "history": [
+      {
+        "ts": "2026-06-08T19:15:26.192660+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 99999 min with no activity (threshold: 30 min). Was: None"
+      },
+      {
+        "ts": "2026-06-08T19:45:28.019926+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 30 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-09T01:00:00+01:00",
+        "action": "started",
+        "actor": "night-shift",
+        "details": "Night Shift dispatch \u2014 evaluating if fix is still needed (fix: INC-104 already done)"
+      },
+      {
+        "ts": "2026-06-09T01:02:07.335801+01:00",
+        "action": "completed",
+        "actor": "night-shift",
+        "details": "Redundant dispatch \u2014 fix: INC-104 already applied and verified. Closing as duplicate."
+      }
+    ],
+    "startedAt": "2026-06-09T01:00:00+01:00",
+    "completedAt": "2026-06-09T01:02:07.335801+01:00",
+    "summary": "Night Shift evaluation: task is redundant. Fix: INC-104 is already Done (summary: rate limit exhaustion known pattern, FreeRide auto-switching is the mitigation). No new fix needed."
+  },
+  {
+    "id": "task-be03dff8",
+    "title": "Runbook Evolution",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with dependency: depends on Phase 2 Runbooks completion"
+      },
+      {
+        "ts": "2026-06-03T23:13:09.095524+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 230min stale with no progress. Task is blocked on Phase 2 Runbooks which do not exist yet."
+      },
+      {
+        "ts": "2026-06-03T23:43:01.006512+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 30min stale, ghost dispatch. Task is blocked on Phase 2 Runbooks."
+      },
+      {
+        "ts": "2026-06-06T22:41:22.625Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-06T23:13:04.038965+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 32 min with no activity (threshold: 30 min). Was: Agent starting\u2026"
+      },
+      {
+        "ts": "2026-06-07T06:36:10.656034+00:00",
+        "action": "stalled_cleared",
+        "actor": "monkey",
+        "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
+      },
+      {
+        "ts": "2026-06-08T18:45:49.739Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-08T19:43:19.508913+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog: 57min stale, agent never started (currentStep: Agent starting\u2026, progress: 5%)"
+      },
+      {
+        "ts": "2026-06-08T20:15:30.378707+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 32 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "currentStep": "Agent starting\u2026",
+    "lastActivity": "2026-06-08T19:43:19.508913+00:00",
+    "progress": 5,
+    "tags": [
+      "runbook-evolution",
+      "phase-2-dependent"
+    ],
+    "dispatchCount": 5,
+    "wasStalled": true,
+    "stalledAt": null,
+    "lastUpdated": "2026-06-08T18:45:49.739Z",
+    "startedAt": "2026-06-08T18:45:49.739Z"
   },
   {
     "id": "task-deepseek-iter5-001",
@@ -509,77 +687,6 @@
     "wasStalled": true,
     "completedAt": "2026-06-07T07:00:43.522203+00:00",
     "summary": "FRAMEWORK.md split into docs/ folder structure.\n\nFRAMEWORK.md reduced from ~90 to 24 lines \u2014 now a lean index with documentation links and related files.\n\nFiles changed:\n- FRAMEWORK.md \u2014 trimmed to index only (purpose, doc index, related files)\n- docs/workflow.md \u2014 added four-repository structure (repos, workflow, local dirs, SSH config, rules) on top of existing prod/dev details\n- docs/stack.md \u2014 added SSH configuration section with cross-references to workflow.md  \n- docs/sources.md \u2014 expanded from thin 28-line stub to comprehensive 145-line SOURCES.md mirror (all tiers, compatibility matrix, project lookup, agent rules)\n\nNo broken references found. Changes committed locally (5256675). Push to origin failed \u2014 spacemonkey-home SSH key (id_ed25519_spacemonkey) not present on this machine; only id_ed25519_rmk exists. Commit is preserved locally."
-  },
-  {
-    "id": "task-be03dff8",
-    "title": "Runbook Evolution",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P3",
-    "ts": "just now",
-    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
-    "history": [
-      {
-        "ts": "2026-06-02T14:43:59.301126+00:00",
-        "action": "created",
-        "actor": "monkey",
-        "details": "Backlog planning \u2014 created from strategic roadmap"
-      },
-      {
-        "ts": "2026-06-03T19:23:12.737604+00:00",
-        "action": "reassigned",
-        "actor": "monkey",
-        "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
-      },
-      {
-        "ts": "2026-06-03T21:26:12.356009+00:00",
-        "action": "reassigned",
-        "actor": "monkey",
-        "details": "Moved back to Backlog with dependency: depends on Phase 2 Runbooks completion"
-      },
-      {
-        "ts": "2026-06-03T23:13:09.095524+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 230min stale with no progress. Task is blocked on Phase 2 Runbooks which do not exist yet."
-      },
-      {
-        "ts": "2026-06-03T23:43:01.006512+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 30min stale, ghost dispatch. Task is blocked on Phase 2 Runbooks."
-      },
-      {
-        "ts": "2026-06-06T22:41:22.625Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-06T23:13:04.038965+00:00",
-        "action": "stalled_reset",
-        "actor": "stall-detector",
-        "details": "Auto-reset by stall detector \u2014 in_progress for 32 min with no activity (threshold: 30 min). Was: Agent starting\u2026"
-      },
-      {
-        "ts": "2026-06-07T06:36:10.656034+00:00",
-        "action": "stalled_cleared",
-        "actor": "monkey",
-        "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
-      }
-    ],
-    "currentStep": null,
-    "lastActivity": "2026-06-06T23:13:04.038965+00:00",
-    "progress": 0,
-    "tags": [
-      "runbook-evolution",
-      "phase-2-dependent"
-    ],
-    "dispatchCount": 4,
-    "wasStalled": true,
-    "stalledAt": null,
-    "lastUpdated": "2026-06-06T22:41:22.625Z",
-    "startedAt": "2026-06-06T22:41:22.625Z"
   },
   {
     "id": "task-browser-auto-001",
@@ -1201,7 +1308,8 @@
     "startedAt": "2026-05-18T23:58:00.000Z",
     "progress": 100,
     "completedAt": "2026-05-19T08:05:19.316Z",
-    "summary": "Completed by archivist. Last action: started \u2014 Status changed from done to in_progress"
+    "summary": "Completed by archivist. Last action: started \u2014 Status changed from done to in_progress",
+    "stalledAt": "2026-06-02T11:48:33.545348+00:00"
   },
   {
     "id": "err-err-7e2c02bf-ae83-44be-8012-adfcdd42f42f",
