@@ -1,3 +1,6 @@
 .aider*
 mission-control-dashboard-dev/
 mission-control-dashboard/
+data/station-memory.db
+data/station-memory.db-shm
+data/station-memory.db-wal
