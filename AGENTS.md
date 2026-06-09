@@ -45,6 +45,7 @@ You wake up fresh each session. These files are your continuity:
 
 - **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
 - **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
+- **Station Memory:** SQLite knowledge base at `mission-control-dashboard/data/station-memory.db` — institutional knowledge, lessons, decisions
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
 
@@ -66,6 +67,32 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
+
+### 🔍 MANDATORY: Check Memory Before Starting Any Task
+
+**Before starting ANY work, you MUST check institutional memory. This is non-negotiable.**
+
+#### Step 1: Search Station Memory
+
+```bash
+cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "[task topic]"
+```
+
+Search for relevant lessons, framework rules, past decisions, and known issues. Read the full records returned — they contain root causes, fixes, and "never do this again" warnings that will save you from repeating mistakes.
+
+#### Step 2: Check Recent Daily Log
+
+```bash
+cat ~/.openclaw/workspace/memory/$(date +%Y-%m-%d).md 2>/dev/null || cat ~/.openclaw/workspace/memory/$(date -v-1d +%Y-%m-%d).md 2>/dev/null || echo "No recent daily log"
+```
+
+Read the most recent daily log for overnight context, recent decisions, or work in progress.
+
+#### Step 3: Use What You Found
+
+Let the results inform your approach. If a lesson says "never do X," don't do X. If a framework rule says "always use Y pattern," use Y. If yesterday's log says "middleware broken, WIP," don't start reworking middleware without checking current state.
+
+**Skip these checks = repeat past mistakes = waste tokens. Do it every time.**
 
 ## Red Lines
 
