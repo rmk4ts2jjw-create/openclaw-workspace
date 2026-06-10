@@ -84,7 +84,7 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-09:** Removed orphaned /station-memory route + ingest API (819 lines)
 - **2026-06-09:** Removed work-dispatcher.sh + error-spike-watchdog.sh (dead code)
 - **2026-06-09:** Added getWikiStats — MC /memory page shows live wiki stats
-- **2026-06-09:** Fixed Knowledge Base tab — node:sqlite replaces better-sqlite3 for SSR
+- **2026-06-09:** Fixed Knowledge Base tab — node:sqlite replaces better-sqlite3 for SSR compat
 - **2026-06-09:** Updated AGENTS.md — Workboard + Memory Wiki as primary tools
 
 ## Cron Jobs
