@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-07T05:00:00+00:00"
+    "gateway": "2026-06-09T23:00:00+00:00"
   },
-  "lastHeartbeat": "2026-06-07T05:00:00+00:00",
-  "notes": "2026-06-07 05:00 BST — Heartbeat. 0 in_progress, 4 backlog tasks (all non-dispatchable: stalled or blocked). 9 triage tasks (incident-linked). 6 open incidents (INC-102, INC-101, INC-100, INC-099, INC-098, INC-085). Circuit breakers clean. No action needed. Quiet hours."
+  "lastHeartbeat": "2026-06-10T05:00:00+00:00",
+  "notes": "2026-06-10 05:00 BST — Heartbeat. System healthy: load 1.64, disk 56%, RAM ~16GB. Gateway running (pid 56837), MC dashboard running (pid 49593, vite :3000). All tasks done or in backlog. No in_progress tasks. No action needed."
 }

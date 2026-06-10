@@ -12,3 +12,450 @@ df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local.
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+[tasks loader] Loaded 281 tasks
+8:34:01 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[tasks loader] Loaded 281 tasks
+[tasks loader] Loaded 281 tasks
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./DE5D0DE8-95EA-4D43-B25D-6AD88293637F/TimeMachineBackup: Permission denied
+[api/tasks/add] Added task: undefined
+error: script "dev" was terminated by signal SIGKILL (Forced quit)
+Port 3000 is in use, trying another one...
+8:43:13 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 602 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.68.64:3001/
+7:36:00 AM [vite] (ssr) connected.
+7:36:52 AM [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.0.13  ready in 493 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:37:03 AM [vite] (ssr) connected.
+7:37:43 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 624 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:37:55 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 636 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 407 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:39:12 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 425 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 401 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:41:23 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 638 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 612 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:42:25 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 637 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 401 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 411 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:43:52 AM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+8:03:54 AM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[api/save-tasks] Merged 284 client + 0 disk-only = 284 total
+[api/save-tasks] Merged 284 client + 0 disk-only = 284 total
+8:15:00 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:15:00 AM [vite] (ssr) page reload src/routes/memory.tsx
+8:15:00 AM [vite] (ssr) program reload
+8:15:23 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:15:23 AM [vite] (ssr) page reload src/routes/memory.tsx
+8:15:23 AM [vite] (ssr) program reload
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+8:16:29 AM [vite] (client) hmr update /src/styles.css?direct, /src/components/AppSidebar.tsx
+8:16:29 AM [vite] (ssr) page reload src/components/AppSidebar.tsx
+8:16:29 AM [vite] (ssr) program reload
+8:17:29 AM [vite] (client) hmr update /src/styles.css?direct, /src/components/IncidentDetailsDrawer.tsx
+8:18:05 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/tasks.tsx, /src/routes/tasks.tsx?tsr-split=component, /src/routes/tasks.tsx?tsr-split=errorComponent
+8:18:05 AM [vite] (ssr) page reload src/routes/tasks.tsx
+8:18:05 AM [vite] (ssr) program reload
+8:19:05 AM [vite] (client) hmr update /src/styles.css?direct
+8:19:05 AM [vite] (ssr) hmr update /src/lib/server-data/agent-status.ts?tss-serverfn-split, /src/lib/server-data/tasks.ts?tss-serverfn-split, /src/lib/server-data/incidents.ts?tss-serverfn-split, /src/lib/server-data/system.ts?tss-serverfn-split, /src/lib/server-data/activity.ts?tss-serverfn-split, /src/lib/server-data/openclaw-status.ts?tss-serverfn-split, /src/lib/server-data/memory.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/agent-status.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/tasks.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/incidents.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/system.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/activity.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/openclaw-status.ts?tss-serverfn-split
+8:19:05 AM [vite] (ssr) hot updated: /src/lib/server-data/memory.ts?tss-serverfn-split
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 284 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 284 tasks
+[tasks loader] Loaded 284 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+3:49:20 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/station-memory.tsx, /src/routes/station-memory.tsx?tsr-split=component, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+3:49:20 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+3:49:20 PM [vite] (ssr) program reload
+3:49:50 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/station-memory.tsx, /src/routes/station-memory.tsx?tsr-split=component, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+3:49:50 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+3:49:50 PM [vite] (ssr) program reload
+3:52:31 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/station-memory.tsx, /src/routes/station-memory.tsx?tsr-split=component, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+3:52:31 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+3:52:31 PM [vite] (ssr) program reload
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 284 tasks
+[tasks loader] Loaded 284 tasks
+7:02:41 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/station-memory.tsx, /src/routes/station-memory.tsx?tsr-split=component, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+7:02:41 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+7:02:41 PM [vite] (ssr) program reload
+7:05:05 PM [vite] vite.config.ts changed, restarting server...
+7:05:38 PM [vite] vite.config.ts changed, restarting server...
+7:05:38 PM [vite] server restarted.
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:05:44 PM [vite] (ssr) connected.
+7:08:16 PM [vite] (ssr) page reload src/server.ts
+7:08:16 PM [vite] (ssr) program reload
+7:10:51 PM [vite] (ssr) page reload src/server.ts
+7:10:51 PM [vite] (ssr) program reload
+7:11:47 PM [vite] (ssr) page reload src/server.ts
+7:11:47 PM [vite] (ssr) program reload
+7:14:54 PM [vite] (ssr) page reload src/server.ts
+7:14:54 PM [vite] (ssr) program reload
+7:16:20 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 503 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+
+  VITE v8.0.13  ready in 394 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:18:22 PM [vite] (ssr) connected.
+7:20:03 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+7:20:03 PM [vite] (ssr) program reload
+7:20:10 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+7:20:21 PM [vite] (ssr) page reload src/lib/server-data/station-memory.ts
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+10:21:48 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 284 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[api/save-tasks] Merged 108 client + 1 disk-only = 109 total
+[api/save-tasks] Merged 108 client + 1 disk-only = 109 total
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[api/save-tasks] Merged 108 client + 1 disk-only = 109 total
+[api/save-tasks] Merged 108 client + 1 disk-only = 109 total
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+11:19:04 PM [vite] (client) hmr update /src/styles.css?direct, /src/routes/station-memory.tsx
+11:19:04 PM [vite] (ssr) page reload src/routes/station-memory.tsx
+11:19:04 PM [vite] (ssr) program reload
+11:19:06 PM [vite] (client) page reload src/routeTree.gen.ts
+11:19:06 PM [vite] (ssr) page reload src/routeTree.gen.ts
+11:19:06 PM [vite] (ssr) program reload
+[tasks loader] Loaded 109 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 109 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+8:44:00 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+8:44:00 AM [vite] (ssr) page reload src/lib/server-data/memory.ts
+8:44:00 AM [vite] (ssr) program reload
+8:44:22 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:44:22 AM [vite] (ssr) page reload src/routes/memory.tsx
+8:45:21 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:45:21 AM [vite] (ssr) page reload src/routes/memory.tsx
+8:46:26 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:46:26 AM [vite] (ssr) page reload src/routes/memory.tsx
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+8:47:47 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx, /src/routes/memory.tsx?tsr-split=component
+8:47:47 AM [vite] (ssr) page reload src/routes/memory.tsx
+8:47:47 AM [vite] (ssr) program reload
+[tasks loader] Loaded 110 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}

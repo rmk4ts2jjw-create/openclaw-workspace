@@ -1,18 +1,15 @@
 {
   "active": false,
-  "date": "2026-06-09",
-  "startedAt": "2026-06-09T01:00:00+01:00",
-  "endedAt": "2026-06-09T01:05:00+01:00",
-  "tasksCompleted": [
-    "task-INC-104-act-732910",
-    "task-INC-104-act-929626"
-  ],
-  "tasksAttempted": 2,
+  "date": "2026-06-10",
+  "startedAt": "2026-06-10T01:00:00+01:00",
+  "endedAt": "2026-06-10T01:00:00+01:00",
+  "tasksCompleted": [],
+  "tasksAttempted": 0,
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "All eligible tasks completed. 2/2 done.",
+  "stoppedReason": "No eligible tasks — 1 backlog task (task-be03dff8) ineligible: dispatchCount=6, wasStalled=true",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-09 — completed. Both INC-104 dispatch tasks processed.",
-  "lastHeartbeatCheck": "2026-06-09T01:05:00+01:00"
+  "note": "Night Shift 2026-06-10 — no tasks to process. System healthy.",
+  "lastHeartbeatCheck": "2026-06-10T05:01:00+01:00"
 }

@@ -2,33 +2,48 @@
 
 _Curated memory. Distilled from daily logs, wiki, and Station Memory. Only the essentials._
 
-## Station Memory (SQLite Knowledge Store)
+## Memory Wiki (OpenClaw Plugin — Primary Knowledge Store)
 
-**Any agent session** can query institutional knowledge without conversation history:
+**Primary knowledge management system.** OpenClaw plugin with bridge mode auto-importing from memory plugin.
+```
+wiki_search "[query]"                 # Search all wiki pages
+wiki_get "entities/sm-001.md"        # Read specific page
+wiki_apply                            # Create/update pages
+wiki_lint                             # Check structure, contradictions
+wiki_status                           # Vault health
+```
+
+- **Vault:** `~/.openclaw/wiki/main`
+- **Bridge mode:** Auto-imports dream reports, daily notes, memory root (43 artifacts)
+- **10 manual pages:** 3 entities (decisions, issues) + 7 concepts (lessons, rules)
+- **All Station Memory records migrated here** (sm-001 through sm-010)
+- **Search backend:** local (shared requires OpenAI API key)
+
+## Workboard (OpenClaw Plugin — Task Management)
+
+**Primary task management system.** Replaces `data/tasks.json`.
+```
+workboard_list                        # List all cards
+workboard_list --status backlog       # Find dispatchable work
+workboard_claim                       # Claim a card
+workboard_complete                    # Mark done
+```
+
+- **112 cards** migrated from tasks.json (108 done + 4 active)
+- **Features:** Claim/heartbeat/complete lifecycle, agent assignment, session linking, priority labels
+- **Legacy:** `data/tasks.json` still exists with 110 historical tasks. MC `/tasks` page reads from it.
+
+## Station Memory (SQLite — Legacy)
+
+**Legacy knowledge store.** Kept for MC UI display only. Agents should use Memory Wiki instead.
+
 ```bash
 cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "query"
 ```
 
 - **DB:** `data/station-memory.db` (SQLite + FTS5)
-- **8 knowledge types:** architecture-decision, lesson-learned, incident-knowledge, completed-task-summary, operational-decision, framework-rule, runbook, known-issue
-- **Auto-ingestion:** tasks → knowledge on completion, incidents → knowledge on resolution
-- **Always query before starting work:** "Have we solved this before? Is there a framework rule?"
-- **Tool docs:** `TOOLS.md` → Station Memory section
-
-## The Wiki
-
-I now maintain a **Karpathy-style LLM Wiki** at `memory/wiki/`. This is my primary knowledge management system — a structured, interlinked collection of markdown pages that compounds over time.
-
-- **Index:** `memory/wiki/index.md` — content catalog of all pages
-- **Overview:** `memory/wiki/overview.md` — high-level synthesis
-- **Log:** `memory/wiki/log.md` — chronological activity record
-- **Schema:** `memory/wiki/schema.md` — conventions and workflows
-- **Entities:** `memory/wiki/entities/` — people, projects, tools
-- **Concepts:** `memory/wiki/concepts/` — ideas, patterns, themes
-- **Sources:** `memory/wiki/sources/` — ingested document summaries
-- **Raw sources:** `raw/sources/` — immutable originals
-
-When answering questions, I check the wiki index first, then drill into relevant pages.
+- **10 records** migrated to Memory Wiki (sm-001 through sm-010)
+- **MC UI still reads from here** for Knowledge Base tab display
 
 ## Key People
 
@@ -52,57 +67,55 @@ When answering questions, I check the wiki index first, then drill into relevant
 - **2026-05-12:** Adopted Karpathy LLM Wiki pattern for compounding memory
 - **2026-05-12:** Moved to constrained `openclaw-agent` account
 - **2026-05-15:** Adopted Framer Motion for Agent Office animations (no game engine)
-- **2026-05-15:** Event-driven state management via stationReducer for all visual changes
+- **2026-05-15:** Event-driven state management via stationReducer for visual changes
 - **2026-05-15:** Andre sharing hand-crafted pixel art assets (sprites + rooms) as HTML canvas drawings
 - **2026-05-15:** Established single master repo at `mission-control-dashboard`, deleted Downloads copy
-- **2026-06-03:** Removed dev branch (was stale Lovable-era prototype). `main` is now the single source of truth — one branch, one server on port 3000.
-- **2026-05-15:** API server uses `fs` reads instead of `execSync` for cron data (Cloudflare Workers compat)
-- **2026-05-15:** Investigate → Task → Error Resolution flow implemented (bidirectional linking)
-- **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish. Multi-file refactors now done via sequential direct edits (one file at a time, commit after each). Zero token cost.
-- **2026-06-02:** Removed Sprite Generator page (/sprites) — old PNG sprite generator from Lovable era, obsolete since we use canvas sprites. Deleted route file + component + sidebar entry.
-- **2026-06-02:** Fixed Vite cache corruption (504 Outdated Optimize Dep errors). Killed dev server, `rm -rf node_modules/.vite .vite`, restarted with `--force`. All routes verified 200.
-- **2026-06-02:** OPS-002 — Incident→Task linking: `Task.linkedIncidentId` is source of truth, `Incident.linkedTaskIds` derived at runtime. Auto-created tasks start in `triage` (not backlog). Task status changes auto-append to incident timeline. Incident resolution separate from task completion.
-- **2026-06-02:** Added `triage` to Task.status union, new Triage Kanban column, Linked Incident section in TaskDetailPanel, `/api/incidents-timeline` endpoint.
-- **2026-06-02:** Updated auto-detect-incidents.sh to create linked tasks + severity-based response actions per incident.
-
-- **2026-06-02:** OPS-002 — Incident→Task Linking: `Task.linkedIncidentId` is source of truth (not `Incident.linkedTaskIds`). Auto-detect creates linked triage tasks. Task status changes auto-append to incident timeline via `/api/incidents/timeline`. Added `triage` to Task status union, new Triage Kanban column, Linked Incident section in task detail, derived linked tasks in IncidentDetailsDrawer.
-- **2026-06-03:** Task system overhaul — removed work-dispatcher.sh (was flipping JSON without spawning agents). Heartbeat is now the only dispatcher. 28 stale/protected tasks cleaned up (6 incident artifacts → obsolete, 22 strategic → deferred). End-to-end test passed: sub-agent dispatched, completed, moved to Done with summary. 16 planning tasks remain in backlog for human triage.
-- **2026-06-06:** tasks.json wiped by heartbeat cleanup (commit a5aaff3) — Python script wrote dict format instead of array, reducing 104 tasks to 1. Restored from git history (commit 3e5ef20, 99 tasks). Root cause: heartbeat bypasses /api/save-tasks merge protection by writing directly via Python. Fix: heartbeat must use atomic write + validate format before writing.
-- **2026-06-06:** Cron audit — removed duplicate session cleanup (38ac51a4), disabled standalone stall detector and error spike watchdog (merged into maintenance.sh), fixed night-shift-automation Telegram error (delivery: none). 13 → 12 jobs (10 enabled, 2 disabled).
-- **2026-06-06:** Circuit breaker confirmed as inline guard (not a cron job) — checked by heartbeat and maintenance.sh before any automated processing.
-- **2026-06-06:** Daily Incident Auto-Resolve confirmed intentionally added — safety net to prevent incident graveyard buildup.
+- **2026-06-03:** Removed dev branch. `main` is now the single source of truth.
+- **2026-05-31:** Removed Aider — burned ~90K tokens on a refactor and didn't finish.
+- **2026-06-02:** Fixed Vite cache corruption. All routes verified 200.
+- **2026-06-02:** OPS-002 — Incident→Task linking with bidirectional relationships
+- **2026-06-03:** Task system overhaul — heartbeat is now the only dispatcher
+- **2026-06-06:** Cron audit — 13 → 12 jobs, disabled redundant scripts
+- **2026-06-09:** Adopted Operating Constitution — full governance framework
+- **2026-06-09:** Enabled OpenClaw Workboard + Memory Wiki plugins
+- **2026-06-09:** Migrated 10 Station Memory records to Memory Wiki (3 entities, 7 concepts)
+- **2026-06-09:** Migrated 112 tasks to Workboard cards (108 done + 4 active)
+- **2026-06-09:** Removed 175 duplicate done-tasks (284 → 109)
+- **2026-06-09:** Removed orphaned /station-memory route + ingest API (819 lines)
+- **2026-06-09:** Removed work-dispatcher.sh + error-spike-watchdog.sh (dead code)
+- **2026-06-09:** Added getWikiStats — MC /memory page shows live wiki stats
+- **2026-06-09:** Fixed Knowledge Base tab — node:sqlite replaces better-sqlite3 for SSR
+- **2026-06-09:** Updated AGENTS.md — Workboard + Memory Wiki as primary tools
 
 ## Cron Jobs
 
 Active OpenClaw cron jobs (12 total, 10 enabled):
-- **Sessions Cleanup** — 02:00 UTC, systemEvent (shell via `openclaw sessions cleanup`)
-- **Session Auto-Expiry** — 04:00 UTC, systemEvent (shell script)
-- **Daily GitHub push** — 04:00 UTC, systemEvent (shell script)
+- **Sessions Cleanup** — 02:00 UTC, systemEvent
+- **Session Auto-Expiry** — 04:00 UTC, systemEvent
+- **Daily GitHub push** — 04:00 UTC, systemEvent
 - **Night Shift Activation** — 01:00 BST, systemEvent → main session
-- **night-shift-automation** — 01:00 BST, isolated agentTurn (delivery: none)
-- **Auto-update FreeRide** — 06:00 BST, isolated agentTurn (only token-burning cron)
-- **Daily Incident Auto-Resolve** — 06:00 BST, systemEvent → POST /api/incidents/auto-resolve
-- **Daily Station Check** — 23:00 BST, systemEvent (shell script, Telegram delivery)
-- **Weekly Healthcheck** — Monday 08:00 BST, systemEvent (shell script)
-- **Friday GIF** — Friday 17:00 BST, systemEvent (shell-only, gifgrep)
+- **night-shift-automation** — 01:00 BST, isolated agentTurn
+- **Auto-update FreeRide** — 06:00 BST, isolated agentTurn
+- **Daily Incident Auto-Resolve** — 06:00 BST, systemEvent
+- **Daily Station Check** — 23:00 BST, systemEvent (Telegram delivery)
+- **Weekly Healthcheck** — Monday 08:00 BST, systemEvent
+- **Friday GIF** — Friday 17:00 BST, systemEvent
 
 Disabled (merged into maintenance.sh):
-- ~~Stall Detector~~ — was every 15 min, now step 5/10 in maintenance.sh (every 30 min)
-- ~~Error Spike Watchdog~~ — was every 15 min agentTurn, now step 4/10 in maintenance.sh (shell-only)
-- ~~Session Cleanup (archive takeover)~~ — was every 6h agentTurn, duplicate of 02:00 systemEvent job
+- ~~Stall Detector~~ — step 5/10 in maintenance.sh
+- ~~Error Spike Watchdog~~ — step 4/10 in maintenance.sh
+- ~~Session Cleanup (archive takeover)~~ — duplicate of 02:00 job
 
-LaunchAgents (separate from cron):
-- `com.openclaw.maintenance` — every 30 min (stall detection, error watchdog, dispatch, incidents)
-- `com.openclaw.mc.dashboard` — MC dev server (port 3000)
+LaunchAgents:
+- `com.openclaw.maintenance` — every 30 min
+- `com.openclaw.mc-dashboard` — MC dev server (port 3000)
 - `com.openclaw.mount-check` — every 30 min
-
-**Circuit Breaker**: Not a cron job — it's a guard function checked inline by heartbeat and maintenance.sh before any automated processing. State in `data/circuit-breaker-state.json`.
 
 ## Night Shift
 
-Autonomous task processing during 01:00-07:00 when Andre is asleep. Design doc at `NIGHT_SHIFT.md`. Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks).
+Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 
-- **2026-06-07:** Pipeline deadlock investigation — `stalledAt` set by stall detector was never cleared, permanently blocking all 4 backlog tasks from dispatch. Root cause: stall detector Phase 1 (reset in_progress→backlog + set stalledAt) but no Phase 2 to clear it after cooldown. Fix: stall-detector.sh now clears stalledAt after 30min in backlog. Also fixed maintenance.sh dispatcher (false positive logging, no lastActivity on dispatch, no priority sorting). E2E test passed: task created→dispatched→worked→done.
+- **2026-06-07:** Pipeline deadlock fix — stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-07 by Space Monkey_
+_Last updated: 2026-06-09 by Space Monkey_

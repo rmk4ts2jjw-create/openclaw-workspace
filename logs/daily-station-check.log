@@ -132,3 +132,33 @@
 23:00:03 Overall: ✅ ALL SYSTEMS NOMINAL
 23:00:07 Telegram sent: 📡 DAILY SITREP — 2026-06-06 | 0 active · 0 awaiting review · 55% disk · ✅ ALL SYSTEMS NOMINAL
 23:00:07 === Daily Station Check DONE ===
+23:00:03 === Daily Station Check START ===
+23:00:03 Load: { 1.38 1.55 1.55 }
+23:00:03 Disk: 16Gi used, 13Gi free, 56% of 228Gi
+23:00:03 Uptime: up 18 days, 10:53, 2 users, load averages: 1.38 1.55 1.55
+23:00:05 Git: committed 4 file(s) + pushed
+23:00:05 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:05 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:05 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:08 Telegram sent: 📡 DAILY SITREP — 2026-06-07 | 0 active · 0 awaiting review · 56% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:08 === Daily Station Check DONE ===
+23:00:01 === Daily Station Check START ===
+23:00:01 Load: { 1.40 1.49 1.66 }
+23:00:01 Disk: 16Gi used, 12Gi free, 58% of 228Gi
+23:00:01 Uptime: up 19 days, 10:53, 2 users, load averages: 1.40 1.49 1.66
+23:00:03 Git: committed 3 file(s) + pushed
+23:00:03 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:03 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:03 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:07 Telegram sent: 📡 DAILY SITREP — 2026-06-08 | 0 active · 0 awaiting review · 58% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:07 === Daily Station Check DONE ===
+23:00:01 === Daily Station Check START ===
+23:00:01 Load: { 2.03 1.89 1.79 }
+23:00:01 Disk: 16Gi used, 11Gi free, 59% of 228Gi
+23:00:01 Uptime: up 20 days, 10:53, 2 users, load averages: 2.03 1.89 1.79
+23:00:01 Git: no changes
+23:00:01 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:01 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:01 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:04 Telegram sent: 📡 DAILY SITREP — 2026-06-09 | 0 active · 0 awaiting review · 59% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:04 === Daily Station Check DONE ===

@@ -1,7 +1,7 @@
 [
   {
     "id": "INC-104",
-    "title": "Rate limit exhaustion \u2014 20 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 20 429 errors in gateway log",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -39,22 +39,25 @@
         "id": "act-274440",
         "label": "Investigate issue",
         "description": "Investigate the cause of this high-severity incident",
-        "status": "suggested",
-        "assignee": "lifesupport"
+        "status": "in_progress",
+        "assignee": "lifesupport",
+        "taskId": "task-INC-104-act-274440"
       },
       {
         "id": "act-732910",
         "label": "Apply fix",
         "description": "Implement a fix for the identified issue",
-        "status": "suggested",
-        "assignee": "lifesupport"
+        "status": "in_progress",
+        "assignee": "lifesupport",
+        "taskId": "task-INC-104-act-732910"
       },
       {
         "id": "act-929626",
         "label": "Verify resolution",
         "description": "Confirm the fix resolves the incident",
-        "status": "suggested",
-        "assignee": "lifesupport"
+        "status": "in_progress",
+        "assignee": "lifesupport",
+        "taskId": "task-INC-104-act-929626"
       }
     ],
     "actionsGenerated": true,
@@ -63,7 +66,7 @@
   },
   {
     "id": "INC-103",
-    "title": "Rate limit exhaustion \u2014 10 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 10 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -116,11 +119,11 @@
     "actionsGenerated": true,
     "_recurrence": 2,
     "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
-    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
+    "resolution": "Resolved as duplicate/recurring pattern — root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-102",
-    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "title": "Tasks stuck In Progress — 4 tasks with no recent activity",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "monkey",
@@ -145,7 +148,7 @@
         "ts": "2026-06-07T07:06:18.463698+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Resolved \u2014 pipeline fix applied, tasks no longer deadlocked"
+        "details": "Resolved — pipeline fix applied, tasks no longer deadlocked"
       }
     ],
     "actions": [
@@ -167,11 +170,11 @@
     "actionsGenerated": true,
     "_recurrence": 1,
     "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
-    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
+    "resolution": "Resolved as duplicate/recurring pattern — root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-101",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "TRIAGE",
     "owner": "engineer",
@@ -318,7 +321,7 @@
   },
   {
     "id": "INC-100",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -353,13 +356,13 @@
         "ts": "2026-06-07T06:46:10.684429+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+        "details": "Auto-resolved duplicate — consolidated into INC-101"
       },
       {
         "ts": "2026-06-07T06:46:10.684429+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+        "details": "Auto-resolved duplicate — consolidated into INC-101"
       }
     ],
     "actions": [
@@ -395,11 +398,11 @@
     "actionsGenerated": true,
     "_recurrence": 3,
     "resolvedAt": "2026-06-07T06:46:10.684429+00:00",
-    "resolution": "Consolidated \u2014 duplicate of INC-101. Same gateway monitor pattern."
+    "resolution": "Consolidated — duplicate of INC-101. Same gateway monitor pattern."
   },
   {
     "id": "INC-099",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -477,11 +480,11 @@
     "actionsGenerated": true,
     "_recurrence": 7,
     "resolvedAt": "2026-06-07T13:14:13.964075+00:00",
-    "resolution": "Resolved as duplicate/recurring pattern \u2014 root cause addressed by pipeline fixes"
+    "resolution": "Resolved as duplicate/recurring pattern — root cause addressed by pipeline fixes"
   },
   {
     "id": "INC-098",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -521,13 +524,13 @@
         "ts": "2026-06-07T06:46:10.684429+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+        "details": "Auto-resolved duplicate — consolidated into INC-101"
       },
       {
         "ts": "2026-06-07T06:46:10.684429+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Auto-resolved duplicate \u2014 consolidated into INC-101"
+        "details": "Auto-resolved duplicate — consolidated into INC-101"
       }
     ],
     "actions": [
@@ -563,11 +566,11 @@
     "actionsGenerated": true,
     "_recurrence": 4,
     "resolvedAt": "2026-06-07T06:46:10.684429+00:00",
-    "resolution": "Consolidated \u2014 duplicate of INC-101. Same gateway monitor pattern."
+    "resolution": "Consolidated — duplicate of INC-101. Same gateway monitor pattern."
   },
   {
     "id": "INC-097",
-    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 6 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -628,11 +631,11 @@
     "actionsGenerated": true,
     "_recurrence": 1,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-096",
-    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -698,11 +701,11 @@
     "actionsGenerated": true,
     "_recurrence": 2,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-095",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -763,11 +766,11 @@
     "actionsGenerated": true,
     "_recurrence": 1,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-094",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -838,11 +841,11 @@
     "actionsGenerated": true,
     "_recurrence": 3,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-093",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -946,11 +949,11 @@
     "actionsGenerated": true,
     "_recurrence": 11,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-092",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1021,11 +1024,11 @@
     "actionsGenerated": true,
     "_recurrence": 3,
     "resolvedAt": "2026-06-06T19:16:31.061080+00:00",
-    "resolution": "Duplicate \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate — consolidated into existing triage task"
   },
   {
     "id": "INC-091",
-    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1050,7 +1053,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1086,11 +1089,11 @@
     "actionsGenerated": true,
     "_recurrence": 1,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-090",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1130,7 +1133,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1166,11 +1169,11 @@
     "actionsGenerated": true,
     "_recurrence": 4,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-089",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1210,7 +1213,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1246,11 +1249,11 @@
     "actionsGenerated": true,
     "_recurrence": 4,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-088",
-    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1290,7 +1293,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1326,11 +1329,11 @@
     "actionsGenerated": true,
     "_recurrence": 4,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-087",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -1460,7 +1463,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1489,11 +1492,11 @@
     "actionsGenerated": true,
     "_recurrence": 22,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-086",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1543,7 +1546,7 @@
         "ts": "2026-06-06T13:47:25.086480+00:00",
         "action": "resolved",
         "actor": "heartbeat",
-        "details": "Auto-resolved as duplicate \u2014 already tracked by consolidated triage task"
+        "details": "Auto-resolved as duplicate — already tracked by consolidated triage task"
       }
     ],
     "actions": [
@@ -1579,11 +1582,11 @@
     "actionsGenerated": true,
     "_recurrence": 6,
     "resolvedAt": "2026-06-06T13:47:25.086480+00:00",
-    "resolution": "Duplicate incident \u2014 consolidated into existing triage task"
+    "resolution": "Duplicate incident — consolidated into existing triage task"
   },
   {
     "id": "INC-085",
-    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "title": "WD MyCloud mount missing — backup storage unavailable",
     "severity": "P2",
     "status": "TRIAGE",
     "owner": "lifesupport",
@@ -1633,7 +1636,7 @@
   },
   {
     "id": "INC-084",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -1696,7 +1699,7 @@
   },
   {
     "id": "INC-083",
-    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "title": "Mission Control dashboard down — HTTP 000",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1766,7 +1769,7 @@
   },
   {
     "id": "INC-082",
-    "title": "Gateway session errors \u2014 7 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 7 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1840,7 +1843,7 @@
   },
   {
     "id": "INC-081",
-    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -1944,7 +1947,7 @@
   },
   {
     "id": "INC-080",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2043,7 +2046,7 @@
   },
   {
     "id": "INC-079",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2122,7 +2125,7 @@
   },
   {
     "id": "INC-078",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2201,7 +2204,7 @@
   },
   {
     "id": "INC-077",
-    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2275,7 +2278,7 @@
   },
   {
     "id": "INC-076",
-    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 6 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2359,7 +2362,7 @@
   },
   {
     "id": "INC-075",
-    "title": "Gateway session errors \u2014 9 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 9 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2384,7 +2387,7 @@
         "ts": "2026-06-05T11:47:42.475835+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+        "details": "Resolved — duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
       }
     ],
     "actions": [
@@ -2423,7 +2426,7 @@
   },
   {
     "id": "INC-074",
-    "title": "Gateway session errors \u2014 8 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 8 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2448,7 +2451,7 @@
         "ts": "2026-06-05T11:47:42.475835+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+        "details": "Resolved — duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
       }
     ],
     "actions": [
@@ -2487,7 +2490,7 @@
   },
   {
     "id": "INC-073",
-    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 6 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2512,7 +2515,7 @@
         "ts": "2026-06-05T11:47:42.475835+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+        "details": "Resolved — duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
       }
     ],
     "actions": [
@@ -2550,7 +2553,7 @@
   },
   {
     "id": "INC-072",
-    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2585,7 +2588,7 @@
         "ts": "2026-06-05T11:47:42.475835+00:00",
         "action": "resolved",
         "actor": "monkey",
-        "details": "Resolved \u2014 duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
+        "details": "Resolved — duplicate session-takeover incident, consolidated into INC-072/task-triage-session-takeover"
       }
     ],
     "actions": [
@@ -2624,7 +2627,7 @@
   },
   {
     "id": "INC-071",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2682,7 +2685,7 @@
   },
   {
     "id": "INC-070",
-    "title": "Gateway session errors \u2014 7 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 7 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2740,7 +2743,7 @@
   },
   {
     "id": "INC-069",
-    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 34 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -2924,11 +2927,11 @@
     "actionsGenerated": true,
     "_recurrence": 27,
     "resolvedAt": "2026-06-06T19:16:55.375336+00:00",
-    "resolution": "Duplicate \u2014 consolidated into task-triage-rate-limit (17 incidents)"
+    "resolution": "Duplicate — consolidated into task-triage-rate-limit (17 incidents)"
   },
   {
     "id": "INC-068",
-    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -2986,7 +2989,7 @@
   },
   {
     "id": "INC-067",
-    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "title": "WD MyCloud mount missing — backup storage unavailable",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3042,7 +3045,7 @@
   },
   {
     "id": "INC-066",
-    "title": "Gateway session errors \u2014 6 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 6 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -3100,7 +3103,7 @@
   },
   {
     "id": "INC-065",
-    "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -3158,7 +3161,7 @@
   },
   {
     "id": "INC-064",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -3216,7 +3219,7 @@
   },
   {
     "id": "INC-063",
-    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 34 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3267,7 +3270,7 @@
   },
   {
     "id": "INC-062",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -3325,7 +3328,7 @@
   },
   {
     "id": "INC-061",
-    "title": "Rate limit exhaustion \u2014 28 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 28 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3376,7 +3379,7 @@
   },
   {
     "id": "INC-060",
-    "title": "Rate limit exhaustion \u2014 306 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 306 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3427,7 +3430,7 @@
   },
   {
     "id": "INC-059",
-    "title": "Rate limit exhaustion \u2014 278 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 278 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3478,7 +3481,7 @@
   },
   {
     "id": "INC-058",
-    "title": "Rate limit exhaustion \u2014 230 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 230 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3529,7 +3532,7 @@
   },
   {
     "id": "INC-057",
-    "title": "Rate limit exhaustion \u2014 197 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 197 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3580,7 +3583,7 @@
   },
   {
     "id": "INC-056",
-    "title": "Rate limit exhaustion \u2014 164 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 164 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3631,7 +3634,7 @@
   },
   {
     "id": "INC-055",
-    "title": "Rate limit exhaustion \u2014 142 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 142 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3682,7 +3685,7 @@
   },
   {
     "id": "INC-054",
-    "title": "Rate limit exhaustion \u2014 120 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 120 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3733,7 +3736,7 @@
   },
   {
     "id": "INC-053",
-    "title": "Rate limit exhaustion \u2014 98 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 98 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3784,7 +3787,7 @@
   },
   {
     "id": "INC-052",
-    "title": "Rate limit exhaustion \u2014 76 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 76 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3835,7 +3838,7 @@
   },
   {
     "id": "INC-051",
-    "title": "Rate limit exhaustion \u2014 64 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 64 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3886,7 +3889,7 @@
   },
   {
     "id": "INC-050",
-    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "title": "Tasks stuck In Progress — 4 tasks with no recent activity",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "monkey",
@@ -3930,7 +3933,7 @@
   },
   {
     "id": "INC-049",
-    "title": "Rate limit exhaustion \u2014 47 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 47 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -3981,7 +3984,7 @@
   },
   {
     "id": "INC-048",
-    "title": "Rate limit exhaustion \u2014 41 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 41 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4032,7 +4035,7 @@
   },
   {
     "id": "INC-047",
-    "title": "Rate limit exhaustion \u2014 17 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 17 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4083,7 +4086,7 @@
   },
   {
     "id": "INC-046",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4141,7 +4144,7 @@
   },
   {
     "id": "INC-045",
-    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "title": "Mission Control dashboard down — HTTP 000",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4164,7 +4167,7 @@
       },
       {
         "ts": "2026-06-04T00:54:08.334838+00:00",
-        "message": "MC confirmed healthy (HTTP 200). Incident was transient \u2014 likely during build/restart. Auto-resolved.",
+        "message": "MC confirmed healthy (HTTP 200). Incident was transient — likely during build/restart. Auto-resolved.",
         "actor": "heartbeat"
       }
     ],
@@ -4203,7 +4206,7 @@
   },
   {
     "id": "INC-044",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4226,7 +4229,7 @@
       },
       {
         "ts": "2026-06-04 11:58:10",
-        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "message": "Incident resolved — caused by git reset chaos, session takeover errors no longer occurring",
         "actor": "Space Monkey"
       }
     ],
@@ -4265,7 +4268,7 @@
   },
   {
     "id": "INC-043",
-    "title": "WD MyCloud mount missing \u2014 backup storage unavailable",
+    "title": "WD MyCloud mount missing — backup storage unavailable",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4316,7 +4319,7 @@
   },
   {
     "id": "INC-042",
-    "title": "Tasks stuck In Progress \u2014 4 tasks with no recent activity",
+    "title": "Tasks stuck In Progress — 4 tasks with no recent activity",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "monkey",
@@ -4376,7 +4379,7 @@
   },
   {
     "id": "INC-041",
-    "title": "Rate limit exhaustion \u2014 26 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 26 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4442,7 +4445,7 @@
   },
   {
     "id": "INC-040",
-    "title": "Rate limit exhaustion \u2014 20 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 20 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4512,7 +4515,7 @@
   },
   {
     "id": "INC-039",
-    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4535,7 +4538,7 @@
       },
       {
         "ts": "2026-06-04 11:58:10",
-        "message": "Incident resolved \u2014 caused by git reset chaos, session takeover errors no longer occurring",
+        "message": "Incident resolved — caused by git reset chaos, session takeover errors no longer occurring",
         "actor": "Space Monkey"
       }
     ],
@@ -4544,7 +4547,7 @@
   },
   {
     "id": "INC-038",
-    "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
+    "title": "Tasks stuck In Progress — 3 tasks with no recent activity",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "monkey",
@@ -4581,7 +4584,7 @@
     "opened": "2026-05-21T23:00:00.000Z",
     "resolved": "2026-06-01T07:31:00.000Z",
     "lastActivity": "2026-06-01T07:31:00.000Z",
-    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21\u201331. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
+    "summary": "Cron job dae7406b (Daily Station Check) was an agentTurn job that burned tokens every night at 23:00 BST from May 21–31. It was supposed to be disabled when the shell-only LaunchAgent replacement (com.openclaw.daily-station-check) was created, but it remained enabled. Each run spawned an isolated AI session that hit the 120s timeout in model-call-started phase, costing tokens with zero useful output. 4 consecutive errors recorded. Root cause: old cron was never deleted when LaunchAgent was deployed. Fixed by permanently deleting cron job dae7406b on 2026-06-01.",
     "tags": [
       "cron",
       "token-burn",
@@ -4592,7 +4595,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T23:00:00.000Z",
-        "message": "First recorded failure of dae7406b \u2014 agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
+        "message": "First recorded failure of dae7406b — agentTurn timeout in model-call-started. LaunchAgent replacement already existed but old cron was never deleted.",
         "actor": "system"
       },
       {
@@ -4632,7 +4635,7 @@
   },
   {
     "id": "INC-036",
-    "title": "Rate limit exhaustion \u2014 11 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 11 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4660,7 +4663,7 @@
   },
   {
     "id": "INC-035",
-    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 6 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4692,7 +4695,7 @@
   },
   {
     "id": "INC-034",
-    "title": "Mission Control dashboard down \u2014 HTTP 000",
+    "title": "Mission Control dashboard down — HTTP 000",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4724,7 +4727,7 @@
   },
   {
     "id": "INC-033",
-    "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4756,7 +4759,7 @@
   },
   {
     "id": "INC-032",
-    "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -4788,7 +4791,7 @@
   },
   {
     "id": "INC-031",
-    "title": "Rate limit exhaustion \u2014 54 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 54 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4820,7 +4823,7 @@
   },
   {
     "id": "INC-030",
-    "title": "Rate limit exhaustion \u2014 51 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 51 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4852,7 +4855,7 @@
   },
   {
     "id": "INC-029",
-    "title": "Rate limit exhaustion \u2014 46 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 46 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4884,7 +4887,7 @@
   },
   {
     "id": "INC-028",
-    "title": "Rate limit exhaustion \u2014 40 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 40 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4916,7 +4919,7 @@
   },
   {
     "id": "INC-027",
-    "title": "Rate limit exhaustion \u2014 39 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 39 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4948,7 +4951,7 @@
   },
   {
     "id": "INC-026",
-    "title": "Rate limit exhaustion \u2014 34 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 34 429 errors in gateway log",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -4985,7 +4988,7 @@
   },
   {
     "id": "INC-025",
-    "title": "Rate limit exhaustion \u2014 33 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 33 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5017,7 +5020,7 @@
   },
   {
     "id": "INC-024",
-    "title": "Rate limit exhaustion \u2014 29 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 29 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5049,7 +5052,7 @@
   },
   {
     "id": "INC-023",
-    "title": "Rate limit exhaustion \u2014 28 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 28 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5081,7 +5084,7 @@
   },
   {
     "id": "INC-022",
-    "title": "Rate limit exhaustion \u2014 25 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 25 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5113,7 +5116,7 @@
   },
   {
     "id": "INC-021",
-    "title": "Rate limit exhaustion \u2014 16 429 errors in gateway log",
+    "title": "Rate limit exhaustion — 16 429 errors in gateway log",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5145,7 +5148,7 @@
   },
   {
     "id": "INC-020",
-    "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "title": "Gateway session errors — 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5177,7 +5180,7 @@
   },
   {
     "id": "INC-019",
-    "title": "Cron job failures \u2014 8 active errors detected",
+    "title": "Cron job failures — 8 active errors detected",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5208,7 +5211,7 @@
   },
   {
     "id": "INC-018",
-    "title": "Operational consolidation \u2014 cron jobs replaced with LaunchAgent maintenance script",
+    "title": "Operational consolidation — cron jobs replaced with LaunchAgent maintenance script",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5228,7 +5231,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T20:00:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5241,7 +5244,7 @@
   },
   {
     "id": "INC-017",
-    "title": "WD MyCloud mount path changed \u2014 /Volumes/Public-1 regenerated after purge",
+    "title": "WD MyCloud mount path changed — /Volumes/Public-1 regenerated after purge",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5261,7 +5264,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T16:00:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5280,7 +5283,7 @@
   },
   {
     "id": "INC-016",
-    "title": "Rate limit exhaustion (2nd wave) \u2014 free model pool depleted by session explosion",
+    "title": "Rate limit exhaustion (2nd wave) — free model pool depleted by session explosion",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5301,7 +5304,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:35:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5320,7 +5323,7 @@
   },
   {
     "id": "INC-015",
-    "title": "Session explosion \u2014 22 to 87 sessions from runaway cron jobs",
+    "title": "Session explosion — 22 to 87 sessions from runaway cron jobs",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5341,7 +5344,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:30:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5360,7 +5363,7 @@
   },
   {
     "id": "INC-014",
-    "title": "Gateway crash loop \u2014 EmbeddedAttemptSessionTakeoverError across all sessions",
+    "title": "Gateway crash loop — EmbeddedAttemptSessionTakeoverError across all sessions",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5380,7 +5383,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T15:15:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5399,7 +5402,7 @@
   },
   {
     "id": "INC-013",
-    "title": "Gateway update failure \u2014 missing modules after partial update to v2026.5.19",
+    "title": "Gateway update failure — missing modules after partial update to v2026.5.19",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5420,7 +5423,7 @@
     "timeline": [
       {
         "ts": "2026-05-21T14:58:00.000Z",
-        "message": "Backfilled \u2014 event occurred on 2026-05-21",
+        "message": "Backfilled — event occurred on 2026-05-21",
         "actor": "system"
       },
       {
@@ -5439,7 +5442,7 @@
   },
   {
     "id": "INC-012",
-    "title": "Mission Control down \u2014 LaunchAgent pointing to deleted Wrangler binary",
+    "title": "Mission Control down — LaunchAgent pointing to deleted Wrangler binary",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5472,7 +5475,7 @@
   },
   {
     "id": "INC-011",
-    "title": "Rate limit exhaustion \u2014 all models returned 429 starting May 15 19:42",
+    "title": "Rate limit exhaustion — all models returned 429 starting May 15 19:42",
     "severity": "P1",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5505,7 +5508,7 @@
   },
   {
     "id": "INC-010",
-    "title": "Cron job failures \u2014 Git Auto-Commit timeout and Activity Summary failing",
+    "title": "Cron job failures — Git Auto-Commit timeout and Activity Summary failing",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5538,7 +5541,7 @@
   },
   {
     "id": "INC-009",
-    "title": "WD MyCloud mount failing \u2014 /Volumes/Public-1 not found (persistent since May 16 06:18)",
+    "title": "WD MyCloud mount failing — /Volumes/Public-1 not found (persistent since May 16 06:18)",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5571,7 +5574,7 @@
   },
   {
     "id": "INC-008",
-    "title": "Tasks stuck In Progress \u2014 3 tasks with no assignee or recent activity",
+    "title": "Tasks stuck In Progress — 3 tasks with no assignee or recent activity",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "monkey",
@@ -5604,7 +5607,7 @@
   },
   {
     "id": "INC-007",
-    "title": "Build error \u2014 AnimatePresence SSR failure in Dashboard component",
+    "title": "Build error — AnimatePresence SSR failure in Dashboard component",
     "severity": "P2",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5612,7 +5615,7 @@
     "escalated": false,
     "opened": "2026-05-16T14:36:26.000Z",
     "lastActivity": "2026-06-03T23:18:04.753797+00:00",
-    "summary": "ReferenceError: AnimatePresence is not defined at StationChatter in Dashboard.tsx. The awaitingReviewCount variable was defined inside QuickActionsPanel but referenced in the parent Dashboard component \u2014 a scoping bug causing SSR crash on the /visual page.",
+    "summary": "ReferenceError: AnimatePresence is not defined at StationChatter in Dashboard.tsx. The awaitingReviewCount variable was defined inside QuickActionsPanel but referenced in the parent Dashboard component — a scoping bug causing SSR crash on the /visual page.",
     "tags": [
       "ssr",
       "animation",
@@ -5637,7 +5640,7 @@
   },
   {
     "id": "INC-006",
-    "title": "Port conflict \u2014 Mission Control dev server jumping between 3000 and 3001",
+    "title": "Port conflict — Mission Control dev server jumping between 3000 and 3001",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "engineer",
@@ -5670,7 +5673,7 @@
   },
   {
     "id": "INC-005",
-    "title": "Disk space warning \u2014 Data volume at 85% (175 Gi / 228 Gi)",
+    "title": "Disk space warning — Data volume at 85% (175 Gi / 228 Gi)",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5708,7 +5711,7 @@
     "status": "RESOLVED",
     "owner": "archivist",
     "opened": "2026-05-12 09:14",
-    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact \u2014 only the index needs rebuilding.",
+    "summary": "After an unplanned session restart, the SQLite memory index became partially corrupted. Daily log entries from 2026-05-11 onwards were not searchable. The raw .md files are intact — only the index needs rebuilding.",
     "tags": [
       "memory",
       "corruption",
@@ -5723,7 +5726,7 @@
       },
       {
         "ts": "09:22",
-        "message": "Confirmed SQLite index mismatch \u2014 14 entries missing from index",
+        "message": "Confirmed SQLite index mismatch — 14 entries missing from index",
         "actor": "archivist"
       },
       {
@@ -5776,7 +5779,7 @@
       },
       {
         "ts": "14:35",
-        "message": "Investigated mount permissions \u2014 volume owned by root:wheel, read-only for agent",
+        "message": "Investigated mount permissions — volume owned by root:wheel, read-only for agent",
         "actor": "engineer"
       },
       {
@@ -5856,7 +5859,7 @@
       },
       {
         "ts": "12:00",
-        "message": "Incident opened \u2014 needs human to either move file or grant Full Disk Access",
+        "message": "Incident opened — needs human to either move file or grant Full Disk Access",
         "actor": "monkey"
       },
       {
@@ -5875,7 +5878,7 @@
       },
       {
         "label": "Grant Full Disk Access",
-        "description": "Add Terminal.app to System Settings \u2192 Privacy & Security \u2192 Full Disk Access",
+        "description": "Add Terminal.app to System Settings → Privacy & Security → Full Disk Access",
         "status": "skipped",
         "completedAt": "2026-05-14 13:56:37",
         "completedBy": "Space Monkey"
@@ -5895,7 +5898,7 @@
   },
   {
     "id": "INC-001",
-    "title": "Cron job drift \u2014 daily heartbeat running 3 hours late",
+    "title": "Cron job drift — daily heartbeat running 3 hours late",
     "severity": "P3",
     "status": "RESOLVED",
     "owner": "lifesupport",
@@ -5910,7 +5913,7 @@
     "timeline": [
       {
         "ts": "06:00",
-        "message": "Daily heartbeat fired three hours late \u2014 gap analysis initiated",
+        "message": "Daily heartbeat fired three hours late — gap analysis initiated",
         "actor": "lifesupport"
       },
       {

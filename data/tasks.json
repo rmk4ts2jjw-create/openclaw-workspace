@@ -1,112 +1,5 @@
 [
   {
-    "id": "task-be03dff8",
-    "title": "Runbook Evolution",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P3",
-    "ts": "just now",
-    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
-    "history": [
-      {
-        "ts": "2026-06-02T14:43:59.301126+00:00",
-        "action": "created",
-        "actor": "monkey",
-        "details": "Backlog planning \u2014 created from strategic roadmap"
-      },
-      {
-        "ts": "2026-06-03T19:23:12.737604+00:00",
-        "action": "reassigned",
-        "actor": "monkey",
-        "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
-      },
-      {
-        "ts": "2026-06-03T21:26:12.356009+00:00",
-        "action": "reassigned",
-        "actor": "monkey",
-        "details": "Moved back to Backlog with dependency: depends on Phase 2 Runbooks completion"
-      },
-      {
-        "ts": "2026-06-03T23:13:09.095524+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 230min stale with no progress. Task is blocked on Phase 2 Runbooks which do not exist yet."
-      },
-      {
-        "ts": "2026-06-03T23:43:01.006512+00:00",
-        "action": "reassigned",
-        "actor": "heartbeat",
-        "details": "Reset from in_progress to backlog \u2014 30min stale, ghost dispatch. Task is blocked on Phase 2 Runbooks."
-      },
-      {
-        "ts": "2026-06-06T22:41:22.625Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-06T23:13:04.038965+00:00",
-        "action": "stalled_reset",
-        "actor": "stall-detector",
-        "details": "Auto-reset by stall detector \u2014 in_progress for 32 min with no activity (threshold: 30 min). Was: Agent starting\u2026"
-      },
-      {
-        "ts": "2026-06-07T06:36:10.656034+00:00",
-        "action": "stalled_cleared",
-        "actor": "monkey",
-        "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
-      },
-      {
-        "ts": "2026-06-08T18:45:49.739Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-08T19:43:19.508913+00:00",
-        "action": "stalled_reset",
-        "actor": "monkey",
-        "details": "Reset to backlog: 57min stale, agent never started (currentStep: Agent starting\u2026, progress: 5%)"
-      },
-      {
-        "ts": "2026-06-08T20:15:30.378707+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 32 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-09T07:04:00.427Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-09T07:25:42.757536+00:00",
-        "action": "stalled_reset",
-        "actor": "heartbeat",
-        "details": "Stalled 669min at \"Agent starting...\" \u2014 ghost dispatch, reset to backlog"
-      },
-      {
-        "ts": "2026-06-09T08:16:12.244546+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 50 min in backlog \u2014 task eligible for re-dispatch"
-      }
-    ],
-    "currentStep": null,
-    "lastActivity": "2026-06-09T07:25:42.757536+00:00",
-    "progress": 5,
-    "tags": [
-      "runbook-evolution",
-      "phase-2-dependent"
-    ],
-    "dispatchCount": 6,
-    "wasStalled": true,
-    "stalledAt": null,
-    "lastUpdated": "2026-06-09T07:04:00.427Z",
-    "startedAt": "2026-06-09T07:04:00.427Z"
-  },
-  {
     "id": "task-INC-104-act-929626",
     "title": "[Dispatch] Verify resolution",
     "assignee": "lifesupport",
@@ -4396,5 +4289,139 @@
     "wasStalled": false,
     "completedAt": "2026-06-08T01:13:24.543572+00:00",
     "summary": "Station Memory subsystem fully implemented and deployed. New /station-memory route with 8 record types (architecture-decision, lesson-learned, incident-knowledge, completed-task-summary, operational-decision, framework-rule, runbook, known-issue). Features: category tabs with counts, full-text search, expandable detail cards with type-specific rendering, related records linking, tag navigation, URL search params. Seed data: 8 records from integration sessions. Extended /api/search to include station-memory records. Added nav entry to KNOWLEDGE sidebar. Built on existing patterns (JSON storage, server-data modules, route loaders). All pages verified 200."
+  },
+  {
+    "id": "task-be03dff8",
+    "title": "Runbook Evolution",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
+    "history": [
+      {
+        "ts": "2026-06-02T14:43:59.301126+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Backlog planning \u2014 created from strategic roadmap"
+      },
+      {
+        "ts": "2026-06-03T19:23:12.737604+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved to Triage \u2014 needs human input: Runbook Evolution \u2014 need resolution history tracking on runbooks. Design input needed on what to track and how to flag outdated steps"
+      },
+      {
+        "ts": "2026-06-03T21:26:12.356009+00:00",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Moved back to Backlog with dependency: depends on Phase 2 Runbooks completion"
+      },
+      {
+        "ts": "2026-06-03T23:13:09.095524+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 230min stale with no progress. Task is blocked on Phase 2 Runbooks which do not exist yet."
+      },
+      {
+        "ts": "2026-06-03T23:43:01.006512+00:00",
+        "action": "reassigned",
+        "actor": "heartbeat",
+        "details": "Reset from in_progress to backlog \u2014 30min stale, ghost dispatch. Task is blocked on Phase 2 Runbooks."
+      },
+      {
+        "ts": "2026-06-06T22:41:22.625Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-06T23:13:04.038965+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 32 min with no activity (threshold: 30 min). Was: Agent starting\u2026"
+      },
+      {
+        "ts": "2026-06-07T06:36:10.656034+00:00",
+        "action": "stalled_cleared",
+        "actor": "monkey",
+        "details": "Cleared stalledAt \u2014 task eligible for re-dispatch after sitting in backlog with no takers"
+      },
+      {
+        "ts": "2026-06-08T18:45:49.739Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-08T19:43:19.508913+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Reset to backlog: 57min stale, agent never started (currentStep: Agent starting\u2026, progress: 5%)"
+      },
+      {
+        "ts": "2026-06-08T20:15:30.378707+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 32 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-09T07:04:00.427Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-09T07:25:42.757536+00:00",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Stalled 669min at \"Agent starting...\" \u2014 ghost dispatch, reset to backlog"
+      },
+      {
+        "ts": "2026-06-09T08:16:12.244546+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 50 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "currentStep": null,
+    "lastActivity": "2026-06-09T07:25:42.757536+00:00",
+    "progress": 5,
+    "tags": [
+      "runbook-evolution",
+      "phase-2-dependent"
+    ],
+    "dispatchCount": 6,
+    "wasStalled": true,
+    "stalledAt": null,
+    "lastUpdated": "2026-06-09T07:04:00.427Z",
+    "startedAt": "2026-06-09T07:04:00.427Z"
+  },
+  {
+    "id": "task-wb-migration-001",
+    "title": "Migrate tasks.json to Workboard (Large)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-10T05:44:49.063879+00:00",
+    "lastActivity": "2026-06-10T05:44:49.063879+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P2",
+    "tags": [
+      "migration",
+      "workboard",
+      "phase-3",
+      "large-change"
+    ],
+    "note": "Constitution: LARGE CHANGE \u2014 needs Epic breakdown, migration plan, rollback plan, explicit approval before implementation.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-10T05:44:49.063879+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 3 migration plan: tasks.json \u2192 Workboard"
+      }
+    ]
   }
 ]

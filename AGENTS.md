@@ -10,14 +10,15 @@ This folder is home. Treat it that way.
 - **Multi-file refactors**: Use direct edits in sequence — one file at a time, commit after each. It's slower but costs zero tokens. Quick single-file fixes stay with direct edit/write tools.
 
 ## Task Progress Reporting
-When working on a task, you MUST update the task's progress in `data/tasks.json`:
-- Set `currentStep` to a short description of what you're actively doing (e.g. "Refactoring error feed buttons", "Writing tests for dispatch queue")
-- Set `lastActivity` to the current ISO timestamp every time you make meaningful progress
-- **Completion summary required:** Moving a task to Done requires a completion summary stating what was actually done — root cause, fix applied, files changed, and outcome. No summary = cannot move to Done. This is non-negotiable. Every Done card must answer: "What was accomplished?" without requiring anyone to read chat history.
-- Set `progress` to an estimated completion percentage (0-100) based on actual work done, NOT time elapsed
-- When you complete the task, set `progress: 100`, `status: "done"`, and write a completion `summary`
-- The Kanban progress bar and step label display this data in real time — if you don't update it, the card shows "Waiting for agent..."
-- **Stall detector safety net:** A shell-only cron job (`scripts/stall-detector.sh`) runs every 15 minutes. Any in_progress task with no activity for >30 min is auto-reset to backlog. Don't rely on this — update `lastActivity` actively. The detector is a last resort, not a replacement for good hygiene.
+
+**Primary:** Use OpenClaw Workboard for task management. Claim cards with `workboard_claim`, update progress via card events, complete with `workboard_complete`.
+
+**Legacy:** `data/tasks.json` still exists with 110 historical tasks. MC `/tasks` page reads from it. Do not add new tasks here — use Workboard instead.
+
+When working on a Workboard task:
+- Update card status and notes via workboard tools
+- Write a completion summary before marking done
+- Commit and push code changes when complete
 
 ## First Run
 
@@ -45,7 +46,9 @@ You wake up fresh each session. These files are your continuity:
 
 - **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
 - **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
-- **Station Memory:** SQLite knowledge base at `mission-control-dashboard/data/station-memory.db` — institutional knowledge, lessons, decisions
+- **Memory Wiki:** OpenClaw plugin vault at `~/.openclaw/wiki/main` — structured knowledge with entities, concepts, sources, reports. Uses `wiki_search`, `wiki_get`, `wiki_apply` tools. Bridge mode auto-imports from memory plugin.
+- **Workboard:** OpenClaw plugin for task management — agent work queue with claim/heartbeat/complete lifecycle. Uses `workboard_list`, `workboard_claim`, `workboard_complete` tools. 112 cards migrated from tasks.json.
+- **Station Memory:** SQLite knowledge base at `mission-control-dashboard/data/station-memory.db` — legacy institutional knowledge (migrating to Memory Wiki). MC UI still reads from here.
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
 
@@ -65,20 +68,31 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - "Mental notes" don't survive session restarts. Files do.
 - When someone says "remember this" → update `memory/YYYY-MM-DD.md` or relevant file
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
-- When you make a mistake → document it so future-you doesn't repeat it
+- When you make a mistake → document so future-you doesn't repeat it
 - **Text > Brain** 📝
 
 ### 🔍 MANDATORY: Check Memory Before Starting Any Task
 
 **Before starting ANY work, you MUST check institutional memory. This is non-negotiable.**
 
-#### Step 1: Search Station Memory
+#### Step 1: Search Memory Wiki (primary)
 
-```bash
-cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "[task topic]"
+Use OpenClaw's built-in wiki tools:
+```
+wiki_search "[task topic]"           # Search all wiki pages
+wiki_get "entities/sm-001.md"        # Get specific page
 ```
 
-Search for relevant lessons, framework rules, past decisions, and known issues. Read the full records returned — they contain root causes, fixes, and "never do this again" warnings that will save you from repeating mistakes.
+The wiki contains structured knowledge: entities (decisions, issues), concepts (lessons, rules), sources (bridge-imported from memory), and reports. All Station Memory records have been migrated here.
+
+#### Step 1b: Check Workboard for existing tasks
+
+```
+workboard_list                       # List all cards
+workboard_list --status backlog      # Find dispatchable work
+```
+
+Before creating new tasks, check if one already exists on the Workboard. Never create duplicate work.
 
 #### Step 2: Check Recent Daily Log
 
@@ -139,7 +153,7 @@ In group chats where you receive every message, be **smart about when to contrib
 - The conversation is flowing fine without you
 - Adding a message would interrupt the vibe
 
-**The human rule:** Humans in group chats don't respond to every single message. Neither should you. Quality > quantity. If you wouldn't send it in a real group chat with friends, don't send it.
+**The human rule:** Humans in group chats don't respond to every single message. Neither should you. Quality > quantity. If you wouldn't send it in a real group chat with friends, it doesn't.
 
 **Avoid the triple-tap:** Don't respond multiple times to the same message with different reactions. One thoughtful response beats three fragments.
 
@@ -151,7 +165,7 @@ On platforms that support reactions (Discord, Slack), use emoji reactions natura
 
 **React when:**
 
-- You appreciate something but don't need to reply (👍, ❤️, 🙌)
+- You appreciate something but doesn't need to reply (👍, ❤️, 🙌)
 - Something made you laugh (😂, 💀)
 - You find it interesting or thought-provoking (🤔, 💡)
 - You want to acknowledge without interrupting the flow
@@ -171,7 +185,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 **📝 Platform Formatting:**
 
 - **Discord/WhatsApp:** No markdown tables! Use bullet lists instead
-- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
+- **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://github.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
 ## 💓 Heartbeats - Be Proactive!
@@ -253,33 +267,31 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-### 📚 Wiki Workflows
+### 📚 Memory Wiki Workflows
 
-The wiki at `memory/wiki/` is my compounding knowledge base (Karpathy LLM Wiki pattern).
+OpenClaw's Memory Wiki plugin is the primary knowledge management system. The wiki vault is at `~/.openclaw/wiki/main` with bridge mode auto-importing from the memory plugin.
 
 **After every significant conversation or task:**
 1. Identify insights, decisions, or facts worth keeping long-term
-2. Update relevant entity pages in `memory/wiki/entities/`
-3. Update relevant concept pages in `memory/wiki/concepts/`
-4. If a new entity or concept emerged, create a new page and add it to `memory/wiki/index.md`
-5. Append a log entry to `memory/wiki/log.md`
+2. Use `wiki_apply` to create/update entity pages in `entities/`
+3. Use `wiki_apply` to create/update concept pages in `concepts/`
+4. If a new entity or concept emerged, create a new page
+5. Use `wiki_lint` to check for structural issues
 
 **When answering questions about prior work:**
-1. Check `memory/wiki/index.md` first
-2. Read relevant wiki pages (entities, concepts, sources)
-3. Synthesize answer with `[[Page Name]]` citations
+1. Use `wiki_search` to find relevant pages
+2. Use `wiki_get` to read specific pages
+3. Synthesize answer with source citations
 4. If the answer is valuable and non-obvious, file it as a new wiki page
 
 **When ingesting a new source (article, paper, gist):**
 1. Save raw copy to `raw/sources/`
 2. Write summary in `memory/wiki/sources/`
-3. Update affected entity/concept pages
-4. Update `memory/wiki/index.md`
-5. Log the ingest in `memory/wiki/log.md`
+3. Update affected entity/concept pages via `wiki_apply`
+4. Log the ingest in `memory/wiki/log.md`
 
 **Wiki lint (during heartbeats or on request):**
-- Check for contradictions, orphans, stale claims, missing cross-references
-- Results go in `memory/wiki/log.md`
+- Use `wiki_lint` to check for contradictions, orphans, stale claims, missing cross-references
 
 ## Source Selection Rules (Framework Contamination Prevention)
 
@@ -322,7 +334,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ## Related
 
-- [Default AGENTS.md](/reference/AGENTS.default)
+- [Default AGENTS.md](/reference/agents.default)
 
 ## Git Workflow
 - After any meaningful change (routes, components, styles, assets) run `git status`.
