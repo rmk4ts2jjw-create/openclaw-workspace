@@ -102,6 +102,7 @@ Integrated 2026-06-12. Full pipeline:
 - **Phase 6 (done):** Review loop integrated into Night Shift — auto-review each completed task overnight. Tonight (01:00 BST) will be first live test.
 - Max 5 reviews/night, max $1.00/night (OpenRouter credits)
 - Review failure does NOT fail the original task
+- **Kanban auto-revert bug (2026-06-12):** save-tasks merge didn't protect `status` when `stalledAt` was set. UI saves overwrote stall detector resets. Fixed by protecting disk-side status/currentStep/progress when stalledAt is present. Also fixed maintenance.sh heredoc bash 3.2 incompatibility.
 
 ## Cron Jobs
 
