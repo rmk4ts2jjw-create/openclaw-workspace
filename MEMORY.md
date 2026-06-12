@@ -99,7 +99,7 @@ Integrated 2026-06-12. Full pipeline:
 7. Update Station Memory wiki
 
 - **Phase 5 (validated):** 65 seconds, $0.04 total, pipeline works end-to-end
-- **Phase 6 (in progress):** Wire into Night Shift — auto-review each completed task overnight
+- **Phase 6 (done):** Review loop integrated into Night Shift — auto-review each completed task overnight. Tonight (01:00 BST) will be first live test.
 - Max 5 reviews/night, max $1.00/night (OpenRouter credits)
 - Review failure does NOT fail the original task
 
