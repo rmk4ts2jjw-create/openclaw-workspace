@@ -165,7 +165,8 @@ print(len([t for t in tasks if t.get('status') == 'backlog' and not t.get('stall
     if echo "$CB_RESULT" | grep -q "^TRIPPED:"; then
       echo "[$TIMESTAMP] [CIRCUIT-BREAKER] Task dispatch halted — circuit open ($CB_RESULT)" >> "$LOG_FILE"
     else
-      DISPATCH_OUTPUT=$(python3 << 'PYEOF' 2>&1)
+      DISPATCH_SCRIPT=$(mktemp /tmp/dispatch-XXXXXX.py)
+      cat > "$DISPATCH_SCRIPT" << 'PYEOF'
 import json, os, tempfile, shutil
 from datetime import datetime, timezone
 
@@ -235,7 +236,8 @@ with open(log_file, 'a') as f:
 
 print(f"Dispatched {picked['id']}: {picked['title']}")
 PYEOF
-)
+      DISPATCH_OUTPUT=$(python3 "$DISPATCH_SCRIPT" 2>&1)
+      rm -f "$DISPATCH_SCRIPT"
       echo "$DISPATCH_OUTPUT" >> "$LOG_FILE"
       if echo "$DISPATCH_OUTPUT" | grep -q "^Dispatched "; then
         echo "[$TIMESTAMP] [6/10] Task dispatcher: dispatched task" >> "$LOG_FILE"
