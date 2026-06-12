@@ -4463,5 +4463,158 @@
     "wasStalled": false,
     "completedAt": "2026-06-08T01:13:24.543572+00:00",
     "summary": "Station Memory subsystem fully implemented and deployed. New /station-memory route with 8 record types (architecture-decision, lesson-learned, incident-knowledge, completed-task-summary, operational-decision, framework-rule, runbook, known-issue). Features: category tabs with counts, full-text search, expandable detail cards with type-specific rendering, related records linking, tag navigation, URL search params. Seed data: 8 records from integration sessions. Extended /api/search to include station-memory records. Added nav entry to KNOWLEDGE sidebar. Built on existing patterns (JSON storage, server-data modules, route loaders). All pages verified 200."
+  },
+  {
+    "id": "task-rev-phase-2",
+    "title": "Phase 2: Manual Review Testing",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P1",
+    "tags": [
+      "review-system",
+      "phase-2",
+      "manual-testing"
+    ],
+    "note": "Take REV-2026-06-12-001.md, submit to DeepSeek via browser automation. Document process, recommendations, time, verdict. Validates concept before automation investment.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-12T13:50:37.280318+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 2 backlog \u2014 manual review testing"
+      }
+    ],
+    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "startedAt": null,
+    "stalledAt": null,
+    "dispatchCount": 0
+  },
+  {
+    "id": "task-rev-phase-3",
+    "title": "Phase 3: Automated Browser Review",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P2",
+    "tags": [
+      "review-system",
+      "phase-3",
+      "browser-automation"
+    ],
+    "note": "Automate Phase 2 workflow: browser-automation skill opens DeepSeek, pastes review package, extracts response, parses recommendations, saves to recommendations/, sends Telegram notification. 3 retries on failure.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-12T13:50:37.280318+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 3 backlog \u2014 automated browser review"
+      }
+    ],
+    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "startedAt": null,
+    "stalledAt": null,
+    "dispatchCount": 0
+  },
+  {
+    "id": "task-rev-phase-4",
+    "title": "Phase 4: OpenRouter Reviewer",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P2",
+    "tags": [
+      "review-system",
+      "phase-4",
+      "openrouter",
+      "api"
+    ],
+    "note": "Use OpenCode with dedicated reviewer model via OpenRouter. Submit review packages via OpenCode (no browser). Capture structured JSON recommendations. Compare against Phase 3: cost, quality, reliability, speed.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-12T13:50:37.280318+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 4 backlog \u2014 OpenRouter reviewer"
+      }
+    ],
+    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "startedAt": null,
+    "stalledAt": null,
+    "dispatchCount": 0
+  },
+  {
+    "id": "task-rev-phase-5",
+    "title": "Phase 5: Automated Review Loop",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P2",
+    "tags": [
+      "review-system",
+      "phase-5",
+      "automation",
+      "end-to-end"
+    ],
+    "note": "Full end-to-end automation: feature completion \u2192 auto-generate review package \u2192 submit to external AI \u2192 parse recommendations \u2192 Accept/Reject/Defer \u2192 auto-implement via OpenCode \u2192 log decisions \u2192 update Station Memory.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-12T13:50:37.280318+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 5 backlog \u2014 automated review loop"
+      }
+    ],
+    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "startedAt": null,
+    "stalledAt": null,
+    "dispatchCount": 0
+  },
+  {
+    "id": "task-rev-phase-6",
+    "title": "Phase 6: Night Shift Integration",
+    "assignee": "monkey",
+    "status": "backlog",
+    "ts": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "priority": "P3",
+    "tags": [
+      "review-system",
+      "phase-6",
+      "night-shift",
+      "autonomous"
+    ],
+    "note": "Review loop becomes part of autonomous Night Shift. Every completed feature reviewed overnight. Findings fed back as next-day backlog. Morning report includes review stats. Circuit breaker: max 5 reviews/night.",
+    "summary": null,
+    "history": [
+      {
+        "ts": "2026-06-12T13:50:37.280318+00:00",
+        "action": "created",
+        "actor": "monkey",
+        "details": "Phase 6 backlog \u2014 Night Shift integration"
+      }
+    ],
+    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "startedAt": null,
+    "stalledAt": null,
+    "dispatchCount": 0
   }
 ]
