@@ -44,14 +44,19 @@ For coding work on Mission Control or any project, use the right tool for the jo
 Do NOT use OpenClaw chat for complex multi-file coding work. Use direct edits — one file at a time, committed individually. OpenClaw executes, monitors, and wires data.
 
 ### Coding Agent Delegation
-- **Codex** (`codex`) is installed and available — use for background coding work
-- **Claude Code** and **OpenCode** are not currently installed
-- Launch with `background:true`, `pty:true` for Codex
+- **OpenCode** (`opencode`) is the primary coding agent — use for all multi-file coding work
+- **Model:** `openrouter/qwen/qwen3-coder` (paid tier, uses OpenRouter credits)
+- **Command:** `opencode run --model openrouter/qwen/qwen3-coder '[task]'`
+- **Credits are ONLY for coding tasks via OpenCode** — general chat stays on owl-alpha free tier
+- **Codex** (`codex`) is installed but cloud-only (hardcoded to OpenAI API) — do not use
+- **Claude Code** is not installed
+- Launch with `background:true` for long-running coding sessions
 - Always capture a notification route before spawning
 - Worker must send completion/failure via `openclaw message send`
 - Monitor with `process`; do not kill slow workers without cause
 - **Never** run coding agents in `~/.openclaw` or active OpenClaw state dirs
 - See `coding-agent` skill for full launch forms and rules
+- **For multi-file coding tasks:** use `opencode run --model openrouter/qwen/qwen3-coder '[task]'` via exec. Credits only for coding. General chat stays on owl-alpha free tier.
 
 ---
 

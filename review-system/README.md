@@ -118,10 +118,12 @@ Fallback: Option C with DeepSeek for cost reduction.
 
 | Phase | Goal | Status |
 |-------|------|--------|
-| **Phase 1** | Framework + manual testing | ✅ Complete |
+| **Phase 1** | Framework + manual testing | ✅ Complete (2026-06-12) |
 | **Phase 2** | Manual review cycles (3-5 tests) | 🔜 Next |
-| **Phase 3** | Automated pipeline (OpenRouter) | ⏳ Future |
-| **Phase 4** | Continuous review (every significant change) | ⏳ Future |
+| **Phase 3** | Automated browser review (DeepSeek) | ⏳ Future |
+| **Phase 4** | OpenRouter reviewer (API-based) | ⏳ Future |
+| **Phase 5** | Automated review loop (end-to-end) | ⏳ Future |
+| **Phase 6** | Night Shift integration | ⏳ Future |
 
 **Phase 2 manual test process:**
 1. Andre takes `pending/REV-2026-06-04-001.md`

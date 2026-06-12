@@ -1,15 +1,15 @@
 {
   "active": false,
-  "date": "2026-06-10",
-  "startedAt": "2026-06-10T01:00:00+01:00",
-  "endedAt": "2026-06-10T01:00:00+01:00",
+  "date": "2026-06-12",
+  "startedAt": "2026-06-12T01:00:00+01:00",
+  "endedAt": null,
   "tasksCompleted": [],
   "tasksAttempted": 0,
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "No eligible tasks — 1 backlog task (task-be03dff8) ineligible: dispatchCount=6, wasStalled=true",
+  "stoppedReason": "No eligible tasks — both backlog items blocked (dispatchCount>=3 or phase-3/large-change tags)",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-10 — no tasks to process. System healthy.",
-  "lastHeartbeatCheck": "2026-06-10T05:01:00+01:00"
+  "note": "Night Shift 2026-06-12 — no dispatch. 0 in-progress, 3 open incidents (under threshold). System healthy.",
+  "lastHeartbeatCheck": "2026-06-12T01:42:00+01:00"
 }

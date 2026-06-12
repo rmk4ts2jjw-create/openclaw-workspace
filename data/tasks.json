@@ -103,6 +103,12 @@
         "action": "reset-to-backlog",
         "actor": "monkey",
         "details": "Ghost dispatch reset (was in_progress, no sub-agent running, dispatchCount now 7)"
+      },
+      {
+        "ts": "2026-06-12T07:17:30.500616+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 34 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "currentStep": null,
@@ -114,7 +120,7 @@
     ],
     "dispatchCount": 7,
     "wasStalled": true,
-    "stalledAt": "2026-06-12T06:43:28.631181+00:00",
+    "stalledAt": null,
     "lastUpdated": "2026-06-12T06:40:27.317Z",
     "startedAt": "2026-06-12T06:40:27.317Z"
   },
@@ -154,11 +160,17 @@
         "action": "reset-to-backlog",
         "actor": "monkey",
         "details": "Ghost dispatch reset (was in_progress, no sub-agent running, dispatchCount now 1)"
+      },
+      {
+        "ts": "2026-06-12T07:17:30.500616+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 34 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastUpdated": "2026-06-12T06:40:17.037Z",
     "startedAt": "2026-06-12T06:40:17.037Z",
-    "stalledAt": "2026-06-12T06:43:28.631181+00:00",
+    "stalledAt": null,
     "dispatchCount": 1
   },
   {

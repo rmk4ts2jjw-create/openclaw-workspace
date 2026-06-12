@@ -334,3 +334,23 @@
 - **Tasks**: 0 active, 0 awaiting review, 0 archived
 - **Backup**: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
 - **Overall**: ✅ ALL SYSTEMS NOMINAL
+
+## 2026-06-10 23:00 (Europe/London) — Daily Station Check
+- **Load Average**: 1.47 1.31 1.47
+- **Disk**: 228Gi total, 16Gi used, 14Gi free, **52%** used
+- **Memory**: Mach Virtual Memory Statistics: (page size of 16384 bytes)
+- **Uptime**: up 21 days, 10:53, 2 users, load averages: 1.47 1.31 1.47
+- **Git**: no changes
+- **Tasks**: 0 active, 0 awaiting review, 0 archived
+- **Backup**: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+- **Overall**: ✅ ALL SYSTEMS NOMINAL
+
+## 2026-06-11 23:00 (Europe/London) — Daily Station Check
+- **Load Average**: 1.78 1.86 1.90
+- **Disk**: 228Gi total, 16Gi used, 11Gi free, **59%** used
+- **Memory**: Mach Virtual Memory Statistics: (page size of 16384 bytes)
+- **Uptime**: up 22 days, 10:53, 2 users, load averages: 1.78 1.86 1.90
+- **Git**: no changes
+- **Tasks**: 0 active, 0 awaiting review, 0 archived
+- **Backup**: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+- **Overall**: ✅ ALL SYSTEMS NOMINAL

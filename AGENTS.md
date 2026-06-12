@@ -8,6 +8,7 @@ This folder is home. Treat it that way.
 - **Always report**: When adding to backlog, include what was tried and the blocker
 - **Use agents**: Offload complex debugging/implementation to subagents. Don't spin your wheels alone.
 - **Multi-file refactors**: Use direct edits in sequence — one file at a time, commit after each. It's slower but costs zero tokens. Quick single-file fixes stay with direct edit/write tools.
+- **Coding delegation**: For multi-file coding tasks, use `opencode run --model openrouter/qwen/qwen3-coder '[task]'` via exec. Credits only for coding. General chat stays on owl-alpha free tier. See `docs/framework.md` for full rules.
 
 ## Task Progress Reporting
 
