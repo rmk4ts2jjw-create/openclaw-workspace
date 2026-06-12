@@ -4595,11 +4595,11 @@
     "id": "task-rev-phase-5",
     "title": "Phase 5: Automated Review Loop",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T18:26:59.221363+00:00",
     "currentStep": null,
-    "progress": 0,
+    "progress": 100,
     "priority": "P2",
     "tags": [
       "review-system",
@@ -4608,29 +4608,36 @@
       "end-to-end"
     ],
     "note": "Full end-to-end automation: feature completion \u2192 auto-generate review package \u2192 submit to external AI \u2192 parse recommendations \u2192 Accept/Reject/Defer \u2192 auto-implement via OpenCode \u2192 log decisions \u2192 update Station Memory.",
-    "summary": null,
+    "summary": "Automated review loop validated end-to-end: generate package \u2192 submit via OpenRouter \u2192 evaluate \u2192 implement \u2192 log decisions. 65 seconds, $0.04 total. Pipeline works but OpenCode is too aggressive for small changes; direct edit better for targeted fixes.",
     "history": [
       {
         "ts": "2026-06-12T13:50:37.280318+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Phase 5 backlog \u2014 automated review loop"
+      },
+      {
+        "ts": "2026-06-12T18:26:59.221507+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Phase 5 validated: automated review loop works end-to-end. 65s, $0.04. Decision log at review-system/decisions/REV-2026-06-12-2dfe56-decision.md"
       }
     ],
-    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "lastUpdated": "2026-06-12T18:26:59.221504+00:00",
     "startedAt": null,
     "stalledAt": null,
-    "dispatchCount": 0
+    "dispatchCount": 0,
+    "completedAt": "2026-06-12T18:26:59.221506+00:00"
   },
   {
     "id": "task-rev-phase-6",
     "title": "Phase 6: Night Shift Integration",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-12T18:26:59.254039+00:00",
+    "currentStep": "Wiring review loop into Night Shift workflow",
+    "progress": 10,
     "priority": "P3",
     "tags": [
       "review-system",
@@ -4646,10 +4653,16 @@
         "action": "created",
         "actor": "monkey",
         "details": "Phase 6 backlog \u2014 Night Shift integration"
+      },
+      {
+        "ts": "2026-06-12T18:26:59.254191+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Phase 6 in progress: wiring automated review loop into Night Shift"
       }
     ],
-    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
-    "startedAt": null,
+    "lastUpdated": "2026-06-12T18:26:59.254188+00:00",
+    "startedAt": "2026-06-12T18:26:59.254189+00:00",
     "stalledAt": null,
     "dispatchCount": 0
   }

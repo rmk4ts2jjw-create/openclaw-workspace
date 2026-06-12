@@ -2,9 +2,10 @@
 
 _Autonomous task processing during 01:00-07:00 when Andre is asleep._
 
-**Status:** Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks)
+**Status:** Implemented — Phase 2 test passed, enabled for nightly runs (max 2 tasks). Phase 6 review loop integrated (2026-06-12).
 **Created:** 2026-06-03
 **Activated:** 2026-06-03
+**Review Loop:** Integrated 2026-06-12 — each completed task triggers automated external review (OpenRouter via OpenCode)
 
 ---
 
@@ -270,5 +271,58 @@ Reason: [no eligible tasks / rate limits hit / etc.]
 
 ---
 
-_Design version 1.0 — 2026-06-03_
-_Ready for Andre's review before implementation._
+## 11. Automated Review Loop Integration (Phase 6)
+
+After Night Shift completes each task, run the external review loop:
+
+### Trigger
+- When a Night Shift sub-agent marks a task `done`, the heartbeat handler checks: does this task have code changes (non-null `summary` or git diff)?
+- If yes → enter review loop before picking the next task.
+- If no (e.g. research task, config change) → skip review, pick next task.
+
+### Review Loop Steps
+1. **Generate package:** `bash scripts/generate-review-package.sh "<feature title>"`
+2. **Submit via OpenCode:** `opencode run --model openrouter/qwen/qwen3-coder --print-logs "$(cat /tmp/review-pkg-<feature>.md)"`
+3. **Parse JSON:** Extract recommendations, risks, priorities from OpenCode output
+4. **Evaluate:** Accept / Reject / Defer each recommendation
+5. **Implement accepted changes:**
+   - Single-file targeted edits → use direct `edit` tool (not OpenCode)
+   - Multi-file changes → use `opencode run --model openrouter/qwen/qwen3-coder`
+6. **Log decisions:** Write to `review-system/decisions/REV-<date>-<feature>-decision.md`
+7. **Update Station Memory:** Create/update wiki entity for any new lessons
+
+### Safety Constraints
+- **Max 5 reviews per night** (circuit breaker)
+- **Max $1.00 total review cost** per night (OpenRouter credits)
+- **Skip review if:** rate limits detected, OpenCode unavailable, or review loop circuit breaker tripped
+- **Review loop failures do NOT fail the original task** — task stays done, review deferred
+
+### Morning Report Addition
+Add review stats to the 07:00 Telegram report:
+```
+── Review Loop ──
+🔍 Reviews run: X | ✅ Implemented: Y | ⏭️ Deferred: Z | 💸 Cost: ~$N
+```
+
+### State Tracking
+Add to `night-shift-state.json`:
+```json
+{
+  "reviewsRun": 0,
+  "reviewsImplemented": 0,
+  "reviewsDeferred": 0,
+  "reviewCost": 0,
+  "reviewFindings": []
+}
+```
+
+### What Was Learned (from Phase 5)
+- OpenCode is great for review submission (structured JSON in ~13s) but too aggressive for small implementations
+- For single-file targeted edits, use direct `edit` tool instead of OpenCode
+- The project has no testing framework — defer test-related recommendations
+- Review loop pipeline: 65 seconds, ~$0.04 total
+
+---
+
+_Design version 1.1 — 2026-06-12_
+_Review loop integrated. Phase 6 in progress._

@@ -126,7 +126,7 @@ If any condition fails → log reason, skip Night Shift this cycle.
 - Pick ONE eligible task, spawn sub-agent with full task brief
 - Sub-agent MUST update `currentStep` and `lastActivity` every 5-10 min — this is CRITICAL. Without intermediate updates, stall detection cannot function and the morning report cannot assess agent behavior.
 - **Night Shift stall rule:** If a task has been in_progress for >30 min with no `lastActivity` update (or currentStep still shows "Agent starting…"), reset it to backlog immediately. Do NOT let Night Shift tasks sit frozen. The 07:00 morning report should never show a task that's been stuck for hours.
-- On completion: mark done with summary, pick next eligible task
+- On completion: mark done with summary, run review loop (see Review Loop section below), then pick next eligible task
 - On failure: move back to backlog with failure note, no retry
 - Stop immediately if 429s detected or Andre sends a message
 - **Night Shift sub-agent brief MUST include:**
@@ -167,7 +167,25 @@ Completed:
 
 **Progress update assessment:** For each completed task, check its history. If there are no `progress` or `step_update` entries between `started` and `completed`, flag it. The goal is at least 2-3 intermediate updates per task.
 
-## IncidentAuto-Resolve (check EVERY heartbeat)
+### Review Loop (after each completed Night Shift task)
+When a Night Shift task is marked `done` and has code changes (non-null `summary` or git diff):
+1. Check circuit breaker: `bash scripts/circuit-breaker.sh check night-shift` — if TRIPPED, skip review
+2. Check review count in `data/night-shift-state.json` — if `reviewsRun >= 5`, skip review
+3. Generate review package: `bash scripts/generate-review-package.sh "<feature title>"`
+4. Submit via OpenCode: `opencode run --model openrouter/qwen/qwen3-coder --print-logs "$(cat /tmp/review-pkg-<feature>.md)"`
+5. Parse JSON recommendations from output
+6. Evaluate each: Accept / Reject / Defer (with reasoning)
+7. Implement accepted changes:
+   - Single-file targeted edits → use direct `edit` tool
+   - Multi-file changes → use `opencode run --model openrouter/qwen/qwen3-coder`
+8. Log decisions to `review-system/decisions/REV-<date>-<feature>-decision.md`
+9. Update Station Memory wiki with any new lessons
+10. Update `night-shift-state.json`: increment `reviewsRun`, add findings
+- **Max $1.00/night** for reviews (OpenRouter credits)
+- **Review failure does NOT fail the original task** — task stays done, review deferred
+- **No review for:** research tasks, config-only changes, or if rate limits detected
+
+## Incident Auto-Resolve (check EVERY heartbeat)
 - Read `data/incidents.json`, count open (non-RESOLVED) incidents
 - If open incidents > 10: run auto-resolve
   - POST to `/api/incidents/auto-resolve` with `{ closeOldDays: 5 }`

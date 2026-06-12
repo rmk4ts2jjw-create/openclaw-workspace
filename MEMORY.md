@@ -87,6 +87,22 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-09:** Fixed Knowledge Base tab — node:sqlite replaces better-sqlite3 for SSR compat
 - **2026-06-09:** Updated AGENTS.md — Workboard + Memory Wiki as primary tools
 
+## External AI Review Loop
+
+Integrated 2026-06-12. Full pipeline:
+1. Generate review package from git history → `scripts/generate-review-package.sh`
+2. Submit via OpenCode + OpenRouter (`opencode run --model openrouter/qwen/qwen3-coder`)
+3. Parse structured JSON recommendations
+4. Evaluate: Accept / Reject / Defer
+5. Implement accepted changes (direct edit for single-file, OpenCode for multi-file)
+6. Log decisions to `review-system/decisions/`
+7. Update Station Memory wiki
+
+- **Phase 5 (validated):** 65 seconds, $0.04 total, pipeline works end-to-end
+- **Phase 6 (in progress):** Wire into Night Shift — auto-review each completed task overnight
+- Max 5 reviews/night, max $1.00/night (OpenRouter credits)
+- Review failure does NOT fail the original task
+
 ## Cron Jobs
 
 Active OpenClaw cron jobs (12 total, 10 enabled):
