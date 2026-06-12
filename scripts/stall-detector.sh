@@ -52,6 +52,40 @@ reset_count = 0
 cleared_count = 0
 
 for t in tasks:
+    # PHASE 0: Instant reset for "Agent starting…" that never progressed
+    # If currentStep is "Agent starting…" (or null) and lastActivity is >60s ago,
+    # the sub-agent never actually started. Reset immediately.
+    if t.get('status') == 'in_progress':
+        step = t.get('currentStep', None)
+        last = t.get('lastActivity') or t.get('ts')
+        if step in ('Agent starting…', 'Agent starting...', None) and last:
+            try:
+                last_ts = datetime.fromisoformat(last.replace('Z', '+00:00'))
+                age_sec = (now - last_ts).total_seconds()
+                if age_sec > 60:
+                    t['status'] = 'backlog'
+                    t['currentStep'] = None
+                    t['progress'] = 0
+                    t['stalledAt'] = now.isoformat()
+                    t['lastActivity'] = now.isoformat()
+                    t['dispatchCount'] = t.get('dispatchCount', 0) + 1
+                    t['wasStalled'] = True
+                    t['ghostDispatch'] = True
+                    entry = {
+                        'ts': now.isoformat(),
+                        'action': 'ghost_dispatch_reset',
+                        'actor': 'stall-detector',
+                        'details': f'Ghost dispatch reset — Agent starting for {age_sec:.0f}s with no progress'
+                    }
+                    if 'history' not in t:
+                        t['history'] = []
+                    t['history'].append(entry)
+                    log_lines.append(f"  GHOST_RESET {t['id']}: {t['title'][:60]} — Agent starting for {age_sec:.0f}s")
+                    reset_count += 1
+                    continue
+            except (ValueError, TypeError):
+                pass
+
     # PHASE 1: Reset stale in_progress tasks to backlog
     if t.get('status') != 'in_progress':
         continue
@@ -88,6 +122,7 @@ for t in tasks:
         t['stalledAt'] = now.isoformat()
         t['lastActivity'] = now.isoformat()
         t['dispatchCount'] = t.get('dispatchCount', 0) + 1
+        t['wasStalled'] = True
         entry = {
             'ts': now.isoformat(),
             'action': 'stalled_reset',
@@ -116,6 +151,7 @@ for t in tasks:
     # Clear stalledAt after 30 minutes in backlog (gives time for the in_progress slot to clear)
     if in_backlog_min > 30:
         t['stalledAt'] = None
+        t.pop('wasStalled', None)
         entry = {
             'ts': now.isoformat(),
             'action': 'stalled_cleared',

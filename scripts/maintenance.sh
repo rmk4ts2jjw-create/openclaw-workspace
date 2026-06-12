@@ -206,12 +206,43 @@ priority_order = {'P1': 0, 'P2': 1, 'P3': 2}
 backlog.sort(key=lambda t: (priority_order.get(t.get('priority', 'P3'), 2), t.get('ts', '')))
 picked = backlog[0]
 
+# ── Pre-dispatch validation ──────────────────────────────────────────────
+# Validate the picked task is actually dispatchable BEFORE setting in_progress.
+# If validation fails, mark as dispatch-failed and skip.
+EXCLUDED_TAGS = {'large-change', 'phase-2-dependent', 'phase-3-dependent',
+                 'needs-human-input', 'planning', 'design', 'roadmap'}
+task_tags = set(picked.get('tags', []))
+conflicting_tags = task_tags & EXCLUDED_TAGS
+if conflicting_tags:
+    reason = f'Excluded by tags: {sorted(conflicting_tags)}'
+    print(f"DISPATCH_FAILED {picked['id']}: {reason}")
+    for t in tasks:
+        if t['id'] == picked['id']:
+            t['dispatchFailed'] = True
+            t['dispatchFailedReason'] = reason
+            t['dispatchFailedAt'] = datetime.now(timezone.utc).isoformat()
+            entry = {
+                'ts': datetime.now(timezone.utc).isoformat(),
+                'action': 'dispatch_failed',
+                'actor': 'dispatcher',
+                'details': reason
+            }
+            if 'history' not in t:
+                t['history'] = []
+            t['history'].append(entry)
+            break
+    safe_write(tasks_file, tasks)
+    exit(0)
+
 for t in tasks:
     if t['id'] == picked['id']:
         t['status'] = 'in_progress'
         t['ts'] = 'just now'
         t['lastActivity'] = datetime.now(timezone.utc).isoformat()
         t['startedAt'] = datetime.now(timezone.utc).isoformat()
+        # Clear wasStalled flag on successful dispatch
+        if 'wasStalled' in t:
+            del t['wasStalled']
         if 'note' not in t:
             t['note'] = ''
         t['note'] += f" [auto-dispatched {datetime.now().strftime('%Y-%m-%d %H:%M')}]"

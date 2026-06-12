@@ -5,12 +5,22 @@
 ## Task Pickup
 - Read `data/tasks.json`, find tasks with `status: "backlog"`
 - ONLY pick tasks that are truly dispatchable: no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
-- **Exclude tasks with blocking tags:** `needs-human-input`, `planning`, `design`, `roadmap`, `phase-2-dependent`, `phase-3-dependent`, etc. If a tag clearly indicates the task is blocked on something that doesn't exist yet, skip it.
+- **Exclude tasks with blocking tags:** `needs-human-input`, `planning`, `design`, `roadmap`, `phase-2-dependent`, `phase-3-dependent`, `large-change`, etc. If a tag clearly indicates the task is blocked on something that doesn't exist yet, skip it.
+- **Pre-dispatch validation:** Before moving a task to `in_progress`, verify:
+  - `dispatchCount < 3` (hard limit — never exceed)
+  - No excluded tags present
+  - Task is not already being worked on (check `currentStep` is not set by another agent)
+  - If validation fails → leave in `backlog`, add history entry with failure reason, DO NOT set `in_progress`
 - Sort by priority (P1 > P2 > P3), then by age (oldest first)
+- **Only dispatch ONE task per heartbeat cycle** — quality over quantity
 - Spawn a sub-agent with a clear task brief including: task ID, title, note/description, and expected output
 - Move task to `in_progress` when starting, `done` when complete
 - **CRITICAL: When moving a task to `in_progress`, you MUST set `lastActivity` to the current ISO timestamp IMMEDIATELY.** This is the #1 defense against ghost dispatches. If you dispatch a task and the sub-agent never starts, stall detection needs this timestamp to catch it within 30 minutes.
+- **NEVER set `currentStep` to "Agent starting…"** — this is the #1 cause of ghost dispatches. Either:
+  - Set `currentStep` to the FIRST REAL ACTION (e.g. "Reading tasks.tsx"), OR
+  - Leave `currentStep` as `null` until the sub-agent reports its first step
 - **The sub-agent MUST update `currentStep` and `lastActivity` (ISO timestamp) every 5-10 min with specific actions** — NOT "Agent starting…". Example: "Reading AppSidebar.tsx", "Editing nav order", "Verifying app loads". Without `lastActivity` updates, stall detection cannot function.
+- **Ghost dispatch timeout:** If a task has been `in_progress` with `currentStep: null` or `currentStep: "Agent starting…"` for >60 seconds, the stall detector will auto-reset it. Don't fight this — fix the dispatch pattern instead.
 - Write completion summary before marking done
 - **Sub-agent task brief MUST include these instructions:**
   - Update `currentStep` to a specific action BEFORE starting work (e.g. "Reading tasks.tsx")
@@ -66,6 +76,7 @@
 - If staleness > 2 hours: reset to `backlog`, set `stalledAt` to the current ISO timestamp, add history entry explaining why. The `stalledAt` field prevents the heartbeat from immediately re-dispatching the same task.
 - ALSO increment `dispatchCount` by 1 (set to at least 1 if not present). If `dispatchCount >= 3`, the dispatcher will skip the task entirely via its `dispatchCount < 3` filter. This is a secondary guard against the race condition where `stalledAt` gets cleared by the save-tasks merge logic.
 - If staleness > 30 minutes but < 2 hours: log a warning. If currentStep is still "Agent starting…" or null, reset immediately — the task was never actually picked up by an agent
+- **Ghost dispatch fast-path (Phase 0):** If `currentStep` is "Agent starting…" (or null) AND `lastActivity` is >60 seconds old, reset IMMEDIATELY — don't wait 30 minutes. The sub-agent never started.
 - The `startedAt` field is NOT reliable — do not use it for stall detection
 - After resetting, commit the change so the Kanban reflects reality immediately
 
