@@ -180,3 +180,14 @@ These are the mistakes that have happened before and must never happen again:
 ### Phase 6 Backlog
 - Station Memory: compounding knowledge system (entity tracking, concept linking, searchable memory, memory decay)
 - Added as `task-phase6-station-memory` in backlog
+
+---
+
+## Code Review Submission
+
+### Use OpenCode + OpenRouter (Never Browser Automation)
+- **Command:** `opencode run --model openrouter/qwen/qwen3-coder --print-logs "$(cat /path/to/review-package.md)"`
+- **Output:** Structured JSON with recommendations, risks, priorities
+- **Never use browser automation for review submission** — browser is unreliable and slow
+- **Time:** ~13 seconds, **Cost:** ~$0.02 per review
+- **Validated:** Phase 2 (manual browser, 15min, $0.27) vs Phase 4 (OpenCode, 13s, $0.02) — automated is 70x faster and 14x cheaper
