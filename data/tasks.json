@@ -4510,11 +4510,11 @@
     "id": "task-rev-phase-3",
     "title": "Phase 3: Automated Browser Review",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "skipped",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-12T15:15:45.960192+00:00",
+    "currentStep": "Skipped \u2014 browser automation unreliable",
+    "progress": 100,
     "priority": "P2",
     "tags": [
       "review-system",
@@ -4522,13 +4522,19 @@
       "browser-automation"
     ],
     "note": "Automate Phase 2 workflow: browser-automation skill opens DeepSeek, pastes review package, extracts response, parses recommendations, saves to recommendations/, sends Telegram notification. 3 retries on failure.",
-    "summary": null,
+    "summary": "Skipped per DeepSeek review findings: browser automation is the bottleneck and should be bypassed for reliable review submission. Moving to Phase 4 (OpenRouter reviewer).",
     "history": [
       {
         "ts": "2026-06-12T13:50:37.280318+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Phase 3 backlog \u2014 automated browser review"
+      },
+      {
+        "ts": "2026-06-12T15:15:45.960192+00:00",
+        "action": "skipped",
+        "actor": "monkey",
+        "details": "Skipped per DeepSeek review: browser automation unreliable; API-based review (Phase 4) is better path"
       }
     ],
     "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
@@ -4540,11 +4546,11 @@
     "id": "task-rev-phase-4",
     "title": "Phase 4: OpenRouter Reviewer",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-12T15:15:45.960192+00:00",
+    "currentStep": "Implementing OpenRouter reviewer for automated review submission",
+    "progress": 10,
     "priority": "P2",
     "tags": [
       "review-system",
@@ -4560,6 +4566,12 @@
         "action": "created",
         "actor": "monkey",
         "details": "Phase 4 backlog \u2014 OpenRouter reviewer"
+      },
+      {
+        "ts": "2026-06-12T15:15:45.960192+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Phase 4: Started per DeepSeek recommendation \u2014 use OpenRouter reviewer instead of browser automation"
       }
     ],
     "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
