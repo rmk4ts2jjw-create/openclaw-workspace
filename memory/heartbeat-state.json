@@ -3,8 +3,8 @@
     "email": null,
     "calendar": null,
     "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-12T05:00:00+00:00"
+    "gateway": "2026-06-13T05:00:00+00:00"
   },
-  "lastHeartbeat": "2026-06-12T05:00:00+00:00",
-  "notes": "2026-06-12 05:00 BST — Heartbeat. System healthy: load 1.97, disk 59%, uptime 22d 16h. Night Shift check: 0 dispatchable tasks (both backlog excluded). All quiet."
+  "lastHeartbeat": "2026-06-13T05:00:00+00:00",
+  "notes": "2026-06-13 05:00 BST — Heartbeat. System healthy: load 1.27, disk 51%, uptime 15h45m. In-progress task-memory_trend-d654 active since 03:50 (10.7min ago, step=None, watching). 5 open incidents (under threshold). 0 dispatchable night-shift tasks. Night Shift already completed this hour — no eligible tasks found."
 }
