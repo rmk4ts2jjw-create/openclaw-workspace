@@ -148,9 +148,12 @@ for t in tasks:
         in_backlog_min = (now - stalled_time).total_seconds() / 60
     except:
         continue
-    # Clear stalledAt after 30 minutes in backlog (gives time for the in_progress slot to clear)
-    if in_backlog_min > 30:
+    # Clear stalledAt after 2 hours in backlog (prevents rapid dispatch→reset loops)
+    # wasStalled persists for 3 hours to give manual review time
+    # dispatchFailed is NEVER cleared by the stall detector — only manual intervention
+    if in_backlog_min > 120:
         t['stalledAt'] = None
+    if in_backlog_min > 180:
         t.pop('wasStalled', None)
         entry = {
             'ts': now.isoformat(),
@@ -161,7 +164,7 @@ for t in tasks:
         if 'history' not in t:
             t['history'] = []
         t['history'].append(entry)
-        log_lines.append(f"  CLEARED {t['id']}: stalledAt removed after {in_backlog_min:.0f} min in backlog")
+        log_lines.append(f"  CLEARED {t['id']}: stalledAt removed after {in_backlog_min:.0f} min in backlog (wasStalled remains for 3h)")
         cleared_count += 1
 
 if reset_count > 0 or cleared_count > 0:
