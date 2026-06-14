@@ -305,3 +305,169 @@
 [2026-06-12 17:18:16 UTC] Stall detector: OK — no stale tasks
 [2026-06-12 17:48:20 UTC] Stall detector: OK — no stale tasks
 [2026-06-12 18:18:23 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 18:48:26 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 19:18:29 UTC] Stall detector: reset 1 task(s)
+  RESET task-rev-phase-6: Phase 6: Night Shift Integration — stale 47 min
+[2026-06-12 19:48:47 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 20:19:06 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 20:49:09 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:19:11 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:40:54 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:40:57 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:41:26 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:42:48 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:43:20 UTC] Stall detector: cleared 2 task(s)
+  CLEARED task-be03dff8: stalledAt removed after 30 min in backlog
+  CLEARED task-wb-migration-001: stalledAt removed after 30 min in backlog
+[2026-06-12 21:46:05 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 21:49:14 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 22:19:20 UTC] Stall detector: reset 2 task(s)
+  RESET task-prevent-mount-9c28: Prevent: WD MyCloud mount missing for 2 consecutive checks ( — stale 30 min
+  RESET task-wb-migration-001: Migrate tasks.json to Workboard (Large) — stale 33 min
+[2026-06-12 22:42:52 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 22:49:25 UTC] Stall detector: cleared 2 task(s)
+  CLEARED task-prevent-mount-9c28: stalledAt removed after 30 min in backlog
+  CLEARED task-wb-migration-001: stalledAt removed after 30 min in backlog
+[2026-06-12 22:53:13 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-mount-9c28: Prevent: WD MyCloud mount missing for 2 consecutive checks ( — Agent starting for 228s
+[2026-06-12 23:00:07 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 23:12:49 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 23:19:31 UTC] Stall detector: OK — no stale tasks
+[2026-06-12 23:42:41 UTC] Stall detector: reset 5 task(s)
+  GHOST_RESET task-inc-105-7b35: Fix: INC-105 — Agent starting for 701s
+  GHOST_RESET task-inc-106-70cd: Fix: INC-106 — Agent starting for 702s
+  GHOST_RESET task-be03dff8: Runbook Evolution — Agent starting for 709s
+  GHOST_RESET task-wb-migration-001: Migrate tasks.json to Workboard (Large) — Agent starting for 710s
+  GHOST_RESET task-prevent-mount-9c28: Prevent: WD MyCloud mount missing for 2 consecutive checks ( — Agent starting for 711s
+[2026-06-12 23:49:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 00:19:43 UTC] Stall detector: cleared 5 task(s)
+  CLEARED task-inc-105-7b35: stalledAt removed after 37 min in backlog
+  CLEARED task-inc-106-70cd: stalledAt removed after 37 min in backlog
+  CLEARED task-be03dff8: stalledAt removed after 37 min in backlog
+  CLEARED task-wb-migration-001: stalledAt removed after 37 min in backlog
+  CLEARED task-prevent-mount-9c28: stalledAt removed after 37 min in backlog
+[2026-06-13 00:31:18 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-105-7b35: Fix: INC-105 — Agent starting for 694s
+[2026-06-13 00:34:16 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 00:42:45 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-106-70cd: Fix: INC-106 — Agent starting for 510s
+[2026-06-13 00:49:50 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 01:12:40 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-mount-9c28: Prevent: WD MyCloud mount missing for 2 consecutive checks ( — Agent starting for 1371s
+[2026-06-13 01:19:56 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 01:42:37 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-d654: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1360s
+[2026-06-13 01:50:03 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 02:20:08 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 02:30:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 02:42:47 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 02:50:12 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 03:12:38 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-da23: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1345s
+[2026-06-13 03:20:17 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 03:42:43 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-105-7b35: Fix: INC-105 — Agent starting for 1345s
+[2026-06-13 03:50:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 04:20:25 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 04:32:19 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-106-70cd: Fix: INC-106 — Agent starting for 714s
+[2026-06-13 04:42:36 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 04:50:29 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 05:20:33 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 05:30:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 05:42:47 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 05:50:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 06:12:38 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+[2026-06-13 06:20:42 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 06:42:42 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-da23: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1320s
+[2026-06-13 06:50:46 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 07:13:00 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-d654: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1334s
+[2026-06-13 07:20:51 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 07:43:30 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 07:50:55 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 08:12:42 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 08:20:59 UTC] Stall detector: reset 7 task(s)
+  GHOST_RESET task-prevent-mount-9c28: Prevent: WD MyCloud mount missing for 2 consecutive checks ( — Agent starting for 305s
+  GHOST_RESET task-wb-migration-001: Migrate tasks.json to Workboard (Large) — Agent starting for 306s
+  GHOST_RESET task-be03dff8: Runbook Evolution — Agent starting for 307s
+  GHOST_RESET task-inc-105-7b35: Fix: INC-105 — Agent starting for 307s
+  GHOST_RESET task-inc-106-70cd: Fix: INC-106 — Agent starting for 308s
+  GHOST_RESET task-prevent-memory_trend-d654: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 309s
+  GHOST_RESET task-prevent-memory_trend-da23: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 310s
+[2026-06-13 08:44:10 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 08:51:04 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 09:12:49 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 09:21:08 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 09:42:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 09:51:13 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 10:12:44 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 10:21:17 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 10:42:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 10:51:23 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 11:18:02 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 11:21:27 UTC] Stall detector: cleared 7 task(s)
+  CLEARED task-prevent-mount-9c28: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-wb-migration-001: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-be03dff8: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-inc-105-7b35: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-inc-106-70cd: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-d654: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+[2026-06-13 11:49:20 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 11:51:33 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 12:12:46 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 12:21:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 12:43:28 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 12:51:44 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 13:21:49 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 13:30:58 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 13:43:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 13:44:12 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 13:51:54 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 14:21:57 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 14:21:59 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 14:42:40 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 14:52:03 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 15:12:39 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 15:22:08 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 15:42:39 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 15:52:12 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 16:22:16 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 16:52:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 17:12:41 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 17:22:27 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 17:42:58 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-107-6fac: Fix: INC-107 — Agent starting for 1231s
+[2026-06-13 17:52:32 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 18:12:34 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-108-76b3: Fix: INC-108 — Agent starting for 1201s
+[2026-06-13 18:22:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 18:42:36 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 18:52:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 19:13:03 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 19:22:49 UTC] Stall detector: OK — no stale tasks
+[2026-06-13 21:23:12 UTC] Stall detector: cleared 3 task(s)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 1091 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-d654: stalledAt removed after 1042 min in backlog (wasStalled remains for 3h)
+  CLEARED task-inc-105-7b35: stalledAt removed after 1060 min in backlog (wasStalled remains for 3h)
+[2026-06-13 21:53:17 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-da23: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1805s
+[2026-06-13 22:23:23 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-d654: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1805s
+[2026-06-13 22:53:28 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-prevent-memory_trend-7f1b: Prevent: Memory growing >5%/check for 3 consecutive checks ( — Agent starting for 1805s
+[2026-06-13 23:23:33 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-inc-106-70cd: Fix: INC-106 — Agent starting for 1805s
+[2026-06-13 23:53:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 00:23:44 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 07:27:12 UTC] Stall detector: cleared 4 task(s)
+  CLEARED task-prevent-memory_trend-7f1b: stalledAt removed after 514 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 574 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-d654: stalledAt removed after 544 min in backlog (wasStalled remains for 3h)
+  CLEARED task-inc-106-70cd: stalledAt removed after 484 min in backlog (wasStalled remains for 3h)
+[2026-06-14 07:57:17 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 08:27:22 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 08:57:27 UTC] Stall detector: OK — no stale tasks

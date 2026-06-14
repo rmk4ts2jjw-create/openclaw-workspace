@@ -5,7 +5,7 @@
 ## Task Pickup
 - Read `data/tasks.json`, find tasks with `status: "backlog"`
 - ONLY pick tasks that are truly dispatchable: no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
-- **Exclude tasks with blocking tags:** `needs-human-input`, `planning`, `design`, `roadmap`, `phase-2-dependent`, `phase-3-dependent`, `large-change`, etc. If a tag clearly indicates the task is blocked on something that doesn't exist yet, skip it.
+- **Exclude tasks with blocking tags:** `needs-human-input`, `planning`, `design`, `roadmap`, `phase-2-dependent`, `phase-3-dependent`, `large-change`, `prevention`, `predictive`, etc. If a tag clearly indicates the task is blocked on something that doesn't exist yet, skip it.
 - **Pre-dispatch validation:** Before moving a task to `in_progress`, verify:
   - `dispatchCount < 3` (hard limit — never exceed)
   - No excluded tags present
@@ -127,7 +127,7 @@ If any condition fails → log reason, skip Night Shift this cycle.
 ### Task Eligibility
 - `status: "backlog"`, no `stalledAt`, `dispatchCount < 3`, not `wasStalled`
 - Priority P2 or P3 only (P1 excluded)
-- No exclusion tags: `needs-human-input`, `planning`, `design`, `roadmap`
+- No exclusion tags: `needs-human-input`, `planning`, `design`, `roadmap`, `prevention`, `predictive`
 - Sort: P2 before P3, then oldest first
 - **Max 2 tasks tonight** (first night trial — increase after 2 successful nights)
 - No new tasks after 06:30. Hard stop at 07:00.

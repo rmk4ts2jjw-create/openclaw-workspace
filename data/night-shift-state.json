@@ -1,15 +1,15 @@
 {
   "active": false,
-  "date": "2026-06-12",
-  "startedAt": "2026-06-12T01:00:00+01:00",
+  "date": "2026-06-14",
+  "startedAt": "2026-06-14T01:00:00+01:00",
   "endedAt": null,
   "tasksCompleted": [],
   "tasksAttempted": 0,
   "tasksFailed": [],
   "tokensUsed": 0,
   "currentTask": null,
-  "stoppedReason": "No eligible tasks — both backlog items blocked (dispatchCount>=3 or phase-3/large-change tags)",
+  "stoppedReason": "No eligible tasks \u2014 all 8 backlog items blocked (wasStalled/dc>=3/P1)",
   "maxTasks": 2,
-  "note": "Night Shift 2026-06-12 — no dispatch. 0 in-progress, 3 open incidents (under threshold). System healthy.",
-  "lastHeartbeatCheck": "2026-06-12T01:42:00+01:00"
+  "note": "Night Shift 2026-06-14 \u2014 no dispatch. System healthy: load 2.48, disk 24%, uptime 1d11h. 6 open incidents (3 fresh <2h, 3 orphans >5d). 0 in_progress tasks. 0 eligible backlog tasks.",
+  "lastHeartbeatCheck": "2026-06-14T00:03:40.963895+00:00"
 }

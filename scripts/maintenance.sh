@@ -210,7 +210,8 @@ picked = backlog[0]
 # Validate the picked task is actually dispatchable BEFORE setting in_progress.
 # If validation fails, mark as dispatch-failed and skip.
 EXCLUDED_TAGS = {'large-change', 'phase-2-dependent', 'phase-3-dependent',
-                 'needs-human-input', 'planning', 'design', 'roadmap'}
+                 'needs-human-input', 'planning', 'design', 'roadmap',
+                 'prevention', 'predictive'}
 task_tags = set(picked.get('tags', []))
 conflicting_tags = task_tags & EXCLUDED_TAGS
 if conflicting_tags:

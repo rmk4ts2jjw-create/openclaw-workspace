@@ -103,6 +103,8 @@ Integrated 2026-06-12. Full pipeline:
 - Max 5 reviews/night, max $1.00/night (OpenRouter credits)
 - Review failure does NOT fail the original task
 - **Kanban auto-revert bug (2026-06-12):** save-tasks merge didn't protect `status` when `stalledAt` was set. UI saves overwrote stall detector resets. Fixed by protecting disk-side status/currentStep/progress when stalledAt is present. Also fixed maintenance.sh heredoc bash 3.2 incompatibility.
+- **Ghost dispatch fix (2026-06-12):** Tasks stuck in 'Agent starting…' with no sub-agent. Three-pronged fix: (1) pre-dispatch validation checks excluded tags before setting in_progress, (2) 60s ghost timeout resets tasks immediately if sub-agent never starts, (3) wasStalled flag management — Phase 2 clears wasStalled after 3h cooldown. MC UI shows 'Dispatch Failed' and 'Ghost' badges.
+- **Dispatch loop fix (2026-06-13):** Extended stall detector Phase 2 cooldowns (stalledAt: 2h, wasStalled: 3h) to prevent rapid dispatch→reset→dispatch loops. dispatchFailed is never auto-cleared.
 
 ## Cron Jobs
 

@@ -1,0 +1,30 @@
+[2026-06-14 01:38:04 BST] === Docker Healthcheck ===
+[2026-06-14 01:38:04 BST] ✅ stremio-server: Up About a minute
+[2026-06-14 01:38:04 BST] ✅ mac-proxy: Up 10 days
+[2026-06-14 01:38:04 BST] ✅ open-webui: Up 12 days (healthy)
+[2026-06-14 01:38:04 BST] ✅ portainer: Up 12 days
+[2026-06-14 01:38:04 BST] ✅ sonarr: Up 12 days
+[2026-06-14 01:38:04 BST] ✅ lidarr: Up 12 days
+[2026-06-14 01:38:04 BST] ✅ radarr: Up 12 days
+[2026-06-14 01:38:04 BST] ✅ pihole: Up 12 days (healthy)
+[2026-06-14 01:38:04 BST] ✅ rdt-client: Up 12 days (healthy)
+[2026-06-14 01:38:04 BST] ✅ prowlarr: Up 12 days
+[2026-06-14 01:38:04 BST] ---
+[2026-06-14 01:38:04 BST] Total: 10 | Running: 10 | Down: 0
+[2026-06-14 01:38:04 BST] ✅ All 10 containers running
+[2026-06-14 01:38:04 BST] === Healthcheck OK ===
+[2026-06-14 01:42:37 BST] === Docker Healthcheck ===
+[2026-06-14 01:42:37 BST] ✅ stremio-server: Up 6 minutes
+[2026-06-14 01:42:37 BST] ✅ mac-proxy: Up 10 days
+[2026-06-14 01:42:37 BST] ✅ open-webui: Up 12 days (healthy)
+[2026-06-14 01:42:37 BST] ✅ portainer: Up 12 days
+[2026-06-14 01:42:37 BST] ✅ sonarr: Up 12 days
+[2026-06-14 01:42:37 BST] ✅ lidarr: Up 12 days
+[2026-06-14 01:42:37 BST] ✅ radarr: Up 12 days
+[2026-06-14 01:42:37 BST] ✅ pihole: Up 12 days (healthy)
+[2026-06-14 01:42:37 BST] ✅ rdt-client: Up 12 days (healthy)
+[2026-06-14 01:42:37 BST] ✅ prowlarr: Up 12 days
+[2026-06-14 01:42:37 BST] ---
+[2026-06-14 01:42:37 BST] Total: 10 | Running: 10 | Down: 0
+[2026-06-14 01:42:37 BST] ✅ All 10 containers running
+[2026-06-14 01:42:37 BST] === Healthcheck OK ===

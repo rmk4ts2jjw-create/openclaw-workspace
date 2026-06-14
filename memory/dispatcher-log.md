@@ -131,3 +131,113 @@
 - **task-session-cleanup-001**: Session cleanup cron + error spike watchdog
 - Assignee: engineer
 - Status: backlog → in_progress
+
+## 2026-06-12 22:46:05 — DISPATCHED
+- **task-wb-migration-001**: Migrate tasks.json to Workboard (Large)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-12 22:49:14 — DISPATCHED
+- **task-prevent-mount-9c28**: Prevent: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-12 23:49:26 — DISPATCHED
+- **task-prevent-mount-9c28**: Prevent: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 01:19:44 — DISPATCHED
+- **task-inc-105-7b35**: Fix: INC-105
+- Assignee: engineer
+- Status: backlog → in_progress
+
+## 2026-06-13 01:34:16 — DISPATCHED
+- **task-inc-106-70cd**: Fix: INC-106
+- Assignee: lifesupport
+- Status: backlog → in_progress
+
+## 2026-06-13 01:49:50 — DISPATCHED
+- **task-prevent-mount-9c28**: Prevent: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 02:19:57 — DISPATCHED
+- **task-prevent-memory_trend-d654**: Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 03:50:13 — DISPATCHED
+- **task-prevent-memory_trend-da23**: Prevent: Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 04:20:17 — DISPATCHED
+- **task-inc-105-7b35**: Fix: INC-105
+- Assignee: engineer
+- Status: backlog → in_progress
+
+## 2026-06-13 04:50:21 — DISPATCHED
+- **task-prevent-memory_trend-d654**: Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 05:20:25 — DISPATCHED
+- **task-inc-106-70cd**: Fix: INC-106
+- Assignee: lifesupport
+- Status: backlog → in_progress
+
+## 2026-06-13 07:20:42 — DISPATCHED
+- **task-prevent-memory_trend-da23**: Prevent: Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 07:50:47 — DISPATCHED
+- **task-prevent-memory_trend-d654**: Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 18:22:27 — DISPATCHED
+- **task-inc-107-6fac**: Fix: INC-107
+- Assignee: engineer
+- Status: backlog → in_progress
+
+## 2026-06-13 18:52:33 — DISPATCHED
+- **task-inc-108-76b3**: Fix: INC-108
+- Assignee: lifesupport
+- Status: backlog → in_progress
+
+## 2026-06-13 22:23:12 — DISPATCHED
+- **task-prevent-memory_trend-da23**: Prevent: Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 22:53:18 — DISPATCHED
+- **task-prevent-memory_trend-d654**: Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 23:23:23 — DISPATCHED
+- **task-prevent-memory_trend-7f1b**: Prevent: Memory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-13 23:53:28 — DISPATCHED
+- **task-inc-106-70cd**: Fix: INC-106
+- Assignee: lifesupport
+- Status: backlog → in_progress
+
+## 2026-06-14 08:27:12 — DISPATCHED
+- **task-prevent-memory_trend-7f1b**: Prevent: Memory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-14 08:57:17 — DISPATCHED
+- **task-prevent-memory_trend-5329**: Prevent: Memory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-14 09:27:22 — DISPATCHED
+- **task-prevent-memory_trend-5329**: Prevent: Memory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)
+- Assignee: monkey
+- Status: backlog → in_progress

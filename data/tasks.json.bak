@@ -1,5 +1,538 @@
 [
   {
+    "id": "task-inc-108-d0d4",
+    "title": "Fix: INC-108",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-108: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-108",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T07:27:14.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-108 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T07:27:14.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-prevent-memory_trend-5329",
+    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-14 08:57]",
+    "tags": [
+      "prevention",
+      "predictive",
+      "memory_trend"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T07:27:12.629680+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (65% confidence)"
+      },
+      {
+        "ts": "2026-06-14T07:57:17.651467+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-14T08:13:11.339411+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 currentStep null for >60s with no progress (heartbeat 09:12 BST)"
+      }
+    ],
+    "lastActivity": "2026-06-14T08:13:11.339411+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 65,
+    "predictionPattern": "memory_trend",
+    "startedAt": "2026-06-14T07:57:17.651456+00:00",
+    "dispatchCount": 1
+  },
+  {
+    "id": "task-prevent-memory_trend-7f1b",
+    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 23:23] [auto-dispatched 2026-06-14 08:27]",
+    "tags": [
+      "prevention",
+      "predictive",
+      "memory_trend"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T21:53:18.293615+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (65% confidence)"
+      },
+      {
+        "ts": "2026-06-13T22:23:23.254841+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T22:53:28.137379+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
+      },
+      {
+        "ts": "2026-06-14T00:19:11.785Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-14T00:19:12.748Z",
+        "action": "reassigned",
+        "actor": "monkey",
+        "details": "Status changed from in_progress to backlog"
+      },
+      {
+        "ts": "2026-06-14T07:27:12.377723+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 514 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T07:27:12.541253+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-14T07:43:31.585228+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting\u2026 for >60s with no progress (heartbeat 08:21 BST)"
+      }
+    ],
+    "lastActivity": "2026-06-14T07:43:31.585228+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 65,
+    "predictionPattern": "memory_trend",
+    "startedAt": "2026-06-14T07:27:12.541241+00:00",
+    "stalledAt": null,
+    "dispatchCount": 1,
+    "ghostDispatch": true,
+    "lastUpdated": "2026-06-14T00:19:12.748Z"
+  },
+  {
+    "id": "task-inc-107-1476",
+    "title": "Fix: INC-107",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-107: Gateway log shows 52 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-107",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T21:53:20.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-107 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-13T21:53:20.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-106-5c33",
+    "title": "Fix: INC-106",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-106: Gateway log shows 46 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-106",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T21:23:15.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-106 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-13T21:23:15.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-105-1506",
+    "title": "Fix: INC-105",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-105: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-105",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T21:23:15.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-105 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-13T21:23:15.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-prevent-memory_trend-da23",
+    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 03:50] [auto-dispatched 2026-06-13 22:23]",
+    "tags": [
+      "prevention",
+      "predictive",
+      "memory_trend"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T02:20:08.620302+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (65% confidence)"
+      },
+      {
+        "ts": "2026-06-13T02:50:13.172349+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T03:12:38.047957+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1345s with no progress"
+      },
+      {
+        "ts": "2026-06-13T21:23:12.533086+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 1091 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-13T21:23:12.740999+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T21:53:18.020453+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
+      },
+      {
+        "ts": "2026-06-14T07:27:12.377723+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 574 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "lastActivity": "2026-06-13T21:53:18.020453+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 65,
+    "predictionPattern": "memory_trend",
+    "startedAt": "2026-06-13T21:23:12.740978+00:00",
+    "stalledAt": null,
+    "dispatchCount": 2,
+    "ghostDispatch": true
+  },
+  {
+    "id": "task-prevent-memory_trend-d654",
+    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 02:19] [auto-dispatched 2026-06-13 04:50] [auto-dispatched 2026-06-13 22:53]",
+    "tags": [
+      "prevention",
+      "predictive",
+      "memory_trend"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-13T00:49:50.685494+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (65% confidence)"
+      },
+      {
+        "ts": "2026-06-13T01:19:57.259889+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T01:42:37.340787+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1360s with no progress"
+      },
+      {
+        "ts": "2026-06-13T03:50:21.767773+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T04:01:38.427289+00:00",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch reset: currentStep was None, lastActivity >60s old. Sub-agent never started."
+      },
+      {
+        "ts": "2026-06-13T21:23:12.533086+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 1042 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-13T21:53:18.186944+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T22:23:23.083722+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
+      },
+      {
+        "ts": "2026-06-14T07:27:12.377723+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 544 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "lastActivity": "2026-06-13T22:23:23.083722+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 65,
+    "predictionPattern": "memory_trend",
+    "startedAt": "2026-06-13T21:53:18.186928+00:00",
+    "stalledAt": null,
+    "dispatchCount": 3,
+    "ghostDispatch": true
+  },
+  {
+    "id": "task-inc-105-7b35",
+    "title": "Fix: INC-105",
+    "assignee": "engineer",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-105: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files. [auto-dispatched 2026-06-13 01:19] [auto-dispatched 2026-06-13 04:20]",
+    "linkedIncidentId": "INC-105",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-12T21:46:09.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-105 (RCA: 80% confidence)"
+      },
+      {
+        "ts": "2026-06-12T23:31:01.164Z",
+        "action": "started",
+        "actor": "engineer",
+        "details": "Status changed from triage to in_progress"
+      },
+      {
+        "ts": "2026-06-12T23:42:41.959595+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 701s with no progress"
+      },
+      {
+        "ts": "2026-06-13T00:19:43.944794+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 37 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-13T00:19:44.195964+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T00:31:18.352881+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 694s with no progress"
+      },
+      {
+        "ts": "2026-06-13T03:20:17.757781+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T03:42:43.059334+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1345s with no progress"
+      },
+      {
+        "ts": "2026-06-13T21:23:12.533086+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 1060 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "lastActivity": "2026-06-13T03:42:43.059334+00:00",
+    "rcaConfidence": 80,
+    "lastUpdated": "2026-06-12T23:31:01.164Z",
+    "currentStep": null,
+    "startedAt": "2026-06-13T03:20:17.757770+00:00",
+    "progress": 0,
+    "stalledAt": null,
+    "dispatchCount": 3,
+    "ghostDispatch": true
+  },
+  {
+    "id": "task-inc-106-70cd",
+    "title": "Fix: INC-106",
+    "assignee": "lifesupport",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-106: Gateway log shows 10 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs. [auto-dispatched 2026-06-13 01:34] [auto-dispatched 2026-06-13 23:53]",
+    "linkedIncidentId": "INC-106",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-12T21:46:09.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-106 (RCA: 90% confidence)"
+      },
+      {
+        "ts": "2026-06-12T23:30:59.862Z",
+        "action": "started",
+        "actor": "lifesupport",
+        "details": "Status changed from triage to in_progress"
+      },
+      {
+        "ts": "2026-06-12T23:42:41.959595+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 702s with no progress"
+      },
+      {
+        "ts": "2026-06-13T00:19:43.944794+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 37 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-13T00:34:16.544090+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T00:42:46.045140+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 510s with no progress"
+      },
+      {
+        "ts": "2026-06-13T22:53:28.315190+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T23:23:33.135995+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
+      },
+      {
+        "ts": "2026-06-14T07:27:12.377723+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 484 min in backlog \u2014 task eligible for re-dispatch"
+      }
+    ],
+    "lastActivity": "2026-06-13T23:23:33.135995+00:00",
+    "rcaConfidence": 90,
+    "lastUpdated": "2026-06-12T23:30:59.862Z",
+    "currentStep": null,
+    "startedAt": "2026-06-13T22:53:28.315179+00:00",
+    "progress": 0,
+    "stalledAt": null,
+    "dispatchCount": 3,
+    "ghostDispatch": true
+  },
+  {
     "id": "task-be03dff8",
     "title": "Runbook Evolution",
     "assignee": "monkey",
@@ -109,20 +642,56 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 34 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-12T21:12:09.520Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-12T21:13:20.236376+00:00",
+        "action": "reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset: dc=7 over limit, phase-2-dependent tag, no sub-agent started. Reset to backlog with stalledAt."
+      },
+      {
+        "ts": "2026-06-12T21:43:20.885194+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 30 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-12T23:30:52.641Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-12T23:42:41.959595+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 709s with no progress"
+      },
+      {
+        "ts": "2026-06-13T00:19:43.944794+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 37 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "currentStep": null,
-    "lastActivity": "2026-06-12T06:43:28.631181+00:00",
-    "progress": 5,
+    "lastActivity": "2026-06-12T23:42:41.959595+00:00",
+    "progress": 0,
     "tags": [
       "runbook-evolution",
       "phase-2-dependent"
     ],
-    "dispatchCount": 7,
-    "wasStalled": true,
+    "dispatchCount": 8,
     "stalledAt": null,
-    "lastUpdated": "2026-06-12T06:40:27.317Z",
-    "startedAt": "2026-06-12T06:40:27.317Z"
+    "lastUpdated": "2026-06-12T23:30:52.641Z",
+    "startedAt": "2026-06-12T23:30:52.641Z",
+    "ghostDispatch": true
   },
   {
     "id": "task-wb-migration-001",
@@ -130,9 +699,9 @@
     "assignee": "monkey",
     "status": "backlog",
     "ts": "just now",
-    "lastActivity": "2026-06-12T06:43:28.631181+00:00",
+    "lastActivity": "2026-06-12T23:42:41.959595+00:00",
     "currentStep": null,
-    "progress": 5,
+    "progress": 0,
     "priority": "P2",
     "tags": [
       "migration",
@@ -140,7 +709,7 @@
       "phase-3",
       "large-change"
     ],
-    "note": "Constitution: LARGE CHANGE \u2014 needs Epic breakdown, migration plan, rollback plan, explicit approval before implementation.",
+    "note": "Constitution: LARGE CHANGE \u2014 needs Epic breakdown, migration plan, rollback plan, explicit approval before implementation. [auto-dispatched 2026-06-12 22:46]",
     "summary": null,
     "history": [
       {
@@ -166,12 +735,136 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 34 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-12T21:12:05.120Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-12T21:13:20.236376+00:00",
+        "action": "reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset: large-change tag, no sub-agent started. Reset to backlog with stalledAt."
+      },
+      {
+        "ts": "2026-06-12T21:43:20.885194+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 30 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-12T21:46:05.814014+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-12T22:19:20.452329+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 33 min with no activity (threshold: 30 min). Was: None"
+      },
+      {
+        "ts": "2026-06-12T23:30:51.775Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-12T23:42:41.959595+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 710s with no progress"
+      },
+      {
+        "ts": "2026-06-13T00:19:43.944794+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 37 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastUpdated": "2026-06-12T06:40:17.037Z",
-    "startedAt": "2026-06-12T06:40:17.037Z",
+    "lastUpdated": "2026-06-12T23:30:51.775Z",
+    "startedAt": "2026-06-12T23:30:51.775Z",
     "stalledAt": null,
-    "dispatchCount": 1
+    "dispatchCount": 3,
+    "ghostDispatch": true
+  },
+  {
+    "id": "task-prevent-mount-9c28",
+    "title": "Prevent: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 75%)\n\nWD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)\n\nPrevention action:\nCheck NAS power/network. Run: bash scripts/mount-wd-mycloud.sh\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-12 22:49] [auto-dispatched 2026-06-13 01:49]",
+    "tags": [
+      "prevention",
+      "predictive",
+      "mount"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-12T21:46:06.755911+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (75% confidence)"
+      },
+      {
+        "ts": "2026-06-12T21:49:14.770028+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-12T22:19:20.452329+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 30 min with no activity (threshold: 30 min). Was: None"
+      },
+      {
+        "ts": "2026-06-12T23:30:50.778Z",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Status changed from backlog to in_progress"
+      },
+      {
+        "ts": "2026-06-12T23:42:41.959595+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 711s with no progress"
+      },
+      {
+        "ts": "2026-06-13T00:19:43.944794+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 37 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-13T00:49:50.535808+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-13T01:12:41.036322+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1371s with no progress"
+      }
+    ],
+    "lastActivity": "2026-06-13T01:12:41.036322+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 75,
+    "predictionPattern": "mount",
+    "startedAt": "2026-06-13T00:49:50.535776+00:00",
+    "stalledAt": null,
+    "dispatchCount": 3,
+    "lastUpdated": "2026-06-12T23:30:50.778Z",
+    "ghostDispatch": true,
+    "wasStalled": true
   },
   {
     "id": "task-INC-104-act-929626",
@@ -4546,11 +5239,11 @@
     "id": "task-rev-phase-4",
     "title": "Phase 4: OpenRouter Reviewer",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T15:15:45.960192+00:00",
-    "currentStep": "Implementing OpenRouter reviewer for automated review submission",
-    "progress": 10,
+    "lastActivity": "2026-06-12T16:12:24.918814+00:00",
+    "currentStep": "OpenRouter review complete \u2014 structured JSON output",
+    "progress": 100,
     "priority": "P2",
     "tags": [
       "review-system",
@@ -4559,7 +5252,7 @@
       "api"
     ],
     "note": "Use OpenCode with dedicated reviewer model via OpenRouter. Submit review packages via OpenCode (no browser). Capture structured JSON recommendations. Compare against Phase 3: cost, quality, reliability, speed.",
-    "summary": null,
+    "summary": "Phase 4 complete. Used OpenCode + qwen3-coder via OpenRouter to submit review package programmatically. Time: ~13s, Cost: ~$0.02. Produced structured JSON with 6 recommendations, 2 additional risks. 70x faster and 14x cheaper than Phase 2 manual method. Verdict: automated review is viable and should be the standard going forward.",
     "history": [
       {
         "ts": "2026-06-12T13:50:37.280318+00:00",
@@ -4572,22 +5265,34 @@
         "action": "started",
         "actor": "monkey",
         "details": "Phase 4: Started per DeepSeek recommendation \u2014 use OpenRouter reviewer instead of browser automation"
+      },
+      {
+        "ts": "2026-06-12T15:48:05.708578+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 32 min with no activity (threshold: 30 min). Was: Implementing OpenRouter reviewer for automated review submission"
+      },
+      {
+        "ts": "2026-06-12T16:12:24.918814+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Phase 4: OpenRouter reviewer \u2014 automated review submission successful"
       }
     ],
     "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
     "startedAt": null,
-    "stalledAt": null,
-    "dispatchCount": 0
+    "stalledAt": "2026-06-12T15:48:05.708578+00:00",
+    "dispatchCount": 1
   },
   {
     "id": "task-rev-phase-5",
     "title": "Phase 5: Automated Review Loop",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
+    "lastActivity": "2026-06-12T18:26:59.221363+00:00",
     "currentStep": null,
-    "progress": 0,
+    "progress": 100,
     "priority": "P2",
     "tags": [
       "review-system",
@@ -4596,29 +5301,36 @@
       "end-to-end"
     ],
     "note": "Full end-to-end automation: feature completion \u2192 auto-generate review package \u2192 submit to external AI \u2192 parse recommendations \u2192 Accept/Reject/Defer \u2192 auto-implement via OpenCode \u2192 log decisions \u2192 update Station Memory.",
-    "summary": null,
+    "summary": "Automated review loop validated end-to-end: generate package \u2192 submit via OpenRouter \u2192 evaluate \u2192 implement \u2192 log decisions. 65 seconds, $0.04 total. Pipeline works but OpenCode is too aggressive for small changes; direct edit better for targeted fixes.",
     "history": [
       {
         "ts": "2026-06-12T13:50:37.280318+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Phase 5 backlog \u2014 automated review loop"
+      },
+      {
+        "ts": "2026-06-12T18:26:59.221507+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Phase 5 validated: automated review loop works end-to-end. 65s, $0.04. Decision log at review-system/decisions/REV-2026-06-12-2dfe56-decision.md"
       }
     ],
-    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
+    "lastUpdated": "2026-06-12T18:26:59.221504+00:00",
     "startedAt": null,
     "stalledAt": null,
-    "dispatchCount": 0
+    "dispatchCount": 0,
+    "completedAt": "2026-06-12T18:26:59.221506+00:00"
   },
   {
     "id": "task-rev-phase-6",
     "title": "Phase 6: Night Shift Integration",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "ts": "2026-06-12T13:50:37.280318+00:00",
-    "lastActivity": "2026-06-12T13:50:37.280318+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-12T21:48:45.847300+00:00",
+    "currentStep": "Complete \u2014 ready for tonight test",
+    "progress": 100,
     "priority": "P3",
     "tags": [
       "review-system",
@@ -4627,18 +5339,55 @@
       "autonomous"
     ],
     "note": "Review loop becomes part of autonomous Night Shift. Every completed feature reviewed overnight. Findings fed back as next-day backlog. Morning report includes review stats. Circuit breaker: max 5 reviews/night.",
-    "summary": null,
+    "summary": "Phase 6 done: review loop integrated into Night Shift. Also fixed Kanban auto-revert bug (save-tasks merge not protecting status when stalledAt set). Fixed maintenance.sh heredoc bash 3.2 incompatibility.",
     "history": [
       {
         "ts": "2026-06-12T13:50:37.280318+00:00",
         "action": "created",
         "actor": "monkey",
         "details": "Phase 6 backlog \u2014 Night Shift integration"
+      },
+      {
+        "ts": "2026-06-12T18:26:59.254191+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Phase 6 in progress: wiring automated review loop into Night Shift"
+      },
+      {
+        "ts": "2026-06-12T18:31:29.765725+00:00",
+        "action": "step_update",
+        "actor": "monkey",
+        "details": "Review loop integrated: NIGHT_SHIFT.md Section 11 + HEARTBEAT.md Review Loop subsection. Max 5 reviews/night, $1.00 cap. Ready for tonight test."
+      },
+      {
+        "ts": "2026-06-12T19:18:29.270609+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 47 min with no activity (threshold: 30 min). Was: Review loop wired into NIGHT_SHIFT.md and HEARTBEAT.md"
+      },
+      {
+        "ts": "2026-06-12T19:43:24.702487+00:00",
+        "action": "step_update",
+        "actor": "monkey",
+        "details": "Review loop wiring complete. NIGHT_SHIFT.md + HEARTBEAT.md updated. Ready for tonight test at 01:00 BST."
+      },
+      {
+        "ts": "2026-06-12T20:12:55.963159+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Phase 6 done: review loop integrated into Night Shift. Awaiting tonight test at 01:00 BST."
+      },
+      {
+        "ts": "2026-06-12T21:48:45.847448+00:00",
+        "action": "step_update",
+        "actor": "monkey",
+        "details": "Fixed Kanban auto-revert bug: save-tasks merge now protects status when stalledAt is set. Also fixed maintenance.sh heredoc bash 3.2 compat."
       }
     ],
-    "lastUpdated": "2026-06-12T13:50:37.280318+00:00",
-    "startedAt": null,
+    "lastUpdated": "2026-06-12T21:48:45.847446+00:00",
+    "startedAt": "2026-06-12T18:26:59.254189+00:00",
     "stalledAt": null,
-    "dispatchCount": 0
+    "dispatchCount": 1,
+    "completedAt": "2026-06-12T20:12:55.963156+00:00"
   }
 ]

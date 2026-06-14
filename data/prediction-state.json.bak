@@ -2,20 +2,128 @@
   "checks": {
     "mount_missing": [
       {
-        "ts": "2026-06-07T12:08:01.664966+00:00",
+        "ts": "2026-06-13T21:23:12.846458+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-13T21:53:18.270332+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-13T22:23:23.352183+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-13T22:53:28.406046+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-13T23:23:33.315211+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-13T23:53:38.591919+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-14T00:23:44.358447+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-14T07:27:12.614198+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-14T07:57:17.727003+00:00",
+        "mounted": false
+      },
+      {
+        "ts": "2026-06-14T08:27:22.634038+00:00",
         "mounted": false
       }
     ],
     "memory_trend": [
       {
-        "ts": "2026-06-07T12:08:02.560903+00:00",
-        "value": 266801.0
+        "ts": "2026-06-13T21:23:12.856368+00:00",
+        "value": 233609.0
+      },
+      {
+        "ts": "2026-06-13T21:53:18.277897+00:00",
+        "value": 251803.0
+      },
+      {
+        "ts": "2026-06-13T22:23:23.360696+00:00",
+        "value": 206736.0
+      },
+      {
+        "ts": "2026-06-13T22:53:28.414031+00:00",
+        "value": 223596.0
+      },
+      {
+        "ts": "2026-06-13T23:23:33.328536+00:00",
+        "value": 195180.0
+      },
+      {
+        "ts": "2026-06-13T23:53:38.602708+00:00",
+        "value": 151222.0
+      },
+      {
+        "ts": "2026-06-14T00:23:44.369989+00:00",
+        "value": 175257.0
+      },
+      {
+        "ts": "2026-06-14T07:27:12.621740+00:00",
+        "value": 367958.0
+      },
+      {
+        "ts": "2026-06-14T07:57:17.734239+00:00",
+        "value": 357370.0
+      },
+      {
+        "ts": "2026-06-14T08:27:22.641485+00:00",
+        "value": 382279.0
       }
     ],
     "smb_retries": [
       {
-        "ts": "2026-06-07T12:08:02.586292+00:00",
-        "count": 22
+        "ts": "2026-06-13T21:23:12.872947+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-13T21:53:18.292982+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-13T22:23:23.374358+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-13T22:53:28.427637+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-13T23:23:33.337030+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-13T23:53:38.609317+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-14T00:23:44.377923+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-14T07:27:12.629057+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-14T07:57:17.741954+00:00",
+        "count": 0
+      },
+      {
+        "ts": "2026-06-14T08:27:22.649140+00:00",
+        "count": 0
       }
     ]
   },
@@ -25,6 +133,447 @@
       "pattern": "smb_retries",
       "confidence": 70,
       "detail": "22 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-07T13:20:44.900126+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-07T13:20:44)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-07T13:20:44.900126+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "26 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T21:46:05.901795+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:46:05)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T21:49:14.854722+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T21:49:14)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T22:19:20.561052+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T22:19:20)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T22:49:26.120378+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T22:49:26)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T23:00:07.994622+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T23:00:08)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T23:19:31.904858+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T23:19:31)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-12T23:49:37.710027+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-12T23:49:37)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T00:19:44.298826+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T00:19:44)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T00:34:16.638014+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T00:34:16)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T00:49:50.642226+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T00:49:50)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T00:49:50.642226+00:00",
+      "pattern": "memory_trend",
+      "confidence": 65,
+      "detail": "Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T01:19:57.363420+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T01:19:57)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T01:50:03.264841+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T01:50:03)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T02:20:08.203888+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T02:20:08)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T02:20:08.203888+00:00",
+      "pattern": "memory_trend",
+      "confidence": 65,
+      "detail": "Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T02:50:13.239480+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T02:50:13)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T03:20:17.824726+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T03:20:17)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T03:50:21.832143+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T03:50:21)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T04:20:25.853473+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T04:20:25)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T04:50:29.765352+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T04:50:29)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T05:20:33.651314+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T05:20:33)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T05:50:38.061834+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T05:50:38)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T06:20:42.388704+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T06:20:42)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T06:50:47.142291+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T06:50:47)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T07:20:51.472473+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T07:20:51)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T07:50:55.447888+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T07:50:55)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T08:20:59.960935+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T08:20:59)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T08:51:04.375014+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T08:51:04)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T09:21:08.836061+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T09:21:08)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T09:51:13.414980+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T09:51:13)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T10:21:17.784512+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T10:21:17)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T10:51:23.168452+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T10:51:23)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T11:21:28.157375+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T11:21:28)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T11:51:33.440761+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T11:51:33)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T12:21:38.885878+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T12:21:38)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T12:51:44.438646+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T12:51:44)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T13:21:49.771311+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T13:21:49)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T13:51:55.125583+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T13:51:55)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T14:21:59.225672+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T14:21:59)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T14:52:03.821279+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T14:52:03)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T15:22:08.544815+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T15:22:08)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T15:52:12.632166+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T15:52:12)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T16:22:16.683401+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T16:22:16)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T16:52:21.823778+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T16:52:21)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T17:22:27.592515+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T17:22:27)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T17:52:33.262902+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T17:52:33)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T18:22:38.687931+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T18:22:38)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T18:52:43.707454+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T18:52:43)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T19:22:49.769881+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T19:22:49)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T21:23:12.827582+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T21:23:12)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T21:53:18.256180+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T21:53:18)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T21:53:18.256180+00:00",
+      "pattern": "memory_trend",
+      "confidence": 65,
+      "detail": "Memory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T22:23:23.336750+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T22:23:23)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T22:53:28.389135+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T22:53:28)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T23:23:33.288840+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T23:23:33)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-13T23:53:38.582237+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-13T23:53:38)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T00:23:44.339915+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T00:23:44)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T07:27:12.607514+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T07:27:12)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T07:27:12.607514+00:00",
+      "pattern": "memory_trend",
+      "confidence": 65,
+      "detail": "Memory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T07:57:17.720036+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T07:57:17)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T08:27:22.628283+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T08:27:22)",
       "status": "pending"
     }
   ],
