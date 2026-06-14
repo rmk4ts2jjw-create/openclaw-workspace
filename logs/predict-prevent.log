@@ -134,3 +134,9 @@
 [2026-06-14 08:27:22 UTC] Done: 1 anomaly(s), 0 task(s) created
 [2026-06-14 08:57:27 UTC]   ANOMALY [mount]: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T08:57:27) (confidence: 75%)
 [2026-06-14 08:57:27 UTC] Done: 1 anomaly(s), 0 task(s) created
+[2026-06-14 09:27:32 UTC]   ANOMALY [mount]: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T09:27:32) (confidence: 75%)
+[2026-06-14 09:27:32 UTC] Done: 1 anomaly(s), 0 task(s) created
+[2026-06-14 09:57:37 UTC]   ANOMALY [mount]: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T09:57:37) (confidence: 75%)
+[2026-06-14 09:57:37 UTC] Done: 1 anomaly(s), 0 task(s) created
+[2026-06-14 10:27:41 UTC]   ANOMALY [mount]: WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T10:27:41) (confidence: 75%)
+[2026-06-14 10:27:41 UTC] Done: 1 anomaly(s), 0 task(s) created

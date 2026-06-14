@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-14T07:27:14.000Z",
-    "lastActivity": "2026-06-14T07:57:19.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #2)",
+    "lastActivity": "2026-06-14T10:27:43.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #5)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -25,6 +25,21 @@
       {
         "ts": "2026-06-14T07:57:19.000Z",
         "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T09:27:34.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T09:57:39.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T10:27:43.000Z",
+        "message": "Recurrence #5: Auto-detected by gateway-monitor",
         "actor": "system"
       }
     ],
@@ -59,7 +74,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2
+    "_recurrence": 5
   },
   {
     "id": "INC-107",

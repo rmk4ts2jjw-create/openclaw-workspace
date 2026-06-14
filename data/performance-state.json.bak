@@ -8,7 +8,7 @@
       "avg_task_hours": 44.8,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-14T08:57:27.400316+00:00"
+      "analyzed_at": "2026-06-14T10:27:42.018252+00:00"
     },
     "monkey": {
       "total_tasks": 17,
@@ -18,7 +18,7 @@
       "avg_task_hours": 0.9,
       "failure_rate": 0.0,
       "success_rate": 0.941,
-      "analyzed_at": "2026-06-14T08:57:27.400316+00:00"
+      "analyzed_at": "2026-06-14T10:27:42.018252+00:00"
     },
     "lifesupport": {
       "total_tasks": 1,
@@ -28,7 +28,7 @@
       "avg_task_hours": 44.8,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-14T08:57:27.400316+00:00"
+      "analyzed_at": "2026-06-14T10:27:42.018252+00:00"
     },
     "archivist": {
       "total_tasks": 0,
@@ -38,7 +38,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-14T08:57:27.400316+00:00"
+      "analyzed_at": "2026-06-14T10:27:42.018252+00:00"
     }
   },
   "tune_tasks": [],
