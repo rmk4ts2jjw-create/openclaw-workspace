@@ -2,128 +2,128 @@
   "checks": {
     "mount_missing": [
       {
-        "ts": "2026-06-14T08:27:22.634038+00:00",
+        "ts": "2026-06-14T14:28:19.259862+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T08:57:27.352975+00:00",
+        "ts": "2026-06-14T14:58:24.085457+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T09:27:32.021397+00:00",
+        "ts": "2026-06-14T15:28:29.164726+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T09:57:37.156023+00:00",
+        "ts": "2026-06-14T16:28:32.004728+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T10:27:41.968547+00:00",
+        "ts": "2026-06-14T16:58:33.376080+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T10:57:46.830969+00:00",
+        "ts": "2026-06-14T17:28:34.598196+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T11:27:51.525412+00:00",
+        "ts": "2026-06-14T17:58:35.584516+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T11:57:55.767816+00:00",
+        "ts": "2026-06-14T18:28:36.765641+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T12:28:00.629259+00:00",
+        "ts": "2026-06-14T18:58:37.989931+00:00",
         "mounted": false
       },
       {
-        "ts": "2026-06-14T12:58:04.660504+00:00",
+        "ts": "2026-06-14T19:28:39.150319+00:00",
         "mounted": false
       }
     ],
     "memory_trend": [
       {
-        "ts": "2026-06-14T08:27:22.641485+00:00",
-        "value": 382279.0
+        "ts": "2026-06-14T14:28:19.267218+00:00",
+        "value": 313984.0
       },
       {
-        "ts": "2026-06-14T08:57:27.360600+00:00",
-        "value": 375855.0
+        "ts": "2026-06-14T14:58:24.093086+00:00",
+        "value": 316965.0
       },
       {
-        "ts": "2026-06-14T09:27:32.028925+00:00",
-        "value": 372160.0
+        "ts": "2026-06-14T15:28:29.172259+00:00",
+        "value": 337327.0
       },
       {
-        "ts": "2026-06-14T09:57:37.164019+00:00",
-        "value": 350450.0
+        "ts": "2026-06-14T16:28:32.012203+00:00",
+        "value": 339872.0
       },
       {
-        "ts": "2026-06-14T10:27:41.976293+00:00",
-        "value": 352610.0
+        "ts": "2026-06-14T16:58:33.383487+00:00",
+        "value": 352704.0
       },
       {
-        "ts": "2026-06-14T10:57:46.838594+00:00",
-        "value": 361459.0
+        "ts": "2026-06-14T17:28:34.605558+00:00",
+        "value": 356697.0
       },
       {
-        "ts": "2026-06-14T11:27:51.532762+00:00",
-        "value": 361407.0
+        "ts": "2026-06-14T17:58:35.592072+00:00",
+        "value": 354481.0
       },
       {
-        "ts": "2026-06-14T11:57:55.775301+00:00",
-        "value": 378550.0
+        "ts": "2026-06-14T18:28:36.772823+00:00",
+        "value": 331840.0
       },
       {
-        "ts": "2026-06-14T12:28:00.636776+00:00",
-        "value": 347129.0
+        "ts": "2026-06-14T18:58:37.997525+00:00",
+        "value": 338794.0
       },
       {
-        "ts": "2026-06-14T12:58:04.667947+00:00",
-        "value": 365879.0
+        "ts": "2026-06-14T19:28:39.157697+00:00",
+        "value": 327530.0
       }
     ],
     "smb_retries": [
       {
-        "ts": "2026-06-14T08:27:22.649140+00:00",
-        "count": 0
+        "ts": "2026-06-14T14:28:19.280853+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T08:57:27.368470+00:00",
-        "count": 0
+        "ts": "2026-06-14T14:58:24.109746+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T09:27:32.038733+00:00",
-        "count": 2
+        "ts": "2026-06-14T15:28:29.183695+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T09:57:37.174187+00:00",
-        "count": 2
+        "ts": "2026-06-14T16:28:32.024705+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T10:27:41.986520+00:00",
-        "count": 2
+        "ts": "2026-06-14T16:58:33.401631+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T10:57:46.847199+00:00",
-        "count": 2
+        "ts": "2026-06-14T17:28:34.623895+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T11:27:51.541344+00:00",
-        "count": 2
+        "ts": "2026-06-14T17:58:35.604710+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T11:57:55.786798+00:00",
-        "count": 2
+        "ts": "2026-06-14T18:28:36.791267+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T12:28:00.645427+00:00",
-        "count": 2
+        "ts": "2026-06-14T18:58:38.010607+00:00",
+        "count": 4
       },
       {
-        "ts": "2026-06-14T12:58:04.676979+00:00",
-        "count": 2
+        "ts": "2026-06-14T19:28:39.170445+00:00",
+        "count": 4
       }
     ]
   },
@@ -637,6 +637,160 @@
       "pattern": "mount",
       "confidence": 75,
       "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T12:58:04)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T13:28:09.554981+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T13:28:09)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T13:58:14.493124+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T13:58:14)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T14:28:19.253369+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T14:28:19)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T14:28:19.253369+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T14:58:24.072944+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T14:58:24)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T14:58:24.072944+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T15:28:29.150880+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T15:28:29)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T15:28:29.150880+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T16:28:31.998670+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T16:28:32)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T16:28:31.998670+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T16:58:33.370526+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T16:58:33)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T16:58:33.370526+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T17:28:34.592298+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T17:28:34)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T17:28:34.592298+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T17:58:35.578961+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T17:58:35)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T17:58:35.578961+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T18:28:36.759863+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T18:28:36)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T18:28:36.759863+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T18:58:37.984020+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T18:58:37)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T18:58:37.984020+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T19:28:39.144330+00:00",
+      "pattern": "mount",
+      "confidence": 75,
+      "detail": "WD MyCloud mount missing for 2 consecutive checks (last: 2026-06-14T19:28:39)",
+      "status": "pending"
+    },
+    {
+      "ts": "2026-06-14T19:28:39.144330+00:00",
+      "pattern": "smb_retries",
+      "confidence": 70,
+      "detail": "4 SMB/mount errors in recent logs",
       "status": "pending"
     }
   ],

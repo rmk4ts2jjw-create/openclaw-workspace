@@ -1,6 +1,48 @@
-.aider*
-mission-control-dashboard-dev/
-mission-control-dashboard/
-data/station-memory.db
-data/station-memory.db-shm
-data/station-memory.db-wal
+# Secrets and credentials
+.env
+.env.*
+*.token
+*token*
+*.secret
+*secret*
+*.key
+*.pem
+*.p12
+*password*
+*credential*
+*api_key*
+*apikey*
+*private*
+
+# Session data (contains full conversation logs with PII)
+logs/session-archive/
+logs/session-cleanup.log
+data/sessions/
+.openclaw/
+
+# Vite build cache
+.vite/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*.bak
+*.reset.*
+
+# Build artifacts
+dist/
+build/
+
+# Keep these specific files that would otherwise be ignored
+!.env.example
+!data/station-memory.db

@@ -269,6 +269,12 @@ def main():
     now = datetime.now(timezone.utc)
     state = load_state()
 
+    # ── GATE: Disable prevention task creation until Kanban dispatch is fixed ──
+    # Re-enable once duplicate task loop is resolved (GitHub issue: predict-prevent-dupes)
+    log("predict-prevent: DISABLED — prevention task creation paused pending dispatch fix")
+    save_state(state)
+    return
+
     # Run all anomaly checks
     checks = [
         ("mount", check_mount_trend),

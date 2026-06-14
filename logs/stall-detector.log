@@ -484,3 +484,31 @@
 [2026-06-14 12:28:00 UTC] Stall detector: OK — no stale tasks
 [2026-06-14 12:58:04 UTC] Stall detector: OK — no stale tasks
 [2026-06-14 13:28:09 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 13:58:14 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 14:28:19 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 14:58:23 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 15:28:28 UTC] Stall detector: cleared 4 task(s)
+  CLEARED task-prevent-memory_trend-5329: stalledAt removed after 195 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-7f1b: stalledAt removed after 195 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 195 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-d654: stalledAt removed after 195 min in backlog (wasStalled remains for 3h)
+[2026-06-14 16:28:31 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 16:58:33 UTC] Stall detector: reset 3 task(s)
+  RESET task-prevent-memory_trend-5329: Prevent: Memory growing >5%/check for 3 consecutive checks ( — stale 52 min
+  RESET task-prevent-memory_trend-7f1b: Prevent: Memory growing >5%/check for 3 consecutive checks ( — stale 52 min
+  RESET task-prevent-memory_trend-da23: Prevent: Memory growing >5%/check for 3 consecutive checks ( — stale 52 min
+[2026-06-14 17:28:34 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 17:58:35 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 18:28:36 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 18:58:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 19:28:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 19:58:40 UTC] Stall detector: cleared 3 task(s)
+  CLEARED task-prevent-memory_trend-5329: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-7f1b: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 180 min in backlog (wasStalled remains for 3h)
+[2026-06-14 20:28:41 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 20:58:42 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 21:28:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 21:58:45 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 22:28:46 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 22:58:47 UTC] Stall detector: OK — no stale tasks

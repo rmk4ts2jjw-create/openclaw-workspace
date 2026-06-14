@@ -947,3 +947,362 @@ Port 3000 is in use, trying another one...
 
   ➜  Local:   http://localhost:3001/
   ➜  Network: http://192.168.68.64:3001/
+Port 3000 is in use, trying another one...
+
+  VITE v8.0.13  ready in 861 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.68.64:3001/
+Port 3000 is in use, trying another one...
+
+  VITE v8.0.13  ready in 427 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.68.64:3001/
+3:15:18 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+
+  VITE v8.0.13  ready in 625 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:49:41 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+4:52:54 PM [vite] (ssr) page reload src/routes/tasks.tsx
+4:52:54 PM [vite] (ssr) program reload
+4:53:43 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:53:55 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:54:21 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:54:28 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:54:53 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:55:00 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:55:18 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:55:33 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:55:48 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:56:45 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:57:06 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+4:57:17 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+
+  VITE v8.0.13  ready in 457 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:58:38 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+5:04:17 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[api/save-tasks] Merged 129 client + 0 disk-only = 129 total
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 137 tasks
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+9:05:48 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/AppSidebar.tsx
+9:05:48 PM [vite] (ssr) page reload src/components/AppSidebar.tsx
+9:05:48 PM [vite] (ssr) program reload
+9:06:27 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/AppSidebar.tsx
+9:06:27 PM [vite] (ssr) page reload src/components/AppSidebar.tsx
+9:06:27 PM [vite] (ssr) program reload
+9:06:50 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/AppSidebar.tsx
+9:06:50 PM [vite] (ssr) page reload src/components/AppSidebar.tsx
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+9:13:32 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+9:13:32 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+9:13:32 PM [vite] (ssr) program reload
+9:14:15 PM [vite] (client) hmr update /src/styles.css?direct, /src/components/Dashboard.tsx
+9:14:15 PM [vite] (ssr) page reload src/components/Dashboard.tsx
+
+  VITE v8.0.13  ready in 521 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+9:14:35 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 125 tasks
+9:35:43 PM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 3,
+  hasAutoHeal: true,
+}

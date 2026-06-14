@@ -1,5 +1,173 @@
 [
   {
+    "id": "task-inc-112-8a16",
+    "title": "Fix: INC-112",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-112: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-112",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T22:28:47.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-112 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T22:28:47.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-111-223b",
+    "title": "Fix: INC-111",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-111: Gateway log shows 12 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-111",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T21:58:46.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-111 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T21:58:46.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-110-9951",
+    "title": "Fix: INC-110",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-110: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-110",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T21:28:44.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-110 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T21:28:44.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-prevent-smb_retries-436c",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T19:58:40.340830+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T20:28:41.479242+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T20:58:42.825390+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T21:28:44.209292+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T21:58:45.551983+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T22:28:46.913307+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-14T19:58:40.340830+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T22:28:46.913199+00:00"
+  },
+  {
+    "id": "task-inc-109-6db7",
+    "title": "Fix: INC-109",
+    "assignee": "monkey",
+    "status": "triage",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-109: 3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Tasks dispatched but not picked up by agents \u2014 ghost dispatch or agent timeout\nConfidence: 80% (2h SLA)\nFile: scripts/stall-detector.sh\nFix: Verify stall detector is running (maintenance.sh step 5). Check sub-agent timeout settings.",
+    "linkedIncidentId": "INC-109",
+    "tags": [
+      "incident-response",
+      "tasks",
+      "stale",
+      "in-progress",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T16:28:32.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-109 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T16:28:32.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-108-d0d4",
     "title": "Fix: INC-108",
     "assignee": "engineer",
@@ -75,102 +243,49 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.694112+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T12:13:03.074028+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      },
+      {
+        "ts": "2026-06-14T15:28:28.922550+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 195 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.126637+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 52 min with no activity (threshold: 30 min). Was: Dispatched \u2014 waiting for agent"
+      },
+      {
+        "ts": "2026-06-14T19:58:40.076054+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 180 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-14T08:27:54.520914+00:00",
+    "lastActivity": "2026-06-14T16:58:33.126637+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-14T08:27:22.561395+00:00",
-    "dispatchCount": 2,
-    "stalledAt": null
-  },
-  {
-    "id": "task-prevent-memory_trend-7f1b",
-    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P2",
-    "ts": "just now",
-    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (6.2%, 7.8%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 23:23] [auto-dispatched 2026-06-14 08:27]",
-    "tags": [
-      "prevention",
-      "predictive",
-      "memory_trend"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-13T21:53:18.293615+00:00",
-        "action": "created",
-        "actor": "predict-prevent",
-        "details": "Auto-created from anomaly detection (65% confidence)"
-      },
-      {
-        "ts": "2026-06-13T22:23:23.254841+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T22:53:28.137379+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
-      },
-      {
-        "ts": "2026-06-14T00:19:11.785Z",
-        "action": "started",
-        "actor": "monkey",
-        "details": "Status changed from backlog to in_progress"
-      },
-      {
-        "ts": "2026-06-14T00:19:12.748Z",
-        "action": "reassigned",
-        "actor": "monkey",
-        "details": "Status changed from in_progress to backlog"
-      },
-      {
-        "ts": "2026-06-14T07:27:12.377723+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 514 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-14T07:27:12.541253+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-14T07:43:31.585228+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting\u2026 for >60s with no progress (heartbeat 08:21 BST)"
-      },
-      {
-        "ts": "2026-06-14T08:28:07.022660+00:00",
-        "action": "stalled",
-        "actor": "monkey",
-        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
-      },
-      {
-        "ts": "2026-06-14T11:57:55.533230+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
-      }
-    ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "predictionConfidence": 65,
-    "predictionPattern": "memory_trend",
-    "startedAt": "2026-06-14T07:27:12.541241+00:00",
+    "dispatchCount": 3,
     "stalledAt": null,
-    "dispatchCount": 1,
-    "ghostDispatch": true,
-    "lastUpdated": "2026-06-14T00:19:12.748Z"
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T11:57:55.694023+00:00"
   },
   {
     "id": "task-inc-107-1476",
@@ -252,176 +367,6 @@
     ],
     "lastActivity": "2026-06-13T21:23:15.000Z",
     "rcaConfidence": 80
-  },
-  {
-    "id": "task-prevent-memory_trend-da23",
-    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P2",
-    "ts": "just now",
-    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (44.3%, 10.7%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 03:50] [auto-dispatched 2026-06-13 22:23]",
-    "tags": [
-      "prevention",
-      "predictive",
-      "memory_trend"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-13T02:20:08.620302+00:00",
-        "action": "created",
-        "actor": "predict-prevent",
-        "details": "Auto-created from anomaly detection (65% confidence)"
-      },
-      {
-        "ts": "2026-06-13T02:50:13.172349+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T03:12:38.047957+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting for 1345s with no progress"
-      },
-      {
-        "ts": "2026-06-13T21:23:12.533086+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 1091 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-13T21:23:12.740999+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T21:53:18.020453+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
-      },
-      {
-        "ts": "2026-06-14T07:27:12.377723+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 574 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-14T08:28:07.022660+00:00",
-        "action": "stalled",
-        "actor": "monkey",
-        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
-      },
-      {
-        "ts": "2026-06-14T11:57:55.533230+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
-      }
-    ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "predictionConfidence": 65,
-    "predictionPattern": "memory_trend",
-    "startedAt": "2026-06-13T21:23:12.740978+00:00",
-    "stalledAt": null,
-    "dispatchCount": 2,
-    "ghostDispatch": true
-  },
-  {
-    "id": "task-prevent-memory_trend-d654",
-    "title": "Prevent: Memory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P2",
-    "ts": "just now",
-    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (12.2%, 15.4%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-13 02:19] [auto-dispatched 2026-06-13 04:50] [auto-dispatched 2026-06-13 22:53]",
-    "tags": [
-      "prevention",
-      "predictive",
-      "memory_trend"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-13T00:49:50.685494+00:00",
-        "action": "created",
-        "actor": "predict-prevent",
-        "details": "Auto-created from anomaly detection (65% confidence)"
-      },
-      {
-        "ts": "2026-06-13T01:19:57.259889+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T01:42:37.340787+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting for 1360s with no progress"
-      },
-      {
-        "ts": "2026-06-13T03:50:21.767773+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T04:01:38.427289+00:00",
-        "action": "stalled_reset",
-        "actor": "heartbeat",
-        "details": "Ghost dispatch reset: currentStep was None, lastActivity >60s old. Sub-agent never started."
-      },
-      {
-        "ts": "2026-06-13T21:23:12.533086+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 1042 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-13T21:53:18.186944+00:00",
-        "action": "started",
-        "actor": "dispatcher",
-        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
-      },
-      {
-        "ts": "2026-06-13T22:23:23.083722+00:00",
-        "action": "ghost_dispatch_reset",
-        "actor": "stall-detector",
-        "details": "Ghost dispatch reset \u2014 Agent starting for 1805s with no progress"
-      },
-      {
-        "ts": "2026-06-14T07:27:12.377723+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 544 min in backlog \u2014 task eligible for re-dispatch"
-      },
-      {
-        "ts": "2026-06-14T08:28:07.022660+00:00",
-        "action": "stalled",
-        "actor": "monkey",
-        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
-      },
-      {
-        "ts": "2026-06-14T11:57:55.533230+00:00",
-        "action": "stalled_cleared",
-        "actor": "stall-detector",
-        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
-      }
-    ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "predictionConfidence": 65,
-    "predictionPattern": "memory_trend",
-    "startedAt": "2026-06-13T21:53:18.186928+00:00",
-    "stalledAt": null,
-    "dispatchCount": 3,
-    "ghostDispatch": true
   },
   {
     "id": "task-inc-105-7b35",
@@ -909,7 +854,7 @@
         "details": "Ghost dispatch reset \u2014 Agent starting for 1371s with no progress"
       }
     ],
-    "lastActivity": "2026-06-13T01:12:41.036322+00:00",
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 75,

@@ -292,13 +292,9 @@ else
 fi
 
 # ── 6.6 Predictive prevention ─────────────────────────────────────────────
-echo "[$TIMESTAMP] [6.6/10] Predictive prevention..." >> "$LOG_FILE"
-if [ -f "$WORKSPACE/scripts/predict-prevent.py" ]; then
-  python3 "$WORKSPACE/scripts/predict-prevent.py" >> "$LOG_FILE" 2>&1 || true
-  echo "[$TIMESTAMP] [6.6/10] Predictive prevention: done" >> "$LOG_FILE"
-else
-  echo "[$TIMESTAMP] [6.6/10] Predictive prevention: script not found, skipping" >> "$LOG_FILE"
-fi
+# DISABLED: Prevention task creation paused pending Kanban dispatch fix
+# Re-enable once duplicate task loop is resolved
+echo "[$TIMESTAMP] [6.6/10] Predictive prevention: DISABLED (skipped)" >> "$LOG_FILE"
 
 # ── 6.7 Performance tuning ─────────────────────────────────────────────────
 echo "[$TIMESTAMP] [6.7/10] Performance tuning..." >> "$LOG_FILE"

@@ -1,5 +1,220 @@
 [
   {
+    "id": "INC-112",
+    "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-14T22:28:47.000Z",
+    "lastActivity": "2026-06-14T22:58:48.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #2)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-14T22:28:47.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T22:58:48.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-337534",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-464663",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-144034",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-949534",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 2
+  },
+  {
+    "id": "INC-111",
+    "title": "Rate limit exhaustion \u2014 12 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-14T21:58:46.000Z",
+    "lastActivity": "2026-06-14T22:58:49.000Z",
+    "summary": "Gateway log shows 12 rate limit (429) errors. Free model pool may be exhausted. (recurrence #3)",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-14T21:58:46.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T22:28:47.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T22:58:49.000Z",
+        "message": "Recurrence #3: Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-878268",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-153291",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-785662",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 3
+  },
+  {
+    "id": "INC-110",
+    "title": "Rate limit exhaustion \u2014 6 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-14T21:28:44.000Z",
+    "lastActivity": "2026-06-14T21:28:44.000Z",
+    "summary": "Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-14T21:28:44.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-432535",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-934171",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-365690",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
+    "id": "INC-109",
+    "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
+    "severity": "P3",
+    "status": "TRIAGE",
+    "owner": "monkey",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-14T16:28:32.000Z",
+    "lastActivity": "2026-06-14T16:28:32.000Z",
+    "summary": "3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.",
+    "tags": [
+      "tasks",
+      "stale",
+      "in-progress",
+      "task-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-14T16:28:32.000Z",
+        "message": "Auto-detected by task-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-684237",
+        "label": "Review and triage",
+        "description": "Review the incident and determine appropriate response",
+        "status": "suggested",
+        "assignee": "monkey"
+      },
+      {
+        "id": "act-284064",
+        "label": "Apply standard fix",
+        "description": "Apply a standard fix procedure",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1
+  },
+  {
     "id": "INC-108",
     "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
@@ -8,8 +223,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-14T07:27:14.000Z",
-    "lastActivity": "2026-06-14T13:28:11.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #11)",
+    "lastActivity": "2026-06-14T21:58:46.000Z",
+    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #27)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -71,6 +286,86 @@
         "ts": "2026-06-14T13:28:11.000Z",
         "message": "Recurrence #11: Auto-detected by gateway-monitor",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T13:58:16.000Z",
+        "message": "Recurrence #12: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T14:28:21.000Z",
+        "message": "Recurrence #13: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T14:58:26.000Z",
+        "message": "Recurrence #14: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T15:28:31.000Z",
+        "message": "Recurrence #15: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T16:28:32.000Z",
+        "message": "Recurrence #16: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.000Z",
+        "message": "Recurrence #17: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T17:28:35.000Z",
+        "message": "Recurrence #18: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T17:58:36.000Z",
+        "message": "Recurrence #19: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T18:28:37.000Z",
+        "message": "Recurrence #20: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T18:58:38.000Z",
+        "message": "Recurrence #21: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T19:28:39.000Z",
+        "message": "Recurrence #22: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T19:58:40.000Z",
+        "message": "Recurrence #23: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T20:28:42.000Z",
+        "message": "Recurrence #24: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T20:58:43.000Z",
+        "message": "Recurrence #25: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T21:28:44.000Z",
+        "message": "Recurrence #26: Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-14T21:58:46.000Z",
+        "message": "Recurrence #27: Auto-detected by gateway-monitor",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -104,7 +399,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 11
+    "_recurrence": 27
   },
   {
     "id": "INC-107",
