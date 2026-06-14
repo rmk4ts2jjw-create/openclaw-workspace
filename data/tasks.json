@@ -1,5 +1,243 @@
 [
   {
+    "id": "task-prevent-smb_retries-4523",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T17:28:34.624687+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00"
+  },
+  {
+    "id": "task-prevent-smb_retries-b169",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T16:58:33.402417+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T17:28:34.524451+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T17:28:34.524355+00:00",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00"
+  },
+  {
+    "id": "task-inc-109-6db7",
+    "title": "Fix: INC-109",
+    "assignee": "monkey",
+    "status": "triage",
+    "priority": "P3",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-109: 3 tasks are in In Progress state. Tasks without activity for extended periods should be reviewed.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Tasks dispatched but not picked up by agents \u2014 ghost dispatch or agent timeout\nConfidence: 80% (2h SLA)\nFile: scripts/stall-detector.sh\nFix: Verify stall detector is running (maintenance.sh step 5). Check sub-agent timeout settings.",
+    "linkedIncidentId": "INC-109",
+    "tags": [
+      "incident-response",
+      "tasks",
+      "stale",
+      "in-progress",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T16:28:32.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-109 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-14T16:28:32.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-prevent-smb_retries-c826",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T16:28:32.025479+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.302834+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T16:58:33.302742+00:00",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00"
+  },
+  {
+    "id": "task-prevent-smb_retries-e5d9",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T15:28:29.184476+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T16:28:31.930337+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T16:28:31.930242+00:00",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00"
+  },
+  {
+    "id": "task-prevent-smb_retries-eed1",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T14:58:24.110624+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T15:28:29.083626+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T15:28:29.083528+00:00",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00"
+  },
+  {
+    "id": "task-prevent-smb_retries-01bb",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T14:28:19.281650+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T14:43:01.594104+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      }
+    ],
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00",
+    "wasStalled": true
+  },
+  {
     "id": "task-inc-108-d0d4",
     "title": "Fix: INC-108",
     "assignee": "engineer",
@@ -87,16 +325,28 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      },
+      {
+        "ts": "2026-06-14T15:28:28.922550+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 195 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.126637+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 52 min with no activity (threshold: 30 min). Was: Dispatched \u2014 waiting for agent"
       }
     ],
-    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
+    "lastActivity": "2026-06-14T16:58:33.126637+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-14T08:27:22.561395+00:00",
-    "dispatchCount": 2,
-    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
+    "dispatchCount": 3,
+    "stalledAt": "2026-06-14T16:58:33.126637+00:00",
     "dispatchFailed": true,
     "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
     "dispatchFailedAt": "2026-06-14T11:57:55.694023+00:00",
@@ -181,16 +431,28 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      },
+      {
+        "ts": "2026-06-14T15:28:28.922550+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 195 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.126637+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 52 min with no activity (threshold: 30 min). Was: Dispatched \u2014 waiting for agent"
       }
     ],
-    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
+    "lastActivity": "2026-06-14T16:58:33.126637+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-14T07:27:12.541241+00:00",
-    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
-    "dispatchCount": 1,
+    "stalledAt": "2026-06-14T16:58:33.126637+00:00",
+    "dispatchCount": 2,
     "ghostDispatch": true,
     "lastUpdated": "2026-06-14T00:19:12.748Z",
     "wasStalled": true
@@ -349,16 +611,28 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      },
+      {
+        "ts": "2026-06-14T15:28:28.922550+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 195 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T16:58:33.126637+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 52 min with no activity (threshold: 30 min). Was: Dispatched \u2014 waiting for agent"
       }
     ],
-    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
+    "lastActivity": "2026-06-14T16:58:33.126637+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-13T21:23:12.740978+00:00",
-    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
-    "dispatchCount": 2,
+    "stalledAt": "2026-06-14T16:58:33.126637+00:00",
+    "dispatchCount": 3,
     "ghostDispatch": true,
     "wasStalled": true
   },
@@ -447,18 +721,23 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
+      },
+      {
+        "ts": "2026-06-14T15:28:28.922550+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 195 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-13T21:53:18.186928+00:00",
-    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00",
     "dispatchCount": 3,
-    "ghostDispatch": true,
-    "wasStalled": true
+    "ghostDispatch": true
   },
   {
     "id": "task-inc-105-7b35",
@@ -946,13 +1225,13 @@
         "details": "Ghost dispatch reset \u2014 Agent starting for 1371s with no progress"
       }
     ],
-    "lastActivity": "2026-06-13T01:12:41.036322+00:00",
+    "lastActivity": "2026-06-14T17:43:22.728487+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 75,
     "predictionPattern": "mount",
     "startedAt": "2026-06-13T00:49:50.535776+00:00",
-    "stalledAt": null,
+    "stalledAt": "2026-06-14T17:43:22.728487+00:00",
     "dispatchCount": 3,
     "lastUpdated": "2026-06-12T23:30:50.778Z",
     "ghostDispatch": true,
