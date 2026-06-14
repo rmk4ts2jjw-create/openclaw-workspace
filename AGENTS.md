@@ -72,42 +72,137 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document so future-you doesn't repeat it
 - **Text > Brain** 📝
 
-### 🔍 MANDATORY: Check Memory Before Starting Any Task
 
-**Before starting ANY work, you MUST check institutional memory. This is non-negotiable.**
+### 🔍 MANDATORY: Recall Engine — Check All Memory Before Starting Any Task
 
-#### Step 1: Search Memory Wiki (primary)
+**Before starting ANY work, you MUST run the Recall Engine. This is non-negotiable.**
 
-Use OpenClaw's built-in wiki tools:
+The Recall Engine searches all 8 memory/knowledge systems, merges results, ranks by relevance, and produces a Context Package for reasoning.
+
+#### Step 0: Classify Mode
+
+**Fast Recall** — Simple factual questions ("what port?", "what's the IP?", "is X activated?"):
+- Search 1-2 sources only (Wiki + Daily Log)
+- Skip to Step 4
+
+**Deep Recall** — Complex work requiring synthesis. Auto-trigger for: architecture, planning, refactors, governance, new features, incident investigation.
+- Search ALL relevant sources (Steps 1-3)
+- Generate full Context Package
+
+#### Step 1: Search Knowledge Sources
+
+**Wiki (primary):**
 ```
-wiki_search "[task topic]"           # Search all wiki pages
-wiki_get "entities/sm-001.md"        # Get specific page
+wiki_search "[query]"                # Entities, concepts, lessons, decisions
+wiki_get "entities/sm-001.md"        # Specific page if search points to it
 ```
 
-The wiki contains structured knowledge: entities (decisions, issues), concepts (lessons, rules), sources (bridge-imported from memory), and reports. All Station Memory records have been migrated here.
-
-#### Step 1b: Check Workboard for existing tasks
-
-```
-workboard_list                       # List all cards
-workboard_list --status backlog      # Find dispatchable work
+**Station Memory (SQLite FTS5):**
+```bash
+cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "[query]" --limit 5
 ```
 
-Before creating new tasks, check if one already exists on the Workboard. Never create duplicate work.
+**Skill Workshop:**
+```
+skill_workshop list                  # All pending proposals
+skill_workshop inspect <id>          # Specific proposal if relevant
+```
 
-#### Step 2: Check Recent Daily Log
+Check for active skills that handle the task domain. Read SKILL.md if a skill matches.
 
+#### Step 2: Check Operational State
+
+**Workboard (active tasks):**
+```
+workboard_list                       # All active cards
+workboard_list --status backlog      # Dispatchable work
+```
+
+**Daily Log (recent context):**
 ```bash
 cat ~/.openclaw/workspace/memory/$(date +%Y-%m-%d).md 2>/dev/null || cat ~/.openclaw/workspace/memory/$(date -v-1d +%Y-%m-%d).md 2>/dev/null || echo "No recent daily log"
 ```
 
-Read the most recent daily log for overnight context, recent decisions, or work in progress.
+**MEMORY.md** — Already loaded in project context (main session). Re-read specific sections if needed.
 
-#### Step 3: Use What You Found
+#### Step 3: Search Project Files (Deep Recall only)
 
-Let the results inform your approach. If a lesson says "never do X," don't do X. If a framework rule says "always use Y pattern," use Y. If yesterday's log says "middleware broken, WIP," don't start reworking middleware without checking current state.
+For architecture/refactor tasks, grep relevant source files:
+```bash
+grep -rl "[keyword]" src/ --include="*.tsx" --include="*.ts" | head -10
+```
+
+#### Step 4: Merge, Deduplicate, Rank, and Generate Context Package
+
+**Merge** all results into one list.
+
+**Deduplicate:**
+- Wiki + Station Memory same content → keep Wiki (richer context)
+- Workboard + Daily Log same task → keep Workboard (authoritative)
+- Skill proposal + installed skill same name → keep installed skill (active > proposed)
+
+**Rank by mode:**
+
+| Fast Recall | Deep Recall |
+|-------------|-------------|
+| 1. Relevance | 1. Authority (Station Memory > Wiki > Daily Log) |
+| 2. Recency | 2. Relevance (exact keyword match > partial) |
+| 3. Authority | 3. Recency (within 30 days) |
+| | 4. Status (current/active > deprecated) |
+| | 5. Specificity (specific entity > general topic) |
+
+**Generate Context Package:**
+```markdown
+## Context Package — [Topic]
+**Mode:** Fast / Deep | **Sources:** [list]
+
+### Executive Summary
+[2-3 sentence synthesis]
+
+### Relevant Prior Decisions
+- [Decision] (source: [wiki/station-memory], date: [date])
+
+### Related Incidents
+- [Incident] (status: [open/resolved])
+
+### Related Tasks
+- [Task] (status: [backlog/in-progress/done])
+
+### Related Skills
+- [Skill] (status: [active/proposed/blocked])
+
+### Risks
+- [Risk] (source: [lesson/incident])
+
+### Dependencies
+- [Dependency]
+
+### Previously Rejected Approaches
+- [Approach] — [why rejected]
+
+### Suggested Files for Deeper Reading
+- [file path] — [why relevant]
+
+### Recall Confidence: [High/Medium/Low/None]
+- **High:** Multiple sources, consistent, recent
+- **Medium:** One source or older information
+- **Low:** Only tangential results
+- **None:** No results found
+
+If Low/None: Tell user "I searched X sources and found nothing directly relevant — here's what I'll assume."
+```
+
+#### Step 5: Use the Context Package
+
+Let the Context Package inform your approach. If a lesson says "never do X," don't do X. If a decision says "use Y pattern," use Y. If yesterday's log says "broken, WIP," check current state.
 
 **Skip these checks = repeat past mistakes = waste tokens. Do it every time.**
+
+#### Known Limitations
+
+- **`memory_search` is broken** (no OpenAI embedding key). All retrieval is keyword/FTS5/grep-based. This means conceptually related but lexically different content may be missed (e.g., "retry logic" won't find "re-attempt policy"). **Mitigation:** use multiple search terms. **Long-term:** restore memory_search or add embeddings to wiki_search.
+- **Station Memory schema coupling:** Phase 1 queries the DB directly via `station-memory-tool.cjs`. If the schema changes, update the query. Phases 2/3 will wrap this behind an interface.
+
 
 ## Red Lines
 
