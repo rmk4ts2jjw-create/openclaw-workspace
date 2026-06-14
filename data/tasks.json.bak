@@ -33,7 +33,7 @@
     "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-14 08:57]",
+    "note": "Predictive prevention (confidence: 65%)\n\nMemory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)\n\nPrevention action:\nCheck for memory leaks in long-running processes. Run: ps aux --sort=-%mem | head -10\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'. [auto-dispatched 2026-06-14 08:57] [auto-dispatched 2026-06-14 09:27]",
     "tags": [
       "prevention",
       "predictive",
@@ -57,15 +57,34 @@
         "action": "ghost_dispatch_reset",
         "actor": "stall-detector",
         "details": "Ghost dispatch reset \u2014 currentStep null for >60s with no progress (heartbeat 09:12 BST)"
+      },
+      {
+        "ts": "2026-06-14T08:27:22.561408+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-14T08:27:54.520914+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Reset to backlog with stalledAt \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-14T08:13:11.339411+00:00",
+    "lastActivity": "2026-06-14T08:27:54.520914+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
-    "startedAt": "2026-06-14T07:57:17.651456+00:00",
-    "dispatchCount": 1
+    "startedAt": "2026-06-14T08:27:22.561395+00:00",
+    "dispatchCount": 2,
+    "stalledAt": null
   },
   {
     "id": "task-prevent-memory_trend-7f1b",
@@ -128,9 +147,21 @@
         "action": "ghost_dispatch_reset",
         "actor": "stall-detector",
         "details": "Ghost dispatch reset \u2014 Agent starting\u2026 for >60s with no progress (heartbeat 08:21 BST)"
+      },
+      {
+        "ts": "2026-06-14T08:28:07.022660+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-14T07:43:31.585228+00:00",
+    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
@@ -277,9 +308,21 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 574 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T08:28:07.022660+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-13T21:53:18.020453+00:00",
+    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
@@ -356,9 +399,21 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 544 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T08:28:07.022660+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-13T22:23:23.083722+00:00",
+    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,

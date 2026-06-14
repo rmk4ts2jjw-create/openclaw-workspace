@@ -474,3 +474,12 @@
 [2026-06-14 09:27:31 UTC] Stall detector: OK — no stale tasks
 [2026-06-14 09:57:36 UTC] Stall detector: OK — no stale tasks
 [2026-06-14 10:27:41 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 10:57:46 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 11:27:51 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 11:57:55 UTC] Stall detector: cleared 4 task(s)
+  CLEARED task-prevent-memory_trend-5329: stalledAt removed after 210 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-7f1b: stalledAt removed after 210 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-da23: stalledAt removed after 210 min in backlog (wasStalled remains for 3h)
+  CLEARED task-prevent-memory_trend-d654: stalledAt removed after 210 min in backlog (wasStalled remains for 3h)
+[2026-06-14 12:28:00 UTC] Stall detector: OK — no stale tasks
+[2026-06-14 12:58:04 UTC] Stall detector: OK — no stale tasks

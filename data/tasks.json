@@ -69,16 +69,37 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Reset to backlog with stalledAt \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.694112+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T12:13:03.074028+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
       }
     ],
-    "lastActivity": "2026-06-14T08:27:54.520914+00:00",
+    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-14T08:27:22.561395+00:00",
     "dispatchCount": 2,
-    "stalledAt": "2026-06-14T08:27:54.520914+00:00",
+    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-14T11:57:55.694023+00:00",
     "wasStalled": true
   },
   {
@@ -148,15 +169,27 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T12:13:03.074028+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
       }
     ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
+    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-14T07:27:12.541241+00:00",
-    "stalledAt": "2026-06-14T08:28:07.022660+00:00",
+    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
     "dispatchCount": 1,
     "ghostDispatch": true,
     "lastUpdated": "2026-06-14T00:19:12.748Z",
@@ -304,15 +337,27 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T12:13:03.074028+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
       }
     ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
+    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-13T21:23:12.740978+00:00",
-    "stalledAt": "2026-06-14T08:28:07.022660+00:00",
+    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
     "dispatchCount": 2,
     "ghostDispatch": true,
     "wasStalled": true
@@ -390,15 +435,27 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Stalled \u2014 prevention/predictive tasks should not be auto-dispatched; needs human review"
+      },
+      {
+        "ts": "2026-06-14T11:57:55.533230+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 210 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-14T12:13:03.074028+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Re-stalled \u2014 prevention/predictive tasks must not be auto-dispatched"
       }
     ],
-    "lastActivity": "2026-06-14T08:28:07.022660+00:00",
+    "lastActivity": "2026-06-14T12:13:03.074028+00:00",
     "currentStep": null,
     "progress": 0,
     "predictionConfidence": 65,
     "predictionPattern": "memory_trend",
     "startedAt": "2026-06-13T21:53:18.186928+00:00",
-    "stalledAt": "2026-06-14T08:28:07.022660+00:00",
+    "stalledAt": "2026-06-14T12:13:03.074028+00:00",
     "dispatchCount": 3,
     "ghostDispatch": true,
     "wasStalled": true
