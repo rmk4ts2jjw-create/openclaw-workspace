@@ -18223,3 +18223,429 @@ error: RunnerError
 df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./F58CE007-B0E0-48DF-8A45-1AAA4B2FF8A5/TimeMachineBackup: Permission denied
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./F58CE007-B0E0-48DF-8A45-1AAA4B2FF8A5/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./F58CE007-B0E0-48DF-8A45-1AAA4B2FF8A5/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./F58CE007-B0E0-48DF-8A45-1AAA4B2FF8A5/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local./F58CE007-B0E0-48DF-8A45-1AAA4B2FF8A5/TimeMachineBackup: Permission denied
+/bin/sh: sysctl: command not found
+/bin/sh: sysctl: command not found
+4:08:43 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:08:49 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:08:56 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:09:01 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:09:04 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:09:09 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:09:15 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+4:09:34 PM [vite] (ssr) An error happened during full reload
+(0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+    at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+    at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+    at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+    at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+    at processTicksAndRejections (native:7:39)
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+6 |   try {
+7 |     return await next();
+8 |   } catch (error) {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.
+3 | ) {
+4 | "use strict";__vite_ssr_exportName__("startInstance", () => { try { return startInstance } catch {} });
+5 | const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-start/dist/esm/index.js", {"importedNames":["createStart","createMiddleware"]});
+6 | const __vite_ssr_import_1__ = await __vite_ssr_import__("/src/lib/error-page.ts", {"importedNames":["renderErrorPage"]});
+7 | 
+8 | const errorMiddleware = (0,__vite_ssr_import_0__.createMiddleware)().server(async ({ next }) => {
+                                                                      ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:8:67)
+      at async runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1000:160)
+      at async directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1254:80)
+      at async cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1161:79)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+1 | import { createStart, createMiddleware } from "@tanstack/react-start";
+2 | 
+3 | import { renderErrorPage } from "./lib/error-page";
+4 | 
+5 | const errorMiddleware = createMiddleware().server(async ({ next }) => {
+                            ^
+TypeError: (0,__vite_ssr_import_0__.createMiddleware) is not a function. (In '(0,__vite_ssr_import_0__.createMiddleware)()', '(0,__vite_ssr_import_0__.createMiddleware)' is undefined)
+      at anonymous (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/src/start.ts:5:25)
+      at runInlinedModule (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:961:37)
+      at directRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1218:34)
+      at cachedRequest (/Users/spacemonkey/.openclaw/workspace/mission-control-dashboard/node_modules/vite/dist/node/module-runner.js:1137:47)
+      at processTicksAndRejections (native:7:39)
+
+error: script "dev" exited with code 143
+$ vite dev --host --port "3000"
+The plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.

@@ -1,11 +1,10 @@
 {
   "lastChecks": {
-    "calendar": "2026-06-18T07:45:00+00:00",
-    "email": "2026-06-18T07:45:00+00:00",
-    "gateway": "2026-06-18T11:40:00+00:00",
-    "system": "2026-06-18T11:40:00+00:00",
-    "weather": "2026-06-18T11:40:00+00:00"
-  },
-  "lastHeartbeat": "2026-06-18T11:40:00+00:00",
-  "notes": "2026-06-18 11:40 UTC — Heartbeat. Gateway healthy. Weather fetch successful: London 19°C, 12km/h wind. No new emails/calendar events. Memory search still disabled (missing OpenAI key). Service version mismatch persists (2026.6.5 installed, CLI 2026.6.6)."
+    "email": 1781814179,
+    "calendar": 1781814179,
+    "weather": 1781814179,
+    "git": 1781814179,
+    "visual": 1781814179,
+    "heartbeat": 1781823000
+  }
 }

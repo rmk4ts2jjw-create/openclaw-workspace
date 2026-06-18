@@ -2,7 +2,7 @@
   "version": "2026.6.6",
   "env": {
     "GATEWAY_HOME": "/opt/gateway",
-    "API_KEY": "sk-xxxxxx",
+    "API_KEY": "",
     "MEMORY_AI_KEY": "MISSING",
     "LOG_LEVEL": "INFO"
   }

@@ -1,36 +1,6 @@
 {
   "agents": {
-    "lifesupport": {
-      "total_tasks": 1,
-      "done": 1,
-      "failed": 0,
-      "in_progress": 0,
-      "avg_task_hours": 44.8,
-      "failure_rate": 0.0,
-      "success_rate": 1.0,
-      "analyzed_at": "2026-06-18T11:08:12.191558+00:00"
-    },
     "engineer": {
-      "total_tasks": 1,
-      "done": 1,
-      "failed": 0,
-      "in_progress": 0,
-      "avg_task_hours": 44.8,
-      "failure_rate": 0.0,
-      "success_rate": 1.0,
-      "analyzed_at": "2026-06-18T11:08:12.191558+00:00"
-    },
-    "monkey": {
-      "total_tasks": 17,
-      "done": 16,
-      "failed": 0,
-      "in_progress": 0,
-      "avg_task_hours": 0.9,
-      "failure_rate": 0.0,
-      "success_rate": 0.941,
-      "analyzed_at": "2026-06-18T11:08:12.191558+00:00"
-    },
-    "archivist": {
       "total_tasks": 0,
       "done": 0,
       "failed": 0,
@@ -38,7 +8,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-18T11:08:12.191558+00:00"
+      "analyzed_at": "2026-06-18T14:39:40.931077+00:00"
     }
   },
   "tune_tasks": [],

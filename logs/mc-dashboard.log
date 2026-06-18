@@ -3411,3 +3411,199 @@ Port 3000 is in use, trying another one...
   ➜  Network: http://192.168.68.64:3000/
 2:42:00 PM [vite] (ssr) connected.
 2:44:23 PM [vite] (ssr) page reload src/server.ts
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+3:46:26 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:27 PM [vite] (ssr) hmr update /src/lib/server-data/agent-status.ts?tss-serverfn-split, /src/lib/server-data/tasks.ts?tss-serverfn-split, /src/lib/server-data/incidents.ts?tss-serverfn-split, /src/lib/server-data/system.ts?tss-serverfn-split, /src/lib/server-data/activity.ts?tss-serverfn-split
+3:46:27 PM [vite] (ssr) hot updated: /src/lib/server-data/agent-status.ts?tss-serverfn-split
+3:46:27 PM [vite] (ssr) hot updated: /src/lib/server-data/tasks.ts?tss-serverfn-split
+3:46:27 PM [vite] (ssr) hot updated: /src/lib/server-data/incidents.ts?tss-serverfn-split
+3:46:27 PM [vite] (ssr) hot updated: /src/lib/server-data/system.ts?tss-serverfn-split
+3:46:27 PM [vite] (ssr) hot updated: /src/lib/server-data/activity.ts?tss-serverfn-split
+3:46:32 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:32 PM [vite] (ssr) page reload src/lib/server-data/tasks.ts
+3:46:32 PM [vite] (ssr) program reload
+3:46:41 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:41 PM [vite] (ssr) page reload src/server.ts
+3:46:41 PM [vite] (ssr) program reload
+3:46:49 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:49 PM [vite] (ssr) page reload src/server.ts
+3:46:49 PM [vite] (ssr) program reload
+3:46:51 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:51 PM [vite] (ssr) page reload src/server.ts
+3:46:51 PM [vite] (ssr) program reload
+3:46:57 PM [vite] (client) hmr update /src/styles.css?direct
+3:46:57 PM [vite] (ssr) page reload src/server.ts
+3:46:57 PM [vite] (ssr) program reload
+3:54:15 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:15 PM [vite] (ssr) page reload src/server.ts
+3:54:15 PM [vite] (ssr) program reload
+3:54:20 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:20 PM [vite] (ssr) page reload src/server.ts
+3:54:20 PM [vite] (ssr) program reload
+3:54:26 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:26 PM [vite] (ssr) page reload src/server.ts
+3:54:26 PM [vite] (ssr) program reload
+3:54:31 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:31 PM [vite] (ssr) page reload src/server.ts
+3:54:31 PM [vite] (ssr) program reload
+3:54:36 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:36 PM [vite] (ssr) page reload src/server.ts
+3:54:36 PM [vite] (ssr) program reload
+3:54:41 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:41 PM [vite] (ssr) page reload src/server.ts
+3:54:41 PM [vite] (ssr) program reload
+3:54:48 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:48 PM [vite] (ssr) page reload src/server.ts
+3:54:48 PM [vite] (ssr) program reload
+3:54:54 PM [vite] (client) hmr update /src/styles.css?direct
+3:54:54 PM [vite] (ssr) page reload src/server.ts
+3:54:54 PM [vite] (ssr) program reload
+3:55:00 PM [vite] (client) hmr update /src/styles.css?direct
+3:55:01 PM [vite] (ssr) page reload src/lib/server-data/tasks.ts
+3:55:14 PM [vite] (client) hmr update /src/styles.css?direct
+3:55:14 PM [vite] (ssr) page reload src/lib/server-data/incidents.ts
+3:55:18 PM [vite] (client) hmr update /src/styles.css?direct
+3:55:18 PM [vite] (ssr) page reload src/lib/server-data/incidents.ts
+4:08:28 PM [vite] (client) hmr update /src/styles.css?direct
+4:08:28 PM [vite] (ssr) page reload src/lib/server-data/tasks.ts
+4:08:34 PM [vite] (client) hmr update /src/styles.css?direct
+4:08:34 PM [vite] (ssr) page reload src/server.ts
+4:08:34 PM [vite] (ssr) program reload
+4:08:43 PM [vite] (client) hmr update /src/styles.css?direct
+4:08:43 PM [vite] (ssr) page reload src/server.ts
+4:08:43 PM [vite] (ssr) program reload
+4:08:49 PM [vite] (client) hmr update /src/styles.css?direct
+4:08:49 PM [vite] (ssr) page reload src/server.ts
+4:08:49 PM [vite] (ssr) program reload
+4:08:56 PM [vite] (client) hmr update /src/styles.css?direct
+4:08:56 PM [vite] (ssr) page reload src/server.ts
+4:08:56 PM [vite] (ssr) program reload
+4:09:01 PM [vite] (client) hmr update /src/styles.css?direct
+4:09:01 PM [vite] (ssr) page reload src/server.ts
+4:09:01 PM [vite] (ssr) program reload
+4:09:04 PM [vite] (client) hmr update /src/styles.css?direct
+4:09:04 PM [vite] (ssr) page reload src/server.ts
+4:09:04 PM [vite] (ssr) program reload
+4:09:09 PM [vite] (client) hmr update /src/styles.css?direct
+4:09:09 PM [vite] (ssr) page reload src/server.ts
+4:09:09 PM [vite] (ssr) program reload
+4:09:15 PM [vite] (client) hmr update /src/styles.css?direct
+4:09:15 PM [vite] (ssr) page reload src/server.ts
+4:09:15 PM [vite] (ssr) program reload
+4:09:34 PM [vite] (client) hmr update /src/styles.css?direct
+4:09:34 PM [vite] (ssr) page reload src/server.ts
+4:09:34 PM [vite] (ssr) program reload
+4:10:04 PM [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.0.13  ready in 15216 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:10:06 PM [vite] (client) [optimizer] bundling dependencies...
+4:39:51 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 15862 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:41:39 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 29239 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+5:39:59 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 10312 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+5:45:54 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 28238 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+6:40:22 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 18980 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:10:29 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 34539 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:12:23 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 20725 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+8:10:52 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 16631 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+8:41:01 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 13111 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+9:11:14 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 17267 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+9:27:04 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 21234 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+10:11:31 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 1587 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+10:20:49 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 9106 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+11:11:50 PM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 17780 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+11:37:06 PM [vite] (ssr) connected.
+11:42:27 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 19731 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+11:42:29 PM [vite] (client) [optimizer] bundling dependencies...
