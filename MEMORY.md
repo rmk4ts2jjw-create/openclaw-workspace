@@ -86,6 +86,9 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-09:** Added getWikiStats — MC /memory page shows live wiki stats
 - **2026-06-09:** Fixed Knowledge Base tab — node:sqlite replaces better-sqlite3 for SSR compat
 - **2026-06-09:** Updated AGENTS.md — Workboard + Memory Wiki as primary tools
+- **2026-06-14:** Implemented Recall Engine Phase 1 — 8-source retrieval pipeline with Fast/Deep mode classification and Context Package format
+- **2026-06-14:** Configured workspace git remote and performed security audit — removed sensitive logs, added .gitignore, set up GitHub backup
+- **2026-06-15:** Applied incident-manage, mac-proxy-manage, night-shift, task-system-maint skills. docker-host-manage pending approval. Note: night-shift and task-system-maint were applied, but the underlying dispatch architecture is still broken (0 dispatches in 5 nights: Jun 12-16). These skills document the system as-is. The architectural simplification decision is still pending.
 
 ## External AI Review Loop
 
@@ -106,9 +109,31 @@ Integrated 2026-06-12. Full pipeline:
 - **Ghost dispatch fix (2026-06-12):** Tasks stuck in 'Agent starting…' with no sub-agent. Three-pronged fix: (1) pre-dispatch validation checks excluded tags before setting in_progress, (2) 60s ghost timeout resets tasks immediately if sub-agent never starts, (3) wasStalled flag management — Phase 2 clears wasStalled after 3h cooldown. MC UI shows 'Dispatch Failed' and 'Ghost' badges.
 - **Dispatch loop fix (2026-06-13):** Extended stall detector Phase 2 cooldowns (stalledAt: 2h, wasStalled: 3h) to prevent rapid dispatch→reset→dispatch loops. dispatchFailed is never auto-cleared.
 
+## Incident Automation Suite (2026-06-18)
+
+Three automations built from analysis of 124 incidents (Jun 12-17):
+
+1. **Gateway Self-Heal** (`scripts/gateway-self-heal.sh`) — Cron every 5 min. Monitors for
+   EmbeddedAttemptSessionTakeoverError 3+ times in 10 min → restart via launchctl kickstart
+   → health check → create resolved incident. 15-min circuit breaker prevents restart loops.
+   Addresses 41% of incidents (gateway crash loops).
+
+2. **Rate Limit Prevention** — Staggered all clustered cron jobs with 60-120s jitter.
+   06:00 BST cluster split to 06:00 + 06:05. 02:00 UTC cluster split to 02:00 + 02:02.
+   04:00 UTC cluster split to 04:00 + 04:03. FreeRide agentTurn checks backoff state before
+   API calls. Addresses 36% of incidents (rate limit exhaustion).
+
+3. **Incident Deduplication** — Fingerprint-based dedup in auto-detect-incidents.sh:
+   MD5 of normalized title + sorted tags. 3-tier matching (fingerprint → title → tag overlap).
+   `incident-dedup.sh` runs every 4h to consolidate duplicates within 24h window.
+   Reduces noise ~20%.
+
+4. **Heartbeat reduced** — 30min → 2h globally. Cron jobs handle frequent monitoring.
+   HEARTBEAT.md quiet hours section skips heavy work 23:00-08:00.
+
 ## Cron Jobs
 
-Active OpenClaw cron jobs (12 total, 10 enabled):
+Active OpenClaw cron jobs (13 total, 11 enabled):
 - **Sessions Cleanup** — 02:00 UTC, systemEvent
 - **Session Auto-Expiry** — 04:00 UTC, systemEvent
 - **Daily GitHub push** — 04:00 UTC, systemEvent
@@ -138,3 +163,16 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 
 ---
 _Last updated: 2026-06-09 by Space Monkey_
+
+## Promoted From Short-Term Memory (2026-06-18)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:1:23 -->
+- # 2026-05-14 — Daily Log ## Mission Control Dashboard — Session Summary ### Fixes Applied 1. **Dashboard layout** — Enlarged from `max-w-6xl` to `max-w-[1650px]` 2. **Agent sprite positioning** — Fixed from fixed pixels to percentages for responsive scaling 3. **Agent sprites** — Replaced with individual files from `owl_station_sprites` folder (320×240 each) 4. **Tasks page loader error** — Added missing `useRef` import 5. **Scheduler page** — Created `/api/crons` endpoint, fixed `execSync` PATH issue, now shows all cron jobs with toggle switches 6.... [score=0.850 recalls=7 avg=1.000 source=memory/2026-05-14.md:1-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:22:54 -->
+- ### Andre's Directives - Dashboard should be the home page name (not Spacestation) - Live activity feed on the left side - Task detail should be centered modal (not right slide) - Dreaming toggle should show on/off state clearly - Scheduler should have on/off switches for each cron job - Telegram chat ID: 7507878944 ### Session End State - All pages loading (Home/Dashboard, Tasks, Settings, Scheduler) - 10 cron jobs created, all with Telegram delivery - 12 new sprites installed - Git committed through v1.9.0 ## Evening Session (continued) ### Completed - **Agent status display fixed** — Always-on agents (monkey, lifesupport) no... [score=0.833 recalls=7 avg=1.000 source=memory/2026-05-13.md:22-54]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:47:69 -->
+- **openclaw CLI path fixed** — Full path /opt/homebrew/bin/openclaw ### Andre's Additional Feedback - Rename home to 'Dashboard' ✅ - Animation side revisited (collaboration walking between rooms) - Agent avatars showing as black and white — FIXED (was grayscale CSS on 'away' status) - Check all sprites are 100% updated — CONFIRMED (12 sprites at 240x320, RGB color) ### Key Technical Findings - getAgentStatus returns 'active' for always-on agents, 'standby' for on-demand - Old code checked status === 'active' which excluded 'standby' agents as 'away' - image-rendering: pixelated can cause blurriness on some browsers - createServerFn... [score=0.819 recalls=6 avg=1.000 source=memory/2026-05-13.md:47-69]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:1:30 -->
+- # 2026-05-13 Daily Log (continued) ## Afternoon/Evening Session ### Completed - **Dashboard redesign (T-119)** — 3-column layout: Left=live activity feed, Center=Spacestation rooms, Right=quick actions - **Task detail panel** — Changed from right-slide to centered modal - **Dreaming toggle** — Proper on/off toggle with visual state indicator in QuickActions - **Scheduler page** — Shows all OpenClaw cron jobs with on/off toggle switches - **Telegram delivery fixed** — All cron jobs now deliver to chat ID 7507878944 - **Backup path fixed** — Changed from /Volumes/OpenClaw-WD to /Volumes/Public-1/openclaw-agent-backup - **openclaw CLI... [score=0.814 recalls=5 avg=1.000 source=memory/2026-05-13.md:1-30]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:139:165 -->
+- Root cause: `server.ts` used `execSync` (child_process) which is stubbed in Cloudflare Workers runtime - Fix: Replaced `execSync` calls with direct `fs` reads/writes to `~/.openclaw/cron/jobs.json` and `jobs-state.json` - Cron enable/disable now writes directly to `jobs.json` instead of using CLI - `vite dev` serves API routes correctly (unlike `wrangler dev` which uses unenv stubs) ### Investigate → Task Flow - Investigate button on Scheduler Error Feed now auto-creates an "In Progress" task - Task includes error details, cron job info, and is tagged with `errorId` - Completing an error-linked task automatically updates cron error... [score=0.814 recalls=5 avg=1.000 source=memory/2026-05-15.md:139-165]
