@@ -1,5 +1,1405 @@
 [
   {
+    "id": "task-inc-126-174e",
+    "title": "Fix: INC-126",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-126: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-126",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-18T09:38:08.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-126 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-18T09:38:08.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-125-ee1b",
+    "title": "Fix: INC-125",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-125: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-125",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-18T03:07:53.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-125 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-18T03:07:53.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-124-49a9",
+    "title": "Fix: INC-124",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-124: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-124",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-17T13:33:51.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-124 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-17T13:33:51.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-123-19ea",
+    "title": "Fix: INC-123",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-123: Gateway log shows 12 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-123",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-17T09:33:41.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-123 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-17T09:33:41.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-122-9448",
+    "title": "Fix: INC-122",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-122: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-122",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-17T09:03:39.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-122 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-17T09:03:39.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-121-2d03",
+    "title": "Fix: INC-121",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-121: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-121",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-17T04:33:29.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-121 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-17T04:33:29.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-120-e8f2",
+    "title": "Fix: INC-120",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-120: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Vite dev server crashed or port 3000 is occupied by stale process\nConfidence: 95% (2h SLA)\nFile: scripts/maintenance.sh\nFix: Step 3 in maintenance.sh handles this automatically. Manual: kill stale process on port 3000 and restart.",
+    "linkedIncidentId": "INC-120",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-16T18:00:42.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-120 (RCA: 95% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-16T18:00:42.000Z",
+    "rcaConfidence": 95
+  },
+  {
+    "id": "task-inc-119-0209",
+    "title": "Fix: INC-119",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-119: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-119",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-16T16:00:29.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-119 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-16T16:00:29.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-118-d433",
+    "title": "Fix: INC-118",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-118: Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: WD MyCloud SMB mount dropped \u2014 guest session timeout or NAS sleep\nConfidence: 85% (2h SLA)\nFile: scripts/mount-wd-mycloud.sh\nFix: Add keepalive cron: bash scripts/mount-wd-mycloud.sh every 10 min. Check NAS sleep settings. Consider dedicated SMB user instead of guest.",
+    "linkedIncidentId": "INC-118",
+    "tags": [
+      "incident-response",
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-16T14:00:23.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-118 (RCA: 85% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-16T14:00:23.000Z",
+    "rcaConfidence": 85
+  },
+  {
+    "id": "task-prevent-smb_retries-436c",
+    "title": "Prevent: 4 SMB/mount errors in recent logs",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
+    "tags": [
+      "prevention",
+      "predictive",
+      "smb_retries"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-14T19:58:40.340830+00:00",
+        "action": "created",
+        "actor": "predict-prevent",
+        "details": "Auto-created from anomaly detection (70% confidence)"
+      },
+      {
+        "ts": "2026-06-14T20:28:41.479242+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T20:58:42.825390+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T21:28:44.209292+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T21:58:45.551983+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T22:28:46.913307+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T22:58:48.235075+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T23:28:49.650515+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-14T23:58:50.950700+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T00:28:52.190240+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T00:58:53.347705+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T01:28:54.431474+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T01:58:55.461813+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T02:28:56.555953+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T02:58:57.703472+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T03:28:58.843334+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T03:59:00.324003+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T04:29:01.481501+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T04:59:02.591033+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T05:29:03.758478+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T05:59:04.852192+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T06:29:06.005986+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T06:59:07.160049+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T07:29:08.479204+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T07:59:09.819658+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T08:29:11.079474+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T08:59:12.255350+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T09:29:13.612477+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T09:59:15.047813+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T10:29:16.401849+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T10:59:17.891323+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T11:29:19.257342+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T11:59:20.654719+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T12:29:21.949170+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T12:59:23.260330+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T13:29:24.711695+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T13:59:25.970786+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T14:29:27.226059+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T14:59:28.448125+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T15:29:30.272302+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T15:59:31.512315+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T16:29:32.824582+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T16:59:34.047087+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T17:29:35.264081+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T17:59:36.541318+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T18:29:37.810310+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T18:59:39.008197+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T19:29:40.351187+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T19:59:41.903926+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T20:29:43.139547+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T20:59:44.414120+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T21:29:45.722272+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T21:59:47.023648+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T22:29:48.382016+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T22:59:49.704618+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T23:29:51.151827+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-15T23:59:52.428540+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T00:29:53.490265+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T00:59:54.822402+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T01:29:55.924399+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T01:59:57.003783+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T02:29:57.992081+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T02:59:59.022668+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T03:30:00.024354+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T04:00:01.006068+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T04:30:02.086144+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T05:00:03.152735+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T05:30:04.139650+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T06:00:05.110000+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T06:30:06.149710+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T07:00:07.209359+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T07:30:08.242730+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T08:00:09.298109+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T08:30:10.416201+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T09:00:11.590353+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T09:30:12.786315+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T10:00:14.133966+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T10:30:15.320745+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T11:00:16.583453+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T11:30:17.656101+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T12:00:18.682428+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T12:30:19.753965+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T13:00:20.981780+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T13:30:22.139435+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T14:00:23.442391+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T14:30:24.881688+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T15:00:26.154442+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T15:30:27.348150+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T16:00:28.567738+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T16:30:29.801914+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T17:00:31.079078+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T17:30:32.302325+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T18:00:41.713485+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T18:30:43.189032+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T19:00:45.496686+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T19:30:46.676933+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T20:00:47.936032+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T20:30:49.140997+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T21:00:50.413682+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T22:33:14.656139+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T23:03:15.674442+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-16T23:33:16.751019+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T00:03:17.840958+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T00:33:18.951595+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T01:03:19.994369+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T01:33:21.106812+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T02:03:22.198819+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T02:33:23.329931+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T03:03:24.409186+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T03:33:25.563575+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T04:03:27.647041+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T04:33:29.024851+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T05:03:30.196673+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T05:33:31.410837+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T06:03:32.554705+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T06:33:33.759415+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T07:03:34.801233+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T07:33:35.889927+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T08:03:37.000820+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T08:33:38.173335+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T09:03:39.236622+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T09:33:40.613701+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T10:03:42.189847+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T10:33:43.692987+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T11:03:44.983689+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T11:33:46.129340+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T12:03:47.395914+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T12:33:48.681572+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T13:03:49.971520+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T14:03:52.451630+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Auto-reset by stall detector \u2014 in_progress for 31 min with no activity (threshold: 30 min). Was: Dispatched \u2014 waiting for agent"
+      },
+      {
+        "ts": "2026-06-17T17:03:59.636913+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 180 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-17T17:03:59.811911+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T17:34:01.080662+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T18:04:02.309016+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T18:34:03.614769+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T19:04:04.900476+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T19:34:06.186164+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T20:04:07.410800+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T20:34:08.717731+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T21:04:10.004185+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T21:34:11.261441+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T22:04:12.479174+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T22:34:13.737797+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T23:04:14.978136+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-17T23:34:16.074182+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T00:37:46.025664+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T01:07:47.071625+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T01:37:49.643992+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T02:07:50.922166+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T02:37:51.920785+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T03:07:52.960714+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T03:37:54.025162+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T04:07:55.154048+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T04:37:56.249523+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T05:07:57.338818+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T05:37:58.398129+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T06:07:59.465642+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T06:38:00.548613+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T07:08:01.624349+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T07:38:02.725501+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T08:08:03.958135+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T08:38:05.400596+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T09:08:06.815830+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T09:38:08.138778+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T10:08:09.495240+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      },
+      {
+        "ts": "2026-06-18T10:38:10.788195+00:00",
+        "action": "dispatch_failed",
+        "actor": "dispatcher",
+        "details": "Excluded by tags: ['predictive', 'prevention']"
+      }
+    ],
+    "lastActivity": "2026-06-17T14:03:52.451630+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "predictionConfidence": 70,
+    "predictionPattern": "smb_retries",
+    "dispatchFailed": true,
+    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
+    "dispatchFailedAt": "2026-06-18T10:38:10.788097+00:00",
+    "stalledAt": null,
+    "dispatchCount": 1
+  },
+  {
+    "id": "task-inc-117-b128",
+    "title": "Fix: INC-117",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-117: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-117",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-16T07:30:08.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-117 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-16T07:30:08.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-116-c3a8",
+    "title": "Fix: INC-116",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-116: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-116",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-16T04:30:02.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-116 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-16T04:30:02.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-115-1d7a",
+    "title": "Fix: INC-115",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-115: Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-115",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-15T22:29:48.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-115 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-15T22:29:48.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-114-40a9",
+    "title": "Fix: INC-114",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-114: Gateway log shows 12 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-114",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-15T21:59:47.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-114 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-15T21:59:47.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-113-22d3",
+    "title": "Fix: INC-113",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-113: Detected 2 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-113",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-15T07:29:09.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-113 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-15T07:29:09.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-112-8a16",
     "title": "Fix: INC-112",
     "assignee": "engineer",
@@ -79,66 +1479,6 @@
     ],
     "lastActivity": "2026-06-14T21:28:44.000Z",
     "rcaConfidence": 90
-  },
-  {
-    "id": "task-prevent-smb_retries-436c",
-    "title": "Prevent: 4 SMB/mount errors in recent logs",
-    "assignee": "monkey",
-    "status": "backlog",
-    "priority": "P2",
-    "ts": "just now",
-    "note": "Predictive prevention (confidence: 70%)\n\n4 SMB/mount errors in recent logs\n\nPrevention action:\nCheck NAS network connectivity. Consider dedicated SMB user instead of guest.\n\nIf this prediction is correct, fix the issue and mark Done.\nIf this prediction is wrong, mark Done with note 'False positive'.",
-    "tags": [
-      "prevention",
-      "predictive",
-      "smb_retries"
-    ],
-    "history": [
-      {
-        "ts": "2026-06-14T19:58:40.340830+00:00",
-        "action": "created",
-        "actor": "predict-prevent",
-        "details": "Auto-created from anomaly detection (70% confidence)"
-      },
-      {
-        "ts": "2026-06-14T20:28:41.479242+00:00",
-        "action": "dispatch_failed",
-        "actor": "dispatcher",
-        "details": "Excluded by tags: ['predictive', 'prevention']"
-      },
-      {
-        "ts": "2026-06-14T20:58:42.825390+00:00",
-        "action": "dispatch_failed",
-        "actor": "dispatcher",
-        "details": "Excluded by tags: ['predictive', 'prevention']"
-      },
-      {
-        "ts": "2026-06-14T21:28:44.209292+00:00",
-        "action": "dispatch_failed",
-        "actor": "dispatcher",
-        "details": "Excluded by tags: ['predictive', 'prevention']"
-      },
-      {
-        "ts": "2026-06-14T21:58:45.551983+00:00",
-        "action": "dispatch_failed",
-        "actor": "dispatcher",
-        "details": "Excluded by tags: ['predictive', 'prevention']"
-      },
-      {
-        "ts": "2026-06-14T22:28:46.913307+00:00",
-        "action": "dispatch_failed",
-        "actor": "dispatcher",
-        "details": "Excluded by tags: ['predictive', 'prevention']"
-      }
-    ],
-    "lastActivity": "2026-06-14T19:58:40.340830+00:00",
-    "currentStep": null,
-    "progress": 0,
-    "predictionConfidence": 70,
-    "predictionPattern": "smb_retries",
-    "dispatchFailed": true,
-    "dispatchFailedReason": "Excluded by tags: ['predictive', 'prevention']",
-    "dispatchFailedAt": "2026-06-14T22:28:46.913199+00:00"
   },
   {
     "id": "task-inc-109-6db7",

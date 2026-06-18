@@ -1,1 +1,1 @@
-MOUNT_MISSING: /Volumes/Public unavailable at 2026-06-14 23:58:49
+HOST_DOWN: MyCloud-1E4N74 unreachable at 2026-06-18 14:39:02

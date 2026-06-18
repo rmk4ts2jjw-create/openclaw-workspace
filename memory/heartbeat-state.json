@@ -1,10 +1,11 @@
 {
   "lastChecks": {
-    "email": null,
-    "calendar": null,
-    "weather": "2026-06-05T18:32:00+00:00",
-    "gateway": "2026-06-13T05:00:00+00:00"
+    "calendar": "2026-06-18T07:45:00+00:00",
+    "email": "2026-06-18T07:45:00+00:00",
+    "gateway": "2026-06-18T11:40:00+00:00",
+    "system": "2026-06-18T11:40:00+00:00",
+    "weather": "2026-06-18T11:40:00+00:00"
   },
-  "lastHeartbeat": "2026-06-13T05:00:00+00:00",
-  "notes": "2026-06-13 05:00 BST — Heartbeat. System healthy: load 1.27, disk 51%, uptime 15h45m. In-progress task-memory_trend-d654 active since 03:50 (10.7min ago, step=None, watching). 5 open incidents (under threshold). 0 dispatchable night-shift tasks. Night Shift already completed this hour — no eligible tasks found."
+  "lastHeartbeat": "2026-06-18T11:40:00+00:00",
+  "notes": "2026-06-18 11:40 UTC — Heartbeat. Gateway healthy. Weather fetch successful: London 19°C, 12km/h wind. No new emails/calendar events. Memory search still disabled (missing OpenAI key). Service version mismatch persists (2026.6.5 installed, CLI 2026.6.6)."
 }
