@@ -2,6 +2,17 @@
 
 # Add tasks below when you want the agent to check something periodically.
 
+## Quiet Hours (23:00-08:00 BST)
+- If current time is between 23:00-08:00, ONLY run these checks:
+  - Stall Detection (quick scan)
+  - Circuit Breaker check
+- SKIP during quiet hours:
+  - Task pickup/dispatch
+  - Incident auto-resolve (cron handles this at 06:00)
+  - Memory maintenance
+  - Any non-urgent work
+- Reply HEARTBEAT_OK if nothing urgent found.
+
 ## Task Pickup
 - Read `data/tasks.json`, find tasks with `status: "backlog"`
 - ONLY pick tasks that are truly dispatchable: no `stalledAt`, `dispatchCount < 3`, not `wasStalled`

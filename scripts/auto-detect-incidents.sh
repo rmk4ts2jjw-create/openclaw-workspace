@@ -53,29 +53,93 @@ def safe_write(path, data):
     except Exception as e:
         print(f"safe_write error: {e}", file=__import__("sys").stderr)
 
-# ── Incident dedup: same title+source within 24h → update existing ──
-def find_existing_incident(incidents, title, source_tags):
-    """Find a non-RESOLVED incident with matching title created within 24h."""
+# ── Fingerprinting helper ──
+def compute_fingerprint(title, tags):
+    """Compute a stable fingerprint from normalized title + sorted tags.
+    
+    Normalization:
+    - Lowercase, strip whitespace
+    - Remove variable parts: numbers, counts, percentages, timestamps
+    - Extract the core error pattern
+    
+    Example:
+      'Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError'
+      → 'gateway session errors session(s) with embeddedattemptsessiontakeovererror'
+      → hash of normalized pattern
+    """
+    import hashlib, re
+    # Normalize title: lowercase
+    normalized = title.lower().strip()
+    # Remove variable numbers but keep the word 'session(s)' etc.
+    normalized = re.sub(r'\b\d+\b', 'N', normalized)
+    # Remove common variable suffixes
+    normalized = re.sub(r'\s*—\s*', ' ', normalized)
+    normalized = re.sub(r'\s+', ' ', normalized).strip()
+    # Add sorted tags for additional stability
+    tag_str = ','.join(sorted(t.lower() for t in tags))
+    fingerprint = hashlib.md5(f"{normalized}|{tag_str}".encode()).hexdigest()[:12]
+    return fingerprint
+
+
+# ── Incident dedup: fingerprint-based matching within 24h ──
+def find_existing_incident(incidents, title, source_tags, fingerprint):
+    """Find a non-RESOLVED incident with matching fingerprint within 24h.
+    
+    Matching strategy (in order of priority):
+    1. Exact fingerprint match (normalized pattern + tags)
+    2. Exact title match (legacy, for backward compat)
+    3. Tag overlap (>50% shared tags) + similar title (same first 40 chars)
+    """
     now = datetime.now(timezone.utc)
+    title_prefix = title[:40].lower()
+    
     for inc in incidents:
         if inc.get("status") == "RESOLVED":
             continue
-        if inc.get("title") != title:
-            continue
-        # Check if created within 24 hours
-        opened = inc.get("opened", "")
-        try:
-            opened_dt = datetime.fromisoformat(opened.replace("Z", "+00:00"))
-            if (now - opened_dt) < timedelta(hours=24):
-                return inc
-        except:
-            continue
+        
+        # Strategy 1: Fingerprint match (primary)
+        inc_fp = inc.get("_fingerprint", "")
+        if inc_fp and inc_fp == fingerprint:
+            opened = inc.get("opened", "")
+            try:
+                opened_dt = datetime.fromisoformat(opened.replace("Z", "+00:00"))
+                if (now - opened_dt) < timedelta(hours=24):
+                    return inc
+            except:
+                pass
+        
+        # Strategy 2: Exact title match (legacy)
+        if inc.get("title") == title:
+            opened = inc.get("opened", "")
+            try:
+                opened_dt = datetime.fromisoformat(opened.replace("Z", "+00:00"))
+                if (now - opened_dt) < timedelta(hours=24):
+                    return inc
+            except:
+                pass
+        
+        # Strategy 3: Tag overlap + similar title prefix
+        inc_tags = set(t.lower() for t in inc.get("tags", []))
+        new_tags = set(t.lower() for t in source_tags)
+        if inc_tags and new_tags:
+            overlap = len(inc_tags & new_tags) / max(len(inc_tags | new_tags), 1)
+            if overlap > 0.5 and inc.get("title", "")[:40].lower() == title_prefix:
+                opened = inc.get("opened", "")
+                try:
+                    opened_dt = datetime.fromisoformat(opened.replace("Z", "+00:00"))
+                    if (now - opened_dt) < timedelta(hours=24):
+                        return inc
+                except:
+                    pass
     return None
 
 incidents = json.load(open(incidents_path)) if os.path.exists(incidents_path) else []
 
-# Deduplicate: find existing active incident with same title within 24h
-existing_inc = find_existing_incident(incidents, "$title", "$source")
+# Compute fingerprint for this incident pattern
+_incident_fingerprint = compute_fingerprint("$title", ${tags} + ["$source"])
+
+# Deduplicate: find existing active incident via fingerprint within 24h
+existing_inc = find_existing_incident(incidents, "$title", ${tags} + ["$source"], _incident_fingerprint)
 inc_already_exists = existing_inc is not None
 
 now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -84,11 +148,14 @@ if inc_already_exists:
     # Update existing incident: append to timeline, bump lastActivity, increment count
     next_id = existing_inc["id"]
     existing_inc["lastActivity"] = now
+    # Backfill fingerprint on older incidents that don't have one
+    if not existing_inc.get("_fingerprint"):
+        existing_inc["_fingerprint"] = _incident_fingerprint
     # Track recurrence count in summary
     recurrence = existing_inc.get("_recurrence", 1) + 1
     existing_inc["_recurrence"] = recurrence
     existing_inc["summary"] = "$summary" + f" (recurrence #{recurrence})"
-    existing_inc["timeline"].append({"ts": now, "message": f"Recurrence #{recurrence}: Auto-detected by $source", "actor": "system"})
+    existing_inc["timeline"].append({"ts": now, "message": f"Recurrence #{recurrence}: Auto-detected by $source (fingerprint match)", "actor": "system"})
     safe_write(incidents_path, incidents)
     # Still create a linked task for the recurrence (so it shows in triage)
     # But only if no open linked task already exists
@@ -140,7 +207,8 @@ else:
         "timeline": [{"ts": now, "message": "Auto-detected by $source", "actor": "system"}],
         "actions": _actions,
         "actionsGenerated": True,
-        "_recurrence": 1
+        "_recurrence": 1,
+        "_fingerprint": _incident_fingerprint
     }
     incidents.insert(0, inc)
     safe_write(incidents_path, incidents)
