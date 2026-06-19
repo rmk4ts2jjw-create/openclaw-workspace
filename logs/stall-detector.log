@@ -710,3 +710,16 @@
   RESET 4390dddc-539c-4141-b775-8b8a019863df: INC-104: Rate limit exhaustion — stale 34 min
 [2026-06-19 18:19:32 UTC] Stall detector: OK — no stale tasks
 [2026-06-19 18:49:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 19:19:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 19:49:48 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 20:19:54 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 20:50:00 UTC] Stall detector: cleared 7 task(s)
+  CLEARED 4390dddc-539c-4141-b775-8b8a019863df: stalledAt removed after 181 min in backlog (wasStalled remains for 3h)
+  CLEARED rev-phase-2: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+  CLEARED rev-phase-3: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+  CLEARED rev-phase-4: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+  CLEARED rev-phase-5: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+  CLEARED rev-phase-6: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+  CLEARED cd28ab90-cffe-4fa0-9bee-c144f3038a27: stalledAt removed after 197 min in backlog (wasStalled remains for 3h)
+[2026-06-19 21:20:07 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 21:50:13 UTC] Stall detector: OK — no stale tasks

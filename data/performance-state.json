@@ -1,15 +1,5 @@
 {
   "agents": {
-    "lifesupport": {
-      "total_tasks": 13,
-      "done": 13,
-      "failed": 0,
-      "in_progress": 0,
-      "avg_task_hours": 0,
-      "failure_rate": 0.0,
-      "success_rate": 1.0,
-      "analyzed_at": "2026-06-19T18:49:37.713805+00:00"
-    },
     "engineer": {
       "total_tasks": 21,
       "done": 21,
@@ -18,17 +8,27 @@
       "avg_task_hours": 0,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-19T18:49:37.713805+00:00"
+      "analyzed_at": "2026-06-19T21:50:14.120357+00:00"
+    },
+    "lifesupport": {
+      "total_tasks": 13,
+      "done": 13,
+      "failed": 0,
+      "in_progress": 0,
+      "avg_task_hours": 0,
+      "failure_rate": 0.0,
+      "success_rate": 1.0,
+      "analyzed_at": "2026-06-19T21:50:14.120357+00:00"
     },
     "monkey": {
-      "total_tasks": 76,
+      "total_tasks": 75,
       "done": 73,
       "failed": 0,
       "in_progress": 0,
       "avg_task_hours": 0,
       "failure_rate": 0.0,
-      "success_rate": 0.961,
-      "analyzed_at": "2026-06-19T18:49:37.713805+00:00"
+      "success_rate": 0.973,
+      "analyzed_at": "2026-06-19T21:50:14.120357+00:00"
     },
     "archivist": {
       "total_tasks": 1,
@@ -38,7 +38,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-19T18:49:37.713805+00:00"
+      "analyzed_at": "2026-06-19T21:50:14.120357+00:00"
     }
   },
   "tune_tasks": [],

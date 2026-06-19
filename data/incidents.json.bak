@@ -1,5 +1,88 @@
 [
   {
+    "id": "INC-130",
+    "title": "Gateway session errors \u2014 13 session(s) with EmbeddedAttemptSessionTakeoverError",
+    "severity": "P1",
+    "status": "TRIAGE",
+    "owner": "engineer",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-19T19:19:45.000Z",
+    "lastActivity": "2026-06-19T21:50:16.000Z",
+    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #6)",
+    "tags": [
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "gateway-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-19T19:19:45.000Z",
+        "message": "Auto-detected by gateway-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T19:49:51.000Z",
+        "message": "Recurrence #2: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T20:19:57.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T20:50:03.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T21:20:09.000Z",
+        "message": "Recurrence #5: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T21:50:16.000Z",
+        "message": "Recurrence #6: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-617394",
+        "label": "Investigate root cause",
+        "description": "Immediately investigate the root cause of this critical incident",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-643169",
+        "label": "Assess blast radius",
+        "description": "Determine which systems and services are affected",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-183674",
+        "label": "Implement emergency mitigation",
+        "description": "Apply the fastest available fix to reduce impact",
+        "status": "suggested",
+        "assignee": "engineer"
+      },
+      {
+        "id": "act-980201",
+        "label": "Notify command",
+        "description": "Escalate to human operator for awareness",
+        "status": "suggested",
+        "assignee": "monkey"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 6,
+    "_fingerprint": "d4cdd3353300"
+  },
+  {
     "id": "INC-129",
     "title": "Rate limit exhaustion \u2014 30 429 errors in gateway log",
     "severity": "P2",
@@ -8,8 +91,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-19T09:45:55.000Z",
-    "lastActivity": "2026-06-19T18:19:34.000Z",
-    "summary": "Gateway log shows 97 rate limit (429) errors. Free model pool may be exhausted. (recurrence #17)",
+    "lastActivity": "2026-06-19T21:20:10.000Z",
+    "summary": "Gateway log shows 684 rate limit (429) errors. Free model pool may be exhausted. (recurrence #23)",
     "tags": [
       "rate-limit",
       "429",
@@ -101,6 +184,36 @@
         "ts": "2026-06-19T18:19:34.000Z",
         "message": "Recurrence #17: Auto-detected by rate-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T18:49:39.000Z",
+        "message": "Recurrence #18: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T19:19:45.000Z",
+        "message": "Recurrence #19: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T19:49:51.000Z",
+        "message": "Recurrence #20: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T20:19:57.000Z",
+        "message": "Recurrence #21: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T20:50:03.000Z",
+        "message": "Recurrence #22: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T21:20:10.000Z",
+        "message": "Recurrence #23: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -127,14 +240,14 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 17,
+    "_recurrence": 23,
     "_fingerprint": "4b06701bd5fa"
   },
   {
     "id": "INC-128",
     "title": "Gateway session errors \u2014 5 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -271,13 +384,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 18,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-127",
     "title": "Mission Control dashboard down \u2014 HTTP 000",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -339,7 +454,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 3,
-    "_fingerprint": "c80360dd0ae6"
+    "_fingerprint": "c80360dd0ae6",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Mission Control dashboard verified healthy (HTTP 200)"
   },
   {
     "id": "INC-126",
@@ -436,7 +553,7 @@
     "id": "INC-125",
     "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -593,13 +710,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 22,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-124",
     "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -781,7 +900,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 27,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-123",
@@ -1044,7 +1165,7 @@
     "id": "INC-121",
     "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1101,13 +1222,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 2,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-120",
     "title": "Mission Control dashboard down \u2014 HTTP 000",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1159,13 +1282,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 1,
-    "_fingerprint": "c80360dd0ae6"
+    "_fingerprint": "c80360dd0ae6",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Mission Control dashboard verified healthy (HTTP 200)"
   },
   {
     "id": "INC-119",
     "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1372,7 +1497,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 32,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-118",
@@ -1429,7 +1556,7 @@
     "id": "INC-117",
     "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1561,13 +1688,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 17,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-116",
     "title": "Gateway session errors \u2014 3 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1629,13 +1758,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 3,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-115",
     "title": "Gateway session errors \u2014 4 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1702,7 +1833,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 4,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-114",
@@ -1769,7 +1902,7 @@
     "id": "INC-113",
     "title": "Gateway session errors \u2014 2 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -1946,7 +2079,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 26,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:17:13.865696+00:00",
+    "resolution": "Auto-resolved: Gateway verified healthy (heartbeat operational)"
   },
   {
     "id": "INC-112",
@@ -2264,7 +2399,7 @@
     "id": "INC-109",
     "title": "Tasks stuck In Progress \u2014 3 tasks with no recent activity",
     "severity": "P3",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "monkey",
     "acknowledged": false,
     "escalated": false,
@@ -2302,13 +2437,15 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 1,
-    "_fingerprint": "9394f26291fa"
+    "_fingerprint": "9394f26291fa",
+    "resolvedAt": "2026-06-19T19:16:37.015257+00:00",
+    "resolution": "Auto-resolved: orphan incident older than 5 days"
   },
   {
     "id": "INC-108",
     "title": "Gateway session errors \u2014 1 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "engineer",
     "acknowledged": false,
     "escalated": false,
@@ -2585,7 +2722,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 44,
-    "_fingerprint": "d4cdd3353300"
+    "_fingerprint": "d4cdd3353300",
+    "resolvedAt": "2026-06-19T19:16:37.015257+00:00",
+    "resolution": "Auto-resolved: orphan incident older than 5 days"
   },
   {
     "id": "INC-107",
@@ -2659,7 +2798,7 @@
     "id": "INC-106",
     "title": "Rate limit exhaustion \u2014 46 429 errors in gateway log",
     "severity": "P2",
-    "status": "TRIAGE",
+    "status": "RESOLVED",
     "owner": "lifesupport",
     "acknowledged": false,
     "escalated": false,
@@ -2724,7 +2863,9 @@
     ],
     "actionsGenerated": true,
     "_recurrence": 2,
-    "_fingerprint": "4b06701bd5fa"
+    "_fingerprint": "4b06701bd5fa",
+    "resolvedAt": "2026-06-19T19:16:37.015257+00:00",
+    "resolution": "Auto-resolved: orphan incident older than 5 days"
   },
   {
     "id": "INC-105",

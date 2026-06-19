@@ -301,3 +301,8 @@
 - **cd28ab90-cffe-4fa0-9bee-c144f3038a27**: Runbook Evolution
 - Assignee: monkey
 - Status: backlog → in_progress
+
+## 2026-06-19 21:50:00 — DISPATCHED
+- **4390dddc-539c-4141-b775-8b8a019863df**: INC-104: Rate limit exhaustion
+- Assignee: monkey
+- Status: backlog → in_progress
