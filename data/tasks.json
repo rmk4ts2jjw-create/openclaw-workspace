@@ -1,5 +1,32 @@
 [
   {
+    "id": "task-inc-130-d4c3",
+    "title": "Fix: INC-130",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-130: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-130",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-19T19:19:45.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-130 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-19T19:19:45.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-129-c189",
     "title": "Fix: INC-129",
     "assignee": "lifesupport",
@@ -119,7 +146,7 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P1",
-    "ts": "2026-06-09T22:18:23.226000+00:00",
+    "ts": "just now",
     "tags": [
       "incident",
       "rate-limit",
@@ -137,14 +164,33 @@
         "action": "stalled_reset",
         "actor": "stall-detector",
         "details": "Auto-reset by stall detector \u2014 in_progress for 34 min with no activity (threshold: 30 min). Was: Modifying Auto-update FreeRide cron job to use exponential backoff"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.563116+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T21:01:03.853369+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch detected: task in_progress for 11min with no currentStep or progress. Sub-agent never started. Reset to backlog."
       }
     ],
-    "lastActivity": "2026-06-19T17:49:27.051366+00:00",
+    "lastActivity": "2026-06-19T21:01:03.853369+00:00",
     "currentStep": null,
-    "dispatchCount": 2,
+    "dispatchCount": 3,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:49:27.051366+00:00",
-    "wasStalled": true
+    "stalledAt": "2026-06-19T21:01:03.853369+00:00",
+    "startedAt": "2026-06-19T20:50:00.563102+00:00",
+    "note": " [auto-dispatched 2026-06-19 21:50]"
   },
   {
     "id": "d6a11826-89fb-4a2a-a7cb-af2fa637938b",
@@ -234,6 +280,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T13:48:34.058306+00:00",
@@ -241,10 +293,9 @@
     "note": " [auto-dispatched 2026-06-19 11:16] [auto-dispatched 2026-06-19 14:18]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
-    "ghostDispatch": true,
-    "wasStalled": true
+    "ghostDispatch": true
   },
   {
     "id": "rev-phase-3",
@@ -290,6 +341,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T14:48:53.236573+00:00",
@@ -297,10 +354,9 @@
     "note": " [auto-dispatched 2026-06-19 11:46] [auto-dispatched 2026-06-19 14:48]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
-    "ghostDispatch": true,
-    "wasStalled": true
+    "ghostDispatch": true
   },
   {
     "id": "rev-phase-4",
@@ -346,6 +402,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T14:48:53.391348+00:00",
@@ -353,7 +415,7 @@
     "note": " [auto-dispatched 2026-06-19 12:16] [auto-dispatched 2026-06-19 15:48]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
     "ghostDispatch": true
   },
@@ -401,6 +463,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T15:49:04.769107+00:00",
@@ -408,10 +476,9 @@
     "note": " [auto-dispatched 2026-06-19 12:47] [auto-dispatched 2026-06-19 16:18]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
-    "ghostDispatch": true,
-    "wasStalled": true
+    "ghostDispatch": true
   },
   {
     "id": "rev-phase-6",
@@ -457,6 +524,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T15:49:04.919286+00:00",
@@ -464,7 +537,7 @@
     "note": " [auto-dispatched 2026-06-19 13:47] [auto-dispatched 2026-06-19 16:49]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
     "ghostDispatch": true
   },
@@ -521,6 +594,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.415493+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 197 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T16:19:10.822365+00:00",
@@ -528,7 +607,7 @@
     "note": " [auto-dispatched 2026-06-19 13:17] [auto-dispatched 2026-06-19 17:19]",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "stalledAt": null,
     "dispatchCount": 4,
     "ghostDispatch": true
   },
