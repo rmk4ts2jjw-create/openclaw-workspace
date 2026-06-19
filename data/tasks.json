@@ -6,7 +6,7 @@
     "status": "triage",
     "priority": "P2",
     "ts": "just now",
-    "note": "Auto-created from incident INC-129: Gateway log shows 30 rate limit (429) errors. Free model pool may be exhausted.\n\n── RCA ──\nRoot cause: OpenRouter free model pool exhausted — too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "note": "Auto-created from incident INC-129: Gateway log shows 30 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
     "linkedIncidentId": "INC-129",
     "tags": [
       "incident-response",
@@ -33,7 +33,7 @@
     "status": "triage",
     "priority": "P1",
     "ts": "just now",
-    "note": "Auto-created from incident INC-128: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n── RCA ──\nRoot cause: Gateway session lock conflict — embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "note": "Auto-created from incident INC-128: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
     "linkedIncidentId": "INC-128",
     "tags": [
       "incident-response",
@@ -60,7 +60,7 @@
     "status": "triage",
     "priority": "P2",
     "ts": "just now",
-    "note": "Auto-created from incident INC-126: Gateway log shows 23 rate limit (429) errors. Free model pool may be exhausted.\n\n── RCA ──\nRoot cause: OpenRouter free model pool exhausted — too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "note": "Auto-created from incident INC-126: Gateway log shows 23 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
     "linkedIncidentId": "INC-126",
     "tags": [
       "incident-response",
@@ -87,7 +87,7 @@
     "status": "triage",
     "priority": "P1",
     "ts": "just now",
-    "note": "Auto-created from incident INC-125: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n── RCA ──\nRoot cause: Gateway session lock conflict — embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "note": "Auto-created from incident INC-125: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
     "linkedIncidentId": "INC-125",
     "tags": [
       "incident-response",
@@ -185,10 +185,43 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P1",
-    "ts": "2026-06-12T13:30:49.682000+00:00",
+    "ts": "just now",
     "tags": [],
-    "history": [],
-    "lastActivity": "2026-06-12T13:30:49.682000+00:00"
+    "history": [
+      {
+        "ts": "2026-06-19T10:16:08.023563+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T10:46:31.221563+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1823s with no progress"
+      },
+      {
+        "ts": "2026-06-19T13:18:13.651592+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T13:48:34.058306+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1820s with no progress"
+      }
+    ],
+    "lastActivity": "2026-06-19T13:48:34.058306+00:00",
+    "startedAt": "2026-06-19T13:18:13.651581+00:00",
+    "note": " [auto-dispatched 2026-06-19 11:16] [auto-dispatched 2026-06-19 14:18]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T13:48:34.058306+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true,
+    "wasStalled": true
   },
   {
     "id": "rev-phase-3",
@@ -196,10 +229,43 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P2",
-    "ts": "2026-06-12T13:30:49.682000+00:00",
+    "ts": "just now",
     "tags": [],
-    "history": [],
-    "lastActivity": "2026-06-12T13:30:49.682000+00:00"
+    "history": [
+      {
+        "ts": "2026-06-19T10:46:32.286215+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T11:16:49.929165+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1818s with no progress"
+      },
+      {
+        "ts": "2026-06-19T13:48:35.067324+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T14:48:53.236573+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 3618s with no progress"
+      }
+    ],
+    "lastActivity": "2026-06-19T14:48:53.236573+00:00",
+    "startedAt": "2026-06-19T13:48:35.067310+00:00",
+    "note": " [auto-dispatched 2026-06-19 11:46] [auto-dispatched 2026-06-19 14:48]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T14:48:53.236573+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true,
+    "wasStalled": true
   },
   {
     "id": "rev-phase-4",
@@ -207,10 +273,42 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P2",
-    "ts": "2026-06-12T13:30:49.682000+00:00",
+    "ts": "just now",
     "tags": [],
-    "history": [],
-    "lastActivity": "2026-06-12T13:30:49.682000+00:00"
+    "history": [
+      {
+        "ts": "2026-06-19T11:16:50.118953+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T11:47:13.752953+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1824s with no progress"
+      },
+      {
+        "ts": "2026-06-19T14:48:53.391452+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T14:55:08.997123+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch fast-path: currentStep=None, lastActivity 376s ago"
+      }
+    ],
+    "lastActivity": "2026-06-19T14:48:53.391348+00:00",
+    "startedAt": "2026-06-19T14:48:53.391440+00:00",
+    "note": " [auto-dispatched 2026-06-19 12:16] [auto-dispatched 2026-06-19 15:48]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T14:55:08.997123+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true
   },
   {
     "id": "rev-phase-5",
@@ -218,10 +316,31 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P2",
-    "ts": "2026-06-12T13:30:49.682000+00:00",
+    "ts": "just now",
     "tags": [],
-    "history": [],
-    "lastActivity": "2026-06-12T13:30:49.682000+00:00"
+    "history": [
+      {
+        "ts": "2026-06-19T11:47:15.267293+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T12:17:28.981140+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1814s with no progress"
+      }
+    ],
+    "lastActivity": "2026-06-19T12:17:28.981140+00:00",
+    "startedAt": "2026-06-19T11:47:15.267281+00:00",
+    "note": " [auto-dispatched 2026-06-19 12:47]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": null,
+    "dispatchCount": 1,
+    "wasStalled": true,
+    "ghostDispatch": true
   },
   {
     "id": "rev-phase-6",
@@ -229,10 +348,31 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P3",
-    "ts": "2026-06-12T13:30:49.682000+00:00",
+    "ts": "just now",
     "tags": [],
-    "history": [],
-    "lastActivity": "2026-06-12T13:30:49.682000+00:00"
+    "history": [
+      {
+        "ts": "2026-06-19T12:47:51.336511+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T13:18:12.656466+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1821s with no progress"
+      }
+    ],
+    "lastActivity": "2026-06-19T13:18:12.656466+00:00",
+    "startedAt": "2026-06-19T12:47:51.336491+00:00",
+    "note": " [auto-dispatched 2026-06-19 13:47]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T13:18:12.656466+00:00",
+    "dispatchCount": 1,
+    "wasStalled": true,
+    "ghostDispatch": true
   },
   {
     "id": "cd28ab90-cffe-4fa0-9bee-c144f3038a27",
@@ -240,7 +380,7 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "normal",
-    "ts": "2026-06-09T22:18:12.785000+00:00",
+    "ts": "just now",
     "tags": [
       "runbook-evolution",
       "phase-2"
@@ -251,9 +391,29 @@
         "action": "created",
         "actor": "system",
         "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-19T12:17:29.154167+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T12:47:50.993144+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1822s with no progress"
       }
     ],
-    "lastActivity": "2026-06-09T22:18:12.785000+00:00"
+    "lastActivity": "2026-06-19T12:47:50.993144+00:00",
+    "startedAt": "2026-06-19T12:17:29.154156+00:00",
+    "note": " [auto-dispatched 2026-06-19 13:17]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": null,
+    "dispatchCount": 1,
+    "wasStalled": true,
+    "ghostDispatch": true
   },
   {
     "id": "9f7aa5d8-3f4d-4f6b-89e8-56d2fbdab0ec",
@@ -309,7 +469,7 @@
   },
   {
     "id": "f14723fb-ae38-44e7-8c06-c05e4a85e380",
-    "title": "Autonomous Mission Planning — self-directing improvement goals",
+    "title": "Autonomous Mission Planning \u2014 self-directing improvement goals",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -335,12 +495,12 @@
       }
     ],
     "lastActivity": "2026-06-10T05:45:47.703000+00:00",
-    "summary": "Autonomous Mission Planning — self-directing improvement goals",
+    "summary": "Autonomous Mission Planning \u2014 self-directing improvement goals",
     "completedAt": "2026-06-10T05:45:47.703000+00:00"
   },
   {
     "id": "63fba10a-8fc6-4108-86af-5d2905108578",
-    "title": "Performance Tuning Engine — agent efficiency optimization",
+    "title": "Performance Tuning Engine \u2014 agent efficiency optimization",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -366,7 +526,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:45:49.366000+00:00",
-    "summary": "Performance Tuning Engine — agent efficiency optimization",
+    "summary": "Performance Tuning Engine \u2014 agent efficiency optimization",
     "completedAt": "2026-06-10T05:45:49.366000+00:00"
   },
   {
@@ -402,7 +562,7 @@
   },
   {
     "id": "f14d66b6-985b-45ed-a75b-6801291ace34",
-    "title": "Auto-Heal System — automated incident recovery",
+    "title": "Auto-Heal System \u2014 automated incident recovery",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -428,12 +588,12 @@
       }
     ],
     "lastActivity": "2026-06-10T05:45:52.673000+00:00",
-    "summary": "Auto-Heal System — automated incident recovery",
+    "summary": "Auto-Heal System \u2014 automated incident recovery",
     "completedAt": "2026-06-10T05:45:52.673000+00:00"
   },
   {
     "id": "d847fc16-7449-49eb-9c90-9ff9da414d95",
-    "title": "Predictive Incident Prevention — anomaly detection",
+    "title": "Predictive Incident Prevention \u2014 anomaly detection",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -459,7 +619,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:45:54.316000+00:00",
-    "summary": "Predictive Incident Prevention — anomaly detection",
+    "summary": "Predictive Incident Prevention \u2014 anomaly detection",
     "completedAt": "2026-06-10T05:45:54.316000+00:00"
   },
   {
@@ -495,7 +655,7 @@
   },
   {
     "id": "cd7e14fd-4a62-4d9f-96d5-3b879e607a87",
-    "title": "Fix Validation Loop — auto-verify fixes close incidents",
+    "title": "Fix Validation Loop \u2014 auto-verify fixes close incidents",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -521,7 +681,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:45:57.613000+00:00",
-    "summary": "Fix Validation Loop — auto-verify fixes close incidents",
+    "summary": "Fix Validation Loop \u2014 auto-verify fixes close incidents",
     "completedAt": "2026-06-10T05:45:57.613000+00:00"
   },
   {
@@ -557,7 +717,7 @@
   },
   {
     "id": "4f39d991-d8cf-4aae-bbb1-92bbb9ac21ca",
-    "title": "Auto RCA: Incident → Root Cause → Fix Task",
+    "title": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -583,7 +743,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:46:00.985000+00:00",
-    "summary": "Auto RCA: Incident → Root Cause → Fix Task",
+    "summary": "Auto RCA: Incident \u2192 Root Cause \u2192 Fix Task",
     "completedAt": "2026-06-10T05:46:00.985000+00:00"
   },
   {
@@ -894,7 +1054,7 @@
   },
   {
     "id": "6d116d6e-1272-42a3-83c2-c3e66087d7c7",
-    "title": "Investigate: Rate limit exhaustion — 429 errors (17 incidents)",
+    "title": "Investigate: Rate limit exhaustion \u2014 429 errors (17 incidents)",
     "assignee": "lifesupport",
     "status": "done",
     "priority": "P1",
@@ -920,7 +1080,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:46:19.352000+00:00",
-    "summary": "Investigate: Rate limit exhaustion — 429 errors (17 incidents)",
+    "summary": "Investigate: Rate limit exhaustion \u2014 429 errors (17 incidents)",
     "completedAt": "2026-06-10T05:46:19.352000+00:00"
   },
   {
@@ -1065,7 +1225,7 @@
   },
   {
     "id": "4d12ed0e-08fb-4765-bcbd-017850ce248f",
-    "title": "Task Completion — summary and visibility improvement.",
+    "title": "Task Completion \u2014 summary and visibility improvement.",
     "assignee": "archivist",
     "status": "done",
     "priority": "normal",
@@ -1086,7 +1246,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:46:29.446000+00:00",
-    "summary": "Task Completion — summary and visibility improvement.",
+    "summary": "Task Completion \u2014 summary and visibility improvement.",
     "completedAt": "2026-06-10T05:46:29.446000+00:00"
   },
   {
@@ -1528,7 +1688,7 @@
   },
   {
     "id": "ab272ff3-0faf-42af-9fc3-963b32d43ea3",
-    "title": "External AI Review Loop — Phase 1",
+    "title": "External AI Review Loop \u2014 Phase 1",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -1553,7 +1713,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:46:58.160000+00:00",
-    "summary": "External AI Review Loop — Phase 1",
+    "summary": "External AI Review Loop \u2014 Phase 1",
     "completedAt": "2026-06-10T05:46:58.160000+00:00"
   },
   {
@@ -1672,7 +1832,7 @@
   },
   {
     "id": "dd7966d0-4871-4a02-8f77-76de0c403f75",
-    "title": "Incident → Task Linking",
+    "title": "Incident \u2192 Task Linking",
     "assignee": "monkey",
     "status": "done",
     "priority": "urgent",
@@ -1693,7 +1853,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:47:06.821000+00:00",
-    "summary": "Incident → Task Linking",
+    "summary": "Incident \u2192 Task Linking",
     "completedAt": "2026-06-10T05:47:06.821000+00:00"
   },
   {
@@ -1895,7 +2055,7 @@
   },
   {
     "id": "a20ffaef-567a-44ea-8b2e-be800d6ec85e",
-    "title": "Error Feed — behaviour review and fix.",
+    "title": "Error Feed \u2014 behaviour review and fix.",
     "assignee": "lifesupport",
     "status": "done",
     "priority": "normal",
@@ -1916,7 +2076,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:47:20.520000+00:00",
-    "summary": "Error Feed — behaviour review and fix.",
+    "summary": "Error Feed \u2014 behaviour review and fix.",
     "completedAt": "2026-06-10T05:47:20.520000+00:00"
   },
   {
@@ -2779,7 +2939,7 @@
   },
   {
     "id": "d838812d-7733-4979-8622-02025ae3d035",
-    "title": "Timeline — Unified Event Model",
+    "title": "Timeline \u2014 Unified Event Model",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -2805,12 +2965,12 @@
       }
     ],
     "lastActivity": "2026-06-10T05:48:19.137000+00:00",
-    "summary": "Timeline — Unified Event Model",
+    "summary": "Timeline \u2014 Unified Event Model",
     "completedAt": "2026-06-10T05:48:19.137000+00:00"
   },
   {
     "id": "fef98854-a0ed-46ec-952a-e8c93a5b1cf2",
-    "title": "Fix stall detection — 316-min task was not caught",
+    "title": "Fix stall detection \u2014 316-min task was not caught",
     "assignee": "monkey",
     "status": "done",
     "priority": "urgent",
@@ -2836,7 +2996,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:48:20.843000+00:00",
-    "summary": "Fix stall detection — 316-min task was not caught",
+    "summary": "Fix stall detection \u2014 316-min task was not caught",
     "completedAt": "2026-06-10T05:48:20.843000+00:00"
   },
   {
@@ -3275,7 +3435,7 @@
   },
   {
     "id": "8e5dee2c-9316-442f-9636-bc6a1df8aaa8",
-    "title": "Station Memory — compounding knowledge system",
+    "title": "Station Memory \u2014 compounding knowledge system",
     "assignee": "monkey",
     "status": "done",
     "priority": "P1",
@@ -3301,7 +3461,7 @@
       }
     ],
     "lastActivity": "2026-06-10T05:48:47.222000+00:00",
-    "summary": "Station Memory — compounding knowledge system",
+    "summary": "Station Memory \u2014 compounding knowledge system",
     "completedAt": "2026-06-10T05:48:47.222000+00:00"
   }
 ]
