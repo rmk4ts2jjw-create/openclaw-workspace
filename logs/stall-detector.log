@@ -681,3 +681,32 @@
 [2026-06-18 11:08:11 UTC] Stall detector: OK — no stale tasks
 [2026-06-18 14:09:18 UTC] Stall detector: OK — no stale tasks
 [2026-06-18 14:39:34 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 09:45:39 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 10:16:05 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 10:46:24 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-2: Phase 2: Manual Review Testing — Agent starting for 1823s
+[2026-06-19 11:16:49 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-3: Phase 3: Automated Browser Review — Agent starting for 1818s
+[2026-06-19 11:47:07 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-4: Phase 4: OpenRouter Reviewer — Agent starting for 1824s
+[2026-06-19 12:17:28 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-5: Phase 5: Automated Review Loop — Agent starting for 1814s
+[2026-06-19 12:47:49 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET cd28ab90-cffe-4fa0-9bee-c144f3038a27: Runbook Evolution — Agent starting for 1822s
+[2026-06-19 13:18:09 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-6: Phase 6: Night Shift Integration — Agent starting for 1821s
+[2026-06-19 13:48:30 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-2: Phase 2: Manual Review Testing — Agent starting for 1820s
+[2026-06-19 14:48:53 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-3: Phase 3: Automated Browser Review — Agent starting for 3618s
+[2026-06-19 15:18:58 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 15:49:04 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET rev-phase-5: Phase 5: Automated Review Loop — Agent starting for 1806s
+[2026-06-19 16:19:10 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 16:49:15 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 17:01:19 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 17:19:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 17:49:27 UTC] Stall detector: reset 1 task(s)
+  RESET 4390dddc-539c-4141-b775-8b8a019863df: INC-104: Rate limit exhaustion — stale 34 min
+[2026-06-19 18:19:32 UTC] Stall detector: OK — no stale tasks
+[2026-06-19 18:49:37 UTC] Stall detector: OK — no stale tasks

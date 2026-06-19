@@ -241,3 +241,63 @@
 - **task-prevent-memory_trend-5329**: Prevent: Memory growing >5%/check for 3 consecutive checks (15.9%, 110.0%)
 - Assignee: monkey
 - Status: backlog → in_progress
+
+## 2026-06-19 11:16:08 — DISPATCHED
+- **rev-phase-2**: Phase 2: Manual Review Testing
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 11:46:32 — DISPATCHED
+- **rev-phase-3**: Phase 3: Automated Browser Review
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 12:16:50 — DISPATCHED
+- **rev-phase-4**: Phase 4: OpenRouter Reviewer
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 12:47:15 — DISPATCHED
+- **rev-phase-5**: Phase 5: Automated Review Loop
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 13:17:29 — DISPATCHED
+- **cd28ab90-cffe-4fa0-9bee-c144f3038a27**: Runbook Evolution
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 13:47:51 — DISPATCHED
+- **rev-phase-6**: Phase 6: Night Shift Integration
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 14:18:13 — DISPATCHED
+- **rev-phase-2**: Phase 2: Manual Review Testing
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 14:48:35 — DISPATCHED
+- **rev-phase-3**: Phase 3: Automated Browser Review
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 15:48:53 — DISPATCHED
+- **rev-phase-4**: Phase 4: OpenRouter Reviewer
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 16:18:59 — DISPATCHED
+- **rev-phase-5**: Phase 5: Automated Review Loop
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 16:49:04 — DISPATCHED
+- **rev-phase-6**: Phase 6: Night Shift Integration
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-19 17:19:10 — DISPATCHED
+- **cd28ab90-cffe-4fa0-9bee-c144f3038a27**: Runbook Evolution
+- Assignee: monkey
+- Status: backlog → in_progress

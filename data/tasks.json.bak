@@ -1,5 +1,86 @@
 [
   {
+    "id": "task-inc-129-c189",
+    "title": "Fix: INC-129",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-129: Gateway log shows 30 rate limit (429) errors. Free model pool may be exhausted.\n\n── RCA ──\nRoot cause: OpenRouter free model pool exhausted — too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-129",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-19T09:45:55.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-129 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-19T09:45:55.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-128-a50a",
+    "title": "Fix: INC-128",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-128: Detected 5 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n── RCA ──\nRoot cause: Gateway session lock conflict — embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-128",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-19T09:45:55.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-128 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-19T09:45:55.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-126-70f7",
+    "title": "Fix: INC-126",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-126: Gateway log shows 23 rate limit (429) errors. Free model pool may be exhausted.\n\n── RCA ──\nRoot cause: OpenRouter free model pool exhausted — too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-126",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-18T14:39:42.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-126 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-18T14:39:42.000Z",
+    "rcaConfidence": 90
+  },
+  {
     "id": "task-inc-125-93dc",
     "title": "Fix: INC-125",
     "assignee": "engineer",
@@ -31,5 +112,3465 @@
     "title": "Updated Test Task 2",
     "assignee": "engineer",
     "status": "done"
+  },
+  {
+    "id": "4390dddc-539c-4141-b775-8b8a019863df",
+    "title": "INC-104: Rate limit exhaustion",
+    "assignee": "monkey",
+    "status": "in_progress",
+    "priority": "P1",
+    "ts": "2026-06-09T22:18:23.226000+00:00",
+    "tags": [
+      "incident",
+      "rate-limit",
+      "gateway"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-09T22:18:23.226000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      }
+    ],
+    "lastActivity": "2026-06-19T17:15:07.702187+00:00",
+    "currentStep": "Modifying Auto-update FreeRide cron job to use exponential backoff",
+    "dispatchCount": 1,
+    "progress": 70
+  },
+  {
+    "id": "d6a11826-89fb-4a2a-a7cb-af2fa637938b",
+    "title": "INC-101: Gateway session errors",
+    "assignee": "monkey",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "2026-06-09T22:18:24.871000+00:00",
+    "tags": [
+      "incident",
+      "gateway",
+      "session"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-09T22:18:24.871000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      }
+    ],
+    "lastActivity": "2026-06-09T22:18:24.871000+00:00"
+  },
+  {
+    "id": "e1c6e220-e871-4606-9202-4ed3ae0a5dd0",
+    "title": "INC-085: WD MyCloud mount missing",
+    "assignee": "monkey",
+    "status": "triage",
+    "priority": "normal",
+    "ts": "2026-06-09T22:18:26.494000+00:00",
+    "tags": [
+      "incident",
+      "backup",
+      "storage"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-09T22:18:26.494000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      }
+    ],
+    "lastActivity": "2026-06-09T22:18:26.494000+00:00"
+  },
+  {
+    "id": "rev-phase-2",
+    "title": "Phase 2: Manual Review Testing",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P1",
+    "ts": "just now",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-19T10:16:08.023563+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T10:46:31.221563+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1823s with no progress"
+      },
+      {
+        "ts": "2026-06-19T13:18:13.651592+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T13:48:34.058306+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1820s with no progress"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T13:48:34.058306+00:00",
+    "startedAt": "2026-06-19T13:18:13.651581+00:00",
+    "note": " [auto-dispatched 2026-06-19 11:16] [auto-dispatched 2026-06-19 14:18]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true,
+    "wasStalled": true
+  },
+  {
+    "id": "rev-phase-3",
+    "title": "Phase 3: Automated Browser Review",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-19T10:46:32.286215+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T11:16:49.929165+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1818s with no progress"
+      },
+      {
+        "ts": "2026-06-19T13:48:35.067324+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T14:48:53.236573+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 3618s with no progress"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T14:48:53.236573+00:00",
+    "startedAt": "2026-06-19T13:48:35.067310+00:00",
+    "note": " [auto-dispatched 2026-06-19 11:46] [auto-dispatched 2026-06-19 14:48]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true,
+    "wasStalled": true
+  },
+  {
+    "id": "rev-phase-4",
+    "title": "Phase 4: OpenRouter Reviewer",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-19T11:16:50.118953+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T11:47:13.752953+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1824s with no progress"
+      },
+      {
+        "ts": "2026-06-19T14:48:53.391452+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T14:55:08.997123+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch fast-path: currentStep=None, lastActivity 376s ago"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T14:48:53.391348+00:00",
+    "startedAt": "2026-06-19T14:48:53.391440+00:00",
+    "note": " [auto-dispatched 2026-06-19 12:16] [auto-dispatched 2026-06-19 15:48]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true
+  },
+  {
+    "id": "rev-phase-5",
+    "title": "Phase 5: Automated Review Loop",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P2",
+    "ts": "just now",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-19T11:47:15.267293+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T12:17:28.981140+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1814s with no progress"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T15:18:59.046411+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T15:49:04.769107+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1806s with no progress"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T15:49:04.769107+00:00",
+    "startedAt": "2026-06-19T15:18:59.046396+00:00",
+    "note": " [auto-dispatched 2026-06-19 12:47] [auto-dispatched 2026-06-19 16:18]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true,
+    "wasStalled": true
+  },
+  {
+    "id": "rev-phase-6",
+    "title": "Phase 6: Night Shift Integration",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-19T12:47:51.336511+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T13:18:12.656466+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1821s with no progress"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T15:49:04.919398+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T15:54:15.257Z",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no currentStep update for >60 seconds (ghost dispatch fast-path)"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T15:49:04.919286+00:00",
+    "startedAt": null,
+    "note": " [auto-dispatched 2026-06-19 13:47] [auto-dispatched 2026-06-19 16:49]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true
+  },
+  {
+    "id": "cd28ab90-cffe-4fa0-9bee-c144f3038a27",
+    "title": "Runbook Evolution",
+    "assignee": "monkey",
+    "status": "backlog",
+    "priority": "normal",
+    "ts": "just now",
+    "tags": [
+      "runbook-evolution",
+      "phase-2"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-09T22:18:12.785000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-19T12:17:29.154167+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T12:47:50.993144+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset — Agent starting for 1822s with no progress"
+      },
+      {
+        "ts": "2026-06-19T15:01:38.180185+00:00",
+        "action": "stalled",
+        "actor": "stall-detector",
+        "details": "Task stalled due to no lastActivity update for >30 minutes"
+      },
+      {
+        "ts": "2026-06-19T16:19:10.822477+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T16:41:08.327392Z",
+        "action": "ghost_dispatch_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch reset — currentStep null and lastActivity >60 seconds old (16m50s)"
+      },
+      {
+        "ts": "2026-06-19T17:32:45.613Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task reset due to ghost dispatch fast-path. currentStep null and lastActivity>60s old"
+      }
+    ],
+    "lastActivity": "2026-06-19T16:19:10.822365+00:00",
+    "startedAt": "2026-06-19T16:19:10.822466+00:00",
+    "note": " [auto-dispatched 2026-06-19 13:17] [auto-dispatched 2026-06-19 17:19]",
+    "currentStep": null,
+    "progress": 0,
+    "stalledAt": "2026-06-19T17:32:45.613Z",
+    "dispatchCount": 4,
+    "ghostDispatch": true
+  },
+  {
+    "id": "9f7aa5d8-3f4d-4f6b-89e8-56d2fbdab0ec",
+    "title": "[Dispatch] Verify resolution",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:45:44.396000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:44.396000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:44.396000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:44.396000+00:00",
+    "summary": "[Dispatch] Verify resolution",
+    "completedAt": "2026-06-10T05:45:44.396000+00:00"
+  },
+  {
+    "id": "2713c553-b219-4705-bdb9-4a138e3b8176",
+    "title": "[Dispatch] Apply fix",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:45:46.057000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:46.057000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:46.057000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:46.057000+00:00",
+    "summary": "[Dispatch] Apply fix",
+    "completedAt": "2026-06-10T05:45:46.057000+00:00"
+  },
+  {
+    "id": "f14723fb-ae38-44e7-8c06-c05e4a85e380",
+    "title": "Autonomous Mission Planning — self-directing improvement goals",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:47.703000+00:00",
+    "tags": [
+      "deepseek-review",
+      "mission-planning",
+      "autonomous",
+      "strategy"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:47.703000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:47.703000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:47.703000+00:00",
+    "summary": "Autonomous Mission Planning — self-directing improvement goals",
+    "completedAt": "2026-06-10T05:45:47.703000+00:00"
+  },
+  {
+    "id": "63fba10a-8fc6-4108-86af-5d2905108578",
+    "title": "Performance Tuning Engine — agent efficiency optimization",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:49.366000+00:00",
+    "tags": [
+      "deepseek-review",
+      "performance",
+      "tuning",
+      "optimization"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:49.366000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:49.366000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:49.366000+00:00",
+    "summary": "Performance Tuning Engine — agent efficiency optimization",
+    "completedAt": "2026-06-10T05:45:49.366000+00:00"
+  },
+  {
+    "id": "ef7fed02-30cb-44b9-9117-63e9f345280f",
+    "title": "Dashboard: Auto-Heal Status panel + Risk Meter widget",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:51.019000+00:00",
+    "tags": [
+      "deepseek-review",
+      "dashboard",
+      "auto-heal",
+      "ui"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:51.019000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:51.019000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:51.019000+00:00",
+    "summary": "Dashboard: Auto-Heal Status panel + Risk Meter widget",
+    "completedAt": "2026-06-10T05:45:51.019000+00:00"
+  },
+  {
+    "id": "f14d66b6-985b-45ed-a75b-6801291ace34",
+    "title": "Auto-Heal System — automated incident recovery",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:52.673000+00:00",
+    "tags": [
+      "deepseek-review",
+      "auto-heal",
+      "recovery",
+      "automation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:52.673000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:52.673000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:52.673000+00:00",
+    "summary": "Auto-Heal System — automated incident recovery",
+    "completedAt": "2026-06-10T05:45:52.673000+00:00"
+  },
+  {
+    "id": "d847fc16-7449-49eb-9c90-9ff9da414d95",
+    "title": "Predictive Incident Prevention — anomaly detection",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:54.316000+00:00",
+    "tags": [
+      "deepseek-review",
+      "prediction",
+      "proactive",
+      "maintenance"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:54.316000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:54.316000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:54.316000+00:00",
+    "summary": "Predictive Incident Prevention — anomaly detection",
+    "completedAt": "2026-06-10T05:45:54.316000+00:00"
+  },
+  {
+    "id": "196443ad-c653-45fe-940c-db84de02ed4d",
+    "title": "Fix: INC-104",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:55.960000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:55.960000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:55.960000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:55.960000+00:00",
+    "summary": "Fix: INC-104",
+    "completedAt": "2026-06-10T05:45:55.960000+00:00"
+  },
+  {
+    "id": "cd7e14fd-4a62-4d9f-96d5-3b879e607a87",
+    "title": "Fix Validation Loop — auto-verify fixes close incidents",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:57.613000+00:00",
+    "tags": [
+      "operations",
+      "incidents",
+      "automation",
+      "validation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:57.613000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:57.613000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:57.613000+00:00",
+    "summary": "Fix Validation Loop — auto-verify fixes close incidents",
+    "completedAt": "2026-06-10T05:45:57.613000+00:00"
+  },
+  {
+    "id": "57b7d963-66a3-4c12-91aa-6d9320b37ca7",
+    "title": "Investigate: INC-103",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:45:59.270000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:45:59.270000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:45:59.270000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:45:59.270000+00:00",
+    "summary": "Investigate: INC-103",
+    "completedAt": "2026-06-10T05:45:59.270000+00:00"
+  },
+  {
+    "id": "4f39d991-d8cf-4aae-bbb1-92bbb9ac21ca",
+    "title": "Auto RCA: Incident → Root Cause → Fix Task",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:00.985000+00:00",
+    "tags": [
+      "operations",
+      "incidents",
+      "automation",
+      "rca"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:00.985000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:00.985000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:00.985000+00:00",
+    "summary": "Auto RCA: Incident → Root Cause → Fix Task",
+    "completedAt": "2026-06-10T05:46:00.985000+00:00"
+  },
+  {
+    "id": "d2dc6863-e5a6-4271-8370-e4cec234df11",
+    "title": "E2E Test: Verify dispatch pipeline",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:02.674000+00:00",
+    "tags": [
+      "test",
+      "e2e",
+      "pipeline-verify"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:02.674000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:02.674000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:02.674000+00:00",
+    "summary": "E2E Test: Verify dispatch pipeline",
+    "completedAt": "2026-06-10T05:46:02.674000+00:00"
+  },
+  {
+    "id": "e1039133-f3db-49ed-89fd-8235f53a3320",
+    "title": "Investigate: INC-102",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:04.389000+00:00",
+    "tags": [
+      "incident-response",
+      "tasks",
+      "stale",
+      "in-progress"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:04.389000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:04.389000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:04.389000+00:00",
+    "summary": "Investigate: INC-102",
+    "completedAt": "2026-06-10T05:46:04.389000+00:00"
+  },
+  {
+    "id": "bd9b9a7e-33b6-48f0-baf5-5561c176030b",
+    "title": "Split FRAMEWORK.md into docs/ folder structure",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:06.072000+00:00",
+    "tags": [
+      "documentation",
+      "refactor",
+      "framework"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:06.072000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:06.072000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:06.072000+00:00",
+    "summary": "Split FRAMEWORK.md into docs/ folder structure",
+    "completedAt": "2026-06-10T05:46:06.072000+00:00"
+  },
+  {
+    "id": "556034b7-3d42-4a7b-a799-ebb204bd5dc2",
+    "title": "Browser automation testing",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:07.721000+00:00",
+    "tags": [
+      "testing",
+      "browser-automation",
+      "documentation"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:07.721000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:07.721000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:07.721000+00:00",
+    "summary": "Browser automation testing",
+    "completedAt": "2026-06-10T05:46:07.721000+00:00"
+  },
+  {
+    "id": "e54693f9-bfb7-407d-9c25-5d1d40022324",
+    "title": "Make Incidents page filters clickable",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:09.369000+00:00",
+    "tags": [
+      "ux",
+      "incidents",
+      "filters"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:09.369000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:09.369000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:09.369000+00:00",
+    "summary": "Make Incidents page filters clickable",
+    "completedAt": "2026-06-10T05:46:09.369000+00:00"
+  },
+  {
+    "id": "3b210f5a-2697-4475-8196-8e27ed932f89",
+    "title": "Investigate: INC-101",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:11.031000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:11.031000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:11.031000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:11.031000+00:00",
+    "summary": "Investigate: INC-101",
+    "completedAt": "2026-06-10T05:46:11.031000+00:00"
+  },
+  {
+    "id": "6c3ebfcb-a90d-42f9-81b9-61d04e9ae469",
+    "title": "Investigate: INC-100",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:12.691000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:12.691000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:12.691000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:12.691000+00:00",
+    "summary": "Investigate: INC-100",
+    "completedAt": "2026-06-10T05:46:12.691000+00:00"
+  },
+  {
+    "id": "cb011b0f-0c40-46cd-8afd-3272d049dcb3",
+    "title": "Investigate: INC-099",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:14.342000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:14.342000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:14.342000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:14.342000+00:00",
+    "summary": "Investigate: INC-099",
+    "completedAt": "2026-06-10T05:46:14.342000+00:00"
+  },
+  {
+    "id": "322adacc-8f0a-4cee-89a0-cfc6d3470b1e",
+    "title": "Investigate: INC-098",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:16.003000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:16.003000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:16.003000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:16.003000+00:00",
+    "summary": "Investigate: INC-098",
+    "completedAt": "2026-06-10T05:46:16.003000+00:00"
+  },
+  {
+    "id": "daa4f636-32fc-4d5d-9c1a-29c87682517b",
+    "title": "Investigate: Gateway session takeover errors (9 incidents)",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:17.668000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:17.668000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:17.668000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:17.668000+00:00",
+    "summary": "Investigate: Gateway session takeover errors (9 incidents)",
+    "completedAt": "2026-06-10T05:46:17.668000+00:00"
+  },
+  {
+    "id": "6d116d6e-1272-42a3-83c2-c3e66087d7c7",
+    "title": "Investigate: Rate limit exhaustion — 429 errors (17 incidents)",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:19.352000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:19.352000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:19.352000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:19.352000+00:00",
+    "summary": "Investigate: Rate limit exhaustion — 429 errors (17 incidents)",
+    "completedAt": "2026-06-10T05:46:19.352000+00:00"
+  },
+  {
+    "id": "33efa5c9-1454-49d3-a21a-af602f41aad0",
+    "title": "Investigate: WD MyCloud mount missing (2 incidents)",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:21.022000+00:00",
+    "tags": [
+      "wd-mycloud",
+      "incident-response",
+      "deduplicated",
+      "backup"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:21.022000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:21.022000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:21.022000+00:00",
+    "summary": "Investigate: WD MyCloud mount missing (2 incidents)",
+    "completedAt": "2026-06-10T05:46:21.022000+00:00"
+  },
+  {
+    "id": "e27e9b70-1537-4103-ae2a-887c1f6246d0",
+    "title": "Investigate: Stalled in-progress tasks (2 incidents)",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:22.696000+00:00",
+    "tags": [
+      "incident-response",
+      "stale",
+      "in-progress",
+      "deduplicated"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:22.696000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:22.696000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:22.696000+00:00",
+    "summary": "Investigate: Stalled in-progress tasks (2 incidents)",
+    "completedAt": "2026-06-10T05:46:22.696000+00:00"
+  },
+  {
+    "id": "06297350-11b1-4ffe-924b-bf0d6fcd198d",
+    "title": "Settings patch adjust",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:24.382000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:24.382000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:24.382000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:24.382000+00:00",
+    "summary": "Settings patch adjust",
+    "completedAt": "2026-06-10T05:46:24.382000+00:00"
+  },
+  {
+    "id": "6212c738-85a1-48f8-b688-e4d3eaea4bfe",
+    "title": "[Investigate] Task Dispatcher: session file changed while embedded prompt lock was released: /Users/",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:26.057000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:26.057000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:26.057000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:26.057000+00:00",
+    "summary": "[Investigate] Task Dispatcher: session file changed while embedded prompt lock was released: /Users/",
+    "completedAt": "2026-06-10T05:46:26.057000+00:00"
+  },
+  {
+    "id": "1b9a4bac-4711-4e08-aa1c-aba764d24b01",
+    "title": "[Investigate] Daily Station Check: cron: job execution timed out (last phase: model-call-started)",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:27.754000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:27.754000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:27.754000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:27.754000+00:00",
+    "summary": "[Investigate] Daily Station Check: cron: job execution timed out (last phase: model-call-started)",
+    "completedAt": "2026-06-10T05:46:27.754000+00:00"
+  },
+  {
+    "id": "4d12ed0e-08fb-4765-bcbd-017850ce248f",
+    "title": "Task Completion — summary and visibility improvement.",
+    "assignee": "archivist",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:29.446000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:29.446000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:29.446000+00:00",
+        "action": "completed",
+        "actor": "archivist",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:29.446000+00:00",
+    "summary": "Task Completion — summary and visibility improvement.",
+    "completedAt": "2026-06-10T05:46:29.446000+00:00"
+  },
+  {
+    "id": "3f8599be-5002-4bff-b0cc-342f2767ea85",
+    "title": "[Investigate] Task Dispatcher: cron: job execution timed out (last phase: model-call-started)",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:31.117000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:31.117000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:31.117000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:31.117000+00:00",
+    "summary": "[Investigate] Task Dispatcher: cron: job execution timed out (last phase: model-call-started)",
+    "completedAt": "2026-06-10T05:46:31.117000+00:00"
+  },
+  {
+    "id": "9d7dc4c2-9eb8-4b38-ada7-e47374c503b9",
+    "title": "Dashboard Animation",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:32.797000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:32.797000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:32.797000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:32.797000+00:00",
+    "summary": "Dashboard Animation",
+    "completedAt": "2026-06-10T05:46:32.797000+00:00"
+  },
+  {
+    "id": "8392091e-59bc-4517-a7f4-7c8d17224a27",
+    "title": "[Investigate] Dreaming Status Check: cron: job execution timed out",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:34.503000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:34.503000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:34.503000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:34.503000+00:00",
+    "summary": "[Investigate] Dreaming Status Check: cron: job execution timed out",
+    "completedAt": "2026-06-10T05:46:34.503000+00:00"
+  },
+  {
+    "id": "6991c380-8560-41ee-a371-58a9921a0d17",
+    "title": "[Investigate] Git Auto-Commit MC: cron: job execution timed out (last phase: model-call-started)",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:36.175000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:36.175000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:36.175000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:36.175000+00:00",
+    "summary": "[Investigate] Git Auto-Commit MC: cron: job execution timed out (last phase: model-call-started)",
+    "completedAt": "2026-06-10T05:46:36.175000+00:00"
+  },
+  {
+    "id": "d596ac99-289b-4ebc-ba6a-b9063ed2bb75",
+    "title": "[Investigate] Model Health Check: cron: job execution timed out",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:37.862000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:37.862000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:37.862000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:37.862000+00:00",
+    "summary": "[Investigate] Model Health Check: cron: job execution timed out",
+    "completedAt": "2026-06-10T05:46:37.862000+00:00"
+  },
+  {
+    "id": "6d8782bb-569a-4416-a1d6-ddc28fc69df1",
+    "title": "[Investigate] OpenClaw Daily Backup: Delivering to Telegram requires target <chatId>",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:39.545000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:39.545000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:39.545000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:39.545000+00:00",
+    "summary": "[Investigate] OpenClaw Daily Backup: Delivering to Telegram requires target <chatId>",
+    "completedAt": "2026-06-10T05:46:39.545000+00:00"
+  },
+  {
+    "id": "74f8288d-689b-4b3e-9297-53a0b62d02e5",
+    "title": "[Investigate] Activity Summary: All models failed (6): openrouter/openrouter/owl-alpha: 429 Rate lim",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:41.223000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:41.223000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:41.223000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:41.223000+00:00",
+    "summary": "[Investigate] Activity Summary: All models failed (6): openrouter/openrouter/owl-alpha: 429 Rate lim",
+    "completedAt": "2026-06-10T05:46:41.223000+00:00"
+  },
+  {
+    "id": "7897307c-f981-486a-b3b2-1e761d542171",
+    "title": "Kanban layout: 4-col grid, remove Awaiting Review, add Reviewed badge",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:42.894000+00:00",
+    "tags": [
+      "ui",
+      "kanban",
+      "ux"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:42.894000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:42.894000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:42.894000+00:00",
+    "summary": "Kanban layout: 4-col grid, remove Awaiting Review, add Reviewed badge",
+    "completedAt": "2026-06-10T05:46:42.894000+00:00"
+  },
+  {
+    "id": "4b4b833f-5173-4fa8-ae88-7fed07ed9ad7",
+    "title": "Opencode Coding Buddy",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:44.603000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:44.603000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:44.603000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:44.603000+00:00",
+    "summary": "Opencode Coding Buddy",
+    "completedAt": "2026-06-10T05:46:44.603000+00:00"
+  },
+  {
+    "id": "c5e15d16-b3bd-444b-a3ed-7160c8a65649",
+    "title": "Restore lost Done tasks from git history",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:46.293000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:46.293000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:46.293000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:46.293000+00:00",
+    "summary": "Restore lost Done tasks from git history",
+    "completedAt": "2026-06-10T05:46:46.293000+00:00"
+  },
+  {
+    "id": "dace7d49-f162-4f83-8cee-46e074844d37",
+    "title": "Paginate Done column and other long lists",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:47.991000+00:00",
+    "tags": [
+      "performance",
+      "pagination",
+      "ux"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:47.991000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:47.991000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:47.991000+00:00",
+    "summary": "Paginate Done column and other long lists",
+    "completedAt": "2026-06-10T05:46:47.991000+00:00"
+  },
+  {
+    "id": "9d7fbf35-645e-4136-972b-c90bd3f9fd74",
+    "title": "Remove Assets tab from sidebar",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:49.690000+00:00",
+    "tags": [
+      "cleanup",
+      "sidebar"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:49.690000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:49.690000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:49.690000+00:00",
+    "summary": "Remove Assets tab from sidebar",
+    "completedAt": "2026-06-10T05:46:49.690000+00:00"
+  },
+  {
+    "id": "f6617306-bd2e-4397-86a0-e0ad73991462",
+    "title": "Incident view pane broken",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:51.388000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:51.388000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:51.388000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:51.388000+00:00",
+    "summary": "Incident view pane broken",
+    "completedAt": "2026-06-10T05:46:51.388000+00:00"
+  },
+  {
+    "id": "50b73706-d9fa-447d-b58d-c1ff21962bda",
+    "title": "Bugs",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:46:53.088000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:53.088000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:53.088000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:53.088000+00:00",
+    "summary": "Bugs",
+    "completedAt": "2026-06-10T05:46:53.088000+00:00"
+  },
+  {
+    "id": "cf687dfa-0faf-4c83-a905-df823acc565f",
+    "title": "Investigate: INC-046",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:54.770000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:54.770000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:54.770000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:54.770000+00:00",
+    "summary": "Investigate: INC-046",
+    "completedAt": "2026-06-10T05:46:54.770000+00:00"
+  },
+  {
+    "id": "6a7a363c-382c-4bff-9f27-827b65284835",
+    "title": "Investigate: INC-045",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:56.464000+00:00",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:56.464000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:56.464000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:56.464000+00:00",
+    "summary": "Investigate: INC-045",
+    "completedAt": "2026-06-10T05:46:56.464000+00:00"
+  },
+  {
+    "id": "ab272ff3-0faf-42af-9fc3-963b32d43ea3",
+    "title": "External AI Review Loop — Phase 1",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:46:58.160000+00:00",
+    "tags": [
+      "review-system",
+      "phase-1",
+      "architecture"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:58.160000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:58.160000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:58.160000+00:00",
+    "summary": "External AI Review Loop — Phase 1",
+    "completedAt": "2026-06-10T05:46:58.160000+00:00"
+  },
+  {
+    "id": "707c7a2f-9faf-469d-a77b-faa635b15c27",
+    "title": "Investigate: INC-044",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:46:59.855000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:46:59.855000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:46:59.855000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:46:59.855000+00:00",
+    "summary": "Investigate: INC-044",
+    "completedAt": "2026-06-10T05:46:59.855000+00:00"
+  },
+  {
+    "id": "414bb645-6011-40ad-9068-64262fff93a1",
+    "title": "Investigate: INC-039",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:47:01.626000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:01.626000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:01.626000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:01.626000+00:00",
+    "summary": "Investigate: INC-039",
+    "completedAt": "2026-06-10T05:47:01.626000+00:00"
+  },
+  {
+    "id": "185661a1-66e3-4354-aa09-7bba5629018b",
+    "title": "Incident Response Atmosphere",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:03.389000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:03.389000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:03.389000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:03.389000+00:00",
+    "summary": "Incident Response Atmosphere",
+    "completedAt": "2026-06-10T05:47:03.389000+00:00"
+  },
+  {
+    "id": "5b282f8f-738f-4ace-8e59-efd69109c39d",
+    "title": "Operational Readiness Dashboard",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:05.109000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:05.109000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:05.109000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:05.109000+00:00",
+    "summary": "Operational Readiness Dashboard",
+    "completedAt": "2026-06-10T05:47:05.109000+00:00"
+  },
+  {
+    "id": "dd7966d0-4871-4a02-8f77-76de0c403f75",
+    "title": "Incident → Task Linking",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:47:06.821000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:06.821000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:06.821000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:06.821000+00:00",
+    "summary": "Incident → Task Linking",
+    "completedAt": "2026-06-10T05:47:06.821000+00:00"
+  },
+  {
+    "id": "f5634b32-2f95-4191-aa5a-9d91293dd805",
+    "title": "[Dispatch] Apply standard fix",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:08.514000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:08.514000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:08.514000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:08.514000+00:00",
+    "summary": "[Dispatch] Apply standard fix",
+    "completedAt": "2026-06-10T05:47:08.514000+00:00"
+  },
+  {
+    "id": "fcc42b91-dbcf-46ec-82ce-a2683a391c43",
+    "title": "[Dispatch] Review and triage",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:10.220000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:10.220000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:10.220000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:10.220000+00:00",
+    "summary": "[Dispatch] Review and triage",
+    "completedAt": "2026-06-10T05:47:10.220000+00:00"
+  },
+  {
+    "id": "63213829-b9e0-4264-a5ed-444e6772446e",
+    "title": "Investigate: INC-042",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:11.931000+00:00",
+    "tags": [
+      "incident-response",
+      "tasks",
+      "stale",
+      "in-progress"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:11.931000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:11.931000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:11.931000+00:00",
+    "summary": "Investigate: INC-042",
+    "completedAt": "2026-06-10T05:47:11.931000+00:00"
+  },
+  {
+    "id": "b3884c62-dfbc-4baf-9670-e110ea428f4a",
+    "title": "Move Incident ShortCut",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:13.658000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:13.658000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:13.658000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:13.658000+00:00",
+    "summary": "Move Incident ShortCut",
+    "completedAt": "2026-06-10T05:47:13.658000+00:00"
+  },
+  {
+    "id": "2ddf3064-3dde-4b19-9ea8-652293f9ed67",
+    "title": "[Dispatch] Investigate issue",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:15.370000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:15.370000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:15.370000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:15.370000+00:00",
+    "summary": "[Dispatch] Investigate issue",
+    "completedAt": "2026-06-10T05:47:15.370000+00:00"
+  },
+  {
+    "id": "1154d827-4a64-4fe5-8814-fd942171024c",
+    "title": "Investigate: INC-040",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:17.094000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:17.094000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:17.094000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:17.094000+00:00",
+    "summary": "Investigate: INC-040",
+    "completedAt": "2026-06-10T05:47:17.094000+00:00"
+  },
+  {
+    "id": "f0df6f9b-dd61-4c02-8970-4cefe8c60d89",
+    "title": "Investigate: INC-041",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:18.817000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:18.817000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:18.817000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:18.817000+00:00",
+    "summary": "Investigate: INC-041",
+    "completedAt": "2026-06-10T05:47:18.817000+00:00"
+  },
+  {
+    "id": "a20ffaef-567a-44ea-8b2e-be800d6ec85e",
+    "title": "Error Feed — behaviour review and fix.",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:20.520000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:20.520000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:20.520000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:20.520000+00:00",
+    "summary": "Error Feed — behaviour review and fix.",
+    "completedAt": "2026-06-10T05:47:20.520000+00:00"
+  },
+  {
+    "id": "04f0d734-eed0-44c1-acc1-2bec3cf2d3a8",
+    "title": "Auto-Incident Creation from System Errors",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:47:22.227000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:22.227000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:22.227000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:22.227000+00:00",
+    "summary": "Auto-Incident Creation from System Errors",
+    "completedAt": "2026-06-10T05:47:22.227000+00:00"
+  },
+  {
+    "id": "5c5b113d-0686-47db-a39a-62c22993cfd2",
+    "title": "Response Action Lifecycle",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:47:23.962000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:23.962000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:23.962000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:23.962000+00:00",
+    "summary": "Response Action Lifecycle",
+    "completedAt": "2026-06-10T05:47:23.962000+00:00"
+  },
+  {
+    "id": "2feed9e5-49b7-4cc1-bfd9-3c6ef5734936",
+    "title": "Operational Work Panel",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:25.706000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:25.706000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:25.706000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:25.706000+00:00",
+    "summary": "Operational Work Panel",
+    "completedAt": "2026-06-10T05:47:25.706000+00:00"
+  },
+  {
+    "id": "c37ae460-a30b-49e8-9f2d-a3f12740c41c",
+    "title": "Awaiting Review Incident Flow",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:27.416000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:27.416000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:27.416000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:27.416000+00:00",
+    "summary": "Awaiting Review Incident Flow",
+    "completedAt": "2026-06-10T05:47:27.416000+00:00"
+  },
+  {
+    "id": "84150ff2-b3db-4743-93f8-bb85cd4a70f3",
+    "title": "Runbook Data Model",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:29.122000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:29.122000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:29.122000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:29.122000+00:00",
+    "summary": "Runbook Data Model",
+    "completedAt": "2026-06-10T05:47:29.122000+00:00"
+  },
+  {
+    "id": "c781d7a8-d45d-470e-9aba-e62c749c5f2d",
+    "title": "Runbook UI",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:30.840000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:30.840000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:30.840000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:30.840000+00:00",
+    "summary": "Runbook UI",
+    "completedAt": "2026-06-10T05:47:30.840000+00:00"
+  },
+  {
+    "id": "26d3fab7-0045-49f2-8d4e-566e21ba4932",
+    "title": "Incident Type Mapping",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:32.554000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:32.554000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:32.554000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:32.554000+00:00",
+    "summary": "Incident Type Mapping",
+    "completedAt": "2026-06-10T05:47:32.554000+00:00"
+  },
+  {
+    "id": "b35b17ec-8715-4546-b13d-02d4a34e3d21",
+    "title": "Suggested Action Generation",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:34.282000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:34.282000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:34.282000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:34.282000+00:00",
+    "summary": "Suggested Action Generation",
+    "completedAt": "2026-06-10T05:47:34.282000+00:00"
+  },
+  {
+    "id": "b2a9759c-529f-4e68-a0f4-9d852f26cbdd",
+    "title": "Task Creation From Runbooks",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:35.987000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:35.987000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:35.987000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:35.987000+00:00",
+    "summary": "Task Creation From Runbooks",
+    "completedAt": "2026-06-10T05:47:35.987000+00:00"
+  },
+  {
+    "id": "3717741e-9acf-428e-a201-58a51742f8c8",
+    "title": "Asset Schema",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:37.687000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:37.687000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:37.687000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:37.687000+00:00",
+    "summary": "Asset Schema",
+    "completedAt": "2026-06-10T05:47:37.687000+00:00"
+  },
+  {
+    "id": "f9d14fda-8315-438d-90ea-029e799b454f",
+    "title": "Asset View",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:39.403000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:39.403000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:39.403000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:39.403000+00:00",
+    "summary": "Asset View",
+    "completedAt": "2026-06-10T05:47:39.403000+00:00"
+  },
+  {
+    "id": "b309d40e-b2af-4e17-a8e3-ba35baf2fece",
+    "title": "Asset Health Monitoring",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:41.138000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:41.138000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:41.138000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:41.138000+00:00",
+    "summary": "Asset Health Monitoring",
+    "completedAt": "2026-06-10T05:47:41.138000+00:00"
+  },
+  {
+    "id": "412a1abe-bfe2-4ead-92d1-9ac04e953f12",
+    "title": "Incident-to-Asset Linking",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:42.878000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:42.878000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:42.878000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:42.878000+00:00",
+    "summary": "Incident-to-Asset Linking",
+    "completedAt": "2026-06-10T05:47:42.878000+00:00"
+  },
+  {
+    "id": "a012f1e7-f84b-4dd7-bcf3-7c4ad2b123b3",
+    "title": "Dependency Mapping",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:44.599000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:44.599000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:44.599000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:44.599000+00:00",
+    "summary": "Dependency Mapping",
+    "completedAt": "2026-06-10T05:47:44.599000+00:00"
+  },
+  {
+    "id": "e3bf8e2b-42e5-4797-b0a9-79bd989077e4",
+    "title": "Unified Event Model",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:46.325000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:46.325000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:46.325000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:46.325000+00:00",
+    "summary": "Unified Event Model",
+    "completedAt": "2026-06-10T05:47:46.325000+00:00"
+  },
+  {
+    "id": "704d1e7a-45d3-48b1-bd87-42804b7654ec",
+    "title": "Incident Events in Timeline",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:48.041000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:48.041000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:48.041000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:48.041000+00:00",
+    "summary": "Incident Events in Timeline",
+    "completedAt": "2026-06-10T05:47:48.041000+00:00"
+  },
+  {
+    "id": "ae298159-437e-4066-9635-4800c73543da",
+    "title": "Scheduler Events in Timeline",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:49.754000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:49.754000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:49.754000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:49.754000+00:00",
+    "summary": "Scheduler Events in Timeline",
+    "completedAt": "2026-06-10T05:47:49.754000+00:00"
+  },
+  {
+    "id": "463cb41a-c3af-4d64-8225-c91beaea3bee",
+    "title": "Task Events in Timeline",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:47:51.480000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:51.480000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:51.480000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:51.480000+00:00",
+    "summary": "Task Events in Timeline",
+    "completedAt": "2026-06-10T05:47:51.480000+00:00"
+  },
+  {
+    "id": "47eb523c-5716-4fef-ab68-f7afca77c37b",
+    "title": "Commander Timeline View",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:53.198000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:53.198000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:53.198000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:53.198000+00:00",
+    "summary": "Commander Timeline View",
+    "completedAt": "2026-06-10T05:47:53.198000+00:00"
+  },
+  {
+    "id": "570697d0-7207-44c1-ba0f-458dded281fe",
+    "title": "Automation Health States",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:54.931000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:54.931000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:54.931000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:54.931000+00:00",
+    "summary": "Automation Health States",
+    "completedAt": "2026-06-10T05:47:54.931000+00:00"
+  },
+  {
+    "id": "6620c6aa-6f5d-42a0-bd60-8090e68afabb",
+    "title": "Retry Policies with Backoff",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:47:56.638000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:56.638000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:56.638000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:56.638000+00:00",
+    "summary": "Retry Policies with Backoff",
+    "completedAt": "2026-06-10T05:47:56.638000+00:00"
+  },
+  {
+    "id": "eedba93e-f441-46cf-958a-3fbcb14be869",
+    "title": "Circuit Breakers",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:47:58.356000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:47:58.356000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:47:58.356000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:47:58.356000+00:00",
+    "summary": "Circuit Breakers",
+    "completedAt": "2026-06-10T05:47:58.356000+00:00"
+  },
+  {
+    "id": "2184e107-64cc-4746-8b77-4eb92f8b6073",
+    "title": "Provider Cooldown Management",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:00.068000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:00.068000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:00.068000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:00.068000+00:00",
+    "summary": "Provider Cooldown Management",
+    "completedAt": "2026-06-10T05:48:00.068000+00:00"
+  },
+  {
+    "id": "b44d513b-f6f1-454c-b8da-7b9b454251f6",
+    "title": "Auto Remediation",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:48:01.855000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:01.855000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:01.855000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:01.855000+00:00",
+    "summary": "Auto Remediation",
+    "completedAt": "2026-06-10T05:48:01.855000+00:00"
+  },
+  {
+    "id": "2139b957-5241-46ba-b276-a526db25cce4",
+    "title": "Lessons Learned Capture",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:03.598000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:03.598000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:03.598000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:03.598000+00:00",
+    "summary": "Lessons Learned Capture",
+    "completedAt": "2026-06-10T05:48:03.598000+00:00"
+  },
+  {
+    "id": "c5e0f1a4-6b25-4d9c-b474-dbf61bb9278f",
+    "title": "Knowledge Capture Automation",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:48:05.331000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:05.331000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:05.331000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:05.331000+00:00",
+    "summary": "Knowledge Capture Automation",
+    "completedAt": "2026-06-10T05:48:05.331000+00:00"
+  },
+  {
+    "id": "c7bc2a8a-58a3-489d-8c23-6343cd9fba5f",
+    "title": "Framework Sync",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:48:07.050000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:07.050000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:07.050000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:07.050000+00:00",
+    "summary": "Framework Sync",
+    "completedAt": "2026-06-10T05:48:07.050000+00:00"
+  },
+  {
+    "id": "0f3e232b-ef3a-4cf6-8f9d-093fd9ae7416",
+    "title": "Searchable Knowledge Base",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:08.804000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:08.804000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:08.804000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:08.804000+00:00",
+    "summary": "Searchable Knowledge Base",
+    "completedAt": "2026-06-10T05:48:08.804000+00:00"
+  },
+  {
+    "id": "cc7aef1f-7741-45c3-8ddb-a959ae31e891",
+    "title": "Task Category Badges",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:10.531000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:10.531000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:10.531000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:10.531000+00:00",
+    "summary": "Task Category Badges",
+    "completedAt": "2026-06-10T05:48:10.531000+00:00"
+  },
+  {
+    "id": "8d7c9f1e-c736-4817-80b5-4dd948ee98da",
+    "title": "Priority/Severity System",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:12.259000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:12.259000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:12.259000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:12.259000+00:00",
+    "summary": "Priority/Severity System",
+    "completedAt": "2026-06-10T05:48:12.259000+00:00"
+  },
+  {
+    "id": "96c185e7-7772-4d07-89b3-997ac19aa9b9",
+    "title": "Temporal Intelligence",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:13.973000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:13.973000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:13.973000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:13.973000+00:00",
+    "summary": "Temporal Intelligence",
+    "completedAt": "2026-06-10T05:48:13.973000+00:00"
+  },
+  {
+    "id": "7d6c159b-b579-43fc-9835-af04fc545b75",
+    "title": "Agent Accountability",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:15.694000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:15.694000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:15.694000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:15.694000+00:00",
+    "summary": "Agent Accountability",
+    "completedAt": "2026-06-10T05:48:15.694000+00:00"
+  },
+  {
+    "id": "c870206b-2c02-4c27-8b3e-1da421b4b5c8",
+    "title": "Queue & Flow Visualisation",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "normal",
+    "ts": "2026-06-10T05:48:17.414000+00:00",
+    "tags": [],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:17.414000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:17.414000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:17.414000+00:00",
+    "summary": "Queue & Flow Visualisation",
+    "completedAt": "2026-06-10T05:48:17.414000+00:00"
+  },
+  {
+    "id": "d838812d-7733-4979-8622-02025ae3d035",
+    "title": "Timeline — Unified Event Model",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:19.137000+00:00",
+    "tags": [
+      "timeline",
+      "events",
+      "dashboard",
+      "incidents"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:19.137000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:19.137000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:19.137000+00:00",
+    "summary": "Timeline — Unified Event Model",
+    "completedAt": "2026-06-10T05:48:19.137000+00:00"
+  },
+  {
+    "id": "fef98854-a0ed-46ec-952a-e8c93a5b1cf2",
+    "title": "Fix stall detection — 316-min task was not caught",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:20.843000+00:00",
+    "tags": [
+      "bug",
+      "stall-detection",
+      "heartbeat",
+      "reliability"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:20.843000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:20.843000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:20.843000+00:00",
+    "summary": "Fix stall detection — 316-min task was not caught",
+    "completedAt": "2026-06-10T05:48:20.843000+00:00"
+  },
+  {
+    "id": "89115e55-f850-4c57-b673-b33a11a6946e",
+    "title": "Investigate: INC-076",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:22.699000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:22.699000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:22.699000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:22.699000+00:00",
+    "summary": "Investigate: INC-076",
+    "completedAt": "2026-06-10T05:48:22.699000+00:00"
+  },
+  {
+    "id": "443994f6-1901-4a5a-80bd-7bbc6e92f27a",
+    "title": "Investigate: INC-075",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:24.584000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:24.584000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:24.584000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:24.584000+00:00",
+    "summary": "Investigate: INC-075",
+    "completedAt": "2026-06-10T05:48:24.584000+00:00"
+  },
+  {
+    "id": "ec22da00-c4e3-4466-a80c-e746e04a3b56",
+    "title": "Investigate: INC-074",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:26.372000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:26.372000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:26.372000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:26.372000+00:00",
+    "summary": "Investigate: INC-074",
+    "completedAt": "2026-06-10T05:48:26.372000+00:00"
+  },
+  {
+    "id": "1d862ed2-c2e2-4c1c-8347-88b31132d15f",
+    "title": "Investigate: INC-073",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:28.119000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:28.119000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:28.119000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:28.119000+00:00",
+    "summary": "Investigate: INC-073",
+    "completedAt": "2026-06-10T05:48:28.119000+00:00"
+  },
+  {
+    "id": "da7905f0-99da-4148-9779-a34c0899dda2",
+    "title": "Investigate: INC-093",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:29.837000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:29.837000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:29.837000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:29.837000+00:00",
+    "summary": "Investigate: INC-093",
+    "completedAt": "2026-06-10T05:48:29.837000+00:00"
+  },
+  {
+    "id": "8c2c0044-c55b-44e0-8fe1-83ed18b42079",
+    "title": "Investigate: INC-096",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:31.592000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:31.592000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:31.592000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:31.592000+00:00",
+    "summary": "Investigate: INC-096",
+    "completedAt": "2026-06-10T05:48:31.592000+00:00"
+  },
+  {
+    "id": "cb9e64dc-9948-493d-9836-e422f8c75d6d",
+    "title": "Investigate: INC-097",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:33.314000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:33.314000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:33.314000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:33.314000+00:00",
+    "summary": "Investigate: INC-097",
+    "completedAt": "2026-06-10T05:48:33.314000+00:00"
+  },
+  {
+    "id": "1b44dc9b-839d-4838-b87b-5b26a3cb904d",
+    "title": "Investigate: INC-092",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:35.052000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:35.052000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:35.052000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:35.052000+00:00",
+    "summary": "Investigate: INC-092",
+    "completedAt": "2026-06-10T05:48:35.052000+00:00"
+  },
+  {
+    "id": "499904cd-647d-4388-b3d9-706f832005bf",
+    "title": "Investigate: INC-095",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:36.807000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:36.807000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:36.807000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:36.807000+00:00",
+    "summary": "Investigate: INC-095",
+    "completedAt": "2026-06-10T05:48:36.807000+00:00"
+  },
+  {
+    "id": "77c46ceb-f85a-48d1-9bd8-ca327fec8849",
+    "title": "Investigate: INC-094",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:38.559000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:38.559000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:38.559000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:38.559000+00:00",
+    "summary": "Investigate: INC-094",
+    "completedAt": "2026-06-10T05:48:38.559000+00:00"
+  },
+  {
+    "id": "eb68c24a-534c-4b04-b915-d82515603aaa",
+    "title": "Investigate: INC-089",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:40.282000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:40.282000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:40.282000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:40.282000+00:00",
+    "summary": "Investigate: INC-089",
+    "completedAt": "2026-06-10T05:48:40.282000+00:00"
+  },
+  {
+    "id": "46faf8ff-b36e-4fec-889f-23c7c363c33d",
+    "title": "Investigate: INC-091",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:42.022000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:42.022000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:42.022000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:42.022000+00:00",
+    "summary": "Investigate: INC-091",
+    "completedAt": "2026-06-10T05:48:42.022000+00:00"
+  },
+  {
+    "id": "663019ca-e351-43c6-9df5-84ef48e7d13d",
+    "title": "Investigate: INC-087",
+    "assignee": "lifesupport",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:43.745000+00:00",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:43.745000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:43.745000+00:00",
+        "action": "completed",
+        "actor": "lifesupport",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:43.745000+00:00",
+    "summary": "Investigate: INC-087",
+    "completedAt": "2026-06-10T05:48:43.745000+00:00"
+  },
+  {
+    "id": "0b79150a-acb2-4d06-84b6-1a12475791e2",
+    "title": "Investigate: INC-088",
+    "assignee": "engineer",
+    "status": "done",
+    "priority": "urgent",
+    "ts": "2026-06-10T05:48:45.494000+00:00",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:45.494000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:45.494000+00:00",
+        "action": "completed",
+        "actor": "engineer",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:45.494000+00:00",
+    "summary": "Investigate: INC-088",
+    "completedAt": "2026-06-10T05:48:45.494000+00:00"
+  },
+  {
+    "id": "8e5dee2c-9316-442f-9636-bc6a1df8aaa8",
+    "title": "Station Memory — compounding knowledge system",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P1",
+    "ts": "2026-06-10T05:48:47.222000+00:00",
+    "tags": [
+      "phase-6",
+      "knowledge",
+      "memory",
+      "wiki"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-10T05:48:47.222000+00:00",
+        "action": "created",
+        "actor": "system",
+        "details": "Workboard event: created"
+      },
+      {
+        "ts": "2026-06-10T05:48:47.222000+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Marked done"
+      }
+    ],
+    "lastActivity": "2026-06-10T05:48:47.222000+00:00",
+    "summary": "Station Memory — compounding knowledge system",
+    "completedAt": "2026-06-10T05:48:47.222000+00:00"
   }
 ]

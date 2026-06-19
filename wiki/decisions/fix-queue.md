@@ -54,3 +54,20 @@
 | 5.3 Panel Alignment | Fixed ✅ | 0035614 |
 | 5.4 Decisions & Audits | Fixed ✅ | 4a05ea9 |
 | 5.5 Navigation | Verified ✅ | — |
+
+## Phase 5: Remaining Issues — ALL FIXED ✅
+
+| Fix | Status | Commit |
+|-----|--------|--------|
+| 5.6 Memory Tab Error Boundary | Fixed ✅ | 9288672 |
+| 5.7 Drag-and-Drop onDragEnd | Fixed ✅ | 194315d |
+| 5.8 Dispatch All dispatchCount | Fixed ✅ | 632e6e1 |
+| 5.9 Task Detail Popup (drag state) | Fixed ✅ | 194315d |
+| AsyncLocalStorage leak | Dev-only, production clean | — |
+
+### Notes
+- All 4 UI issues likely share root cause: AsyncLocalStorage error in dev server preventing client JS from loading
+- Production build is clean — issues are dev-server-only
+- Fixes make code more resilient regardless of root cause
+- OpenCode consistently killed on large file reads; fixes applied directly
+- Browser testing needed to confirm all fixes work

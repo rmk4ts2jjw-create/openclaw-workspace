@@ -3607,3 +3607,260 @@ Port 3000 is in use, trying another one...
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://192.168.68.64:3000/
 11:42:29 PM [vite] (client) [optimizer] bundling dependencies...
+12:04:17 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 3891 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+12:42:15 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 2919 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+12:50:12 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 11154 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+1:42:37 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 24718 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+1:45:39 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 26336 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+2:42:50 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 16832 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+3:13:06 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 16121 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+3:43:15 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 20698 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:13:25 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 18388 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+4:43:37 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 33986 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+5:13:43 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 10004 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+5:43:59 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 21330 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+6:14:07 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 17888 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+6:44:17 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 10587 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:14:29 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 8030 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+7:44:43 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 19041 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+8:14:47 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 6862 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+8:44:59 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 28565 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+8:52:31 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 3742 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+9:45:19 AM [vite] (ssr) connected.
+
+  VITE v8.0.13  ready in 22056 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+9:48:16 AM [vite] (ssr) connected.
+Port 3000 is in use, trying another one...
+9:50:18 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 12406 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.68.64:3001/
+9:59:28 AM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+9:59:54 AM [vite] (client) ✨ new dependencies optimized: @tanstack/router-core, @tanstack/router-core/isServer, @tanstack/router-core/ssr/client, seroval
+9:59:54 AM [vite] (client) ✨ new dependencies optimized: @tanstack/start-client-core
+9:59:54 AM [vite] (client) ✨ optimized dependencies changed. reloading
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[tasks loader] Loaded 3 tasks
+[tasks loader] Loaded 3 tasks
+[tasks loader] Loaded 3 tasks
+[tasks loader] Loaded 3 tasks
+[tasks loader] Loaded 3 tasks
+[tasks loader] Loaded 3 tasks
+10:57:14 AM [vite] (client) hmr update /src/styles.css?direct
+10:57:14 AM [vite] (ssr) page reload src/components/scheduler/CronJobCard.tsx
+10:57:14 AM [vite] (ssr) program reload
+10:57:23 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/scheduler.tsx
+10:57:23 AM [vite] (ssr) page reload src/routes/scheduler.tsx
+10:57:23 AM [vite] (ssr) program reload
+11:15:54 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/tasks.tsx
+11:15:54 AM [vite] (ssr) page reload src/routes/tasks.tsx
+11:15:54 AM [vite] (ssr) program reload
+11:15:59 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/tasks.tsx
+11:15:59 AM [vite] (ssr) page reload src/routes/tasks.tsx
+11:16:00 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/tasks.tsx
+11:16:00 AM [vite] (ssr) page reload src/routes/tasks.tsx
+11:16:02 AM [vite] (ssr) program reload
+11:16:03 AM [vite] (ssr) program reload
+11:19:35 AM [vite] (client) hmr update /src/styles.css?direct
+11:19:35 AM [vite] (ssr) page reload src/components/Dashboard.tsx
+11:24:32 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:32 AM [vite] (ssr) page reload src/lib/server-data/memory.ts
+11:24:32 AM [vite] (ssr) program reload
+11:24:34 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:34 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:34 AM [vite] (ssr) program reload
+11:24:36 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:36 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:36 AM [vite] (ssr) program reload
+11:24:40 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:40 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:40 AM [vite] (ssr) program reload
+11:24:42 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:42 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:42 AM [vite] (ssr) program reload
+11:24:46 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:46 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:46 AM [vite] (ssr) program reload
+11:24:55 AM [vite] (client) hmr update /src/styles.css?direct, /src/routes/memory.tsx
+11:24:56 AM [vite] (ssr) page reload src/routes/memory.tsx
+11:24:56 AM [vite] (ssr) program reload
+[tasks loader] Loaded 122 tasks
+[tasks loader] Loaded 122 tasks
+Port 3000 is in use, trying another one...
+2:31:56 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 9506 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.68.64:3001/
+2:31:57 PM [vite] (client) [optimizer] bundling dependencies...
+2:37:05 PM [vite] vite.config.ts changed, restarting server...
+2:37:05 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+2:37:06 PM [vite] server restarted.
+2:37:07 PM [vite] (client) [optimizer] bundling dependencies...
+2:38:49 PM [vite] vite.config.ts changed, restarting server...
+2:38:50 PM [vite] server restarted.
+2:38:51 PM [vite] (client) [optimizer] bundling dependencies...
+2:39:39 PM [vite] vite.config.ts changed, restarting server...
+2:39:40 PM [vite] server restarted.
+2:39:41 PM [vite] (client) [optimizer] bundling dependencies...
+3:28:41 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 667 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+3:28:45 PM [vite] (ssr) connected.
+3:28:51 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v8.0.13  ready in 465 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+3:29:05 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+3:47:40 PM [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.0.13  ready in 466 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.68.64:3000/
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+3:47:51 PM [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.0.13  ready in 448 ms
+
+  ➜  Local:   http://localhost:3002/
+  ➜  Network: http://192.168.68.64:3002/
+7:19:06 PM [vite] (ssr) connected.
+[dashboard/loader] predictions loaded: {
+  riskItems: 0,
+  hasAutoHeal: true,
+}
+8:07:43 PM [vite] (ssr) page reload src/routes/memory.tsx
+8:07:43 PM [vite] (ssr) program reload
+8:07:59 PM [vite] (ssr) page reload src/routes/memory.tsx
+8:07:59 PM [vite] (ssr) program reload
+8:08:26 PM [vite] (ssr) page reload src/routes/memory.tsx
+8:08:32 PM [vite] (ssr) page reload src/routes/memory.tsx
+8:09:47 PM [vite] (ssr) page reload src/routes/tasks.tsx
+8:09:47 PM [vite] (ssr) program reload
+8:10:33 PM [vite] (ssr) page reload src/routes/tasks.tsx
+8:10:33 PM [vite] (ssr) program reload
+8:11:44 PM [vite] (ssr) page reload src/routes/tasks.tsx
+8:11:44 PM [vite] (ssr) program reload

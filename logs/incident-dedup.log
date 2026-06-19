@@ -1,0 +1,7 @@
+2026-06-18 09:07:35 [DEDUP] Running incident deduplication...
+[2026-06-18 08:07:36] [DEDUP] Backfilled 18 fingerprints
+[2026-06-18 08:07:36] [DEDUP] Merging INC-112 → INC-108 (fingerprint: d4cdd3353300)
+[2026-06-18 08:07:36] [DEDUP] Merging INC-107 → INC-106 (fingerprint: 4b06701bd5fa)
+[2026-06-18 08:07:36] [DEDUP] Merged 2 duplicate incidents
+[2026-06-18 08:07:36] [DEDUP] Stats: 18 open, 107 resolved, 125 total
+2026-06-18 09:07:36 [DEDUP] Complete
