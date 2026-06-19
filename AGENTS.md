@@ -441,6 +441,6 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - After any change to Mission Control, verify it still loads before considering the task complete
 - If the dev server dies during work, fix it before continuing
 - Never leave Mission Control in a broken state overnight
-- The /visual page is our canary — if it loads, the app is healthy
+- The dashboard home page (/) is our canary — if it loads, the app is healthy
 - Health checks and auto-recovery are shell-only — never use model calls for infrastructure monitoring
 - Serving method: Vite dev server (`bun run dev --host --port 3000`), managed by LaunchAgent
