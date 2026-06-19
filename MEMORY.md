@@ -51,8 +51,8 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 
 ## Key Projects
 
-- **Mission Control Dashboard** - 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
-- **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`.
+- **Mission Control Dashboard** - 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway: Phase 1 complete (`/api/agent-status`, `/api/tasks`, `/api/events` live); Phase 2 (UI integration) in progress. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
+- **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
 - **Serving** - `main` is the single branch, served on port 3000 by Vite dev server. No dev branch. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
 ## Operating Protocol
@@ -89,7 +89,7 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-14:** Implemented Recall Engine Phase 1 - 8-source retrieval pipeline with Fast/Deep mode classification and Context Package format
 - **2026-06-14:** Configured workspace git remote and performed security audit - removed sensitive logs, added .gitignore, set up GitHub backup
 - **2026-06-15:** Applied incident-manage, mac-proxy-manage, night-shift, task-system-maint skills. docker-host-manage pending approval. Note: night‑shift and task‑system‑maint were applied, but the underlying dispatch architecture is still broken (0 dispatches in 5 nights: Jun 12‑16). These skills document the system as‑is. The architectural simplification decision is still pending.
-- **2026-06-19:** Applied FreeRide Rate‑Limit Handler skill, restarted gateway, fixed rate-limit handling. Completed Phase 5 UI fixes: fixed /api/incidents/status 500, synced tasks.json from Workboard (122 tasks), cron cleanup (2 dead crons, FreeRide timeout, Invalid Date), verified dashboard live data, fixed task dispatch (DashboardRefresher), fixed dashboard panel alignment, added Decisions & Audits to KnowledgeBaseTab, verified navigation. Pending: Memory page tab switching, Tasks drag-and-drop, Dispatch All, task detail popup, AsyncLocalStorage leak (dev‑server only).
+- **2026-06-19:** Learnings: Fixed incident API 500 via TanStack import fix; OpenCode large-file reads require shorter prompts. Decisions: Workboard/Memory Wiki as primary systems; FreeRide rate-limit handler improved fallback chains.
 
 ## External AI Review Loop
 
@@ -163,7 +163,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-09 by Space Monkey_
+_Last updated: 2026-06-19 by Space Monkey_
 
 ## Promoted From Short-Term Memory (2026-06-18)
 
