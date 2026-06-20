@@ -1,0 +1,11 @@
+{
+  "lastChecks": {
+    "email": 1781922035,
+    "calendar": 1781922035,
+    "weather": 1781922035,
+    "mentions": 1781922035,
+    "heartbeat": 1781924761,
+    "stall_detection": 1781923631,
+    "circuit_breaker": 1781923631
+  }
+}

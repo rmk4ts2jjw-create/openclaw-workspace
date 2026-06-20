@@ -306,3 +306,8 @@
 - **4390dddc-539c-4141-b775-8b8a019863df**: INC-104: Rate limit exhaustion
 - Assignee: monkey
 - Status: backlog → in_progress
+
+## 2026-06-20 05:21:39 — DISPATCHED
+- **task-inc-130-d4c3**: Fix: INC-130
+- Assignee: engineer
+- Status: backlog → in_progress

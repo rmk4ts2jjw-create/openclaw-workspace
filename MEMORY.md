@@ -90,6 +90,7 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-14:** Configured workspace git remote and performed security audit - removed sensitive logs, added .gitignore, set up GitHub backup
 - **2026-06-15:** Applied incident-manage, mac-proxy-manage, night-shift, task-system-maint skills. docker-host-manage pending approval. Note: night‑shift and task‑system‑maint were applied, but the underlying dispatch architecture is still broken (0 dispatches in 5 nights: Jun 12‑16). These skills document the system as‑is. The architectural simplification decision is still pending.
 - **2026-06-19:** Learnings: Fixed incident API 500 via TanStack import fix (@tanstack/react-start → @tanstack/start-client-core); synced tasks.json from Workboard (122 tasks); Mission Control Dashboard Phase 1 data-layer complete (3 APIs live) but UI needs wiring to live hooks; OpenCode large-file reads require shorter prompts; Night Shift eligibility blocked by exclusion tags, P1 priority, or dispatchCount>=3. Applied Phase 5 UI fixes (Memory tab error boundary, drag-and-drop, Dispatch All, detail popup) and identified AsyncLocalStorage dev-server issue as root cause (production clean). Decisions: Workboard/Memory Wiki as primary systems; FreeRide rate-limit handler improved fallback chains.
+- **2026-06-20:** Heartbeat checks revealed a P1 incident (INC-130) for Gateway session errors (TRIAGE). System stable otherwise. FreeRide skill appears to be mitigating rate limit incidents. No urgent email/calendar/mentions found in recent heartbeat checks.
 
 ## External AI Review Loop
 
@@ -170,6 +171,11 @@ _Last updated: 2026-06-20 by Space Monkey_
 - **2026-06-20:** P1 incident INC-130: Gateway session errors with EmbeddedAttemptSessionTakeoverError (15+ recurrences). System stable despite ongoing incidents; FreeRide skill applied yesterday appears to be mitigating new rate limit incidents.
 - **2026-06-20:** P2 incident INC-129: Rate limit exhaustion (33+ recurrences) showing improvement after FreeRide skill application with 8-model fallback chain.
 - **2026-06-20:** Night Shift eligibility check: 0 eligible tasks due to high dispatch counts (≥3) and P1 priority tasks blocking dispatch.
+- **2026-06-20:** Multiple heartbeat checks throughout the night (01:00, 01:45, 02:00, 02:16, 02:49, 03:16, 03:50, 04:06, 05:16, 05:25, 06:35, 07:35 BST) performed weather checks, incident monitoring, system health checks, and updated heartbeat state.
+- **2026-06-20:** Quiet hours (23:00-08:00 BST) observed: stall detection, circuit breaker checks, and reduced email/calendar/mentions checks.
+- **2026-06-20:** Weather: Shangton foggy, temperatures ranging from +19°C at 01:00 to +16°C at 06:35 BST.
+- **2026-06-20:** Systems: Gateway and Mission Control Dashboard remained stable with no new errors observed in logs during checks.
+- **2026-06-20:** No urgent email, calendar, or mentions detected during heartbeat checks.
 
 ## Promoted From Short-Term Memory (2026-06-19)
 
