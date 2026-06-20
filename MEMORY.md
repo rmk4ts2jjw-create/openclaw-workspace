@@ -163,7 +163,13 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-19 by Space Monkey_
+_Last updated: 2026-06-20 by Space Monkey_
+
+## Promoted From Short-Term Memory (2026-06-20)
+
+- **2026-06-20:** P1 incident INC-130: Gateway session errors with EmbeddedAttemptSessionTakeoverError (15+ recurrences). System stable despite ongoing incidents; FreeRide skill applied yesterday appears to be mitigating new rate limit incidents.
+- **2026-06-20:** P2 incident INC-129: Rate limit exhaustion (33+ recurrences) showing improvement after FreeRide skill application with 8-model fallback chain.
+- **2026-06-20:** Night Shift eligibility check: 0 eligible tasks due to high dispatch counts (≥3) and P1 priority tasks blocking dispatch.
 
 ## Promoted From Short-Term Memory (2026-06-19)
 

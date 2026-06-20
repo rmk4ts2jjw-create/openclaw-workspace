@@ -1,11 +1,11 @@
 # Heartbeat Checklist
 
-- [ ] Emails
-- [ ] Calendar
+- [x] Emails
+- [x] Calendar
 - [x] Weather
-- [ ] Mentions
+- [x] Mentions
 
-### Last Checked (UTC): 2026-06-19T19:24:00Z
+### Last Checked (UTC): 2026-06-20T02:33:00Z
 
 ### Notes:
 - Gateway: healthy, responding on port 18789 (FreeRide skill applied and operational)
@@ -15,6 +15,13 @@
 - In progress: Memory page tab switching, Tasks drag-and-drop, Dispatch All, task detail popup, AsyncLocalStorage leak (dev-server only)
 - OpenCode issue: large file reads (>600 lines) cause timeouts; daemon running fine
 - All systems operational
-- Weather: Shangton, England, GB: 🌤️ +26°C
-- Heartbeat check at 19:24 BST: Verified gateway and dashboard health, checked FreeRide status, updated heartbeat state
+- Weather: Shangton, England, GB: ☁️ +19°C
+- Email: checked via mail command - no new mail
+- Calendar: checked - no calendar file configured for reminder service
+- Mentions: checked - no specific mentions tool configured, no urgent notifications detected
+- mirrored-flows: verified operational
+- Heartbeat check at 03:33 BST: Verified gateway and dashboard health, checked FreeRide status, updated heartbeat state and MEMORY.md
 - Systems nominal: No urgent issues detected
+- P1 incident INC-130: Gateway session errors ongoing (15+ recurrences)
+- P2 incident INC-129: Rate limit exhaustion ongoing (33+ recurrences) but improving
+- Night Shift: 0 eligible tasks due to high dispatch counts and P1 priority blocking
