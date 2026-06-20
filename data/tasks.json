@@ -57,7 +57,7 @@
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "in_progress",
     "priority": "P2",
     "ts": "just now",
     "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references. [auto-dispatched 2026-06-20 13:23]",
@@ -102,14 +102,20 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Ghost dispatch \u2014 in_progress with currentStep=null and progress=0 for >60s. Reset to backlog. dispatchCount now 2."
+      },
+      {
+        "ts": "2026-06-20T14:18:53.558745+00:00",
+        "action": "started",
+        "actor": "monkey",
+        "details": "Heartbeat dispatch \u2014 cleared stalledAt after 2.5h cooldown, picking up P2 framework split task"
       }
     ],
-    "lastActivity": "2026-06-20T12:28:43.927558+00:00",
-    "currentStep": null,
-    "progress": 0,
+    "lastActivity": "2026-06-20T14:23:30.209202+00:00",
+    "currentStep": "Committing and pushing changes",
+    "progress": 80,
     "lastUpdated": "2026-06-04T14:38:14.066Z",
-    "startedAt": "2026-06-20T12:23:13.222013+00:00",
-    "stalledAt": "2026-06-20T12:28:43.927558+00:00",
+    "startedAt": "2026-06-20T14:18:53.558745+00:00",
+    "stalledAt": null,
     "dispatchCount": 2
   },
   {
