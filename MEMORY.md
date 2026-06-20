@@ -175,6 +175,7 @@ _Last updated: 2026-06-20 by Space Monkey_
 - **2026-06-20:** Weather: Shangton foggy, temperatures ranging from +19°C at 01:00 to +16°C at 06:35 BST.
 - **2026-06-20:** Systems: Gateway and Mission Control Dashboard remained stable with no new errors observed in logs during checks.
 - **2026-06-20:** No urgent email, calendar, or mentions detected during heartbeat checks.
+- **2026-06-20:** Security audit performed at 11:00 BST: hardened gateway flags (allowInsecureAuth: false, dangerouslyDisableDeviceAuth: false), restricted allowedOrigins, rotated gateway token, updated Ollama LaunchAgent to use 127.0.0.1, killed OpenCode serve. Pending sudo actions: enable macOS firewall and add pf rule to block Ollama IPv6 (Ollama ignores OLLAMA_HOST for IPv6 binding).
 
 ## Promoted From Short-Term Memory (2026-06-19)
 
