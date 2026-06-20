@@ -3,7 +3,7 @@
     "id": "task-inc-130-d4c3",
     "title": "Fix: INC-130",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "in_progress",
     "priority": "P1",
     "ts": "just now",
     "note": "Auto-created from incident INC-130: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
@@ -182,13 +182,19 @@
         "action": "stalled_reset",
         "actor": "monkey",
         "details": "Ghost dispatch detected: task in_progress for 11min with no currentStep or progress. Sub-agent never started. Reset to backlog."
+      },
+      {
+        "ts": "2026-06-20T00:20:54.026852+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 200 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-19T21:01:03.853369+00:00",
     "currentStep": null,
     "dispatchCount": 3,
     "progress": 0,
-    "stalledAt": "2026-06-19T21:01:03.853369+00:00",
+    "stalledAt": null,
     "startedAt": "2026-06-19T20:50:00.563102+00:00",
     "note": " [auto-dispatched 2026-06-19 21:50]"
   },
