@@ -33067,3 +33067,417 @@ INC-131
 [2026-06-20 10:52:39] [11/11] Quota budget check...
 [2026-06-20 10:52:39] [11/11] Quota budget: done
 [2026-06-20 10:52:39] === Maintenance run complete ===
+[2026-06-20 11:22:45] === Maintenance run started ===
+[2026-06-20 11:22:45] [1/10] Mount check...
+[2026-06-20 11:22:45] [1/10] Mount check: FAILED
+[2026-06-20 11:22:45] [2/10] Disk monitor...
+OK: 38GB free
+[2026-06-20 11:22:45] [2/10] Disk monitor: done
+[2026-06-20 11:22:45] [3/10] Mission Control health check...
+[2026-06-20 11:22:45] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 11:22:45] [4/10] Error spike watchdog...
+[2026-06-20 11:22:45] [4/10] Error watchdog: no spikes detected
+[2026-06-20 11:22:45] [5/9] Stall detection...
+Traceback (most recent call last):
+  File "<stdin>", line 28, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:22:45] [5/9] Stall detection: done
+[2026-06-20 11:22:45] [6/10] Task dispatcher...
+[2026-06-20 11:22:45] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-20 11:22:45] [6.5/10] Fix validation...
+Traceback (most recent call last):
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 246, in <module>
+    main()
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 205, in main
+    tasks = json.load(f)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:22:45] [6.5/10] Fix validation: done
+[2026-06-20 11:22:45] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 11:22:45] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 11:22:45] [6.7/10] Performance tuning: done
+[2026-06-20 11:22:45] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 11:22:45] [6.8/10] Mission planning: done
+[2026-06-20 11:22:45] [7/10] Incident auto-detection...
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:22:45] [7/10] Incident auto-detection: done
+[2026-06-20 11:22:45] [8/10] Safe backup: not today (day 6)
+[2026-06-20 11:22:45] [9/10] Session cleanup...
+[2026-06-20 11:22:45] [9/10] Session cleanup: expired 4 stale sessions
+[2026-06-20 11:22:45] [10/10] Storage migration: not today (day 20)
+[2026-06-20 11:22:45] [11/11] Quota budget check...
+[2026-06-20 11:22:45] [11/11] Quota budget: done
+[2026-06-20 11:22:45] === Maintenance run complete ===
+[2026-06-20 11:52:52] === Maintenance run started ===
+[2026-06-20 11:52:52] [1/10] Mount check...
+[2026-06-20 11:52:52] [1/10] Mount check: FAILED
+[2026-06-20 11:52:52] [2/10] Disk monitor...
+OK: 38GB free
+[2026-06-20 11:52:52] [2/10] Disk monitor: done
+[2026-06-20 11:52:52] [3/10] Mission Control health check...
+[2026-06-20 11:52:52] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 11:52:52] [4/10] Error spike watchdog...
+[2026-06-20 11:52:52] [4/10] Error watchdog: no spikes detected
+[2026-06-20 11:52:52] [5/9] Stall detection...
+Traceback (most recent call last):
+  File "<stdin>", line 28, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:52:52] [5/9] Stall detection: done
+[2026-06-20 11:52:52] [6/10] Task dispatcher...
+[2026-06-20 11:52:52] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-20 11:52:52] [6.5/10] Fix validation...
+Traceback (most recent call last):
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 246, in <module>
+    main()
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 205, in main
+    tasks = json.load(f)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:52:52] [6.5/10] Fix validation: done
+[2026-06-20 11:52:52] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 11:52:52] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 11:52:52] [6.7/10] Performance tuning: done
+[2026-06-20 11:52:52] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 11:52:52] [6.8/10] Mission planning: done
+[2026-06-20 11:52:52] [7/10] Incident auto-detection...
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 11:52:52] [7/10] Incident auto-detection: done
+[2026-06-20 11:52:52] [8/10] Safe backup: not today (day 6)
+[2026-06-20 11:52:52] [9/10] Session cleanup...
+[2026-06-20 11:52:52] [9/10] Session cleanup: expired 4 stale sessions
+[2026-06-20 11:52:52] [10/10] Storage migration: not today (day 20)
+[2026-06-20 11:52:52] [11/11] Quota budget check...
+[2026-06-20 11:52:52] [11/11] Quota budget: done
+[2026-06-20 11:52:52] === Maintenance run complete ===
+[2026-06-20 12:22:58] === Maintenance run started ===
+[2026-06-20 12:22:58] [1/10] Mount check...
+[2026-06-20 12:22:58] [1/10] Mount check: FAILED
+[2026-06-20 12:22:58] [2/10] Disk monitor...
+OK: 39GB free
+[2026-06-20 12:22:58] [2/10] Disk monitor: done
+[2026-06-20 12:22:58] [3/10] Mission Control health check...
+[2026-06-20 12:22:58] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 12:22:58] [4/10] Error spike watchdog...
+[2026-06-20 12:22:58] [4/10] Error watchdog: no spikes detected
+[2026-06-20 12:22:58] [5/9] Stall detection...
+Traceback (most recent call last):
+  File "<stdin>", line 28, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:22:58] [5/9] Stall detection: done
+[2026-06-20 12:22:58] [6/10] Task dispatcher...
+[2026-06-20 12:22:58] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-20 12:22:58] [6.5/10] Fix validation...
+Traceback (most recent call last):
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 246, in <module>
+    main()
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 205, in main
+    tasks = json.load(f)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:22:58] [6.5/10] Fix validation: done
+[2026-06-20 12:22:58] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 12:22:58] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 12:22:58] [6.7/10] Performance tuning: done
+[2026-06-20 12:22:58] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 12:22:58] [6.8/10] Mission planning: done
+[2026-06-20 12:22:58] [7/10] Incident auto-detection...
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:22:58] [7/10] Incident auto-detection: done
+[2026-06-20 12:22:58] [8/10] Safe backup: not today (day 6)
+[2026-06-20 12:22:58] [9/10] Session cleanup...
+[2026-06-20 12:22:58] [9/10] Session cleanup: expired 6 stale sessions
+[2026-06-20 12:22:58] [10/10] Storage migration: not today (day 20)
+[2026-06-20 12:22:58] [11/11] Quota budget check...
+[2026-06-20 12:22:58] [11/11] Quota budget: done
+[2026-06-20 12:22:58] === Maintenance run complete ===
+[2026-06-20 12:53:04] === Maintenance run started ===
+[2026-06-20 12:53:04] [1/10] Mount check...
+[2026-06-20 12:53:04] [1/10] Mount check: FAILED
+[2026-06-20 12:53:04] [2/10] Disk monitor...
+OK: 37GB free
+[2026-06-20 12:53:04] [2/10] Disk monitor: done
+[2026-06-20 12:53:04] [3/10] Mission Control health check...
+[2026-06-20 12:53:04] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 12:53:04] [4/10] Error spike watchdog...
+[2026-06-20 12:53:04] [4/10] Error watchdog: no spikes detected
+[2026-06-20 12:53:04] [5/9] Stall detection...
+Traceback (most recent call last):
+  File "<stdin>", line 28, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:53:04] [5/9] Stall detection: done
+[2026-06-20 12:53:04] [6/10] Task dispatcher...
+[2026-06-20 12:53:04] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-20 12:53:04] [6.5/10] Fix validation...
+Traceback (most recent call last):
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 246, in <module>
+    main()
+  File "/Users/spacemonkey/.openclaw/workspace/scripts/fix-validator.py", line 205, in main
+    tasks = json.load(f)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:53:04] [6.5/10] Fix validation: done
+[2026-06-20 12:53:04] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 12:53:04] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 12:53:04] [6.7/10] Performance tuning: done
+[2026-06-20 12:53:04] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 12:53:04] [6.8/10] Mission planning: done
+[2026-06-20 12:53:04] [7/10] Incident auto-detection...
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "<stdin>", line 133, in <module>
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-06-20 12:53:04] [7/10] Incident auto-detection: done
+[2026-06-20 12:53:04] [8/10] Safe backup: not today (day 6)
+[2026-06-20 12:53:04] [9/10] Session cleanup...
+[2026-06-20 12:53:04] [9/10] Session cleanup: expired 9 stale sessions
+[2026-06-20 12:53:04] [10/10] Storage migration: not today (day 20)
+[2026-06-20 12:53:04] [11/11] Quota budget check...
+[2026-06-20 12:53:04] [11/11] Quota budget: done
+[2026-06-20 12:53:04] === Maintenance run complete ===
+[2026-06-20 13:23:10] === Maintenance run started ===
+[2026-06-20 13:23:10] [1/10] Mount check...
+[2026-06-20 13:23:10] [1/10] Mount check: FAILED
+[2026-06-20 13:23:10] [2/10] Disk monitor...
+OK: 37GB free
+[2026-06-20 13:23:10] [2/10] Disk monitor: done
+[2026-06-20 13:23:10] [3/10] Mission Control health check...
+[2026-06-20 13:23:10] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 13:23:10] [4/10] Error spike watchdog...
+[2026-06-20 13:23:10] [4/10] Error watchdog: no spikes detected
+[2026-06-20 13:23:10] [5/9] Stall detection...
+No stale tasks
+[2026-06-20 13:23:10] [5/9] Stall detection: done
+[2026-06-20 13:23:10] [6/10] Task dispatcher...
+Dispatched task-split-framework-001: Split FRAMEWORK.md into docs/ folder structure
+[2026-06-20 13:23:10] [6/10] Task dispatcher: dispatched task
+[2026-06-20 13:23:10] [6.5/10] Fix validation...
+No fix tasks to validate
+[2026-06-20 13:23:10] [6.5/10] Fix validation: done
+[2026-06-20 13:23:10] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 13:23:10] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 13:23:10] [6.7/10] Performance tuning: done
+[2026-06-20 13:23:10] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 13:23:10] [6.8/10] Mission planning: done
+[2026-06-20 13:23:10] [7/10] Incident auto-detection...
+INC-130|task-inc-130-db81
+INC-131|task-inc-131-cf77
+[2026-06-20 13:23:10] [7/10] Incident auto-detection: done
+[2026-06-20 13:23:10] [8/10] Safe backup: not today (day 6)
+[2026-06-20 13:23:10] [9/10] Session cleanup...
+[2026-06-20 13:23:10] [9/10] Session cleanup: expired 6 stale sessions
+[2026-06-20 13:23:10] [10/10] Storage migration: not today (day 20)
+[2026-06-20 13:23:10] [11/11] Quota budget check...
+[2026-06-20 13:23:10] [11/11] Quota budget: done
+[2026-06-20 13:23:10] === Maintenance run complete ===
+[2026-06-20 13:53:16] === Maintenance run started ===
+[2026-06-20 13:53:16] [1/10] Mount check...
+[2026-06-20 13:53:16] [1/10] Mount check: FAILED
+[2026-06-20 13:53:16] [2/10] Disk monitor...
+OK: 37GB free
+[2026-06-20 13:53:16] [2/10] Disk monitor: done
+[2026-06-20 13:53:16] [3/10] Mission Control health check...
+[2026-06-20 13:53:16] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-20 13:53:16] [4/10] Error spike watchdog...
+[2026-06-20 13:53:16] [4/10] Error watchdog: no spikes detected
+[2026-06-20 13:53:16] [5/9] Stall detection...
+No stale tasks
+[2026-06-20 13:53:16] [5/9] Stall detection: done
+[2026-06-20 13:53:16] [6/10] Task dispatcher...
+Dispatched task-browser-auto-001: Browser automation testing
+[2026-06-20 13:53:16] [6/10] Task dispatcher: dispatched task
+[2026-06-20 13:53:16] [6.5/10] Fix validation...
+No fix tasks to validate
+[2026-06-20 13:53:16] [6.5/10] Fix validation: done
+[2026-06-20 13:53:16] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-20 13:53:16] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-20 13:53:16] [6.7/10] Performance tuning: done
+[2026-06-20 13:53:16] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-20 13:53:16] [6.8/10] Mission planning: done
+[2026-06-20 13:53:16] [7/10] Incident auto-detection...
+duplicate|INC-130
+duplicate|INC-131
+[2026-06-20 13:53:16] [7/10] Incident auto-detection: done
+[2026-06-20 13:53:16] [8/10] Safe backup: not today (day 6)
+[2026-06-20 13:53:16] [9/10] Session cleanup...
+[2026-06-20 13:53:16] [9/10] Session cleanup: expired 7 stale sessions
+[2026-06-20 13:53:16] [10/10] Storage migration: not today (day 20)
+[2026-06-20 13:53:16] [11/11] Quota budget check...
+[2026-06-20 13:53:16] [11/11] Quota budget: done
+[2026-06-20 13:53:16] === Maintenance run complete ===

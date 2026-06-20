@@ -316,3 +316,13 @@
 - **task-inc-130-d4c3**: Fix: INC-130
 - Assignee: engineer
 - Status: backlog → in_progress
+
+## 2026-06-20 13:23:13 — DISPATCHED
+- **task-split-framework-001**: Split FRAMEWORK.md into docs/ folder structure
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-20 13:53:19 — DISPATCHED
+- **task-browser-auto-001**: Browser automation testing
+- Assignee: engineer
+- Status: backlog → in_progress

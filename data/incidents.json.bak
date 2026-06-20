@@ -1,5 +1,81 @@
 [
   {
+    "id": "INC-131",
+    "title": "Rate limit exhaustion \u2014 159 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-20T09:52:44.000Z",
+    "lastActivity": "2026-06-20T12:23:15.000Z",
+    "summary": "Gateway log shows 309 rate limit (429) errors. Free model pool may be exhausted. (recurrence #6)",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-20T09:52:44.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T10:22:51.000Z",
+        "message": "Recurrence #2: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T10:52:57.000Z",
+        "message": "Recurrence #3: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T11:23:02.000Z",
+        "message": "Recurrence #4: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T11:53:09.000Z",
+        "message": "Recurrence #5: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T12:23:15.000Z",
+        "message": "Recurrence #6: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-492066",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-268776",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-442511",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 6,
+    "_fingerprint": "4b06701bd5fa"
+  },
+  {
     "id": "INC-130",
     "title": "Gateway session errors \u2014 13 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
@@ -8,8 +84,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-19T19:19:45.000Z",
-    "lastActivity": "2026-06-20T09:52:44.000Z",
-    "summary": "Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #30)",
+    "lastActivity": "2026-06-20T12:53:21.000Z",
+    "summary": "Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #36)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -166,6 +242,36 @@
         "ts": "2026-06-20T09:52:44.000Z",
         "message": "Recurrence #30: Auto-detected by gateway-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T10:22:51.000Z",
+        "message": "Recurrence #31: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T10:52:56.000Z",
+        "message": "Recurrence #32: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T11:23:02.000Z",
+        "message": "Recurrence #33: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T11:53:09.000Z",
+        "message": "Recurrence #34: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T12:23:15.000Z",
+        "message": "Recurrence #35: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T12:53:21.000Z",
+        "message": "Recurrence #36: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -199,7 +305,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 30,
+    "_recurrence": 36,
     "_fingerprint": "d4cdd3353300"
   },
   {

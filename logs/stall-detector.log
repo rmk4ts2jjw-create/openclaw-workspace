@@ -753,3 +753,9 @@
 [2026-06-20 08:50:51 UTC] Stall detector: OK — no stale tasks
 [2026-06-20 08:52:30 UTC] Stall detector: OK — no stale tasks
 [2026-06-20 09:22:36 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 12:23:12 UTC] Stall detector: cleared 4 task(s)
+  CLEARED task-split-framework-001: stalledAt removed after 22842 min in backlog (wasStalled remains for 3h)
+  CLEARED task-inc-filters-001: stalledAt removed after 22842 min in backlog (wasStalled remains for 3h)
+  CLEARED task-browser-auto-001: stalledAt removed after 22842 min in backlog (wasStalled remains for 3h)
+  CLEARED task-be03dff8: stalledAt removed after 23799 min in backlog (wasStalled remains for 3h)
+[2026-06-20 12:53:18 UTC] Stall detector: OK — no stale tasks

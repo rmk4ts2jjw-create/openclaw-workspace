@@ -92,6 +92,17 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-19:** Learnings: Fixed incident API 500 via TanStack import fix (@tanstack/react-start → @tanstack/start-client-core); synced tasks.json from Workboard (122 tasks); Mission Control Dashboard Phase 1 data-layer complete (3 APIs live) but UI needs wiring to live hooks; OpenCode large-file reads require shorter prompts; Night Shift eligibility blocked by exclusion tags, P1 priority, or dispatchCount>=3. Applied Phase 5 UI fixes (Memory tab error boundary, drag-and-drop, Dispatch All, detail popup) and identified AsyncLocalStorage dev-server issue as root cause (production clean). Decisions: Workboard/Memory Wiki as primary systems; FreeRide rate-limit handler improved fallback chains.
 - **2026-06-20:** Heartbeat checks revealed a P1 incident (INC-130) for Gateway session errors (TRIAGE). System stable otherwise. FreeRide skill appears to be mitigating rate limit incidents. No urgent email/calendar/mentions found in recent heartbeat checks.
 
+- **2026-06-20 11:00 BST:** Security audit P0 fixes applied:
+  - Gateway flags hardened (`allowInsecureAuth: false`, `dangerouslyDisableDeviceAuth: false`)
+  - Gateway allowedOrigins restricted (removed bare docker-host IP, kept localhost:18789 + 192.168.68.50:18889)
+  - Gateway token rotated (old 48-char hex → new 48-char base64)
+  - Ollama LaunchAgent updated (OLLAMA_HOST changed from 0.0.0.0 to 127.0.0.1)
+  - OpenCode serve killed for security (was on 127.0.0.1:4096)
+  - Pending sudo actions: enable macOS firewall, add firewall rule to block Ollama IPv6
+  - Ollama IPv6 issue: ignores OLLAMA_HOST for IPv6 binding, still listens on *:11434 IPv6
+- **2026-06-20 11:38 BST:** Mount alert: MyCloud-1E4N74 unreachable
+- **Ongoing:** P1 incident INC-130 (Gateway session errors) and P2 incident INC-129 (Rate limit exhaustion improving)
+
 ## External AI Review Loop
 
 Integrated 2026-06-12. Full pipeline:

@@ -1,10 +1,15 @@
 {
   "lastChecks": {
-    "email": null,
-    "calendar": null,
-    "weather": "2026-06-19T21:02:00.000000+00:00",
-    "incidents": "2026-06-19T21:02:00.000000+00:00"
+    "email": 1781941462,
+    "calendar": 1781940404,
+    "weather": 1781953207,
+    "mentions": 1781940404,
+    "heartbeat": 1781954400,
+    "stall_detection": 1781954400,
+    "circuit_breaker": 1781954400,
+    "memory_maintenance": 1781940088,
+    "git_commit": 1781945930
   },
-  "lastHeartbeat": "2026-06-19T21:02:00.000000+00:00",
-  "notes": "2026-06-19 21:02 BST — Heartbeat check. 9 open incidents (all TRIAGE, under auto-resolve threshold of 10). 0 in_progress tasks. 7 backlog tasks (all stalled or high dispatchCount). 109 done tasks. Circuit breakers all closed. Weather: Partly cloudy +23°C. Disk 23% used. Load 1.40. MC dashboard healthy. No action needed."
+  "lastMemoryUpdate": 1781932833,
+  "nextCheck": 1
 }
