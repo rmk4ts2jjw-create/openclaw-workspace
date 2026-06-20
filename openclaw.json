@@ -1,5 +1,5 @@
 {
-  "version": "2026.6.6",
+  "version": "2026.6.8",
   "env": {
     "GATEWAY_HOME": "/opt/gateway",
     "API_KEY": "",

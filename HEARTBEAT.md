@@ -225,3 +225,5 @@ When a Night Shift task is marked `done` and has code changes (non-null `summary
 - If a sub-agent runs for >5 minutes with no resolution, kill it and add the task to backlog
 - If the main agent spends >10 minutes debugging the same issue, stop and add to backlog
 - Always report what was tried and what the blocker is when adding to backlog
+
+# Reminder: Check INC-130 after quiet hours (08:00 BST)
