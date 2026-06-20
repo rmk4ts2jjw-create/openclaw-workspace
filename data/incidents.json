@@ -1,5 +1,56 @@
 [
   {
+    "id": "INC-131",
+    "title": "Rate limit exhaustion \u2014 159 429 errors in gateway log",
+    "severity": "P2",
+    "status": "TRIAGE",
+    "owner": "lifesupport",
+    "acknowledged": false,
+    "escalated": false,
+    "opened": "2026-06-20T09:52:44.000Z",
+    "lastActivity": "2026-06-20T09:52:44.000Z",
+    "summary": "Gateway log shows 159 rate limit (429) errors. Free model pool may be exhausted.",
+    "tags": [
+      "rate-limit",
+      "429",
+      "models",
+      "rate-monitor"
+    ],
+    "timeline": [
+      {
+        "ts": "2026-06-20T09:52:44.000Z",
+        "message": "Auto-detected by rate-monitor",
+        "actor": "system"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act-492066",
+        "label": "Investigate issue",
+        "description": "Investigate the cause of this high-severity incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-268776",
+        "label": "Apply fix",
+        "description": "Implement a fix for the identified issue",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      },
+      {
+        "id": "act-442511",
+        "label": "Verify resolution",
+        "description": "Confirm the fix resolves the incident",
+        "status": "suggested",
+        "assignee": "lifesupport"
+      }
+    ],
+    "actionsGenerated": true,
+    "_recurrence": 1,
+    "_fingerprint": "4b06701bd5fa"
+  },
+  {
     "id": "INC-130",
     "title": "Gateway session errors \u2014 13 session(s) with EmbeddedAttemptSessionTakeoverError",
     "severity": "P1",
@@ -8,8 +59,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-19T19:19:45.000Z",
-    "lastActivity": "2026-06-19T21:50:16.000Z",
-    "summary": "Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #6)",
+    "lastActivity": "2026-06-20T09:52:44.000Z",
+    "summary": "Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #30)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -46,6 +97,126 @@
         "ts": "2026-06-19T21:50:16.000Z",
         "message": "Recurrence #6: Auto-detected by gateway-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T22:20:22.000Z",
+        "message": "Recurrence #7: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T22:50:28.000Z",
+        "message": "Recurrence #8: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T23:20:37.000Z",
+        "message": "Recurrence #9: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T23:50:50.000Z",
+        "message": "Recurrence #10: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T00:20:56.000Z",
+        "message": "Recurrence #11: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T00:51:01.000Z",
+        "message": "Recurrence #12: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T01:21:07.000Z",
+        "message": "Recurrence #13: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T01:51:13.000Z",
+        "message": "Recurrence #14: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T02:21:19.000Z",
+        "message": "Recurrence #15: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T02:51:24.000Z",
+        "message": "Recurrence #16: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T03:21:30.000Z",
+        "message": "Recurrence #17: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T03:51:36.000Z",
+        "message": "Recurrence #18: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T04:21:41.000Z",
+        "message": "Recurrence #19: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T04:51:47.000Z",
+        "message": "Recurrence #20: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T05:21:52.000Z",
+        "message": "Recurrence #21: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T05:51:58.000Z",
+        "message": "Recurrence #22: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T06:22:04.000Z",
+        "message": "Recurrence #23: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T06:52:09.000Z",
+        "message": "Recurrence #24: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T07:22:15.000Z",
+        "message": "Recurrence #25: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T07:52:21.000Z",
+        "message": "Recurrence #26: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T08:22:26.000Z",
+        "message": "Recurrence #27: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T08:52:32.000Z",
+        "message": "Recurrence #28: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T09:22:38.000Z",
+        "message": "Recurrence #29: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T09:52:44.000Z",
+        "message": "Recurrence #30: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -79,7 +250,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 6,
+    "_recurrence": 30,
     "_fingerprint": "d4cdd3353300"
   },
   {
@@ -91,8 +262,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-19T09:45:55.000Z",
-    "lastActivity": "2026-06-19T21:50:16.000Z",
-    "summary": "Gateway log shows 730 rate limit (429) errors. Free model pool may be exhausted. (recurrence #24)",
+    "lastActivity": "2026-06-20T09:22:38.000Z",
+    "summary": "Gateway log shows 157 rate limit (429) errors. Free model pool may be exhausted. (recurrence #47)",
     "tags": [
       "rate-limit",
       "429",
@@ -219,6 +390,121 @@
         "ts": "2026-06-19T21:50:16.000Z",
         "message": "Recurrence #24: Auto-detected by rate-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T22:20:22.000Z",
+        "message": "Recurrence #25: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T22:50:28.000Z",
+        "message": "Recurrence #26: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T23:20:38.000Z",
+        "message": "Recurrence #27: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-19T23:50:50.000Z",
+        "message": "Recurrence #28: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T00:20:56.000Z",
+        "message": "Recurrence #29: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T00:51:01.000Z",
+        "message": "Recurrence #30: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T01:21:07.000Z",
+        "message": "Recurrence #31: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T01:51:13.000Z",
+        "message": "Recurrence #32: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T02:21:19.000Z",
+        "message": "Recurrence #33: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T02:51:24.000Z",
+        "message": "Recurrence #34: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T03:21:30.000Z",
+        "message": "Recurrence #35: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T03:51:36.000Z",
+        "message": "Recurrence #36: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T04:21:41.000Z",
+        "message": "Recurrence #37: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T04:51:47.000Z",
+        "message": "Recurrence #38: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T05:21:52.000Z",
+        "message": "Recurrence #39: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T05:51:58.000Z",
+        "message": "Recurrence #40: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T06:22:04.000Z",
+        "message": "Recurrence #41: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T06:52:10.000Z",
+        "message": "Recurrence #42: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T07:22:16.000Z",
+        "message": "Recurrence #43: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T07:52:21.000Z",
+        "message": "Recurrence #44: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T08:22:27.000Z",
+        "message": "Recurrence #45: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T08:52:32.000Z",
+        "message": "Recurrence #46: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-20T09:22:38.000Z",
+        "message": "Recurrence #47: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -245,7 +531,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 24,
+    "_recurrence": 47,
     "_fingerprint": "4b06701bd5fa"
   },
   {

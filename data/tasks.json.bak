@@ -3,10 +3,10 @@
     "id": "task-inc-130-d4c3",
     "title": "Fix: INC-130",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "backlog",
     "priority": "P1",
     "ts": "just now",
-    "note": "Auto-created from incident INC-130: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "note": "Auto-created from incident INC-130: Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files. [auto-dispatched 2026-06-20 05:21]",
     "linkedIncidentId": "INC-130",
     "tags": [
       "incident-response",
@@ -21,10 +21,43 @@
         "action": "created",
         "actor": "system",
         "details": "Auto-created from incident INC-130 (RCA: 80% confidence)"
+      },
+      {
+        "ts": "2026-06-20T01:11:45.453468Z",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Task stalled due to no lastActivity update for >2 hours (stall detection during heartbeat)"
+      },
+      {
+        "ts": "2026-06-20T04:21:39.590653+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 190 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-20T04:21:39.740691+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-20T04:31:48.184788+00:00",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch detected during heartbeat: currentStep null and lastActivity >60s old"
+      },
+      {
+        "ts": "2026-06-20T07:52:19.041275+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 201 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-19T19:19:45.000Z",
-    "rcaConfidence": 80
+    "lastActivity": "2026-06-20T04:21:39.740594+00:00",
+    "rcaConfidence": 80,
+    "stalledAt": null,
+    "dispatchCount": 2,
+    "startedAt": "2026-06-20T04:21:39.740679+00:00"
   },
   {
     "id": "task-inc-129-c189",
@@ -146,7 +179,7 @@
     "assignee": "monkey",
     "status": "backlog",
     "priority": "P1",
-    "ts": "2026-06-09T22:18:23.226000+00:00",
+    "ts": "just now",
     "tags": [
       "incident",
       "rate-limit",
@@ -170,13 +203,33 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-19T20:50:00.563116+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-19T21:01:03.853369+00:00",
+        "action": "stalled_reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch detected: task in_progress for 11min with no currentStep or progress. Sub-agent never started. Reset to backlog."
+      },
+      {
+        "ts": "2026-06-20T00:20:54.026852+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 200 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "lastActivity": "2026-06-19T17:49:27.051366+00:00",
+    "lastActivity": "2026-06-19T21:01:03.853369+00:00",
     "currentStep": null,
-    "dispatchCount": 2,
+    "dispatchCount": 3,
     "progress": 0,
-    "stalledAt": null
+    "stalledAt": null,
+    "startedAt": "2026-06-19T20:50:00.563102+00:00",
+    "note": " [auto-dispatched 2026-06-19 21:50]"
   },
   {
     "id": "d6a11826-89fb-4a2a-a7cb-af2fa637938b",
