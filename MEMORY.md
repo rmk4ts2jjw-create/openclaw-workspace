@@ -228,8 +228,9 @@ _Last updated: 2026-06-20 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-21 08:26 BST
-- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (~5 hours 43 minutes duration). Host MyCloud-1E4N74.local responding to ping, but mount requires sudo privileges. Storage/hardware issue requiring manual intervention.
+## Ongoing Issues - 2026-06-21 09:46 BST
+- Weather: London cloudy, 22°C, feels like 25°C, humidity 73%, wind 9 km/h NE.
+- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (~7 hours 3 minutes duration). Host MyCloud-1E4N74.local responding to ping, but mount requires sudo privileges. Storage/hardware issue requiring manual intervention. See known issue sm-008.
 - **Open incidents**: 9 open TRIAGE incidents including:
   - INC-132 (P1): Gateway session errors (10 recurrences)
   - INC-131 (P2): Rate limit exhaustion (27 recurrences)
