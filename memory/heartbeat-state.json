@@ -1,19 +1,18 @@
 {
   "lastChecks": {
-    "email": 1781941462,
-    "calendar": 1781940404,
-    "weather": 1781953207,
-    "mentions": 1781940404,
-    "heartbeat": 1781960266,
-    "stall_detection": 1781960266,
-    "circuit_breaker": 1781960266,
-    "memory_maintenance": 1781940088,
-    "git_commit": 1781957708
+    "circuitBreaker": "2026-06-21T02:00:00+01:00",
+    "stallDetection": "2026-06-21T02:00:00+01:00",
+    "incidents": "2026-06-20T22:50:00+01:00",
+    "tasks": "2026-06-20T23:25:00+01:00",
+    "heartbeat": "2026-06-21T02:00:00+01:00",
+    "taskDispatch": "2026-06-20T22:50:00+01:00",
+    "email": null,
+    "calendar": null,
+    "mentions": null,
+    "weather": "2026-06-21T01:56:02+01:00"
   },
-  "lastMemoryUpdate": 1781932833,
-  "weather": 1781953207,
-  "heartbeat": 1781960266,
-  "git_commit": 1781957708,
-  "memory_maintenance": 1781951116,
-  "nextCheck": 1
+  "heartbeat": "2026-06-21T02:00:00+01:00",
+  "stallDetection": "2026-06-21T02:00:00+01:00",
+  "circuitBreaker": "2026-06-21T02:00:00+01:00",
+  "foo": ""
 }
