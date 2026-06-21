@@ -106,6 +106,7 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
   - Pending sudo actions: enable macOS firewall, add firewall rule to block Ollama IPv6
   - Ollama IPv6 issue: ignores OLLAMA_HOST for IPv6 binding, still listens on *:11434 IPv6
 - **2026-06-20 11:38 BST:** Mount alert: MyCloud-1E4N74 unreachable
+- **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
 - **Ongoing:** P1 incident INC-130 (Gateway session errors) and P2 incident INC-129 (Rate limit exhaustion improving)
 
 ## External AI Review Loop
