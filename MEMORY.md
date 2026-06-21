@@ -224,3 +224,16 @@ _Last updated: 2026-06-20 by Space Monkey_
 <!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:6:6 -->
 - **2026-06-21 06:23 BST:** MyCloud mount still unavailable; host responding to ping; mount attempt failed due to insufficient privileges (requires sudo). See daily log for details.
 - Daily Station Check — 2026-06-17 23:00: Status: ✅ ALL SYSTEMS NOMINAL [score=0.811 recalls=0 avg=0.620 source=memory/2026-06-17.md:6-6]
+## Memory review 2026-06-21 05:48:54 UTC
+Reviewed memory files from the last 2 days:
+- dispatcher-log.md
+
+## Ongoing Issues - 2026-06-21 07:00 BST
+- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (~4.5 hours duration). Host MyCloud-1E4N74.local responding to ping, but mount requires sudo privileges. Storage/hardware issue requiring manual intervention.
+- **Open incidents**: 9 open TRIAGE incidents including:
+  - INC-132 (P1): Gateway session errors (10 recurrences)
+  - INC-131 (P2): Rate limit exhaustion (27 recurrences)
+  - INC-130 (P2): Gateway session errors
+  - Plus 6 other P2 rate limit/storage incidents
+- Systems otherwise stable: Gateway and Mission Control Dashboard healthy (returning 200 OK)
+
