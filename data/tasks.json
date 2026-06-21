@@ -1,5 +1,59 @@
 [
   {
+    "id": "task-inc-134-38ee",
+    "title": "Fix: INC-134",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-134: Detected 11 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-134",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-21T19:45:10.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-134 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-21T19:45:10.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-133-fc80",
+    "title": "Fix: INC-133",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-133: Gateway log shows 21 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-133",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-21T10:14:28.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-133 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-21T10:14:28.000Z",
+    "rcaConfidence": 90
+  },
+  {
     "id": "task-inc-132-76b2",
     "title": "Fix: INC-132",
     "assignee": "engineer",
@@ -343,7 +397,7 @@
     "id": "task-triage-session-takeover",
     "title": "Investigate: Gateway session takeover errors (9 incidents)",
     "assignee": "engineer",
-    "status": "triage",
+    "status": "done",
     "priority": "P1",
     "ts": "2026-06-05T10:01:21.495450+00:00",
     "note": "Consolidated from 9 duplicate incidents (INC-046, 062, 064, 065, 066, 068, 070, 071, 072). All report EmbeddedAttemptSessionTakeoverError in session files. Latest: Auto-created from incident INC-072: Detected 4 session files with takeover errors in the last hour. Gateway may be in a crash loop.",
@@ -361,15 +415,25 @@
         "action": "created",
         "actor": "monkey",
         "details": "Deduplicated from 9 session-takeover triage tasks"
+      },
+      {
+        "ts": "2026-06-21T15:54:44.460064+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed during heartbeat \u2014 linked incident resolved. Linked incident INC-072 RESOLVED. Original 9 session-takeover incidents from early June were caused by git reset chaos \u2014 resolved by 2026-06-04."
       }
     ],
-    "lastActivity": "2026-06-05T10:01:21.495450+00:00"
+    "lastActivity": "2026-06-21T15:54:44.460064+00:00",
+    "progress": 100,
+    "currentStep": "Completed",
+    "completedAt": "2026-06-21T15:54:44.460064+00:00",
+    "summary": "Linked incident INC-072 RESOLVED. Original 9 session-takeover incidents from early June were caused by git reset chaos \u2014 resolved by 2026-06-04."
   },
   {
     "id": "task-triage-rate-limit",
     "title": "Investigate: Rate limit exhaustion \u2014 429 errors (17 incidents)",
     "assignee": "lifesupport",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "2026-06-05T10:01:21.495450+00:00",
     "note": "Consolidated from 17 duplicate incidents (INC-036, 047, 048, 049, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 063, 069). All report 429 rate limit errors. Free model pool may be exhausted. Latest: Auto-created from incident INC-069: Gateway log shows 34 rate limit (429) errors. Free model pool may be exhausted.",
@@ -387,15 +451,25 @@
         "action": "created",
         "actor": "monkey",
         "details": "Deduplicated from 17 rate-limit triage tasks"
+      },
+      {
+        "ts": "2026-06-21T15:54:44.460064+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed during heartbeat \u2014 linked incident resolved. Linked incident INC-069 RESOLVED. 17 rate-limit incidents consolidated and resolved. FreeRide fallback configuration applied."
       }
     ],
-    "lastActivity": "2026-06-05T10:01:21.495450+00:00"
+    "lastActivity": "2026-06-21T15:54:44.460064+00:00",
+    "progress": 100,
+    "currentStep": "Completed",
+    "completedAt": "2026-06-21T15:54:44.460064+00:00",
+    "summary": "Linked incident INC-069 RESOLVED. 17 rate-limit incidents consolidated and resolved. FreeRide fallback configuration applied."
   },
   {
     "id": "task-triage-wd-mount",
     "title": "Investigate: WD MyCloud mount missing (2 incidents)",
     "assignee": "lifesupport",
-    "status": "triage",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "Consolidated from INC-067 and INC-043. Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup storage unavailable.",
@@ -419,15 +493,25 @@
         "action": "merged",
         "actor": "monkey",
         "details": "Deduplicated from INC-067 and INC-043"
+      },
+      {
+        "ts": "2026-06-21T15:54:44.460064+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed during heartbeat \u2014 linked incident resolved. Linked incident INC-067 RESOLVED. WD MyCloud mount issue resolved."
       }
     ],
-    "lastActivity": "2026-06-05T10:02:15.056240+00:00"
+    "lastActivity": "2026-06-21T15:54:44.460064+00:00",
+    "progress": 100,
+    "currentStep": "Completed",
+    "completedAt": "2026-06-21T15:54:44.460064+00:00",
+    "summary": "Linked incident INC-067 RESOLVED. WD MyCloud mount issue resolved."
   },
   {
     "id": "task-triage-stale-tasks",
     "title": "Investigate: Stalled in-progress tasks (2 incidents)",
     "assignee": "monkey",
-    "status": "triage",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Consolidated from INC-050 and INC-038. Multiple tasks sitting in In Progress state without activity. Stall detection may not be catching all cases.",
@@ -451,9 +535,19 @@
         "action": "merged",
         "actor": "monkey",
         "details": "Deduplicated from INC-050 and INC-038"
+      },
+      {
+        "ts": "2026-06-21T15:54:44.460064+00:00",
+        "action": "completed",
+        "actor": "monkey",
+        "details": "Closed during heartbeat \u2014 linked incident resolved. Linked incident INC-050 RESOLVED. Stall detection fixed in HEARTBEAT.md on 2026-06-04."
       }
     ],
-    "lastActivity": "2026-06-05T10:02:15.056240+00:00"
+    "lastActivity": "2026-06-21T15:54:44.460064+00:00",
+    "progress": 100,
+    "currentStep": "Completed",
+    "completedAt": "2026-06-21T15:54:44.460064+00:00",
+    "summary": "Linked incident INC-050 RESOLVED. Stall detection fixed in HEARTBEAT.md on 2026-06-04."
   },
   {
     "id": "task-progress-fix-001",
