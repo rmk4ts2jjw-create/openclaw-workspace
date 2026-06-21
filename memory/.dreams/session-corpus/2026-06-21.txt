@@ -1,0 +1,2 @@
+[main/sessions/main/24c2de9a-1cc9-4d51-b311-2a5b35418e8d.jsonl#L5] User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task] List workboard tasks to see in progress Begin. Execute the assigned task to completion.
+[main/sessions/main/24c2de9a-1cc9-4d51-b311-2a5b35418e8d.jsonl#L36] Assistant: There are currently no Workboard tasks with status "in_progress". All tasks are either in "backlog", "done", or "triage" status.

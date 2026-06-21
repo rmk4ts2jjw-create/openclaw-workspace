@@ -182,31 +182,6 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 ---
 _Last updated: 2026-06-20 by Space Monkey_
 
-## Promoted From Short-Term Memory (2026-06-20)
-- **2026-06-20:** P1 incident INC-130: Gateway session errors with EmbeddedAttemptSessionTakeoverError (15+ recurrences). System stable despite ongoing incidents; FreeRide skill applied yesterday appears to be mitigating new rate limit incidents.
-- **2026-06-20:** P2 incident INC-129: Rate limit exhaustion (33+ recurrences) showing improvement after FreeRide skill application with 8-model fallback chain.
-- **2026-06-20:** Night Shift eligibility check: 0 eligible tasks due to high dispatch counts (≥3) and P1 priority tasks blocking dispatch.
-- **2026-06-20:** Multiple heartbeat checks throughout the night (01:00, 01:45, 02:00, 02:16, 02:49, 03:16, 03:50, 04:06, 05:16, 05:25, 06:35, 07:35, 09:14 BST) performed weather checks, incident monitoring, system health checks, and updated heartbeat state.
-- **2026-06-20:** Quiet hours (23:00-08:00 BST) observed: stall detection, circuit breaker checks, and reduced email/calendar/mentions checks.
-- **2026-06-20:** Weather: Shangton foggy, temperatures ranging from +19°C at 01:00 to +16°C at 06:35 BST.
-- **2026-06-20:** Systems: Gateway and Mission Control Dashboard remained stable with no new errors observed in logs during checks.
-- **2026-06-20:** No urgent email, calendar, or mentions detected during heartbeat checks.
-- **2026-06-20:** Security audit performed at 11:00 BST: hardened gateway flags (allowInsecureAuth: false, dangerouslyDisableDeviceAuth: false), restricted allowedOrigins, rotated gateway token, updated Ollama LaunchAgent to use 127.0.0.1, killed OpenCode serve. Pending sudo actions: enable macOS firewall and add pf rule to block Ollama IPv6 (Ollama ignores OLLAMA_HOST for IPv6 binding).
-
-## Promoted From Short-Term Memory (2026-06-19)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:1:23 -->
-- # 2026-05-14 - Daily Log ## Mission Control Dashboard - Session Summary ### Fixes Applied 1. **Dashboard layout** - Enlarged from `max-w-6xl` to `max-w-[1650px]` 2. **Agent sprite positioning** - Fixed from fixed pixels to percentages for responsive scaling 3. **Agent sprites** - Replaced with individual files from `owl_station_sprites` folder (320×240 each) 4. **Tasks page loader error** - Added missing `useRef` import 5. **Scheduler page** - Created `/api/crons` endpoint, fixed `execSync` PATH issue, now shows all cron jobs with toggle switches 6.... [score=0.850 recalls=7 avg=1.000 source=memory/2026-05-14.md:1-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:22:54 -->
-- ### Andre's Directives - Dashboard should be the home page name (not Spacestation) - Live activity feed on the left side - Task detail should be centered modal (not right slide) - Dreaming toggle should show on/off state clearly - Scheduler should have on/off switches for each cron job - Telegram chat ID: 7507878944 ### Session End State - All pages loading (Home/Dashboard, Tasks, Settings, Scheduler) - 10 cron jobs created, all with Telegram delivery - 12 new sprites installed - Git committed through v1.9.0 ## Evening Session (continued) ### Completed - **Agent status display fixed** - Always-on agents (monkey, lifesupport) no... [score=0.833 recalls=7 avg=1.000 source=memory/2026-05-13.md:22-54]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:47:69 -->
-- **openclaw CLI path fixed** - Full path /opt/homebrew/bin/openclaw ### Andre's Additional Feedback - Rename home to 'Dashboard' ✅ - Animation side revisited (collaboration walking between rooms) - Agent avatars showing as black and white - FIXED (was grayscale CSS on 'away' status) - Check all sprites are 100% updated - CONFIRMED (12 sprites at 240x320, RGB color) ### Key Technical Findings - getAgentStatus returns 'active' for always-on agents, 'standby' for on-demand - Old code checked status === 'active' which excluded 'standby' agents as 'away' - image-rendering: pixelated can cause blurriness on some browsers - createServerFn... [score=0.819 recalls=6 avg=1.000 source=memory/2026-05-13.md:47-69]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-13.md:1:30 -->
-- # 2026-05-13 Daily Log (continued) ## Afternoon/Evening Session ### Completed - **Dashboard redesign (T-119)** - 3-column layout: Left=live activity feed, Center=Spacestation rooms, Right=quick actions - **Task detail panel** - Changed from right-slide to centered modal - **Dreaming toggle** - Proper on/off toggle with visual state indicator in QuickActions - **Scheduler page** - Shows all OpenClaw cron jobs with on/off toggle switches - **Telegram delivery fixed** - All cron jobs now deliver to chat ID 7507878944 - **Backup path fixed** - Changed from /Volumes/OpenClaw-WD to /Volumes/Public-1/openclaw-agent-backup - **openclaw CLI... [score=0.814 recalls=5 avg=1.000 source=memory/2026-05-13.md:1-30]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:139:165 -->
-- Root cause: `server.ts` used `execSync` (child_process) which is stubbed in Cloudflare Workers runtime - Fix: Replaced `execSync` calls with direct `fs` reads/writes to `~/.openclaw/cron/jobs.json` and `jobs-state.json` - Cron enable/disable now writes directly to `jobs.json` instead of using CLI - `vite dev` serves API routes correctly (unlike `wrangler dev` which uses unenv stubs) ### Investigate → Task Flow - Investigate button on Scheduler Error Feed now auto-creates an "In Progress" task - Task includes error details, cron job info, and is tagged with `errorId` - Completing an error-linked task automatically updates cron error... [score=0.814 recalls=5 avg=1.000 source=memory/2026-05-15.md:139-165]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:51:63 -->
-- # 2026-06-19 - Daily Log ## Key Findings: synced tasks.json from Workboard (122 tasks); fixed incidents API 500 via TanStack import path fix; SSR externalization not needed for prod; AsyncLocalStorage error dev-only. ## Remaining Work: fix Memory tab switching, Tasks drag-and-drop, Dispatch All, task detail popup; update fix-queue.md with Phase 5 items. [score=0.0 recalls=0 avg=0.0 source=memory/2026-06-19.md:51-63]
 ## Insights from 2026-06-19
 
 # Daily Log - 2026-06-19
@@ -227,3 +202,8 @@ _Last updated: 2026-06-20 by Space Monkey_
 
 ---
 
+
+## Promoted From Short-Term Memory (2026-06-21)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:6:6 -->
+- Daily Station Check — 2026-06-17 23:00: Status: ✅ ALL SYSTEMS NOMINAL [score=0.811 recalls=0 avg=0.620 source=memory/2026-06-17.md:6-6]

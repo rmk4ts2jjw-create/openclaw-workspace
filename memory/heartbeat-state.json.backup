@@ -1,0 +1,18 @@
+{
+  "lastChecks": {
+    "circuitBreaker": "2026-06-20T23:25:00+01:00",
+    "stallDetection": "2026-06-20T23:25:00+01:00",
+    "incidents": "2026-06-20T22:50:00+01:00",
+    "tasks": "2026-06-20T23:25:00+01:00",
+    "heartbeat": "2026-06-21T01:31:00+01:00",
+    "taskDispatch": "2026-06-20T22:50:00+01:00",
+    "email": null,
+    "calendar": null,
+    "mentions": null,
+    "weather": "2026-06-21T01:17:00+01:00"
+  },
+  "heartbeat": "",
+  "stallDetection": "",
+  "circuitBreaker": "",
+  "foo": ""
+}

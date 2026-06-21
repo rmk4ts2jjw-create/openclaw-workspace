@@ -1,5 +1,32 @@
 [
   {
+    "id": "task-inc-132-76b2",
+    "title": "Fix: INC-132",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-132: Detected 3 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-132",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-20T19:43:19.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-132 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-20T19:43:19.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-131-cf77",
     "title": "Fix: INC-131",
     "assignee": "lifesupport",
@@ -57,7 +84,7 @@
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
-    "status": "in_progress",
+    "status": "done",
     "priority": "P2",
     "ts": "just now",
     "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references. [auto-dispatched 2026-06-20 13:23]",
@@ -110,9 +137,9 @@
         "details": "Heartbeat dispatch \u2014 cleared stalledAt after 2.5h cooldown, picking up P2 framework split task"
       }
     ],
-    "lastActivity": "2026-06-20T14:23:30.209202+00:00",
-    "currentStep": "Committing and pushing changes",
-    "progress": 80,
+    "lastActivity": "2026-06-20T14:24:33.721258+00:00",
+    "currentStep": "Complete \u2014 FRAMEWORK.md split into docs/ folder, committed and pushed",
+    "progress": 100,
     "lastUpdated": "2026-06-04T14:38:14.066Z",
     "startedAt": "2026-06-20T14:18:53.558745+00:00",
     "stalledAt": null,
@@ -239,16 +266,21 @@
         "action": "ghost_dispatch_reset",
         "actor": "stall-detector",
         "details": "Ghost dispatch reset \u2014 Agent starting for 1806s with no progress"
+      },
+      {
+        "ts": "2026-06-20T16:24:01.514777+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-20T13:23:24.987334+00:00",
     "currentStep": null,
     "progress": 0,
-    "stalledAt": "2026-06-20T13:23:24.987334+00:00",
+    "stalledAt": null,
     "dispatchCount": 3,
     "lastUpdated": "2026-06-04T14:38:08.236Z",
     "startedAt": "2026-06-20T12:53:19.075812+00:00",
-    "wasStalled": true,
     "ghostDispatch": true
   },
   {

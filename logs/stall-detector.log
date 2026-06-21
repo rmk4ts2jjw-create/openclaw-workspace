@@ -759,3 +759,35 @@
   CLEARED task-browser-auto-001: stalledAt removed after 22842 min in backlog (wasStalled remains for 3h)
   CLEARED task-be03dff8: stalledAt removed after 23799 min in backlog (wasStalled remains for 3h)
 [2026-06-20 12:53:18 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 13:23:24 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-browser-auto-001: Browser automation testing — Agent starting for 1806s
+[2026-06-20 13:53:31 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 14:23:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 14:53:43 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 15:23:49 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 15:53:55 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 16:24:01 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-browser-auto-001: stalledAt removed after 181 min in backlog (wasStalled remains for 3h)
+[2026-06-20 16:54:07 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 17:24:13 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 17:54:19 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 18:24:25 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 18:54:30 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 19:43:18 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 20:13:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 20:43:23 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 21:13:26 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 21:43:28 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 22:13:30 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 22:43:33 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 23:13:36 UTC] Stall detector: OK — no stale tasks
+[2026-06-20 23:43:38 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 00:11:40 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 00:13:41 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 00:43:44 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 00:49:45 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 01:13:46 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 01:43:48 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 01:51:07 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 01:57:40 UTC] Stall detector: OK — no stale tasks
+[2026-06-21 02:13:50 UTC] Stall detector: OK — no stale tasks
