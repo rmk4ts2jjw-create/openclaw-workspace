@@ -55,6 +55,11 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
 - **Serving** - `main` is the single branch, served on port 3000 by Vite dev server. No dev branch. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
+## Tools
+
+- **OpenCode CLI**: `/Users/spacemonkey/.opencode/bin/opencode` (v1.17.8) — NOT in PATH, use full path
+- **OpenCode Web UI**: http://192.168.68.64:4097
+
 ## Operating Protocol
 
 - Running under `openclaw-agent` standard macOS account (non-admin)

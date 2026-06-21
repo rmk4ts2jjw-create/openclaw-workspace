@@ -71,6 +71,15 @@ node scripts/station-memory-tool.cjs stats
 
 ---
 
+### OpenCode
+
+- Binary: `/Users/spacemonkey/.opencode/bin/opencode`
+- Version: 1.17.8
+- NOT in PATH — use full path
+- Web UI: http://192.168.68.64:4097
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
 
 ## Related
