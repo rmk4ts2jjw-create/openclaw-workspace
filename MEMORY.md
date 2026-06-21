@@ -106,8 +106,23 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
   - Pending sudo actions: enable macOS firewall, add firewall rule to block Ollama IPv6
   - Ollama IPv6 issue: ignores OLLAMA_HOST for IPv6 binding, still listens on *:11434 IPv6
 - **2026-06-20 11:38 BST:** Mount alert: MyCloud-1E4N74 unreachable
+- **2026-06-20 13:00 BST:** Phase 0 migration foundation complete:
+  - mc-v2 repo initialized from framework copy at ~/.openclaw/workspace/mc-v2 (775 files, 11MB)
+  - Docker Compose dev environment on Docker host (192.168.68.50):
+    - Frontend: port 3002 (Next.js)
+    - Backend: port 8002 (FastAPI)
+    - DB: port 5434 (PostgreSQL, isolated instance)
+    - Redis: port 6380 (isolated instance)
+  - Nginx proxy updated with basic auth for port 3002
+  - Both endpoints verified: 3002 returns 200, 8002 health returns {"ok":true}
+  - Delegated audits via OpenCode:
+    - Audit A: 236+ items inventoried (181 KEEP, 35 RESTYLE, 9 MERGE, 11 REPLACE)
+    - Audit B: 25 overlapping areas (11 USE THEIRS, 6 USE OURS, 8 MERGE)
+    - Audit C: Developer guide covering routes, components, auth, API, theming, how-tos
+  - Note: GitHub fork not created (gh CLI not API-authenticated). Local repo pushed to workspace git.
+  - OpenCode config restored to original (opencode/big-pickle primary). Fallback chain intact.
 - **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
-- **Ongoing:** P1 incident INC-130 (Gateway session errors) and P2 incident INC-129 (Rate limit exhaustion improving)
+- **Ongoing:** P1 incident INC-132 (gateway session errors); P2 incidents INC-131 (rate limit exhaustion), INC-130 (gateway session errors), and 6 other P2 rate limit/storage incidents.
 
 ## External AI Review Loop
 
@@ -207,4 +222,5 @@ _Last updated: 2026-06-20 by Space Monkey_
 ## Promoted From Short-Term Memory (2026-06-21)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:6:6 -->
+- **2026-06-21 06:23 BST:** MyCloud mount still unavailable; host responding to ping; mount attempt failed due to insufficient privileges (requires sudo). See daily log for details.
 - Daily Station Check — 2026-06-17 23:00: Status: ✅ ALL SYSTEMS NOMINAL [score=0.811 recalls=0 avg=0.620 source=memory/2026-06-17.md:6-6]
