@@ -51,10 +51,16 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 
 ## Key Projects
 
-- **Mission Control Dashboard** - 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway: Phase 1 complete (`/api/agent-status`, `/api/tasks`, `/api/events` live); Phase 2 (UI integration) in progress. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
-- **TenacitOS** (NEW 2026-06-21) - Next.js 15 mission control dashboard, cloned from `carlosazaustre/tenacitOS`. Replaces the Paperclip/TanStack Start SpaceStation architecture. Located at `~/.openclaw/workspace/spacestation/` (now the TenacitOS instance). Running on port 3002. Old SpaceStation code archived in `_ARCHIVE_OLD_SPACESTATION/`.
+- **Mission Control Dashboard** - Now based on TenacitOS (Next.js 15) as of 2026-06-21. Provides 7-screen monitoring, Agent Office animation system with Framer Motion, live data bridge polling OpenClaw gateway (Phase 1 complete). Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/spacestation/` (the TenacitOS instance). Old SpaceStation code archived in `_ARCHIVE_OLD_SPACESTATION/`.
 - **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
-- **Serving** - `main` is the single branch. MC prod served on port 3000 by Vite dev server. TenacitOS dev on port 3002 by Next.js dev server. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
+- **Serving** - `main` is the single branch. MC prod served on port 3000 by Vite dev server (proxy forwarded to TenacitOS dev on port 3002). GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
+
+## Recent Updates
+- **2026-06-21 21:20 BST**: Presentation layer fix - added missing `src/entry-client.tsx` for TanStack Start hydration, fixing unstyled raw text render.
+- **2026-06-21 21:50 BST**: Architecture migration - SpaceStation → TenacitOS (Next.js 15). Cloned tenacitos, configured env, started dev server on port 3002, archived old code.
+- **2026-06-21 22:00 BST**: Proxy updated - nginx proxy on Docker host changed port 13005 → Mac port 3002, restoring iPad access.
+- **2026-06-21 22:05 BST**: Language fix - translated TenacitOS UI strings from Spanish to English (login, sidebar, Office3D, Skills).
+- **2026-06-22 08:32 BST**: Heartbeat poll - systems healthy, MyCloud mount unavailable since 02:43 BST on 2026-06-21, recurring gateway session errors (INC-134, INC-132, INC-130) monitored, no urgent action required.
 
 ## Tools
 
@@ -229,13 +235,13 @@ _Last updated: 2026-06-22 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-22 04:21 BST
+## Ongoing Issues - 2026-06-22 06:34 BST
 - Weather: London: ☀️ +20°C (clear) [from 02:00 BST check]
 - **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135).
 - **Open incidents**:
-  - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #11
-  - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #16
-  - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #35
+  - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #15
+  - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #20
+  - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #39
   - INC-135 (P2): WD MyCloud mount missing - recurrence #1
 - **Note**: Older incidents (INC-132, INC-131, INC-130, INC-129) last updated yesterday or earlier; under investigation.
 - Systems: Gateway operational, Mission Control experiencing intermittent outages.
