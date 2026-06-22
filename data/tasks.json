@@ -1,5 +1,32 @@
 [
   {
+    "id": "task-inc-138-fd3f",
+    "title": "Fix: INC-138",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-138: Detected 12 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-138",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-22T19:52:48.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-138 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-22T19:52:48.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-137-e915",
     "title": "Fix: INC-137",
     "assignee": "lifesupport",
@@ -3647,8 +3674,8 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": " [auto-dispatched 2026-06-22 17:21]",
-    "lastActivity": "2026-06-22T16:34:49.359656+00:00",
+    "note": " [auto-dispatched 2026-06-22 17:21] [auto-dispatched 2026-06-22 20:52]",
+    "lastActivity": "2026-06-22T20:10:50.289897+00:00",
     "currentStep": null,
     "progress": 0,
     "history": [
@@ -3687,12 +3714,29 @@
         "action": "ghost_dispatch_reset",
         "actor": "stall-detector",
         "details": "Ghost dispatch reset \u2014 currentStep=null for >60s after dispatch. dispatchCount now 2"
+      },
+      {
+        "ts": "2026-06-22T19:52:47.737001+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 198 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T19:52:47.881732+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T20:10:50.289897+00:00",
+        "action": "ghost_dispatch_reset",
+        "details": "Ghost dispatch reset \u2014 currentStep=null for >60s after dispatch. dispatchCount now 3 (max). Task will be skipped by dispatcher."
       }
     ],
-    "stalledAt": "2026-06-22T16:34:49.359656+00:00",
-    "dispatchCount": 2,
+    "stalledAt": "2026-06-22T20:10:50.289897+00:00",
+    "dispatchCount": 3,
     "ghostDispatch": true,
-    "startedAt": "2026-06-22T16:21:37.765569+00:00"
+    "startedAt": "2026-06-22T19:52:47.881722+00:00"
   },
   {
     "id": "task-1782132882899-xg1ozf",
@@ -3701,8 +3745,8 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": " [auto-dispatched 2026-06-22 17:51]",
-    "lastActivity": "2026-06-22T16:51:47.596712+00:00",
+    "note": " [auto-dispatched 2026-06-22 17:51] [auto-dispatched 2026-06-22 21:22]",
+    "lastActivity": "2026-06-22T20:45:51.022261+00:00",
     "currentStep": null,
     "progress": 0,
     "history": [
@@ -3741,12 +3785,24 @@
         "action": "ghost_dispatch_reset",
         "actor": "monkey",
         "details": "Ghost dispatch reset \u2014 Agent starting for 6min with no progress (currentStep=None, progress=0%)"
+      },
+      {
+        "ts": "2026-06-22T20:22:58.209069+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T20:45:51.022261+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset \u2014 task has been ghost-dispatched 3+ times today (dispatchCount=2, currentStep=null, progress=0%). Moving to backlog to stop the cycle. Needs human review."
       }
     ],
-    "stalledAt": "2026-06-22T16:59:06.550467+00:00",
+    "stalledAt": null,
     "dispatchCount": 2,
     "ghostDispatch": true,
-    "startedAt": "2026-06-22T16:51:47.596804+00:00"
+    "startedAt": "2026-06-22T20:22:58.209058+00:00"
   },
   {
     "id": "task-1782132882959-ohnldg",
@@ -3797,7 +3853,7 @@
         "details": "Reset to backlog: currentStep=null for >60s after dispatch (ghost dispatch). dispatchCount now 2."
       }
     ],
-    "stalledAt": "2026-06-22T17:37:05.753370+00:00",
+    "stalledAt": null,
     "dispatchCount": 2,
     "ghostDispatch": true,
     "startedAt": "2026-06-22T17:21:57.418110+00:00"
