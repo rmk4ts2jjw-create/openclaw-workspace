@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-22T19:52:48.000Z",
-    "lastActivity": "2026-06-22T20:22:58.000Z",
-    "summary": "Detected 14 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #2)",
+    "lastActivity": "2026-06-22T21:23:19.000Z",
+    "summary": "Detected 10 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #4)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -25,6 +25,16 @@
       {
         "ts": "2026-06-22T20:22:58.000Z",
         "message": "Recurrence #2: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T20:53:09.000Z",
+        "message": "Recurrence #3: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T21:23:19.000Z",
+        "message": "Recurrence #4: Auto-detected by gateway-monitor (fingerprint match)",
         "actor": "system"
       }
     ],
@@ -59,7 +69,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 2,
+    "_recurrence": 4,
     "_fingerprint": "d4cdd3353300"
   },
   {
@@ -71,8 +81,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-22T10:49:46.000Z",
-    "lastActivity": "2026-06-22T20:22:59.000Z",
-    "summary": "Gateway log shows 2375 rate limit (429) errors. Free model pool may be exhausted. (recurrence #20)",
+    "lastActivity": "2026-06-22T21:23:19.000Z",
+    "summary": "Gateway log shows 2734 rate limit (429) errors. Free model pool may be exhausted. (recurrence #22)",
     "tags": [
       "rate-limit",
       "429",
@@ -179,6 +189,16 @@
         "ts": "2026-06-22T20:22:59.000Z",
         "message": "Recurrence #20: Auto-detected by rate-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T20:53:09.000Z",
+        "message": "Recurrence #21: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T21:23:19.000Z",
+        "message": "Recurrence #22: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -205,7 +225,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 20,
+    "_recurrence": 22,
     "_fingerprint": "4b06701bd5fa"
   },
   {
@@ -217,8 +237,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-22T10:49:45.000Z",
-    "lastActivity": "2026-06-22T20:22:58.000Z",
-    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #20)",
+    "lastActivity": "2026-06-22T21:23:19.000Z",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #22)",
     "tags": [
       "mission-control",
       "outage",
@@ -325,6 +345,16 @@
         "ts": "2026-06-22T20:22:58.000Z",
         "message": "Recurrence #20: Auto-detected by health-check (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T20:53:08.000Z",
+        "message": "Recurrence #21: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-22T21:23:19.000Z",
+        "message": "Recurrence #22: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -358,7 +388,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 20,
+    "_recurrence": 22,
     "_fingerprint": "c80360dd0ae6"
   },
   {

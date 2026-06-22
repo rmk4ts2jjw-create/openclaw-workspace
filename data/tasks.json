@@ -3745,8 +3745,8 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": " [auto-dispatched 2026-06-22 17:51] [auto-dispatched 2026-06-22 21:22]",
-    "lastActivity": "2026-06-22T20:45:51.022261+00:00",
+    "note": " [auto-dispatched 2026-06-22 17:51] [auto-dispatched 2026-06-22 21:22] [auto-dispatched 2026-06-22 21:53]",
+    "lastActivity": "2026-06-22T20:55:57.760388+00:00",
     "currentStep": null,
     "progress": 0,
     "history": [
@@ -3797,12 +3797,24 @@
         "action": "ghost_dispatch_reset",
         "actor": "monkey",
         "details": "Ghost dispatch reset \u2014 task has been ghost-dispatched 3+ times today (dispatchCount=2, currentStep=null, progress=0%). Moving to backlog to stop the cycle. Needs human review."
+      },
+      {
+        "ts": "2026-06-22T20:53:08.643154+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T20:55:57.760388+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset \u2014 4th ghost dispatch today. Task has been in_progress 3 times with currentStep=null and progress=0%. dispatchCount incremented to 3 to prevent further dispatch. Needs human review."
       }
     ],
-    "stalledAt": null,
-    "dispatchCount": 2,
+    "stalledAt": "2026-06-22T20:55:57.760388+00:00",
+    "dispatchCount": 3,
     "ghostDispatch": true,
-    "startedAt": "2026-06-22T20:22:58.209058+00:00"
+    "startedAt": "2026-06-22T20:53:08.643145+00:00"
   },
   {
     "id": "task-1782132882959-ohnldg",
@@ -3811,8 +3823,8 @@
     "status": "backlog",
     "priority": "P3",
     "ts": "just now",
-    "note": " [auto-dispatched 2026-06-22 18:21]",
-    "lastActivity": "2026-06-22T17:37:05.753370+00:00",
+    "note": " [auto-dispatched 2026-06-22 18:21] [auto-dispatched 2026-06-22 22:23]",
+    "lastActivity": "2026-06-22T21:23:19.172164+00:00",
     "currentStep": null,
     "progress": 0,
     "history": [
@@ -3851,11 +3863,23 @@
         "action": "stalled_reset",
         "actor": "stall-detector",
         "details": "Reset to backlog: currentStep=null for >60s after dispatch (ghost dispatch). dispatchCount now 2."
+      },
+      {
+        "ts": "2026-06-22T21:23:19.172257+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T21:25:52.979905+00:00",
+        "action": "stalled",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset: step=None, lastActivity >60s old, sub-agent never started"
       }
     ],
-    "stalledAt": null,
-    "dispatchCount": 2,
+    "stalledAt": "2026-06-22T21:25:52.979905+00:00",
+    "dispatchCount": 3,
     "ghostDispatch": true,
-    "startedAt": "2026-06-22T17:21:57.418110+00:00"
+    "startedAt": "2026-06-22T21:23:19.172247+00:00"
   }
 ]
