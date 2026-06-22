@@ -61,6 +61,7 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **2026-06-21 22:00 BST**: Proxy updated - nginx proxy on Docker host changed port 13005 → Mac port 3002, restoring iPad access.
 - **2026-06-21 22:05 BST**: Language fix - translated TenacitOS UI strings from Spanish to English (login, sidebar, Office3D, Skills).
 - **2026-06-22 08:32 BST**: Heartbeat poll - systems healthy, MyCloud mount unavailable since 02:43 BST on 2026-06-21, recurring gateway session errors (INC-134, INC-132, INC-130) monitored, no urgent action required.
+- **2026-06-22 11:44 BST**: Diagnostic Audit — Task Disappearance: tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created a new task, but file had been overwritten/wiped during API testing. Fix: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss. Code changes committed: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log, Delete button with confirm() dialog, DELETE /api/tasks endpoint, POST /api/tasks endpoint, Soft UI theme (Shell.tsx, ghost buttons, glass panels), AgentMatrix.tsx wireframe, test-canary.ts script.
 
 ## Tools
 
