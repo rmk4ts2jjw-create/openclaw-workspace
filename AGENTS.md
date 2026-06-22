@@ -204,6 +204,11 @@ Let the Context Package inform your approach. If a lesson says "never do X," don
 - **Station Memory schema coupling:** Phase 1 queries the DB directly via `station-memory-tool.cjs`. If the schema changes, update the query. Phases 2/3 will wrap this behind an interface.
 
 
+## SpaceStation Troubleshooting
+
+### Broken CSS Site-Wide
+If SpaceStation CSS is broken site-wide (wrong fonts, wrong colors, all pages affected), check `src/components/TenacitOS/Shell.tsx` for hardcoded `fontFamily`/`background` inline style overrides first. These override the design system CSS variables from `globals.css` and `layout.tsx`.
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

@@ -55,6 +55,16 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
 - **Serving** - `main` is the single branch. MC prod served on port 3000 by Vite dev server (proxy forwarded to TenacitOS dev on port 3002). GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
+## SpaceStation CSS Fix (2026-06-22)
+
+Shell.tsx had two hardcoded inline styles that broke the entire site CSS:
+- `fontFamily: 'SF Pro Display'...` overrode the Inter font from layout.tsx
+- `background: linear-gradient(...)` overrode `var(--background)` from globals.css
+
+Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: var(--text-primary)`.
+
+**Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
+
 ## Recent Updates
 - **2026-06-21 21:20 BST**: Presentation layer fix - added missing `src/entry-client.tsx` for TanStack Start hydration, fixing unstyled raw text render.
 - **2026-06-21 21:50 BST**: Architecture migration - SpaceStation → TenacitOS (Next.js 15). Cloned tenacitos, configured env, started dev server on port 3002, archived old code.
