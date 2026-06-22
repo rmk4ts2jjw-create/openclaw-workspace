@@ -1,5 +1,86 @@
 [
   {
+    "id": "task-inc-137-e915",
+    "title": "Fix: INC-137",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-137: Gateway log shows 131 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-137",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-22T10:49:46.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-137 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-22T10:49:46.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-136-b20b",
+    "title": "Fix: INC-136",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-136: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Vite dev server crashed or port 3000 is occupied by stale process\nConfidence: 95% (2h SLA)\nFile: scripts/maintenance.sh\nFix: Step 3 in maintenance.sh handles this automatically. Manual: kill stale process on port 3000 and restart.",
+    "linkedIncidentId": "INC-136",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-22T10:49:45.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-136 (RCA: 95% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-22T10:49:45.000Z",
+    "rcaConfidence": 95
+  },
+  {
+    "id": "task-inc-135-fdc7",
+    "title": "Fix: INC-135",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-135: Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: WD MyCloud SMB mount dropped \u2014 guest session timeout or NAS sleep\nConfidence: 85% (2h SLA)\nFile: scripts/mount-wd-mycloud.sh\nFix: Add keepalive cron: bash scripts/mount-wd-mycloud.sh every 10 min. Check NAS sleep settings. Consider dedicated SMB user instead of guest.",
+    "linkedIncidentId": "INC-135",
+    "tags": [
+      "incident-response",
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-22T10:49:45.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-135 (RCA: 85% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-22T10:49:45.000Z",
+    "rcaConfidence": 85
+  },
+  {
     "id": "task-inc-134-38ee",
     "title": "Fix: INC-134",
     "assignee": "engineer",
@@ -138,10 +219,10 @@
     "id": "task-split-framework-001",
     "title": "Split FRAMEWORK.md into docs/ folder structure",
     "assignee": "monkey",
-    "status": "done",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
-    "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references. [auto-dispatched 2026-06-20 13:23]",
+    "note": "FRAMEWORK.md is getting large (200+ lines). Split into:\n\n~/.openclaw/workspace/docs/\n\u251c\u2500\u2500 framework.md   \u2190 Core rules (framework selection, anti-patterns, build tool rules)\n\u251c\u2500\u2500 roles.md       \u2190 Agent roles, permissions, merge checklist\n\u251c\u2500\u2500 routes.md      \u2190 Active routes manifest + testing procedure\n\u251c\u2500\u2500 stack.md       \u2190 Tech stack, dependencies, gotchas\n\u251c\u2500\u2500 workflow.md    \u2190 Dev\u2192Prod workflow, automation rules, OpenCode usage\n\u2514\u2500\u2500 sources.md     \u2190 External documentation references (SOURCES.md mirror)\n\nFRAMEWORK.md becomes a lean index pointing to each file.\n\nMove relevant sections from FRAMEWORK.md into these files. Update any references. [auto-dispatched 2026-06-20 13:23] [auto-dispatched 2026-06-22 14:50]",
     "tags": [
       "documentation",
       "refactor",
@@ -189,21 +270,41 @@
         "action": "started",
         "actor": "monkey",
         "details": "Heartbeat dispatch \u2014 cleared stalledAt after 2.5h cooldown, picking up P2 framework split task"
+      },
+      {
+        "ts": "2026-06-22T13:24:58.069Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from done to backlog (drag-and-drop)"
+      },
+      {
+        "ts": "2026-06-22T13:50:48.697306+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T14:20:58.987544+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1810s with no progress"
       }
     ],
-    "lastActivity": "2026-06-20T14:24:33.721258+00:00",
-    "currentStep": "Complete \u2014 FRAMEWORK.md split into docs/ folder, committed and pushed",
-    "progress": 100,
+    "lastActivity": "2026-06-22T14:20:58.987544+00:00",
+    "currentStep": null,
+    "progress": 0,
     "lastUpdated": "2026-06-04T14:38:14.066Z",
-    "startedAt": "2026-06-20T14:18:53.558745+00:00",
+    "startedAt": "2026-06-22T13:50:48.697294+00:00",
     "stalledAt": null,
-    "dispatchCount": 2
+    "dispatchCount": 3,
+    "wasStalled": true,
+    "ghostDispatch": true
   },
   {
     "id": "task-inc-filters-001",
     "title": "Make Incidents page filters clickable",
     "assignee": "monkey",
-    "status": "done",
+    "status": "backlog",
     "priority": "P2",
     "ts": "just now",
     "note": "The Incidents page shows '46 tracked \u00b7 6 open \u00b7 3 critical' but these aren't clickable. Make them work like Tasks page filters:\n- Click '6 open' \u2192 shows only open incidents\n- Click '3 critical' \u2192 shows only critical/P1 incidents\n- Click '46 tracked' \u2192 shows all\n- Active filter highlighted (same style as Tasks page)\n- Count badges update as filters change [auto-dispatched 2026-06-04 13:37]",
@@ -254,11 +355,17 @@
         "action": "completed",
         "actor": "monkey",
         "details": "Sub-agent reported task complete (Quick Stats Bar clickable with filter highlighting). Marking done."
+      },
+      {
+        "ts": "2026-06-22T13:25:01.452Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from done to backlog (drag-and-drop)"
       }
     ],
-    "lastActivity": "2026-06-20T12:59:19.964895+00:00",
-    "currentStep": "Completed",
-    "progress": 100,
+    "lastActivity": "2026-06-22T13:25:01.452Z",
+    "currentStep": null,
+    "progress": 0,
     "stalledAt": null,
     "dispatchCount": 3,
     "lastUpdated": "2026-06-04T14:38:09.398Z",
@@ -269,7 +376,7 @@
     "id": "task-browser-auto-001",
     "title": "Browser automation testing",
     "assignee": "engineer",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Test the OpenClaw browser tool capabilities \u2014 can it navigate sites, fill forms, extract data, handle logins? Document what works and what breaks.\n\nScope:\n- Navigate to a website and extract page content\n- Fill out a form field and submit\n- Handle a login flow (if possible)\n- Test JavaScript-heavy SPAs vs static pages\n- Document limitations and workarounds\n- Write up findings in wiki/browser-automation-findings.md [auto-dispatched 2026-06-04 11:37] [auto-dispatched 2026-06-20 13:53]",
@@ -326,9 +433,15 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T13:24:16.456Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to done (drag-and-drop)"
       }
     ],
-    "lastActivity": "2026-06-20T13:23:24.987334+00:00",
+    "lastActivity": "2026-06-22T13:24:16.456Z",
     "currentStep": null,
     "progress": 0,
     "stalledAt": null,
@@ -341,7 +454,7 @@
     "id": "task-be03dff8",
     "title": "Runbook Evolution",
     "assignee": "monkey",
-    "status": "backlog",
+    "status": "done",
     "priority": "P3",
     "ts": "just now",
     "note": "Park this. Depends on Phase 2 Runbooks completion \u2014 there are no runbooks to evolve yet. When runbooks exist: update runbooks based on resolution history. When an incident is resolved differently than the runbook suggests, flag the runbook for review. Track runbook effectiveness over time. [auto-dispatched 2026-06-04 00:05] [auto-dispatched 2026-06-04 00:35]",
@@ -381,10 +494,16 @@
         "action": "stalled_cleared",
         "actor": "stall-detector",
         "details": "stalledAt cleared after 23799 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T13:24:13.921Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to done (drag-and-drop)"
       }
     ],
     "currentStep": null,
-    "lastActivity": "2026-06-03T23:43:01.006512+00:00",
+    "lastActivity": "2026-06-22T13:24:13.921Z",
     "progress": 0,
     "tags": [
       "runbook-evolution",
@@ -3478,5 +3597,209 @@
     "completedAt": "2026-06-03T17:20:22.125044+00:00",
     "lastActivity": "2026-06-03T17:20:22.125044+00:00",
     "summary": "Deferred \u2014 planning/design task from strategic backlog. Needs human specification before implementation. Not suitable for automated dispatch."
+  },
+  {
+    "id": "task-1782132882772-hjo9xm",
+    "title": "LB-REF-001: Refined Load Test 1",
+    "assignee": "monkey",
+    "status": "done",
+    "priority": "P3",
+    "ts": "2026-06-22T12:54:42.772Z",
+    "note": "",
+    "lastActivity": "2026-06-22T13:24:12.736Z",
+    "currentStep": null,
+    "progress": 0,
+    "history": [
+      {
+        "ts": "2026-06-22T12:54:42.772Z",
+        "action": "created",
+        "actor": "user",
+        "details": "Task created via API"
+      },
+      {
+        "ts": "2026-06-22T12:54:43.023Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to in_progress (drag-and-drop). Auto-assigned to monkey via Load Balancer."
+      },
+      {
+        "ts": "2026-06-22T13:20:38.327442+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1555s with no progress"
+      },
+      {
+        "ts": "2026-06-22T13:24:12.736Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to done (drag-and-drop)"
+      }
+    ],
+    "stalledAt": null,
+    "dispatchCount": 1,
+    "wasStalled": true,
+    "ghostDispatch": true
+  },
+  {
+    "id": "task-1782132882837-evtzcj",
+    "title": "LB-REF-002: Refined Load Test 2",
+    "assignee": "lion",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": " [auto-dispatched 2026-06-22 17:21]",
+    "lastActivity": "2026-06-22T16:34:49.359656+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "history": [
+      {
+        "ts": "2026-06-22T12:54:42.837Z",
+        "action": "created",
+        "actor": "user",
+        "details": "Task created via API"
+      },
+      {
+        "ts": "2026-06-22T12:54:43.105Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to in_progress (drag-and-drop). Auto-assigned to lion via Load Balancer."
+      },
+      {
+        "ts": "2026-06-22T13:20:38.327442+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1555s with no progress"
+      },
+      {
+        "ts": "2026-06-22T16:21:37.622007+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T16:21:37.765579+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T16:34:49.359656+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 currentStep=null for >60s after dispatch. dispatchCount now 2"
+      }
+    ],
+    "stalledAt": "2026-06-22T16:34:49.359656+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true,
+    "startedAt": "2026-06-22T16:21:37.765569+00:00"
+  },
+  {
+    "id": "task-1782132882899-xg1ozf",
+    "title": "LB-REF-003: Refined Load Test 3",
+    "assignee": "owl",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": " [auto-dispatched 2026-06-22 17:51]",
+    "lastActivity": "2026-06-22T16:51:47.596712+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "history": [
+      {
+        "ts": "2026-06-22T12:54:42.899Z",
+        "action": "created",
+        "actor": "user",
+        "details": "Task created via API"
+      },
+      {
+        "ts": "2026-06-22T12:54:43.187Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to in_progress (drag-and-drop). Auto-assigned to owl via Load Balancer."
+      },
+      {
+        "ts": "2026-06-22T13:20:38.327442+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1555s with no progress"
+      },
+      {
+        "ts": "2026-06-22T16:21:37.622007+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T16:51:47.596814+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T16:59:06.550568+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "monkey",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 6min with no progress (currentStep=None, progress=0%)"
+      }
+    ],
+    "stalledAt": "2026-06-22T16:59:06.550467+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true,
+    "startedAt": "2026-06-22T16:51:47.596804+00:00"
+  },
+  {
+    "id": "task-1782132882959-ohnldg",
+    "title": "LB-REF-004: Refined Load Test 4",
+    "assignee": "fox",
+    "status": "backlog",
+    "priority": "P3",
+    "ts": "just now",
+    "note": " [auto-dispatched 2026-06-22 18:21]",
+    "lastActivity": "2026-06-22T17:37:05.753370+00:00",
+    "currentStep": null,
+    "progress": 0,
+    "history": [
+      {
+        "ts": "2026-06-22T12:54:42.959Z",
+        "action": "created",
+        "actor": "user",
+        "details": "Task created via API"
+      },
+      {
+        "ts": "2026-06-22T12:54:43.269Z",
+        "action": "status_change",
+        "actor": "system",
+        "details": "Status changed from backlog to in_progress (drag-and-drop). Auto-assigned to fox via Load Balancer."
+      },
+      {
+        "ts": "2026-06-22T13:20:38.327442+00:00",
+        "action": "ghost_dispatch_reset",
+        "actor": "stall-detector",
+        "details": "Ghost dispatch reset \u2014 Agent starting for 1555s with no progress"
+      },
+      {
+        "ts": "2026-06-22T16:21:37.622007+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 181 min in backlog \u2014 task eligible for re-dispatch"
+      },
+      {
+        "ts": "2026-06-22T17:21:57.418121+00:00",
+        "action": "started",
+        "actor": "dispatcher",
+        "details": "Status changed from backlog to in_progress by maintenance dispatcher"
+      },
+      {
+        "ts": "2026-06-22T17:37:05.753370+00:00",
+        "action": "stalled_reset",
+        "actor": "stall-detector",
+        "details": "Reset to backlog: currentStep=null for >60s after dispatch (ghost dispatch). dispatchCount now 2."
+      }
+    ],
+    "stalledAt": "2026-06-22T17:37:05.753370+00:00",
+    "dispatchCount": 2,
+    "ghostDispatch": true,
+    "startedAt": "2026-06-22T17:21:57.418110+00:00"
   }
 ]
