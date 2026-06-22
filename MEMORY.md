@@ -52,8 +52,9 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 ## Key Projects
 
 - **Mission Control Dashboard** - 7-screen monitoring app (TanStack Start, dark theme). Agent Office animation system fully built with Framer Motion. Live data bridge polling OpenClaw gateway: Phase 1 complete (`/api/agent-status`, `/api/tasks`, `/api/events` live); Phase 2 (UI integration) in progress. Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/mission-control-dashboard/` (the single master repo).
+- **TenacitOS** (NEW 2026-06-21) - Next.js 15 mission control dashboard, cloned from `carlosazaustre/tenacitOS`. Replaces the Paperclip/TanStack Start SpaceStation architecture. Located at `~/.openclaw/workspace/spacestation/` (now the TenacitOS instance). Running on port 3002. Old SpaceStation code archived in `_ARCHIVE_OLD_SPACESTATION/`.
 - **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
-- **Serving** - `main` is the single branch, served on port 3000 by Vite dev server. No dev branch. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
+- **Serving** - `main` is the single branch. MC prod served on port 3000 by Vite dev server. TenacitOS dev on port 3002 by Next.js dev server. GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
 ## Tools
 
@@ -122,6 +123,11 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
   - Note: GitHub fork not created (gh CLI not API-authenticated). Local repo pushed to workspace git.
   - OpenCode config restored to original (opencode/big-pickle primary). Fallback chain intact.
 - **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
+- **2026-06-21 11:38 BST:** Heartbeat check: Weather: Partly cloudy +25°C, MyCloud host responding, mount point /Volumes/Public unavailable since 02:43 BST, systems OK (Gateway:200, MC:200), 10 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-130 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-129 P2 rate limit exhaustion, INC-133 P2 rate limit exhaustion, plus 5 other P2 rate limit/storage incidents), no in_progress tasks, no urgent action required.
+- **2026-06-21 21:20 BST:** Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
+- **2026-06-21 21:50 BST:** Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
+- **2026-06-21 22:00 BST:** Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
+- **2026-06-21 22:05 BST:** Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login page, sidebar, Office3D, Skills page).
 - **Ongoing:** P1 incident INC-132 (gateway session errors); P2 incidents INC-131 (rate limit exhaustion), INC-130 (gateway session errors), and 6 other P2 rate limit/storage incidents.
 
 ## External AI Review Loop
@@ -196,7 +202,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-20 by Space Monkey_
+_Last updated: 2026-06-21 by Space Monkey_
 
 ## Insights from 2026-06-19
 
