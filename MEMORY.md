@@ -131,6 +131,20 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
   - OpenCode config restored to original (opencode/big-pickle primary). Fallback chain intact.
 - **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
 - **2026-06-21 11:38 BST:** Heartbeat check: Weather: Partly cloudy +25°C, MyCloud host responding, mount point /Volumes/Public unavailable since 02:43 BST, systems OK (Gateway:200, MC:200), 10 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-130 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-129 P2 rate limit exhaustion, INC-133 P2 rate limit exhaustion, plus 5 other P2 rate limit/storage incidents), no in_progress tasks, no urgent action required.
+- **2026-06-22 11:44 BST:** Diagnostic work on task disappearance - tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created new task but file had been overwritten/wiped during API testing. Fixed: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss - all original tasks recovered from git history.
+- **2026-06-22 12:59 BST:** Full-stack workflow simulation completed successfully:
+  - Added projectId field to Task interface, API POST/PATCH handlers
+  - Project tag on TaskCard (📁 badge with indigo color scheme)
+  - Project filter dropdown and "Group by Project" toggle
+  - UI improvements: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log
+  - Delete button with confirm() dialog, DELETE /api/tasks endpoint
+  - POST /api/tasks endpoint
+  - Soft UI theme (Shell.tsx, ghost buttons, glass panels)
+  - AgentMatrix.tsx wireframe
+  - Verification scripts: verify-simulation.ts (golden path), test-canary.ts (auto-cleanup)
+  - Fixed archive status to use lowercase "archived" to match column key
+  - Fixed URL separator in simulation api()
+  - Commits: 3357c9f (full-stack workflow), 86af250 (safety-first config), deeb2c2 (kanban stabilization)
 - **2026-06-21 21:20 BST:** Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
 - **2026-06-21 21:50 BST:** Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
 - **2026-06-21 22:00 BST:** Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
@@ -252,3 +266,7 @@ Reviewed memory files from the last 2 days:
 
 - Heartbeat Check — 2026-06-22 01:45 BST: Systems: Gateway healthy, Mission Control operational, Station Memory checked, no urgent action.
 - Heartbeat Check — 2026-06-22 02:00 BST: Systems: Gateway healthy, Mission Control operational, Weather: London: ☀️ +20°C (clear), recent checks performed, cron jobs normal, no urgent action.
+
+- **2026-06-22 12:59 BST**: Full-Stack Workflow Simulation: tested full task lifecycle (create, assign, work, done, archive, verify) with projectId field, project tag, project filter, group by project toggle. All passed. Commits: 3357c9f, 86af250, deeb2c2.
+- **2026-06-22 13:21 BST**: UI Crash Fix: fixed groupByProject ReferenceError in KanbanColumn; added prop and passed state. Agent Swarm Simulation: created 8 tasks, dispatched to 4 agents (2 tasks each), appended completion notes, moved all to 'done', verified, cleaned up. Commits: f131b87, 3357c9f, 86af250, deeb2c2.
+- **2026-06-22 13:49 BST**: Automatic Agent Load Balancer: implemented findLeastBurdenedAgent() to count active in_progress tasks per agent and assign to lowest count when assignee is empty/null. Verified even distribution. Commit: b1d7e86.
