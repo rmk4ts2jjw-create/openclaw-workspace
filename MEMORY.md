@@ -202,7 +202,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-21 by Space Monkey_
+_Last updated: 2026-06-22 by Space Monkey_
 
 ## Insights from 2026-06-19
 
@@ -225,11 +225,6 @@ _Last updated: 2026-06-21 by Space Monkey_
 ---
 
 
-## Promoted From Short-Term Memory (2026-06-21)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-17.md:6:6 -->
-- **2026-06-21 06:23 BST:** MyCloud mount still unavailable; host responding to ping; mount attempt failed due to insufficient privileges (requires sudo). See daily log for details.
-- Daily Station Check — 2026-06-17 23:00: Status: ✅ ALL SYSTEMS NOMINAL [score=0.811 recalls=0 avg=0.620 source=memory/2026-06-17.md:6-6]
 ## Memory review 2026-06-21 05:48:54 UTC
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
@@ -246,3 +241,8 @@ Reviewed memory files from the last 2 days:
   - Plus 5 other P2 rate limit/storage incidents (INC-126, INC-123, INC-122, INC-114, etc.)
 - Systems otherwise stable: Gateway and Mission Control Dashboard healthy (returning 200 OK)
 
+
+## Promoted From Short-Term Memory (2026-06-22)
+
+- Heartbeat Check — 2026-06-22 01:45 BST: Systems: Gateway healthy, Mission Control operational, Station Memory checked, no urgent action.
+- Heartbeat Check — 2026-06-22 02:00 BST: Systems: Gateway healthy, Mission Control operational, Weather: London: ☀️ +20°C (clear), recent checks performed, cron jobs normal, no urgent action.
