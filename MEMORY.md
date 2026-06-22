@@ -229,17 +229,16 @@ _Last updated: 2026-06-22 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-21 11:26 BST
-- Weather: London: 🌤️ +25°C
-- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (~8 hours 43 minutes duration). See incident INC-118 (P2) for backup storage unavailable.
-- **Open incidents**: 10 open TRIAGE incidents including:
-  - INC-132 (P1): Gateway session errors (30 recurrences)
-  - INC-130 (P1): Gateway session errors (48 recurrences)
-  - INC-131 (P2): Rate limit exhaustion (46 recurrences)
-  - INC-129 (P2): Rate limit exhaustion (47 recurrences)
-  - INC-133 (P2): Rate limit exhaustion (1 recurrence)
-  - Plus 5 other P2 rate limit/storage incidents (INC-126, INC-123, INC-122, INC-114, etc.)
-- Systems otherwise stable: Gateway and Mission Control Dashboard healthy (returning 200 OK)
+## Ongoing Issues - 2026-06-22 04:21 BST
+- Weather: London: ☀️ +20°C (clear) [from 02:00 BST check]
+- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135).
+- **Open incidents**:
+  - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #11
+  - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #16
+  - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #35
+  - INC-135 (P2): WD MyCloud mount missing - recurrence #1
+- **Note**: Older incidents (INC-132, INC-131, INC-130, INC-129) last updated yesterday or earlier; under investigation.
+- Systems: Gateway operational, Mission Control experiencing intermittent outages.
 
 
 ## Promoted From Short-Term Memory (2026-06-22)
