@@ -326,3 +326,43 @@
 - **task-browser-auto-001**: Browser automation testing
 - Assignee: engineer
 - Status: backlog → in_progress
+
+## 2026-06-22 14:50:48 — DISPATCHED
+- **task-split-framework-001**: Split FRAMEWORK.md into docs/ folder structure
+- Assignee: monkey
+- Status: backlog → in_progress
+
+## 2026-06-22 17:21:37 — DISPATCHED
+- **task-1782132882837-evtzcj**: LB-REF-002: Refined Load Test 2
+- Assignee: lion
+- Status: backlog → in_progress
+
+## 2026-06-22 17:51:47 — DISPATCHED
+- **task-1782132882899-xg1ozf**: LB-REF-003: Refined Load Test 3
+- Assignee: owl
+- Status: backlog → in_progress
+
+## 2026-06-22 18:21:57 — DISPATCHED
+- **task-1782132882959-ohnldg**: LB-REF-004: Refined Load Test 4
+- Assignee: fox
+- Status: backlog → in_progress
+
+## 2026-06-22 20:52:47 — DISPATCHED
+- **task-1782132882837-evtzcj**: LB-REF-002: Refined Load Test 2
+- Assignee: lion
+- Status: backlog → in_progress
+
+## 2026-06-22 21:22:58 — DISPATCHED
+- **task-1782132882899-xg1ozf**: LB-REF-003: Refined Load Test 3
+- Assignee: owl
+- Status: backlog → in_progress
+
+## 2026-06-22 21:53:08 — DISPATCHED
+- **task-1782132882899-xg1ozf**: LB-REF-003: Refined Load Test 3
+- Assignee: owl
+- Status: backlog → in_progress
+
+## 2026-06-22 22:23:19 — DISPATCHED
+- **task-1782132882959-ohnldg**: LB-REF-004: Refined Load Test 4
+- Assignee: fox
+- Status: backlog → in_progress

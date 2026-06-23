@@ -791,3 +791,52 @@
 [2026-06-21 01:51:07 UTC] Stall detector: OK — no stale tasks
 [2026-06-21 01:57:40 UTC] Stall detector: OK — no stale tasks
 [2026-06-21 02:13:50 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 10:49:45 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 11:19:56 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 11:50:06 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 12:20:17 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 12:50:27 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 13:20:38 UTC] Stall detector: reset 4 task(s)
+  GHOST_RESET task-1782132882772-hjo9xm: LB-REF-001: Refined Load Test 1 — Agent starting for 1555s
+  GHOST_RESET task-1782132882837-evtzcj: LB-REF-002: Refined Load Test 2 — Agent starting for 1555s
+  GHOST_RESET task-1782132882899-xg1ozf: LB-REF-003: Refined Load Test 3 — Agent starting for 1555s
+  GHOST_RESET task-1782132882959-ohnldg: LB-REF-004: Refined Load Test 4 — Agent starting for 1555s
+[2026-06-22 13:50:48 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 14:20:58 UTC] Stall detector: reset 1 task(s)
+  GHOST_RESET task-split-framework-001: Split FRAMEWORK.md into docs/ folder structure — Agent starting for 1810s
+[2026-06-22 14:51:09 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 15:21:18 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 15:51:27 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 16:21:37 UTC] Stall detector: cleared 3 task(s)
+  CLEARED task-1782132882837-evtzcj: stalledAt removed after 181 min in backlog (wasStalled remains for 3h)
+  CLEARED task-1782132882899-xg1ozf: stalledAt removed after 181 min in backlog (wasStalled remains for 3h)
+  CLEARED task-1782132882959-ohnldg: stalledAt removed after 181 min in backlog (wasStalled remains for 3h)
+[2026-06-22 16:51:47 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 17:21:57 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 17:52:07 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 18:22:17 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 18:52:27 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 19:22:37 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 19:52:47 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-1782132882837-evtzcj: stalledAt removed after 198 min in backlog (wasStalled remains for 3h)
+[2026-06-22 20:22:58 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 20:53:08 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 21:23:19 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 21:53:29 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 22:23:39 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 22:53:50 UTC] Stall detector: OK — no stale tasks
+[2026-06-22 23:24:01 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-1782132882837-evtzcj: stalledAt removed after 193 min in backlog (wasStalled remains for 3h)
+[2026-06-22 23:54:11 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 00:24:21 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 02:24:26 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-1782132882959-ohnldg: stalledAt removed after 299 min in backlog (wasStalled remains for 3h)
+[2026-06-23 02:35:23 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 02:54:28 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 03:24:30 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 03:54:32 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 04:24:35 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 04:54:37 UTC] Stall detector: cleared 1 task(s)
+  CLEARED task-split-framework-001: stalledAt removed after 196 min in backlog (wasStalled remains for 3h)
+[2026-06-23 05:24:39 UTC] Stall detector: OK — no stale tasks
+[2026-06-23 05:54:41 UTC] Stall detector: OK — no stale tasks

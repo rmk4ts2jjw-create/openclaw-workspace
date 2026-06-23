@@ -19478,3 +19478,4891 @@ df: getattrlist failed for /Volumes/.timemachine/MyCloud-1E4N74._smb._tcp.local.
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
 /bin/sh: sysctl: command not found
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1
+$ next dev -H 0.0.0.0 --host --port "3000"
+error: unknown option '--host'
+(Did you mean --port?)
+error: script "dev" exited with code 1

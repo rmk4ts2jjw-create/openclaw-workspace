@@ -1,0 +1,1 @@
+All systems nominal. Gateway 307, MC responsive, MyCloud ping 4ms, load 1.79, disk 26%. Backlog of 5 tasks and 10 triage incidents. No new incidents. Rate‑limit 429 errors may benefit from FreeRide fallback.

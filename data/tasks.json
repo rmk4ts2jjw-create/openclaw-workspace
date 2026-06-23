@@ -315,6 +315,18 @@
         "action": "ghost_dispatch_reset",
         "actor": "stall-detector",
         "details": "Ghost dispatch reset \u2014 Agent starting for 1810s with no progress"
+      },
+      {
+        "ts": "2026-06-23T01:38:19.416733+00:00",
+        "action": "stalled_reset",
+        "actor": "heartbeat",
+        "details": "Ghost dispatch reset during quiet hours heartbeat - in_progress for >11 hours with currentStep=null and no activity updates"
+      },
+      {
+        "ts": "2026-06-23T04:54:37.258951+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 196 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-22T14:20:58.987544+00:00",
@@ -323,8 +335,7 @@
     "lastUpdated": "2026-06-04T14:38:14.066Z",
     "startedAt": "2026-06-22T13:50:48.697294+00:00",
     "stalledAt": null,
-    "dispatchCount": 3,
-    "wasStalled": true,
+    "dispatchCount": 4,
     "ghostDispatch": true
   },
   {
@@ -3731,9 +3742,15 @@
         "ts": "2026-06-22T20:10:50.289897+00:00",
         "action": "ghost_dispatch_reset",
         "details": "Ghost dispatch reset \u2014 currentStep=null for >60s after dispatch. dispatchCount now 3 (max). Task will be skipped by dispatcher."
+      },
+      {
+        "ts": "2026-06-22T23:24:01.082779+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 193 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "stalledAt": "2026-06-22T20:10:50.289897+00:00",
+    "stalledAt": null,
     "dispatchCount": 3,
     "ghostDispatch": true,
     "startedAt": "2026-06-22T19:52:47.881722+00:00"
@@ -3811,7 +3828,7 @@
         "details": "Ghost dispatch reset \u2014 4th ghost dispatch today. Task has been in_progress 3 times with currentStep=null and progress=0%. dispatchCount incremented to 3 to prevent further dispatch. Needs human review."
       }
     ],
-    "stalledAt": "2026-06-22T20:55:57.760388+00:00",
+    "stalledAt": null,
     "dispatchCount": 3,
     "ghostDispatch": true,
     "startedAt": "2026-06-22T20:53:08.643145+00:00"
@@ -3875,9 +3892,15 @@
         "action": "stalled",
         "actor": "monkey",
         "details": "Ghost dispatch reset: step=None, lastActivity >60s old, sub-agent never started"
+      },
+      {
+        "ts": "2026-06-23T02:24:26.492824+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 299 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
-    "stalledAt": "2026-06-22T21:25:52.979905+00:00",
+    "stalledAt": null,
     "dispatchCount": 3,
     "ghostDispatch": true,
     "startedAt": "2026-06-22T21:23:19.172247+00:00"

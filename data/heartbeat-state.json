@@ -1,18 +1,1 @@
-{
-  "lastChecks": {
-    "email": 1781941462,
-    "calendar": 1781940404,
-    "weather": "2026-06-21T00:08:28.005Z",
-    "mentions": 1781940404,
-    "heartbeat": "2026-06-21T01:20:46.000Z",
-    "stall_detection": "2026-06-20T17:46:53.211378+00:00",
-    "circuit_breaker": "2026-06-20T17:46:53.211378+00:00",
-    "memory_maintenance": 1781940088,
-    "git_commit": 1781945930,
-    "incidents": "2026-06-21T01:20:46.000Z",
-    "tasks": "2026-06-21T01:20:46.000Z"
-  },
-  "lastMemoryUpdate": 1781932833,
-  "nextCheck": 1,
-  "lastHeartbeat": "2026-06-21T01:20:46.000Z"
-}
+{"lastCheck": "1782173580", "checks": {"circuitBreaker": "closed", "stallDetection": "no_in_progress_tasks", "systemHealth": "healthy"}}
