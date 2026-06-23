@@ -1,21 +1,15 @@
 {
   "lastChecks": {
-    "circuitBreaker": "2026-06-22T03:21:27.3NZ",
-    "stallDetection": "2026-06-22T03:21:27.3NZ",
-    "incidents": "2026-06-21T21:47:00.000000+00:00",
-    "tasks": "2026-06-21T21:47:00.000000+00:00",
-    "heartbeat": "2026-06-22T02:38:10.3NZ",
-    "taskDispatch": "2026-06-21T08:15:04.737Z",
-    "email": "2026-06-22T00:03:04.000Z",
-    "calendar": "2026-06-22T00:03:04.000Z",
-    "mentions": "2026-06-22T00:03:04.000Z",
-    "weather": "2026-06-22T01:30:08.3NZ",
-    "memoryReview": "2026-06-22T03:47:17.000Z",
-    "git": "2026-06-22T03:47:17.000Z",
-    "myCloudMount": "2026-06-22T00:16:50.502Z",
-    "systemHealth": "2026-06-22T00:16:50.502Z",
-    "workspace": "2026-06-22T03:17:01.3NZ"
+    "email": "2026-06-23T07:12:59.300+01:00",
+    "calendar": "2026-06-23T07:12:59.300+01:00",
+    "mentions": "2026-06-23T07:12:59.300+01:00",
+    "weather": "2026-06-23T06:21:38.3NZ",
+    "tasks": "2026-06-23T07:12:59.300+01:00",
+    "incidents": "2026-06-23T07:12:59.300+01:00",
+    "circuitBreaker": "2026-06-23T07:12:59.300+01:00",
+    "heartbeat": "2026-06-23T06:21:38.3NZ",
+    "system": "2026-06-23T06:21:38.3NZ"
   },
-  "heartbeat": "2026-06-22T02:38:10.3NZ",
-  "lastHeartbeat": 1782095917
+  "heartbeat": "2026-06-23T06:21:38.3NZ",
+  "lastResult": "Heartbeat check at 2026-06-23T06:21:38.3NZ: checked weather (Partly cloudy +19°C), updated heartbeat state, checked system status (gateway experienced brief outage but now operational), no urgent issues."
 }

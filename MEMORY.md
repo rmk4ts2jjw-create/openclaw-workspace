@@ -72,6 +72,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-21 22:05 BST**: Language fix - translated TenacitOS UI strings from Spanish to English (login, sidebar, Office3D, Skills).
 - **2026-06-22 08:32 BST**: Heartbeat poll - systems healthy, MyCloud mount unavailable since 02:43 BST on 2026-06-21, recurring gateway session errors (INC-134, INC-132, INC-130) monitored, no urgent action required.
 - **2026-06-22 11:44 BST**: Diagnostic Audit — Task Disappearance: tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created a new task, but file had been overwritten/wiped during API testing. Fix: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss. Code changes committed: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log, Delete button with confirm() dialog, DELETE /api/tasks endpoint, POST /api/tasks endpoint, Soft UI theme (Shell.tsx, ghost buttons, glass panels), AgentMatrix.tsx wireframe, test-canary.ts script.
+- **2026-06-22 15:58 BST**: Reminder: Consider enabling the **FreeRide** auto-switching for fallback models to mitigate rate-limit exhaustion (see tasks `task-inc-137*`, `task-inc-133*`, `task-inc-131*`).
 
 ## Tools
 
@@ -233,7 +234,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-22 by Space Monkey_
+_Last updated: 2026-06-23 by Space Monkey_
 
 ## Insights from 2026-06-19
 
@@ -260,23 +261,23 @@ _Last updated: 2026-06-22 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-22 06:34 BST
-- Weather: London: ☀️ +20°C (clear) [from 02:00 BST check]
-- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135).
-- **Open incidents**:
+## Ongoing Issues - 2026-06-23 07:21 BST
+- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135). Host MyCloud-1E4N74 not responding to ping (network/storage hardware issue).
+- **Open incidents** (as of now):
   - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #15
   - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #20
   - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #39
   - INC-135 (P2): WD MyCloud mount missing - recurrence #1
+  - Plus 7 other P2 rate limit/storage incidents (total 11 open TRIAGE incidents)
 - **Note**: Older incidents (INC-132, INC-131, INC-130, INC-129) last updated yesterday or earlier; under investigation.
-- Systems: Gateway operational, Mission Control experiencing intermittent outages.
+- **Systems**: Gateway experienced a brief outage today (06:38-06:54 BST) but is now operational; Mission Control experiencing intermittent outages due to the above incidents.
+- **Recent architecture migration**: SpaceStation → TenacitOS (Next.js 15) completed on 2026-06-21. Proxy updated, UI language fixed to English.
+- **Quiet hours**: Active (23:00-08:00). No urgent action required during quiet hours unless incidents escalate.
+## Promoted From Short-Term Memory (2026-06-23)
 
-
-## Promoted From Short-Term Memory (2026-06-22)
-
-- Heartbeat Check — 2026-06-22 01:45 BST: Systems: Gateway healthy, Mission Control operational, Station Memory checked, no urgent action.
-- Heartbeat Check — 2026-06-22 02:00 BST: Systems: Gateway healthy, Mission Control operational, Weather: London: ☀️ +20°C (clear), recent checks performed, cron jobs normal, no urgent action.
-
-- **2026-06-22 12:59 BST**: Full-Stack Workflow Simulation: tested full task lifecycle (create, assign, work, done, archive, verify) with projectId field, project tag, project filter, group by project toggle. All passed. Commits: 3357c9f, 86af250, deeb2c2.
-- **2026-06-22 13:21 BST**: UI Crash Fix: fixed groupByProject ReferenceError in KanbanColumn; added prop and passed state. Agent Swarm Simulation: created 8 tasks, dispatched to 4 agents (2 tasks each), appended completion notes, moved all to 'done', verified, cleaned up. Commits: f131b87, 3357c9f, 86af250, deeb2c2.
-- **2026-06-22 13:49 BST**: Automatic Agent Load Balancer: implemented findLeastBurdenedAgent() to count active in_progress tasks per agent and assign to lowest count when assignee is empty/null. Verified even distribution. Commit: b1d7e86.
+<!-- openclaw-memory-promotion:memory:memory/2026-06-18.md:10:12 -->
+- System Status: Mission Control Dashboard: healthy (last visual check passed); Gateway: operational; No incidents reported [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-18.md:10-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-18.md:4:7 -->
+- Heartbeat Poll Response: Time: 01:20 GMT+1; Status: HEARTBEAT_OK; No urgent tasks pending; Last checks all completed today [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-18.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:4:6 -->
+- System Status: Gateway: rate-limit incidents active; Memory config: OpenAI API key missing; OpenRouter free model pool exhausted [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-19.md:4-6]
