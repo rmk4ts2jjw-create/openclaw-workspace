@@ -4,11 +4,11 @@
     "calendar": "2026-06-23T10:36:00+01:00",
     "mentions": "2026-06-23T10:36:00+01:00",
     "weather": "2026-06-23T10:36:00+01:00",
-    "tasks": "2026-06-23T12:59:51+01:00",
-    "incidents": "2026-06-23T12:59:51+01:00",
-    "circuitBreaker": "2026-06-23T12:59:51+01:00",
-    "system": "2026-06-23T12:45:00+01:00"
+    "tasks": "2026-06-24T00:41:00+01:00",
+    "incidents": "2026-06-24T00:41:00+01:00",
+    "circuitBreaker": "2026-06-23T14:26:00+01:00",
+    "system": "2026-06-24T00:41:00+01:00"
   },
-  "heartbeat": "2026-06-23T12:59:51+01:00",
-  "lastResult": "Heartbeat check at 2026-06-23T12:45:00+01:00: Gateway up, load avg {2.84 4.72 3.95}, disk 22%, uptime 4:23, MC OK."
+  "heartbeat": "2026-06-24T00:41:00+01:00",
+  "lastResult": "Heartbeat check at 2026-06-24T00:41:00+01:00: Gateway 200, MC 307, load 1.33/1.49/1.57, disk 23%, uptime 11h10m. All stable. Quiet hours active."
 }

@@ -1,5 +1,59 @@
 [
   {
+    "id": "task-inc-140-888a",
+    "title": "Fix: INC-140",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-140: Gateway log shows 89 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-140",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-23T13:02:10.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-140 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-23T13:02:10.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-139-515d",
+    "title": "Fix: INC-139",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-139: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Vite dev server crashed or port 3000 is occupied by stale process\nConfidence: 95% (2h SLA)\nFile: scripts/maintenance.sh\nFix: Step 3 in maintenance.sh handles this automatically. Manual: kill stale process on port 3000 and restart.",
+    "linkedIncidentId": "INC-139",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-23T11:45:51.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-139 (RCA: 95% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-23T11:45:51.000Z",
+    "rcaConfidence": 95
+  },
+  {
     "id": "task-inc-138-fd3f",
     "title": "Fix: INC-138",
     "assignee": "engineer",
@@ -321,6 +375,12 @@
         "action": "stalled_reset",
         "actor": "heartbeat",
         "details": "Ghost dispatch reset during quiet hours heartbeat - in_progress for >11 hours with currentStep=null and no activity updates"
+      },
+      {
+        "ts": "2026-06-23T04:54:37.258951+00:00",
+        "action": "stalled_cleared",
+        "actor": "stall-detector",
+        "details": "stalledAt cleared after 196 min in backlog \u2014 task eligible for re-dispatch"
       }
     ],
     "lastActivity": "2026-06-22T14:20:58.987544+00:00",
@@ -328,9 +388,8 @@
     "progress": 0,
     "lastUpdated": "2026-06-04T14:38:14.066Z",
     "startedAt": "2026-06-22T13:50:48.697294+00:00",
-    "stalledAt": "2026-06-23T01:38:19.416507+00:00",
+    "stalledAt": null,
     "dispatchCount": 4,
-    "wasStalled": true,
     "ghostDispatch": true
   },
   {

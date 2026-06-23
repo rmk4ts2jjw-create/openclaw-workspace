@@ -730,3 +730,537 @@
 [2026-06-23 07:16:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
 [2026-06-23 07:16:14] Failed to create mount point /Volumes/OpenClaw-WD
 [2026-06-23 07:16:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 07:26:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 07:26:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 07:26:14] Failed to create mount point /Volumes/Public
+[2026-06-23 07:26:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 07:26:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 07:26:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 07:36:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 07:36:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 07:36:15] Failed to create mount point /Volumes/Public
+[2026-06-23 07:36:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 07:36:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 07:36:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 07:46:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 07:46:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 07:46:15] Failed to create mount point /Volumes/Public
+[2026-06-23 07:46:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 07:46:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 07:46:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 07:56:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 07:56:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 07:56:15] Failed to create mount point /Volumes/Public
+[2026-06-23 07:56:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 07:56:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 07:56:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 08:06:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 08:06:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 08:06:15] Failed to create mount point /Volumes/Public
+[2026-06-23 08:06:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 08:06:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 08:06:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 08:16:52] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 08:16:52] Attempting to mount Public at /Volumes/Public
+[2026-06-23 09:51:23] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 09:51:23] Attempting to mount Public at /Volumes/Public
+[2026-06-23 09:51:23] Failed to create mount point /Volumes/Public
+[2026-06-23 09:51:23] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 09:51:23] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 09:51:23] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:01:27] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:01:27] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:01:27] Failed to create mount point /Volumes/Public
+[2026-06-23 10:01:27] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:01:27] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:01:27] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:11:27] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:11:27] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:11:27] Failed to create mount point /Volumes/Public
+[2026-06-23 10:11:27] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:11:27] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:11:27] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:21:27] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:21:27] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:21:27] Failed to create mount point /Volumes/Public
+[2026-06-23 10:21:27] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:21:27] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:21:27] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:31:27] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:31:27] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:31:27] Failed to create mount point /Volumes/Public
+[2026-06-23 10:31:27] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:31:27] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:31:27] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:41:28] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:41:28] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:41:28] Failed to create mount point /Volumes/Public
+[2026-06-23 10:41:28] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:41:28] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:41:28] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 10:51:28] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 10:51:28] Attempting to mount Public at /Volumes/Public
+[2026-06-23 10:51:28] Failed to create mount point /Volumes/Public
+[2026-06-23 10:51:28] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 10:51:28] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 10:51:28] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 11:01:28] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 11:01:28] Attempting to mount Public at /Volumes/Public
+[2026-06-23 11:01:28] Failed to create mount point /Volumes/Public
+[2026-06-23 11:01:28] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 11:01:28] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 11:01:28] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 11:11:28] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 11:11:28] Attempting to mount Public at /Volumes/Public
+[2026-06-23 11:11:28] Failed to create mount point /Volumes/Public
+[2026-06-23 11:11:28] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 11:11:28] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 11:11:28] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 11:21:43] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 11:21:43] Attempting to mount Public at /Volumes/Public
+[2026-06-23 11:21:43] Failed to create mount point /Volumes/Public
+[2026-06-23 11:21:43] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 11:21:43] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 11:21:43] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 11:52:52] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 11:52:52] Attempting to mount Public at /Volumes/Public
+[2026-06-23 11:52:52] Failed to create mount point /Volumes/Public
+[2026-06-23 11:52:52] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 11:52:52] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 11:52:52] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 12:03:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 12:03:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 12:03:12] Failed to create mount point /Volumes/Public
+[2026-06-23 12:03:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 12:03:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 12:03:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 12:47:03] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 12:47:03] Attempting to mount Public at /Volumes/Public
+[2026-06-23 12:47:03] Failed to create mount point /Volumes/Public
+[2026-06-23 12:47:03] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 12:47:03] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 12:47:03] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 12:57:03] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 12:57:03] Attempting to mount Public at /Volumes/Public
+[2026-06-23 12:57:03] Failed to create mount point /Volumes/Public
+[2026-06-23 12:57:03] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 12:57:03] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 12:57:03] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 13:07:46] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 13:07:46] Attempting to mount Public at /Volumes/Public
+[2026-06-23 13:07:46] Failed to create mount point /Volumes/Public
+[2026-06-23 13:07:46] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 13:32:07] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 13:32:07] Attempting to mount Public at /Volumes/Public
+[2026-06-23 13:32:07] Failed to create mount point /Volumes/Public
+[2026-06-23 13:32:07] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 13:32:07] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 13:32:07] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 13:42:09] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 13:42:09] Attempting to mount Public at /Volumes/Public
+[2026-06-23 13:42:09] Failed to create mount point /Volumes/Public
+[2026-06-23 13:42:09] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 13:42:09] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 13:42:09] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 13:52:09] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 13:52:09] Attempting to mount Public at /Volumes/Public
+[2026-06-23 13:52:09] Failed to create mount point /Volumes/Public
+[2026-06-23 13:52:09] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 13:52:09] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 13:52:09] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:02:09] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:02:09] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:02:09] Failed to create mount point /Volumes/Public
+[2026-06-23 14:02:09] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:02:09] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:02:09] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:12:11] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:12:11] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:12:11] Failed to create mount point /Volumes/Public
+[2026-06-23 14:12:11] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:12:11] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:12:11] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:22:11] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:22:11] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:22:11] Failed to create mount point /Volumes/Public
+[2026-06-23 14:22:11] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:22:11] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:22:11] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:32:11] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:32:11] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:32:11] Failed to create mount point /Volumes/Public
+[2026-06-23 14:32:11] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:32:11] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:32:11] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:42:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:42:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:42:12] Failed to create mount point /Volumes/Public
+[2026-06-23 14:42:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:42:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:42:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 14:52:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 14:52:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 14:52:12] Failed to create mount point /Volumes/Public
+[2026-06-23 14:52:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 14:52:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 14:52:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:02:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:02:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:02:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:02:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:02:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:02:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:12:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:12:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:12:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:12:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:12:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:12:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:22:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:22:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:22:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:22:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:22:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:22:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:32:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:32:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:32:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:32:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:32:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:32:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:42:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:42:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:42:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:42:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:42:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:42:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 15:52:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 15:52:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 15:52:12] Failed to create mount point /Volumes/Public
+[2026-06-23 15:52:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 15:52:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 15:52:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:02:12] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:02:12] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:02:12] Failed to create mount point /Volumes/Public
+[2026-06-23 16:02:12] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:02:12] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:02:12] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:12:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:12:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:12:13] Failed to create mount point /Volumes/Public
+[2026-06-23 16:12:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:12:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:12:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:22:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:22:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:22:13] Failed to create mount point /Volumes/Public
+[2026-06-23 16:22:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:22:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:22:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:32:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:32:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:32:13] Failed to create mount point /Volumes/Public
+[2026-06-23 16:32:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:32:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:32:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:42:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:42:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:42:13] Failed to create mount point /Volumes/Public
+[2026-06-23 16:42:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:42:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:42:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 16:52:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 16:52:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 16:52:13] Failed to create mount point /Volumes/Public
+[2026-06-23 16:52:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 16:52:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 16:52:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:02:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:02:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:02:13] Failed to create mount point /Volumes/Public
+[2026-06-23 17:02:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:02:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:02:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:12:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:12:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:12:13] Failed to create mount point /Volumes/Public
+[2026-06-23 17:12:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:12:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:12:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:22:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:22:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:22:13] Failed to create mount point /Volumes/Public
+[2026-06-23 17:22:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:22:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:22:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:32:13] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:32:13] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:32:13] Failed to create mount point /Volumes/Public
+[2026-06-23 17:32:13] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:32:13] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:32:13] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:42:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:42:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:42:14] Failed to create mount point /Volumes/Public
+[2026-06-23 17:42:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:42:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:42:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 17:52:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 17:52:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 17:52:14] Failed to create mount point /Volumes/Public
+[2026-06-23 17:52:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 17:52:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 17:52:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:02:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:02:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:02:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:02:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:02:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:02:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:12:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:12:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:12:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:12:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:12:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:12:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:22:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:22:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:22:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:22:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:22:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:22:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:32:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:32:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:32:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:32:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:32:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:32:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:42:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:42:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:42:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:42:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:42:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:42:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 18:52:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 18:52:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 18:52:14] Failed to create mount point /Volumes/Public
+[2026-06-23 18:52:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 18:52:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 18:52:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:02:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:02:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:02:14] Failed to create mount point /Volumes/Public
+[2026-06-23 19:02:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:02:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:02:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:12:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:12:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:12:14] Failed to create mount point /Volumes/Public
+[2026-06-23 19:12:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:12:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:12:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:22:14] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:22:14] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:22:14] Failed to create mount point /Volumes/Public
+[2026-06-23 19:22:14] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:22:14] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:22:14] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:32:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:32:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:32:15] Failed to create mount point /Volumes/Public
+[2026-06-23 19:32:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:32:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:32:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:42:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:42:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:42:15] Failed to create mount point /Volumes/Public
+[2026-06-23 19:42:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:42:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:42:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 19:52:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 19:52:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 19:52:15] Failed to create mount point /Volumes/Public
+[2026-06-23 19:52:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 19:52:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 19:52:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:02:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:02:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:02:15] Failed to create mount point /Volumes/Public
+[2026-06-23 20:02:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:02:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:02:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:12:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:12:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:12:15] Failed to create mount point /Volumes/Public
+[2026-06-23 20:12:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:12:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:12:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:22:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:22:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:22:15] Failed to create mount point /Volumes/Public
+[2026-06-23 20:22:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:22:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:22:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:32:15] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:32:15] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:32:15] Failed to create mount point /Volumes/Public
+[2026-06-23 20:32:15] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:32:15] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:32:15] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:42:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:42:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:42:16] Failed to create mount point /Volumes/Public
+[2026-06-23 20:42:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:42:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:42:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 20:52:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 20:52:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 20:52:16] Failed to create mount point /Volumes/Public
+[2026-06-23 20:52:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 20:52:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 20:52:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:02:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:02:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:02:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:02:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:02:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:02:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:12:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:12:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:12:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:12:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:12:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:12:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:22:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:22:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:22:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:22:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:22:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:22:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:32:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:32:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:32:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:32:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:32:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:32:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:42:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:42:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:42:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:42:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:42:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:42:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 21:52:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 21:52:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 21:52:16] Failed to create mount point /Volumes/Public
+[2026-06-23 21:52:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 21:52:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 21:52:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:02:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:02:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:02:16] Failed to create mount point /Volumes/Public
+[2026-06-23 22:02:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:02:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:02:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:12:16] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:12:16] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:12:16] Failed to create mount point /Volumes/Public
+[2026-06-23 22:12:16] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:12:16] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:12:16] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:22:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:22:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:22:17] Failed to create mount point /Volumes/Public
+[2026-06-23 22:22:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:22:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:22:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:32:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:32:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:32:17] Failed to create mount point /Volumes/Public
+[2026-06-23 22:32:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:32:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:32:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:42:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:42:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:42:17] Failed to create mount point /Volumes/Public
+[2026-06-23 22:42:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:42:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:42:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 22:52:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 22:52:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 22:52:17] Failed to create mount point /Volumes/Public
+[2026-06-23 22:52:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 22:52:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 22:52:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:02:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:02:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:02:17] Failed to create mount point /Volumes/Public
+[2026-06-23 23:02:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:02:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:02:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:12:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:12:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:12:17] Failed to create mount point /Volumes/Public
+[2026-06-23 23:12:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:12:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:12:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:22:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:22:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:22:17] Failed to create mount point /Volumes/Public
+[2026-06-23 23:22:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:22:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:22:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:32:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:32:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:32:17] Failed to create mount point /Volumes/Public
+[2026-06-23 23:32:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:32:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:32:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:42:17] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:42:17] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:42:17] Failed to create mount point /Volumes/Public
+[2026-06-23 23:42:17] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:42:17] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:42:17] ===== WD MyCloud Mount Script Completed =====
+[2026-06-23 23:52:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-23 23:52:18] Attempting to mount Public at /Volumes/Public
+[2026-06-23 23:52:18] Failed to create mount point /Volumes/Public
+[2026-06-23 23:52:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-23 23:52:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-23 23:52:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:02:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:02:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:02:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:02:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:02:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:02:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:12:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:12:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:12:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:12:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:12:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:12:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:22:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:22:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:22:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:22:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:22:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:22:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:32:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:32:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:32:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:32:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:32:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:32:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:42:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:42:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:42:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:42:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:42:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:42:18] ===== WD MyCloud Mount Script Completed =====
+[2026-06-24 00:52:18] ===== WD MyCloud Mount Script Started =====
+[2026-06-24 00:52:18] Attempting to mount Public at /Volumes/Public
+[2026-06-24 00:52:18] Failed to create mount point /Volumes/Public
+[2026-06-24 00:52:18] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-24 00:52:18] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-24 00:52:18] ===== WD MyCloud Mount Script Completed =====

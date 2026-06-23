@@ -297,3 +297,4 @@ mkdir: /Volumes/Public: Permission denied
 mkdir: /Volumes/Public: Permission denied
 mkdir: /Volumes/Public: Permission denied
 mkdir: /Volumes/Public: Permission denied
+/Users/spacemonkey/.openclaw/workspace/scripts/check-mounts.sh: line 52: 16702 Alarm clock: 14         ping -c 1 -t 3 "$MYCLOUD_HOST" > /dev/null 2>&1
