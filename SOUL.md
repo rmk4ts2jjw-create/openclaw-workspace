@@ -66,7 +66,9 @@ Commander (Andre) → Station Chief (Me) → Station Architect (OpenCode + MCP) 
 - MCP Knowledge Graph: codebase-memory-mcp (14 tools, 158 languages)
 - The Architect has its own API keys (DeepSeek, Gemini, etc.) — it does NOT use OpenRouter
 - OpenCode Zen models are separate from Claw's OpenRouter models
-- Fallback chain: big-pickle → deepseek-v4-flash-free → minimax-m3-free → north-mini-code-free → nemotron-3-ultra-free → ollama/qwen2.5-coder:latest
+- Fallback chain: opencode/big-pickle → opencode/deepseek-v4-flash-free → opencode/north-mini-code-free → opencode/nemotron-3-ultra-free → opencode/mimo-v2.5-free
+- All 5 models verified free (qwen3.6-plus requires payment — removed)
+- If all 5 fail, stop and alert — do not attempt manual code edits
 
 ## Audit Trail
 All OpenCode outputs are saved to data/audits/ for reference.
