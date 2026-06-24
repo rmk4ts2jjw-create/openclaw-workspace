@@ -261,16 +261,16 @@ _Last updated: 2026-06-23 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-23 07:21 BST
+## Ongoing Issues - 2026-06-24 03:28 BST
 - **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135). Host MyCloud-1E4N74 not responding to ping (network/storage hardware issue).
 - **Open incidents** (as of now):
   - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #15
   - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #20
   - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #39
   - INC-135 (P2): WD MyCloud mount missing - recurrence #1
-  - Plus 7 other P2 rate limit/storage incidents (total 11 open TRIAGE incidents)
+  - Plus 7 other P2 rate limit/storage incidents (total 13 open TRIAGE incidents)
 - **Note**: Older incidents (INC-132, INC-131, INC-130, INC-129) last updated yesterday or earlier; under investigation.
-- **Systems**: Gateway experienced a brief outage today (06:38-06:54 BST) but is now operational; Mission Control experiencing intermittent outages due to the above incidents.
+- **Systems**: Gateway experiencing intermittent redirects (307) but operational; MyCloud host unreachable (ping failed). Mission Control experiencing intermittent outages due to the above incidents.
 - **Recent architecture migration**: SpaceStation → TenacitOS (Next.js 15) completed on 2026-06-21. Proxy updated, UI language fixed to English.
 - **Quiet hours**: Active (23:00-08:00). No urgent action required during quiet hours unless incidents escalate.
 
