@@ -204,6 +204,10 @@ Let the Context Package inform your approach. If a lesson says "never do X," don
 - **Station Memory schema coupling:** Phase 1 queries the DB directly via `station-memory-tool.cjs`. If the schema changes, update the query. Phases 2/3 will wrap this behind an interface.
 
 
+## SpaceStation Port Rule
+
+SpaceStation runs on port 3000 (production) or 3001 (dev fallback). If port 3000 is in use, kill the zombie process with: `kill -9 $(lsof -ti:3000)`. Do NOT use a different port — always use 3000.
+
 ## SpaceStation Troubleshooting
 
 ### Broken CSS Site-Wide

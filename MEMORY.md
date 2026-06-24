@@ -55,6 +55,26 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 - **Agent Office** - The Visual Office page is a living, animated station with 4 rooms, agent sprites with idle/walking/working states, collaboration system, ambient effects. Spec at `memory/agent-office-spec.md`. UI currently uses hardcoded CREW data; live data integration pending.
 - **Serving** - `main` is the single branch. MC prod served on port 3000 by Vite dev server (proxy forwarded to TenacitOS dev on port 3002). GitHub repo: `spacemonkey-home/openclaw-missionscontrol`.
 
+## SpaceStation URLs
+
+- **Production**: http://localhost:3000 (npm start)
+- **Dev**: http://localhost:3001 (npm run dev, if 3000 is busy)
+- **Control UI**: http://localhost:18789
+- **Workboard API**: http://localhost:3000/api/workboard/cards
+- **MCP Graph UI**: http://localhost:9749 (codebase-memory-mcp --ui)
+- **OpenCode service**: background LaunchAgent on 127.0.0.1:4096
+
+### All Running Services
+
+| Service | URL | Status |
+|---------|-----|--------|
+| SpaceStation | http://localhost:3000 | ✅ 307 (redirect, healthy) |
+| OpenClaw Gateway | http://localhost:18789 | ✅ 200 |
+| MCP Graph UI | http://localhost:9749 | ✅ 200 |
+| OpenCode | http://127.0.0.1:4096 | ✅ 200 (LaunchAgent) |
+| Ollama | http://localhost:11434 | ✅ 200 |
+| PostgreSQL | — | ❌ not running locally |
+
 ## SpaceStation CSS Fix (2026-06-22)
 
 Shell.tsx had two hardcoded inline styles that broke the entire site CSS:
@@ -73,6 +93,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-22 08:32 BST**: Heartbeat poll - systems healthy, MyCloud mount unavailable since 02:43 BST on 2026-06-21, recurring gateway session errors (INC-134, INC-132, INC-130) monitored, no urgent action required.
 - **2026-06-22 11:44 BST**: Diagnostic Audit — Task Disappearance: tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created a new task, but file had been overwritten/wiped during API testing. Fix: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss. Code changes committed: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log, Delete button with confirm() dialog, DELETE /api/tasks endpoint, POST /api/tasks endpoint, Soft UI theme (Shell.tsx, ghost buttons, glass panels), AgentMatrix.tsx wireframe, test-canary.ts script.
 - **2026-06-22 15:58 BST**: Reminder: Consider enabling the **FreeRide** auto-switching for fallback models to mitigate rate-limit exhaustion (see tasks `task-inc-137*`, `task-inc-133*`, `task-inc-131*`).
+- **2026-06-24 06:02 BST**: Heartbeat poll - Gateway responding (200), MyCloud host pingable (4.7ms) but SMB ports unavailable, Mission Control responding (307), load 1.97, disk 23%. Mount alert triggered: MyCloud-1E4N74 unreachable for SMB at 06:02:11.
 
 ## Tools
 
@@ -234,7 +255,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-23 by Space Monkey_
+_Last updated: 2026-06-24 by Space Monkey_
 
 ## Insights from 2026-06-19
 
@@ -261,16 +282,24 @@ _Last updated: 2026-06-23 by Space Monkey_
 Reviewed memory files from the last 2 days:
 - dispatcher-log.md
 
-## Ongoing Issues - 2026-06-24 03:28 BST
-- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135). Host MyCloud-1E4N74 not responding to ping (network/storage hardware issue).
-- **Open incidents** (as of now):
-  - INC-136 (P1): Mission Control dashboard down (HTTP 000) - recurrence #15
-  - INC-134 (P1): Gateway session errors (11 session(s) with EmbeddedAttemptSessionTakeoverError) - recurrence #20
-  - INC-133 (P2): Rate limit exhaustion (21 429 errors) - recurrence #39
-  - INC-135 (P2): WD MyCloud mount missing - recurrence #1
-  - Plus 7 other P2 rate limit/storage incidents (total 13 open TRIAGE incidents)
-- **Note**: Older incidents (INC-132, INC-131, INC-130, INC-129) last updated yesterday or earlier; under investigation.
-- **Systems**: Gateway experiencing intermittent redirects (307) but operational; MyCloud host unreachable (ping failed). Mission Control experiencing intermittent outages due to the above incidents.
+## Ongoing Issues - 2026-06-24 06:21 BST
+- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135). Host MyCloud-1E4N74 responding to ping (192.168.68.61, ~4ms) but SMB ports 139/445 unreachable, preventing mount. Ongoing as of 2026-06-24 06:21 BST.
+- **Open incidents** (13 total):
+  - INC-141 (P1): Gateway session errors — 8 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #19
+  - INC-140 (P2): Rate limit exhaustion — 89 429 errors in gateway log - recurrence #31
+  - INC-139 (P1): Mission Control dashboard down — HTTP 000 - recurrence #30
+  - INC-138 (P1): Gateway session errors — 12 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #36
+  - INC-137 (P2): Rate limit exhaustion — 131 429 errors in gateway log - recurrence #39
+  - INC-136 (P1): Mission Control dashboard down — HTTP 000 - recurrence #33
+  - INC-135 (P2): WD MyCloud mount missing — backup storage unavailable - recurrence #1
+  - INC-134 (P1): Gateway session errors — 11 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #19
+  - INC-133 (P2): Rate limit exhaustion — 21 429 errors in gateway log - recurrence #20
+  - INC-132 (P1): Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #48
+  - INC-131 (P2): Rate limit exhaustion — 159 429 errors in gateway log - recurrence #46
+  - INC-130 (P1): Gateway session errors — 13 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #48
+  - INC-129 (P2): Rate limit exhaustion — 30 429 errors in gateway log - recurrence #47
+- **Note**: All incidents listed above are current; under investigation.
+- **Systems**: Gateway responding (200) but experiencing intermittent redirects (307); MyCloud host pingable but SMB service unavailable; Mission Control responding (307) experiencing intermittent outages.
 - **Recent architecture migration**: SpaceStation → TenacitOS (Next.js 15) completed on 2026-06-21. Proxy updated, UI language fixed to English.
 - **Quiet hours**: Active (23:00-08:00). No urgent action required during quiet hours unless incidents escalate.
 
@@ -297,3 +326,4 @@ Reviewed memory files from the last 2 days:
 
 - **2026-06-23 00:00 BST**: Systems stable but incidents persist: MyCloud mount missing (INC-135), gateway session errors (INC-134/132/130), rate limit exhaustion (INC-133/131), and Mission Control dashboard issues (INC-139/136). All monitored via heartbeat checks.
 - **2026-06-24 03:05 BST**: Heartbeat monitoring shows stable Gateway (200) and Mission Control (307) responses. Load averages 1.5-2.0, disk 23% (~41GB free), uptime ~13h. 12 TRIAGE + 5 BACKLOG tasks, 91 done, 0 in-progress. 13 open TRIAGE incidents. Quiet hours active (23:00-08:00). Weather: Clear, 24°C.
+- **2026-06-24 05:45 BST**: Heartbeat poll - Gateway responding (200), Mission Control responding (307), MyCloud host unreachable (ping failed), ongoing gateway session errors and rate limit exhaustion incidents monitored.
