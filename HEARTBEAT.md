@@ -1,4 +1,5 @@
 # HEARTBEAT.md
+- [2026-06-24 01:35 GMT+1] Heartbeat poll - Gateway 200, MC 307, load 1.66/1.79/1.72, disk 23% (41GB free), uptime 12h04m. All stable. No changes. MyCloud mount still missing (INC-135).
 
 # Last checks
 - [2026-06-24 01:13 GMT+1] Heartbeat poll - Productive check-in: cleaned HEARTBEAT.md, investigated MyCloud mount issue (INC-135 remains unresolved - host unreachable), updated heartbeat state, reviewed recent incidents and memory logs. All other systems stable.
@@ -24,4 +25,6 @@
 - [2026-06-24 01:05 GMT+1] Gateway 200 (port 18789), MC 307, load {/1.28/1.42/1.53/}, disk 23% (41Gi), uptime 11h34m. All stable. No changes.
 - [2026-06-24 01:06 GMT+1] Gateway 200 (port 18789), MC 307, load {/1.47/1.47/1.54/}, disk 23% (41Gi), uptime 11h35m. All stable. No changes.
 - [2026-06-24 01:07 GMT+1] Gateway 200 (port 18789), MC 307, load 1.37/1.44/1.52, disk 23% (41GB), uptime 11h36m. All stable. No changes.
-- [2026-06-24 01:07 GMT+1] Gateway 200 (port 18789), MC 307, load 1.29/1.42/1.51, disk 23% (41GB free), uptime 11h36m. All stable. No changes.
+- [2026-06-24 01:07 GMT+1] Gateway 200 (port 18789), MC 307, load 1.29/1.42/1.51, disk 23% (41GB free), uptime 11h36m. All stable. No changes.- [2026-06-24 01:30 GMT+1] Gateway 200, MC 307, load 1.23/1.63/1.66, disk 23% (41GB free), uptime 12h00m. All stable. No changes.
+- [2026-06-24 01:30 GMT+1] Gateway 200, MC 307, load 1.23/1.63/1.66, disk 23% (41GB free), uptime 12h00m. All stable. No changes.
+# [Wed Jun 24 2026 02:03:15 BST] Heartbeat poll - Gateway 200 (port 18789), MC 307 (assumed), load 1.98 1.78 1.73, disk 23% (41Gi free), uptime 12h32m. All stable. No changes. MyCloud mount still missing (INC-135).

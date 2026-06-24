@@ -1,16 +1,17 @@
 {
+  "heartbeat": "2026-06-24T02:03:00+01:00",
+  "lastResult": "**Heartbeat poll** at Wed Jun 24 2026 02:03:00 BST. Gateway 200 (port 18789), MC 307, load 1.98 1.78 1.73, disk 23% (41Gi free), uptime 12h32m, 2 users. All stable. No changes. MyCloud mount still missing (INC-135).",
   "lastChecks": {
     "email": "2026-06-24T00:17:40.495Z",
-    "calendar": "2026-06-23T10:36:00+01:00",
-    "mentions": "2026-06-23T10:36:00+01:00",
-    "weather": "2026-06-23T10:36:00+01:00",
+    "calendar": "2026-06-24T01:30:00+01:00",
+    "mentions": "2026-06-24T01:30:00+01:00",
+    "weather": "2026-06-24T01:30:00+01:00",
     "tasks": "2026-06-24T00:55:00+01:00",
     "incidents": "2026-06-24T00:17:40.495Z",
     "circuitBreaker": "2026-06-24T00:17:40.495Z",
-    "system": "2026-06-24T00:55:00+01:00",
+    "system": "2026-06-24T02:03:00+01:00",
     "stallDetection": "2026-06-24T00:17:40.495Z"
   },
-  "heartbeat": "2026-06-24T00:17:40.495Z",
-  "lastResult": "Heartbeat check at 2026-06-24T00:55:00+01:00: Gateway 200, MC 307, load 1.80/1.70/1.66, disk 23%, uptime 11h25m. All stable. Quiet hours active.",
-  "lastHeartbeat": 1782260260
-}
+  "lastHeartbeat": 1782263380,
+  "calendar": "2026-06-24T01:30:00.0Z",
+  "system": "2026-06-24T02:03:00+01:00
