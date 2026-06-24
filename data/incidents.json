@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-23T20:04:11.000Z",
-    "lastActivity": "2026-06-23T23:35:31.000Z",
-    "summary": "Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #8)",
+    "lastActivity": "2026-06-24T03:06:34.000Z",
+    "summary": "Detected 18 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #15)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -56,6 +56,41 @@
         "ts": "2026-06-23T23:35:31.000Z",
         "message": "Recurrence #8: Auto-detected by gateway-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:05:43.000Z",
+        "message": "Recurrence #9: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:35:54.000Z",
+        "message": "Recurrence #10: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:06:05.000Z",
+        "message": "Recurrence #11: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:36:08.000Z",
+        "message": "Recurrence #12: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:06:11.000Z",
+        "message": "Recurrence #13: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:36:22.000Z",
+        "message": "Recurrence #14: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T03:06:34.000Z",
+        "message": "Recurrence #15: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -89,7 +124,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 8,
+    "_recurrence": 15,
     "_fingerprint": "d4cdd3353300"
   },
   {
@@ -101,8 +136,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-23T13:02:10.000Z",
-    "lastActivity": "2026-06-23T23:35:32.000Z",
-    "summary": "Gateway log shows 221 rate limit (429) errors. Free model pool may be exhausted. (recurrence #20)",
+    "lastActivity": "2026-06-24T03:06:34.000Z",
+    "summary": "Gateway log shows 354 rate limit (429) errors. Free model pool may be exhausted. (recurrence #27)",
     "tags": [
       "rate-limit",
       "429",
@@ -209,6 +244,41 @@
         "ts": "2026-06-23T23:35:32.000Z",
         "message": "Recurrence #20: Auto-detected by rate-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:05:43.000Z",
+        "message": "Recurrence #21: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:35:54.000Z",
+        "message": "Recurrence #22: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:06:05.000Z",
+        "message": "Recurrence #23: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:36:08.000Z",
+        "message": "Recurrence #24: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:06:11.000Z",
+        "message": "Recurrence #25: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:36:22.000Z",
+        "message": "Recurrence #26: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T03:06:34.000Z",
+        "message": "Recurrence #27: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -235,7 +305,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 20,
+    "_recurrence": 27,
     "_fingerprint": "4b06701bd5fa"
   },
   {
@@ -247,8 +317,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-23T11:45:51.000Z",
-    "lastActivity": "2026-06-23T23:35:31.000Z",
-    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #19)",
+    "lastActivity": "2026-06-24T03:06:33.000Z",
+    "summary": "Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied. (recurrence #26)",
     "tags": [
       "mission-control",
       "outage",
@@ -350,6 +420,41 @@
         "ts": "2026-06-23T23:35:31.000Z",
         "message": "Recurrence #19: Auto-detected by health-check (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:05:42.000Z",
+        "message": "Recurrence #20: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T00:35:54.000Z",
+        "message": "Recurrence #21: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:06:05.000Z",
+        "message": "Recurrence #22: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T01:36:08.000Z",
+        "message": "Recurrence #23: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:06:11.000Z",
+        "message": "Recurrence #24: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T02:36:22.000Z",
+        "message": "Recurrence #25: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
+      },
+      {
+        "ts": "2026-06-24T03:06:33.000Z",
+        "message": "Recurrence #26: Auto-detected by health-check (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -383,7 +488,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 19,
+    "_recurrence": 26,
     "_fingerprint": "c80360dd0ae6"
   },
   {
