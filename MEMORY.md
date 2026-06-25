@@ -303,31 +303,12 @@ Reviewed memory files from the last 2 days:
 - **Recent architecture migration**: SpaceStation → TenacitOS (Next.js 15) completed on 2026-06-21. Proxy updated, UI language fixed to English.
 - **Quiet hours**: Active (23:00-08:00). No urgent action required during quiet hours unless incidents escalate.
 
-## Promoted From Short-Term Memory (2026-06-24)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:13:14 -->
-- Actions Taken: Heartbeat check at 10:53 BST: processed cron task, updated heartbeat-state.json; Reviewed FreeRide skill — next step: apply to refresh fallback chain and reduce rate-limit exposure [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-19.md:13-14]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:18:20 -->
-- Additional Actions: **FreeRide Rate-Limit Handler Applied**: Applied pending skill proposal `freeride-rate-limit-handler-20260619-6b29df0c13` to fix rate-limit handling for OpenRouter free models; **System Recovery**: Gateway restarted successfully, FreeRide now operational with improved fallback chains; **Heartbeat Poll**: Completed heartbeat cycle at $(date -u +"%H:%M UTC") [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-19.md:18-20]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:30:33 -->
-- Completed: Cron job cleanup (2 dead crons removed, FreeRide timeout fixed, Invalid Date fixed); Phase 5.1: Dashboard live data verified (hooks already wired); Phase 5.2: Task dispatch fixed (DashboardRefresher added to tasks page); Phase 5.3: Dashboard panel alignment fixed (grid classes) [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-19.md:30-33]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-19.md:26:29 -->
-- Completed: Phase 4: Skills Maintenance (night-shift removed, vite-tanstack-debug archived); Pre-Phase 5 health check (all clean except /api/incidents/status 500); Fixed /api/incidents/status 500 — @tanstack/react-start import path changed; Synced tasks.json from Workboard (122 tasks restored) [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-19.md:26-29]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:20:23 -->
-- Heartbeat Check - 02:00 BST: Reviewed daily logs for 2026-06-19 and 2026-06-20; Checked open incidents: 9 open (all TRIAGE) - session errors and rate limit exhaustion; Updated heartbeat-state.json with current incident and task check times; Reviewed backlog tasks: several backlog tasks have high dispatchCount (≥3) awaiting dispatch [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-20.md:20-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:12:15 -->
-- Heartbeat Check - 01:45 BST: Checked email, calendar, mentions (last checked ~5h ago); Updated heartbeat state with new timestamps; Reviewed git status: many system changes, skipped commit; Appended to daily log [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-20.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:32:35 -->
-- P1 Incident Notification - 02:16 BST: Sent P1 incident notification for INC-130 (Gateway session errors) to command; Incident severity: P1, Status: TRIAGE, Last activity: 00:51:01Z; Notification includes recommended actions for investigation and mitigation; System appears stable per 02:00 BST check, but critical incident requires awareness [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-20.md:32-35]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:24:26 -->
-- Heartbeat Check - 02:00 BST: No new 429 errors found in gateway/logs (checked mc-dashboard-error.log, maintenance.log, gateway-self-heal.log); FreeRide skill applied yesterday appears to be mitigating new rate limit incidents; System appears stable; no immediate action required [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-20.md:24-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:5:8 -->
-- Heartbeat Check - 01:00 BST: Weather: Shangton: 🌫️ +19°C (checked at 01:00 BST); System: Late night hour (01:00 BST), no urgent checks needed; Heartbeat state updated with weather check timestamp; No action required - returning HEARTBEAT_OK [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-20.md:5-8]
-
-- **2026-06-23 00:00 BST**: Systems stable but incidents persist: MyCloud mount missing (INC-135), gateway session errors (INC-134/132/130), rate limit exhaustion (INC-133/131), and Mission Control dashboard issues (INC-139/136). All monitored via heartbeat checks.
-- **2026-06-24 03:05 BST**: Heartbeat monitoring shows stable Gateway (200) and Mission Control (307) responses. Load averages 1.5-2.0, disk 23% (~41GB free), uptime ~13h. 12 TRIAGE + 5 BACKLOG tasks, 91 done, 0 in-progress. 13 open TRIAGE incidents. Quiet hours active (23:00-08:00). Weather: Clear, 24°C.
-- **2026-06-24 05:45 BST**: Heartbeat poll - Gateway responding (200), Mission Control responding (307), MyCloud host unreachable (ping failed), ongoing gateway session errors and rate limit exhaustion incidents monitored.
-
-
 ## Memory maintenance check - 2026-06-25T01:26:03.184682
 Checked 2 daily log files. No specific actions taken.
+
+## Promoted From Short-Term Memory (2026-06-25)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:16:16 -->
+- Heartbeat Check - 01:45 BST: No urgent findings [score=0.818 recalls=0 avg=0.620 source=memory/2026-06-20.md:16-16]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:5:8 -->
+- Heartbeat Check - 08:51 BST: Weather: London: ☀️ +19°C (assumed from earlier); MyCloud host: MyCloud-1E4N74.local (192.168.68.61) responding to ping.; Mount point /Volumes/Public does not exist (unavailable since 02:43 BST).; Systems: Gateway (localhost:18789) returning 200 OK, Mission Control Dashboard (localhost:3000) returning 200 OK. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:5-8]
