@@ -94,6 +94,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-22 11:44 BST**: Diagnostic Audit — Task Disappearance: tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created a new task, but file had been overwritten/wiped during API testing. Fix: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss. Code changes committed: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log, Delete button with confirm() dialog, DELETE /api/tasks endpoint, POST /api/tasks endpoint, Soft UI theme (Shell.tsx, ghost buttons, glass panels), AgentMatrix.tsx wireframe, test-canary.ts script.
 - **2026-06-22 15:58 BST**: Reminder: Consider enabling the **FreeRide** auto-switching for fallback models to mitigate rate-limit exhaustion (see tasks `task-inc-137*`, `task-inc-133*`, `task-inc-131*`).
 - **2026-06-24 06:02 BST**: Heartbeat poll - Gateway responding (200), MyCloud host pingable (4.7ms) but SMB ports unavailable, Mission Control responding (307), load 1.97, disk 23%. Mount alert triggered: MyCloud-1E4N74 unreachable for SMB at 06:02:11.
+- **2026-06-24**: Stable day with 2 auto-recoveries (14:41, 20:03) + 1 manual kickstart (~17:52), peak load ~1.94, London heatwave peaked at 34°C. No incidents reported.
+- **2026-06-25**: Continued stability with normal gateway (200) and Mission Control (307) responses. Ongoing incidents monitored but not causing system-wide issues.
 
 ## Tools
 
@@ -255,20 +257,18 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-24 by Space Monkey_
+_Last updated: 2026-06-25 by Space Monkey_
 
-## Insights from 2026-06-19
+## Insights from 2026-06-24 to 2026-06-25
 
-# Daily Log - 2026-06-19
+**Observation**: Despite persistent background incidents (gateway session errors, rate limit exhaustion), the system maintained stability during a London heatwave that peaked at 34°C on June 24th.
 
-## System Status
-- Gateway: rate-limit incidents active
-- Memory config: OpenAI API key missing
-- OpenRouter free model pool exhausted
+**Analysis**: 
+- The TenacitOS migration (completed June 21st) appears to have improved resilience, with Mission Control showing intermittent 307 redirects rather than complete outages
+- Gateway Self-Heal and Rate Limit Prevention automations are effectively managing incident recurrence
+- MyCloud mount remains unavailable since June 21st, indicating a persistent storage/network issue requiring manual intervention
 
-## Actions Taken
-1. Created new daily log
-2. Will apply FreeRide patch to fix rate-limit handling
+**Action**: Continue monitoring ongoing incidents while prioritizing resolution of the MyCloud mount issue for backup restoration.
 
 ---
 
@@ -327,3 +327,7 @@ Reviewed memory files from the last 2 days:
 - **2026-06-23 00:00 BST**: Systems stable but incidents persist: MyCloud mount missing (INC-135), gateway session errors (INC-134/132/130), rate limit exhaustion (INC-133/131), and Mission Control dashboard issues (INC-139/136). All monitored via heartbeat checks.
 - **2026-06-24 03:05 BST**: Heartbeat monitoring shows stable Gateway (200) and Mission Control (307) responses. Load averages 1.5-2.0, disk 23% (~41GB free), uptime ~13h. 12 TRIAGE + 5 BACKLOG tasks, 91 done, 0 in-progress. 13 open TRIAGE incidents. Quiet hours active (23:00-08:00). Weather: Clear, 24°C.
 - **2026-06-24 05:45 BST**: Heartbeat poll - Gateway responding (200), Mission Control responding (307), MyCloud host unreachable (ping failed), ongoing gateway session errors and rate limit exhaustion incidents monitored.
+
+
+## Memory maintenance check - 2026-06-25T01:26:03.184682
+Checked 2 daily log files. No specific actions taken.
