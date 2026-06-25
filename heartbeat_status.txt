@@ -1,1 +1,1 @@
-All systems nominal. Gateway 307, MC responsive, MyCloud ping 4ms, load 1.79, disk 26%. Backlog of 5 tasks and 10 triage incidents. No new incidents. Rate‑limit 429 errors may benefit from FreeRide fallback.
+Gateway responding (200), MyCloud host ping reachable (4.7ms) but SMB service unavailable (ports 139/445 blocked), Mission Control responding (307), load 1.97, disk 23%. Backlog offlinelert: MyCloud-1E4N74 unreachable for SMB mount at 2026-06-24 06:02:11.

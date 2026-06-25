@@ -292,3 +292,13 @@
 23:00:02 Overall: ✅ ALL SYSTEMS NOMINAL
 23:00:05 Telegram sent: 📡 DAILY SITREP — 2026-06-23 | 0 active · 0 awaiting review · 23% disk · ✅ ALL SYSTEMS NOMINAL
 23:00:05 === Daily Station Check DONE ===
+23:00:02 === Daily Station Check START ===
+23:00:02 Load: { 1.33 1.34 1.34 }
+23:00:02 Disk: 12Gi used, 38Gi free, 24% of 228Gi
+23:00:02 Uptime: up 1 day,  9:29, 2 users, load averages: 1.33 1.34 1.34
+23:00:02 Git: no .git in /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard
+23:00:02 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:02 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:02 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:07 Telegram sent: 📡 DAILY SITREP — 2026-06-24 | 0 active · 0 awaiting review · 24% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:07 === Daily Station Check DONE ===

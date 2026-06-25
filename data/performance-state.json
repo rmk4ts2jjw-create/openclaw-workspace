@@ -1,15 +1,5 @@
 {
   "agents": {
-    "engineer": {
-      "total_tasks": 1,
-      "done": 1,
-      "failed": 0,
-      "in_progress": 0,
-      "avg_task_hours": 0,
-      "failure_rate": 0.0,
-      "success_rate": 1.0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
-    },
     "lifesupport": {
       "total_tasks": 1,
       "done": 1,
@@ -18,7 +8,17 @@
       "avg_task_hours": 0,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
+    },
+    "engineer": {
+      "total_tasks": 1,
+      "done": 1,
+      "failed": 0,
+      "in_progress": 0,
+      "avg_task_hours": 0,
+      "failure_rate": 0.0,
+      "success_rate": 1.0,
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     },
     "monkey": {
       "total_tasks": 5,
@@ -28,7 +28,7 @@
       "avg_task_hours": 1.0,
       "failure_rate": 0.0,
       "success_rate": 1.0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     },
     "archivist": {
       "total_tasks": 0,
@@ -38,7 +38,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     },
     "lion": {
       "total_tasks": 0,
@@ -48,7 +48,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     },
     "owl": {
       "total_tasks": 0,
@@ -58,7 +58,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     },
     "fox": {
       "total_tasks": 0,
@@ -68,7 +68,7 @@
       "avg_task_hours": 0,
       "failure_rate": 0,
       "success_rate": 0,
-      "analyzed_at": "2026-06-24T03:06:33.605263+00:00"
+      "analyzed_at": "2026-06-25T00:43:13.458198+00:00"
     }
   },
   "tune_tasks": [],

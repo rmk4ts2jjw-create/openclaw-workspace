@@ -44,7 +44,7 @@ MESSAGES=""
 # Weather check
 WEATHER_INTERVAL=21600 # 6 hours
 LAST_WEATHER=$(echo "$STATE" | jq -r '.lastChecks.weather // empty' 2>/dev/null)
-if [ -z "$LAST_WEATHER" ] || ! [[ "$LAST_WEATHER" =~ ^[0-9]+$ ]] || [ $((NOW - LAST_WEATHER)) -gt $WEATHER_INTERVAL ]; then
+if [ -z "$LAST_WEATHER" ] || [ $((NOW - LAST_WEATHER)) -gt $WEATHER_INTERVAL ]; then
     # Try to get location
     LOCATION=$(curl -s ipinfo.io/loc 2>/dev/null)
     if [ -n "$LOCATION" ]; then
@@ -60,7 +60,7 @@ fi
 # Memory maintenance
 MEMORY_INTERVAL=172800 # 2 days
 LAST_MEMORY=$(echo "$STATE" | jq -r '.lastChecks.memory_maintenance // empty' 2>/dev/null)
-if [ -z "$LAST_MEMORY" ] || ! [[ "$LAST_MEMORY" =~ ^[0-9]+$ ]] || [ $((NOW - LAST_MEMORY)) -gt $MEMORY_INTERVAL ]; then
+if [ -z "$LAST_MEMORY" ] || [ $((NOW - LAST_MEMORY)) -gt $MEMORY_INTERVAL ]; then
     # Read yesterday and today's memory files
     YESTERDAY=$(date -v-1d +%Y-%m-%d)
     TODAY=$(date +%Y-%m-%d)
@@ -73,7 +73,7 @@ fi
 # Git check and commit
 GIT_INTERVAL=86400 # 1 day
 LAST_GIT=$(echo "$STATE" | jq -r '.lastChecks.git_commit // empty' 2>/dev/null)
-if [ -z "$LAST_GIT" ] || ! [[ "$LAST_GIT" =~ ^[0-9]+$ ]] || [ $((NOW - LAST_GIT)) -gt $GIT_INTERVAL ]; then
+if [ -z "$LAST_GIT" ] || [ $((NOW - LAST_GIT)) -gt $GIT_INTERVAL ]; then
     # Check for changes in allowed files
     cd "$WORKSPACE"
     CHANGES=$(git status --porcelain | grep -E '^(memory/|MEMORY.md|AGENTS.md|TOOLS.md|IDENTITY.md|USER.md)' || true)

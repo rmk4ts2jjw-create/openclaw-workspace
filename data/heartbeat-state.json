@@ -1,1 +1,10 @@
-{"lastCheck": "1782173580", "checks": {"circuitBreaker": "closed", "stallDetection": "no_in_progress_tasks", "systemHealth": "healthy"}}
+{
+  "lastCheck": "1782276360",
+  "checks": {
+    "circuitBreaker": "closed",
+    "stallDetection": "no_in_progress_tasks",
+    "systemHealth": "healthy",
+    "cloudMount": "unreachable",
+    "gatewaySessions": "error"
+  }
+}

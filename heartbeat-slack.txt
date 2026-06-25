@@ -1,0 +1,17 @@
+Heartbeat poll received:
+
+✅ **System status**: Stable
+
+- Gateway: 200 OK
+- Mission Control: 307
+- Load: 1.16/1.33/1.40
+- Disk: 25% (36Gi free)
+- Uptime: 21h17m
+- MyCloud ping: 3.4 ms
+- Jobs: All 13 cron healthy, 0 errors
+
+**No new incidents, incidents or tasks since last check.**
+
+Next check: scheduled at 12:00.
+
+All systems nominal. No immediate action needed.

@@ -6389,3 +6389,1478 @@ Persisting failed: Another write batch or compaction is already active (Only a s
 
 ✓ Starting...
 ✓ Ready in 193ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 278ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 191ms
+ GET /api/health 200 in 5.1s (compile: 88ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/health 200 in 140ms (compile: 3ms, proxy.ts: 4ms, render: 133ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 285ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 196ms
+ GET /login?from=%2F 200 in 961ms (compile: 917ms, proxy.ts: 1983µs, render: 41ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 371ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 193ms
+ GET /login?from=%2F 200 in 154ms (compile: 109ms, proxy.ts: 2ms, render: 42ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 258ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 196ms
+ GET /login?from=%2F 200 in 133ms (compile: 87ms, proxy.ts: 3ms, render: 43ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 285ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 195ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 294ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 197ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 202ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 195ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 277ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 201ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 179ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 210ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 199ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 206ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 196ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 281ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 198ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 184ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 197ms
+ GET /api/workboard/cards 502 in 172ms (compile: 146ms, proxy.ts: 5ms, render: 22ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 256ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 198ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 185ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 193ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 286ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 204ms
+ GET /api/notifications 200 in 135ms (compile: 120ms, proxy.ts: 3ms, render: 12ms)
+ GET /api/system/stats 200 in 164ms (compile: 103ms, proxy.ts: 7ms, render: 54ms)
+ GET /api/workboard/cards 502 in 182ms (compile: 98ms, proxy.ts: 7ms, render: 76ms)
+ GET /incidents 200 in 482ms (compile: 469ms, proxy.ts: 4ms, render: 9ms)
+ GET /incidents 200 in 39ms (compile: 5ms, proxy.ts: 4ms, render: 30ms)
+ GET /incidents 200 in 43ms (compile: 837µs, proxy.ts: 822µs, render: 41ms)
+ GET /api/notifications 200 in 12ms (compile: 2ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/incidents 200 in 46ms (compile: 39ms, proxy.ts: 3ms, render: 4ms)
+ GET /api/system/stats 200 in 84ms (compile: 4ms, proxy.ts: 3ms, render: 77ms)
+ GET /tasks 200 in 207ms (compile: 200ms, proxy.ts: 3ms, render: 5ms)
+ GET /api/workboard/cards 502 in 72ms (compile: 2ms, proxy.ts: 4ms, render: 66ms)
+ GET /api/workboard/cards 502 in 97ms (compile: 1404µs, proxy.ts: 4ms, render: 91ms)
+ GET /api/health 200 in 1988ms (compile: 6ms, proxy.ts: 3ms, render: 1979ms)
+ GET /api/system/stats 200 in 71ms (compile: 5ms, proxy.ts: 5ms, render: 62ms)
+ GET /api/health 200 in 207ms (compile: 10ms, proxy.ts: 4ms, render: 193ms)
+ GET /api/system/stats 200 in 68ms (compile: 3ms, proxy.ts: 4ms, render: 61ms)
+ GET /api/notifications 200 in 30ms (compile: 5ms, proxy.ts: 4ms, render: 21ms)
+ GET /api/system/stats 200 in 28ms (compile: 818µs, proxy.ts: 891µs, render: 27ms)
+ GET /api/workboard/cards 502 in 48ms (compile: 3ms, proxy.ts: 4ms, render: 41ms)
+ GET /api/health 200 in 5.1s (compile: 11ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/system/stats 200 in 50ms (compile: 3ms, proxy.ts: 4ms, render: 43ms)
+ GET /api/health 200 in 148ms (compile: 4ms, proxy.ts: 4ms, render: 141ms)
+ GET /api/system/stats 200 in 67ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 20ms (compile: 5ms, proxy.ts: 4ms, render: 11ms)
+ GET /api/system/stats 200 in 45ms (compile: 1828µs, proxy.ts: 3ms, render: 40ms)
+ GET /api/workboard/cards 502 in 50ms (compile: 3ms, proxy.ts: 4ms, render: 43ms)
+ GET /api/health 200 in 5.1s (compile: 10ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 4ms, render: 53ms)
+ GET /api/health 200 in 148ms (compile: 4ms, proxy.ts: 6ms, render: 138ms)
+ GET /api/system/stats 200 in 65ms (compile: 10ms, proxy.ts: 4ms, render: 51ms)
+ GET /api/notifications 200 in 22ms (compile: 4ms, proxy.ts: 6ms, render: 12ms)
+ GET /api/system/stats 200 in 41ms (compile: 3ms, proxy.ts: 4ms, render: 34ms)
+ GET /api/workboard/cards 502 in 59ms (compile: 4ms, proxy.ts: 6ms, render: 49ms)
+ GET /api/health 200 in 5.1s (compile: 10ms, proxy.ts: 5ms, render: 5.1s)
+ GET /api/system/stats 200 in 64ms (compile: 4ms, proxy.ts: 4ms, render: 57ms)
+ GET /api/health 200 in 141ms (compile: 3ms, proxy.ts: 4ms, render: 133ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 4ms, render: 59ms)
+ GET /api/notifications 200 in 27ms (compile: 4ms, proxy.ts: 8ms, render: 15ms)
+ GET /api/system/stats 200 in 48ms (compile: 2ms, proxy.ts: 2ms, render: 43ms)
+ GET /api/workboard/cards 502 in 88ms (compile: 3ms, proxy.ts: 3ms, render: 82ms)
+ GET /api/health 200 in 5.1s (compile: 10ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/system/stats 200 in 213ms (compile: 1772µs, proxy.ts: 2ms, render: 208ms)
+ GET /api/health 200 in 220ms (compile: 11ms, proxy.ts: 1531µs, render: 208ms)
+ GET /api/system/stats 200 in 176ms (compile: 1800µs, proxy.ts: 2ms, render: 172ms)
+ GET /api/notifications 200 in 124ms (compile: 25ms, proxy.ts: 2ms, render: 97ms)
+ GET /api/system/stats 200 in 170ms (compile: 22ms, proxy.ts: 810µs, render: 147ms)
+ GET /api/workboard/cards 502 in 111ms (compile: 64ms, proxy.ts: 2ms, render: 44ms)
+ GET /api/health 200 in 5.1s (compile: 24ms, proxy.ts: 42ms, render: 5.1s)
+ GET /api/system/stats 200 in 222ms (compile: 23ms, proxy.ts: 1959µs, render: 197ms)
+ GET /api/health 200 in 151ms (compile: 4ms, proxy.ts: 3ms, render: 144ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 51ms (compile: 2ms, proxy.ts: 3ms, render: 47ms)
+ GET /api/workboard/cards 502 in 101ms (compile: 4ms, proxy.ts: 3ms, render: 93ms)
+ GET /api/health 200 in 5.0s (compile: 735µs, proxy.ts: 4ms, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 139ms (compile: 3ms, proxy.ts: 3ms, render: 132ms)
+ GET /api/system/stats 200 in 77ms (compile: 3ms, proxy.ts: 3ms, render: 71ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 4ms, render: 7ms)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/workboard/cards 502 in 46ms (compile: 3ms, proxy.ts: 3ms, render: 39ms)
+ GET /api/health 200 in 5.0s (compile: 674µs, proxy.ts: 896µs, render: 5.0s)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 4ms, render: 59ms)
+ GET /api/health 200 in 136ms (compile: 3ms, proxy.ts: 3ms, render: 129ms)
+ GET /api/system/stats 200 in 67ms (compile: 3ms, proxy.ts: 4ms, render: 60ms)
+ GET /api/notifications 200 in 10ms (compile: 2ms, proxy.ts: 3ms, render: 5ms)
+ GET /api/system/stats 200 in 46ms (compile: 1759µs, proxy.ts: 1861µs, render: 43ms)
+ GET /api/workboard/cards 502 in 18ms (compile: 2ms, proxy.ts: 2ms, render: 14ms)
+ GET /api/health 200 in 5.0s (compile: 559µs, proxy.ts: 658µs, render: 5.0s)
+ GET /api/system/stats 200 in 126ms (compile: 1681µs, proxy.ts: 2ms, render: 122ms)
+ GET /api/health 200 in 133ms (compile: 1917µs, proxy.ts: 1862µs, render: 129ms)
+ GET /api/system/stats 200 in 199ms (compile: 1399µs, proxy.ts: 1862µs, render: 196ms)
+ GET /api/notifications 200 in 7ms (compile: 1362µs, proxy.ts: 1439µs, render: 5ms)
+ GET /api/system/stats 200 in 147ms (compile: 1545µs, proxy.ts: 2ms, render: 144ms)
+ GET /api/workboard/cards 502 in 19ms (compile: 1791µs, proxy.ts: 1878µs, render: 15ms)
+ GET /api/health 200 in 5.0s (compile: 533µs, proxy.ts: 689µs, render: 5.0s)
+ GET /api/system/stats 200 in 128ms (compile: 1755µs, proxy.ts: 2ms, render: 124ms)
+ GET /api/health 200 in 130ms (compile: 1342µs, proxy.ts: 1347µs, render: 127ms)
+ GET /api/system/stats 200 in 91ms (compile: 2ms, proxy.ts: 2ms, render: 86ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 377ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 262ms
+ GET /api/workboard/cards 500 in 153ms (compile: 71ms, proxy.ts: 57ms, render: 26ms)
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 208ms
+ GET /api/workboard/cards 500 in 110ms (compile: 40ms, proxy.ts: 54ms, render: 16ms)
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 186ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 181ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 185ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 197ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 182ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 250ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 251ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 201ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 304ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 206ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 292ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 201ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 299ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 204ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 197ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 208ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 291ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 194ms
+ GET /incidents 200 in 293ms (compile: 172ms, proxy.ts: 8ms, render: 113ms)
+ GET /api/notifications 200 in 59ms (compile: 45ms, proxy.ts: 1211µs, render: 13ms)
+ GET /api/incidents 200 in 76ms (compile: 23ms, proxy.ts: 1503µs, render: 52ms)
+ GET /api/system/stats 200 in 116ms (compile: 35ms, proxy.ts: 1498µs, render: 79ms)
+ GET /tasks 200 in 55ms (compile: 37ms, proxy.ts: 5ms, render: 14ms)
+ GET /api/workboard/cards 500 in 73ms (compile: 30ms, proxy.ts: 19ms, render: 24ms)
+ GET /api/workboard/cards 500 in 74ms (compile: 25ms, proxy.ts: 3ms, render: 46ms)
+ GET /system 200 in 314ms (compile: 306ms, proxy.ts: 2ms, render: 5ms)
+ GET /api/system/monitor 200 in 56ms (compile: 47ms, proxy.ts: 5ms, render: 4ms)
+ GET /api/system/monitor 200 in 74ms (compile: 49ms, proxy.ts: 5ms, render: 20ms)
+ GET /files 200 in 194ms (compile: 188ms, proxy.ts: 1923µs, render: 4ms)
+ GET /api/files/workspaces 200 in 78ms (compile: 72ms, proxy.ts: 3ms, render: 3ms)
+ GET /api/files/workspaces 200 in 96ms (compile: 73ms, proxy.ts: 3ms, render: 20ms)
+ GET /api/browse?workspace=workspace&path= 200 in 46ms (compile: 41ms, proxy.ts: 3ms, render: 2ms)
+ GET /api/browse?workspace=workspace&path= 200 in 68ms (compile: 40ms, proxy.ts: 3ms, render: 25ms)
+ GET /api/health 200 in 5.1s (compile: 48ms, proxy.ts: 1678µs, render: 5.1s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 5ms, render: 58ms)
+ GET /memory 200 in 171ms (compile: 163ms, proxy.ts: 4ms, render: 4ms)
+ GET /api/files/workspaces 200 in 24ms (compile: 19ms, proxy.ts: 937µs, render: 3ms)
+ GET /api/files/workspaces 200 in 47ms (compile: 21ms, proxy.ts: 848µs, render: 25ms)
+ GET /api/files?workspace=workspace 200 in 43ms (compile: 40ms, proxy.ts: 872µs, render: 2ms)
+ GET /api/files?workspace=workspace&path=MEMORY.md 200 in 5ms (compile: 1569µs, proxy.ts: 1333µs, render: 1743µs)
+ GET /incidents 200 in 18ms (compile: 3ms, proxy.ts: 3ms, render: 12ms)
+ GET /api/incidents 200 in 13ms (compile: 1517µs, proxy.ts: 5ms, render: 6ms)
+ GET /api/incidents 200 in 36ms (compile: 4ms, proxy.ts: 5ms, render: 28ms)
+ GET /api/health 200 in 160ms (compile: 4ms, proxy.ts: 4ms, render: 152ms)
+ GET /office 200 in 424ms (compile: 416ms, proxy.ts: 3ms, render: 5ms)
+ GET /api/notifications 200 in 22ms (compile: 2ms, proxy.ts: 1894µs, render: 18ms)
+ GET /api/incidents 200 in 61ms (compile: 7ms, proxy.ts: 1835µs, render: 52ms)
+ GET /api/notifications 200 in 71ms (compile: 36ms, proxy.ts: 5ms, render: 30ms)
+ GET /api/incidents 200 in 109ms (compile: 9ms, proxy.ts: 34ms, render: 66ms)
+ GET /api/system/stats 200 in 156ms (compile: 35ms, proxy.ts: 4ms, render: 118ms)
+ GET /api/system/stats 200 in 87ms (compile: 3ms, proxy.ts: 11ms, render: 73ms)
+ GET /api/health 200 in 5.0s (compile: 29ms, proxy.ts: 9ms, render: 5.0s)
+ GET /api/health 200 in 5.2s (compile: 35ms, proxy.ts: 4ms, render: 5.2s)
+ GET /api/system/stats 200 in 67ms (compile: 4ms, proxy.ts: 4ms, render: 59ms)
+ GET /api/health 200 in 140ms (compile: 3ms, proxy.ts: 3ms, render: 134ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 22ms (compile: 5ms, proxy.ts: 3ms, render: 13ms)
+ GET /api/incidents 200 in 72ms (compile: 11ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/system/stats 200 in 58ms (compile: 26ms, proxy.ts: 4ms, render: 28ms)
+ GET /api/health 200 in 5.1s (compile: 59ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 68ms (compile: 3ms, proxy.ts: 3ms, render: 61ms)
+ GET /api/health 200 in 146ms (compile: 3ms, proxy.ts: 3ms, render: 140ms)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/notifications 200 in 24ms (compile: 4ms, proxy.ts: 4ms, render: 16ms)
+ GET /api/incidents 200 in 71ms (compile: 11ms, proxy.ts: 4ms, render: 56ms)
+ GET /api/system/stats 200 in 97ms (compile: 3ms, proxy.ts: 47ms, render: 48ms)
+ GET /api/health 200 in 5.1s (compile: 46ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/health 200 in 139ms (compile: 3ms, proxy.ts: 3ms, render: 133ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 1864µs, render: 57ms)
+ GET /api/notifications 200 in 21ms (compile: 5ms, proxy.ts: 3ms, render: 12ms)
+ GET /api/incidents 200 in 72ms (compile: 11ms, proxy.ts: 3ms, render: 58ms)
+ GET /api/system/stats 200 in 60ms (compile: 30ms, proxy.ts: 4ms, render: 25ms)
+ GET /api/health 200 in 5.1s (compile: 60ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 68ms (compile: 5ms, proxy.ts: 8ms, render: 54ms)
+ GET /api/health 200 in 151ms (compile: 4ms, proxy.ts: 5ms, render: 141ms)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/notifications 200 in 21ms (compile: 4ms, proxy.ts: 3ms, render: 14ms)
+ GET /api/incidents 200 in 62ms (compile: 10ms, proxy.ts: 3ms, render: 48ms)
+ GET /api/system/stats 200 in 52ms (compile: 1068µs, proxy.ts: 25ms, render: 26ms)
+ GET /api/health 200 in 5.1s (compile: 23ms, proxy.ts: 42ms, render: 5.0s)
+ GET /api/system/stats 200 in 67ms (compile: 5ms, proxy.ts: 8ms, render: 54ms)
+ GET /api/health 200 in 140ms (compile: 4ms, proxy.ts: 4ms, render: 132ms)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 23ms (compile: 4ms, proxy.ts: 4ms, render: 15ms)
+ GET /api/incidents 200 in 64ms (compile: 11ms, proxy.ts: 4ms, render: 49ms)
+ GET /api/system/stats 200 in 55ms (compile: 1087µs, proxy.ts: 26ms, render: 28ms)
+ GET /api/health 200 in 5.1s (compile: 25ms, proxy.ts: 40ms, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 151ms (compile: 3ms, proxy.ts: 3ms, render: 145ms)
+ GET /api/system/stats 200 in 68ms (compile: 4ms, proxy.ts: 3ms, render: 61ms)
+ GET /api/notifications 200 in 18ms (compile: 6ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/incidents 200 in 67ms (compile: 59ms, proxy.ts: 2ms, render: 5ms)
+ GET /api/system/stats 200 in 67ms (compile: 3ms, proxy.ts: 3ms, render: 62ms)
+ GET /api/health 200 in 5.0s (compile: 624µs, proxy.ts: 602µs, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 150ms (compile: 1409µs, proxy.ts: 1307µs, render: 147ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 23ms (compile: 14ms, proxy.ts: 2ms, render: 6ms)
+ GET /api/incidents 200 in 64ms (compile: 5ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/system/stats 200 in 69ms (compile: 3ms, proxy.ts: 3ms, render: 63ms)
+ GET /api/health 200 in 5.0s (compile: 3ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/health 200 in 163ms (compile: 4ms, proxy.ts: 3ms, render: 156ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 2ms, render: 60ms)
+ GET /api/notifications 200 in 22ms (compile: 12ms, proxy.ts: 2ms, render: 7ms)
+ GET /api/incidents 200 in 76ms (compile: 5ms, proxy.ts: 3ms, render: 68ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 388ms
+ GET /login?from=%2F 200 in 192ms (compile: 137ms, proxy.ts: 2ms, render: 53ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 328ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 224ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 211ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 225ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 309ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 231ms
+ GET /incidents 200 in 361ms (compile: 278ms, proxy.ts: 7ms, render: 77ms)
+ GET /api/notifications 200 in 92ms (compile: 53ms, proxy.ts: 26ms, render: 14ms)
+ GET /api/incidents 200 in 117ms (compile: 42ms, proxy.ts: 25ms, render: 50ms)
+ GET /api/system/stats 200 in 177ms (compile: 61ms, proxy.ts: 25ms, render: 91ms)
+ GET /api/health 200 in 5.2s (compile: 29ms, proxy.ts: 24ms, render: 5.1s)
+ GET /api/notifications 200 in 32ms (compile: 16ms, proxy.ts: 6ms, render: 10ms)
+ GET /api/incidents 200 in 33ms (compile: 25ms, proxy.ts: 4ms, render: 4ms)
+ GET /api/system/stats 200 in 103ms (compile: 7ms, proxy.ts: 6ms, render: 90ms)
+ GET /api/health 200 in 5.1s (compile: 12ms, proxy.ts: 6ms, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 145ms (compile: 3ms, proxy.ts: 3ms, render: 139ms)
+ GET /api/system/stats 200 in 72ms (compile: 3ms, proxy.ts: 4ms, render: 65ms)
+ GET /api/notifications 200 in 44ms (compile: 12ms, proxy.ts: 4ms, render: 28ms)
+ GET /api/incidents 200 in 80ms (compile: 19ms, proxy.ts: 6ms, render: 55ms)
+ GET /api/system/stats 200 in 37ms (compile: 1550µs, proxy.ts: 3ms, render: 33ms)
+ GET /api/health 200 in 5.1s (compile: 25ms, proxy.ts: 7ms, render: 5.1s)
+ GET /api/system/stats 200 in 69ms (compile: 4ms, proxy.ts: 3ms, render: 62ms)
+ GET /api/health 200 in 163ms (compile: 5ms, proxy.ts: 3ms, render: 155ms)
+ GET /api/system/stats 200 in 64ms (compile: 4ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 30ms (compile: 8ms, proxy.ts: 4ms, render: 18ms)
+ GET /api/incidents 200 in 77ms (compile: 13ms, proxy.ts: 5ms, render: 59ms)
+ GET /api/health 200 in 5.0s (compile: 28ms, proxy.ts: 1691µs, render: 5.0s)
+ GET /api/system/stats 200 in 71ms (compile: 2ms, proxy.ts: 3ms, render: 66ms)
+ GET /api/health 200 in 150ms (compile: 4ms, proxy.ts: 3ms, render: 143ms)
+ GET /tasks 200 in 63ms (compile: 41ms, proxy.ts: 4ms, render: 18ms)
+ GET /api/workboard/cards 500 in 56ms (compile: 27ms, proxy.ts: 3ms, render: 26ms)
+ GET /api/workboard/cards 500 in 101ms (compile: 29ms, proxy.ts: 22ms, render: 50ms)
+ GET / 200 in 371ms (compile: 362ms, proxy.ts: 5ms, render: 5ms)
+ GET /api/activities?limit=5&sort=newest 500 in 80ms (compile: 60ms, proxy.ts: 1371µs, render: 18ms)
+ GET /api/agents 200 in 130ms (compile: 66ms, proxy.ts: 44ms, render: 20ms)
+ GET /api/activities/stats 500 in 150ms (compile: 73ms, proxy.ts: 44ms, render: 33ms)
+ GET /api/incidents 200 in 125ms (compile: 52ms, proxy.ts: 3ms, render: 70ms)
+ GET /api/tasks 200 in 148ms (compile: 79ms, proxy.ts: 4ms, render: 66ms)
+ GET /api/activities?limit=5&sort=newest 500 in 56ms (compile: 3ms, proxy.ts: 45ms, render: 8ms)
+ GET /api/activities/stats 500 in 76ms (compile: 5ms, proxy.ts: 45ms, render: 26ms)
+ GET /api/weather 200 in 95ms (compile: 2ms, proxy.ts: 45ms, render: 48ms)
+ GET /api/weather 200 in 286ms (compile: 76ms, proxy.ts: 1465µs, render: 209ms)
+ GET /api/agents 200 in 91ms (compile: 9ms, proxy.ts: 704µs, render: 81ms)
+ GET /api/tasks 200 in 114ms (compile: 7ms, proxy.ts: 622µs, render: 107ms)
+ GET /api/incidents 200 in 27ms (compile: 20ms, proxy.ts: 4ms, render: 3ms)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 4ms, render: 9ms)
+ GET /api/system/stats 200 in 36ms (compile: 1125µs, proxy.ts: 1199µs, render: 34ms)
+ GET /api/health 200 in 5.0s (compile: 2ms, proxy.ts: 1435µs, render: 5.0s)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 4ms, render: 53ms)
+ GET /api/health 200 in 144ms (compile: 3ms, proxy.ts: 3ms, render: 138ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 4ms, render: 54ms)
+ GET /api/health 200 in 5.0s (compile: 3ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 4ms, render: 8ms)
+ GET /api/system/stats 200 in 64ms (compile: 5ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 139ms (compile: 8ms, proxy.ts: 2ms, render: 128ms)
+ GET /api/notifications 200 in 21ms (compile: 4ms, proxy.ts: 3ms, render: 14ms)
+ GET /api/system/stats 200 in 85ms (compile: 10ms, proxy.ts: 3ms, render: 72ms)
+ GET /api/health 200 in 5.1s (compile: 1982µs, proxy.ts: 42ms, render: 5.0s)
+ GET /api/notifications 200 in 33ms (compile: 8ms, proxy.ts: 3ms, render: 21ms)
+ GET /api/system/stats 200 in 93ms (compile: 21ms, proxy.ts: 3ms, render: 69ms)
+ GET /api/health 200 in 5.1s (compile: 16ms, proxy.ts: 3ms, render: 5.1s)
+ GET /api/notifications 200 in 40ms (compile: 9ms, proxy.ts: 8ms, render: 23ms)
+ GET /api/system/stats 200 in 94ms (compile: 20ms, proxy.ts: 6ms, render: 68ms)
+ GET /api/health 200 in 5.1s (compile: 25ms, proxy.ts: 6ms, render: 5.0s)
+ GET /api/notifications 200 in 31ms (compile: 8ms, proxy.ts: 3ms, render: 20ms)
+ GET /api/system/stats 200 in 87ms (compile: 20ms, proxy.ts: 3ms, render: 63ms)
+ GET /api/health 200 in 5.1s (compile: 16ms, proxy.ts: 3ms, render: 5.1s)
+ GET /api/notifications 200 in 49ms (compile: 5ms, proxy.ts: 3ms, render: 41ms)
+ GET /api/system/stats 200 in 105ms (compile: 29ms, proxy.ts: 3ms, render: 73ms)
+ GET /api/health 200 in 5.1s (compile: 38ms, proxy.ts: 4ms, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 4ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 142ms (compile: 6ms, proxy.ts: 8ms, render: 128ms)
+ GET /api/system/stats 200 in 65ms (compile: 5ms, proxy.ts: 6ms, render: 55ms)
+ GET /api/notifications 200 in 22ms (compile: 4ms, proxy.ts: 4ms, render: 14ms)
+ GET /api/system/stats 200 in 71ms (compile: 1930µs, proxy.ts: 42ms, render: 27ms)
+ GET /system 200 in 104ms (compile: 83ms, proxy.ts: 3ms, render: 18ms)
+ GET /api/system/monitor 200 in 36ms (compile: 33ms, proxy.ts: 1199µs, render: 3ms)
+ GET /api/system/monitor 200 in 55ms (compile: 34ms, proxy.ts: 1126µs, render: 20ms)
+ GET /api/health 200 in 5.1s (compile: 11ms, proxy.ts: 3ms, render: 5.1s)
+ GET /api/system/stats 200 in 42ms (compile: 1839µs, proxy.ts: 2ms, render: 38ms)
+ GET /api/health 200 in 140ms (compile: 3ms, proxy.ts: 3ms, render: 134ms)
+ GET /api/system/stats 200 in 62ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ POST /api/system/services 500 in 108ms (compile: 94ms, proxy.ts: 7ms, render: 7ms)
+ GET /incidents 200 in 24ms (compile: 6ms, proxy.ts: 4ms, render: 14ms)
+ GET /api/incidents 200 in 9ms (compile: 1261µs, proxy.ts: 1047µs, render: 6ms)
+ GET /api/incidents 200 in 32ms (compile: 4ms, proxy.ts: 988µs, render: 27ms)
+ GET /tasks 200 in 21ms (compile: 5ms, proxy.ts: 3ms, render: 13ms)
+ GET /api/workboard/cards 500 in 14ms (compile: 2ms, proxy.ts: 887µs, render: 10ms)
+ GET /api/workboard/cards 500 in 45ms (compile: 1267µs, proxy.ts: 1117µs, render: 42ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 383ms
+ GET /api/notifications 200 in 133ms (compile: 85ms, proxy.ts: 11ms, render: 37ms)
+ GET /api/workboard/cards 500 in 154ms (compile: 105ms, proxy.ts: 11ms, render: 38ms)
+ GET /api/system/stats 200 in 181ms (compile: 101ms, proxy.ts: 11ms, render: 70ms)
+ GET /api/health 200 in 5.2s (compile: 117ms, proxy.ts: 11ms, render: 5.0s)
+ GET /api/notifications 200 in 37ms (compile: 18ms, proxy.ts: 9ms, render: 10ms)
+ GET /api/workboard/cards 500 in 62ms (compile: 23ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/system/stats 200 in 95ms (compile: 15ms, proxy.ts: 10ms, render: 70ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 13ms, render: 5.0s)
+ GET /api/notifications 200 in 30ms (compile: 14ms, proxy.ts: 7ms, render: 8ms)
+ GET /api/workboard/cards 500 in 55ms (compile: 19ms, proxy.ts: 7ms, render: 29ms)
+ GET /api/system/stats 200 in 89ms (compile: 12ms, proxy.ts: 7ms, render: 70ms)
+ GET /api/health 200 in 5.1s (compile: 7ms, proxy.ts: 8ms, render: 5.0s)
+ GET /api/notifications 200 in 38ms (compile: 17ms, proxy.ts: 10ms, render: 12ms)
+ GET /api/workboard/cards 500 in 60ms (compile: 21ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/system/stats 200 in 92ms (compile: 24ms, proxy.ts: 9ms, render: 59ms)
+ GET /api/health 200 in 5.1s (compile: 10ms, proxy.ts: 12ms, render: 5.0s)
+ GET /api/notifications 200 in 30ms (compile: 12ms, proxy.ts: 4ms, render: 15ms)
+ GET /api/workboard/cards 500 in 30ms (compile: 19ms, proxy.ts: 5ms, render: 7ms)
+ GET /api/system/stats 200 in 65ms (compile: 21ms, proxy.ts: 6ms, render: 39ms)
+ GET /api/health 200 in 5.1s (compile: 5ms, proxy.ts: 5ms, render: 5.0s)
+ GET /api/notifications 200 in 35ms (compile: 14ms, proxy.ts: 10ms, render: 11ms)
+ GET /api/workboard/cards 500 in 60ms (compile: 21ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/system/stats 200 in 88ms (compile: 20ms, proxy.ts: 9ms, render: 59ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 13ms, render: 5.0s)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 295ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 213ms
+ GET /api/notifications 200 in 135ms (compile: 60ms, proxy.ts: 44ms, render: 31ms)
+ GET /api/workboard/cards 500 in 157ms (compile: 79ms, proxy.ts: 44ms, render: 34ms)
+ GET /api/system/stats 200 in 181ms (compile: 72ms, proxy.ts: 44ms, render: 64ms)
+ GET /api/health 200 in 5.2s (compile: 85ms, proxy.ts: 55ms, render: 5.0s)
+ GET /api/notifications 200 in 34ms (compile: 17ms, proxy.ts: 9ms, render: 8ms)
+ GET /api/workboard/cards 500 in 60ms (compile: 21ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/system/stats 200 in 90ms (compile: 15ms, proxy.ts: 9ms, render: 65ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 12ms, render: 5.0s)
+ GET /api/notifications 200 in 35ms (compile: 14ms, proxy.ts: 10ms, render: 11ms)
+ GET /api/workboard/cards 500 in 58ms (compile: 20ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/system/stats 200 in 89ms (compile: 19ms, proxy.ts: 9ms, render: 61ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 12ms, render: 5.0s)
+ GET /api/notifications 200 in 32ms (compile: 16ms, proxy.ts: 6ms, render: 9ms)
+ GET /api/workboard/cards 500 in 56ms (compile: 19ms, proxy.ts: 7ms, render: 30ms)
+ GET /api/system/stats 200 in 89ms (compile: 11ms, proxy.ts: 7ms, render: 72ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 7ms, render: 5.0s)
+ GET /api/notifications 200 in 27ms (compile: 13ms, proxy.ts: 5ms, render: 9ms)
+ GET /api/workboard/cards 500 in 33ms (compile: 2ms, proxy.ts: 26ms, render: 5ms)
+ GET /api/system/stats 200 in 90ms (compile: 10ms, proxy.ts: 5ms, render: 75ms)
+ GET /api/health 200 in 5.1s (compile: 5ms, proxy.ts: 6ms, render: 5.1s)
+ GET /api/notifications 200 in 28ms (compile: 10ms, proxy.ts: 5ms, render: 13ms)
+ GET /api/workboard/cards 500 in 35ms (compile: 2ms, proxy.ts: 28ms, render: 5ms)
+ GET /api/system/stats 200 in 92ms (compile: 17ms, proxy.ts: 5ms, render: 70ms)
+ GET /api/health 200 in 5.1s (compile: 6ms, proxy.ts: 6ms, render: 5.1s)
+ GET /api/notifications 200 in 29ms (compile: 11ms, proxy.ts: 3ms, render: 15ms)
+ GET /api/workboard/cards 500 in 47ms (compile: 31ms, proxy.ts: 10ms, render: 6ms)
+ GET /api/system/stats 200 in 88ms (compile: 19ms, proxy.ts: 3ms, render: 65ms)
+ GET /api/health 200 in 5.1s (compile: 7ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/notifications 200 in 26ms (compile: 12ms, proxy.ts: 6ms, render: 8ms)
+ GET /api/workboard/cards 500 in 41ms (compile: 3ms, proxy.ts: 33ms, render: 5ms)
+ GET /api/system/stats 200 in 95ms (compile: 4ms, proxy.ts: 5ms, render: 86ms)
+ GET /api/health 200 in 5.1s (compile: 11ms, proxy.ts: 6ms, render: 5.1s)
+ GET /api/notifications 200 in 36ms (compile: 16ms, proxy.ts: 8ms, render: 12ms)
+ GET /api/workboard/cards 500 in 62ms (compile: 21ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/system/stats 200 in 94ms (compile: 23ms, proxy.ts: 8ms, render: 63ms)
+ GET /api/health 200 in 5.1s (compile: 9ms, proxy.ts: 8ms, render: 5.1s)
+ GET /api/notifications 200 in 28ms (compile: 14ms, proxy.ts: 4ms, render: 10ms)
+ GET /api/workboard/cards 500 in 37ms (compile: 2ms, proxy.ts: 30ms, render: 5ms)
+ GET /api/system/stats 200 in 95ms (compile: 11ms, proxy.ts: 4ms, render: 80ms)
+ GET /api/health 200 in 5.1s (compile: 5ms, proxy.ts: 5ms, render: 5.1s)
+ GET /api/notifications 200 in 44ms (compile: 20ms, proxy.ts: 7ms, render: 17ms)
+ GET /api/workboard/cards 500 in 72ms (compile: 32ms, proxy.ts: 7ms, render: 32ms)
+ GET /api/system/stats 200 in 104ms (compile: 30ms, proxy.ts: 8ms, render: 66ms)
+ GET /api/health 200 in 5.1s (compile: 10ms, proxy.ts: 9ms, render: 5.1s)
+ GET /api/notifications 200 in 28ms (compile: 15ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/workboard/cards 500 in 10ms (compile: 1671µs, proxy.ts: 3ms, render: 6ms)
+ GET /api/system/stats 200 in 106ms (compile: 37ms, proxy.ts: 22ms, render: 47ms)
+ GET /api/health 200 in 5.1s (compile: 6ms, proxy.ts: 4ms, render: 5.1s)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 259ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 200ms
+ GET /api/notifications 200 in 132ms (compile: 112ms, proxy.ts: 10ms, render: 10ms)
+ GET /api/workboard/cards 500 in 151ms (compile: 97ms, proxy.ts: 10ms, render: 44ms)
+ GET /api/system/stats 200 in 176ms (compile: 104ms, proxy.ts: 10ms, render: 61ms)
+ GET /api/health 200 in 5.2s (compile: 91ms, proxy.ts: 11ms, render: 5.1s)
+ GET /api/notifications 200 in 25ms (compile: 13ms, proxy.ts: 7ms, render: 6ms)
+ GET /api/workboard/cards 500 in 21ms (compile: 2ms, proxy.ts: 14ms, render: 4ms)
+ GET /api/system/stats 200 in 72ms (compile: 11ms, proxy.ts: 7ms, render: 54ms)
+ GET /api/health 200 in 5.0s (compile: 6ms, proxy.ts: 7ms, render: 5.0s)
+ GET /api/notifications 200 in 28ms (compile: 12ms, proxy.ts: 5ms, render: 11ms)
+ GET /api/workboard/cards 500 in 9ms (compile: 1240µs, proxy.ts: 3ms, render: 5ms)
+ GET /api/system/stats 200 in 87ms (compile: 16ms, proxy.ts: 3ms, render: 67ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 5ms, render: 5.1s)
+ GET /api/notifications 200 in 29ms (compile: 13ms, proxy.ts: 5ms, render: 11ms)
+ GET /api/workboard/cards 500 in 9ms (compile: 1265µs, proxy.ts: 3ms, render: 5ms)
+ GET /api/system/stats 200 in 88ms (compile: 16ms, proxy.ts: 4ms, render: 68ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 5ms, render: 5.1s)
+ GET /api/notifications 200 in 29ms (compile: 12ms, proxy.ts: 3ms, render: 13ms)
+ GET /api/workboard/cards 500 in 56ms (compile: 19ms, proxy.ts: 4ms, render: 32ms)
+ GET /api/system/stats 200 in 89ms (compile: 18ms, proxy.ts: 3ms, render: 68ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/notifications 200 in 35ms (compile: 14ms, proxy.ts: 10ms, render: 11ms)
+ GET /api/workboard/cards 500 in 60ms (compile: 21ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/system/stats 200 in 88ms (compile: 19ms, proxy.ts: 9ms, render: 59ms)
+ GET /api/health 200 in 5.1s (compile: 8ms, proxy.ts: 12ms, render: 5.0s)
+ GET /api/notifications 200 in 23ms (compile: 3ms, proxy.ts: 5ms, render: 15ms)
+ GET /api/workboard/cards 500 in 36ms (compile: 3ms, proxy.ts: 28ms, render: 5ms)
+ GET /api/system/stats 200 in 88ms (compile: 15ms, proxy.ts: 5ms, render: 68ms)
+ GET /api/health 200 in 5.1s (compile: 12ms, proxy.ts: 5ms, render: 5.0s)
+ GET /api/notifications 200 in 43ms (compile: 20ms, proxy.ts: 7ms, render: 15ms)
+ GET /api/workboard/cards 500 in 70ms (compile: 26ms, proxy.ts: 8ms, render: 36ms)
+ GET /api/system/stats 200 in 101ms (compile: 14ms, proxy.ts: 7ms, render: 79ms)
+ GET /api/health 200 in 5.1s (compile: 9ms, proxy.ts: 7ms, render: 5.1s)
+ GET /api/notifications 200 in 49ms (compile: 26ms, proxy.ts: 11ms, render: 12ms)
+ GET /api/workboard/cards 500 in 71ms (compile: 31ms, proxy.ts: 9ms, render: 31ms)
+ GET /api/system/stats 200 in 97ms (compile: 19ms, proxy.ts: 10ms, render: 69ms)
+ GET /api/health 200 in 5.1s (compile: 11ms, proxy.ts: 13ms, render: 5.1s)
+ GET /api/notifications 200 in 42ms (compile: 23ms, proxy.ts: 3ms, render: 16ms)
+ GET /api/workboard/cards 500 in 42ms (compile: 22ms, proxy.ts: 14ms, render: 7ms)
+ GET /api/system/stats 200 in 90ms (compile: 32ms, proxy.ts: 4ms, render: 53ms)
+ GET /api/health 200 in 5.1s (compile: 12ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/notifications 200 in 30ms (compile: 18ms, proxy.ts: 5ms, render: 7ms)
+ GET /api/workboard/cards 500 in 58ms (compile: 15ms, proxy.ts: 5ms, render: 38ms)
+ GET /api/system/stats 200 in 92ms (compile: 12ms, proxy.ts: 5ms, render: 75ms)
+ GET /api/health 200 in 5.1s (compile: 6ms, proxy.ts: 5ms, render: 5.1s)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 306ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 201ms
+ GET /api/notifications 200 in 127ms (compile: 71ms, proxy.ts: 45ms, render: 11ms)
+ GET /api/workboard/cards 500 in 151ms (compile: 64ms, proxy.ts: 44ms, render: 43ms)
+ GET /api/system/stats 200 in 178ms (compile: 79ms, proxy.ts: 45ms, render: 54ms)
+ GET /api/health 200 in 5.2s (compile: 55ms, proxy.ts: 56ms, render: 5.1s)
+ GET /api/notifications 200 in 31ms (compile: 6ms, proxy.ts: 7ms, render: 18ms)
+ GET /api/workboard/cards 500 in 61ms (compile: 19ms, proxy.ts: 8ms, render: 34ms)
+ GET /api/system/stats 200 in 91ms (compile: 17ms, proxy.ts: 7ms, render: 68ms)
+ GET /api/health 200 in 5.1s (compile: 15ms, proxy.ts: 7ms, render: 5.0s)
+ GET /api/notifications 200 in 15ms (compile: 4ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/workboard/cards 500 in 64ms (compile: 12ms, proxy.ts: 6ms, render: 46ms)
+ GET /api/system/stats 200 in 94ms (compile: 14ms, proxy.ts: 6ms, render: 73ms)
+ GET /api/health 200 in 5.1s (compile: 7ms, proxy.ts: 6ms, render: 5.1s)
+ GET /api/notifications 200 in 17ms (compile: 7ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 80ms (compile: 3ms, proxy.ts: 3ms, render: 74ms)
+ GET /system 200 in 184ms (compile: 169ms, proxy.ts: 3ms, render: 12ms)
+ GET /system 200 in 32ms (compile: 4ms, proxy.ts: 4ms, render: 24ms)
+ GET /system 200 in 56ms (compile: 974µs, proxy.ts: 874µs, render: 54ms)
+ GET /api/notifications 200 in 18ms (compile: 4ms, proxy.ts: 7ms, render: 8ms)
+ GET /api/system/monitor 200 in 52ms (compile: 40ms, proxy.ts: 7ms, render: 5ms)
+ GET /api/system/stats 200 in 101ms (compile: 5ms, proxy.ts: 7ms, render: 89ms)
+ GET /files 200 in 74ms (compile: 60ms, proxy.ts: 1959µs, render: 12ms)
+ GET /api/files/workspaces 200 in 60ms (compile: 54ms, proxy.ts: 4ms, render: 3ms)
+ GET /api/files/workspaces 200 in 78ms (compile: 26ms, proxy.ts: 49ms, render: 2ms)
+ GET /api/browse?workspace=workspace&path= 200 in 40ms (compile: 34ms, proxy.ts: 4ms, render: 3ms)
+ GET /api/browse?workspace=workspace&path= 200 in 74ms (compile: 32ms, proxy.ts: 4ms, render: 38ms)
+ GET /api/health 200 in 3.2s (compile: 6ms, proxy.ts: 8ms, render: 3.2s)
+ GET /api/browse?workspace=workspace-attestations&path= 200 in 6ms (compile: 1600µs, proxy.ts: 1721µs, render: 3ms)
+ GET /api/browse?workspace=workspace-attestations&path=a91316ca363339484dac9a783986f81e88bd66f4063c3b35ed919e295a497380.attested&content=true 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/browse?workspace=workspace-attestations&path=a91316ca363339484dac9a783986f81e88bd66f4063c3b35ed919e295a497380.attested&content=true 200 in 48ms (compile: 4ms, proxy.ts: 1541µs, render: 43ms)
+ GET /api/system/stats 200 in 46ms (compile: 1512µs, proxy.ts: 2ms, render: 42ms)
+ GET /api/health 200 in 141ms (compile: 2ms, proxy.ts: 3ms, render: 136ms)
+ GET /api/system/stats 200 in 46ms (compile: 3ms, proxy.ts: 8ms, render: 36ms)
+ GET /api/notifications 200 in 33ms (compile: 14ms, proxy.ts: 8ms, render: 11ms)
+ GET /api/system/stats 200 in 132ms (compile: 4ms, proxy.ts: 8ms, render: 119ms)
+ GET /api/health 200 in 5.1s (compile: 19ms, proxy.ts: 8ms, render: 5.1s)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 1848µs, render: 55ms)
+ GET /api/health 200 in 160ms (compile: 6ms, proxy.ts: 10ms, render: 145ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 21ms (compile: 3ms, proxy.ts: 2ms, render: 15ms)
+ GET /api/system/stats 200 in 81ms (compile: 3ms, proxy.ts: 46ms, render: 31ms)
+ GET /api/health 200 in 5.1s (compile: 46ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 4ms, render: 56ms)
+ GET /api/health 200 in 138ms (compile: 3ms, proxy.ts: 4ms, render: 131ms)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/notifications 200 in 27ms (compile: 5ms, proxy.ts: 4ms, render: 18ms)
+ GET /api/system/stats 200 in 82ms (compile: 53ms, proxy.ts: 2ms, render: 27ms)
+ GET /api/health 200 in 5.1s (compile: 13ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/system/stats 200 in 64ms (compile: 1872µs, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 140ms (compile: 3ms, proxy.ts: 3ms, render: 133ms)
+ GET /api/system/stats 200 in 73ms (compile: 4ms, proxy.ts: 1844µs, render: 68ms)
+ GET /api/notifications 200 in 16ms (compile: 3ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 36ms (compile: 4ms, proxy.ts: 849µs, render: 30ms)
+ GET /api/health 200 in 5.1s (compile: 2ms, proxy.ts: 57ms, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 138ms (compile: 4ms, proxy.ts: 3ms, render: 131ms)
+ GET /api/system/stats 200 in 64ms (compile: 3ms, proxy.ts: 3ms, render: 58ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 30ms (compile: 2ms, proxy.ts: 3ms, render: 24ms)
+ GET /api/health 200 in 5.1s (compile: 4ms, proxy.ts: 58ms, render: 5.0s)
+ GET /api/system/stats 200 in 67ms (compile: 5ms, proxy.ts: 6ms, render: 57ms)
+ GET /api/health 200 in 152ms (compile: 4ms, proxy.ts: 3ms, render: 145ms)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 31ms (compile: 3ms, proxy.ts: 3ms, render: 25ms)
+ GET /api/health 200 in 5.0s (compile: 1015µs, proxy.ts: 3ms, render: 5.0s)
+ GET /api/system/stats 200 in 57ms (compile: 3ms, proxy.ts: 1862µs, render: 53ms)
+ GET /api/health 200 in 240ms (compile: 4ms, proxy.ts: 3ms, render: 232ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 12ms (compile: 2ms, proxy.ts: 2ms, render: 7ms)
+ GET /api/system/stats 200 in 50ms (compile: 1342µs, proxy.ts: 1339µs, render: 48ms)
+ GET /api/health 200 in 5.0s (compile: 1150µs, proxy.ts: 1104µs, render: 5.0s)
+ GET /api/system/stats 200 in 67ms (compile: 4ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 137ms (compile: 3ms, proxy.ts: 3ms, render: 130ms)
+ GET /api/system/stats 200 in 82ms (compile: 4ms, proxy.ts: 3ms, render: 75ms)
+ GET /api/notifications 200 in 17ms (compile: 5ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 36ms (compile: 4ms, proxy.ts: 882µs, render: 31ms)
+ GET /api/health 200 in 5.0s (compile: 1824µs, proxy.ts: 1000µs, render: 5.0s)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 143ms (compile: 4ms, proxy.ts: 3ms, render: 136ms)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/notifications 200 in 15ms (compile: 4ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 47ms (compile: 4ms, proxy.ts: 1188µs, render: 42ms)
+ GET /api/health 200 in 5.0s (compile: 2ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 69ms (compile: 6ms, proxy.ts: 8ms, render: 55ms)
+ GET /api/health 200 in 143ms (compile: 4ms, proxy.ts: 5ms, render: 133ms)
+ GET /api/system/stats 200 in 66ms (compile: 4ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/notifications 200 in 16ms (compile: 4ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 29ms (compile: 634µs, proxy.ts: 670µs, render: 28ms)
+ GET /api/health 200 in 5.0s (compile: 1028µs, proxy.ts: 1007µs, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 145ms (compile: 3ms, proxy.ts: 4ms, render: 139ms)
+ GET /api/system/stats 200 in 70ms (compile: 3ms, proxy.ts: 3ms, render: 65ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 27ms (compile: 720µs, proxy.ts: 848µs, render: 26ms)
+ GET /api/health 200 in 5.0s (compile: 1003µs, proxy.ts: 925µs, render: 5.0s)
+ GET /api/system/stats 200 in 64ms (compile: 3ms, proxy.ts: 4ms, render: 56ms)
+ GET /api/health 200 in 145ms (compile: 3ms, proxy.ts: 3ms, render: 139ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 26ms (compile: 730µs, proxy.ts: 945µs, render: 25ms)
+ GET /api/health 200 in 5.0s (compile: 4ms, proxy.ts: 1516µs, render: 5.0s)
+ GET /api/system/stats 200 in 67ms (compile: 3ms, proxy.ts: 3ms, render: 61ms)
+ GET /api/health 200 in 153ms (compile: 4ms, proxy.ts: 3ms, render: 145ms)
+ GET /api/system/stats 200 in 67ms (compile: 3ms, proxy.ts: 4ms, render: 60ms)
+ GET /api/notifications 200 in 15ms (compile: 4ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 30ms (compile: 827µs, proxy.ts: 1148µs, render: 28ms)
+ GET /api/health 200 in 5.0s (compile: 756µs, proxy.ts: 905µs, render: 5.0s)
+ GET /api/system/stats 200 in 64ms (compile: 2ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 133ms (compile: 1980µs, proxy.ts: 1981µs, render: 129ms)
+ GET /api/system/stats 200 in 69ms (compile: 3ms, proxy.ts: 3ms, render: 63ms)
+ GET /api/notifications 200 in 15ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 32ms (compile: 781µs, proxy.ts: 842µs, render: 30ms)
+ GET /api/health 200 in 5.0s (compile: 989µs, proxy.ts: 1034µs, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 2ms, proxy.ts: 3ms, render: 58ms)
+ GET /api/health 200 in 166ms (compile: 5ms, proxy.ts: 4ms, render: 158ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 16ms (compile: 3ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 30ms (compile: 747µs, proxy.ts: 853µs, render: 28ms)
+ GET /api/health 200 in 5.0s (compile: 1505µs, proxy.ts: 842µs, render: 5.0s)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 58ms)
+ GET /api/health 200 in 150ms (compile: 3ms, proxy.ts: 3ms, render: 143ms)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/notifications 200 in 16ms (compile: 4ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 35ms (compile: 771µs, proxy.ts: 917µs, render: 33ms)
+ GET /api/health 200 in 5.0s (compile: 1398µs, proxy.ts: 863µs, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 153ms (compile: 6ms, proxy.ts: 7ms, render: 140ms)
+ GET /api/system/stats 200 in 71ms (compile: 5ms, proxy.ts: 6ms, render: 60ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 4ms, render: 9ms)
+ GET /api/system/stats 200 in 35ms (compile: 979µs, proxy.ts: 1002µs, render: 33ms)
+ GET /api/health 200 in 5.0s (compile: 1780µs, proxy.ts: 1047µs, render: 5.0s)
+ GET /api/system/stats 200 in 70ms (compile: 3ms, proxy.ts: 4ms, render: 63ms)
+ GET /api/health 200 in 153ms (compile: 5ms, proxy.ts: 7ms, render: 141ms)
+ GET /api/system/stats 200 in 69ms (compile: 4ms, proxy.ts: 5ms, render: 59ms)
+ GET /api/notifications 200 in 17ms (compile: 3ms, proxy.ts: 4ms, render: 10ms)
+ GET /api/system/stats 200 in 39ms (compile: 1115µs, proxy.ts: 1143µs, render: 37ms)
+ GET /api/health 200 in 5.0s (compile: 685µs, proxy.ts: 853µs, render: 5.0s)
+ GET /api/system/stats 200 in 50ms (compile: 3ms, proxy.ts: 3ms, render: 44ms)
+ GET /api/health 200 in 138ms (compile: 3ms, proxy.ts: 4ms, render: 131ms)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 4ms, render: 7ms)
+ GET /api/system/stats 200 in 37ms (compile: 1203µs, proxy.ts: 1186µs, render: 35ms)
+ GET /api/health 200 in 5.0s (compile: 888µs, proxy.ts: 1078µs, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 2ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 143ms (compile: 3ms, proxy.ts: 3ms, render: 137ms)
+ GET /api/system/stats 200 in 63ms (compile: 2ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 41ms (compile: 1127µs, proxy.ts: 1252µs, render: 39ms)
+ GET /api/health 200 in 5.0s (compile: 783µs, proxy.ts: 890µs, render: 5.0s)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 136ms (compile: 3ms, proxy.ts: 3ms, render: 129ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 41ms (compile: 1047µs, proxy.ts: 1124µs, render: 38ms)
+ GET /api/health 200 in 5.0s (compile: 778µs, proxy.ts: 933µs, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 181ms (compile: 3ms, proxy.ts: 3ms, render: 175ms)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 11ms (compile: 2ms, proxy.ts: 3ms, render: 6ms)
+ GET /api/system/stats 200 in 41ms (compile: 1028µs, proxy.ts: 1249µs, render: 39ms)
+ GET /api/health 200 in 5.0s (compile: 765µs, proxy.ts: 892µs, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/health 200 in 142ms (compile: 3ms, proxy.ts: 3ms, render: 136ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 46ms (compile: 2ms, proxy.ts: 2ms, render: 42ms)
+ GET /api/health 200 in 5.0s (compile: 893µs, proxy.ts: 1117µs, render: 5.0s)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 137ms (compile: 1627µs, proxy.ts: 1897µs, render: 134ms)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 4ms, render: 55ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 49ms (compile: 1744µs, proxy.ts: 2ms, render: 44ms)
+ GET /api/health 200 in 5.0s (compile: 862µs, proxy.ts: 1080µs, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/health 200 in 154ms (compile: 3ms, proxy.ts: 3ms, render: 148ms)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 53ms (compile: 1658µs, proxy.ts: 3ms, render: 49ms)
+ GET /api/health 200 in 5.0s (compile: 1022µs, proxy.ts: 1123µs, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 146ms (compile: 3ms, proxy.ts: 3ms, render: 141ms)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 13ms (compile: 2ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 53ms (compile: 1850µs, proxy.ts: 3ms, render: 48ms)
+ GET /api/health 200 in 5.0s (compile: 1012µs, proxy.ts: 1036µs, render: 5.0s)
+ GET /api/system/stats 200 in 62ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 169ms (compile: 3ms, proxy.ts: 3ms, render: 163ms)
+ GET /api/system/stats 200 in 64ms (compile: 9ms, proxy.ts: 3ms, render: 51ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 56ms (compile: 2ms, proxy.ts: 3ms, render: 51ms)
+ GET /api/health 200 in 5.0s (compile: 872µs, proxy.ts: 1053µs, render: 5.0s)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 146ms (compile: 3ms, proxy.ts: 3ms, render: 140ms)
+ GET /api/system/stats 200 in 64ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/health 200 in 5.0s (compile: 967µs, proxy.ts: 1057µs, render: 5.0s)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 4ms, render: 52ms)
+ GET /api/health 200 in 138ms (compile: 4ms, proxy.ts: 3ms, render: 131ms)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 55ms (compile: 1945µs, proxy.ts: 3ms, render: 51ms)
+ GET /api/health 200 in 5.0s (compile: 860µs, proxy.ts: 958µs, render: 5.0s)
+ GET /api/system/stats 200 in 47ms (compile: 2ms, proxy.ts: 3ms, render: 42ms)
+ GET /api/health 200 in 143ms (compile: 2ms, proxy.ts: 3ms, render: 138ms)
+ GET /api/system/stats 200 in 62ms (compile: 2ms, proxy.ts: 2ms, render: 57ms)
+ GET /api/notifications 200 in 11ms (compile: 2ms, proxy.ts: 3ms, render: 6ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/health 200 in 5.0s (compile: 924µs, proxy.ts: 1033µs, render: 5.0s)
+ GET /api/system/stats 200 in 54ms (compile: 2ms, proxy.ts: 3ms, render: 49ms)
+ GET /api/health 200 in 144ms (compile: 3ms, proxy.ts: 3ms, render: 138ms)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/notifications 200 in 12ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/health 200 in 5.0s (compile: 1007µs, proxy.ts: 938µs, render: 5.0s)
+ GET /api/system/stats 200 in 47ms (compile: 1933µs, proxy.ts: 1958µs, render: 43ms)
+ GET /api/health 200 in 134ms (compile: 3ms, proxy.ts: 3ms, render: 128ms)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 11ms (compile: 3ms, proxy.ts: 3ms, render: 6ms)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 5.0s (compile: 937µs, proxy.ts: 1076µs, render: 5.0s)
+ GET /api/system/stats 200 in 49ms (compile: 4ms, proxy.ts: 5ms, render: 40ms)
+ GET /api/health 200 in 152ms (compile: 5ms, proxy.ts: 5ms, render: 142ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 64ms (compile: 4ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 5.0s (compile: 1453µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 56ms (compile: 1983µs, proxy.ts: 2ms, render: 52ms)
+ GET /api/health 200 in 153ms (compile: 3ms, proxy.ts: 3ms, render: 146ms)
+ GET /api/system/stats 200 in 64ms (compile: 2ms, proxy.ts: 3ms, render: 59ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 5.0s (compile: 1684µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 57ms (compile: 2ms, proxy.ts: 2ms, render: 52ms)
+ GET /api/health 200 in 133ms (compile: 3ms, proxy.ts: 2ms, render: 128ms)
+ GET /api/system/stats 200 in 74ms (compile: 4ms, proxy.ts: 3ms, render: 68ms)
+ GET /api/notifications 200 in 16ms (compile: 4ms, proxy.ts: 3ms, render: 10ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 5.0s (compile: 7ms, proxy.ts: 1966µs, render: 5.0s)
+ GET /api/system/stats 200 in 65ms (compile: 3ms, proxy.ts: 1660µs, render: 61ms)
+ GET /api/health 200 in 138ms (compile: 3ms, proxy.ts: 3ms, render: 132ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 15ms (compile: 4ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 5.0s (compile: 1211µs, proxy.ts: 1417µs, render: 5.0s)
+ GET /api/system/stats 200 in 58ms (compile: 2ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/health 200 in 133ms (compile: 3ms, proxy.ts: 3ms, render: 128ms)
+ GET /api/system/stats 200 in 62ms (compile: 2ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/notifications 200 in 13ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 59ms (compile: 3ms, proxy.ts: 3ms, render: 53ms)
+ GET /api/health 200 in 5.0s (compile: 1501µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 55ms (compile: 1507µs, proxy.ts: 2ms, render: 51ms)
+ GET /api/health 200 in 149ms (compile: 2ms, proxy.ts: 3ms, render: 144ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 12ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 52ms (compile: 1907µs, proxy.ts: 2ms, render: 48ms)
+ GET /api/health 200 in 5.0s (compile: 1525µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 66ms (compile: 3ms, proxy.ts: 3ms, render: 60ms)
+ GET /api/health 200 in 140ms (compile: 4ms, proxy.ts: 3ms, render: 133ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 15ms (compile: 3ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 59ms (compile: 2ms, proxy.ts: 2ms, render: 54ms)
+ GET /api/health 200 in 5.0s (compile: 1938µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 68ms (compile: 3ms, proxy.ts: 3ms, render: 62ms)
+ GET /api/health 200 in 141ms (compile: 4ms, proxy.ts: 3ms, render: 134ms)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 15ms (compile: 3ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 59ms (compile: 1913µs, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 5.0s (compile: 1872µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 151ms (compile: 3ms, proxy.ts: 3ms, render: 144ms)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/notifications 200 in 16ms (compile: 3ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 2ms, render: 55ms)
+ GET /api/health 200 in 5.0s (compile: 1962µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 56ms (compile: 2ms, proxy.ts: 3ms, render: 51ms)
+ GET /api/health 200 in 145ms (compile: 3ms, proxy.ts: 3ms, render: 139ms)
+ GET /api/system/stats 200 in 61ms (compile: 2ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/notifications 200 in 12ms (compile: 3ms, proxy.ts: 3ms, render: 7ms)
+ GET /api/system/stats 200 in 62ms (compile: 2ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 5.0s (compile: 1833µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 68ms (compile: 4ms, proxy.ts: 3ms, render: 61ms)
+ GET /api/health 200 in 138ms (compile: 3ms, proxy.ts: 2ms, render: 133ms)
+ GET /api/system/stats 200 in 68ms (compile: 4ms, proxy.ts: 3ms, render: 62ms)
+ GET /api/notifications 200 in 17ms (compile: 4ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/system/stats 200 in 56ms (compile: 7ms, proxy.ts: 6ms, render: 42ms)
+ GET /api/health 200 in 5.0s (compile: 1948µs, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 5ms, render: 52ms)
+ GET /api/health 200 in 143ms (compile: 3ms, proxy.ts: 3ms, render: 137ms)
+ GET /api/system/stats 200 in 61ms (compile: 3ms, proxy.ts: 3ms, render: 55ms)
+ GET /api/notifications 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/system/stats 200 in 64ms (compile: 3ms, proxy.ts: 3ms, render: 58ms)
+ GET /api/health 200 in 5.0s (compile: 2ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/system/stats 200 in 61ms (compile: 4ms, proxy.ts: 3ms, render: 54ms)
+ GET /api/health 200 in 147ms (compile: 4ms, proxy.ts: 3ms, render: 140ms)
+ GET /api/system/stats 200 in 66ms (compile: 5ms, proxy.ts: 6ms, render: 54ms)
+ GET /api/notifications 200 in 22ms (compile: 5ms, proxy.ts: 5ms, render: 12ms)
+ GET /api/system/stats 200 in 55ms (compile: 3ms, proxy.ts: 3ms, render: 50ms)
+ GET /api/health 200 in 5.0s (compile: 3ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 3ms, render: 56ms)
+ GET /api/health 200 in 145ms (compile: 3ms, proxy.ts: 4ms, render: 138ms)
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 314ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 340ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 196ms
+ GET /files 200 in 310ms (compile: 217ms, proxy.ts: 10ms, render: 82ms)
+ GET /api/notifications 200 in 54ms (compile: 25ms, proxy.ts: 2ms, render: 27ms)
+ GET /api/files/workspaces 200 in 70ms (compile: 49ms, proxy.ts: 2ms, render: 18ms)
+ GET /api/browse?workspace=workspace&path= 200 in 24ms (compile: 14ms, proxy.ts: 6ms, render: 4ms)
+ GET /api/browse?workspace=workspace&path= 200 in 49ms (compile: 17ms, proxy.ts: 6ms, render: 26ms)
+ GET /api/system/stats 200 in 170ms (compile: 33ms, proxy.ts: 2ms, render: 135ms)
+ GET /api/health 200 in 5.1s (compile: 39ms, proxy.ts: 3ms, render: 5.1s)
+ GET /api/system/stats 200 in 47ms (compile: 3ms, proxy.ts: 1990µs, render: 42ms)
+ GET /api/health 200 in 155ms (compile: 7ms, proxy.ts: 8ms, render: 140ms)
+ GET /api/system/stats 200 in 65ms (compile: 4ms, proxy.ts: 5ms, render: 55ms)
+ GET /api/notifications 200 in 19ms (compile: 5ms, proxy.ts: 5ms, render: 10ms)
+ GET /api/system/stats 200 in 39ms (compile: 5ms, proxy.ts: 2ms, render: 32ms)
+ GET /api/health 200 in 5.0s (compile: 2ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 60ms (compile: 3ms, proxy.ts: 4ms, render: 53ms)
+ GET /api/health 200 in 147ms (compile: 4ms, proxy.ts: 4ms, render: 139ms)
+ GET /api/system/stats 200 in 62ms (compile: 1772µs, proxy.ts: 5ms, render: 56ms)
+ GET /api/notifications 200 in 16ms (compile: 3ms, proxy.ts: 5ms, render: 7ms)
+ GET /api/system/stats 200 in 49ms (compile: 3ms, proxy.ts: 3ms, render: 43ms)
+ GET /api/health 200 in 5.0s (compile: 1275µs, proxy.ts: 1863µs, render: 5.0s)
+ GET /api/health 200 in 237ms (compile: 5ms, proxy.ts: 4ms, render: 227ms)
+ GET /api/notifications 200 in 18ms (compile: 4ms, proxy.ts: 4ms, render: 10ms)
+ GET /api/system/stats 200 in 71ms (compile: 4ms, proxy.ts: 4ms, render: 63ms)
+ GET /api/health 200 in 5.0s (compile: 4ms, proxy.ts: 4ms, render: 5.0s)
+ GET /api/notifications 200 in 21ms (compile: 5ms, proxy.ts: 4ms, render: 12ms)
+ GET /api/system/stats 200 in 42ms (compile: 6ms, proxy.ts: 1710µs, render: 34ms)
+ GET /api/health 200 in 128ms (compile: 3ms, proxy.ts: 2ms, render: 124ms)
+ GET /api/notifications 200 in 15ms (compile: 3ms, proxy.ts: 4ms, render: 8ms)
+ GET /api/notifications 200 in 23ms (compile: 5ms, proxy.ts: 9ms, render: 9ms)
+ GET /api/system/stats 200 in 56ms (compile: 11ms, proxy.ts: 3ms, render: 42ms)
+ GET /api/health 200 in 5.0s (compile: 6ms, proxy.ts: 5ms, render: 5.0s)
+ GET /api/notifications 200 in 26ms (compile: 14ms, proxy.ts: 5ms, render: 7ms)
+ GET /api/system/stats 200 in 114ms (compile: 6ms, proxy.ts: 5ms, render: 104ms)
+ GET /tasks 200 in 67ms (compile: 43ms, proxy.ts: 5ms, render: 19ms)
+ GET /api/workboard/cards 500 in 70ms (compile: 27ms, proxy.ts: 18ms, render: 25ms)
+ GET /api/workboard/cards 500 in 90ms (compile: 25ms, proxy.ts: 18ms, render: 47ms)
+ GET /api/health 200 in 5.1s (compile: 11ms, proxy.ts: 5ms, render: 5.1s)
+ GET /api/system/stats 200 in 68ms (compile: 4ms, proxy.ts: 3ms, render: 61ms)
+ GET /api/health 200 in 130ms (compile: 2ms, proxy.ts: 2ms, render: 126ms)
+ GET /api/system/stats 200 in 71ms (compile: 4ms, proxy.ts: 3ms, render: 65ms)
+ GET /api/notifications 200 in 31ms (compile: 8ms, proxy.ts: 3ms, render: 20ms)
+ GET /api/system/stats 200 in 89ms (compile: 19ms, proxy.ts: 3ms, render: 66ms)
+ GET /api/workboard/cards 500 in 43ms (compile: 4ms, proxy.ts: 3ms, render: 36ms)
+ GET /api/health 200 in 5.1s (compile: 15ms, proxy.ts: 3ms, render: 5.1s)
+ GET /api/system/stats 200 in 62ms (compile: 3ms, proxy.ts: 4ms, render: 56ms)
+ GET /api/health 200 in 150ms (compile: 6ms, proxy.ts: 5ms, render: 138ms)
+ GET /api/system/stats 200 in 72ms (compile: 6ms, proxy.ts: 6ms, render: 60ms)
+ GET /api/notifications 200 in 22ms (compile: 6ms, proxy.ts: 4ms, render: 12ms)
+ GET /api/system/stats 200 in 85ms (compile: 6ms, proxy.ts: 54ms, render: 25ms)
+ GET /api/workboard/cards 500 in 19ms (compile: 4ms, proxy.ts: 3ms, render: 12ms)
+ GET /api/health 200 in 5.1s (compile: 65ms, proxy.ts: 2ms, render: 5.0s)
+ GET /api/system/stats 200 in 63ms (compile: 3ms, proxy.ts: 3ms, render: 57ms)
+ GET /api/health 200 in 137ms (compile: 3ms, proxy.ts: 1530µs, render: 133ms)
+ GET /api/system/stats 200 in 70ms (compile: 5ms, proxy.ts: 8ms, render: 57ms)
+ GET /api/notifications 200 in 24ms (compile: 6ms, proxy.ts: 5ms, render: 13ms)
+ GET /api/system/stats 200 in 81ms (compile: 5ms, proxy.ts: 48ms, render: 27ms)
+ GET /api/workboard/cards 500 in 13ms (compile: 2ms, proxy.ts: 2ms, render: 9ms)
+ GET /api/health 200 in 5.1s (compile: 50ms, proxy.ts: 15ms, render: 5.0s)
+ GET /api/system/stats 200 in 54ms (compile: 3ms, proxy.ts: 3ms, render: 49ms)
+ GET /api/health 200 in 149ms (compile: 2ms, proxy.ts: 2ms, render: 144ms)
+ GET /api/system/stats 200 in 67ms (compile: 4ms, proxy.ts: 5ms, render: 58ms)
+ GET /api/notifications 200 in 32ms (compile: 14ms, proxy.ts: 6ms, render: 11ms)
+ GET /api/system/stats 200 in 90ms (compile: 52ms, proxy.ts: 3ms, render: 35ms)
+ GET /api/workboard/cards 500 in 30ms (compile: 6ms, proxy.ts: 8ms, render: 16ms)
+ GET /api/health 200 in 5.1s (compile: 6ms, proxy.ts: 4ms, render: 5.1s)
+ GET /api/system/stats 200 in 52ms (compile: 5ms, proxy.ts: 4ms, render: 44ms)
+ GET /api/health 200 in 188ms (compile: 4ms, proxy.ts: 3ms, render: 181ms)
+ GET /api/system/stats 200 in 82ms (compile: 8ms, proxy.ts: 9ms, render: 65ms)
+ GET /api/notifications 200 in 25ms (compile: 7ms, proxy.ts: 6ms, render: 11ms)
+ GET /api/workboard/cards 500 in 22ms (compile: 5ms, proxy.ts: 4ms, render: 14ms)
+ GET /api/system/stats 200 in 61ms (compile: 10ms, proxy.ts: 4ms, render: 46ms)
+ GET /api/health 200 in 5.0s (compile: 5ms, proxy.ts: 6ms, render: 5.0s)
+ GET /api/workboard/cards 500 in 24ms (compile: 4ms, proxy.ts: 4ms, render: 16ms)
+ GET /api/notifications 200 in 20ms (compile: 5ms, proxy.ts: 4ms, render: 11ms)
+ GET /api/system/stats 200 in 63ms (compile: 10ms, proxy.ts: 4ms, render: 50ms)
+ GET /api/health 200 in 5.0s (compile: 4ms, proxy.ts: 4ms, render: 5.0s)
+ GET /api/notifications 200 in 17ms (compile: 3ms, proxy.ts: 3ms, render: 11ms)
+ GET /api/workboard/cards 500 in 65ms (compile: 12ms, proxy.ts: 3ms, render: 49ms)
+ GET /api/notifications 200 in 21ms (compile: 4ms, proxy.ts: 9ms, render: 7ms)
+ GET /api/workboard/cards 500 in 70ms (compile: 15ms, proxy.ts: 3ms, render: 52ms)
+ GET /api/system/stats 200 in 108ms (compile: 20ms, proxy.ts: 4ms, render: 85ms)
+ GET /api/health 200 in 5.1s (compile: 9ms, proxy.ts: 3ms, render: 5.0s)
+ GET /api/notifications 200 in 41ms (compile: 21ms, proxy.ts: 11ms, render: 8ms)
+ GET /api/workboard/cards 500 in 75ms (compile: 27ms, proxy.ts: 11ms, render: 36ms)
+ GET /api/system/stats 200 in 107ms (compile: 19ms, proxy.ts: 12ms, render: 76ms)
+ GET /api/health 200 in 5.1s (compile: 12ms, proxy.ts: 14ms, render: 5.1s)
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 299ms
+ GET /api/workboard/cards 500 in 3.1s (compile: 90ms, proxy.ts: 51ms, render: 3.0s)
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 236ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 192ms
+ GET /api/workboard/cards 500 in 844ms (compile: 93ms, proxy.ts: 86ms, render: 665ms)
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 212ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 192ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 337ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 282ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 289ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 263ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 320ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 306ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 206ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 260ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 203ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 326ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 203ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 262ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 205ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 326ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 200ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 262ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 201ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 329ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 210ms
+[?25h
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 310ms
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 225ms

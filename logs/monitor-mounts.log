@@ -1,0 +1,15 @@
+[2026-06-24 03:46:50] [MONITOR] Running mount + disk check...
+[2026-06-24 03:46:50] [MONITOR] WD MyCloud mount missing
+[2026-06-24 03:46:50] [MONITOR] Open mount incident already exists — skipping
+[2026-06-24 03:46:50] [MONITOR] Disk OK: 23%
+[2026-06-24 03:46:50] [MONITOR] Complete
+[2026-06-24 10:45:19] [MONITOR] Running mount + disk check...
+[2026-06-24 10:45:19] [MONITOR] WD MyCloud mount missing
+[2026-06-24 10:45:19] [MONITOR] Open mount incident already exists — skipping
+[2026-06-24 10:45:19] [MONITOR] Disk OK: 25%
+[2026-06-24 10:45:19] [MONITOR] Complete
+[2026-06-25 01:01:38] [MONITOR] Running mount + disk check...
+[2026-06-25 01:01:38] [MONITOR] WD MyCloud mount missing
+[2026-06-25 01:01:38] [MONITOR] Open mount incident already exists — skipping
+[2026-06-25 01:01:38] [MONITOR] Disk OK: 24%
+[2026-06-25 01:01:38] [MONITOR] Complete

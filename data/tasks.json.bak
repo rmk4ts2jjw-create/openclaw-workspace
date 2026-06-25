@@ -1,5 +1,167 @@
 [
   {
+    "id": "task-inc-146-5c48",
+    "title": "Fix: INC-146",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-146: Detected 10 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-146",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-24T17:10:36.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-146 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-24T17:10:36.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-145-0c81",
+    "title": "Fix: INC-145",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-145: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Vite dev server crashed or port 3000 is occupied by stale process\nConfidence: 95% (2h SLA)\nFile: scripts/maintenance.sh\nFix: Step 3 in maintenance.sh handles this automatically. Manual: kill stale process on port 3000 and restart.",
+    "linkedIncidentId": "INC-145",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-24T17:10:36.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-145 (RCA: 95% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-24T17:10:36.000Z",
+    "rcaConfidence": 95
+  },
+  {
+    "id": "task-inc-144-7e37",
+    "title": "Fix: INC-144",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-144: Neither /Volumes/Public nor /Volumes/OpenClaw-WD is mounted. Backup scripts cannot write to remote storage.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: WD MyCloud SMB mount dropped \u2014 guest session timeout or NAS sleep\nConfidence: 85% (2h SLA)\nFile: scripts/mount-wd-mycloud.sh\nFix: Add keepalive cron: bash scripts/mount-wd-mycloud.sh every 10 min. Check NAS sleep settings. Consider dedicated SMB user instead of guest.",
+    "linkedIncidentId": "INC-144",
+    "tags": [
+      "incident-response",
+      "wd-mycloud",
+      "mount",
+      "backup",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-24T17:10:35.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-144 (RCA: 85% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-24T17:10:35.000Z",
+    "rcaConfidence": 85
+  },
+  {
+    "id": "task-inc-143-42f6",
+    "title": "Fix: INC-143",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-143: Gateway log shows 3564 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-143",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-24T14:09:55.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-143 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-24T14:09:55.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-142-ed52",
+    "title": "Fix: INC-142",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-142: Mission Control dashboard is not responding (HTTP 000). The dev server may have crashed or the port is occupied.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Vite dev server crashed or port 3000 is occupied by stale process\nConfidence: 95% (2h SLA)\nFile: scripts/maintenance.sh\nFix: Step 3 in maintenance.sh handles this automatically. Manual: kill stale process on port 3000 and restart.",
+    "linkedIncidentId": "INC-142",
+    "tags": [
+      "incident-response",
+      "mission-control",
+      "outage",
+      "dashboard",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-24T12:09:41.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-142 (RCA: 95% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-24T12:09:41.000Z",
+    "rcaConfidence": 95
+  },
+  {
+    "id": "task-inc-141-5c0b",
+    "title": "Fix: INC-141",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-141: Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-141",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-23T20:04:11.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-141 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-23T20:04:11.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-140-888a",
     "title": "Fix: INC-140",
     "assignee": "lifesupport",
