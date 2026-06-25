@@ -106,7 +106,7 @@ def main():
             last_dt = datetime.fromisoformat(last_str.replace('Z', '+00:00'))
         except:
             # If parsing fails, treat as very old
-            last_dt = datetime.min
+            last_dt = datetime(1970, 1, 1)
         last_ts = last_dt.timestamp()
         if (current_ts - last_ts) > CHECK_INTERVAL:
             # Perform check
@@ -125,7 +125,7 @@ def main():
     try:
         last_mem_dt = datetime.fromisoformat(last_mem_str.replace('Z', '+00:00'))
     except:
-        last_mem_dt = datetime.min
+        last_mem_dt = datetime(1970, 1, 1)
     last_mem_ts = last_mem_dt.timestamp()
     if (current_ts - last_mem_ts) > MEMORY_INTERVAL:
         result = run_memory_maintenance()

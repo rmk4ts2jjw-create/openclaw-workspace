@@ -2164,3 +2164,15 @@
 [2026-06-25 01:42:38] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
 [2026-06-25 01:42:38] Failed to create mount point /Volumes/OpenClaw-WD
 [2026-06-25 01:42:38] ===== WD MyCloud Mount Script Completed =====
+[2026-06-25 04:42:41] ===== WD MyCloud Mount Script Started =====
+[2026-06-25 04:42:41] Attempting to mount Public at /Volumes/Public
+[2026-06-25 04:42:41] Failed to create mount point /Volumes/Public
+[2026-06-25 04:42:41] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-25 04:42:41] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-25 04:42:41] ===== WD MyCloud Mount Script Completed =====
+[2026-06-25 04:52:41] ===== WD MyCloud Mount Script Started =====
+[2026-06-25 04:52:41] Attempting to mount Public at /Volumes/Public
+[2026-06-25 04:52:41] Failed to create mount point /Volumes/Public
+[2026-06-25 04:52:41] Attempting to mount OpenClaw-WD at /Volumes/OpenClaw-WD
+[2026-06-25 04:52:41] Failed to create mount point /Volumes/OpenClaw-WD
+[2026-06-25 04:52:41] ===== WD MyCloud Mount Script Completed =====
