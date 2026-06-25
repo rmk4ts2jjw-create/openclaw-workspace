@@ -1,15 +1,20 @@
-# HEARTBEAT.md - Last run: Thu 25 Jun 2026 08:46 GMT+1
+# HEARTBEAT.md
 
-## 08:46 BST Heartbeat
-- Gateway UP (port 18789, HTTP 200)
-- MC Dashboard DOWN (port 3000, HTTP 000) — restarted via launchctl kickstart, recovered to 307
-- Load 1.32/1.41/1.50, disk 26% (33Gi free), uptime 1d19h16m
-- Cron jobs: 13 total, all healthy (0 consecutive errors)
-- All stable. No tasks, no incidents.
+## Routine Heartbeat Checklist (2026-06-25)
 
-### Still open
-- INC-147: Rate limit exhaustion — recurrence #15 since Jun 24. Persistent. Needs human review of FreeRide config.
-- task-split-framework-001: P2 backlog, ghost-dispatched 4 times. Needs architect.
-- task-inc-filters-001: P2 backlog. Needs architect.
+- [x] Check Workboard for new tasks or overdue items
+- [x] Review recent daily logs for significant events
+- [x] Verify Mission Control Dashboard status (home page loads)
+- [x] Ensure no pending incidents in incident management
+- [x] Confirm no critical errors in logs
+- [x] Update MEMORY.md with any new learnings
 
-HEARTBEAT_OK
+## Last Run Summary
+- **18:26** — Routine check. MC 200, load 1.99/2.09/1.74, disk 34% (23GB free), uptime 3h13m. All healthy. No new tasks, no incidents. LaunchAgent plist still outstanding.
+
+## Notable Events Today
+- **09:15** — MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
+- **10:00** — Workboard API fix committed (f689ed1). Switched from WebSocket to CLI/SQLite.
+- **15:15** — MC down again (3rd time). Restarted. **LaunchAgent plist still needed.**
+- **15:25** — Machine rebooted. MC came back via old LaunchAgent `com.openclaw.mc.dashboard-dev`.
+- **18:25** — Routine check. All stable. ⚠️ LaunchAgent plist for production MC still not created.
