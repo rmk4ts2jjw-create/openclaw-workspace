@@ -1,14 +1,8 @@
 {
   "lastChecks": {
-    "email": "2026-06-25T02:41:12.960Z",
-    "calendar": 1782354534,
-    "weather": 1782354534,
-    "mentions": 1782354534,
-    "stallDetection": "2026-06-25T02:41:12.960Z",
-    "circuitBreaker": "2026-06-25T02:41:12.960Z",
-    "incidents": "2026-06-25T02:41:12.960Z"
-  },
-  "last_heartbeat": "2026-06-25 03:13:08",
-  "heartbeat": "2026-06-25T02:41:12.960Z",
-  "lastHeartbeat": 1782355272
+    "email": 0,
+    "calendar": 0,
+    "weather": 1782356940,
+    "heartbeat": 1782356940
+  }
 }
