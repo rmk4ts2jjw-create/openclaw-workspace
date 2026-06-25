@@ -1,11 +1,10 @@
 {
   "lastChecks": {
-    "heartbeat": "2026-06-25T05:09:20Z",
-    "incidents": "2026-06-25T03:55:00Z",
-    "tasks": "2026-06-25T03:55:00Z",
-    "nightShift": "2026-06-25T03:55:00Z",
-    "email": 1782359700,
-    "weather": 1782364313
+    "gateway": 1782408155,
+    "missionControl": 1782408155,
+    "load": 1782408155,
+    "disk": 1782408155
   },
-  "lastHeartbeat": "2026-06-25T05:09:20Z"
+  "lastHeartbeat": "2026-06-25T18:26:00+01:00",
+  "status": "healthy"
 }
