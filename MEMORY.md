@@ -118,6 +118,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-05-15:** Andre sharing hand-crafted pixel art assets (sprites + rooms) as HTML canvas drawings
 - **2026-05-15:** Established single master repo at `mission-control-dashboard`, deleted Downloads copy
 - **2026-06-03:** Removed dev branch. `main` is now the single source of truth.
+- **2026-06-25:** Diagnosed MyCloud-1E4N74 mount issue: Host is reachable via ping and SMB shares are accessible, but mount scripts fail due to sudo requirements for /Volumes/ operations. Workaround: manual mounting succeeds. Root cause likely missing passwordless sudo configuration for mount/mkdir operations in the WD MyCloud mount scripts.
 - **2026-05-31:** Removed Aider - burned ~90K tokens on a refactor and didn't finish.
 - **2026-06-02:** Fixed Vite cache corruption. All routes verified 200.
 - **2026-06-02:** OPS-002 - Incident→Task linking with bidirectional relationships
