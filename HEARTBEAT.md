@@ -1,8 +1,15 @@
-# HEARTBEAT.md - Last run: Thu 25 Jun 2026 05:13:00 BST
+# HEARTBEAT.md - Last run: Thu 25 Jun 2026 08:46 GMT+1
 
-## 05:13 BST Heartbeat
-- Gateway up (port 18789), MC healthy (port 3001), load 1.61/1.82/2.23, disk 27% (32Gi free), uptime 1d15h43m
-- All cron jobs healthy, 0 errors.
-- Weather: London: Clear +22°C 78%
-- Heartbeat checks: email/calendar/mentions skipped (no tools configured), weather OK, memory maintenance completed
-- All stable.
+## 08:46 BST Heartbeat
+- Gateway UP (port 18789, HTTP 200)
+- MC Dashboard DOWN (port 3000, HTTP 000) — restarted via launchctl kickstart, recovered to 307
+- Load 1.32/1.41/1.50, disk 26% (33Gi free), uptime 1d19h16m
+- Cron jobs: 13 total, all healthy (0 consecutive errors)
+- All stable. No tasks, no incidents.
+
+### Still open
+- INC-147: Rate limit exhaustion — recurrence #15 since Jun 24. Persistent. Needs human review of FreeRide config.
+- task-split-framework-001: P2 backlog, ghost-dispatched 4 times. Needs architect.
+- task-inc-filters-001: P2 backlog. Needs architect.
+
+HEARTBEAT_OK

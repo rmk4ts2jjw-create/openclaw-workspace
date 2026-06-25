@@ -1,1 +1,1 @@
-HOST_REACHABLE: MyCloud-1E4N74.local is reachable, but mount script uses wrong hostname (missing .local) at Thu Jun 25 05:22:57 BST 2026
+HOST_DOWN: MyCloud-1E4N74 unreachable at 2026-06-25 08:44:40
