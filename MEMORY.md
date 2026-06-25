@@ -312,3 +312,6 @@ Checked 2 daily log files. No specific actions taken.
 - Heartbeat Check - 01:45 BST: No urgent findings [score=0.818 recalls=0 avg=0.620 source=memory/2026-06-20.md:16-16]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:5:8 -->
 - Heartbeat Check - 08:51 BST: Weather: London: ☀️ +19°C (assumed from earlier); MyCloud host: MyCloud-1E4N74.local (192.168.68.61) responding to ping.; Mount point /Volumes/Public does not exist (unavailable since 02:43 BST).; Systems: Gateway (localhost:18789) returning 200 OK, Mission Control Dashboard (localhost:3000) returning 200 OK. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:5-8]
+
+## Memory maintenance check - 2026-06-25T04:25:00.000
+Checked 2 daily log files (2026-06-24 and 2026-06-25). System remains stable with ongoing incidents monitored. No urgent action required.

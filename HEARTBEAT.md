@@ -1,6 +1,7 @@
-# HEARTBEAT.md - Last run: 2026-06-25 04:06 BST
+# HEARTBEAT.md - Last run: 2026-06-25 04:32 BST
 
-- Gateway up, MC healthy, load 2.03/1.67/1.50, disk 24% (38GB free), uptime 1d14h+
+- Gateway up, MC healthy, load  1.82 8.07 9.90, disk 27% (32Gi free), uptime 1 day 0 hours
 - All cron jobs healthy, 0 errors.
-- Weather: Market Harborough, England, GB: 🌤️ +17°C
+- Weather: Harborough: 🌤️  +17°C
 - All stable.
+
