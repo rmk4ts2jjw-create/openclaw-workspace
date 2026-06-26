@@ -68,12 +68,21 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 
 | Service | URL | Status |
 |---------|-----|--------|
+| Mission Control | http://localhost:3000 | ✅ 200 (LaunchAgent) |
 | SpaceStation | http://localhost:3000 | ✅ 307 (redirect, healthy) |
 | OpenClaw Gateway | http://localhost:18789 | ✅ 200 |
 | MCP Graph UI | http://localhost:9749 | ✅ 200 |
 | OpenCode | http://127.0.0.1:4096 | ✅ 200 (LaunchAgent) |
 | Ollama | http://localhost:11434 | ✅ 200 |
 | PostgreSQL | — | ❌ not running locally |
+
+## Workboard API via CLI/SQLite (2026-06-25)
+
+`/api/workboard/cards` cannot use WebSocket to Gateway (requires device auth — publicKey, signature, nonce). Instead:
+- **GET/POST:** Use `openclaw workboard list --json` / `openclaw workboard add --json '{...}'`
+- **PATCH/DELETE:** Direct SQLite on `~/.openclaw/workspace/data/workboard.db`
+- **Gotchas:** board ID is `"default"` not `"main"`; `sqlite3` CLI needs `-json` flag; no `?` placeholders (inline values with escaping)
+- LaunchAgent `com.openclaw.mc-dashboard` runs `next dev --hostname 0.0.0.0 --port 3000` (production, survives reboots as of 2026-06-25)
 
 ## SpaceStation CSS Fix (2026-06-22)
 
@@ -86,6 +95,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-25 12:16 BST**: Heartbeat — systems healthy (gateway 200, MC 200, load 1.60, disk 27%). Promoted Workboard API lesson to MEMORY.md.
 - **2026-06-21 21:20 BST**: Presentation layer fix - added missing `src/entry-client.tsx` for TanStack Start hydration, fixing unstyled raw text render.
 - **2026-06-21 21:50 BST**: Architecture migration - SpaceStation → TenacitOS (Next.js 15). Cloned tenacitos, configured env, started dev server on port 3002, archived old code.
 - **2026-06-21 22:00 BST**: Proxy updated - nginx proxy on Docker host changed port 13005 → Mac port 3002, restoring iPad access.
@@ -96,6 +106,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-24 06:02 BST**: Heartbeat poll - Gateway responding (200), MyCloud host pingable (4.7ms) but SMB ports unavailable, Mission Control responding (307), load 1.97, disk 23%. Mount alert triggered: MyCloud-1E4N74 unreachable for SMB at 06:02:11.
 - **2026-06-24**: Stable day with 2 auto-recoveries (14:41, 20:03) + 1 manual kickstart (~17:52), peak load ~1.94, London heatwave peaked at 34°C. No incidents reported.
 - **2026-06-25**: Continued stability with normal gateway (200) and Mission Control (307) responses. Ongoing incidents monitored but not causing system-wide issues.
+- **2026-06-26 17:19 BST**: Heartbeat poll - system load spiked earlier (load avg 8.62/1m) but has subsided to 1.64/1m. Ongoing P1 gateway session errors and P2 rate limit exhaustion incidents monitored. MyCloud mount issue persists. Performed memory maintenance and proactive checks.
 
 ## Tools
 
@@ -324,13 +335,6 @@ Reviewed memory files from the last 2 days:
 ## Memory maintenance check - 2026-06-25T01:26:03.184682
 Checked 2 daily log files. No specific actions taken.
 
-## Promoted From Short-Term Memory (2026-06-25)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:16:16 -->
-- Heartbeat Check - 01:45 BST: No urgent findings [score=0.818 recalls=0 avg=0.620 source=memory/2026-06-20.md:16-16]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:5:8 -->
-- Heartbeat Check - 08:51 BST: Weather: London: ☀️ +19°C (assumed from earlier); MyCloud host: MyCloud-1E4N74.local (192.168.68.61) responding to ping.; Mount point /Volumes/Public does not exist (unavailable since 02:43 BST).; Systems: Gateway (localhost:18789) returning 200 OK, Mission Control Dashboard (localhost:3000) returning 200 OK. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:5-8]
-
 ## Memory maintenance check - 2026-06-25T04:25:00.000
 Checked 2 daily log files (2026-06-24 and 2026-06-25). System remains stable with ongoing incidents monitored. No urgent action required.
 
@@ -345,3 +349,16 @@ Checked 2 daily log files. No specific actions taken.
 - - **Uptime:** 1d10h+ at end of day
 - - **Stability:** Station ran clean all day. Zero incidents.
 
+
+## Promoted From Short-Term Memory (2026-06-26)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:7:10 -->
+- **Heartbeat poll** at 06:56 GMT+1. Gateway up, load ~1.2, disk 27%, uptime 5d 5h. MC OK. No in-progress tasks. Backlog: 5 (0 dispatchable). 11 open TRIAGE incidents (unchanged). All stable. Quiet hours active.; **Heartbeat poll** at 07:24 BST. Committed and pushed automated updates.; **Heartbeat poll** at Tue 2026-06-23 07:46 GMT+1. Gateway up, load avg { 1.47 1.42 1.39 }, disk 27%, uptime up 5 days, 6:43. MC OK. No in-progress tasks. Backlog: 5 (0 dispatchable). 9 open TRIAGE incidents (unchanged). All stable.; **Heartbeat poll** at Tue 2026-06-23 10:20 BST.... [score=0.823 recalls=2 avg=0.561 source=memory/2026-06-23.md:7-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:16:19 -->
+- Heartbeat Check - 09:10 BST: Performed stall detection: no in_progress tasks.; Checked incidents for auto-resolve: 9 open TRIAGE incidents (not >10, no auto-resolve).; Checked circuit breaker: OK for task-dispatch and incident-create.; Checked task dispatch: no eligible backlog tasks (both have dispatchCount >=3 or blocking tags). [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:16-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:20:22 -->
+- Heartbeat Check - 09:10 BST: Updated heartbeat-state.json.; No urgent action required.; HEARTBEAT_OK [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:20-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:26:29 -->
+- Heartbeat Check - 10:08 BST: Weather: London: ☀️ +19°C (assumed from earlier); MyCloud host: MyCloud-1E4N74.local (192.168.68.61) responding to ping.; Mount point /Volumes/Public does not exist (unavailable since 02:43 BST).; Systems: Gateway (localhost:18789) returning 200 OK, Mission Control Dashboard (localhost:3000) returning 200 OK. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:26-29]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:9:12 -->
+- Heartbeat Check - 08:51 BST: Active incidents: 9 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-130 P2 gateway session errors, plus 6 other P2 rate limit/storage incidents) - unchanged.; No in_progress tasks detected.; Updated heartbeat-state.json with last MyCloud mount check timestamp.; No urgent action required. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:9-12]
