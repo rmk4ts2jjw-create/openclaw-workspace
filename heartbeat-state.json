@@ -1,10 +1,15 @@
 {
   "lastChecks": {
-    "gateway": 1782408155,
-    "missionControl": 1782408155,
-    "load": 1782408155,
-    "disk": 1782408155
+    "email": 1782505756,
+    "calendar": 1782505756,
+    "mentions": 1782505756,
+    "weather": 1782505756,
+    "gateway": 1782557422,
+    "missionControl": 1782557422,
+    "load": 1782557422,
+    "disk": 1782557422
   },
-  "lastHeartbeat": "2026-06-25T18:26:00+01:00",
-  "status": "healthy"
+  "lastHeartbeat": "2026-06-27T10:50:25Z",
+  "status": "degraded",
+  "notes": "Systems operational: gateway and mission control responding, load average 1.55/1.88/3.18, disk usage 33%. Known incidents: INC-150, INC-149, INC-148, INC-147 active (gateway session takeover, rate limit exhaustion)."
 }
