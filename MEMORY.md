@@ -95,6 +95,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-27 15:34 BST**: Heartbeat check (cron event) - System load: 1.72 1.83 2.01, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 15:11 BST**: Heartbeat check (cron event) - System load: 2.23/2.13/2.03, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed system status check, updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 14:01 BST**: Heartbeat check (cron event) - System load: 1.34/1.40/1.64, disk 34% (12Gi used, 24Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151 in TRIAGE), weather London ☀️ +30°C, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json.
 - **2026-06-27 14:23 BST**: Manual heartbeat check - System load: 1.74/1.71/1.71, disk 34% (12Gi used, 23Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, weather London ☀️ +30°C, reviewed ongoing incidents (8 TRIAGE: gateway session errors, rate limit exhaustion, WD MyCloud mount missing), updated memory files, committed changes to git.
@@ -364,4 +365,7 @@ _Last updated: 2026-06-27 by Space Monkey_
 ## 2026-06-27
 - High load averages observed due to ongoing incident processing (gateway session errors, rate limit exhaustion, WD MyCloud mount missing).
 - Heartbeat checks performed regularly; system status nominal despite incidents.
+- **15:48** — Heartbeat check (manual): load 2.83/2.31/2.09, disk 37%, uptime 4h31m, MC/GW 200, 8 TRIAGE incidents ongoing, performed memory maintenance, updated MEMORY.md with lessons.
 - Updated heartbeat-state.json and committed changes.
+
+- **2026-06-27 15:52 BST**: Heartbeat check (cron event) - System load: 1.77/1.95/1.98, disk 34% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151), performed system status check, updated heartbeat-state.json, reviewed open incidents, updated memory files.

@@ -1,11 +1,40 @@
 {
-  "missionControl": "200",
-  "gateway": "200",
-  "disk": "36%",
+  "missionControl": 200,
+  "gateway": 200,
+  "disk": "34%",
   "load": {
-    "1m": 3.78,
-    "5m": 2.69,
-    "15m": 2.31
+    "1m": 1.77,
+    "5m": 1.95,
+    "15m": 1.98
   },
-  "timestamp": "2026-06-27T15:20:15+01:00"
+  "checks": {
+    "gateway": 1782571973,
+    "missionControl": 1782571973,
+    "load": 1782571973,
+    "disk": 1782571973,
+    "email": {
+      "time": 1782571973,
+      "value": "Checked email: no new urgent messages"
+    },
+    "calendar": {
+      "time": 1782571973,
+      "value": "Checked calendar: no upcoming events"
+    },
+    "mentions": {
+      "time": 1782571973,
+      "value": "Checked mentions: none"
+    },
+    "weather": {
+      "time": 1782571973,
+      "value": "London: ☀️ +30°C"
+    },
+    "memoryMaintenance": {
+      "time": 1782571973,
+      "value": "Performed memory maintenance: updated heartbeat-state.json, checked system status, reviewed 8 open incidents (INC-144-151)"
+    }
+  },
+  "lastHeartbeat": "2026-06-27T14:52:53Z",
+  "status": "nominal",
+  "notes": "System operational: gateway and mission control responding, load average 1.77/1.95/1.98, disk usage 34%. Known issues: 8 open incidents (INC-144-151) in TRIAGE - cloud storage unmounted, gateway session errors (P1), rate limit exhaustion (P2).",
+  "timestamp": "2026-06-27T15:52:53+01:00"
 }

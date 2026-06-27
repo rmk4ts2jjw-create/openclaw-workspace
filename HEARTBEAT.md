@@ -11,6 +11,8 @@
 - [x] Check for stalled subagents and clean up if needed
 
 ## Last Run Summary
+- **15:51** — MC 200, load 1.57/2.03/2.01, disk 37% (12Gi used, 21Gi free of 228Gi), uptime 4h34m. Gateway 200. Systems operational with ongoing incidents (8).
+- **15:48** — MC 200, load 2.83/2.31/2.09, disk 37% (12Gi used, 21Gi free of 228Gi), uptime 4h31m. Gateway 200. Systems operational with ongoing incidents (8). Performed memory maintenance, updated MEMORY.md with distilled lessons.
 - **15:11** — MC 200, load 2.17/2.14/2.03, disk 36% (12Gi used, 21Gi free of 228Gi), uptime 3h55m. Gateway 200. Systems operational with ongoing incidents (8).
 - **14:22** — MC 200, load 1.74 1.71 1.71, disk 34% (12Gi used, 23Gi free of 228Gi), uptime 3:06. Gateway 200. Systems operational with ongoing incidents (8).
 - **14:21** — MC 200, load 1.55 1.74 1.72, disk 34% (12Gi used, 23Gi free of 228Gi), uptime 3:04. Gateway 200. Systems operational with ongoing incidents (8).
@@ -181,11 +183,11 @@
 - No new tasks or incidents reported.
 - All systems operational.
 
-## Current Status (15:11 BST)
-- **System Load**: 2.17 (1m), 2.14 (5m), 2.03 (15m) - High
-- **Memory/Disk**: 36% used (12Gi used, 21Gi free of 228Gi) - Normal
+## Current Status (15:51 BST)
+- **System Load**: 1.57 (1m), 2.03 (5m), 2.01 (15m) - Normal
+- **Memory/Disk**: 37% used (12Gi used, 21Gi free of 228Gi) - Normal
 - **Mission Control Dashboard**: HTTP 200 (responding)
 - **OpenClaw Gateway**: HTTP 200 (responding)
 - **Open Incidents**: 8 in TRIAGE status
 - **Systems Status**: Systems operational with ongoing incidents (8)
-- **Uptime**: 3h55m
+- **Uptime**: 4h34m
