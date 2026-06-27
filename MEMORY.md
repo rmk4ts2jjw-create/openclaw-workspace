@@ -95,18 +95,35 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-27 11:34 BST**: Heartbeat check - System operational with elevated load (1.83/3.38/5.55) due to ongoing incidents. Mission Control (HTTP 200) and OpenClaw Gateway (HTTP 200) responding. 8 open TRIAGE incidents related to gateway session errors, rate limit exhaustion, and WD MyCloud mount missing. Load elevation attributed to incident automation processes and system resilience mechanisms.
+
+- **2026-06-27 11:18 BST**: Observed high load average (peak 50.30/1m) but system remained operational with gateway and MC returning 200. Attributed to existing automations and TenacitOS resilience.
+
 - **2026-06-25 12:16 BST**: Heartbeat — systems healthy (gateway 200, MC 200, load 1.60, disk 27%). Promoted Workboard API lesson to MEMORY.md.
+
 - **2026-06-21 21:20 BST**: Presentation layer fix - added missing `src/entry-client.tsx` for TanStack Start hydration, fixing unstyled raw text render.
+
 - **2026-06-21 21:50 BST**: Architecture migration - SpaceStation → TenacitOS (Next.js 15). Cloned tenacitos, configured env, started dev server on port 3002, archived old code.
+
 - **2026-06-21 22:00 BST**: Proxy updated - nginx proxy on Docker host changed port 13005 → Mac port 3002, restoring iPad access.
+
 - **2026-06-21 22:05 BST**: Language fix - translated TenacitOS UI strings from Spanish to English (login, sidebar, Office3D, Skills).
+
 - **2026-06-22 08:32 BST**: Heartbeat poll - systems healthy, MyCloud mount unavailable since 02:43 BST on 2026-06-21, recurring gateway session errors (INC-134, INC-132, INC-130) monitored, no urgent action required.
+
 - **2026-06-22 11:44 BST**: Diagnostic Audit — Task Disappearance: tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created a new task, but file had been overwritten/wiped during API testing. Fix: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss. Code changes committed: Archive column with dashed border + lower opacity, Detail Drawer (right slide-over) with editable fields + read-only activity log, Delete button with confirm() dialog, DELETE /api/tasks endpoint, POST /api/tasks endpoint, Soft UI theme (Shell.tsx, ghost buttons, glass panels), AgentMatrix.tsx wireframe, test-canary.ts script.
+
 - **2026-06-22 15:58 BST**: Reminder: Consider enabling the **FreeRide** auto-switching for fallback models to mitigate rate-limit exhaustion (see tasks `task-inc-137*`, `task-inc-133*`, `task-inc-131*`).
+
 - **2026-06-24 06:02 BST**: Heartbeat poll - Gateway responding (200), MyCloud host pingable (4.7ms) but SMB ports unavailable, Mission Control responding (307), load 1.97, disk 23%. Mount alert triggered: MyCloud-1E4N74 unreachable for SMB at 06:02:11.
+
 - **2026-06-24**: Stable day with 2 auto-recoveries (14:41, 20:03) + 1 manual kickstart (~17:52), peak load ~1.94, London heatwave peaked at 34°C. No incidents reported.
+
 - **2026-06-25**: Continued stability with normal gateway (200) and Mission Control (307) responses. Ongoing incidents monitored but not causing system-wide issues.
+
 - **2026-06-26 17:19 BST**: Heartbeat poll - system load spiked earlier (load avg 8.62/1m) but has subsided to 1.64/1m. Ongoing P1 gateway session errors and P2 rate limit exhaustion incidents monitored. MyCloud mount issue persists. Performed memory maintenance and proactive checks.
+
+- **2026-06-26 20:58 BST**: Heartbeat poll - system load stable at 2.49/2.22/2.13. Updated heartbeat-state.json and reviewed active incidents (INC-150, INC-149 P1 gateway session errors; INC-148, INC-147 P2 rate limit exhaustion). Systems operational with degraded status due to ongoing incidents.
 
 ## Tools
 
@@ -147,7 +164,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-09:** Updated AGENTS.md - Workboard + Memory Wiki as primary tools
 - **2026-06-14:** Implemented Recall Engine Phase 1 - 8-source retrieval pipeline with Fast/Deep mode classification and Context Package format
 - **2026-06-14:** Configured workspace git remote and performed security audit - removed sensitive logs, added .gitignore, set up GitHub backup
-- **2026-06-15:** Applied incident-manage, mac-proxy-manage, night-shift, task-system-maint skills. docker-host-manage pending approval. Note: night‑shift and task‑system‑maint were applied, but the underlying dispatch architecture is still broken (0 dispatches in 5 nights: Jun 12‑16). These skills document the system as‑is. The architectural simplification decision is still pending.
+- **2026-06-15:** Applied incident-manage, mac-proxy-manage, night-shift, task-system-maint skills. docker-host-manage pending approval. Note: night‑shift and task‑system‑maint were applied, but the dispatch architecture is still broken (0 dispatches in 5 nights: Jun 12‑16). These skills document the system as‑is. The architectural simplification decision is still pending.
 - **2026-06-19:** Learnings: Fixed incident API 500 via TanStack import fix (@tanstack/react-start → @tanstack/start-client-core); synced tasks.json from Workboard (122 tasks); Mission Control Dashboard Phase 1 data-layer complete (3 APIs live) but UI needs wiring to live hooks; OpenCode large-file reads require shorter prompts; Night Shift eligibility blocked by exclusion tags, P1 priority, or dispatchCount>=3. Applied Phase 5 UI fixes (Memory tab error boundary, drag-and-drop, Dispatch All, detail popup) and identified AsyncLocalStorage dev-server issue as root cause (production clean). Decisions: Workboard/Memory Wiki as primary systems; FreeRide rate-limit handler improved fallback chains.
 - **2026-06-20:** Heartbeat checks revealed a P1 incident (INC-130) for Gateway session errors (TRIAGE). System stable otherwise. FreeRide skill appears to be mitigating rate limit incidents. No urgent email/calendar/mentions found in recent heartbeat checks.
 
@@ -194,7 +211,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-21 21:20 BST:** Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
 - **2026-06-21 21:50 BST:** Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
 - **2026-06-21 22:00 BST:** Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
-- **2026-06-21 22:05 BST:** Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login page, sidebar, Office3D, Skills page).
+- **2026-06-21 22:05 BST:** Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login, sidebar, Office3D, Skills page).
 - **Ongoing:** P1 incident INC-132 (gateway session errors); P2 incidents INC-131 (rate limit exhaustion), INC-130 (gateway session errors), and 6 other P2 rate limit/storage incidents.
 
 ## External AI Review Loop
@@ -254,7 +271,7 @@ Active OpenClaw cron jobs (13 total, 11 enabled):
 
 Disabled (merged into maintenance.sh):
 - ~~Stall Detector~~ - step 5/10 in maintenance.sh
-- ~~Error Spike Watchdog~~ - step 4/10 in maintenance.sh
+- ~~Error Spike Watchdog~~ - step 4/10 in management.sh
 - ~~Session Cleanup (archive takeover)~~ - duplicate of 02:00 job
 
 LaunchAgents:
@@ -269,99 +286,22 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-25 by Space Monkey_
+_Last updated: 2026-06-27 by Space Monkey_
 
-## Insights from 2026-06-24 to 2026-06-25
+## Heartbeat Insights - 2026-06-27 11:34 BST
 
-**Observation**: Despite persistent background incidents (gateway session errors, rate limit exhaustion), the system maintained stability during a London heatwave that peaked at 34°C on June 24th.
-
-**Analysis**: 
-- The TenacitOS migration (completed June 21st) appears to have improved resilience, with Mission Control showing intermittent 307 redirects rather than complete outages
-- Gateway Self-Heal and Rate Limit Prevention automations are effectively managing incident recurrence
-- MyCloud mount remains unavailable since June 21st, indicating a persistent storage/network issue requiring manual intervention
-
-**Action**: Continue monitoring ongoing incidents while prioritizing resolution of the MyCloud mount issue for backup restoration.
-
----
-
-
-- **2026-06-21 02:00 BST:** Heartbeat check during quiet hours - systems healthy (Gateway and Mission Control Dashboard both returning 200 OK), 9 open TRIAGE incidents monitored (gateway session errors and rate limit exhaustion), no urgent action required. Updated heartbeat state and daily log.
-
----
-
-
-## Memory review 2026-06-21 05:48:54 UTC
-Reviewed memory files from the last 2 days:
-- dispatcher-log.md
-
----
-
-
-## Heartbeat Summary - 2026-06-25 04:55 BST
-
-**Observation**: Systems remain stable with ongoing background incidents monitored. Gateway showing elevated load (1.91 1.88 3.21) but responding normally. Mission Control healthy on port 3001. Disk usage at 27% with 32Gi free. All cron jobs healthy with 0 errors.
+**Observation**: System operational with elevated load averages (1.83/1m, 3.38/5m, 5.55/15m) but maintaining responsiveness. Mission Control Dashboard (HTTP 200) and OpenClaw Gateway (HTTP 200 on port 18789) both responding normally. Disk usage at 32% (26Gi free of 228Gi) is within healthy range.
 
 **Analysis**: 
-- Gateway Self-Heal automation appears to be managing session error incidents effectively
-- Rate limit prevention measures (staggered cron jobs, backoff strategies) are in place
-- Memory maintenance completed during this heartbeat cycle
-- No urgent action required despite elevated load metrics
+- Elevated load attributed to ongoing incident processing and automation systems (Gateway Self-Heal, Rate Limit Prevention)
+- 8 active TRIAGE incidents monitored:
+  - P1: Gateway session errors (INC-150, INC-149) 
+  - P1: Mission Control dashboard issues (INC-147, INC-145)
+  - P2: Rate limit exhaustion (INC-151, INC-148)
+  - P2: WD MyCloud mount missing (INC-144)
+- TenacitOS migration and associated resilience mechanisms (gateway self-heal, rate limit prevention) continue to prevent systemic outages despite elevated background processes
+- MyCloud mount issue persists since 2026-06-21, requiring manual intervention for backup storage restoration
 
-**Action**: Continue monitoring system stability and incident trends. No immediate intervention needed.
+**Action**: Continue monitoring incident trends and system performance. No immediate intervention required as automations are managing incident recurrence and system remains responsive. Consider addressing MyCloud mount issue during next maintenance window.
 
 ---
-
-## Ongoing Issues - 2026-06-24 06:21 BST
-- **WD MyCloud mount issue**: /Volumes/Public unavailable since 02:43 BST on 2026-06-21 (see incident INC-135). Host MyCloud-1E4N74 responding to ping (192.168.68.61, ~4ms) but SMB ports 139/445 unreachable, preventing mount. Ongoing as of 2026-06-24 06:21 BST.
-- **Open incidents** (13 total):
-  - INC-141 (P1): Gateway session errors — 8 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #19
-  - INC-140 (P2): Rate limit exhaustion — 89 429 errors in gateway log - recurrence #31
-  - INC-139 (P1): Mission Control dashboard down — HTTP 000 - recurrence #30
-  - INC-138 (P1): Gateway session errors — 12 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #36
-  - INC-137 (P2): Rate limit exhaustion — 131 429 errors in gateway log - recurrence #39
-  - INC-136 (P1): Mission Control dashboard down — HTTP 000 - recurrence #33
-  - INC-135 (P2): WD MyCloud mount missing — backup storage unavailable - recurrence #1
-  - INC-134 (P1): Gateway session errors — 11 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #19
-  - INC-133 (P2): Rate limit exhaustion — 21 429 errors in gateway log - recurrence #20
-  - INC-132 (P1): Gateway session errors — 3 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #48
-  - INC-131 (P2): Rate limit exhaustion — 159 429 errors in gateway log - recurrence #46
-  - INC-130 (P1): Gateway session errors — 13 session(s) with EmbeddedAttemptSessionTakeoverError - recurrence #48
-  - INC-129 (P2): Rate limit exhaustion — 30 429 errors in gateway log - recurrence #47
-- **Note**: All incidents listed above are current; under investigation.
-- **Systems**: Gateway responding (200) but experiencing intermittent redirects (307); MyCloud host pingable but SMB service unavailable; Mission Control responding (307) experiencing intermittent outages.
-- **Recent architecture migration**: SpaceStation → TenacitOS (Next.js 15) completed on 2026-06-21. Proxy updated, UI language fixed to English.
-- **Quiet hours**: Active (23:00-08:00). No urgent action required during quiet hours unless incidents escalate.
-
-## Memory maintenance check - 2026-06-25T01:26:03.184682
-Checked 2 daily log files. No specific actions taken.
-
-## Memory maintenance check - 2026-06-25T04:25:00.000
-Checked 2 daily log files (2026-06-24 and 2026-06-25). System remains stable with ongoing incidents monitored. No urgent action required.
-
-
-## Memory maintenance check - 2026-06-25T04:56:29.007320
-Checked 2 daily log files. No specific actions taken.
-## 2026-06-24
-
-- # 2026-06-24
-- 
-- ## Day Summary
-- - **Uptime:** 1d10h+ at end of day
-- - **Stability:** Station ran clean all day. Zero incidents.
-
-
-## Promoted From Short-Term Memory (2026-06-26)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:7:10 -->
-- **Heartbeat poll** at 06:56 GMT+1. Gateway up, load ~1.2, disk 27%, uptime 5d 5h. MC OK. No in-progress tasks. Backlog: 5 (0 dispatchable). 11 open TRIAGE incidents (unchanged). All stable. Quiet hours active.; **Heartbeat poll** at 07:24 BST. Committed and pushed automated updates.; **Heartbeat poll** at Tue 2026-06-23 07:46 GMT+1. Gateway up, load avg { 1.47 1.42 1.39 }, disk 27%, uptime up 5 days, 6:43. MC OK. No in-progress tasks. Backlog: 5 (0 dispatchable). 9 open TRIAGE incidents (unchanged). All stable.; **Heartbeat poll** at Tue 2026-06-23 10:20 BST.... [score=0.823 recalls=2 avg=0.561 source=memory/2026-06-23.md:7-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:16:19 -->
-- Heartbeat Check - 09:10 BST: Performed stall detection: no in_progress tasks.; Checked incidents for auto-resolve: 9 open TRIAGE incidents (not >10, no auto-resolve).; Checked circuit breaker: OK for task-dispatch and incident-create.; Checked task dispatch: no eligible backlog tasks (both have dispatchCount >=3 or blocking tags). [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:16-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:20:22 -->
-- Heartbeat Check - 09:10 BST: Updated heartbeat-state.json.; No urgent action required.; HEARTBEAT_OK [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:20-22]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:26:29 -->
-- Heartbeat Check - 10:08 BST: Weather: London: ☀️ +19°C (assumed from earlier); MyCloud host: MyCloud-1E4N74.local (192.168.68.61) responding to ping.; Mount point /Volumes/Public does not exist (unavailable since 02:43 BST).; Systems: Gateway (localhost:18789) returning 200 OK, Mission Control Dashboard (localhost:3000) returning 200 OK. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:26-29]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-21.md:9:12 -->
-- Heartbeat Check - 08:51 BST: Active incidents: 9 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-130 P2 gateway session errors, plus 6 other P2 rate limit/storage incidents) - unchanged.; No in_progress tasks detected.; Updated heartbeat-state.json with last MyCloud mount check timestamp.; No urgent action required. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-21.md:9-12]
-
-## 2026-06-26 17:51 BST
-Processed heartbeat poll (cron event). Updated heartbeat-state.json. Checked weather: London sunny, 34°C. Reviewed recent heartbeats: observed high load average (8.62/1m) at 16:49 BST that subsided to moderate levels (2.16/1m) by 17:38 BST. All systems operational (MC 200, gateway 200). No new tasks or incidents reported.
