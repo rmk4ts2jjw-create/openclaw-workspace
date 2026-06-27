@@ -3,37 +3,37 @@
   "gateway": 200,
   "disk": "36%",
   "load": {
-    "1m": 2.54,
-    "5m": 2.04,
-    "15m": 1.9
+    "1m": 2.46,
+    "5m": 2.22,
+    "15m": 2.03
   },
   "checks": {
-    "gateway": 1782567909,
-    "missionControl": 1782567909,
-    "load": 1782567909,
-    "disk": 1782567909,
+    "gateway": 1782569365,
+    "missionControl": 1782569365,
+    "load": 1782569365,
+    "disk": 1782569365,
     "email": {
-      "time": 1782567909,
+      "time": 1782568980,
       "value": "Checked email: no new urgent messages"
     },
     "calendar": {
-      "time": 1782567909,
+      "time": 1782568980,
       "value": "Checked calendar: no upcoming events"
     },
     "mentions": {
-      "time": 1782567909,
+      "time": 1782568980,
       "value": "Checked mentions: none"
     },
     "weather": {
-      "time": 1782567909,
-      "value": "Sunny +30\u00b0C"
+      "time": 1782569365,
+      "value": "Sunny +30°C"
     },
     "memoryMaintenance": {
-      "time": 1782567909,
+      "time": 1782568980,
       "value": "Performed memory maintenance: updated heartbeat-state.json and checked system status"
     }
   },
-  "lastHeartbeat": "2026-06-27T13:45:09Z",
-  "status": "degraded",
-  "notes": "System operational: gateway and mission control responding, load average 2.54/2.04/1.90, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "lastHeartbeat": "2026-06-27T14:09:25Z",
+  "status": "nominal",
+  "notes": "System operational: gateway and mission control responding, load average 2.46/2.22/2.03, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
 }
