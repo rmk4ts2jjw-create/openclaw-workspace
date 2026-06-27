@@ -1,0 +1,15 @@
+{
+  "lastChecks": {
+    "email": 1782505756,
+    "calendar": 1782505756,
+    "mentions": 1782505756,
+    "weather": 1782505756,
+    "gateway": 1782558857,
+    "missionControl": 1782558857,
+    "load": 1782558857,
+    "disk": 1782558857
+  },
+  "lastHeartbeat": "2026-06-27T11:14:25Z",
+  "status": "degraded",
+  "notes": "Systems operational: gateway and mission control responding, load average 3.22/2.20/2.21, disk usage 33%. Known incidents: INC-151, INC-150, INC-149, INC-148, INC-147, INC-146, INC-145, INC-144 active (gateway session takeover, rate limit exhaustion, mission control down, WD MyCloud mount missing).",
+}

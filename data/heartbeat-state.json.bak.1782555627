@@ -1,0 +1,29 @@
+{
+  "lastCheck": 1782509818,
+  "checks": {
+    "circuitBreaker": "closed",
+    "stallDetection": "no_in_progress_tasks",
+    "systemHealth": "healthy",
+    "cloudMount": "unmounted",
+    "gatewaySessions": "error",
+    "missionControl": 200,
+    "gateway": 200,
+    "diskUsage": 35,
+    "load1m": 1.38,
+    "load5m": 1.57,
+    "load15m": 1.50
+  },
+  "lastChecks": {
+    "gateway": 1782507391,
+    "missionControl": 1782507391,
+    "load": 1782507391,
+    "disk": 1782507391,
+    "email": 1782507925,
+    "calendar": 1782507925,
+    "mentions": 1782507925,
+    "weather": 1782507925
+  },
+  "lastHeartbeat": "2026-06-26T20:59:34Z",
+  "status": "degraded",
+  "notes": "Systems operational: gateway and mission control responding, load average normal (1.38), disk usage 35%. Weather: Sunny +25°C. Known issues: cloud storage unmounted, gateway session errors."
+}
