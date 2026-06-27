@@ -8512,3 +8512,4 @@ Persisting failed: Another write batch or compaction is already active (Only a s
  GET / 200 in 34ms (compile: 3ms, proxy.ts: 4ms, render: 27ms)
  GET / 200 in 44ms (compile: 12ms, proxy.ts: 6ms, render: 27ms)
  GET / 200 in 53ms (compile: 8ms, proxy.ts: 9ms, render: 36ms)
+ GET / 200 in 62ms (compile: 8ms, proxy.ts: 9ms, render: 45ms)
