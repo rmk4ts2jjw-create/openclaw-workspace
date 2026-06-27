@@ -1,5 +1,5 @@
 {
-  "lastCheck": 1782567088,
+  "lastCheck": 1782568440,
   "checks": {
     "circuitBreaker": "closed",
     "stallDetection": "no_in_progress_tasks",
@@ -8,16 +8,16 @@
     "gatewaySessions": "error",
     "missionControl": 200,
     "gateway": 200,
-    "diskUsage": 34,
-    "load1m": 2.32,
-    "load5m": 2.03,
-    "load15m": 1.86
+    "diskUsage": 36,
+    "load1m": 1.92,
+    "load5m": 1.92,
+    "load15m": 1.84
   },
   "lastChecks": {
-    "gateway": 1782567088,
-    "missionControl": 1782567088,
-    "load": 1782567088,
-    "disk": 1782567088,
+    "gateway": 1782568440,
+    "missionControl": 1782568440,
+    "load": 1782568440,
+    "disk": 1782568440,
     "email": {
       "time": 1782565439,
       "value": "Checked email: no new urgent messages"
@@ -31,8 +31,8 @@
       "value": "Checked mentions: none"
     },
     "weather": {
-      "time": 1782565439,
-      "value": "London: ☀️ +30°C"
+      "time": 1782568440,
+      "value": "London: Sunny +30°C"
     },
     "memoryMaintenance": {
       "time": 1782565231,
@@ -41,5 +41,5 @@
   },
   "lastHeartbeat": "2026-06-27T13:29:00Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average 2.32/2.03/1.86, disk usage 34%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "Systems operational: gateway and mission control responding, load average 1.92/1.92/1.84, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
 }
