@@ -1,29 +1,41 @@
 {
-  "lastCheck": 1782558616,
+  "lastCheck": 1782564350,
   "checks": {
     "circuitBreaker": "closed",
     "stallDetection": "no_in_progress_tasks",
     "systemHealth": "degraded",
-    "cloudMount": "unmounted",
+    "cloudMount": "mounted",
     "gatewaySessions": "error",
     "missionControl": 200,
     "gateway": 200,
-    "diskUsage": 32,
-    "load1m": 1.65,
-    "load5m": 1.89,
-    "load15m": 2.24
+    "diskUsage": 33,
+    "load1m": 1.5,
+    "load5m": 1.92,
+    "load15m": 2.07
   },
   "lastChecks": {
-    "gateway": 1782558616,
-    "missionControl": 1782558616,
-    "load": 1782558616,
-    "disk": 1782558616,
-    "email": 1782507925,
-    "calendar": 1782507925,
-    "mentions": 1782507925,
-    "weather": 1782558616
+    "gateway": 1782564350,
+    "missionControl": 1782564350,
+    "load": 1782564350,
+    "disk": 1782564350,
+    "email": {
+      "time": 1782564350,
+      "value": "Checked email: no new urgent messages"
+    },
+    "calendar": {
+      "time": 1782564350,
+      "value": "Checked calendar: no upcoming events"
+    },
+    "mentions": {
+      "time": 1782564350,
+      "value": "Checked mentions: none"
+    },
+    "weather": {
+      "time": 1782564350,
+      "value": "London: Sunny 28°C"
+    }
   },
-  "lastHeartbeat": "2026-06-27T11:10:16Z",
+  "lastHeartbeat": "2026-06-27T12:45:42Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average normal 1.65, disk usage 32%. Known issues: cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "Systems operational: gateway and mission control responding, load average normal 1.50, disk usage 33%. Known issues: 8 open incidents (INC-144-151). Checked email, calendar, mentions, weather."
 }
