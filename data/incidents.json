@@ -8,8 +8,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-26T20:18:07.000Z",
-    "lastActivity": "2026-06-27T13:18:18.000Z",
-    "summary": "Gateway log shows 13 rate limit (429) errors. Free model pool may be exhausted. (recurrence #12)",
+    "lastActivity": "2026-06-27T13:48:20.000Z",
+    "summary": "Gateway log shows 13 rate limit (429) errors. Free model pool may be exhausted. (recurrence #13)",
     "tags": [
       "rate-limit",
       "429",
@@ -76,6 +76,11 @@
         "ts": "2026-06-27T13:18:18.000Z",
         "message": "Recurrence #12: Auto-detected by rate-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-27T13:48:20.000Z",
+        "message": "Recurrence #13: Auto-detected by rate-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -102,7 +107,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 12,
+    "_recurrence": 13,
     "_fingerprint": "4b06701bd5fa"
   },
   {
@@ -114,8 +119,8 @@
     "acknowledged": false,
     "escalated": false,
     "opened": "2026-06-26T17:47:59.000Z",
-    "lastActivity": "2026-06-27T13:18:18.000Z",
-    "summary": "Detected 13 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #16)",
+    "lastActivity": "2026-06-27T13:48:20.000Z",
+    "summary": "Detected 18 session files with takeover errors in the last hour. Gateway may be in a crash loop. (recurrence #17)",
     "tags": [
       "gateway",
       "crash-loop",
@@ -202,6 +207,11 @@
         "ts": "2026-06-27T13:18:18.000Z",
         "message": "Recurrence #16: Auto-detected by gateway-monitor (fingerprint match)",
         "actor": "system"
+      },
+      {
+        "ts": "2026-06-27T13:48:20.000Z",
+        "message": "Recurrence #17: Auto-detected by gateway-monitor (fingerprint match)",
+        "actor": "system"
       }
     ],
     "actions": [
@@ -235,7 +245,7 @@
       }
     ],
     "actionsGenerated": true,
-    "_recurrence": 16,
+    "_recurrence": 17,
     "_fingerprint": "d4cdd3353300"
   },
   {
