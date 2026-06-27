@@ -95,6 +95,9 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-27 14:01 BST**: Heartbeat check (cron event) - System load: 1.34/1.40/1.64, disk 34% (12Gi used, 24Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151 in TRIAGE), weather London ☀️ +30°C, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json.
+- **2026-06-27 14:23 BST**: Manual heartbeat check - System load: 1.74/1.71/1.71, disk 34% (12Gi used, 23Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, weather London ☀️ +30°C, reviewed ongoing incidents (8 TRIAGE: gateway session errors, rate limit exhaustion, WD MyCloud mount missing), updated memory files, committed changes to git.
+- **2026-06-27 14:29 BST**: Heartbeat check (cron event) - System load: 2.32/2.03/1.86, disk 34% (12Gi used, 24Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, weather London ☀️ +30°C, performed system status check, updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 11:34 BST**: Heartbeat check - System operational with elevated load (1.83/3.38/5.55) due to ongoing incidents. Mission Control (HTTP 200) and OpenClaw Gateway (HTTP 200) responding. 8 open TRIAGE incidents related to gateway session errors, rate limit exhaustion, and WD MyCloud mount missing. Load elevation attributed to incident automation processes and system resilience mechanisms.
 - **2026-06-27 13:44 BST**: Heartbeat check - System operational with moderate load (1.5-2.5/1m), disk 33%, 8 open TRIAGE incidents ongoing (gateway session errors, rate limit exhaustion, MyCloud mount). Mission Control and OpenClaw Gateway responding normally. Performed heartbeat state update and checked email, calendar, mentions, weather.
 
@@ -195,8 +198,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
   - OpenCode config restored to original (opencode/big-pickle primary). Fallback chain intact.
 - **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
 - **2026-06-21 11:38 BST:** Heartbeat check: Weather: Partly cloudy +25°C, MyCloud host responding, mount point /Volumes/Public unavailable since 02:43 BST, systems OK (Gateway:200, MC:200), 10 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-130 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-129 P2 rate limit exhaustion, INC-133 P2 rate limit exhaustion, plus 5 other P2 rate limit/storage incidents), no in_progress tasks, no urgent action required.
-- **2026-06-22 11:44 BST:** Diagnostic work on task disappearance - tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created new task but file had been overwritten/wiped during API testing. Fixed: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss - all original tasks recovered from git history.
-- **2026-06-22 12:59 BST:** Full-stack workflow simulation completed successfully:
+- **2026-06-22 11:44 BST**: Diagnostic work on task disappearance - tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created new task but file had been overwritten/wiped during API testing. Fixed: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss - all original tasks recovered from git history.
+- **2026-06-22 12:59 BST**: Full-stack workflow simulation completed successfully:
   - Added projectId field to Task interface, API POST/PATCH handlers
   - Project tag on TaskCard (📁 badge with indigo color scheme)
   - Project filter dropdown and "Group by Project" toggle
@@ -209,10 +212,10 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
   - Fixed archive status to use lowercase "archived" to match column key
   - Fixed URL separator in simulation api()
   - Commits: 3357c9f (full-stack workflow), 86af250 (safety-first config), deeb2c2 (kanban stabilization)
-- **2026-06-21 21:20 BST:** Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
-- **2026-06-21 21:50 BST:** Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
-- **2026-06-21 22:00 BST:** Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
-- **2026-06-21 22:05 BST:** Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login, sidebar, Office3D, Skills page).
+- **2026-06-21 21:20 BST**: Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
+- **2026-06-21 21:50 BST**: Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
+- **2026-06-21 22:00 BST**: Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
+- **2026-06-21 22:05 BST**: Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login, sidebar, Office3D, Skills page).
 - **Ongoing:** P1 incident INC-132 (gateway session errors); P2 incidents INC-131 (rate limit exhaustion), INC-130 (gateway session errors), and 6 other P2 rate limit/storage incidents.
 
 ## External AI Review Loop
@@ -230,7 +233,7 @@ Integrated 2026-06-12. Full pipeline:
 - **Phase 6 (done):** Review loop integrated into Night Shift - auto-review each completed task overnight. Tonight (01:00 BST) will be first live test.
 - Max 5 reviews/night, max $1.00/night (OpenRouter credits)
 - Review failure does NOT fail the original task
-- **Kanban auto-revert bug (2026-06-12):** save-tasks merge didn't protect `status` when `stalledAt` was set. UI saves overwrote stall detector resets. Fixed by protecting disk-side status/currentStep/progress when stalledAt is present. Also fixed maintenance.sh heredoc bash 3.2 incompatibility.
+- **Kanban auto-revert bug (2026-06-12):** save-tasks merge didn't protect `status` when `stalledAt` was set. UI writes overwrote stall detector resets. Fixed by protecting disk-side status/currentStep/progress when stalledAt is present. Also fixed maintenance.sh heredoc bash 3.2 incompatibility.
 - **Ghost dispatch fix (2026-06-12):** Tasks stuck in 'Agent starting...' with no sub-agent. Three-pronged fix: (1) pre-dispatch validation checks excluded tags before setting in_progress, (2) 60s ghost timeout resets tasks immediately if sub-agent never starts, (3) wasStalled flag management - Phase 2 clears wasStalled after 3h cooldown. MC UI shows 'Dispatch Failed' and 'Ghost' badges.
 - **Dispatch loop fix (2026-06-13):** Extended stall detector Phase 2 cooldowns (stalledAt: 2h, wasStalled: 3h) to prevent rapid dispatch→reset→dispatch loops. dispatchFailed is never auto-cleared.
 
@@ -250,7 +253,7 @@ Three automations built from analysis of 124 incidents (Jun 12-17):
 
 3. **Incident Deduplication** - Fingerprint-based dedup in auto-detect-incidents.sh:
    MD5 of normalized title + sorted tags. 3-tier matching (fingerprint → title → tag overlap).
-   `incident-dedup.sh` runs every 4h to consolidate duplicates within 24h window.
+   `incident-detup.sh` runs every 4h to consolidate duplicates within 24h window.
    Reduces noise ~20%.
 
 4. **Heartbeat reduced** - 30min → 2h globally. Cron jobs handle frequent monitoring.

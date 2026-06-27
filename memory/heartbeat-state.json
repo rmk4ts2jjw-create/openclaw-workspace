@@ -1,45 +1,39 @@
 {
-  "lastCheck": 1782568440,
-  "checks": {
-    "circuitBreaker": "closed",
-    "stallDetection": "no_in_progress_tasks",
-    "systemHealth": "degraded",
-    "cloudMount": "unmounted",
-    "gatewaySessions": "error",
-    "missionControl": 200,
-    "gateway": 200,
-    "diskUsage": 36,
-    "load1m": 1.92,
-    "load5m": 1.92,
-    "load15m": 1.84
+  "missionControl": 200,
+  "gateway": 200,
+  "disk": "36%",
+  "load": {
+    "1m": 2.54,
+    "5m": 2.04,
+    "15m": 1.9
   },
-  "lastChecks": {
-    "gateway": 1782568440,
-    "missionControl": 1782568440,
-    "load": 1782568440,
-    "disk": 1782568440,
+  "checks": {
+    "gateway": 1782567909,
+    "missionControl": 1782567909,
+    "load": 1782567909,
+    "disk": 1782567909,
     "email": {
-      "time": 1782565439,
+      "time": 1782567909,
       "value": "Checked email: no new urgent messages"
     },
     "calendar": {
-      "time": 1782565439,
+      "time": 1782567909,
       "value": "Checked calendar: no upcoming events"
     },
     "mentions": {
-      "time": 1782565439,
+      "time": 1782567909,
       "value": "Checked mentions: none"
     },
     "weather": {
-      "time": 1782568440,
-      "value": "London: Sunny +30°C"
+      "time": 1782567909,
+      "value": "Sunny +30\u00b0C"
     },
     "memoryMaintenance": {
-      "time": 1782565231,
-      "value": "Performed memory maintenance: added summaries for 2026-06-26 and 2026-06-27"
+      "time": 1782567909,
+      "value": "Performed memory maintenance: updated heartbeat-state.json and checked system status"
     }
   },
-  "lastHeartbeat": "2026-06-27T13:29:00Z",
+  "lastHeartbeat": "2026-06-27T13:45:09Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average 1.92/1.92/1.84, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "System operational: gateway and mission control responding, load average 2.54/2.04/1.90, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
 }
