@@ -1,15 +1,15 @@
 {
   "lastChecks": {
-    "email": 1782505756,
-    "calendar": 1782505756,
-    "mentions": 1782505756,
-    "weather": 1782505756,
-    "gateway": 1782557422,
-    "missionControl": 1782557422,
-    "load": 1782557422,
-    "disk": 1782557422
+    "email": 1782560483,
+    "calendar": 1782560483,
+    "mentions": 1782560483,
+    "weather": 1782560483,
+    "gateway": 1782560483,
+    "missionControl": 1782560483,
+    "load": 1782560483,
+    "disk": 1782560483
   },
-  "lastHeartbeat": "2026-06-27T10:50:25Z",
+  "lastHeartbeat": "2026-06-27T11:41:25Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average 1.55/1.88/3.18, disk usage 33%. Known incidents: INC-150, INC-149, INC-148, INC-147 active (gateway session takeover, rate limit exhaustion)."
+  "notes": "Systems operational: gateway and mission control responding, load average 2.60/1.94/1.99, disk usage 33%. Known issues: cloud storage unmounted (WD MyCloud)."
 }

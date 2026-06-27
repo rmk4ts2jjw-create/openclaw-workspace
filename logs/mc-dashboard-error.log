@@ -41749,3 +41749,265 @@ $ next dev -H 0.0.0.0
    * /Users/spacemonkey/.openclaw/workspace/spacestation/package-lock.json
 
 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+⚠ Unsupported metadata themeColor is configured in metadata export in /tasks. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+[workboard/cards] GET error: Error: Command failed: /opt/homebrew/bin/openclaw workboard list --json
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+
+    at runCLI (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:19:10)
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:55:20)
+    at processTicksAndRejections (null)
+  17 |
+  18 | function runCLI(args: string): string {
+> 19 |   return execSync(`${CLI} ${args}`, {
+     |          ^
+  20 |     encoding: "utf-8",
+  21 |     timeout: 15000,
+  22 |   }).trim(); {
+  signal: null,
+  status: 1,
+  output: [Array],
+  pid: 89251,
+  stdout: '',
+  stderr: "[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'\n" +
+    '[openclaw] Could not start the CLI.\n' +
+    '[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.\n' +
+    '[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.\n' +
+    '[openclaw] Try: openclaw doctor\n' +
+    '[openclaw] Help: openclaw --help\n' +
+    ''
+}
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+[workboard/cards] GET error: Error: Command failed: /opt/homebrew/bin/openclaw workboard list --json
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+
+    at runCLI (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:19:10)
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:55:20)
+    at processTicksAndRejections (null)
+  17 |
+  18 | function runCLI(args: string): string {
+> 19 |   return execSync(`${CLI} ${args}`, {
+     |          ^
+  20 |     encoding: "utf-8",
+  21 |     timeout: 15000,
+  22 |   }).trim(); {
+  signal: null,
+  status: 1,
+  output: [Array],
+  pid: 89328,
+  stdout: '',
+  stderr: "[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'\n" +
+    '[openclaw] Could not start the CLI.\n' +
+    '[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.\n' +
+    '[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.\n' +
+    '[openclaw] Try: openclaw doctor\n' +
+    '[openclaw] Help: openclaw --help\n' +
+    ''
+}
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+[workboard/cards] GET error: Error: Command failed: /opt/homebrew/bin/openclaw workboard list --json
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+
+    at runCLI (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:19:10)
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:55:20)
+    at processTicksAndRejections (null)
+  17 |
+  18 | function runCLI(args: string): string {
+> 19 |   return execSync(`${CLI} ${args}`, {
+     |          ^
+  20 |     encoding: "utf-8",
+  21 |     timeout: 15000,
+  22 |   }).trim(); {
+  signal: null,
+  status: 1,
+  output: [Array],
+  pid: 89426,
+  stdout: '',
+  stderr: "[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-kIpvsc4c.js'\n" +
+    '[openclaw] Could not start the CLI.\n' +
+    '[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.\n' +
+    '[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.\n' +
+    '[openclaw] Try: openclaw doctor\n' +
+    '[openclaw] Help: openclaw --help\n' +
+    ''
+}
+Failed to get disk stats: TypeError: undefined is not an object (evaluating 'parts[1].replace')
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/system/stats/route.ts:32:34)
+    at processTicksAndRejections (null)
+  30 |       const { stdout } = await execAsync("df -BG / | tail -1");
+  31 |       const parts = stdout.trim().split(/\s+/);
+> 32 |       diskTotal = parseInt(parts[1].replace("G", ""));
+     |                                  ^
+  33 |       diskUsed = parseInt(parts[2].replace("G", ""));
+  34 |     } catch (error) {
+  35 |       console.error("Failed to get disk stats:", error);
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+[workboard/cards] GET error: Error: Command failed: /opt/homebrew/bin/openclaw workboard list --json
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+
+    at runCLI (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:19:10)
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:55:20)
+    at processTicksAndRejections (null)
+  17 |
+  18 | function runCLI(args: string): string {
+> 19 |   return execSync(`${CLI} ${args}`, {
+     |          ^
+  20 |     encoding: "utf-8",
+  21 |     timeout: 15000,
+  22 |   }).trim(); {
+  signal: null,
+  status: 1,
+  output: [Array],
+  pid: 89971,
+  stdout: '',
+  stderr: "[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'\n" +
+    '[openclaw] Could not start the CLI.\n' +
+    '[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.\n' +
+    '[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.\n' +
+    '[openclaw] Try: openclaw doctor\n' +
+    '[openclaw] Help: openclaw --help\n' +
+    ''
+}
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+[workboard/cards] GET error: Error: Command failed: /opt/homebrew/bin/openclaw workboard list --json
+[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'
+[openclaw] Could not start the CLI.
+[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.
+[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.
+[openclaw] Try: openclaw doctor
+[openclaw] Help: openclaw --help
+
+    at runCLI (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:19:10)
+    at GET (file:/Users/spacemonkey/.openclaw/workspace/spacestation/src/app/api/workboard/cards/route.ts:55:20)
+    at processTicksAndRejections (null)
+  17 |
+  18 | function runCLI(args: string): string {
+> 19 |   return execSync(`${CLI} ${args}`, {
+     |          ^
+  20 |     encoding: "utf-8",
+  21 |     timeout: 15000,
+  22 |   }).trim(); {
+  signal: null,
+  status: 1,
+  output: [Array],
+  pid: 90004,
+  stdout: '',
+  stderr: "[plugins] workboard failed to load from /opt/homebrew/lib/node_modules/openclaw/dist/extensions/workboard/index.js: ResolveMessage: Cannot find package 'node:sqlite' from '/opt/homebrew/lib/node_modules/openclaw/dist/sqlite-store-GYzSuZux.js'\n" +
+    '[openclaw] Could not start the CLI.\n' +
+    '[openclaw] Reason: "workboard" is a runtime slash command (/workboard), not a CLI command. It is provided by the "workboard" plugin. Use `openclaw workboard` for related CLI operations, or `/workboard` in a chat session.\n' +
+    '[openclaw] Debug: set OPENCLAW_DEBUG=1 to include the stack trace.\n' +
+    '[openclaw] Try: openclaw doctor\n' +
+    '[openclaw] Help: openclaw --help\n' +
+    ''
+}
+env: node: No such file or directory
+env: node: No such file or directory
+env: node: No such file or directory
+error: unknown option '--host'
+(Did you mean --port?)

@@ -1,5 +1,5 @@
 {
-  "lastCheck": 1782558611,
+  "lastCheck": 1782559899,
   "checks": {
     "circuitBreaker": "closed",
     "stallDetection": "no_in_progress_tasks",
@@ -8,22 +8,22 @@
     "gatewaySessions": "error",
     "missionControl": 200,
     "gateway": 200,
-    "diskUsage": 32,
-    "load1m": 1.65,
-    "load5m": 1.89,
-    "load15m": 2.24
+    "diskUsage": 33,
+    "load1m": 1.90,
+    "load5m": 2.26,
+    "load15m": 2.28
   },
   "lastChecks": {
-    "gateway": 1782558611,
-    "missionControl": 1782558611,
-    "load": 1782558611,
-    "disk": 1782558611,
+    "gateway": 1782559899,
+    "missionControl": 1782559899,
+    "load": 1782559899,
+    "disk": 1782559899,
     "email": 1782507925,
     "calendar": 1782507925,
     "mentions": 1782507925,
-    "weather": 1782558611
+    "weather": 1782559899
   },
-  "lastHeartbeat": "2026-06-27T11:10:11Z",
+  "lastHeartbeat": "2026-06-27T12:28:19Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average normal 1.65, disk usage 32%. Known issues: cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "Systems operational: gateway and mission control responding, load average now at 1.90/2.26/2.28, disk usage 33% (24Gi free of 228Gi). Known issues: cloud storage unmounted, gateway session errors, rate limit exhaustion. Load is normal but cloud dependency remains unmounted."
 }

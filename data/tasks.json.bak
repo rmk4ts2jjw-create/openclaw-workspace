@@ -1,5 +1,113 @@
 [
   {
+    "id": "task-inc-151-8e04",
+    "title": "Fix: INC-151",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-151: Gateway log shows 6 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-151",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-26T20:18:07.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-151 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-26T20:18:07.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-150-0432",
+    "title": "Fix: INC-150",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-150: Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-150",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-26T17:47:59.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-150 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-26T17:47:59.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-149-5791",
+    "title": "Fix: INC-149",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-149: Detected 1 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-149",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-25T17:44:05.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-149 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-25T17:44:05.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-148-d645",
+    "title": "Fix: INC-148",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-148: Gateway log shows 1226 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-148",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-25T17:14:03.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-148 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-25T17:14:03.000Z",
+    "rcaConfidence": 90
+  },
+  {
     "id": "task-inc-146-b5ce",
     "title": "Fix: INC-146",
     "assignee": "engineer",

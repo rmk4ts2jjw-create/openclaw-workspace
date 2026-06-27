@@ -39268,3 +39268,2351 @@ OK: 33GB free
 [2026-06-25 08:44:40] [2/10] Disk monitor: done
 [2026-06-25 08:44:40] [3/10] Mission Control health check...
 [2026-06-25 08:44:40] [3/10] Mission Control: DOWN (HTTP 307) — restarting...
+[2026-06-25 09:14:42] === Maintenance run started ===
+[2026-06-25 09:14:42] [1/10] Mount check...
+[2026-06-25 09:14:42] [1/10] Mount check: FAILED
+[2026-06-25 09:14:42] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 09:14:42] [2/10] Disk monitor: done
+[2026-06-25 09:14:42] [3/10] Mission Control health check...
+[2026-06-25 09:14:42] [3/10] Mission Control: DOWN (HTTP 307) — restarting...
+[2026-06-25 09:44:44] === Maintenance run started ===
+[2026-06-25 09:44:44] [1/10] Mount check...
+[2026-06-25 09:44:44] [1/10] Mount check: FAILED
+[2026-06-25 09:44:44] [2/10] Disk monitor...
+OK: 31GB free
+[2026-06-25 09:44:44] [2/10] Disk monitor: done
+[2026-06-25 09:44:44] [3/10] Mission Control health check...
+[2026-06-25 09:44:44] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 09:44:44] [4/10] Error spike watchdog...
+[2026-06-25 09:44:44] [4/10] Error watchdog: no spikes detected
+[2026-06-25 09:44:44] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 09:44:44] [5/9] Stall detection: done
+[2026-06-25 09:44:44] [6/10] Task dispatcher...
+[2026-06-25 09:44:44] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 09:44:44] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 09:44:44] [6.5/10] Fix validation: done
+[2026-06-25 09:44:44] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 09:44:44] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 09:44:44] [6.7/10] Performance tuning: done
+[2026-06-25 09:44:44] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 09:44:44] [6.8/10] Mission planning: done
+[2026-06-25 09:44:44] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 09:44:44] [7/10] Incident auto-detection: done
+[2026-06-25 09:44:44] [8/10] Safe backup: not today (day 4)
+[2026-06-25 09:44:44] [9/10] Session cleanup...
+[2026-06-25 09:44:44] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 09:44:44] [10/10] Storage migration: not today (day 25)
+[2026-06-25 09:44:44] [11/11] Quota budget check...
+[2026-06-25 09:44:44] [11/11] Quota budget: done
+[2026-06-25 09:44:44] === Maintenance run complete ===
+[2026-06-25 10:14:47] === Maintenance run started ===
+[2026-06-25 10:14:47] [1/10] Mount check...
+[2026-06-25 10:14:47] [1/10] Mount check: FAILED
+[2026-06-25 10:14:47] [2/10] Disk monitor...
+OK: 31GB free
+[2026-06-25 10:14:47] [2/10] Disk monitor: done
+[2026-06-25 10:14:47] [3/10] Mission Control health check...
+[2026-06-25 10:14:47] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 10:14:47] [4/10] Error spike watchdog...
+[2026-06-25 10:14:47] [4/10] Error watchdog: no spikes detected
+[2026-06-25 10:14:47] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 10:14:47] [5/9] Stall detection: done
+[2026-06-25 10:14:47] [6/10] Task dispatcher...
+[2026-06-25 10:14:47] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 10:14:47] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 10:14:47] [6.5/10] Fix validation: done
+[2026-06-25 10:14:47] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 10:14:47] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 10:14:47] [6.7/10] Performance tuning: done
+[2026-06-25 10:14:47] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 10:14:47] [6.8/10] Mission planning: done
+[2026-06-25 10:14:47] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 10:14:47] [7/10] Incident auto-detection: done
+[2026-06-25 10:14:47] [8/10] Safe backup: not today (day 4)
+[2026-06-25 10:14:47] [9/10] Session cleanup...
+[2026-06-25 10:14:47] [9/10] Session cleanup: expired 3 stale sessions
+[2026-06-25 10:14:47] [10/10] Storage migration: not today (day 25)
+[2026-06-25 10:14:47] [11/11] Quota budget check...
+[2026-06-25 10:14:47] [11/11] Quota budget: done
+[2026-06-25 10:14:47] === Maintenance run complete ===
+[2026-06-25 10:44:50] === Maintenance run started ===
+[2026-06-25 10:44:50] [1/10] Mount check...
+[2026-06-25 10:44:50] [1/10] Mount check: FAILED
+[2026-06-25 10:44:50] [2/10] Disk monitor...
+OK: 31GB free
+[2026-06-25 10:44:50] [2/10] Disk monitor: done
+[2026-06-25 10:44:50] [3/10] Mission Control health check...
+[2026-06-25 10:44:50] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 10:44:50] [4/10] Error spike watchdog...
+[2026-06-25 10:44:50] [4/10] Error watchdog: no spikes detected
+[2026-06-25 10:44:50] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 10:44:50] [5/9] Stall detection: done
+[2026-06-25 10:44:50] [6/10] Task dispatcher...
+[2026-06-25 10:44:50] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 10:44:50] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 10:44:50] [6.5/10] Fix validation: done
+[2026-06-25 10:44:50] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 10:44:50] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 10:44:50] [6.7/10] Performance tuning: done
+[2026-06-25 10:44:50] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 10:44:50] [6.8/10] Mission planning: done
+[2026-06-25 10:44:50] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 10:44:50] [7/10] Incident auto-detection: done
+[2026-06-25 10:44:50] [8/10] Safe backup: not today (day 4)
+[2026-06-25 10:44:50] [9/10] Session cleanup...
+[2026-06-25 10:44:50] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 10:44:50] [10/10] Storage migration: not today (day 25)
+[2026-06-25 10:44:50] [11/11] Quota budget check...
+[2026-06-25 10:44:50] [11/11] Quota budget: done
+[2026-06-25 10:44:50] === Maintenance run complete ===
+[2026-06-25 11:14:53] === Maintenance run started ===
+[2026-06-25 11:14:53] [1/10] Mount check...
+[2026-06-25 11:14:53] [1/10] Mount check: FAILED
+[2026-06-25 11:14:53] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 11:14:53] [2/10] Disk monitor: done
+[2026-06-25 11:14:53] [3/10] Mission Control health check...
+[2026-06-25 11:14:53] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 11:14:53] [4/10] Error spike watchdog...
+[2026-06-25 11:14:53] [4/10] Error watchdog: no spikes detected
+[2026-06-25 11:14:53] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 11:14:53] [5/9] Stall detection: done
+[2026-06-25 11:14:53] [6/10] Task dispatcher...
+[2026-06-25 11:14:53] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 11:14:53] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 11:14:53] [6.5/10] Fix validation: done
+[2026-06-25 11:14:53] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 11:14:53] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 11:14:53] [6.7/10] Performance tuning: done
+[2026-06-25 11:14:53] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 11:14:53] [6.8/10] Mission planning: done
+[2026-06-25 11:14:53] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 11:14:53] [7/10] Incident auto-detection: done
+[2026-06-25 11:14:53] [8/10] Safe backup: not today (day 4)
+[2026-06-25 11:14:53] [9/10] Session cleanup...
+[2026-06-25 11:14:53] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 11:14:53] [10/10] Storage migration: not today (day 25)
+[2026-06-25 11:14:53] [11/11] Quota budget check...
+[2026-06-25 11:14:53] [11/11] Quota budget: done
+[2026-06-25 11:14:53] === Maintenance run complete ===
+[2026-06-25 11:44:56] === Maintenance run started ===
+[2026-06-25 11:44:56] [1/10] Mount check...
+[2026-06-25 11:44:56] [1/10] Mount check: FAILED
+[2026-06-25 11:44:56] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 11:44:56] [2/10] Disk monitor: done
+[2026-06-25 11:44:56] [3/10] Mission Control health check...
+[2026-06-25 11:44:56] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 11:44:56] [4/10] Error spike watchdog...
+[2026-06-25 11:44:56] [4/10] Error watchdog: no spikes detected
+[2026-06-25 11:44:56] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 11:44:56] [5/9] Stall detection: done
+[2026-06-25 11:44:56] [6/10] Task dispatcher...
+[2026-06-25 11:44:56] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 11:44:56] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 11:44:56] [6.5/10] Fix validation: done
+[2026-06-25 11:44:56] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 11:44:56] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 11:44:56] [6.7/10] Performance tuning: done
+[2026-06-25 11:44:56] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 11:44:56] [6.8/10] Mission planning: done
+[2026-06-25 11:44:56] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 11:44:56] [7/10] Incident auto-detection: done
+[2026-06-25 11:44:56] [8/10] Safe backup: not today (day 4)
+[2026-06-25 11:44:56] [9/10] Session cleanup...
+[2026-06-25 11:44:56] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 11:44:56] [10/10] Storage migration: not today (day 25)
+[2026-06-25 11:44:56] [11/11] Quota budget check...
+[2026-06-25 11:44:56] [11/11] Quota budget: done
+[2026-06-25 11:44:56] === Maintenance run complete ===
+[2026-06-25 12:14:59] === Maintenance run started ===
+[2026-06-25 12:14:59] [1/10] Mount check...
+[2026-06-25 12:14:59] [1/10] Mount check: FAILED
+[2026-06-25 12:14:59] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 12:14:59] [2/10] Disk monitor: done
+[2026-06-25 12:14:59] [3/10] Mission Control health check...
+[2026-06-25 12:14:59] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 12:14:59] [4/10] Error spike watchdog...
+[2026-06-25 12:14:59] [4/10] Error watchdog: no spikes detected
+[2026-06-25 12:14:59] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 12:14:59] [5/9] Stall detection: done
+[2026-06-25 12:14:59] [6/10] Task dispatcher...
+[2026-06-25 12:14:59] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 12:14:59] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 12:14:59] [6.5/10] Fix validation: done
+[2026-06-25 12:14:59] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 12:14:59] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 12:14:59] [6.7/10] Performance tuning: done
+[2026-06-25 12:14:59] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 12:14:59] [6.8/10] Mission planning: done
+[2026-06-25 12:14:59] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 12:14:59] [7/10] Incident auto-detection: done
+[2026-06-25 12:14:59] [8/10] Safe backup: not today (day 4)
+[2026-06-25 12:14:59] [9/10] Session cleanup...
+[2026-06-25 12:14:59] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 12:14:59] [10/10] Storage migration: not today (day 25)
+[2026-06-25 12:14:59] [11/11] Quota budget check...
+[2026-06-25 12:14:59] [11/11] Quota budget: done
+[2026-06-25 12:14:59] === Maintenance run complete ===
+[2026-06-25 12:45:02] === Maintenance run started ===
+[2026-06-25 12:45:02] [1/10] Mount check...
+[2026-06-25 12:45:02] [1/10] Mount check: FAILED
+[2026-06-25 12:45:02] [2/10] Disk monitor...
+OK: 31GB free
+[2026-06-25 12:45:02] [2/10] Disk monitor: done
+[2026-06-25 12:45:02] [3/10] Mission Control health check...
+[2026-06-25 12:45:02] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 12:45:02] [4/10] Error spike watchdog...
+[2026-06-25 12:45:02] [4/10] Error watchdog: no spikes detected
+[2026-06-25 12:45:02] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 12:45:02] [5/9] Stall detection: done
+[2026-06-25 12:45:02] [6/10] Task dispatcher...
+[2026-06-25 12:45:02] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 12:45:02] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 12:45:02] [6.5/10] Fix validation: done
+[2026-06-25 12:45:02] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 12:45:02] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 12:45:02] [6.7/10] Performance tuning: done
+[2026-06-25 12:45:02] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 12:45:02] [6.8/10] Mission planning: done
+[2026-06-25 12:45:02] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 12:45:02] [7/10] Incident auto-detection: done
+[2026-06-25 12:45:02] [8/10] Safe backup: not today (day 4)
+[2026-06-25 12:45:02] [9/10] Session cleanup...
+[2026-06-25 12:45:02] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 12:45:02] [10/10] Storage migration: not today (day 25)
+[2026-06-25 12:45:02] [11/11] Quota budget check...
+[2026-06-25 12:45:02] [11/11] Quota budget: done
+[2026-06-25 12:45:02] === Maintenance run complete ===
+[2026-06-25 13:15:05] === Maintenance run started ===
+[2026-06-25 13:15:05] [1/10] Mount check...
+[2026-06-25 13:15:05] [1/10] Mount check: FAILED
+[2026-06-25 13:15:05] [2/10] Disk monitor...
+OK: 33GB free
+[2026-06-25 13:15:05] [2/10] Disk monitor: done
+[2026-06-25 13:15:05] [3/10] Mission Control health check...
+[2026-06-25 13:15:05] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 13:15:05] [4/10] Error spike watchdog...
+[2026-06-25 13:15:05] [4/10] Error watchdog: no spikes detected
+[2026-06-25 13:15:05] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 13:15:05] [5/9] Stall detection: done
+[2026-06-25 13:15:05] [6/10] Task dispatcher...
+[2026-06-25 13:15:05] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 13:15:05] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 13:15:05] [6.5/10] Fix validation: done
+[2026-06-25 13:15:05] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 13:15:05] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 13:15:05] [6.7/10] Performance tuning: done
+[2026-06-25 13:15:05] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 13:15:05] [6.8/10] Mission planning: done
+[2026-06-25 13:15:05] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 13:15:05] [7/10] Incident auto-detection: done
+[2026-06-25 13:15:05] [8/10] Safe backup: not today (day 4)
+[2026-06-25 13:15:05] [9/10] Session cleanup...
+[2026-06-25 13:15:05] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 13:15:05] [10/10] Storage migration: not today (day 25)
+[2026-06-25 13:15:05] [11/11] Quota budget check...
+[2026-06-25 13:15:05] [11/11] Quota budget: done
+[2026-06-25 13:15:05] === Maintenance run complete ===
+[2026-06-25 13:45:08] === Maintenance run started ===
+[2026-06-25 13:45:08] [1/10] Mount check...
+[2026-06-25 13:45:08] [1/10] Mount check: FAILED
+[2026-06-25 13:45:08] [2/10] Disk monitor...
+OK: 33GB free
+[2026-06-25 13:45:08] [2/10] Disk monitor: done
+[2026-06-25 13:45:08] [3/10] Mission Control health check...
+[2026-06-25 13:45:08] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 13:45:08] [4/10] Error spike watchdog...
+[2026-06-25 13:45:08] [4/10] Error watchdog: no spikes detected
+[2026-06-25 13:45:08] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 13:45:08] [5/9] Stall detection: done
+[2026-06-25 13:45:08] [6/10] Task dispatcher...
+[2026-06-25 13:45:08] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 13:45:08] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 13:45:08] [6.5/10] Fix validation: done
+[2026-06-25 13:45:08] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 13:45:08] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 13:45:08] [6.7/10] Performance tuning: done
+[2026-06-25 13:45:08] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 13:45:08] [6.8/10] Mission planning: done
+[2026-06-25 13:45:08] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 13:45:08] [7/10] Incident auto-detection: done
+[2026-06-25 13:45:08] [8/10] Safe backup: not today (day 4)
+[2026-06-25 13:45:08] [9/10] Session cleanup...
+[2026-06-25 13:45:08] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 13:45:08] [10/10] Storage migration: not today (day 25)
+[2026-06-25 13:45:08] [11/11] Quota budget check...
+[2026-06-25 13:45:08] [11/11] Quota budget: done
+[2026-06-25 13:45:08] === Maintenance run complete ===
+[2026-06-25 14:15:11] === Maintenance run started ===
+[2026-06-25 14:15:11] [1/10] Mount check...
+[2026-06-25 14:15:11] [1/10] Mount check: FAILED
+[2026-06-25 14:15:11] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 14:15:11] [2/10] Disk monitor: done
+[2026-06-25 14:15:11] [3/10] Mission Control health check...
+[2026-06-25 14:15:11] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 14:15:11] [4/10] Error spike watchdog...
+[2026-06-25 14:15:11] [4/10] Error watchdog: no spikes detected
+[2026-06-25 14:15:11] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 14:15:11] [5/9] Stall detection: done
+[2026-06-25 14:15:11] [6/10] Task dispatcher...
+[2026-06-25 14:15:11] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 14:15:11] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 14:15:11] [6.5/10] Fix validation: done
+[2026-06-25 14:15:11] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 14:15:11] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 14:15:11] [6.7/10] Performance tuning: done
+[2026-06-25 14:15:11] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 14:15:11] [6.8/10] Mission planning: done
+[2026-06-25 14:15:11] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 14:15:11] [7/10] Incident auto-detection: done
+[2026-06-25 14:15:11] [8/10] Safe backup: not today (day 4)
+[2026-06-25 14:15:11] [9/10] Session cleanup...
+[2026-06-25 14:15:11] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 14:15:11] [10/10] Storage migration: not today (day 25)
+[2026-06-25 14:15:11] [11/11] Quota budget check...
+[2026-06-25 14:15:11] [11/11] Quota budget: done
+[2026-06-25 14:15:11] === Maintenance run complete ===
+[2026-06-25 14:45:14] === Maintenance run started ===
+[2026-06-25 14:45:14] [1/10] Mount check...
+[2026-06-25 14:45:14] [1/10] Mount check: FAILED
+[2026-06-25 14:45:14] [2/10] Disk monitor...
+OK: 32GB free
+[2026-06-25 14:45:14] [2/10] Disk monitor: done
+[2026-06-25 14:45:14] [3/10] Mission Control health check...
+[2026-06-25 14:45:14] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 14:45:14] [4/10] Error spike watchdog...
+[2026-06-25 14:45:14] [4/10] Error watchdog: no spikes detected
+[2026-06-25 14:45:14] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 14:45:14] [5/9] Stall detection: done
+[2026-06-25 14:45:14] [6/10] Task dispatcher...
+[2026-06-25 14:45:14] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 14:45:14] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 14:45:14] [6.5/10] Fix validation: done
+[2026-06-25 14:45:14] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 14:45:14] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 14:45:14] [6.7/10] Performance tuning: done
+[2026-06-25 14:45:14] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 14:45:14] [6.8/10] Mission planning: done
+[2026-06-25 14:45:14] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 14:45:14] [7/10] Incident auto-detection: done
+[2026-06-25 14:45:14] [8/10] Safe backup: not today (day 4)
+[2026-06-25 14:45:14] [9/10] Session cleanup...
+[2026-06-25 14:45:14] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 14:45:14] [10/10] Storage migration: not today (day 25)
+[2026-06-25 14:45:14] [11/11] Quota budget check...
+[2026-06-25 14:45:14] [11/11] Quota budget: done
+[2026-06-25 14:45:14] === Maintenance run complete ===
+[2026-06-25 15:13:45] === Maintenance run started ===
+[2026-06-25 15:13:45] [1/10] Mount check...
+[2026-06-25 15:13:45] [1/10] Mount check: FAILED
+[2026-06-25 15:13:45] [2/10] Disk monitor...
+OK: 34GB free
+[2026-06-25 15:13:45] [2/10] Disk monitor: done
+[2026-06-25 15:13:45] [3/10] Mission Control health check...
+[2026-06-25 15:13:45] [3/10] Mission Control: DOWN (HTTP 000000) — restarting...
+[2026-06-25 15:43:48] === Maintenance run started ===
+[2026-06-25 15:43:48] [1/10] Mount check...
+[2026-06-25 15:43:48] [1/10] Mount check: FAILED
+[2026-06-25 15:43:48] [2/10] Disk monitor...
+OK: 33GB free
+[2026-06-25 15:43:48] [2/10] Disk monitor: done
+[2026-06-25 15:43:48] [3/10] Mission Control health check...
+[2026-06-25 15:43:48] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 15:43:48] [4/10] Error spike watchdog...
+[2026-06-25 15:43:48] [4/10] Error watchdog: no spikes detected
+[2026-06-25 15:43:48] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 15:43:48] [5/9] Stall detection: done
+[2026-06-25 15:43:48] [6/10] Task dispatcher...
+[2026-06-25 15:43:48] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 15:43:48] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 15:43:48] [6.5/10] Fix validation: done
+[2026-06-25 15:43:48] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 15:43:48] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 15:43:48] [6.7/10] Performance tuning: done
+[2026-06-25 15:43:48] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 15:43:48] [6.8/10] Mission planning: done
+[2026-06-25 15:43:48] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 15:43:48] [7/10] Incident auto-detection: done
+[2026-06-25 15:43:48] [8/10] Safe backup: not today (day 4)
+[2026-06-25 15:43:48] [9/10] Session cleanup...
+[2026-06-25 15:43:48] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 15:43:48] [10/10] Storage migration: not today (day 25)
+[2026-06-25 15:43:48] [11/11] Quota budget check...
+[2026-06-25 15:43:48] [11/11] Quota budget: done
+[2026-06-25 15:43:48] === Maintenance run complete ===
+[2026-06-25 16:13:51] === Maintenance run started ===
+[2026-06-25 16:13:51] [1/10] Mount check...
+[2026-06-25 16:13:51] [1/10] Mount check: FAILED
+[2026-06-25 16:13:51] [2/10] Disk monitor...
+OK: 27GB free
+[2026-06-25 16:13:51] [2/10] Disk monitor: done
+[2026-06-25 16:13:51] [3/10] Mission Control health check...
+[2026-06-25 16:13:51] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 16:13:51] [4/10] Error spike watchdog...
+[2026-06-25 16:13:51] [4/10] Error watchdog: no spikes detected
+[2026-06-25 16:13:51] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 16:13:51] [5/9] Stall detection: done
+[2026-06-25 16:13:51] [6/10] Task dispatcher...
+[2026-06-25 16:13:51] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 16:13:51] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 16:13:51] [6.5/10] Fix validation: done
+[2026-06-25 16:13:51] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 16:13:51] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 16:13:51] [6.7/10] Performance tuning: done
+[2026-06-25 16:13:51] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 16:13:51] [6.8/10] Mission planning: done
+[2026-06-25 16:13:51] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 16:13:51] [7/10] Incident auto-detection: done
+[2026-06-25 16:13:51] [8/10] Safe backup: not today (day 4)
+[2026-06-25 16:13:51] [9/10] Session cleanup...
+[2026-06-25 16:13:51] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 16:13:51] [10/10] Storage migration: not today (day 25)
+[2026-06-25 16:13:51] [11/11] Quota budget check...
+[2026-06-25 16:13:51] [11/11] Quota budget: done
+[2026-06-25 16:13:51] === Maintenance run complete ===
+[2026-06-25 16:43:54] === Maintenance run started ===
+[2026-06-25 16:43:54] [1/10] Mount check...
+[2026-06-25 16:43:54] [1/10] Mount check: FAILED
+[2026-06-25 16:43:54] [2/10] Disk monitor...
+OK: 24GB free
+[2026-06-25 16:43:54] [2/10] Disk monitor: done
+[2026-06-25 16:43:54] [3/10] Mission Control health check...
+[2026-06-25 16:43:54] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 16:43:54] [4/10] Error spike watchdog...
+[2026-06-25 16:43:54] [4/10] Error watchdog: no spikes detected
+[2026-06-25 16:43:54] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 16:43:54] [5/9] Stall detection: done
+[2026-06-25 16:43:54] [6/10] Task dispatcher...
+[2026-06-25 16:43:54] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 16:43:54] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 16:43:54] [6.5/10] Fix validation: done
+[2026-06-25 16:43:54] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 16:43:54] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 16:43:54] [6.7/10] Performance tuning: done
+[2026-06-25 16:43:54] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 16:43:54] [6.8/10] Mission planning: done
+[2026-06-25 16:43:54] [7/10] Incident auto-detection...
+duplicate|INC-146
+duplicate|INC-147
+[2026-06-25 16:43:54] [7/10] Incident auto-detection: done
+[2026-06-25 16:43:54] [8/10] Safe backup: not today (day 4)
+[2026-06-25 16:43:54] [9/10] Session cleanup...
+[2026-06-25 16:43:54] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 16:43:54] [10/10] Storage migration: not today (day 25)
+[2026-06-25 16:43:54] [11/11] Quota budget check...
+[2026-06-25 16:43:54] [11/11] Quota budget: done
+[2026-06-25 16:43:54] === Maintenance run complete ===
+[2026-06-25 17:13:57] === Maintenance run started ===
+[2026-06-25 17:13:57] [1/10] Mount check...
+[2026-06-25 17:13:57] [1/10] Mount check: FAILED
+[2026-06-25 17:13:57] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 17:13:57] [2/10] Disk monitor: done
+[2026-06-25 17:13:57] [3/10] Mission Control health check...
+[2026-06-25 17:13:57] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 17:13:57] [4/10] Error spike watchdog...
+[2026-06-25 17:13:57] [4/10] Error watchdog: no spikes detected
+[2026-06-25 17:13:57] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 17:13:57] [5/9] Stall detection: done
+[2026-06-25 17:13:57] [6/10] Task dispatcher...
+[2026-06-25 17:13:57] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 17:13:57] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 17:13:57] [6.5/10] Fix validation: done
+[2026-06-25 17:13:57] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 17:13:57] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 17:13:57] [6.7/10] Performance tuning: done
+[2026-06-25 17:13:57] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 17:13:57] [6.8/10] Mission planning: done
+[2026-06-25 17:13:57] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 17:13:57] [7/10] Incident auto-detection: done
+[2026-06-25 17:13:57] [8/10] Safe backup: not today (day 4)
+[2026-06-25 17:13:57] [9/10] Session cleanup...
+[2026-06-25 17:13:57] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 17:13:57] [10/10] Storage migration: not today (day 25)
+[2026-06-25 17:13:57] [11/11] Quota budget check...
+[2026-06-25 17:13:57] [11/11] Quota budget: done
+[2026-06-25 17:13:57] === Maintenance run complete ===
+[2026-06-25 17:44:00] === Maintenance run started ===
+[2026-06-25 17:44:00] [1/10] Mount check...
+[2026-06-25 17:44:00] [1/10] Mount check: FAILED
+[2026-06-25 17:44:00] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 17:44:00] [2/10] Disk monitor: done
+[2026-06-25 17:44:00] [3/10] Mission Control health check...
+[2026-06-25 17:44:00] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 17:44:00] [4/10] Error spike watchdog...
+[2026-06-25 17:44:00] [4/10] Error watchdog: no spikes detected
+[2026-06-25 17:44:00] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 17:44:00] [5/9] Stall detection: done
+[2026-06-25 17:44:00] [6/10] Task dispatcher...
+[2026-06-25 17:44:00] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 17:44:00] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 17:44:00] [6.5/10] Fix validation: done
+[2026-06-25 17:44:00] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 17:44:00] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 17:44:00] [6.7/10] Performance tuning: done
+[2026-06-25 17:44:00] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 17:44:00] [6.8/10] Mission planning: done
+[2026-06-25 17:44:00] [7/10] Incident auto-detection...
+duplicate|INC-147
+[2026-06-25 17:44:00] [7/10] Incident auto-detection: done
+[2026-06-25 17:44:00] [8/10] Safe backup: not today (day 4)
+[2026-06-25 17:44:00] [9/10] Session cleanup...
+[2026-06-25 17:44:00] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 17:44:00] [10/10] Storage migration: not today (day 25)
+[2026-06-25 17:44:00] [11/11] Quota budget check...
+[2026-06-25 17:44:00] [11/11] Quota budget: done
+[2026-06-25 17:44:00] === Maintenance run complete ===
+[2026-06-25 18:14:02] === Maintenance run started ===
+[2026-06-25 18:14:02] [1/10] Mount check...
+[2026-06-25 18:14:02] [1/10] Mount check: FAILED
+[2026-06-25 18:14:02] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 18:14:02] [2/10] Disk monitor: done
+[2026-06-25 18:14:02] [3/10] Mission Control health check...
+[2026-06-25 18:14:02] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 18:14:02] [4/10] Error spike watchdog...
+[2026-06-25 18:14:02] [4/10] Error watchdog: no spikes detected
+[2026-06-25 18:14:02] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 18:14:02] [5/9] Stall detection: done
+[2026-06-25 18:14:02] [6/10] Task dispatcher...
+[2026-06-25 18:14:02] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 18:14:02] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 18:14:02] [6.5/10] Fix validation: done
+[2026-06-25 18:14:02] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 18:14:02] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 18:14:02] [6.7/10] Performance tuning: done
+[2026-06-25 18:14:02] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 18:14:02] [6.8/10] Mission planning: done
+[2026-06-25 18:14:02] [7/10] Incident auto-detection...
+INC-148|task-inc-148-d645
+[2026-06-25 18:14:02] [7/10] Incident auto-detection: done
+[2026-06-25 18:14:02] [8/10] Safe backup: not today (day 4)
+[2026-06-25 18:14:02] [9/10] Session cleanup...
+[2026-06-25 18:14:02] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 18:14:02] [10/10] Storage migration: not today (day 25)
+[2026-06-25 18:14:02] [11/11] Quota budget check...
+[2026-06-25 18:14:02] [11/11] Quota budget: done
+[2026-06-25 18:14:02] === Maintenance run complete ===
+[2026-06-25 18:44:05] === Maintenance run started ===
+[2026-06-25 18:44:05] [1/10] Mount check...
+[2026-06-25 18:44:05] [1/10] Mount check: FAILED
+[2026-06-25 18:44:05] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 18:44:05] [2/10] Disk monitor: done
+[2026-06-25 18:44:05] [3/10] Mission Control health check...
+[2026-06-25 18:44:05] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 18:44:05] [4/10] Error spike watchdog...
+[2026-06-25 18:44:05] [4/10] Error watchdog: no spikes detected
+[2026-06-25 18:44:05] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 18:44:05] [5/9] Stall detection: done
+[2026-06-25 18:44:05] [6/10] Task dispatcher...
+[2026-06-25 18:44:05] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 18:44:05] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 18:44:05] [6.5/10] Fix validation: done
+[2026-06-25 18:44:05] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 18:44:05] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 18:44:05] [6.7/10] Performance tuning: done
+[2026-06-25 18:44:05] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 18:44:05] [6.8/10] Mission planning: done
+[2026-06-25 18:44:05] [7/10] Incident auto-detection...
+INC-149|task-inc-149-5791
+duplicate|INC-148
+[2026-06-25 18:44:05] [7/10] Incident auto-detection: done
+[2026-06-25 18:44:05] [8/10] Safe backup: not today (day 4)
+[2026-06-25 18:44:05] [9/10] Session cleanup...
+[2026-06-25 18:44:05] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 18:44:05] [10/10] Storage migration: not today (day 25)
+[2026-06-25 18:44:05] [11/11] Quota budget check...
+[2026-06-25 18:44:05] [11/11] Quota budget: done
+[2026-06-25 18:44:05] === Maintenance run complete ===
+[2026-06-25 19:14:07] === Maintenance run started ===
+[2026-06-25 19:14:07] [1/10] Mount check...
+[2026-06-25 19:14:07] [1/10] Mount check: FAILED
+[2026-06-25 19:14:07] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 19:14:07] [2/10] Disk monitor: done
+[2026-06-25 19:14:07] [3/10] Mission Control health check...
+[2026-06-25 19:14:07] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 19:14:07] [4/10] Error spike watchdog...
+[2026-06-25 19:14:07] [4/10] Error watchdog: no spikes detected
+[2026-06-25 19:14:07] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 19:14:07] [5/9] Stall detection: done
+[2026-06-25 19:14:07] [6/10] Task dispatcher...
+[2026-06-25 19:14:07] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 19:14:07] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 19:14:07] [6.5/10] Fix validation: done
+[2026-06-25 19:14:07] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 19:14:07] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 19:14:07] [6.7/10] Performance tuning: done
+[2026-06-25 19:14:07] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 19:14:07] [6.8/10] Mission planning: done
+[2026-06-25 19:14:07] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 19:14:07] [7/10] Incident auto-detection: done
+[2026-06-25 19:14:07] [8/10] Safe backup: not today (day 4)
+[2026-06-25 19:14:07] [9/10] Session cleanup...
+[2026-06-25 19:14:07] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 19:14:07] [10/10] Storage migration: not today (day 25)
+[2026-06-25 19:14:07] [11/11] Quota budget check...
+[2026-06-25 19:14:07] [11/11] Quota budget: done
+[2026-06-25 19:14:07] === Maintenance run complete ===
+[2026-06-25 19:44:10] === Maintenance run started ===
+[2026-06-25 19:44:10] [1/10] Mount check...
+[2026-06-25 19:44:10] [1/10] Mount check: FAILED
+[2026-06-25 19:44:10] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 19:44:10] [2/10] Disk monitor: done
+[2026-06-25 19:44:10] [3/10] Mission Control health check...
+[2026-06-25 19:44:10] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 19:44:10] [4/10] Error spike watchdog...
+[2026-06-25 19:44:10] [4/10] Error watchdog: no spikes detected
+[2026-06-25 19:44:10] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 19:44:10] [5/9] Stall detection: done
+[2026-06-25 19:44:10] [6/10] Task dispatcher...
+[2026-06-25 19:44:10] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 19:44:10] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 19:44:10] [6.5/10] Fix validation: done
+[2026-06-25 19:44:10] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 19:44:10] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 19:44:10] [6.7/10] Performance tuning: done
+[2026-06-25 19:44:10] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 19:44:10] [6.8/10] Mission planning: done
+[2026-06-25 19:44:10] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 19:44:10] [7/10] Incident auto-detection: done
+[2026-06-25 19:44:10] [8/10] Safe backup: not today (day 4)
+[2026-06-25 19:44:10] [9/10] Session cleanup...
+[2026-06-25 19:44:10] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 19:44:10] [10/10] Storage migration: not today (day 25)
+[2026-06-25 19:44:10] [11/11] Quota budget check...
+[2026-06-25 19:44:10] [11/11] Quota budget: done
+[2026-06-25 19:44:10] === Maintenance run complete ===
+[2026-06-25 20:14:13] === Maintenance run started ===
+[2026-06-25 20:14:13] [1/10] Mount check...
+[2026-06-25 20:14:13] [1/10] Mount check: FAILED
+[2026-06-25 20:14:13] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 20:14:13] [2/10] Disk monitor: done
+[2026-06-25 20:14:13] [3/10] Mission Control health check...
+[2026-06-25 20:14:13] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 20:14:13] [4/10] Error spike watchdog...
+[2026-06-25 20:14:13] [4/10] Error watchdog: no spikes detected
+[2026-06-25 20:14:13] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 20:14:13] [5/9] Stall detection: done
+[2026-06-25 20:14:13] [6/10] Task dispatcher...
+[2026-06-25 20:14:13] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 20:14:13] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 20:14:13] [6.5/10] Fix validation: done
+[2026-06-25 20:14:13] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 20:14:13] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 20:14:13] [6.7/10] Performance tuning: done
+[2026-06-25 20:14:13] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 20:14:13] [6.8/10] Mission planning: done
+[2026-06-25 20:14:13] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 20:14:13] [7/10] Incident auto-detection: done
+[2026-06-25 20:14:13] [8/10] Safe backup: not today (day 4)
+[2026-06-25 20:14:13] [9/10] Session cleanup...
+[2026-06-25 20:14:13] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 20:14:13] [10/10] Storage migration: not today (day 25)
+[2026-06-25 20:14:13] [11/11] Quota budget check...
+[2026-06-25 20:14:13] [11/11] Quota budget: done
+[2026-06-25 20:14:13] === Maintenance run complete ===
+[2026-06-25 20:44:16] === Maintenance run started ===
+[2026-06-25 20:44:16] [1/10] Mount check...
+[2026-06-25 20:44:16] [1/10] Mount check: FAILED
+[2026-06-25 20:44:16] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 20:44:16] [2/10] Disk monitor: done
+[2026-06-25 20:44:16] [3/10] Mission Control health check...
+[2026-06-25 20:44:16] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 20:44:16] [4/10] Error spike watchdog...
+[2026-06-25 20:44:16] [4/10] Error watchdog: no spikes detected
+[2026-06-25 20:44:16] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 20:44:16] [5/9] Stall detection: done
+[2026-06-25 20:44:16] [6/10] Task dispatcher...
+[2026-06-25 20:44:16] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 20:44:16] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 20:44:16] [6.5/10] Fix validation: done
+[2026-06-25 20:44:16] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 20:44:16] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 20:44:16] [6.7/10] Performance tuning: done
+[2026-06-25 20:44:16] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 20:44:16] [6.8/10] Mission planning: done
+[2026-06-25 20:44:16] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 20:44:16] [7/10] Incident auto-detection: done
+[2026-06-25 20:44:16] [8/10] Safe backup: not today (day 4)
+[2026-06-25 20:44:16] [9/10] Session cleanup...
+[2026-06-25 20:44:16] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 20:44:16] [10/10] Storage migration: not today (day 25)
+[2026-06-25 20:44:16] [11/11] Quota budget check...
+[2026-06-25 20:44:16] [11/11] Quota budget: done
+[2026-06-25 20:44:16] === Maintenance run complete ===
+[2026-06-25 21:14:19] === Maintenance run started ===
+[2026-06-25 21:14:19] [1/10] Mount check...
+[2026-06-25 21:14:19] [1/10] Mount check: FAILED
+[2026-06-25 21:14:19] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 21:14:19] [2/10] Disk monitor: done
+[2026-06-25 21:14:19] [3/10] Mission Control health check...
+[2026-06-25 21:14:19] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 21:14:19] [4/10] Error spike watchdog...
+[2026-06-25 21:14:19] [4/10] Error watchdog: no spikes detected
+[2026-06-25 21:14:19] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 21:14:19] [5/9] Stall detection: done
+[2026-06-25 21:14:19] [6/10] Task dispatcher...
+[2026-06-25 21:14:19] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 21:14:19] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 21:14:19] [6.5/10] Fix validation: done
+[2026-06-25 21:14:19] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 21:14:19] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 21:14:19] [6.7/10] Performance tuning: done
+[2026-06-25 21:14:19] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 21:14:19] [6.8/10] Mission planning: done
+[2026-06-25 21:14:19] [7/10] Incident auto-detection...
+duplicate|INC-148
+[2026-06-25 21:14:19] [7/10] Incident auto-detection: done
+[2026-06-25 21:14:19] [8/10] Safe backup: not today (day 4)
+[2026-06-25 21:14:19] [9/10] Session cleanup...
+[2026-06-25 21:14:19] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 21:14:19] [10/10] Storage migration: not today (day 25)
+[2026-06-25 21:14:19] [11/11] Quota budget check...
+[2026-06-25 21:14:19] [11/11] Quota budget: done
+[2026-06-25 21:14:19] === Maintenance run complete ===
+[2026-06-25 21:44:22] === Maintenance run started ===
+[2026-06-25 21:44:22] [1/10] Mount check...
+[2026-06-25 21:44:22] [1/10] Mount check: FAILED
+[2026-06-25 21:44:22] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 21:44:22] [2/10] Disk monitor: done
+[2026-06-25 21:44:22] [3/10] Mission Control health check...
+[2026-06-25 21:44:22] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 21:44:22] [4/10] Error spike watchdog...
+[2026-06-25 21:44:22] [4/10] Error watchdog: no spikes detected
+[2026-06-25 21:44:22] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 21:44:22] [5/9] Stall detection: done
+[2026-06-25 21:44:22] [6/10] Task dispatcher...
+[2026-06-25 21:44:22] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 21:44:22] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 21:44:22] [6.5/10] Fix validation: done
+[2026-06-25 21:44:22] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 21:44:22] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 21:44:22] [6.7/10] Performance tuning: done
+[2026-06-25 21:44:22] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 21:44:22] [6.8/10] Mission planning: done
+[2026-06-25 21:44:22] [7/10] Incident auto-detection...
+duplicate|INC-148
+[2026-06-25 21:44:22] [7/10] Incident auto-detection: done
+[2026-06-25 21:44:22] [8/10] Safe backup: not today (day 4)
+[2026-06-25 21:44:22] [9/10] Session cleanup...
+[2026-06-25 21:44:22] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 21:44:22] [10/10] Storage migration: not today (day 25)
+[2026-06-25 21:44:22] [11/11] Quota budget check...
+[2026-06-25 21:44:22] [11/11] Quota budget: done
+[2026-06-25 21:44:22] === Maintenance run complete ===
+[2026-06-25 22:14:25] === Maintenance run started ===
+[2026-06-25 22:14:25] [1/10] Mount check...
+[2026-06-25 22:14:25] [1/10] Mount check: FAILED
+[2026-06-25 22:14:25] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-25 22:14:25] [2/10] Disk monitor: done
+[2026-06-25 22:14:25] [3/10] Mission Control health check...
+[2026-06-25 22:14:25] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 22:14:25] [4/10] Error spike watchdog...
+[2026-06-25 22:14:25] [4/10] Error watchdog: no spikes detected
+[2026-06-25 22:14:25] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 22:14:25] [5/9] Stall detection: done
+[2026-06-25 22:14:25] [6/10] Task dispatcher...
+[2026-06-25 22:14:25] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 22:14:25] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 22:14:25] [6.5/10] Fix validation: done
+[2026-06-25 22:14:25] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 22:14:25] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 22:14:25] [6.7/10] Performance tuning: done
+[2026-06-25 22:14:25] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 22:14:25] [6.8/10] Mission planning: done
+[2026-06-25 22:14:25] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 22:14:25] [7/10] Incident auto-detection: done
+[2026-06-25 22:14:25] [8/10] Safe backup: not today (day 4)
+[2026-06-25 22:14:25] [9/10] Session cleanup...
+[2026-06-25 22:14:25] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 22:14:25] [10/10] Storage migration: not today (day 25)
+[2026-06-25 22:14:25] [11/11] Quota budget check...
+[2026-06-25 22:14:25] [11/11] Quota budget: done
+[2026-06-25 22:14:25] === Maintenance run complete ===
+[2026-06-25 22:44:28] === Maintenance run started ===
+[2026-06-25 22:44:28] [1/10] Mount check...
+[2026-06-25 22:44:28] [1/10] Mount check: FAILED
+[2026-06-25 22:44:28] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-25 22:44:28] [2/10] Disk monitor: done
+[2026-06-25 22:44:28] [3/10] Mission Control health check...
+[2026-06-25 22:44:28] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-25 22:44:28] [4/10] Error spike watchdog...
+[2026-06-25 22:44:28] [4/10] Error watchdog: no spikes detected
+[2026-06-25 22:44:28] [5/9] Stall detection...
+No stale tasks
+[2026-06-25 22:44:28] [5/9] Stall detection: done
+[2026-06-25 22:44:28] [6/10] Task dispatcher...
+[2026-06-25 22:44:28] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-25 22:44:28] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-25 22:44:28] [6.5/10] Fix validation: done
+[2026-06-25 22:44:28] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-25 22:44:28] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-25 22:44:28] [6.7/10] Performance tuning: done
+[2026-06-25 22:44:28] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-25 22:44:28] [6.8/10] Mission planning: done
+[2026-06-25 22:44:28] [7/10] Incident auto-detection...
+duplicate|INC-149
+duplicate|INC-148
+[2026-06-25 22:44:28] [7/10] Incident auto-detection: done
+[2026-06-25 22:44:28] [8/10] Safe backup: not today (day 4)
+[2026-06-25 22:44:28] [9/10] Session cleanup...
+[2026-06-25 22:44:28] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-25 22:44:28] [10/10] Storage migration: not today (day 25)
+[2026-06-25 22:44:28] [11/11] Quota budget check...
+[2026-06-25 22:44:28] [11/11] Quota budget: done
+[2026-06-25 22:44:28] === Maintenance run complete ===
+[2026-06-26 16:47:47] === Maintenance run started ===
+[2026-06-26 16:47:47] [1/10] Mount check...
+[2026-06-26 16:47:47] [1/10] Mount check: FAILED
+[2026-06-26 16:47:47] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 16:47:47] [2/10] Disk monitor: done
+[2026-06-26 16:47:47] [3/10] Mission Control health check...
+[2026-06-26 16:47:47] [3/10] Mission Control: DOWN (HTTP 000000) — restarting...
+[2026-06-26 17:17:51] === Maintenance run started ===
+[2026-06-26 17:17:51] [1/10] Mount check...
+[2026-06-26 17:17:51] [1/10] Mount check: FAILED
+[2026-06-26 17:17:51] [2/10] Disk monitor...
+OK: 26GB free
+[2026-06-26 17:17:51] [2/10] Disk monitor: done
+[2026-06-26 17:17:51] [3/10] Mission Control health check...
+[2026-06-26 17:17:51] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 17:17:51] [4/10] Error spike watchdog...
+[2026-06-26 17:17:51] [4/10] Error watchdog: no spikes detected
+[2026-06-26 17:17:51] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 17:17:51] [5/9] Stall detection: done
+[2026-06-26 17:17:51] [6/10] Task dispatcher...
+[2026-06-26 17:17:51] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 17:17:51] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 17:17:51] [6.5/10] Fix validation: done
+[2026-06-26 17:17:51] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 17:17:51] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 17:17:51] [6.7/10] Performance tuning: done
+[2026-06-26 17:17:51] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 17:17:51] [6.8/10] Mission planning: done
+[2026-06-26 17:17:51] [7/10] Incident auto-detection...
+duplicate|INC-149
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 17:17:51] [7/10] Incident auto-detection: done
+[2026-06-26 17:17:51] [8/10] Safe backup: not today (day 5)
+[2026-06-26 17:17:51] [9/10] Session cleanup...
+[2026-06-26 17:17:51] [9/10] Session cleanup: expired 338 stale sessions
+[2026-06-26 17:17:51] [10/10] Storage migration: not today (day 26)
+[2026-06-26 17:17:51] [11/11] Quota budget check...
+[2026-06-26 17:17:51] [11/11] Quota budget: done
+[2026-06-26 17:17:51] === Maintenance run complete ===
+[2026-06-26 17:47:55] === Maintenance run started ===
+[2026-06-26 17:47:55] [1/10] Mount check...
+[2026-06-26 17:47:55] [1/10] Mount check: FAILED
+[2026-06-26 17:47:55] [2/10] Disk monitor...
+OK: 26GB free
+[2026-06-26 17:47:55] [2/10] Disk monitor: done
+[2026-06-26 17:47:55] [3/10] Mission Control health check...
+[2026-06-26 17:47:55] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 17:47:55] [4/10] Error spike watchdog...
+[2026-06-26 17:47:55] [4/10] Error watchdog: no spikes detected
+[2026-06-26 17:47:55] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 17:47:55] [5/9] Stall detection: done
+[2026-06-26 17:47:55] [6/10] Task dispatcher...
+[2026-06-26 17:47:55] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 17:47:55] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 17:47:55] [6.5/10] Fix validation: done
+[2026-06-26 17:47:55] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 17:47:55] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 17:47:55] [6.7/10] Performance tuning: done
+[2026-06-26 17:47:55] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 17:47:55] [6.8/10] Mission planning: done
+[2026-06-26 17:47:55] [7/10] Incident auto-detection...
+duplicate|INC-149
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 17:47:55] [7/10] Incident auto-detection: done
+[2026-06-26 17:47:55] [8/10] Safe backup: not today (day 5)
+[2026-06-26 17:47:55] [9/10] Session cleanup...
+[2026-06-26 17:47:55] [9/10] Session cleanup: expired 15 stale sessions
+[2026-06-26 17:47:55] [10/10] Storage migration: not today (day 26)
+[2026-06-26 17:47:55] [11/11] Quota budget check...
+[2026-06-26 17:47:55] [11/11] Quota budget: done
+[2026-06-26 17:47:55] === Maintenance run complete ===
+[2026-06-26 18:17:56] === Maintenance run started ===
+[2026-06-26 18:17:56] [1/10] Mount check...
+[2026-06-26 18:17:56] [1/10] Mount check: FAILED
+[2026-06-26 18:17:56] [2/10] Disk monitor...
+OK: 26GB free
+[2026-06-26 18:17:56] [2/10] Disk monitor: done
+[2026-06-26 18:17:56] [3/10] Mission Control health check...
+[2026-06-26 18:17:56] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 18:17:56] [4/10] Error spike watchdog...
+[2026-06-26 18:17:56] [4/10] Error watchdog: no spikes detected
+[2026-06-26 18:17:56] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 18:17:56] [5/9] Stall detection: done
+[2026-06-26 18:17:56] [6/10] Task dispatcher...
+[2026-06-26 18:17:56] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 18:17:56] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 18:17:56] [6.5/10] Fix validation: done
+[2026-06-26 18:17:56] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 18:17:56] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 18:17:56] [6.7/10] Performance tuning: done
+[2026-06-26 18:17:56] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 18:17:56] [6.8/10] Mission planning: done
+[2026-06-26 18:17:56] [7/10] Incident auto-detection...
+duplicate|INC-149
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 18:17:56] [7/10] Incident auto-detection: done
+[2026-06-26 18:17:56] [8/10] Safe backup: not today (day 5)
+[2026-06-26 18:17:56] [9/10] Session cleanup...
+[2026-06-26 18:17:56] [9/10] Session cleanup: expired 12 stale sessions
+[2026-06-26 18:17:56] [10/10] Storage migration: not today (day 26)
+[2026-06-26 18:17:56] [11/11] Quota budget check...
+[2026-06-26 18:17:56] [11/11] Quota budget: done
+[2026-06-26 18:17:56] === Maintenance run complete ===
+[2026-06-26 18:47:58] === Maintenance run started ===
+[2026-06-26 18:47:58] [1/10] Mount check...
+[2026-06-26 18:47:58] [1/10] Mount check: FAILED
+[2026-06-26 18:47:58] [2/10] Disk monitor...
+OK: 25GB free
+[2026-06-26 18:47:58] [2/10] Disk monitor: done
+[2026-06-26 18:47:58] [3/10] Mission Control health check...
+[2026-06-26 18:47:58] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 18:47:58] [4/10] Error spike watchdog...
+[2026-06-26 18:47:58] [4/10] Error watchdog: no spikes detected
+[2026-06-26 18:47:58] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 18:47:58] [5/9] Stall detection: done
+[2026-06-26 18:47:58] [6/10] Task dispatcher...
+[2026-06-26 18:47:58] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 18:47:58] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 18:47:58] [6.5/10] Fix validation: done
+[2026-06-26 18:47:58] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 18:47:58] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 18:47:58] [6.7/10] Performance tuning: done
+[2026-06-26 18:47:58] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 18:47:58] [6.8/10] Mission planning: done
+[2026-06-26 18:47:58] [7/10] Incident auto-detection...
+INC-150|task-inc-150-0432
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 18:47:58] [7/10] Incident auto-detection: done
+[2026-06-26 18:47:58] [8/10] Safe backup: not today (day 5)
+[2026-06-26 18:47:58] [9/10] Session cleanup...
+[2026-06-26 18:47:58] [9/10] Session cleanup: expired 20 stale sessions
+[2026-06-26 18:47:58] [10/10] Storage migration: not today (day 26)
+[2026-06-26 18:47:58] [11/11] Quota budget check...
+[2026-06-26 18:47:58] [11/11] Quota budget: done
+[2026-06-26 18:47:58] === Maintenance run complete ===
+[2026-06-26 19:18:00] === Maintenance run started ===
+[2026-06-26 19:18:00] [1/10] Mount check...
+[2026-06-26 19:18:00] [1/10] Mount check: FAILED
+[2026-06-26 19:18:00] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-26 19:18:00] [2/10] Disk monitor: done
+[2026-06-26 19:18:00] [3/10] Mission Control health check...
+[2026-06-26 19:18:00] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 19:18:00] [4/10] Error spike watchdog...
+[2026-06-26 19:18:00] [4/10] Error watchdog: no spikes detected
+[2026-06-26 19:18:00] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 19:18:00] [5/9] Stall detection: done
+[2026-06-26 19:18:00] [6/10] Task dispatcher...
+[2026-06-26 19:18:00] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 19:18:00] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 19:18:00] [6.5/10] Fix validation: done
+[2026-06-26 19:18:00] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 19:18:00] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 19:18:00] [6.7/10] Performance tuning: done
+[2026-06-26 19:18:00] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 19:18:00] [6.8/10] Mission planning: done
+[2026-06-26 19:18:00] [7/10] Incident auto-detection...
+duplicate|INC-150
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 19:18:00] [7/10] Incident auto-detection: done
+[2026-06-26 19:18:00] [8/10] Safe backup: not today (day 5)
+[2026-06-26 19:18:00] [9/10] Session cleanup...
+[2026-06-26 19:18:00] [9/10] Session cleanup: expired 15 stale sessions
+[2026-06-26 19:18:00] [10/10] Storage migration: not today (day 26)
+[2026-06-26 19:18:00] [11/11] Quota budget check...
+[2026-06-26 19:18:00] [11/11] Quota budget: done
+[2026-06-26 19:18:00] === Maintenance run complete ===
+[2026-06-26 19:48:01] === Maintenance run started ===
+[2026-06-26 19:48:01] [1/10] Mount check...
+[2026-06-26 19:48:01] [1/10] Mount check: FAILED
+[2026-06-26 19:48:01] [2/10] Disk monitor...
+OK: 23GB free
+[2026-06-26 19:48:01] [2/10] Disk monitor: done
+[2026-06-26 19:48:01] [3/10] Mission Control health check...
+[2026-06-26 19:48:01] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 19:48:01] [4/10] Error spike watchdog...
+[2026-06-26 19:48:01] [4/10] Error watchdog: no spikes detected
+[2026-06-26 19:48:01] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 19:48:01] [5/9] Stall detection: done
+[2026-06-26 19:48:01] [6/10] Task dispatcher...
+[2026-06-26 19:48:01] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 19:48:01] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 19:48:01] [6.5/10] Fix validation: done
+[2026-06-26 19:48:01] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 19:48:01] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 19:48:01] [6.7/10] Performance tuning: done
+[2026-06-26 19:48:01] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 19:48:01] [6.8/10] Mission planning: done
+[2026-06-26 19:48:01] [7/10] Incident auto-detection...
+duplicate|INC-150
+/Users/spacemonkey/.openclaw/workspace/scripts/auto-detect-incidents.sh: line 434: [: 0
+0: integer expression expected
+[2026-06-26 19:48:01] [7/10] Incident auto-detection: done
+[2026-06-26 19:48:01] [8/10] Safe backup: not today (day 5)
+[2026-06-26 19:48:01] [9/10] Session cleanup...
+[2026-06-26 19:48:01] [9/10] Session cleanup: expired 17 stale sessions
+[2026-06-26 19:48:01] [10/10] Storage migration: not today (day 26)
+[2026-06-26 19:48:01] [11/11] Quota budget check...
+[2026-06-26 19:48:01] [11/11] Quota budget: done
+[2026-06-26 19:48:01] === Maintenance run complete ===
+[2026-06-26 20:18:03] === Maintenance run started ===
+[2026-06-26 20:18:03] [1/10] Mount check...
+[2026-06-26 20:18:03] [1/10] Mount check: FAILED
+[2026-06-26 20:18:03] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 20:18:03] [2/10] Disk monitor: done
+[2026-06-26 20:18:03] [3/10] Mission Control health check...
+[2026-06-26 20:18:03] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 20:18:03] [4/10] Error spike watchdog...
+[2026-06-26 20:18:03] [4/10] Error watchdog: no spikes detected
+[2026-06-26 20:18:03] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 20:18:03] [5/9] Stall detection: done
+[2026-06-26 20:18:03] [6/10] Task dispatcher...
+[2026-06-26 20:18:03] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 20:18:03] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 20:18:03] [6.5/10] Fix validation: done
+[2026-06-26 20:18:03] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 20:18:03] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 20:18:03] [6.7/10] Performance tuning: done
+[2026-06-26 20:18:03] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 20:18:03] [6.8/10] Mission planning: done
+[2026-06-26 20:18:03] [7/10] Incident auto-detection...
+duplicate|INC-150
+[2026-06-26 20:18:03] [7/10] Incident auto-detection: done
+[2026-06-26 20:18:03] [8/10] Safe backup: not today (day 5)
+[2026-06-26 20:18:03] [9/10] Session cleanup...
+[2026-06-26 20:18:03] [9/10] Session cleanup: expired 15 stale sessions
+[2026-06-26 20:18:03] [10/10] Storage migration: not today (day 26)
+[2026-06-26 20:18:03] [11/11] Quota budget check...
+[2026-06-26 20:18:03] [11/11] Quota budget: done
+[2026-06-26 20:18:03] === Maintenance run complete ===
+[2026-06-26 20:48:05] === Maintenance run started ===
+[2026-06-26 20:48:05] [1/10] Mount check...
+[2026-06-26 20:48:05] [1/10] Mount check: FAILED
+[2026-06-26 20:48:05] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 20:48:05] [2/10] Disk monitor: done
+[2026-06-26 20:48:05] [3/10] Mission Control health check...
+[2026-06-26 20:48:05] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 20:48:05] [4/10] Error spike watchdog...
+[2026-06-26 20:48:05] [4/10] Error watchdog: no spikes detected
+[2026-06-26 20:48:05] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 20:48:05] [5/9] Stall detection: done
+[2026-06-26 20:48:05] [6/10] Task dispatcher...
+[2026-06-26 20:48:05] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 20:48:05] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 20:48:05] [6.5/10] Fix validation: done
+[2026-06-26 20:48:05] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 20:48:05] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 20:48:05] [6.7/10] Performance tuning: done
+[2026-06-26 20:48:05] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 20:48:05] [6.8/10] Mission planning: done
+[2026-06-26 20:48:05] [7/10] Incident auto-detection...
+duplicate|INC-150
+[2026-06-26 20:48:05] [7/10] Incident auto-detection: done
+[2026-06-26 20:48:05] [8/10] Safe backup: not today (day 5)
+[2026-06-26 20:48:05] [9/10] Session cleanup...
+[2026-06-26 20:48:05] [9/10] Session cleanup: expired 12 stale sessions
+[2026-06-26 20:48:05] [10/10] Storage migration: not today (day 26)
+[2026-06-26 20:48:05] [11/11] Quota budget check...
+[2026-06-26 20:48:05] [11/11] Quota budget: done
+[2026-06-26 20:48:05] === Maintenance run complete ===
+[2026-06-26 21:18:06] === Maintenance run started ===
+[2026-06-26 21:18:06] [1/10] Mount check...
+[2026-06-26 21:18:06] [1/10] Mount check: FAILED
+[2026-06-26 21:18:06] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 21:18:06] [2/10] Disk monitor: done
+[2026-06-26 21:18:06] [3/10] Mission Control health check...
+[2026-06-26 21:18:06] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 21:18:06] [4/10] Error spike watchdog...
+[2026-06-26 21:18:06] [4/10] Error watchdog: no spikes detected
+[2026-06-26 21:18:06] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 21:18:06] [5/9] Stall detection: done
+[2026-06-26 21:18:06] [6/10] Task dispatcher...
+[2026-06-26 21:18:06] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 21:18:06] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 21:18:06] [6.5/10] Fix validation: done
+[2026-06-26 21:18:06] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 21:18:06] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 21:18:06] [6.7/10] Performance tuning: done
+[2026-06-26 21:18:06] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 21:18:06] [6.8/10] Mission planning: done
+[2026-06-26 21:18:06] [7/10] Incident auto-detection...
+duplicate|INC-150
+INC-151|task-inc-151-8e04
+[2026-06-26 21:18:06] [7/10] Incident auto-detection: done
+[2026-06-26 21:18:06] [8/10] Safe backup: not today (day 5)
+[2026-06-26 21:18:06] [9/10] Session cleanup...
+[2026-06-26 21:18:06] [9/10] Session cleanup: expired 10 stale sessions
+[2026-06-26 21:18:06] [10/10] Storage migration: not today (day 26)
+[2026-06-26 21:18:06] [11/11] Quota budget check...
+[2026-06-26 21:18:06] [11/11] Quota budget: done
+[2026-06-26 21:18:06] === Maintenance run complete ===
+[2026-06-26 21:48:08] === Maintenance run started ===
+[2026-06-26 21:48:08] [1/10] Mount check...
+[2026-06-26 21:48:08] [1/10] Mount check: FAILED
+[2026-06-26 21:48:08] [2/10] Disk monitor...
+OK: 21GB free
+[2026-06-26 21:48:08] [2/10] Disk monitor: done
+[2026-06-26 21:48:08] [3/10] Mission Control health check...
+[2026-06-26 21:48:08] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 21:48:08] [4/10] Error spike watchdog...
+[2026-06-26 21:48:08] [4/10] Error watchdog: no spikes detected
+[2026-06-26 21:48:08] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 21:48:08] [5/9] Stall detection: done
+[2026-06-26 21:48:08] [6/10] Task dispatcher...
+[2026-06-26 21:48:08] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 21:48:08] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 21:48:08] [6.5/10] Fix validation: done
+[2026-06-26 21:48:08] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 21:48:08] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 21:48:08] [6.7/10] Performance tuning: done
+[2026-06-26 21:48:08] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 21:48:08] [6.8/10] Mission planning: done
+[2026-06-26 21:48:08] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-26 21:48:08] [7/10] Incident auto-detection: done
+[2026-06-26 21:48:08] [8/10] Safe backup: not today (day 5)
+[2026-06-26 21:48:08] [9/10] Session cleanup...
+[2026-06-26 21:48:08] [9/10] Session cleanup: expired 21 stale sessions
+[2026-06-26 21:48:08] [10/10] Storage migration: not today (day 26)
+[2026-06-26 21:48:08] [11/11] Quota budget check...
+[2026-06-26 21:48:08] [11/11] Quota budget: done
+[2026-06-26 21:48:08] === Maintenance run complete ===
+[2026-06-26 22:18:10] === Maintenance run started ===
+[2026-06-26 22:18:10] [1/10] Mount check...
+[2026-06-26 22:18:10] [1/10] Mount check: FAILED
+[2026-06-26 22:18:10] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 22:18:10] [2/10] Disk monitor: done
+[2026-06-26 22:18:10] [3/10] Mission Control health check...
+[2026-06-26 22:18:10] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 22:18:10] [4/10] Error spike watchdog...
+[2026-06-26 22:18:10] [4/10] Error watchdog: no spikes detected
+[2026-06-26 22:18:10] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 22:18:10] [5/9] Stall detection: done
+[2026-06-26 22:18:10] [6/10] Task dispatcher...
+[2026-06-26 22:18:10] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 22:18:10] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 22:18:10] [6.5/10] Fix validation: done
+[2026-06-26 22:18:10] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 22:18:10] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 22:18:10] [6.7/10] Performance tuning: done
+[2026-06-26 22:18:10] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 22:18:10] [6.8/10] Mission planning: done
+[2026-06-26 22:18:10] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-26 22:18:10] [7/10] Incident auto-detection: done
+[2026-06-26 22:18:10] [8/10] Safe backup: not today (day 5)
+[2026-06-26 22:18:10] [9/10] Session cleanup...
+[2026-06-26 22:18:10] [9/10] Session cleanup: expired 16 stale sessions
+[2026-06-26 22:18:10] [10/10] Storage migration: not today (day 26)
+[2026-06-26 22:18:10] [11/11] Quota budget check...
+[2026-06-26 22:18:10] [11/11] Quota budget: done
+[2026-06-26 22:18:10] === Maintenance run complete ===
+[2026-06-26 22:48:12] === Maintenance run started ===
+[2026-06-26 22:48:12] [1/10] Mount check...
+[2026-06-26 22:48:12] [1/10] Mount check: FAILED
+[2026-06-26 22:48:12] [2/10] Disk monitor...
+OK: 21GB free
+[2026-06-26 22:48:12] [2/10] Disk monitor: done
+[2026-06-26 22:48:12] [3/10] Mission Control health check...
+[2026-06-26 22:48:12] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 22:48:12] [4/10] Error spike watchdog...
+[2026-06-26 22:48:12] [4/10] Error watchdog: no spikes detected
+[2026-06-26 22:48:12] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 22:48:12] [5/9] Stall detection: done
+[2026-06-26 22:48:12] [6/10] Task dispatcher...
+[2026-06-26 22:48:12] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 22:48:12] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 22:48:12] [6.5/10] Fix validation: done
+[2026-06-26 22:48:12] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 22:48:12] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 22:48:12] [6.7/10] Performance tuning: done
+[2026-06-26 22:48:12] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 22:48:12] [6.8/10] Mission planning: done
+[2026-06-26 22:48:12] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-26 22:48:12] [7/10] Incident auto-detection: done
+[2026-06-26 22:48:12] [8/10] Safe backup: not today (day 5)
+[2026-06-26 22:48:12] [9/10] Session cleanup...
+[2026-06-26 22:48:12] [9/10] Session cleanup: expired 18 stale sessions
+[2026-06-26 22:48:12] [10/10] Storage migration: not today (day 26)
+[2026-06-26 22:48:12] [11/11] Quota budget check...
+[2026-06-26 22:48:12] [11/11] Quota budget: done
+[2026-06-26 22:48:12] === Maintenance run complete ===
+[2026-06-26 23:18:14] === Maintenance run started ===
+[2026-06-26 23:18:14] [1/10] Mount check...
+[2026-06-26 23:18:14] [1/10] Mount check: FAILED
+[2026-06-26 23:18:14] [2/10] Disk monitor...
+OK: 24GB free
+[2026-06-26 23:18:14] [2/10] Disk monitor: done
+[2026-06-26 23:18:14] [3/10] Mission Control health check...
+[2026-06-26 23:18:14] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 23:18:14] [4/10] Error spike watchdog...
+[2026-06-26 23:18:14] [4/10] Error watchdog: no spikes detected
+[2026-06-26 23:18:14] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 23:18:14] [5/9] Stall detection: done
+[2026-06-26 23:18:14] [6/10] Task dispatcher...
+[2026-06-26 23:18:14] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 23:18:14] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 23:18:14] [6.5/10] Fix validation: done
+[2026-06-26 23:18:14] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 23:18:14] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 23:18:14] [6.7/10] Performance tuning: done
+[2026-06-26 23:18:14] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 23:18:14] [6.8/10] Mission planning: done
+[2026-06-26 23:18:14] [7/10] Incident auto-detection...
+duplicate|INC-151
+[2026-06-26 23:18:14] [7/10] Incident auto-detection: done
+[2026-06-26 23:18:14] [8/10] Safe backup: not today (day 5)
+[2026-06-26 23:18:14] [9/10] Session cleanup...
+[2026-06-26 23:18:14] [9/10] Session cleanup: expired 11 stale sessions
+[2026-06-26 23:18:14] [10/10] Storage migration: not today (day 26)
+[2026-06-26 23:18:14] [11/11] Quota budget check...
+[2026-06-26 23:18:14] [11/11] Quota budget: done
+[2026-06-26 23:18:14] === Maintenance run complete ===
+[2026-06-26 23:48:16] === Maintenance run started ===
+[2026-06-26 23:48:16] [1/10] Mount check...
+[2026-06-26 23:48:16] [1/10] Mount check: FAILED
+[2026-06-26 23:48:16] [2/10] Disk monitor...
+OK: 22GB free
+[2026-06-26 23:48:16] [2/10] Disk monitor: done
+[2026-06-26 23:48:16] [3/10] Mission Control health check...
+[2026-06-26 23:48:16] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-26 23:48:16] [4/10] Error spike watchdog...
+[2026-06-26 23:48:16] [4/10] Error watchdog: no spikes detected
+[2026-06-26 23:48:16] [5/9] Stall detection...
+No stale tasks
+[2026-06-26 23:48:16] [5/9] Stall detection: done
+[2026-06-26 23:48:16] [6/10] Task dispatcher...
+[2026-06-26 23:48:16] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-26 23:48:16] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-26 23:48:16] [6.5/10] Fix validation: done
+[2026-06-26 23:48:16] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-26 23:48:16] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-26 23:48:16] [6.7/10] Performance tuning: done
+[2026-06-26 23:48:16] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-26 23:48:16] [6.8/10] Mission planning: done
+[2026-06-26 23:48:16] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-26 23:48:16] [7/10] Incident auto-detection: done
+[2026-06-26 23:48:16] [8/10] Safe backup: not today (day 5)
+[2026-06-26 23:48:16] [9/10] Session cleanup...
+[2026-06-26 23:48:16] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-26 23:48:16] [10/10] Storage migration: not today (day 26)
+[2026-06-26 23:48:16] [11/11] Quota budget check...
+[2026-06-26 23:48:16] [11/11] Quota budget: done
+[2026-06-26 23:48:16] === Maintenance run complete ===
+[2026-06-27 11:18:07] === Maintenance run started ===
+[2026-06-27 11:18:07] [1/10] Mount check...
+[2026-06-27 11:18:07] [1/10] Mount check: FAILED
+[2026-06-27 11:18:07] [2/10] Disk monitor...
+OK: 27GB free
+[2026-06-27 11:18:07] [2/10] Disk monitor: done
+[2026-06-27 11:18:07] [3/10] Mission Control health check...
+[2026-06-27 11:18:07] [3/10] Mission Control: DOWN (HTTP 000000) — restarting...
+[2026-06-27 11:48:08] === Maintenance run started ===
+[2026-06-27 11:48:08] [1/10] Mount check...
+[2026-06-27 11:48:08] [1/10] Mount check: FAILED
+[2026-06-27 11:48:08] [2/10] Disk monitor...
+OK: 24GB free
+[2026-06-27 11:48:08] [2/10] Disk monitor: done
+[2026-06-27 11:48:08] [3/10] Mission Control health check...
+[2026-06-27 11:48:08] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-27 11:48:08] [4/10] Error spike watchdog...
+[2026-06-27 11:48:08] [4/10] Error watchdog: no spikes detected
+[2026-06-27 11:48:08] [5/9] Stall detection...
+No stale tasks
+[2026-06-27 11:48:08] [5/9] Stall detection: done
+[2026-06-27 11:48:08] [6/10] Task dispatcher...
+[2026-06-27 11:48:08] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-27 11:48:08] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-27 11:48:08] [6.5/10] Fix validation: done
+[2026-06-27 11:48:08] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-27 11:48:08] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-27 11:48:08] [6.7/10] Performance tuning: done
+[2026-06-27 11:48:08] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-27 11:48:08] [6.8/10] Mission planning: done
+[2026-06-27 11:48:08] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-27 11:48:08] [7/10] Incident auto-detection: done
+[2026-06-27 11:48:08] [8/10] Safe backup: not today (day 6)
+[2026-06-27 11:48:08] [9/10] Session cleanup...
+[2026-06-27 11:48:08] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-27 11:48:08] [10/10] Storage migration: not today (day 27)
+[2026-06-27 11:48:08] [11/11] Quota budget check...
+[2026-06-27 11:48:08] [11/11] Quota budget: done
+[2026-06-27 11:48:08] === Maintenance run complete ===
+[2026-06-27 12:18:10] === Maintenance run started ===
+[2026-06-27 12:18:10] [1/10] Mount check...
+[2026-06-27 12:18:10] [1/10] Mount check: FAILED
+[2026-06-27 12:18:10] [2/10] Disk monitor...
+OK: 24GB free
+[2026-06-27 12:18:10] [2/10] Disk monitor: done
+[2026-06-27 12:18:10] [3/10] Mission Control health check...
+[2026-06-27 12:18:10] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-27 12:18:10] [4/10] Error spike watchdog...
+[2026-06-27 12:18:10] [4/10] Error watchdog: no spikes detected
+[2026-06-27 12:18:10] [5/9] Stall detection...
+No stale tasks
+[2026-06-27 12:18:10] [5/9] Stall detection: done
+[2026-06-27 12:18:10] [6/10] Task dispatcher...
+[2026-06-27 12:18:10] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-27 12:18:10] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-27 12:18:10] [6.5/10] Fix validation: done
+[2026-06-27 12:18:10] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-27 12:18:10] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-27 12:18:10] [6.7/10] Performance tuning: done
+[2026-06-27 12:18:10] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-27 12:18:10] [6.8/10] Mission planning: done
+[2026-06-27 12:18:10] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-27 12:18:10] [7/10] Incident auto-detection: done
+[2026-06-27 12:18:10] [8/10] Safe backup: not today (day 6)
+[2026-06-27 12:18:10] [9/10] Session cleanup...
+[2026-06-27 12:18:10] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-27 12:18:10] [10/10] Storage migration: not today (day 27)
+[2026-06-27 12:18:10] [11/11] Quota budget check...
+[2026-06-27 12:18:10] [11/11] Quota budget: done
+[2026-06-27 12:18:10] === Maintenance run complete ===
+[2026-06-27 12:48:12] === Maintenance run started ===
+[2026-06-27 12:48:12] [1/10] Mount check...
+[2026-06-27 12:48:12] [1/10] Mount check: FAILED
+[2026-06-27 12:48:12] [2/10] Disk monitor...
+OK: 24GB free
+[2026-06-27 12:48:12] [2/10] Disk monitor: done
+[2026-06-27 12:48:12] [3/10] Mission Control health check...
+[2026-06-27 12:48:12] [3/10] Mission Control: OK (HTTP 200)
+[2026-06-27 12:48:12] [4/10] Error spike watchdog...
+[2026-06-27 12:48:12] [4/10] Error watchdog: no spikes detected
+[2026-06-27 12:48:12] [5/9] Stall detection...
+No stale tasks
+[2026-06-27 12:48:12] [5/9] Stall detection: done
+[2026-06-27 12:48:12] [6/10] Task dispatcher...
+[2026-06-27 12:48:12] [6/10] Task dispatcher: no dispatchable backlog tasks
+[2026-06-27 12:48:12] [6.5/10] Fix validation...
+Validating 14 fix task(s)...
+  task-inc-143-42f6: skip — incident already resolved
+  task-inc-142-ed52: skip — incident already resolved
+  task-inc-141-5c0b: skip — incident already resolved
+  task-inc-140-888a: skip — incident already resolved
+  task-inc-139-515d: skip — incident already resolved
+  task-inc-138-fd3f: skip — incident already resolved
+  task-inc-137-e915: skip — incident already resolved
+  task-inc-136-b20b: skip — incident already resolved
+  task-inc-135-fdc7: skip — incident already resolved
+  task-inc-134-38ee: skip — incident already resolved
+  task-inc-133-fc80: skip — incident already resolved
+  task-inc-132-76b2: skip — incident already resolved
+  task-inc-131-cf77: skip — incident already resolved
+  task-inc-130-db81: skip — incident already resolved
+[2026-06-27 12:48:12] [6.5/10] Fix validation: done
+[2026-06-27 12:48:12] [6.6/10] Predictive prevention: DISABLED (skipped)
+[2026-06-27 12:48:12] [6.7/10] Performance tuning...
+Generating tuning suggestions...
+
+Done: 0 suggestions, 0 tasks created
+[2026-06-27 12:48:12] [6.7/10] Performance tuning: done
+[2026-06-27 12:48:12] [6.8/10] Mission planning...
+Generating missions...
+
+Done: 0 new mission(s) generated
+[2026-06-27 12:48:12] [6.8/10] Mission planning: done
+[2026-06-27 12:48:12] [7/10] Incident auto-detection...
+duplicate|INC-150
+duplicate|INC-151
+[2026-06-27 12:48:12] [7/10] Incident auto-detection: done
+[2026-06-27 12:48:12] [8/10] Safe backup: not today (day 6)
+[2026-06-27 12:48:12] [9/10] Session cleanup...
+[2026-06-27 12:48:12] [9/10] Session cleanup: expired 0 stale sessions
+[2026-06-27 12:48:12] [10/10] Storage migration: not today (day 27)
+[2026-06-27 12:48:12] [11/11] Quota budget check...
+[2026-06-27 12:48:12] [11/11] Quota budget: done
+[2026-06-27 12:48:12] === Maintenance run complete ===
