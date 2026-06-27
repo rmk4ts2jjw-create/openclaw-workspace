@@ -1,15 +1,11 @@
 {
-  "lastChecks": {
-    "email": 1782560483,
-    "calendar": 1782560483,
-    "mentions": 1782560483,
-    "weather": 1782560483,
-    "gateway": 1782560483,
-    "missionControl": 1782560483,
-    "load": 1782560483,
-    "disk": 1782560483
+  "missionControl": "200",
+  "gateway": "200",
+  "disk": "34%",
+  "load": {
+    "1m": 1.69,
+    "5m": 1.75,
+    "15m": 1.72
   },
-  "lastHeartbeat": "2026-06-27T11:41:25Z",
-  "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average 2.60/1.94/1.99, disk usage 33%. Known issues: cloud storage unmounted (WD MyCloud)."
+  "timestamp": "2026-06-27T14:19:00+01:00"
 }

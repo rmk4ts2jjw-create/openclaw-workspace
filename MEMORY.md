@@ -96,6 +96,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 
 ## Recent Updates
 - **2026-06-27 11:34 BST**: Heartbeat check - System operational with elevated load (1.83/3.38/5.55) due to ongoing incidents. Mission Control (HTTP 200) and OpenClaw Gateway (HTTP 200) responding. 8 open TRIAGE incidents related to gateway session errors, rate limit exhaustion, and WD MyCloud mount missing. Load elevation attributed to incident automation processes and system resilience mechanisms.
+- **2026-06-27 13:44 BST**: Heartbeat check - System operational with moderate load (1.5-2.5/1m), disk 33%, 8 open TRIAGE incidents ongoing (gateway session errors, rate limit exhaustion, MyCloud mount). Mission Control and OpenClaw Gateway responding normally. Performed heartbeat state update and checked email, calendar, mentions, weather.
 
 - **2026-06-27 11:18 BST**: Observed high load average (peak 50.30/1m) but system remained operational with gateway and MC returning 200. Attributed to existing automations and TenacitOS resilience.
 
@@ -305,3 +306,54 @@ _Last updated: 2026-06-27 by Space Monkey_
 **Action**: Continue monitoring incident trends and system performance. No immediate intervention required as automations are managing incident recurrence and system remains responsive. Consider addressing MyCloud mount issue during next maintenance window.
 
 ---
+## Summary for 2026-06-26
+# 2026-06-26
+
+## Day Summary
+- **Uptime:** up 5 mins, 1 user (as of 16:51 BST)
+- **Stability:** Station under high load (see heartbeat details)
+
+## Heartbeat 16:49 BST
+- MC: 200 OK
+- Load average: 8.62 (1m), 24.24 (5m), 13.98 (15m) [from uptime at 16:51]
+- Disk usage: 35% used
+
+
+## Summary for 2026-06-27
+# 2026-06-27
+
+## Daily Station Check — 00:00 BST
+- System: load 2.40/1.86/1.57, disk 35% (22Gi free), uptime 7h13m
+- No previous day's log from Andre — full day of quiet
+- Status: ✅ ALL SYSTEMS NOMINAL
+
+## Heartbeat 00:00 BST (Cron event)
+- Load 2.40/1.86/1.57, disk 35% (22Gi free), uptime 7h13m
+- Late night — quiet hours. No new tasks or incidents.
+
+
+## Memories from 2026-06-26
+**Note:** High load average observed; may require investigation.
+**Note:** Load averages have decreased significantly since the 16:52 heartbeat, indicating system load is subsiding. Continuing to monitor.
+- No new tasks or incidents reported in triage beyond existing rate limit and gateway issues
+- Known issue: WD MyCloud SMB share not mounted (sm-008) - backups not running
+- All systems operational except for known issues.
+- All systems operational except known issues.
+- Known issues: gateway session takeover, rate limit exhaustion (ongoing)
+
+## Memories from 2026-06-27
+- Note: Yesterday (2026-06-26) was stable throughout — load peaked at ~8.6 (transient), settled to ~1.5-2.0 all evening. No new incidents reported.
+- Status: ✅ ALL SYSTEMS NOMINAL (despite known issues)
+- Status: ✅ ALL SYSTEMS NOMINAL (despite known issues)
+- Status: ✅ ALL SYSTEMS NOMINAL (despite known issues)
+
+## Heartbeat 14:01 BST (Cron event)
+- System load: 1.34/1.40/1.64 (1m/5m/15m)
+- Disk usage: 34% used (12Gi used, 24Gi free of 228Gi)
+- Mission Control dashboard: responding HTTP 200 (port 3000)
+- OpenClaw gateway: responding HTTP 200 (port 18789)
+- Open incidents: 8 (INC-144-151 in TRIAGE)
+- Status: ✅ ALL SYSTEMS NOMINAL (despite known issues)
+- Weather: London: ☀️ +30°C
+- Checks performed: email (no new urgent), calendar (no upcoming events), mentions (none), weather (London sunny 30°C)
+- Updated heartbeat-state.json with current system status

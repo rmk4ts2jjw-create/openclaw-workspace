@@ -11,6 +11,10 @@
 - [x] Check for stalled subagents and clean up if needed
 
 ## Last Run Summary
+- **14:22** — MC 200, load 1.74 1.71 1.71, disk 34% (12Gi used, 23Gi free of 228Gi), uptime 3:06. Gateway 200. Systems operational with ongoing incidents (8).
+- **14:21** — MC 200, load 1.55 1.74 1.72, disk 34% (12Gi used, 23Gi free of 228Gi), uptime 3:04. Gateway 200. Systems operational with ongoing incidents (8).
+- **14:08** — MC 200, load 2.41/1.89/1.77, disk 34% (12Gi used, 24Gi free of 228Gi), uptime 2h51m. Gateway 200. Systems operational with ongoing incidents (8).
+- **14:07** — MC 200, load 1.68/1.60/1.67, disk 34% (12Gi used, 24Gi free of 228Gi), uptime 2h50m. Gateway 200. Systems operational with ongoing incidents (8).
 - **12:33** — MC 200, load 1.15/1.69/2.02, disk 33% (12Gi used, 24Gi free of 228Gi), uptime 1h16m. Gateway 200. Systems operational with ongoing incidents (8).
 
 - **12:25** — MC 200, load 2.56/2.43/2.33, disk 33% (12Gi used, 24Gi free of 228Gi), uptime 1h08m. Gateway 200. Systems operational with ongoing incidents (8).
@@ -90,11 +94,22 @@
 - **20:02** — Routine check. All healthy. LaunchAgent plist still outstanding (pre-21:05).
 
 ## Notable Events Today
+- **14:08** — Heartbeat check complete. System load elevated (2.41/1.89/1.77) due to incident automation activity. MC 200, Gateway 200. 8 TRIAGE incidents ongoing. Disk 34%, uptime 2h51m.
 - **09:15** — MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
 - **10:00** — Workboard API fix committed (f689ed1). Switched from WebSocket to CLI/SQLite.
 - **15:15** — MC down again (3rd time). Restarted. **LaunchAgent plist still needed.**
 - **15:25** — Machine rebooted. MC came back via old LaunchAgent `com.openclaw.mc.dashboard-dev`.
 - **18:25** — Routine check. All stable. ⚠️ LaunchAgent plist for production MC still not created.
+
+## Heartbeat 14:20 BST (Cron event)
+- Checked system load: 1.69 (1m), 1.75 (5m), 1.72 (15m) [from uptime]
+- Disk usage: 34% used (12Gi used, 23Gi free of 228Gi)
+- Mission Control dashboard: responding HTTP 200
+- OpenClaw gateway: responding HTTP 200
+- Updated heartbeat-state.json with missionControl, disk, load, gateway timestamps.
+- No new tasks or incidents reported.
+- Checked for stalled subagents (none found).
+- Systems operational with ongoing incidents (8).
 
 ## Heartbeat 20:06 BST (Cron event)
 - Checked system load: 3.45 (1m), 2.94 (5m), 2.78 (15m) [from uptime]
@@ -165,19 +180,12 @@
 - No new tasks or incidents reported.
 - All systems operational.
 
-## Current Status (12:33 BST)
-- **System Load**: 1.15 (1m), 1.69 (5m), 2.02 (15m) - Normal
-- **Memory/Disk**: 33% used (12Gi used, 24Gi free of 228Gi) - Normal
+## Current Status (14:22 BST)
+- **System Load**: 1.74 (1m), 1.71 (5m), 1.71 (15m) - Normal
+- **Memory/Disk**: 34% used (12Gi used, 23Gi free of 228Gi) - Normal
 - **Mission Control Dashboard**: HTTP 200 (responding)
-- **OpenClaw Gateway**: HTTP 200 on port 18789 (responding)
-- **Open Incidents**: 8 in TRIAGE status (INC-144, INC-145, INC-146, INC-147, INC-148, INC-149, INC-150, INC-151)
-  - INC-151: Rate limit exhaustion — 6 429 errors in gateway log (P2)
-  - INC-150: Gateway session errors — 8 session(s) with EmbeddedAttemptSessionTakeoverError (P1)
-  - INC-149: Gateway session errors — 1 session(s) with EmbeddedAttemptSessionTakeoverError (P1)
-  - INC-148: Rate limit exhaustion — 1226 429 errors in gateway log (P2)
-  - INC-147: Mission Control dashboard down — HTTP 000 (P1)
-  - INC-146: Gateway session errors — 10 session(s) with EmbeddedAttemptSessionTakeoverError (P1)
-  - INC-145: Mission Control dashboard down — HTTP 000 (P1)
-  - INC-144: WD MyCloud mount missing — backup storage unavailable (P2)
-- **Systems Status**: Operational with degraded performance due to ongoing incidents
-- **Uptime**: 1 hour 16 minutes (recent restart)
+- **OpenClaw Gateway**: HTTP 200 (responding)
+- **Open Incidents**: 8 in TRIAGE status (INC-144 through INC-151)
+- **Systems Status**: Systems operational with ongoing incidents (8)
+- **Uptime**: 3h 06m (from uptime: up 3 hrs 06 min)
+

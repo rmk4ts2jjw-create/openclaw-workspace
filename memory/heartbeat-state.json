@@ -1,5 +1,5 @@
 {
-  "lastCheck": 1782564350,
+  "lastCheck": 1782565439,
   "checks": {
     "circuitBreaker": "closed",
     "stallDetection": "no_in_progress_tasks",
@@ -8,34 +8,38 @@
     "gatewaySessions": "error",
     "missionControl": 200,
     "gateway": 200,
-    "diskUsage": 33,
-    "load1m": 1.5,
-    "load5m": 1.92,
-    "load15m": 2.07
+    "diskUsage": 34,
+    "load1m": 1.34,
+    "load5m": 1.40,
+    "load15m": 1.64
   },
   "lastChecks": {
-    "gateway": 1782564350,
-    "missionControl": 1782564350,
-    "load": 1782564350,
-    "disk": 1782564350,
+    "gateway": 1782565439,
+    "missionControl": 1782565439,
+    "load": 1782565439,
+    "disk": 1782565439,
     "email": {
-      "time": 1782564350,
+      "time": 1782565439,
       "value": "Checked email: no new urgent messages"
     },
     "calendar": {
-      "time": 1782564350,
+      "time": 1782565439,
       "value": "Checked calendar: no upcoming events"
     },
     "mentions": {
-      "time": 1782564350,
+      "time": 1782565439,
       "value": "Checked mentions: none"
     },
     "weather": {
-      "time": 1782564350,
-      "value": "London: Sunny 28°C"
+      "time": 1782565439,
+      "value": "London: ☀️ +30°C"
+    },
+    "memoryMaintenance": {
+      "time": 1782565231,
+      "value": "Performed memory maintenance: added summaries for 2026-06-26 and 2026-06-27"
     }
   },
-  "lastHeartbeat": "2026-06-27T12:45:42Z",
+  "lastHeartbeat": "2026-06-27T13:03:59Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average normal 1.50, disk usage 33%. Known issues: 8 open incidents (INC-144-151). Checked email, calendar, mentions, weather."
+  "notes": "Systems operational: gateway and mission control responding, load average normal 1.34, disk usage 34%. Known issues: 8 open incidents (INC-144-151). Checked email, calendar, mentions, weather. Weather: London sunny 30°C."
 }
