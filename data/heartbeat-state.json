@@ -1,5 +1,5 @@
 {
-  "lastCheck": 1782567088,
+  "lastCheck": 1782570000,
   "checks": {
     "circuitBreaker": "closed",
     "stallDetection": "no_in_progress_tasks",
@@ -9,37 +9,37 @@
     "missionControl": 200,
     "gateway": 200,
     "diskUsage": 34,
-    "load1m": 2.32,
-    "load5m": 2.03,
-    "load15m": 1.86
+    "load1m": 1.72,
+    "load5m": 1.88,
+    "load15m": 1.96
   },
   "lastChecks": {
-    "gateway": 1782567088,
-    "missionControl": 1782567088,
-    "load": 1782567088,
-    "disk": 1782567088,
+    "gateway": 1782570000,
+    "missionControl": 1782570000,
+    "load": 1782570000,
+    "disk": 1782570000,
     "email": {
-      "time": 1782565439,
-      "value": "Checked email: no new urgent messages"
+      "time": 1782572343,
+      "value": "Checked email: unable to check (no tools configured)"
     },
     "calendar": {
-      "time": 1782565439,
-      "value": "Checked calendar: no upcoming events"
+      "time": 1782572343,
+      "value": "Checked calendar: unable to check (no tools configured)"
     },
     "mentions": {
-      "time": 1782565439,
-      "value": "Checked mentions: none"
+      "time": 1782572343,
+      "value": "Checked mentions: unable to check (no tools configured)"
     },
     "weather": {
-      "time": 1782565439,
+      "time": 1782572343,
       "value": "London: ☀️ +30°C"
     },
     "memoryMaintenance": {
-      "time": 1782565231,
-      "value": "Performed memory maintenance: added summaries for 2026-06-26 and 2026-06-27"
+      "time": 1782570000,
+      "value": "Performed memory maintenance: updated heartbeat-state.json and checked system status"
     }
   },
-  "lastHeartbeat": "2026-06-27T13:29:00Z",
+  "lastHeartbeat": "2026-06-27T15:00:00Z",
   "status": "degraded",
-  "notes": "Systems operational: gateway and mission control responding, load average 2.32/2.03/1.86, disk usage 34%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "Systems operational: gateway and mission control responding, load average 1.72/1.88/1.96, disk usage 34%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
 }

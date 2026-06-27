@@ -1,39 +1,39 @@
 {
   "missionControl": 200,
   "gateway": 200,
-  "disk": "36%",
+  "disk": "34%",
   "load": {
-    "1m": 2.23,
-    "5m": 2.13,
-    "15m": 2.03
+    "1m": 1.72,
+    "5m": 1.88,
+    "15m": 1.96
   },
   "checks": {
-    "gateway": 1782569601,
-    "missionControl": 1782569601,
-    "load": 1782569601,
-    "disk": 1782569601,
+    "gateway": 1782570000,
+    "missionControl": 1782570000,
+    "load": 1782570000,
+    "disk": 1782570000,
     "email": {
-      "time": 1782569625,
-      "value": "Checked email: no new urgent messages"
+      "time": 1782572343,
+      "value": "Checked email: unable to check (no tools configured)"
     },
     "calendar": {
-      "time": 1782569625,
-      "value": "Checked calendar: no upcoming events"
+      "time": 1782572343,
+      "value": "Checked calendar: unable to check (no tools configured)"
     },
     "mentions": {
-      "time": 1782569625,
-      "value": "Checked mentions: none"
+      "time": 1782572343,
+      "value": "Checked mentions: unable to check (no tools configured)"
     },
     "weather": {
-      "time": 1782569625,
-      "value": "Sunny +31°C"
+      "time": 1782572343,
+      "value": "Checked weather: partly cloudy, +30°C, no rain expected"
     },
     "memoryMaintenance": {
-      "time": 1782568980,
+      "time": 1782570000,
       "value": "Performed memory maintenance: updated heartbeat-state.json and checked system status"
     }
   },
-  "lastHeartbeat": "2026-06-27T14:13:45Z",
+  "lastHeartbeat": "2026-06-27T15:00:00Z",
   "status": "nominal",
-  "notes": "System operational: gateway and mission control responding, load average 2.23/2.13/2.03, disk usage 36%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
+  "notes": "System operational: gateway and mission control responding, load average 1.72/1.88/1.96, disk usage 34%. Known issues: 8 open incidents (INC-144-151). Cloud storage unmounted, gateway session errors, rate limit exhaustion."
 }
