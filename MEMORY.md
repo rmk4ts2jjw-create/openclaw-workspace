@@ -95,6 +95,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-28 16:20 BST**: Heartbeat poll (cron event) - Ongoing incidents: INC-152 (P1 gateway session errors, 15 recurrences), INC-153 (P2 rate limit exhaustion, 7 recurrences). System stable otherwise. Updated heartbeat state.
 - **2026-06-28 14:50 BST**: Heartbeat poll (cron event) - System stable, 8 open TRIAGE incidents ongoing, performed system checks, updated heartbeat-state.json.
 - **2026-06-27 15:34 BST**: Heartbeat check (cron event) - System load: 1.72 1.83 2.01, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 15:11 BST**: Heartbeat check (cron event) - System load: 2.23/2.13/2.03, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed system status check, updated heartbeat-state.json, committed changes to git.
@@ -402,3 +403,5 @@ _Last updated: 2026-06-28 by Space Monkey_
 - No new tasks or incidents. Quiet evening. All TODOs resolved.
 - No new tasks or incidents. Quiet evening. All TODOs resolved.
 - **Note:** Day 21 complete. Station stable. Weekend approaching.
+## 2026-06-28 - Heartbeat Summary
+0
