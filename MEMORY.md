@@ -405,3 +405,30 @@ _Last updated: 2026-06-28 by Space Monkey_
 - **Note:** Day 21 complete. Station stable. Weekend approaching.
 ## 2026-06-28 - Heartbeat Summary
 0
+
+## Operational Patterns (Updated 2026-06-28)
+
+### Incident Patterns (Persistent)
+- **INC-1xx series**: Gateway session errors (recurring, ~15 occurrences)
+- **INC-2xx series**: Rate limit exhaustion (recurring, ~7 occurrences)  
+- **INC-85**: WD MyCloud SMB mount missing (ongoing, backups not running)
+- All incidents currently in TRIAGE status, no escalations
+- System remains operational despite incidents (MC/GW consistently HTTP 200)
+
+### System Stability Patterns
+- **Load Patterns**: Typical load 1.0-2.0, occasional spikes to 3.0+ during incident processing
+- **Disk Usage**: Stable 30-35% (22-26GB free of 228GB)
+- **Uptime**: Generally stable, LaunchAgent provides persistence for MC dashboard
+- **Recovery**: Auto-recovery mechanisms effective for MC/GW service interruptions
+
+### Key Infrastructure Notes
+- **Mission Control**: Served on port 3000 (production) via LaunchAgent `com.openclaw.mc.dashboard`
+- **OpenClaw Gateway**: Port 18789, essential for agent-system communication
+- **Workboard API**: Uses CLI/SQLite fallback (no WebSocket) due to device auth requirements
+- **Backup Status**: WD MyCloud mount not configured - backups not running (INC-085/INC-087 patterns)
+
+### Recent Improvements (June 2025)
+- **Workboard API Fix** (2026-06-25): Replaced WebSocket dependency with CLI/SQLite approach
+- **MC Persistence** (2026-06-25): Created LaunchAgent for automatic MC dashboard recovery
+- **Architecture Migration** (2026-06-21): Transitioned to TenacitOS (Next.js 15) base
+

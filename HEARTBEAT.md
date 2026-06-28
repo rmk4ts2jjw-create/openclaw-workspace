@@ -11,7 +11,7 @@
 - [ ] Check for stalled subagents and clean up if needed
 
 ## Last Run Summary
-**18:30** — MC 200, GW 200, load 1.73/1.33/1.35, disk 32% (12Gi used, 26Gi free of 228Gi), uptime 3h58m. All healthy. 10 open TRIAGE incidents. Evening — quiet.
+**18:41** — MC 200, GW 200 (port 18789), load 1.54/1.49/1.40, disk 32% (12Gi used, 26Gi free of 228Gi), uptime 4h09m. All healthy. 10 open TRIAGE incidents. Evening — quiet.
 
 ## Notable Events Today
 - **09:15** — MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
@@ -20,3 +20,4 @@
 - **15:15** — MC down (3rd time). Restarted. LaunchAgent plist created at 21:05.
 - **15:25** — Machine rebooted. MC came back via LaunchAgent.
 - **18:28** — HEARTBEAT.md compacted (was 12KB+ of repetitive logs).
+- **18:41** — Heartbeat check: all systems nominal, no new incidents, no stalled agents.
