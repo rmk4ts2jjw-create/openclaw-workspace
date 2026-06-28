@@ -95,6 +95,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-28 14:50 BST**: Heartbeat poll (cron event) - System stable, 8 open TRIAGE incidents ongoing, performed system checks, updated heartbeat-state.json.
 - **2026-06-27 15:34 BST**: Heartbeat check (cron event) - System load: 1.72 1.83 2.01, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 15:11 BST**: Heartbeat check (cron event) - System load: 2.23/2.13/2.03, disk 36% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents, performed system status check, updated heartbeat-state.json, committed changes to git.
 - **2026-06-27 14:01 BST**: Heartbeat check (cron event) - System load: 1.34/1.40/1.64, disk 34% (12Gi used, 24Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151 in TRIAGE), weather London ☀️ +30°C, performed email/calendar/mentions/weather checks (no new urgent, no upcoming events, none, sunny 30°C), updated heartbeat-state.json.
@@ -130,6 +131,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-26 17:19 BST**: Heartbeat poll - system load spiked earlier (load avg 8.62/1m) but has subsided to 1.64/1m. Ongoing P1 gateway session errors and P2 rate limit exhaustion incidents monitored. MyCloud mount issue persists. Performed memory maintenance and proactive checks.
 
 - **2026-06-26 20:58 BST**: Heartbeat poll - system load stable at 2.49/2.22/2.13. Updated heartbeat-state.json and reviewed active incidents (INC-150, INC-149 P1 gateway session errors; INC-148, INC-147 P2 rate limit exhaustion). Systems operational with degraded status due to ongoing incidents.
+
+- **2026-06-28**: Heartbeat checks throughout the day showed system stability with ongoing incidents INC-152 (P1 gateway session errors) and INC-153 (P2 rate limit exhaustion) being monitored. Load averages remained reasonable (2.36 2.21 2.43 at 15:46), disk usage stable at 32%. No new incidents or urgent tasks reported. All checks stable.
 
 ## Tools
 
@@ -217,7 +220,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-21 21:20 BST**: Presentation Layer Fix - Fixed missing `src/entry-client.tsx` causing SSR HTML to render as unstyled raw text. Added proper hydration entry point for TanStack Start.
 - **2026-06-21 21:50 BST**: Architecture Migration: SpaceStation → TenacitOS - Abandoned Paperclip/TanStack Start architecture. Cloned TenacitOS (Next.js 15) as new baseline, configured environment, started dev server on port 3002.
 - **2026-06-21 22:00 BST**: Proxy Updated for TenacitOS - Updated nginx proxy on Docker host: 13005 → Mac port 3002, restoring iPad access.
-- **2026-06-21 22:05 BST**: Language Fix: Spanish → English - Translated all TenacitOS UI strings to English (login, sidebar, Office3D, Skills page).
+- **2026-06-21 22:05 BST**: Language Fix: Spanish → English - Translated all TenacotOS UI strings to English (login, sidebar, Office3D, Skills page).
 - **Ongoing:** P1 incident INC-132 (gateway session errors); P2 incidents INC-131 (rate limit exhaustion), INC-130 (gateway session errors), and 6 other P2 rate limit/storage incidents.
 
 ## External AI Review Loop
@@ -292,7 +295,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-27 by Space Monkey_
+_Last updated: 2026-06-28 by Space Monkey_
 
 ## Heartbeat Insights - 2026-06-27 11:34 BST
 
@@ -311,8 +314,8 @@ _Last updated: 2026-06-27 by Space Monkey_
 **Action**: Continue monitoring incident trends and system performance. No immediate intervention required as automations are managing incident recurrence and system remains responsive. Consider addressing MyCloud mount issue during next maintenance window.
 
 ---
-## Summary for 2026-06-26
-# 2026-06-26
+## Summary for 2026-06-27
+# 2026-06-27
 
 ## Day Summary
 - **Uptime:** up 5 mins, 1 user (as of 16:51 BST)
@@ -375,8 +378,27 @@ _Last updated: 2026-06-27 by Space Monkey_
 <!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:11:14 -->
 - **Heartbeat poll** at Tue 2026-06-23 14:03 GMT+1. Gateway up, MC OK. No in-progress tasks. Backlog: 5 (0 dispatchable). 11 open TRIAGE incidents (unchanged). All stable.; **Heartbeat poll** at Tue 2026-06-23 14:19 GMT+1. Gateway up, load 1.03, disk 21%, uptime 49m. MC dev server not responding (expected — not in active use). No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 14:20 GMT+1. Gateway up, load 0.83, disk 21%, uptime 50m. MC unreachable (expected — not in active use). No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 14:30 GMT+1. Gateway up, load 1.75, disk 21%, uptime ~1h.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:11-14]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:15:18 -->
-- **Heartbeat poll** at Tue 2026-06-23 15:24 GMT+1. Gateway up, load 2.01/1.89/1.69, disk 22% (44GB free), uptime 1h54m. All 13 cron jobs healthy, 0 errors. No in-progress tasks. Pending: framework split + incident filters reminder active. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:33 GMT+1. Gateway up, load 2.54/2.28/1.96, disk 22% (44GB free), uptime 2h04m. MC OK (307). No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:44 GMT+1. Gateway up, load 1.84, disk 22%, uptime 2h06m. MC OK (307). All stable. No changes.; **Heartbeat poll** at Tue 2026-06-23 15:50 GMT+1.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:15-18]
+- **Heartbeat poll** at Tue 2026-06-23 15:24 GMT+1. Gateway up, load 2.01/1.89/1.69, disk 22% (44GB free), uptime 1h54m. All 13 cron jobs healthy, 0 errors. No in-progress tasks. Pending: framework split + incident filters reminder active. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:33 GMT+1. Gateway up, load 2.54/2.28/1.96, disk 22% (44GB free), uptime 2h04m. MC OK (307). No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:44 GMT+1. Gateway up, load 1.84, disk 22%, uptime 2h06m. MC OK (307). No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:50 GMT+1.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:15-18]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:19:22 -->
-- **Heartbeat poll** at Tue 2026-06-23 15:56 GMT+1. Gateway up, load 1.36/1.73/1.92, disk 22% (43GB free), uptime 2h25m. MC OK (307). All 13 cron jobs healthy, 0 errors. No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:58 GMT+1. Gateway up, load 1.80/1.73/1.89, disk 22% (43GB free), uptime 2h27m. MC OK. All stable. No changes.; **Heartbeat poll** at Tue 2026-06-23 15:59 GMT+1. Gateway up, load 2.03/1.79/1.90, disk 22% (43GB free), uptime 2h28m. Gateway 200, MC 307. All 13 cron jobs healthy, 0 errors. No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 16:03 GMT+1.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:19-22]
+- **Heartbeat poll** at Tue 2026-06-23 15:56 GMT+1. Gateway up, load 1.36/1.73/1.92, disk 22% (43GB free), uptime 2h25m. MC OK (307). All 13 cron jobs healthy, 0 errors. No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 15:58 GMT+1. Gateway up, load 1.80/1.73/1.89, disk 22% (43GB free), uptime 2h27m. MC OK. All stable. No changes.; **Heartbeat pound** at Tue 2026-06-23 15:59 GMT+1. Gateway up, load 2.03/1.79/1.90, disk 22% (43GB free), uptime 2h28m. Gateway 200, MC 307. All 13 cron jobs healthy, 0 errors. No in-progress tasks. All stable.; **Heartbeat poll** at Tue 2026-06-23 16:03 GMT+1.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:19-22]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-23.md:23:26 -->
 - **Heartbeat poll** at Tue 2026-06-23 16:04 GMT+1. Gateway up, load 1.87/1.85/1.90, disk 22% (43GB free), uptime 2h33m. MC unreachable (expected). No in-progress tasks. All stable. No changes.; **Heartbeat poll** at Tue 2026-06-23 16:06 GMT+1. Gateway up, load 1.52/1.78/1.87, disk 22% (43GB free), uptime 2h35m. MC unreachable (expected). No in-progress tasks. All stable. No changes.; **Heartbeat poll** at Tue 2026-06-23 16:10 GMT+1. Gateway up, load 1.38/1.49/1.69, disk 22% (43GB free), uptime 2h40m. MC unreachable (expected). No in-progress tasks. All stable. No changes.; **Heartbeat poll** at Tue 2026-06-23 16:27 GMT+1.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-23.md:23-26]
+
+## Insights from 2026-06-27
+- **Notes**: Quiet Saturday. Zero anomalies. System stable going into Sunday.
+
+## Insights from 2026-06-26
+- **Note:** High load average observed; may require investigation.
+- **Note:** Load averages have decreased significantly since the 16:52 heartbeat, indicating system load is subsiding. Continuing to monitor.
+
+## Insights from 2026-06-25
+## Workboard API Fix (10:00-11:00 BST)
+- **Fix:** Rewrote route to use `openclaw` CLI for GET/POST and direct SQLite for PATCH/DELETE.
+- **Fix:** Killed stale processes, added `turbopack.root` to `next.config.ts`, started `bun run dev --port 3000`
+## Outstanding TODOs
+- Key fixes: added `/opt/homebrew/bin` to PATH, used `--hostname` not `--host`
+- **Outstanding TODO resolved**
+- **Note:** All TODOs resolved. Station stable. No open items heading into the weekend.
+- No new tasks or incidents. Quiet evening. All TODOs resolved.
+- No new tasks or incidents. Quiet evening. All TODOs resolved.
+- **Note:** Day 21 complete. Station stable. Weekend approaching.
