@@ -322,3 +322,33 @@
 23:00:01 Overall: ✅ ALL SYSTEMS NOMINAL
 23:00:05 Telegram sent: 📡 DAILY SITREP — 2026-06-26 | 0 active · 0 awaiting review · 33% disk · ✅ ALL SYSTEMS NOMINAL
 23:00:05 === Daily Station Check DONE ===
+23:00:03 === Daily Station Check START ===
+23:00:03 Load: { 0.88 1.32 1.36 }
+23:00:03 Disk: 12Gi used, 19Gi free, 39% of 228Gi
+23:00:03 Uptime: up 11:43, 2 users, load averages: 1.05 1.35 1.37
+23:00:03 Git: no .git in /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard
+23:00:03 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:03 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:03 Overall: ✅ ALL SYSTEMS NOMINAL
+23:00:07 Telegram sent: 📡 DAILY SITREP — 2026-06-27 | 0 active · 0 awaiting review · 39% disk · ✅ ALL SYSTEMS NOMINAL
+23:00:07 === Daily Station Check DONE ===
+23:00:01 === Daily Station Check START ===
+23:00:01 Load: { 1.91 1.54 1.39 }
+23:00:01 Disk: 12Gi used, 26Gi free, 32% of 228Gi
+23:00:01 Uptime: up  8:27, 2 users, load averages: 1.91 1.54 1.39
+23:00:01 Git: no .git in /Users/spacemonkey/.openclaw/workspace/mission-control-dashboard
+23:00:01 Tasks: 0 active, 0 awaiting review, 0 archived
+23:00:01 Backup: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+23:00:01 Overall: ✅ ALL SYSTEMS NOMINAL
+GatewayTransportError: gateway closed (1006 abnormal closure (no close frame)): no close reason
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /Users/spacemonkey/.openclaw/openclaw.json
+Bind: lan
+
+Possible causes:
+- Gateway not yet ready to accept connections (retry after a moment)
+- TLS mismatch (connecting with ws:// to a wss:// gateway, or vice versa)
+- Gateway crashed or was terminated unexpectedly
+Run `openclaw doctor` for diagnostics.
+23:00:04 ERROR: Failed to send Telegram message

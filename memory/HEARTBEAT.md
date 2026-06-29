@@ -5,7 +5,8 @@
 - [x] Weather
 - [x] Mentions
 
-### Last Checked (UTC): 2026-06-26T20:15:56Z
+### Last Checked (UTC): 2026-06-29T12:01:00Z
+### Last Heartbeat: 2026-06-29 13:01 BST
 ### Notes:
 - Gateway: healthy, responding on port 18789 (FreeRide skill applied and operational)
 - Mission Control Dashboard: healthy, responding on port 3000 with HTTP 200

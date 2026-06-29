@@ -514,3 +514,13 @@
 - **Tasks**: 0 active, 0 awaiting review, 0 archived
 - **Backup**: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
 - **Overall**: ✅ ALL SYSTEMS NOMINAL
+
+## 2026-06-28 23:00 (Europe/London) — Daily Station Check
+- **Load Average**: 1.91 1.54 1.39
+- **Disk**: 228Gi total, 12Gi used, 26Gi free, **32%** used
+- **Memory**: Mach Virtual Memory Statistics: (page size of 16384 bytes)
+- **Uptime**: up  8:27, 2 users, load averages: 1.91 1.54 1.39
+- **Git**: no git repo
+- **Tasks**: 0 active, 0 awaiting review, 0 archived
+- **Backup**: mounted: /Volumes/OpenClaw-WD | no backup files found ⚠️
+- **Overall**: ✅ ALL SYSTEMS NOMINAL

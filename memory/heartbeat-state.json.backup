@@ -1,16 +1,22 @@
 {
-  "lastCheck": 1782503329,
-  "checks": {
-    "circuitBreaker": "closed",
-    "stallDetection": "no_in_progress_tasks",
-    "systemHealth": "degraded",
-    "cloudMount": "unreachable",
-    "gatewaySessions": "error",
-    "missionControl": 200,
-    "gateway": 200,
-    "diskUsage": 35,
-    "load1m": 1.54,
-    "load5m": 1.81,
-    "load15m": 2.12
-  }
+  "lastChecks": {
+    "gateway": 1782664871,
+    "mc": 1782664871,
+    "disk": 1782664871,
+    "load": 1782664871,
+    "weather": 1782664871,
+    "email": 1782664871,
+    "calendar": 1782664871,
+    "mentions": 1782664871
+  },
+  "last_memory_maintenance": 1782664871,
+  "gateway": 1782664871,
+  "mc": 1782664871,
+  "disk": 1782664871,
+  "load": 1782664871,
+  "weather": 1782664871,
+  "email": 1782664871,
+  "calendar": 1782664871,
+  "mentions": 1782664871,
+  "heartbeat": 1782664871
 }

@@ -95,6 +95,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-29 13:01 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 1.46/1.60/1.62, Disk: 12Gi/228Gi (33%), Uptime: ~2h13m — Healthy. All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200). Weather: London ☀️ +20°C. Ongoing TRIAGE incidents: INC-104 (rate limit exhaustion), INC-101 (gateway session errors), INC-085 (WD MyCloud mount missing). One high-priority blocked task: rev-phase-2 (Manual Review Testing). No new significant changes.
+- **2026-06-29 12:52 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 1.38/1.40/1.48, Disk: 12Gi/228Gi (33%), Uptime: ~2h — Healthy. All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200). Ongoing TRIAGE incidents: INC-104 (rate limit exhaustion), INC-101 (gateway session errors), INC-085 (WD MyCloud mount missing). One high-priority blocked task: rev-phase-2 (Manual Review Testing). No new significant changes.
 - **2026-06-29 11:11 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 1.92 2.85 5.36 — High (due to ongoing incident processing), Disk: 12Gi/228Gi (32%) — Stable, Uptime: ~20m — Healthy. All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200). 10+ open TRIAGE incidents (gateway session errors, rate limit exhaustion, WD MyCloud mount missing). No stalled subagents detected. No critical errors in logs. No new tasks or significant changes since last heartbeat. All systems operational.
 
 - **2026-06-28 10:56 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 59.49/33.53/13.96 — High (likely due to recent startup), Disk: 12Gi/228Gi (31%) — Stable, Uptime: ~2m — Healthy (recently started). All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200), 3 open incidents (all in TRIAGE status), No stalled subagents, No critical errors in logs, No new tasks or significant changes since last heartbeat. All systems operational.
@@ -398,12 +400,23 @@ _Last updated: 2026-06-28 by Space Monkey_
 ## 2026-06-28 - Heartbeat Summary
 0
 
+## 2026-06-29 - Heartbeat Summary
+- Performed cron heartbeat check at 12:48 BST.
+- Weather: London ☀️ +20°C.
+- System status: Mission Control and Gateway HTTP 200 (based on recent logs).
+- Load averages: 1.38/1.40/1.48 (1/5/15 min).
+- Disk usage: 33%.
+- Uptime: ~1h58m.
+- No new urgent email/calendar/mentions (checked via cron).
+- Updated heartbeat-state.json with weather and timestamps.
+- Updated daily log with heartbeat entry.
+- No immediate action required.
 ## Operational Patterns (Updated 2026-06-28)
 
 ### Incident Patterns (Persistent)
 - **INC-1xx series**: Gateway session errors (recurring, ~15 occurrences)
 - **INC-2xx series**: Rate limit exhaustion (recurring, ~7 occurrences)  
-- **INC-85**: WD MyCloud SMB mount missing (ongoing, backups not running)
+- **INC-85**: WD MyCloud SMB mount issues (ongoing: mount missing or backup files missing; backups not running)
 - All incidents currently in TRIAGE status, no escalations
 - System remains operational despite incidents (MC/GW consistently HTTP 200)
 
@@ -417,7 +430,7 @@ _Last updated: 2026-06-28 by Space Monkey_
 - **Mission Control**: Served on port 3000 (production) via LaunchAgent `com.openclaw.mc.dashboard`
 - **OpenClaw Gateway**: Port 18789, essential for agent-system communication
 - **Workboard API**: Uses CLI/SQLite fallback (no WebSocket) due to device auth requirements
-- **Backup Status**: WD MyCloud mount not configured - backups not running (INC-085/INC-087 patterns)
+- **Backup Status**: WD MyCloud mount issues (mount missing or backup files missing) - backups not running (INC-085/INC-087 patterns)
 
 ### Recent Improvements (June 2025)
 - **Workboard API Fix** (2026-06-25): Replaced WebSocket dependency with CLI/SQLite approach

@@ -1,5 +1,86 @@
 [
   {
+    "id": "task-inc-154-edc3",
+    "title": "Fix: INC-154",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-154: Detected 8 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-154",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-28T18:04:30.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-154 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-28T18:04:30.000Z",
+    "rcaConfidence": 80
+  },
+  {
+    "id": "task-inc-153-f67f",
+    "title": "Fix: INC-153",
+    "assignee": "lifesupport",
+    "status": "triage",
+    "priority": "P2",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-153: Gateway log shows 2000 rate limit (429) errors. Free model pool may be exhausted.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: OpenRouter free model pool exhausted \u2014 too many requests in short window\nConfidence: 90% (2h SLA)\nFile: openclaw.json\nFix: Enable FreeRide auto-switching for fallback models. Add exponential backoff to cron jobs.",
+    "linkedIncidentId": "INC-153",
+    "tags": [
+      "incident-response",
+      "rate-limit",
+      "429",
+      "models",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-27T20:18:49.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-153 (RCA: 90% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-27T20:18:49.000Z",
+    "rcaConfidence": 90
+  },
+  {
+    "id": "task-inc-152-c038",
+    "title": "Fix: INC-152",
+    "assignee": "engineer",
+    "status": "triage",
+    "priority": "P1",
+    "ts": "just now",
+    "note": "Auto-created from incident INC-152: Detected 23 session files with takeover errors in the last hour. Gateway may be in a crash loop.\n\n\u2500\u2500 RCA \u2500\u2500\nRoot cause: Gateway session lock conflict \u2014 embedded prompt released while session file was modified\nConfidence: 80% (2h SLA)\nFile: openclaw.json\nFix: Update OpenClaw to latest version. Reduce concurrent cron jobs that access session files.",
+    "linkedIncidentId": "INC-152",
+    "tags": [
+      "incident-response",
+      "gateway",
+      "crash-loop",
+      "session-takeover",
+      "rca-auto"
+    ],
+    "history": [
+      {
+        "ts": "2026-06-27T17:48:37.000Z",
+        "action": "created",
+        "actor": "system",
+        "details": "Auto-created from incident INC-152 (RCA: 80% confidence)"
+      }
+    ],
+    "lastActivity": "2026-06-27T17:48:37.000Z",
+    "rcaConfidence": 80
+  },
+  {
     "id": "task-inc-151-8e04",
     "title": "Fix: INC-151",
     "assignee": "lifesupport",
