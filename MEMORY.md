@@ -95,6 +95,12 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-29 09:15 BST**: MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
+- **2026-06-29 10:00 BST**: Workboard API fix committed (f689ed1). Switched from WebSocket to CLI/SQLite.
+- **2026-06-29 11:20 BST**: Load spike to 12.89/21.44/10.77 (incident automation activity). Recovered by 14:00.
+- **2026-06-29 15:15 BST**: MC down (3rd time). Restarted. LaunchAgent plist created at 21:05.
+- **2026-06-29 15:25 BST**: Machine rebooted. MC came back via LaunchAgent.
+- **2026-06-29 18:28 BST**: HEARTBEAT.md compacted (was 12KB+ of repetitive logs).
 - **2026-06-29 13:42 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 1.51/1.40/1.44, Disk: 12Gi/228Gi (33%), Uptime: ~2h52m — Weather: London ☀️ +20°C
 - **2026-06-29 13:40 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 3.46/1.91/1.59, Disk: 12Gi/228Gi (33%), Uptime: ~2h50m — Healthy. All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200). Weather: London ☀️ +20°C. Ongoing TRIAGE incidents: INC-104 (rate limit exhaustion), INC-101 (gateway session errors), INC-085 (WD MyCloud mount missing). One high-priority blocked task: rev-phase-2 (Manual Review Testing). No new significant changes.
 - **2026-06-29 13:01 BST**: Heartbeat poll (cron event) - MC 200, GW 200 (port 18789), Load: 1.46/1.60/1.62, Disk: 12Gi/228Gi (33%), Uptime: ~2h13m — Healthy. All checks passed: Mission Control Dashboard responding (HTTP 200), OpenClaw Gateway responding (HTTP 200). Weather: London ☀️ +20°C. Ongoing TRIAGE incidents: INC-104 (rate limit exhaustion), INC-101 (gateway session errors), INC-085 (WD MyCloud mount missing). One high-priority blocked task: rev-phase-2 (Manual Review Testing). No new significant changes.
