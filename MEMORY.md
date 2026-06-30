@@ -49,6 +49,21 @@ cd mission-control-dashboard && node scripts/station-memory-tool.cjs search "que
 
 - **Andre** - My human. Mac admin, builds things, runs OpenClaw. Shares sources and asks questions; I handle the bookkeeping.
 
+## Development Workflow
+
+SpaceStation has two environments:
+- **Production:** main branch, port 3000, `npm start`, no auto-start
+- **Development:** dev branch, port 3001, `npm run dev`, no auto-start
+
+How to add a feature:
+1. `git checkout dev && npm run dev` (port 3001)
+2. Make changes via OpenCode + MCP
+3. Test at http://localhost:3001
+4. When happy: `git checkout main && git merge dev`
+5. `npm run build && npm start && git push origin main`
+
+Rules: Never experiment on main. Never run `npm run dev` on main. Always test on dev first. OpenCode writes ALL code. If dev breaks, recreate from main: `git checkout main && git branch -D dev && git checkout -b dev`
+
 ## Key Projects
 
 - **Mission Control Dashboard** - Now based on TenacitOS (Next.js 15) as of 2026-06-21. Provides 7-screen monitoring, Agent Office animation system with Framer Motion, live data bridge polling OpenClaw gateway (Phase 1 complete). Hand-crafted pixel art sprites and room scenes integrated. Located at `~/.openclaw/workspace/spacestation/` (the TenacitOS instance). Old SpaceStation code archived in `_ARCHIVE_OLD_SPACESTATION/`.
@@ -154,6 +169,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-30 02:38 BST**: Heartbeat poll (cron event) - MC 200, GW 200, load 1.25/1.41/1.39, disk 35%, uptime 15h53m. Weather: Mist +17°C 72% ↘5km/h. Updated heartbeat-state.json. Performed memory maintenance: reviewed recent memory files, updated MEMORY.md with insights, checked workboard for active incidents (INC-152, INC-153 ongoing). No new tasks or incidents. System stable.
 
 - **2026-06-30 02:49 BST**: Heartbeat: Routine checks, updated heartbeat state, logged activity. All systems nominal.
+- **2026-06-30 06:21 BST**: Heartbeat poll (cron event) - Responded with acknowledgment. Systems nominal. INC-156 ongoing (P1 gateway session errors). FreeRide skill active.
 - **2026-06-30 05:46 BST**: Heartbeat poll (cron event) - Performed memory maintenance, updated heartbeat-state.json. Systems nominal. Ongoing incidents: INC-156 (P1 gateway session errors), INC-155 (P2 rate limit exhaustion) monitored.
 ## Tools
 
@@ -316,7 +332,7 @@ Autonomous task processing 01:00-07:00 when Andre is asleep. Max 2 tasks/night.
 - **2026-06-07:** Pipeline deadlock fix - stall detector now clears stalledAt after 30min
 
 ---
-_Last updated: 2026-06-28 by Space Monkey_
+_Last updated: 2026-06-30 by Space Monkey_
 
 ## Heartbeat Insights - 2026-06-27 11:34 BST
 
