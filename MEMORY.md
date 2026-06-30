@@ -95,6 +95,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-30 06:17 BST**: Heartbeat poll (cron event) - Ongoing incidents: INC-156 (P1 gateway session errors), INC-155 (P2 rate limit exhaustion). FreeRide skill active mitigating rate limits. Updated heartbeat-state.json.
 - **2026-06-29 16:03 BST**: Heartbeat poll (cron event) - MC 200, GW 200, load 1.46/1.47/1.41, disk 33%, uptime 5h13m. Weather: Sunny +22°C 43% →10km/h. Updated heartbeat-state.json. No new tasks or incidents. Ongoing incidents: INC-152 (P1 gateway session errors), INC-153 (P2 rate limit exhaustion) monitored.
 - **2026-06-29 14:27 BST**: Heartbeat poll (cron event) - MC recovered from nohup process death (added turbopack.root to next.config.ts). Workboard API fixed (CLI/SQLite). Load from incident automation recovered. MC down/restarted, LaunchAgent created. Machine rebooted, MC via LaunchAgent. HEARTBEAT.md compacted. System stable. All checks passed: MC/GW HTTP 200, 8 open TRIAGE incidents (gateway session errors, rate limit exhaustion, WD MyCloud mount missing). No stalled subagents. Updated heartbeat-state.json.
 - **2026-06-29 09:15 BST**: MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
