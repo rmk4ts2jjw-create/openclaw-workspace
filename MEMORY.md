@@ -95,6 +95,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 **Lesson:** Never hardcode font or background in wrapper components. Always inherit from CSS variables.
 
 ## Recent Updates
+- **2026-06-29 16:03 BST**: Heartbeat poll (cron event) - MC 200, GW 200, load 1.46/1.47/1.41, disk 33%, uptime 5h13m. Weather: Sunny +22°C 43% →10km/h. Updated heartbeat-state.json. No new tasks or incidents. Ongoing incidents: INC-152 (P1 gateway session errors), INC-153 (P2 rate limit exhaustion) monitored.
+- **2026-06-29 14:27 BST**: Heartbeat poll (cron event) - MC recovered from nohup process death (added turbopack.root to next.config.ts). Workboard API fixed (CLI/SQLite). Load from incident automation recovered. MC down/restarted, LaunchAgent created. Machine rebooted, MC via LaunchAgent. HEARTBEAT.md compacted. System stable. All checks passed: MC/GW HTTP 200, 8 open TRIAGE incidents (gateway session errors, rate limit exhaustion, WD MyCloud mount missing). No stalled subagents. Updated heartbeat-state.json.
 - **2026-06-29 09:15 BST**: MC recovered after nohup process died. Added `turbopack.root` to next.config.ts.
 - **2026-06-29 10:00 BST**: Workboard API fix committed (f689ed1). Switched from WebSocket to CLI/SQLite.
 - **2026-06-29 11:20 BST**: Load spike to 12.89/21.44/10.77 (incident automation activity). Recovered by 14:00.
@@ -191,7 +193,7 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 - **2026-06-19:** Learnings: Fixed incident API 500 via TanStack import fix (@tanstack/react-start → @tanstack/start-client-core); synced tasks.json from Workboard (122 tasks); Mission Control Dashboard Phase 1 data-layer complete (3 APIs live) but UI needs wiring to live hooks; OpenCode large-file reads require shorter prompts; Night Shift eligibility blocked by exclusion tags, P1 priority, or dispatchCount>=3. Applied Phase 5 UI fixes (Memory tab error boundary, drag-and-drop, Dispatch All, detail popup) and identified AsyncLocalStorage dev-server issue as root cause (production clean). Decisions: Workboard/Memory Wiki as primary systems; FreeRide rate-limit handler improved fallback chains.
 - **2026-06-20:** Heartbeat checks revealed a P1 incident (INC-130) for Gateway session errors (TRIAGE). System stable otherwise. FreeRide skill appears to be mitigating rate limit incidents. No urgent email/calendar/mentions found in recent heartbeat checks.
 
-- **2026-06-20 11:00 BST:** Security audit P0 fixes applied:
+- **2026-06-20 11:00 BST**: Security audit P0 fixes applied:
   - Gateway flags hardened (`allowInsecureAuth: false`, `dangerouslyDisableDeviceAuth: false`)
   - Gateway allowedOrigins restricted (removed bare docker-host IP, kept localhost:18789 + 192.168.68.50:18889)
   - Gateway token rotated (old 48-char hex → new 48-char base64)
@@ -199,8 +201,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
   - OpenCode serve killed for security (was on 127.0.0.1:4096)
   - Pending sudo actions: enable macOS firewall, add firewall rule to block Ollama IPv6
   - Ollama IPv6 issue: ignores OLLAMA_HOST for IPv6 binding, still listens on *:11434 IPv6
-- **2026-06-20 11:38 BST:** Mount alert: MyCloud-1E4N74 unreachable
-- **2026-06-20 13:00 BST:** Phase 0 migration foundation complete:
+- **2026-06-20 11:38 BST**: Mount alert: MyCloud-1E4N74 unreachable
+- **2026-06-20 13:00 BST**: Phase 0 migration foundation complete:
   - mc-v2 repo initialized from framework copy at ~/.openclaw/workspace/mc-v2 (775 files, 11MB)
   - Docker Compose dev environment on Docker host (192.168.68.50):
     - Frontend: port 3002 (Next.js)
@@ -215,8 +217,8 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
     - Audit C: Developer guide covering routes, components, auth, API, theming, how-tos
   - Note: GitHub fork not created (gh CLI not API-authenticated). Local repo pushed to workspace git.
   - OpenCode config restored to original (opencode/big-pickle primary). Fallback chain intact.
-- **2026-06-21 03:30 BST:** MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
-- **2026-06-21 11:38 BST:** Heartbeat check: Weather: Partly cloudy +25°C, MyCloud host responding, mount point /Volumes/Public unavailable since 02:43 BST, systems OK (Gateway:200, MC:200), 10 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-130 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-129 P2 rate limit exhaustion, INC-133 P2 rate limit exhaustion, plus 5 other P2 rate limit/storage incidents), no in_progress tasks, no urgent action required.
+- **2026-06-21 03:30 BST**: MyCloud mount (/Volumes/Public) still unavailable since ~00:43 BST; host MyCloud-1E4N74 not responding to ping (network/storage hardware issue). See known issue sm-008.
+- **2026-06-21 11:38 BST**: Heartbeat check: Weather: Partly cloudy +25°C, MyCloud host responding, mount point /Volumes/Public unavailable since 02:43 BST, systems OK (Gateway:200, MC:200), 10 open TRIAGE incidents (INC-132 P1 gateway session errors, INC-130 P1 gateway session errors, INC-131 P2 rate limit exhaustion, INC-129 P2 rate limit exhaustion, INC-133 P2 rate limit exhaustion, plus 5 other P2 rate limit/storage incidents), no in_progress tasks, no urgent action required.
 - **2026-06-22 11:44 BST**: Diagnostic work on task disappearance - tasks.json appeared to have only 1 task (CANARY TEST). Root cause: canary test script's POST request created new task but file had been overwritten/wiped during API testing. Fixed: restored tasks.json from git HEAD (97 tasks: 90 done, 5 triage, 2 backlog). No data loss - all original tasks recovered from git history.
 - **2026-06-22 12:59 BST**: Full-stack workflow simulation completed successfully:
   - Added projectId field to Task interface, API POST/PATCH handlers
@@ -387,64 +389,6 @@ _Last updated: 2026-06-28 by Space Monkey_
 
 - **2026-06-27 15:52 BST**: Heartbeat check (cron event) - System load: 1.77/1.95/1.98, disk 34% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151), performed system status check, updated heartbeat-state.json, reviewed open incidents, updated memory files.
 
-## Insights from 2026-06-27
-- **Notes**: Quiet Saturday. Zero anomalies. System stable going into Sunday.
-
-## Insights from 2026-06-26
-- **Note:** High load average observed; may require investigation.
-- **Note:** Load averages have decreased significantly since the 16:52 heartbeat, indicating system load is subsiding. Continuing to monitor.
-
-## Insights from 2026-06-25
-## Workboard API Fix (10:00-11:00 BST)
-- **Fix:** Rewrote route to use `openclaw` CLI for GET/POST and direct SQLite for PATCH/DELETE.
-- **Fix:** Killed stale processes, added `turbopack.root` to `next.config.ts`, started `bun run dev --port 3000`
-## Outstanding TODOs
-- Key fixes: added `/opt/homebrew/bin` to PATH, used `--hostname` not `--host`
-- **Outstanding TODO resolved**
-- **Note:** All TODOs resolved. Station stable. No open items heading into the weekend.
-- No new tasks or incidents. Quiet evening. All TODOs resolved.
-- No new tasks or incidents. Quiet evening. All TODOs resolved.
-- **Note:** Day 21 complete. Station stable. Weekend approaching.
-## 2026-06-28 - Heartbeat Summary
-0
-
-## 2026-06-29 - Heartbeat Summary
-- Performed cron heartbeat check at 12:48 BST and again at 13:36 BST.
-- Weather: London ☀️ +20°C (checked at 12:48, still valid).
-- System status: Mission Control and Gateway HTTP 200.
-- Load averages: 1.51/1.40/1.44 (1/5/15 min) from 13:35 log.
-- Disk usage: 33%.
-- Uptime: ~2h44m (from 13:35 log).
-- Committed and pushed all changes (48 files changed, 8850 insertions, 124 deletions) at 13:37 BST.
-- Updated heartbeat-state.json.
-- No immediate action required.
-## Operational Patterns (Updated 2026-06-28)
-
-### Incident Patterns (Persistent)
-- **INC-1xx series**: Gateway session errors (recurring, ~15 occurrences)
-- **INC-2xx series**: Rate limit exhaustion (recurring, ~7 occurrences)  
-- **INC-85**: WD MyCloud SMB mount issues (ongoing: mount missing or backup files missing; backups not running)
-- All incidents currently in TRIAGE status, no escalations
-- System remains operational despite incidents (MC/GW consistently HTTP 200)
-
-### System Stability Patterns
-- **Load Patterns**: Typical load 1.0-2.0, occasional spikes to 3.0+ during incident processing
-- **Disk Usage**: Stable 30-35% (22-26GB free of 228GB)
-- **Uptime**: Generally stable, LaunchAgent provides persistence for MC dashboard
-- **Recovery**: Auto-recovery mechanisms effective for MC/GW service interruptions
-
-### Key Infrastructure Notes
-- **Mission Control**: Served on port 3000 (production) via LaunchAgent `com.openclaw.mc.dashboard`
-- **OpenClaw Gateway**: Port 18789, essential for agent-system communication
-- **Workboard API**: Uses CLI/SQLite fallback (no WebSocket) due to device auth requirements
-- **Backup Status**: WD MyCloud mount issues (mount missing or backup files missing) - backups not running (INC-085/INC-087 patterns)
-
-### Recent Improvements (June 2025)
-- **Workboard API Fix** (2026-06-25): Replaced WebSocket dependency with CLI/SQLite approach
-- **MC Persistence** (2026-06-25): Created LaunchAgent for automatic MC dashboard recovery
-- **Architecture Migration** (2026-06-21): Transitioned to TenacitOS (Next.js 15) base
-
-
 ## Promoted From Short-Term Memory (2026-06-29)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:12:13 -->
@@ -452,10 +396,15 @@ _Last updated: 2026-06-28 by Space Monkey_
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:16:19 -->
 - Key Events: 14:41: MC auto-restart (recovered to 200); ~17:52: Manual kickstart; 20:03: MC down (port 3000 empty) — auto-restart via launchctl, recovered to 307; 23:40: Heartbeat — all stable, entering quiet hours [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:16-19]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:20:21 -->
-- Key Events: 23:55: Heartbeat — load 1.04, disk 24%, all 13 cron jobs healthy, 0 errors. Quiet hours.; 23:56: Heartbeat — all stable, quiet hours. Closing day's monitoring. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:20-21]
+- Key Events: 23:55: Heartbeat — load 1.04, disk 24%, all 13 cron jobs healthy, 0 errors. Quiet hours.; 23.56: Heartbeat — all stable, quiet hours. Closing day's monitoring. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:20-21]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:24:26 -->
 - Late-Day Heartbeat (23:40 GMT+1): Gateway up, MC 307, load 1.44/1.31/1.30, disk 24% (38GB free), uptime 1d10h09m; All 13 cron jobs healthy, 0 errors; No in-progress tasks. All stable. Quiet hours. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:24-26]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:4:7 -->
 - Day Summary: **Uptime:** 1d10h+ at end of day; **Stability:** Station ran clean all day. Zero incidents.; **MC restarts:** 2 auto-recoveries (14:41, 20:03) + 1 manual kickstart (~17:52). All recovered to 307.; **Peak load:** ~1.94 (20:48). Typical: 1.0–1.6. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:4-7]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:8:11 -->
 - Day Summary: **Disk:** Steady at 24% (38GB free); **Cron health:** All 13 jobs healthy all day, 0 consecutive errors; **Weather:** London heatwave — peaked at 34°C (18:55), still 27°C at 21:45; **Tasks:** 0 active, 0 awaiting review [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:8-11]
+
+## Promoted From Short-Term Memory (2026-06-30)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:15:15 -->
+- Heartbeat poll (01:02 BST): MC/GW HTTP 200, load 1.28, disk 33%. Ongoing INC-156 (P1 gateway session errors) and INC-155 (P2 rate limit exhaustion). No new workboard tasks.
