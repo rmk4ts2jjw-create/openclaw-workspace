@@ -1,11 +1,7 @@
 {
-  "weather": "London: Sunny +20°C",
-  "date": "2026-06-29",
-  "time": "14:04 BST",
   "lastChecks": {
-    "email": 1782737807,
-    "calendar": 1782738246,
-    "mentions": 1782738246,
-    "weather": 1782737250
+    "email": 1782782330,
+    "calendar": 1782782330,
+    "weather": 1782782330
   }
 }
