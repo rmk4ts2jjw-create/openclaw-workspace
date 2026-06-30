@@ -150,6 +150,10 @@ Fix: Removed both overrides. Shell now only sets `minHeight: 100vh` and `color: 
 
 - **2026-06-28**: Heartbeat checks throughout the day showed system stability with ongoing incidents INC-152 (P1 gateway session errors) and INC-153 (P2 rate limit exhaustion) being monitored. Load averages remained reasonable (2.36 2.21 2.43 at 15:46), disk usage stable at 32%. No new incidents or urgent tasks reported. All checks stable.
 
+- **2026-06-30 02:38 BST**: Heartbeat poll (cron event) - MC 200, GW 200, load 1.25/1.41/1.39, disk 35%, uptime 15h53m. Weather: Mist +17°C 72% ↘5km/h. Updated heartbeat-state.json. Performed memory maintenance: reviewed recent memory files, updated MEMORY.md with insights, checked workboard for active incidents (INC-152, INC-153 ongoing). No new tasks or incidents. System stable.
+
+- **2026-06-30 02:49 BST**: Heartbeat: Routine checks, updated heartbeat state, logged activity. All systems nominal.
+- **2026-06-30 05:46 BST**: Heartbeat poll (cron event) - Performed memory maintenance, updated heartbeat-state.json. Systems nominal. Ongoing incidents: INC-156 (P1 gateway session errors), INC-155 (P2 rate limit exhaustion) monitored.
 ## Tools
 
 - **OpenCode CLI**: `/Users/spacemonkey/.opencode/bin/opencode` (v1.17.8) — NOT in PATH, use full path
@@ -389,22 +393,21 @@ _Last updated: 2026-06-28 by Space Monkey_
 
 - **2026-06-27 15:52 BST**: Heartbeat check (cron event) - System load: 1.77/1.95/1.98, disk 34% (12Gi used, 21Gi free), Mission Control and OpenClaw Gateway responding HTTP 200, 8 open TRIAGE incidents (INC-144-151), performed system status check, updated heartbeat-state.json, reviewed open incidents, updated memory files.
 
-## Promoted From Short-Term Memory (2026-06-29)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:12:13 -->
-- Day Summary: **Backup:** ⚠️ No backup files found on mounted volume; **Verdict:** Clean day. Station healthy. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:12-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:16:19 -->
-- Key Events: 14:41: MC auto-restart (recovered to 200); ~17:52: Manual kickstart; 20:03: MC down (port 3000 empty) — auto-restart via launchctl, recovered to 307; 23:40: Heartbeat — all stable, entering quiet hours [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:16-19]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:20:21 -->
-- Key Events: 23:55: Heartbeat — load 1.04, disk 24%, all 13 cron jobs healthy, 0 errors. Quiet hours.; 23.56: Heartbeat — all stable, quiet hours. Closing day's monitoring. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:20-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:24:26 -->
-- Late-Day Heartbeat (23:40 GMT+1): Gateway up, MC 307, load 1.44/1.31/1.30, disk 24% (38GB free), uptime 1d10h09m; All 13 cron jobs healthy, 0 errors; No in-progress tasks. All stable. Quiet hours. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:24-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:4:7 -->
-- Day Summary: **Uptime:** 1d10h+ at end of day; **Stability:** Station ran clean all day. Zero incidents.; **MC restarts:** 2 auto-recoveries (14:41, 20:03) + 1 manual kickstart (~17:52). All recovered to 307.; **Peak load:** ~1.94 (20:48). Typical: 1.0–1.6. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:4-7]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-24.md:8:11 -->
-- Day Summary: **Disk:** Steady at 24% (38GB free); **Cron health:** All 13 jobs healthy all day, 0 consecutive errors; **Weather:** London heatwave — peaked at 34°C (18:55), still 27°C at 21:45; **Tasks:** 0 active, 0 awaiting review [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-24.md:8-11]
-
 ## Promoted From Short-Term Memory (2026-06-30)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:15:15 -->
-- Heartbeat poll (01:02 BST): MC/GW HTTP 200, load 1.28, disk 33%. Ongoing INC-156 (P1 gateway session errors) and INC-155 (P2 rate limit exhaustion). No new workboard tasks.
+<!-- openclaw-memory-promotion:memory:memory/2026-06-02.md:92:108 -->
+- Task status changes auto-append to incident timeline via /api/incidents-timeline - Auto-detect creates linked tasks + severity-based response actions - Incident resolution remains separate from task completion - **Build**: passes, all routes 200 - **Commits**: `1dc5d25` (submodule), `a6b28b7` (auto-detect) ## Heartbeat Notes for 2026-06-02 - **Stall Detection**: Error Feed task (mp7cbyxz-0ztq) is 1h+ stale (lastActivity=13:29). Not reset yet (30–2hr window). Protected `stalledAt` prevents dispatcher from dispatching until cleared. - **Platform Stability**: All routes return 200; Spacestation loads correctly (redirect expected).... [score=0.850 recalls=8 avg=0.622 source=memory/2026-06-02.md:92-108]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-20.md:120:148 -->
+- Returning HEARTBEAT_OK ## Heartbeat Check - 09:48 BST - Checked circuit breaker: all closed - Performed stall detection: no in_progress tasks - Checked task pickup: no eligible tasks (all backlog tasks have dispatchCount ≥ 3) - Checked incident auto-resolve: 9 open incidents (all TRIAGE) - below 10 threshold for auto-resolve - Verified systems stable: Gateway and Mission Control Dashboard healthy (no new errors in logs) - No urgent email/calendar/mentions detected (last checked within 30m) - Weather: checked recently (within 30m) - Updated heartbeat state with current timestamp - No immediate action required ## Heartbeat Check -... [score=0.825 recalls=7 avg=0.581 source=memory/2026-06-20.md:120-148]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:12:15 -->
+- Workboard API Fix (10:00-11:00 BST): Actual board ID in SQLite is "default", not "main"; `sqlite3` CLI needs `-json` flag for JSON output; `sqlite3` CLI doesn't support `?` placeholders — must inline values with escaping; LaunchAgent `com.openclaw.mc.dashboard` runs `bun run dev` which can't load `node:sqlite` module [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:20:23 -->
+- Mission Control Recovery (09:15 BST): **Problem:** MC down — port 3000 not responding; **Root cause:** No process holding port 3000, LaunchAgent unloaded; **Fix:** Killed stale processes, added `turbopack.root` to `next.config.ts`, started `bun run dev --port 3000`; **Result:** MC home page returns 200, fully operational [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:20-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:16:17 -->
+- Workboard API Fix (10:00-11:00 BST): **Commit:** f689ed1 on workboard-v2 branch; **All 4 CRUD operations verified:** GET (119 cards), POST, PATCH, DELETE [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:16-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:26:28 -->
+- Service Management: Discovered LaunchAgent `com.openclaw.mc.dashboard` (bun run dev) keeps port 3000; Unloaded it to free port for production `npm start`; Production server running on 3000 with new code [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:26-28]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:4:5 -->
+- Day Summary: **Uptime:** Started at ~1d19h, machine rebooted ~15:15 BST (uptime reset to ~0); **Stability:** Station ran clean all day after morning recovery. All services healthy. [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:4-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-25.md:8:11 -->
+- Workboard API Fix (10:00-11:00 BST): **Problem:** `/api/workboard/cards` route used WebSocket to connect to Gateway, requiring device auth. Failed with "invalid connect params" error.; **Fix:** Rewrote route to use `openclaw` CLI for GET/POST and direct SQLite for PATCH/DELETE.; **Key findings:**; `openclaw workboard list --json` works without `--board` flag [score=0.806 recalls=0 avg=0.620 source=memory/2026-06-25.md:8-11]
